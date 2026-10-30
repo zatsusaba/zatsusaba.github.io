@@ -30,7 +30,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "4VALi1njvic",
     "title": "AIにゲームを作らせたら……マジでヤバかった",
     "date": "2026-10-29",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "ゲームの秘密"
     ],
@@ -97,7 +97,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "kuWWML8NBJ4",
     "title": "AIが作ったヤバい牢獄を脱出せよ【マインクラフト】",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "ゲームの秘密"
     ],
@@ -135,7 +135,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "N1sP2f7MNQE",
     "title": "悪魔メイドとご主人さま  #漫画 #雑学 #悪魔",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "舌が感じる基本の味は5種類！\n甘味・塩味・酸味・苦味・うま味。\n\nでも、いちごを「いちごの味」だと感じるには、舌だけじゃ足りない！？\n\n毒舌な悪魔メイド・マチとご主人さまが繰り広げる、ちょっと危険な味覚の雑学。\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #切り抜き #悪魔"
@@ -173,7 +173,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "zMhaJDp8BwE",
     "title": "ハロウィンのかぼちゃを人見知り少女に被せると！？",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "ショート漫画【1話完結】"
     ],
@@ -274,7 +274,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "p_HwXZrvQJs",
     "title": "吸血鬼の日常ルーティーン",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "ショート漫画【1話完結】"
     ],
@@ -294,7 +294,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "3D9SQ6NqWRg",
     "title": "吸血鬼にマヨネーズを与えてみた結果…",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "ショート漫画【1話完結】"
     ],
@@ -509,7 +509,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "QH_u7iTs9Y4",
     "title": "【オリジナル曲】声が聞こえる / 雑学サバイバル【Music Video】",
     "date": "2026-10-21",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "雑学サバイバルのオリジナル曲『声が聞こえる』のフルMVです。\n\n🔻マンガ本編はこちら\nhttps://youtu.be/78rL0ukyDw0\n\n#オリジナル曲 #musicvideo #雑学サバイバル"
@@ -556,7 +556,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "7nGB6fqr--c",
     "title": "【オリジナル曲】ソーラン節自由形ダダダンス / 雑学サバイバル【Music Video】",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "ソーラン節自由形で踊りだせ！\n\n雑学サバイバルの漫画「ソーラン節自由形」編から、音楽と映像を楽しめるMVをお届けします。\n\n気に入ったら高評価・チャンネル登録・コメントよろしくお願いします！\n\n#ソーラン節自由形 #オリジナル曲 #musicvideo"
@@ -675,7 +675,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "tybjIV5jw2w",
     "title": "【オリジナル曲】確率変動★ST / 雑学サバイバル【Music Video】",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "確率変動★ST🌈🎰\n\n『雑学サバイバル』が贈る、興奮とスリル全開のオリジナル楽曲！\n\n🎵 気に入ったら高評価・チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #雑学サバイバル"
@@ -711,7 +711,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "rM0qWqRqAlc",
     "title": "【オリジナル曲】ドパドパ★ドーパミン / 雑学サバイバル【Music Video】",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "ドパドパ★ドーパミン！！💖🧠\n\n一度聴いたら、頭から離れない！？\nドパガキランドから飛び出した、ハイテンションなオリジナルソング！\n\n可愛さ全開！テンション限界突破！\nミンと一緒に、ドパドパな世界へ飛び込もう！💕\n\n🎵 曲名：ドパドパ★ドーパミン\n🎬 Music Video：雑学サバイバル\n\n気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #ドパガキ"
@@ -866,7 +866,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "tI1KRDf4k1E",
     "title": "【オリジナル曲】終わらない夜 / 雑学サバイバル【Music Video】",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "🌙 終わらない夜――君が僕を照らすヒカリ。\n\nゾンビに支配された終末世界。\n誰もいなくなった街で、生き残った太郎とリンコ。\n\n世界が壊れても、明日が見えなくても。\n君が隣にいるなら、きっと歩いていける。\n\n切なさと希望が交差する、Kawaii Future BassのオリジナルMusic Video。\n\n✨ 本編漫画「ゾンビ編」も雑学サバイバルで！\n🎧 気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo"
@@ -949,7 +949,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "L30STKne5pE",
     "title": "【オリジナル曲】地獄を鳴らせ / 雑学サバイバル【Music Video】",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "🔥 地獄を鳴らせ！！ 🔥\n\n轟くギター、叩きつけるビート、魂を震わせるシャウト！\n\n静寂をぶち壊せ。\n常識を焼き尽くせ。\n地獄の底まで、この音を響かせろ！\n\nYouTube「雑学サバイバル」が贈る、オリジナル・デスメタルMusic Video！\n\n⚡ 気に入ったら高評価＆チャンネル登録！\n🔥 好きなシーンやフレーズもコメントで教えてください！\n\n🎸 雑学サバイバル\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo #雑学サバイバル"
@@ -2102,7 +2102,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "amKpNmLlaiY",
     "title": "【漫画】好感度が上がると！？ #漫画 #雑学 #心理学",
     "date": "2026-09-11",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "見知らぬ少女が声をかけてきた。\n頭の上にはなぜか数字が見えるが……？\n\n漫画・アニメ形式のオリジナルストーリーで、心理や雑学を楽しく描く\n『雑学サバイバル』\n\nチャンネル登録よろしくお願いします🌟\n\n#漫画 #雑談 #心理学"

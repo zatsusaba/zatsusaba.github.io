@@ -68,7 +68,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "Qf-ddJJrVH4",
     "title": "伝説の魚は、なぜ幻と呼ばれるのか？【漫画】",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "自然の秘密"
     ],
@@ -144,7 +144,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "uvozWjqY3AY",
     "title": "料理を『おいしい』と感じるのは、なぜ？｜美食の悪魔の雑学ダンジョン",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "食事の秘密"
     ],
@@ -332,7 +332,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "6qrt785FRqE",
     "title": "深淵に降りたら、帰り道が地獄だった｜メイドイン雑学アビス",
     "date": "2026-10-24",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "科学の秘密"
     ],
@@ -388,7 +388,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "JOA9HrJZScs",
     "title": "サイバーパンクの世界。人はサイボーグになれるのか？",
     "date": "2026-10-23",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "科学の秘密"
     ],
@@ -453,7 +453,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "t_NS2tcnZlI",
     "title": "世界が警戒する「PHPの脆弱性」何がヤバい？私たちへの影響と対処法",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "話題の秘密"
     ],
@@ -518,7 +518,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "78rL0ukyDw0",
     "title": "ちょっとボケてるモンスター「ボケモン」【ポケモンパロディ】",
     "date": "2026-10-21",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "世界の秘密"
     ],
@@ -574,7 +574,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "9VujPlxWZbE",
     "title": "【漫画】ソーラン節自由形を踊らないと10秒で滅ぶ世界",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "世界の秘密"
     ],
@@ -747,7 +747,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "331gz4Yweh8",
     "title": "【漫画】映画ドパガキ ドーパミンの島の秘密",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],
@@ -902,7 +902,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "j76vhryxplo",
     "title": "【漫画】INMU KINGでゾンビが踊りだす世界でサバイバル",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "自然の秘密"
     ],
@@ -1003,7 +1003,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "Nkg7S9Rphuw",
     "title": "【オリジナル曲】反逆の薔薇 / 雑学サバイバル【Music Video】",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "「運命なんて、私が変えてみせる。」\n\n決められた結末も、押しつけられた運命も、すべて叩き壊せ。\n\n悪役令嬢エルゼが、自分の意志で未来と恋を選び取る。\n\nYouTube漫画『雑学サバイバル』悪役令嬢編から生まれたオリジナル楽曲『反逆の薔薇』。\n\nこれは、運命に抗う一人の少女の物語。\n\n🌹 あなたは運命を受け入れますか？ それとも抗いますか？\n\n気に入っていただけたら、高評価・チャンネル登録をよろしくお願いします！\n\n🎬 本編の『悪役令嬢編』もぜひご覧ください！\n\n📺 雑学サバイバル【漫画】\n🔗 @zatsusaba\n\n#オリジナル曲 #musicvideo #雑学サバイバル"
@@ -1039,7 +1039,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "xuFlcS7XgWg",
     "title": "【漫画】悪役令嬢を惚れさせないと処刑。モブに転生した僕の末路は…",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],
@@ -1095,7 +1095,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "tpDdUfpq-5M",
     "title": "【オリジナル曲】修羅の空 / 雑学サバイバル【Music Video】",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "燃え上がる戦場。舞い散る桜。\n修羅の空の下、姫は運命に立ち向かう──。\n\n🔥 オリジナル楽曲『修羅の空』🔥\n\n戦国の激しい合戦、燃え盛る炎、そして姫の揺るがぬ覚悟。\n\nYouTube『雑学サバイバル』がお届けする、迫力の戦国アニメMusic Video！\n\n⚔️ 戦国 × 合戦 × 和風アニメMV\n\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちが繰り広げる冒険と、笑えて学べる雑学をお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#オリジナル曲 #musicvideo #雑サバ"
@@ -1113,7 +1113,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "A7I6aMjMbfI",
     "title": "【オリジナル曲】恋は忍べない / 雑学サバイバル【Music Video】",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [],
     "characters": [],
     "description": "忍びの技で姿は隠せても、恋心だけは隠せない。🥷💕\n\nオリジナルアニメMV『恋は忍べない』\n\n戦国の世界を舞台に、忍者少女・夜刀こよみの恋心を歌とアニメで描いた、ちょっぴり甘くてコミカルな恋愛ソング！\n\n🌸 忍者×恋愛×戦国ラブコメ！\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちの冒険や笑える雑学もお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・ストーリー・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#musicvideo #オリジナル曲 #雑サバ"
@@ -1167,7 +1167,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "uxXgM0SUFJI",
     "title": "【漫画】恋するお姫さまと戦国大合戦！？すねるくノ一、恋の行方は…【AI漫画】",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "世界の秘密"
     ],
@@ -1214,7 +1214,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "CNBARAYaXP4",
     "title": "【漫画】クールな忍者くノ一を惚れさせろ！恋愛しないと死ぬ世界で忍者屋敷を脱出せよ【AI漫画】",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "科学の秘密"
     ],
@@ -1270,7 +1270,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "xDJ2xlOg_T0",
     "title": "【漫画】恋が始まるデスメタル！？",
     "date": "2026-10-09",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],
@@ -1299,7 +1299,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "YXuL9Sgqg7Y",
     "title": "【漫画】女王さまと起業！なんでも屋を始めたら元傭兵ジジイと元アサシンのババアが限界バトル！スタンドで依頼を解決してスーパー戦隊ショーでお金ガッポガポ♪最後はドラゴン登場でアベンジャーズが…【AI漫画】",
     "date": "2026-10-08",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "お金の秘密"
     ],
@@ -1337,7 +1337,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "CTa7k_pJPG4",
     "title": "【漫画】サバを作れなければ消される世界で可愛いドS美人とガンコ親父のガチ修行！？世紀末の料亭で生き残りをかけた午前二時踏切で…※エアロビあり【AI漫画】",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "食事の秘密"
     ],
@@ -1393,7 +1393,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "MwjmWD3lSLE",
     "title": "【漫画】女海賊に捕まり、人魚と深海へ…巨大な海底神殿で命がけの宝探し！そして…【AI漫画】",
     "date": "2026-10-06",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "世界の秘密"
     ],
@@ -1449,7 +1449,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "5CxSKjOshzU",
     "title": "【漫画】目覚めたら無人島。褐色肌の美少女を助けてサバイバルしていると、褐色肌のイケメンお兄ちゃんが現れて巨大ワニと大戦争！？【AI漫画】",
     "date": "2026-10-05",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "自然の秘密"
     ],
@@ -1496,7 +1496,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "4uftQH5Nuxc",
     "title": "【漫画】誰にも読めない本「ヴォイニッチ手稿」をChatGPT最強モードで解読させてみた",
     "date": "2026-10-04",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "話題の秘密"
     ],
@@ -1543,7 +1543,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "h_WzcHxWA98",
     "title": "【漫画】No.1ホストに弟子入りしたら、イケメン先輩とオタク地味女子に振り回された｜マンガでわかる心理学7選",
     "date": "2026-10-03",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],
@@ -1590,7 +1590,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "3uOGpRYVOZ0",
     "title": "【漫画】宇宙人と水星に行ってみたら……",
     "date": "2026-10-02",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "世界の秘密"
     ],
@@ -1988,7 +1988,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "BN3JX8VOjxg",
     "title": "【漫画】身長1cmになってしまい、ダウナーお姉さんの掃除が始まって…｜マンガでわかる「科学の雑学」",
     "date": "2026-09-23",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "科学の秘密"
     ],
@@ -2008,7 +2008,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "9MVMJkhy1Gk",
     "title": "【漫画】地下遺跡に落ちたら金持ちミイラ女王が復活し、罠だらけの財宝庫から一緒に脱出することに…しかし出口で女王だけが…｜マンガでわかる「お金の雑学」",
     "date": "2026-09-21",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "お金の秘密"
     ],
@@ -2019,7 +2019,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "kGQ4GaH7VsE",
     "title": "【漫画】目覚めたら美少女に監禁されてた｜悪用禁止！人に好かれる雑学",
     "date": "2026-09-19",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],
@@ -2111,7 +2111,7 @@ window.YOUTUBE_VIDEOS = [
     "id": "dkggPNNsogg",
     "title": "【漫画】死ぬボタンと美少女",
     "date": "2026-09-10",
-    "format": "未確認",
+    "format": "長尺動画",
     "genres": [
       "人間の秘密"
     ],

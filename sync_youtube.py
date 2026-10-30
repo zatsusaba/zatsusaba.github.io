@@ -73,7 +73,7 @@ def main():
                 id=v["id"],
                 title=sn["title"],
                 date=sn.get("publishedAt", "")[:10],
-                format="長尺動画" if seconds > 180 else "未確認",
+                format="長尺動画" if seconds >= 60 else "未確認",
                 genres=genres.get(v["id"], []),
                 characters=[],
                 description=sn.get("description", "")[:500]

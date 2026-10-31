@@ -1,5 +1,23 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "RuhJjOS4jbg",
+    "title": "AIで簡単にWebサイト #ai #Webサイト #雑学",
+    "date": "2026-10-31",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "aiに任せればWebサイトは簡単に作れちゃう！すごいね\n\n🔻本編こちら\n\n「AIにWebサイト作らせたら秒で完成した」\nhttps://youtu.be/GXxLMo1fb8s"
+  },
+  {
+    "id": "NGcxuD4zIPI",
+    "title": "みかん風船割り #漫画 #雑学 #みかん",
+    "date": "2026-10-31",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "みかんの皮をギュッと絞ると、風船が突然パンッ！？\n\n皮に含まれる「リモネン」には、天然ゴムを弱らせる作用があります。風船の素材や状態によっては割れないこともあります。\n\n#漫画 #雑学 #みかん"
+  },
+  {
     "id": "Lksv7MeDX6M",
     "title": "100万円を拾ったら #漫画 #雑学 #落とし物",
     "date": "2026-10-30",

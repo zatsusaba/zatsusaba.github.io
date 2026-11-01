@@ -1,5 +1,23 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "MkN35sJyIJw",
+    "title": "AIマイクラ大戦争 #マイクラ #マインクラフト #ai",
+    "date": "2026-11-01",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "AIの大軍を戦わせてみました。\n\n🔻本編こちら\nhttps://youtu.be/tFJT3fKq6_U\n\n#マイクラ #マインクラフト #ai"
+  },
+  {
+    "id": "fWQcmbGCVZ0",
+    "title": "マイクラの謎 #マイクラ #雑学 #マインクラフト",
+    "date": "2026-11-01",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "マイクラって、最初はブロックを壊せなかった！？\n\n2009年、Notchが開発した初期の「Cave Game」は、草と石の世界を歩き回るシンプルな技術テストでした。\n\nブロックを壊すことも置くこともできなかった初期のマイクラ。\n\nそんな歴史を太郎が解説している間に、キュウちゃんは玄関にとんでもない罠を……。\n\n#マイクラ #マインクラフト #雑学"
+  },
+  {
     "id": "XlZLPZ3zacs",
     "title": "コーラに牛乳を入れたら #雑学 #コーラ #牛乳",
     "date": "2026-11-01",

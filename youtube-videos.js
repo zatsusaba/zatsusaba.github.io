@@ -1,5 +1,34 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "g8QxemgzmvU",
+    "title": "AIにBlenderでアニメを作らせた結果が面白すぎたｗｗ",
+    "date": "2026-11-02",
+    "format": "長尺動画",
+    "genres": [
+      "話題の秘密"
+    ],
+    "characters": [],
+    "description": "AIにBlenderを使わせて、映画みたいな3Dアニメを作ろうとしました。\n\n#AI #Blender #アニメ"
+  },
+  {
+    "id": "q62gm841Aps",
+    "title": "ペットボトルに熱湯いれたら #漫画 #雑学 #ペットボトル",
+    "date": "2026-11-02",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "ペットボトルに熱湯を入れると、どうなる？\n\n耐熱性のないペットボトルは熱で縮んだり変形したりします。中身がこぼれてやけどする危険も！\n\n※危険なので、飲料用の空きペットボトルを湯たんぽ代わりに使用しないでください。\n\n参考：サントリーお客様センター\n\n#漫画 #雑学 #ペットボトル"
+  },
+  {
+    "id": "aztaFu0K_mY",
+    "title": "砂漠の目玉 #漫画 #雑学 #サハラ砂漠",
+    "date": "2026-11-02",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "宇宙から見ると、サハラ砂漠に巨大な目玉が!?\n\n正体は直径約40kmの「リシャット構造」。\n\n隕石の衝突跡と思われたこともありましたが、盛り上がった岩の層が長い時間をかけて侵食され、巨大な輪っかになった地形です。\n\n参考：NASA Earth Observatory「Eyeing the Richat Structure」\n\n#漫画 #雑学 #サハラ砂漠"
+  },
+  {
     "id": "lx6icGaRxF8",
     "title": "AIにアクションゲーム作らせたら面白すぎた #ai #ゲーム #ゲーム実況",
     "date": "2026-11-02",

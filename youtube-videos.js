@@ -1,5 +1,14 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "H44FYx_F5ls",
+    "title": "踊るレーズン #漫画 #雑学 #レーズン",
+    "date": "2026-11-01",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "炭酸水にレーズンを入れると、勝手に踊り始める!?\n\n炭酸の泡がレーズンにくっついて浮き、泡が離れると沈む。この繰り返しで、ダンスしているように見えるんです。\n\n参考：Iowa PBS「Learn About Density With Dancing Raisins」\n\n#漫画 #雑学 #レーズン"
+  },
+  {
     "id": "ShLGSDZ25KE",
     "title": "AIに3Dゲームを作らせたら面白すぎたｗｗ",
     "date": "2026-11-01",

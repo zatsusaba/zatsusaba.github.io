@@ -1,5 +1,23 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "lx6icGaRxF8",
+    "title": "AIにアクションゲーム作らせたら面白すぎた #ai #ゲーム #ゲーム実況",
+    "date": "2026-11-02",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "AIにUnreal Engine5を使わせて3Dアクションゲームを作らせてみました。面白いね！\nよかったら、高評価チャンネル登録お願いします！\n\n#ai #ゲーム #ゲーム実況"
+  },
+  {
+    "id": "I5KQz7fL0yI",
+    "title": "生卵とゆで卵の見分け方 #漫画 #雑学 #卵",
+    "date": "2026-11-02",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "生卵とゆで卵が混ざった！割らずに見分けるには？\n\n卵を回して一瞬止め、すぐ離してみよう。生卵は中身が回り続けているため再び動き、固ゆで卵は止まったままになります。\n\n参考：Exploratorium「Take an Egg for a Spin」\n\n#漫画 #雑学 #卵"
+  },
+  {
     "id": "H44FYx_F5ls",
     "title": "踊るレーズン #漫画 #雑学 #レーズン",
     "date": "2026-11-01",
@@ -189,7 +207,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "Qf-ddJJrVH4",
-    "title": "伝説の魚は、なぜ幻と呼ばれるのか？【漫画】",
+    "title": "1メートルを超える巨大魚イトウは、なぜ「幻の魚」と呼ばれる？",
     "date": "2026-10-28",
     "format": "長尺動画",
     "genres": [
@@ -265,7 +283,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "uvozWjqY3AY",
-    "title": "料理を『おいしい』と感じるのは、なぜ？｜美食の悪魔の雑学ダンジョン",
+    "title": "鼻をつまむと、料理の味はどう変わる？",
     "date": "2026-10-27",
     "format": "長尺動画",
     "genres": [
@@ -294,7 +312,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "zMhaJDp8BwE",
-    "title": "ハロウィンのかぼちゃを人見知り少女に被せると！？",
+    "title": "顔を隠すと、人はルールを破りやすくなる？",
     "date": "2026-10-27",
     "format": "長尺動画",
     "genres": [
@@ -395,7 +413,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "p_HwXZrvQJs",
-    "title": "吸血鬼の日常ルーティーン",
+    "title": "習慣が身につくまで、本当は何日かかる？",
     "date": "2026-10-25",
     "format": "長尺動画",
     "genres": [
@@ -415,7 +433,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "3D9SQ6NqWRg",
-    "title": "吸血鬼にマヨネーズを与えてみた結果…",
+    "title": "冷やしすぎたマヨネーズは、なぜ元に戻らない？",
     "date": "2026-10-25",
     "format": "長尺動画",
     "genres": [
@@ -453,7 +471,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "6qrt785FRqE",
-    "title": "深淵に降りたら、帰り道が地獄だった｜メイドイン雑学アビス",
+    "title": "深い海から急に上がると、体の中で何が起きる？",
     "date": "2026-10-24",
     "format": "長尺動画",
     "genres": [
@@ -1420,7 +1438,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "YXuL9Sgqg7Y",
-    "title": "【漫画】女王さまと起業！なんでも屋を始めたら元傭兵ジジイと元アサシンのババアが限界バトル！スタンドで依頼を解決してスーパー戦隊ショーでお金ガッポガポ♪最後はドラゴン登場でアベンジャーズが…【AI漫画】",
+    "title": "女王さまとなんでも屋を始めたら、元傭兵ジジイと元アサシンのババアが限界バトル",
     "date": "2026-10-08",
     "format": "長尺動画",
     "genres": [

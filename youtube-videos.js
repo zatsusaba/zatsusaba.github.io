@@ -1,5 +1,14 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "VeBG7JL45TY",
+    "title": "AIにblenderやらせてみた #ai #blender #アニメーション",
+    "date": "2026-11-02",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "AIにBlender使わせてアニメ作ってみたら…\n\n🔻本編こちら\nhttps://youtu.be/g8QxemgzmvU\n\n#ai #blender #アニメーション"
+  },
+  {
     "id": "g8QxemgzmvU",
     "title": "AIにBlenderでアニメを作らせた結果が面白すぎたｗｗ",
     "date": "2026-11-02",

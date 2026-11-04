@@ -1,5 +1,23 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "chFZRuFo4FQ",
+    "title": "その本能、死にます #ai #claude #chatgpt",
+    "date": "2026-11-04",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "AI ClaudeとChatGPTを対決させてみました。\n\n#ai #claude #chatgpt"
+  },
+  {
+    "id": "mYa9vIGVYhA",
+    "title": "メロンの謎 #漫画 #雑学 #メロン",
+    "date": "2026-11-04",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "メロンの網目は、実は成長途中にできたひび割れの跡！\n\n皮にできたひびをふさぐように組織が発達し、かさぶたのような網目になります。\n\n出典：農林水産省\nhttps://www.maff.go.jp/j/heya/kodomo_sodan/0107/05.html\n\n#漫画 #雑学 #メロン"
+  },
+  {
     "id": "LHP8tH3u5Ng",
     "title": "鼻が息できないワケ #漫画 #雑学 #鼻",
     "date": "2026-11-03",
@@ -10,7 +28,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "QlFGnRwtXSU",
-    "title": "ClaudeとChatGPTが作ったゲーム、どっちが面白い？",
+    "title": "AIバトル。Claude 対 ChatGPT、勝負の結果は……",
     "date": "2026-11-03",
     "format": "長尺動画",
     "genres": [],

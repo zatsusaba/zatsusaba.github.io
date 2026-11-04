@@ -1,5 +1,32 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "FqXAaX_V8aY",
+    "title": "死ぬたびに100年後へ飛ぶマイクラ。村はどうなる？【マインクラフト】",
+    "date": "2026-11-04",
+    "format": "長尺動画",
+    "genres": [],
+    "characters": [],
+    "description": "AIに「死ぬと100年後へ飛ばされるマイクラRPG」を作ってもらいました。\n\n禁断の鐘に近づいたことで、時を超える旅が始まる。\n村を探索し、雑学クイズを解き、装備を集めてボスに挑め！\n\n果たして無事に元の時代へ帰れるのか？\n\n初見でプレイしていきます！\n\n#マイクラ #マインクラフト #ゲーム実況"
+  },
+  {
+    "id": "ViBe4NSCiAE",
+    "title": "カバの不思議 #漫画 #雑学 #カバ",
+    "date": "2026-11-04",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "カバの体が血まみれに見える理由。\n\n実は血ではなく、皮膚から出る赤い分泌液！\n赤とオレンジの色素には、紫外線を吸収する性質や、一部の細菌の増殖を抑える働きがあります。\n\n野生のカバは危険なので、近づかないようにしましょう。\n\n出典：Nature（2004）\nhttps://www.nature.com/articles/429363a\n\n#漫画 #雑学 #カバ"
+  },
+  {
+    "id": "LtTcyDFD7lo",
+    "title": "ししゃもは別の魚？ #漫画 #雑学 #シシャモ",
+    "date": "2026-11-04",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "普段食べている「ししゃも」の多くは、カラフトシシャモ（カペリン）。\n\n北海道の太平洋沿岸にしか生息しないシシャモとは、別の種類の魚です。\n\n出典：北海道庁\nhttps://www.pref.hokkaido.lg.jp/sr/gid/fis010.html\n\n#漫画 #雑学 #シシャモ"
+  },
+  {
     "id": "chFZRuFo4FQ",
     "title": "その本能、死にます #ai #claude #chatgpt",
     "date": "2026-11-04",

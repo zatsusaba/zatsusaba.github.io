@@ -1,5 +1,14 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "0jbUOkNIInw",
+    "title": "指の「ボキッ」って何の音？ #漫画 #雑学 #指",
+    "date": "2026-11-04",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "指をボキボキ鳴らすとき、骨がぶつかっているわけではありません。\n\n関節の中に気泡ができる現象が音に関係しています。\nまた、指を鳴らす習慣と手の変形性関節症の明確な関連は、研究で確認されていません。\n\nただし、痛みが出るほど無理に曲げたり引っ張ったりするのは避けましょう。\n\n研究出典：\nPLOS ONE（2015）\nhttps://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470\n\nJournal of the American Board of Family Medicine（2011）\nhttps://pubmed.ncbi.nlm.nih.gov/21383216/\n\n#漫画 #雑学 #指"
+  },
+  {
     "id": "FqXAaX_V8aY",
     "title": "死ぬたびに100年後へ飛ぶマイクラ。村はどうなる？【マインクラフト】",
     "date": "2026-11-04",

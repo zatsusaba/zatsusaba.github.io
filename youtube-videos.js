@@ -1,5 +1,23 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "nPqHHrtW7Do",
+    "title": "プチプチの正体は… #漫画 #雑学 #プチプチ",
+    "date": "2026-11-05",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "荷物を包むプチプチ、実は最初は壁紙になるはずだった！？\n\n1957年ごろにアメリカで生まれた気泡シートは、もともと室内装飾用。しかし壁紙としては成功せず、コンピューターの輸送用包装材として広まりました。\n\nそんな歴史を知らず、プチプチで部屋を飾ろうとするネフェルの運命は……。\n\n出典：Sealed Air公式\nhttps://www.sealedair.com/ap/resources/blog/bubble-wrap-appreciation-day\n\n#漫画 #雑学 #プチプチ"
+  },
+  {
+    "id": "z_pKv2AIBX4",
+    "title": "吸わないコウモリ #漫画 #雑学 #コウモリ",
+    "date": "2026-11-05",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "チスイコウモリは、歯で小さな傷をつけて、出てきた血を舌でなめます。だ液には血を固まりにくくする成分も。\n\nそれを知ったキュウちゃんが、太郎の腕で試してみた結果……。\n\n#漫画 #雑学 #コウモリ"
+  },
+  {
     "id": "0jbUOkNIInw",
     "title": "指の「ボキッ」って何の音？ #漫画 #雑学 #指",
     "date": "2026-11-04",

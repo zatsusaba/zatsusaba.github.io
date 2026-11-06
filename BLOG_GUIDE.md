@@ -48,7 +48,7 @@ GitHubのPRチェックの Actions 実行画面から blog-preview アーティ�
 
 PR用ワークフローはビルドと検証・アーティファクト保存だけで、Pagesへデプロイしない。
 既存のYouTube同期は従来どおり youtube-videos.js だけコミットし、その後Blogを生成して _site/ を公開する。
-4コマ漫画の既存表示は維持。将来の自動生成は独立工程として追加できる。
+
 
 ## Dotsへ渡す更新命令
 このリポジトリの BLOG_GUIDE.md を読み、最新mainから記事専用ブランチを作成してください。
@@ -58,3 +58,17 @@ PR用ワークフローはビルドと検証・アーティファクト保存だ
 既存記事・キャラ設定・台詞・HTML・同期処理は無断変更しないでください。
 python scripts/check_site.py とPRチェックを通し、記事URLと確認した出典を記したPRにまとめてください。
 mainへのマージ・本番公開は作者の承認を待ってください。
+
+## 公式サイト2.0での記事・4コマ追加
+
+2.0のマージ前は feat/site-v2 から作業ブランチを作り、PRの向き先も feat/site-v2 にする。公開後は最新mainを起点にする。
+
+**記事**　articles/pineapple.md の形式で articles/英数字スラッグ.md を1本追加する。特集に固定する記事だけメタ情報に featured: true を指定する。指定が複数なら最新のもの、指定がなければ最新記事を特集に使う。新着欄は特集と重複しない。公開後のスラッグを保持する。page と category は予約語。
+
+記事一覧は24件単位。通常検索はタイトル・概要・タグ・カテゴリーを照合し、「本文も検索」で本文まで照合する。カテゴリー内の検索は、そのカテゴリーの全ページが対象。対応するYouTube動画のIDを youtube に設定すると、同期済み動画の紹介ページから記事へ戻れる。関連記事は同じカテゴリーまたはタグを持つ公開記事から選ぶ。
+
+**4コマ**　comics/ai-official-site.yml を見本に comics/英数字スラッグ.yml を追加し、正式画像4枚を assets/comics/作品名/ に保存する。title・date・characters・themes・panels を入力する。panels は1〜4コマ目の読み順で、src は /assets/ から始まる実在パス、alt は正式な絵とセリフに即した代替文とする。初出作品に合わせたキャラ名・テーマ表記を使う。スラッグの page・character・theme は予約語。
+
+対応が確認できる場合だけ articles に記事スラッグの配列、videos に公開済み動画IDの配列を記す。未指定なら省略する。動画同期に含まれるIDと公開中の記事だけにリンクを生成する。公開前の漫画は draft: true。画像生成は行わない。
+
+**確認**　python scripts/check_site.py、python scripts/test_blog_updates.py、python scripts/test_media.py を実行する。最後のテスト用記事・漫画は cleanup-temp/ 内にだけ生成される。プレビューでトップ、/blog/、/comics/、新作の独立URLとリンク先を確認してPRを作成し、作者の承認を待つ。

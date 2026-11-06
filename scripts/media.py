@@ -197,7 +197,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
 def home_sections(items, comics, card, categories, today_home):
     featured = next((a for a in items if a.get("featured")), items[0] if items else None)
     recent = [a for a in items if a is not featured][:3]
-    html = '<section class="blog-home media-home"><div class="blog-home-head"><div><p class="eyebrow">ENCYCLOPEDIA</p><h2 id="blog-title">雑学大百科<span>雑学Blog</span></h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
+    html = '<section class="blog-home media-home"><div class="blog-home-head"><div><h2 id="blog-title">雑学Blog</h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
     if featured:
         html += '<h3>特集記事</h3><div class="media-feature">'+card(featured)+'</div>'
     if recent:

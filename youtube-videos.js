@@ -1,5 +1,14 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "0FajDHylIPo",
+    "title": "二度寝はエンドレス #漫画 #雑学 #睡眠",
+    "date": "2026-11-06",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "寝起きに判断力や注意力が鈍ることがあるのはなぜ？\n「睡眠慣性」という現象を、太郎のエンドレス二度寝で描きました。\n※睡眠慣性そのものが二度寝の原因と断定するものではありません。\n\n参考：CDC/NIOSH（睡眠慣性）\nhttps://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/03.html\n\n#漫画 #雑学 #睡眠"
+  },
+  {
     "id": "q5FluB5f-b8",
     "title": "パイナップルの木は #漫画 #雑学 #パイナップル",
     "date": "2026-11-05",

@@ -9,6 +9,8 @@ root=Path(tempfile.mkdtemp(prefix="fixture-",dir=job))
 for name in ("articles","assets","panels-v2"): (root/name).mkdir()
 (root/"index.html").write_text((original_root/"index.html").read_text(encoding="utf-8"),encoding="utf-8")
 sample=(original_root/"articles/pineapple.md").read_text(encoding="utf-8")
+sample=sample.replace("checked: 2026-11-06","checked: 2020-01-01")
+(root/"youtube-videos.js").write_bytes((original_root/"youtube-videos.js").read_bytes())
 b.ROOT=root
 b.OUT=root/"_site"
 (root/"articles/pineapple.md").write_text(sample,encoding="utf-8")

@@ -245,3 +245,64 @@ header nav a::after { bottom: 5px; }
 footer:has(.site-info-links) { flex-wrap: wrap; }
 footer .site-info-links { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: 4px 22px; border-top: 1px solid #555; padding-top: 10px; }
 footer .site-info-links a { display: inline-flex; align-items: center; min-height: 44px; margin: 0; color: #eee; text-decoration: underline; }
+/* Daily video archive and the three primary destinations in the bottom menu. */
+.daily-home, .daily-archive {
+  padding: clamp(36px, 5.3vw, 76px) var(--media-gutter);
+  color: var(--media-ink);
+  background: #fffdf8;
+}
+.daily-home { border-block-start: 1px solid var(--media-rule); }
+.daily-home h2, .daily-archive h1 {
+  font-family: var(--media-serif);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: 1.3;
+}
+.daily-home h2 { font-size: clamp(29px, 3.7vw, 57px); }
+.daily-home .eyebrow, .daily-archive .eyebrow { color: var(--media-red); }
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+  gap: clamp(15px, 2.3vw, 32px);
+  margin-block: 18px 24px;
+}
+.daily-card { min-width: 0; padding-bottom: 12px; border-bottom: 1px solid var(--media-rule); }
+.daily-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: #242228;
+}
+.daily-card :is(h2,h3) {
+  font-family: inherit;
+  font-size: clamp(16px, 1.5vw, 21px);
+  line-height: 1.65;
+  margin-block: 8px;
+  overflow-wrap: anywhere;
+}
+.daily-card p, .daily-card time { color: var(--media-muted); line-height: 1.65; }
+.daily-card a:hover, .daily-card a:focus-visible { color: var(--media-red); text-decoration: underline; }
+.daily-dates { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 20px; }
+.daily-dates a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 12px;
+  border: 1px solid var(--media-rule);
+  color: var(--media-ink);
+  background: white;
+}
+@media (min-width: 360px) and (max-width: 700px) {
+  .mobile-nav {
+    grid-template-columns: .74fr 1.12fr 1.12fr .74fr .74fr 1.24fr .82fr;
+  }
+  .mobile-nav > a { padding-inline: 0; letter-spacing: -.025em; font-size: clamp(9px, 2.5vw, 13px); }
+}
+@media (max-width: 359px) {
+  .mobile-nav { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  header nav { gap: 9px; }
+}

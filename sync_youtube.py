@@ -2,7 +2,9 @@
 """YouTube Data API v3: public channel uploads and named playlists -> local JS."""
 import json, os, pathlib, re, sys, urllib.parse, urllib.request
 
-KEY = os.environ.get("YOUTUBE_API_KEY")
+from datetime import datetime, timedelta, timezone
+
+JST = timezone(timedelta(hours=9))
 CHANNEL = "UCr1ZBUGj3GHgBrgaHI-o5Yg"
 ROOT = pathlib.Path(__file__).resolve().parent
 GENRES = {
@@ -12,7 +14,7 @@ GENRES = {
 }
 
 def call(endpoint, **params):
-    params["key"] = KEY
+    params["key"] = os.environ["YOUTUBE_API_KEY"]
     url = "https://www.googleapis.com/youtube/v3/" + endpoint + "?" + urllib.parse.urlencode(params)
     with urllib.request.urlopen(url, timeout=30) as response:
         return json.load(response)
@@ -25,8 +27,43 @@ def pages(endpoint, **params):
             return
         params["pageToken"] = result["nextPageToken"]
 
+def publication_time(value):
+    """Return an unambiguous UTC instant and its Japanese calendar date."""
+    instant = datetime.fromisoformat(value)
+    if instant.tzinfo is None:
+        raise ValueError("publishedAt requires an explicit timezone")
+    return (instant.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
+            instant.astimezone(JST).date().isoformat())
+
+
+def public_video(item, genres, formats):
+    if item.get("status", {}).get("privacyStatus") != "public":
+        return None
+    vid = item["id"]
+    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
+        raise ValueError(f"Invalid YouTube video ID: {vid!r}")
+    snippet = item["snippet"]
+    if snippet.get("liveBroadcastContent")=="upcoming":
+        return None
+    if snippet.get("channelId") != CHANNEL:
+        raise ValueError(f"Unexpected channel for {vid}")
+    try:
+        published, day = publication_time(snippet["publishedAt"])
+    except (KeyError, TypeError, ValueError) as error:
+        raise ValueError(f"Invalid publishedAt for {vid}") from error
+    classification = formats.get(vid)
+    if classification is None and "ショート漫画【1話完結】" in genres:
+        classification = {"format": "ショート漫画", "evidence": "公式プレイリスト：ショート漫画【1話完結】"}
+    record = dict(id=vid, title=snippet["title"], publishedAt=published, date=day,
+                  format=classification["format"] if classification else "未確認",
+                  genres=genres, characters=[], description=snippet.get("description", "")[:500])
+    if classification:
+        record["formatEvidence"] = classification["evidence"]
+    return record
+
+
 def main():
-    if not KEY:
+    if not os.environ.get("YOUTUBE_API_KEY"):
         raise RuntimeError("YOUTUBE_API_KEY is not set")
 
     channels = call("channels", part="contentDetails", id=CHANNEL).get("items", [])
@@ -34,11 +71,11 @@ def main():
         raise RuntimeError("channel not found; preserving old data")
 
     uploads = channels[0]["contentDetails"]["relatedPlaylists"]["uploads"]
-    ids = []
+    ids = {}
     for item in pages("playlistItems", part="contentDetails", playlistId=uploads, maxResults=50):
         vid = item.get("contentDetails", {}).get("videoId")
-        if vid and vid not in ids:
-            ids.append(vid)
+        if vid:
+            ids[vid] = None
 
     if not ids:
         raise RuntimeError("empty upload list; preserving old data")
@@ -53,31 +90,18 @@ def main():
             if vid:
                 genres.setdefault(vid, []).append(label)
 
-    videos = []
+    formats = json.loads((ROOT / 'config/youtube-formats.json').read_text(encoding='utf-8'))
+    videos = {}
+    ids = list(ids)
     for start in range(0, len(ids), 50):
         result = call(
-            "videos", part="snippet,status,contentDetails",
+            "videos", part="snippet,status",
             id=",".join(ids[start:start + 50]), maxResults=50
         )
         for v in result.get("items", []):
-            if v.get("status", {}).get("privacyStatus") != "public":
-                continue
-            sn = v["snippet"]
-            duration = v.get("contentDetails", {}).get("duration", "")
-            match = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", duration)
-            seconds = sum(
-                int(value or 0) * unit
-                for value, unit in zip(match.groups(), (3600, 60, 1))
-            ) if match else 0
-            videos.append(dict(
-                id=v["id"],
-                title=sn["title"],
-                date=sn.get("publishedAt", "")[:10],
-                format="長尺動画" if seconds >= 60 else "未確認",
-                genres=genres.get(v["id"], []),
-                characters=[],
-                description=sn.get("description", "")[:500]
-            ))
+            record = public_video(v, genres.get(v["id"], []), formats)
+            if record:
+                videos[record["id"]] = record
 
     if not videos:
         raise RuntimeError("no public videos returned; preserving old data")
@@ -85,7 +109,7 @@ def main():
     dest = ROOT / "youtube-videos.js"
     tmp = ROOT / "youtube-videos.tmp"
     tmp.write_text(
-        "window.YOUTUBE_VIDEOS = " + json.dumps(videos, ensure_ascii=False, indent=2) + ";\n",
+        "window.YOUTUBE_VIDEOS = " + json.dumps(list(videos.values()), ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8"
     )
     os.replace(tmp, dest)
@@ -94,6 +118,9 @@ def main():
 if __name__ == "__main__":
     try:
         main()
+    except ValueError as error:
+        print(f"Update failed; existing data kept: {error}", file=sys.stderr)
+        sys.exit(1)
     except Exception as e:
         print("Update failed; existing data kept:", type(e).__name__, file=sys.stderr)
         sys.exit(1)

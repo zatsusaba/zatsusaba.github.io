@@ -7,7 +7,7 @@ from datetime import date
 from html import escape
 from pathlib import PurePosixPath
 
-import yaml
+from editorial import metadata, state
 
 PAGE_SIZE = 24
 
@@ -71,10 +71,22 @@ def search_files(items, write):
 
 def load_comics(root, today):
     entries = []
-    for path in sorted((root / "comics").glob("*.yml")):
-        data = yaml.safe_load(path.read_text(encoding="utf-8"))
-        if data.get("draft"):
+    ids=set()
+    folder=root / "comics"
+    for path in sorted([*folder.glob("*.yml"),*folder.glob("*.yaml")]):
+        if path.stem in ids:
+            raise ValueError(f"{path}: duplicate comic ID")
+        ids.add(path.stem)
+        data = metadata(path.read_text(encoding="utf-8"),path)
+        if not isinstance(data,dict): raise ValueError(f"{path}: expected YAML mapping")
+        if data.get("id",path.stem)!=path.stem: raise ValueError(f"{path}: id must match filename")
+        if state(data,{"draft","pending","approved"},"draft",path)!="approved":
+            for panel in data.get("panels",[]):
+                if not isinstance(panel,dict) or not str(panel.get("src","")).startswith(f"/comic-media/{path.stem}/"):
+                    raise ValueError(f"{path}: unpublished panels belong under comic-media/{path.stem}/")
             continue
+        if not isinstance(data.get("approval"),str) or not data["approval"].strip():
+            raise ValueError(f"{path}: record the author's approval before publishing")
         def require(ok, field):
             if not ok:
                 raise ValueError(f"{path}: invalid {field}")
@@ -85,9 +97,11 @@ def load_comics(root, today):
         require(isinstance(data["panels"], list) and len(data["panels"]) == 4, "panels")
         for panel in data["panels"]:
             src = panel["src"]
-            require(src.startswith(("/assets/", "/panels-v2/")) and ".." not in PurePosixPath(src).parts
+            require(PurePosixPath(src).suffix.lower() in {".jpg",".jpeg",".png",".webp",".avif"} and src.startswith(("/panels-v2/", f"/comic-media/{path.stem}/")) and ".." not in PurePosixPath(src).parts
                     and "\\" not in src and (root / src[1:]).is_file() and panel.get("alt"), "panel")
-        for key in ("characters","themes","articles","videos"):
+            require(isinstance(panel.get("text"),str),"panels[].text (empty string for silent panel)")
+        require(len({p["src"] for p in data["panels"]})==4,"four distinct panels")
+        for key in ("characters","themes","tags","articles","videos"):
             values = data.setdefault(key, [])
             require(isinstance(values, list) and all(isinstance(v,str) and v for v in values), key)
         require(all(re.fullmatch(r"[A-Za-z0-9_-]{11}", v) for v in data["videos"]), "videos")
@@ -136,6 +150,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
             urls.append(path)
     for i,c in enumerate(comics):
         panels = ''.join(f'<img src="{escape(p["src"])}" loading="lazy" alt="{escape(p["alt"])}">' for p in c["panels"])
+        transcript = "<details><summary>セリフ・表示文字</summary><ol>"+ "".join("<li>"+escape(p["text"] or "（無言）")+"</li>" for p in c["panels"])+"</ol></details>"
         refs = []
         for slug in c["articles"]:
             if slug in by_slug:  # Draft/deleted articles have no public URL.
@@ -155,6 +170,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
         body = ('<article class="blog-article">'+link("/comics/","← 4コマ漫画一覧")+
                 f'<p class="eyebrow">COMICS · {c["date"]}</p><h1>{escape(c["title"])}</h1>'
                 +'<div class="comic-tags">'+''.join(tags)+'</div><div class="comic-reader">'+panels+'</div>'
+                + transcript + ("<p>"+escape("・".join(c["tags"]))+"</p>" if c["tags"] else "")
                 + ('<h2>関連する記事・動画</h2><ul>'+''.join('<li>'+r+'</li>' for r in refs)+'</ul>' if refs else '')
                 + ('<nav class="pager" aria-label="前後の作品">'+''.join(neighbors)+'</nav>' if neighbors else '')
                 +link("/comics/","4コマ漫画一覧へ")+'</article>')
@@ -164,7 +180,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
     return reverse
 
 
-def home_sections(items, comics, card, categories):
+def home_sections(items, comics, card, categories, today_home):
     featured = next((a for a in items if a.get("featured")), items[0] if items else None)
     recent = [a for a in items if a is not featured][:3]
     html = '<section class="blog-home media-home"><div class="blog-home-head"><div><p class="eyebrow">ENCYCLOPEDIA</p><h2 id="blog-title">雑学大百科<span>雑学Blog</span></h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
@@ -175,6 +191,7 @@ def home_sections(items, comics, card, categories):
     elif featured:
         html = html.replace('<h3>特集記事</h3>', '<h3>特集・新着記事</h3>')
     html += '<div class="media-categories"><h3>カテゴリーから探す</h3>'+categories()+'</div></section>'
+    html += today_home
     if comics:
         c = comics[0]
         html += ('<section class="blog-home comic-home"><div class="blog-home-head"><div><p class="eyebrow">COMICS</p>'

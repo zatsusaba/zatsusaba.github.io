@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title" xml:lang="ja">
+  <title id="title">雑学大百科・人体</title>
+  <rect width="800" height="450" fill="#4a2336"/>
+  <path d="M0 0h13v450H0z" fill="#f3acaf"/>
+  <g fill="none" stroke="#f3acaf" opacity=".24">
+    <circle cx="758" cy="242" r="186"/><circle cx="758" cy="242" r="156"/>
+    <circle cx="758" cy="242" r="126"/><circle cx="758" cy="242" r="96"/>
+    <path d="M497 450 800 54M546 450 800 117M595 450 800 180"/>
+  </g>
+  <path d="M62 107h46" fill="none" stroke="#f3acaf" stroke-width="5"/>
+  <text x="62" y="156" fill="#f3acaf" font-family="sans-serif" font-size="26" font-weight="700" letter-spacing="4">雑学大百科</text>
+  <text x="59" y="286" fill="#fff9ee" font-family="serif" font-size="90" font-weight="700">人体</text>
+</svg>

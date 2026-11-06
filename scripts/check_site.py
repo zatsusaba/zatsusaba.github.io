@@ -35,8 +35,10 @@ def main():
     for name in ("index.html","story.html","characters.html","videos.html","video.html"):
         original=(ROOT/name).read_text(encoding="utf-8").split("<body",1)[1]
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
-        built=built.replace('<a href="/blog/">雑学Blog</a>',"")
-        built=re.sub(r'<section class="blog-home".*?</section>',"",built,flags=re.S)
+        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/comics/">4コマ</a>',"")
+        if name=="index.html":
+            original=re.sub(r'<section class="home-comic-strip".*?</section>',"",original,flags=re.S)
+        built=re.sub(r'<!--media:start-->.*?<!--media:end-->',"",built,flags=re.S)
         assert original==built, f"Legacy content changed: {name}"
     for a in load():
         text=(OUT/a["url"].lstrip("/")/"index.html").read_text(encoding="utf-8")

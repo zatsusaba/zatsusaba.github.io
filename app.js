@@ -33,7 +33,7 @@ function diaryBody(text){const re=/https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be
 function diaryDetail(id){const d=diaries().find(x=>x.id===id);if(!d)return '<div class="empty">日記が見つかりません。 <a href="diary.html">一覧へ戻る</a></div>';let image=diaryImage(d.image);let links=[];if(d.gameId&&get('games').some(g=>g.id===d.gameId))links.push(`<a href="games.html?id=${encodeURIComponent(d.gameId)}">関連ゲーム →</a>`);return `<article class="diary-detail"><a href="diary.html">← 日記一覧へ戻る</a><p class="eyebrow">ZATSUSABA DIARY</p><h2>${esc(d.title)}</h2><p class="detail-meta">${esc(d.date||'投稿日未確認')}</p>${image?`<img class="diary-detail-image" src="${image}" alt="${esc(d.title)}の投稿画像">`:''}<div class="diary-body">${diaryBody(d.body)}</div><div class="detail-actions">${links.join('')}${extLink(d.postUrl,'YouTubeの投稿でコメントする')}</div><a href="diary.html">← 日記一覧へ戻る</a></article>`}
 let page=document.body.dataset.page, el=document.querySelector('#content'), id=new URLSearchParams(location.search).get('id');
 if(page==='index'){
- const items=get('videos'),homeVideos=document.querySelector('#home-videos');
+ const items=[...curated.values()].filter(v=>/^[A-Za-z0-9_-]{11}$/.test(v.id)).sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,8),homeVideos=document.querySelector('#home-videos');
  if(items.length){
   homeVideos.innerHTML=`<div class="home-video-slider"><div class="home-slider-controls"><button type="button" class="home-slider-prev" aria-label="前の動画へ">←</button><button type="button" class="home-slider-next" aria-label="次の動画へ">→</button></div><div class="home-video-track" tabindex="0" aria-label="最新動画。左右にスクロールできます">${items.map(v=>card('videos',v)).join('')}</div></div>`;
   const track=homeVideos.querySelector('.home-video-track'),prev=homeVideos.querySelector('.home-slider-prev'),next=homeVideos.querySelector('.home-slider-next');
@@ -53,13 +53,35 @@ if(page==='videos'){
  el.innerHTML=listing('videos');
 }
 if(page==='video'){
- const video=get('videos').find(v=>v.id===id && /^[A-Za-z0-9_-]{11}$/.test(v.id));
+ const video=(/^[A-Za-z0-9_-]{11}$/.test(id) ? curated.get(id) : null);
  if(!video)el.innerHTML='<div class="empty">動画が見つかりません。 <a href="videos.html">動画一覧へ戻る</a></div>';
  else {
   document.title=video.title+' | 雑学サバイバル';
   const recommendations=get('videos').filter(v=>v.id!==video.id).slice(0,3);
   const shortVideo=video.format==='通常Shorts'||video.format==='切り抜き'||video.format==='Short MV';
   el.innerHTML=`<article class="watch-detail"><a href="videos.html">← 動画一覧へ戻る</a><h2>${esc(video.title)}</h2>${location.protocol==='file:'?`<div class="file-warning"><strong>HTTPプレビューで開いてください</strong><p>この画面はファイルを直接開いているため、YouTubeを埋め込むとエラー153になることがあります。フォルダ内の START_PREVIEW.bat から起動するか、下のリンクでYouTubeをご覧ください。</p></div>`:`<div class="player ${shortVideo?'player-short':''}"><iframe src="https://www.youtube.com/embed/${video.id}" title="${esc(video.title)}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`}<p class="player-help">再生できない場合は <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" rel="noopener noreferrer">YouTubeで直接見る ↗</a></p><h3>作品紹介</h3><p>${esc(video.description||'作品紹介は準備中です。')}</p><p><a href="videos.html">← 動画一覧へ戻る</a></p></article><section class="recommendations"><h2>おすすめ動画</h2>${recommendations.length?`<div class="cards video-grid">${recommendations.map(x=>card('videos',x)).join('')}</div>`:'<p>関連動画は準備中です。</p>'}</section>`;
+  const canonical = new URL(document.querySelector('link[rel="canonical"]')?.href || 'https://zatsusaba.github.io/video.html');
+  canonical.searchParams.set('id', id);
+  document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical.href);
+  document.querySelector('meta[property="og:url"]')?.setAttribute('content',canonical.href);
+  document.querySelector('meta[property="og:title"]')?.setAttribute('content',video.title);
+  document.querySelector('meta[property="og:image"]')?.setAttribute('content','https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  const summary = (video.description || video.title).slice(0,160);
+  for (const selector of ['meta[name="description"]','meta[property="og:description"]']) {
+   document.querySelector(selector)?.setAttribute('content',summary);
+  }
+  fetch('/video-links.json').then(r=>r.json()).then(index=>{
+   if(!index[id]?.length) return;
+   const box=document.createElement('section');
+   const heading=document.createElement('h3');
+   heading.textContent='この動画をもっと読む';
+   box.append(heading);
+   for(const [url,title] of index[id]){
+    const row=document.createElement('p'), anchor=document.createElement('a');
+    anchor.href=url; anchor.textContent=title; row.append(anchor); box.append(row);
+   }
+   el.querySelector('.watch-detail').append(box);
+  }).catch(()=>{});
  }
 }
 if(page==='characters'){

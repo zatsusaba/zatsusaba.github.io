@@ -129,7 +129,7 @@ def comic_sheet(comic):
         if panel["text"] and panel["text"] not in alt:
             alt += " "+panel["text"]
         cells.append(f'<a href="{src}" title="{number}コマ目を拡大"><img src="{src}" alt="{escape(alt,quote=True)}" loading="lazy"></a>')
-    return '<div class="comic-sheet" role="group" aria-label="左上から右へ、次に下段へ読む4コマ">'+''.join(cells)+'</div>'
+    return '<div class="comic-sheet" role="group" aria-label="上から順に読む4コマ">'+''.join(cells)+'</div>'
 
 
 def render_comics(comics, articles, page, write, urls, known_videos):
@@ -176,13 +176,13 @@ def render_comics(comics, articles, page, write, urls, known_videos):
         if i:
             neighbors.append(link(comics[i-1]["url"],"次作："+comics[i-1]["title"]+" →"))
         tags = [link(group_url(kind,v),v) for key,kind in (("characters","character"),("themes","theme")) for v in c[key]]
-        body = ('<article class="blog-article comic-detail">'+link("/comics/","← Comic一覧")+
+        body = ('<article class="blog-article comic-detail">'+comic_sheet(c)+'<div class="comic-info">'+link("/comics/","← Comic一覧")+
                 f'<p class="eyebrow">COMICS · {c["date"]}</p><h1>{escape(c["title"])}</h1>'
-                +'<div class="comic-tags">'+''.join(tags)+'</div>'+comic_sheet(c)
+                +'<div class="comic-tags">'+''.join(tags)+'</div>'
                 + ("<p>"+escape("・".join(c["tags"]))+"</p>" if c["tags"] else "")
                 + ('<h2>関連する記事・動画</h2><ul>'+''.join('<li>'+r+'</li>' for r in refs)+'</ul>' if refs else '')
                 + ('<nav class="pager" aria-label="前後の作品">'+''.join(neighbors)+'</nav>' if neighbors else '')
-                +link("/comics/","Comic一覧へ")+'</article>')
+                +link("/comics/","Comic一覧へ")+'</div></article>')
         write(c["url"],page(c["title"],"・".join(c["characters"])+"が登場する4コマ漫画「"+c["title"]+"」。",c["url"],body,c["panels"][0]["src"]))
         urls.append(c["url"])
     write("/video-links.json",compact(video_map))

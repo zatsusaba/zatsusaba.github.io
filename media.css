@@ -307,25 +307,28 @@ footer .site-info-links a { display: inline-flex; align-items: center; min-heigh
   header nav { gap: 9px; }
 }
 
+
+.blog-article.comic-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+  align-items: start;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+}
 .comic-sheet {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 4px;
-  width: min(100%, 600px, max(180px, calc(76svh - 155px)));
-  margin: 12px auto;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  height: calc(100svh - 84px);
+  gap: 2px;
+  padding: 4px;
+  background: #101010;
 }
-.comic-sheet a {
-  display: block;
-  height: clamp(86px, calc((100svh - 266px) / 2), 320px);
-  background: #000;
-  cursor: zoom-in;
-}
-.comic-sheet img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.comic-detail { padding-block-start: 14px; }
-.comic-detail h1 { margin-block: 4px 8px; font-size: clamp(20px, 3vw, 32px); }
-.comic-detail .eyebrow { margin-block: 6px; }
-.comic-detail .comic-tags { margin-block: 4px; }
-.comic-detail .comic-tags a { min-height: 28px; padding-block: 3px; }
+.comic-sheet a { min-height: 0; display: block; width: fit-content; max-width: 100%; margin-inline: auto; cursor: zoom-in; }
+.comic-sheet img { display: block; height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+.comic-info { padding: clamp(16px, 3vw, 40px); min-width: 0; }
+.comic-detail h1 { font-size: clamp(20px, 3vw, 32px); }
 @media (max-width: 700px) {
-  .comic-sheet a { height: min(62vw, max(80px, calc((100svh - 260px) / 2))); }
+  .blog-article.comic-detail { display: block; }
+  .comic-sheet { height: calc(100svh - 142px - env(safe-area-inset-bottom)); }
 }

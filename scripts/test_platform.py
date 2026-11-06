@@ -57,7 +57,9 @@ src["youtube"]=vid
 article(src)
 b.build()
 assert "/comics/episode/" in read("index.html")+read("comics/index.html")
-for location in ("index.html","comics/episode/index.html"):
+assert "テスト動画" not in read("index.html") and "テスト動画" not in read("today/index.html")
+assert "テスト動画" in read("today/2021-01-01/index.html")
+for location in ("comics/episode/index.html",):
     html=read(location)
     assert 'class="comic-sheet"' in html and "セリフ・表示文字" not in html
     assert all(f'href="/comic-media/episode/panel{i}.png"' in html for i in range(1,5))

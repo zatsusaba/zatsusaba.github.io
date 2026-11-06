@@ -33,7 +33,7 @@ else:
     raise AssertionError("Unknown category accepted")
 print("PASS: additions, related/category links, revisions, draft exclusion, stale-page removal, metadata rejection")
 # Freeze UTC instants, then exercise the real metadata loader across JST boundaries.
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from unittest.mock import patch
 second.write_text(sample.replace("---\n", "---\ndraft: true\n", 1), encoding="utf-8")
 article=root/"articles/pineapple.md"
@@ -46,7 +46,8 @@ for instant, expected_today in (
     ("2026-12-31T15:00:00+00:00", "2027-01-01"),  # year boundary
 ):
     frozen=datetime.fromisoformat(instant)
-    with patch.object(b, "datetime") as clock:
+    with patch.object(b, "datetime") as clock, patch.object(b, "date", wraps=date) as host_date:
+        host_date.today.return_value=frozen.date()  # Simulate a UTC GitHub runner.
         clock.now.side_effect=lambda tz: frozen.astimezone(tz)
         # Both a new publication and an update to an older article are allowed today.
         for published in (expected_today, "2026-11-01"):
@@ -54,9 +55,10 @@ for instant, expected_today in (
                                .replace("updated: 2026-11-06", "updated: "+expected_today), encoding="utf-8")
             assert b.load()[0]["updated"] == expected_today
         # Future publication/update and update-before-publication remain invalid.
+        tomorrow=(date.fromisoformat(expected_today)+timedelta(days=1)).isoformat()
         for published, updated in (
-            ("2027-01-02", "2027-01-02"),
-            ("2026-11-01", "2027-01-02"),
+            (tomorrow, tomorrow),
+            ("2026-11-01", tomorrow),
             (expected_today, "2026-11-01"),
         ):
             article.write_text(sample.replace("\ndate: 2026-11-06", "\ndate: "+published)

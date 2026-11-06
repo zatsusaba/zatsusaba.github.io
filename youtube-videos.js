@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "4JOYg0HovOo",
+    "title": "お札の謎 #漫画 #雑学 #お札",
+    "publishedAt": "2026-11-06T06:00:09Z",
+    "date": "2026-11-06",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "役目を終えたお札は、どうなる？\n日本銀行に戻り、傷みなどで再び使えないお札は細かく裁断されます。その一部はトイレットペーパーなどの紙製品にリサイクルされます。\n\n参考：日本銀行（お札の寿命と回収後の行き先）\nhttps://www.boj.or.jp/about/education/oshiete/money/c10.htm\n\n#漫画 #雑学 #お札"
+  },
+  {
     "id": "0FajDHylIPo",
     "title": "二度寝はエンドレス #漫画 #雑学 #睡眠",
     "publishedAt": "2026-11-06T03:00:16Z",

@@ -7,12 +7,6 @@ from datetime import datetime, timedelta, timezone
 JST = timezone(timedelta(hours=9))
 CHANNEL = "UCr1ZBUGj3GHgBrgaHI-o5Yg"
 ROOT = pathlib.Path(__file__).resolve().parent
-GENRES = {
-    "食事の秘密", "自然の秘密", "科学の秘密", "人間の秘密",
-    "お金の秘密", "世界の秘密", "ゲームの秘密", "話題の秘密",
-    "ショート漫画【1話完結】"
-}
-
 def call(endpoint, **params):
     params["key"] = os.environ["YOUTUBE_API_KEY"]
     url = "https://www.googleapis.com/youtube/v3/" + endpoint + "?" + urllib.parse.urlencode(params)
@@ -81,14 +75,14 @@ def main():
         raise RuntimeError("empty upload list; preserving old data")
 
     genres = {}
-    for playlist in pages("playlists", part="snippet", channelId=CHANNEL, maxResults=50):
+    for playlist in pages("playlists", part="snippet,status", channelId=CHANNEL, maxResults=50):
         label = playlist["snippet"]["title"]
-        if label not in GENRES:
+        if playlist.get("status", {}).get("privacyStatus") != "public":
             continue
         for item in pages("playlistItems", part="contentDetails", playlistId=playlist["id"], maxResults=50):
             vid = item.get("contentDetails", {}).get("videoId")
-            if vid:
-                genres.setdefault(vid, []).append(label)
+            if vid in ids and label not in genres.setdefault(vid, []):
+                genres[vid].append(label)
 
     formats = json.loads((ROOT / 'config/youtube-formats.json').read_text(encoding='utf-8'))
     videos = {}

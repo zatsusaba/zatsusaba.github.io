@@ -36,7 +36,13 @@ def calendar(videos, root):
                 raise ValueError(f"{vid}: date disagrees with JST publishedAt")
         # Old sync classified duration >=60 seconds as long; never reuse that label.
         kind = video["format"] if video.get("formatEvidence") else formats.get(vid,{}).get("format","未確認")
-        groups[day].append((stamp or "", vid, video["title"], kind))
+        playlists = list(dict.fromkeys(video.get("genres", [])))
+        if kind in {"Shorts", "ショート漫画"} or any("【Shorts】" in name or name=="ショート漫画【1話完結】" for name in playlists):
+            kind = "Shorts"
+            label = kind
+        else:
+            label = " ／ ".join(playlists)
+        groups[day].append((stamp or "", vid, video["title"], kind, label))
     for day, entries in groups.items():
         if day:
             entries.sort(reverse=True)
@@ -53,11 +59,13 @@ def render(videos, articles, root, page, write, urls):
 
     def cards(dated_entries):
         result = []
-        for day, (_, vid, title, kind) in dated_entries:
+        for day, (_, vid, title, _, label) in dated_entries:
             href = "/video.html?id="+vid
-            label = "種別未確認" if kind == "未確認" else kind
+            metadata = day or "公開日時を確認中"
+            if label:
+                metadata += " · " + label
             extra = "".join(link(a["url"], "詳しく読む："+a["title"]) for a in deep[vid])
-            result.append(f'<article class="daily-card"><a href="{href}"><img loading="lazy" width="320" height="180" src="https://i.ytimg.com/vi/{vid}/mqdefault.jpg" alt=""><small>{escape(day or "公開日時を確認中")} · {escape(label)}</small><h3>{escape(title)}</h3></a>{extra}</article>')
+            result.append(f'<article class="daily-card"><a href="{href}"><img loading="lazy" width="320" height="180" src="https://i.ytimg.com/vi/{vid}/mqdefault.jpg" alt=""><small>{escape(metadata)}</small><h3>{escape(title)}</h3></a>{extra}</article>')
         return '<div class="daily-grid">'+"".join(result)+'</div>'
 
     for day, entries in groups.items():

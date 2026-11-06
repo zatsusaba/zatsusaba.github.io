@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "OJx_hVZdGIs",
+    "title": "タツノオトシゴの不思議 #漫画 #雑学 #タツノオトシゴ",
+    "publishedAt": "2026-11-06T13:00:21Z",
+    "date": "2026-11-06",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "赤ちゃんを産むのは、なんとオスのタツノオトシゴ。\nメスが作った卵をオスの育児嚢に渡し、そこで受精・発生してから稚魚が生まれます。\n\n参考：NOAA（タツノオトシゴの繁殖）\nhttps://oceanservice.noaa.gov/facts/seahorse.html\n\n#漫画 #雑学 #タツノオトシゴ"
+  },
+  {
     "id": "cbkPwUDroPs",
     "title": "面白い雑学300選！聞き流しでわかる、恋愛と人間関係の「なんで？」【作業用】",
     "publishedAt": "2026-11-06T10:58:18Z",

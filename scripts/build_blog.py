@@ -4,6 +4,8 @@ from datetime import date, datetime, timedelta, timezone
 from html import escape as e
 import json, re, shutil
 import markdown, yaml
+import site_info
+from xml.etree import ElementTree as ET
 import media
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -46,7 +48,7 @@ def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | 雑学サバイバル</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head><body class="blog-page"><a class="skip" href="#main">本文へ</a><header><a class="brand" href="/"><img src="/assets/logo-cut.png" alt="雑学サバイバル"><span>ZATSUGAKU<br>SURVIVAL</span></a><nav aria-label="メインナビゲーション">{nav(url)}</nav></header><main id="main">{body}</main><footer><a href="/">HOME</a><a href="/blog/">雑学Blog</a><a href="https://www.youtube.com/@zatsusaba">YouTube ↗</a></footer><nav class="mobile-nav" aria-label="モバイルナビゲーション">{nav(url)}</nav></body></html>'''
+<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head><body class="blog-page"><a class="skip" href="#main">本文へ</a><header><a class="brand" href="/"><img src="/assets/logo-cut.png" alt="雑学サバイバル"><span>ZATSUGAKU<br>SURVIVAL</span></a><nav aria-label="メインナビゲーション">{nav(url)}</nav></header><main id="main">{body}</main><footer><a href="/">HOME</a><a href="/blog/">雑学Blog</a><a href="https://www.youtube.com/@zatsusaba">YouTube ↗</a>{site_info.FOOTER}</footer><nav class="mobile-nav" aria-label="モバイルナビゲーション">{nav(url)}</nav></body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
@@ -71,7 +73,7 @@ def build():
         if p.is_file() and p.suffix in (".html",".css",".js",".txt") and p.name!="requirements-blog.txt": shutil.copy2(p,OUT/p.name)
     for folder in ("assets","panels-v2"):
         shutil.copytree(ROOT/folder,OUT/folder,dirs_exist_ok=True)
-    urls=["/","/story.html","/characters.html","/videos.html","/video.html"]
+    urls=["/","/story.html","/characters.html","/videos.html"]
     media.search_files(items,write)
     archives=[("/blog/","雑学Blog","",items)]
     for name,slug in CATS.items():
@@ -105,18 +107,37 @@ def build():
     for p in OUT.glob("*.html"):
         html=p.read_text(encoding="utf-8")
         html=re.sub(r'(<a href="index.html"[^>]*>HOME</a>)',lambda m:m[0]+'<a href="/blog/">雑学Blog</a><a href="/comics/">4コマ</a>',html)
+        html=html.replace("</footer>",site_info.FOOTER+"</footer>")
         if p.name=="index.html":
+            token_path=ROOT/"config"/"google-verification"
+            if token_path.is_file():
+                token=token_path.read_text(encoding="utf-8-sig").strip()
+                check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
+                html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
             section=media.home_sections(items,comics,card,categories)
             html=re.sub(r'<section class="home-comic-strip".*?</section>',"",html,flags=re.S)
             html=html.replace('<section class="section light home-section home-videos-section">','<!--media:start-->'+section+'<!--media:end--><section class="section light home-section home-videos-section">')
         u="/" if p.name=="index.html" else "/"+p.name
-        if 'rel="canonical"' not in html: html=html.replace("</head>",f'<link rel="canonical" href="{BASE}{u}"></head>')
+        if p.name!="video.html" and 'rel="canonical"' not in html: html=html.replace("</head>",f'<link rel="canonical" href="{BASE}{u}"></head>')
         if '/blog.css' not in html: html=html.replace("</head>",'<link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head>')
         if 'property="og:url"' not in html:
             html=html.replace("</head>",f'<meta property="og:url" content="{BASE}{u}"><meta property="og:image" content="{BASE}/assets/hero-duo-v2.png"></head>')
         p.write_text(html,encoding="utf-8")
     write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/blog/">雑学Blogへ →</a><p><a href="/">HOMEへ戻る</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
-    write("/sitemap.xml",'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}{u}</loc></url>' for u in urls)+'</urlset>')
+    for url,title,content,desc in [
+        ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
+        ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
+    ]:
+        write(url,page(title,desc,url,f'<article class="blog-article"><h1>{title}</h1><div class="blog-prose">{content}</div></article>'))
+        urls.append(url)
+    modified={a["url"]:a["updated"] for a in items}
+    sitemap=ET.Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for url in urls:
+        entry=ET.SubElement(sitemap,"url")
+        ET.SubElement(entry,"loc").text=BASE+url
+        if url in modified:
+            ET.SubElement(entry,"lastmod").text=modified[url]
+    write("/sitemap.xml",ET.tostring(sitemap,encoding="unicode"))
     write("/robots.txt",f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     (OUT/".blog-generated.json").write_text(json.dumps([str(p.relative_to(OUT)) for p in OUT.rglob("*.html")]+["sitemap.xml","video-links.json"]+[str(p.relative_to(OUT)) for p in (OUT/"search").glob("*.json")]))
     print(f"Built {len(items)} articles into {OUT}")

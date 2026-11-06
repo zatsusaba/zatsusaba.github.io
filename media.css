@@ -241,3 +241,7 @@ header nav a::after { bottom: 5px; }
 .search-results li a { font-weight:700; font-size:1.12rem; }
 .search-results li p { line-height:1.7; }
 .search-results button { padding:10px 18px; margin-right:8px; }
+
+footer:has(.site-info-links) { flex-wrap: wrap; }
+footer .site-info-links { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: 4px 22px; border-top: 1px solid #555; padding-top: 10px; }
+footer .site-info-links a { display: inline-flex; align-items: center; min-height: 44px; margin: 0; color: #eee; text-decoration: underline; }

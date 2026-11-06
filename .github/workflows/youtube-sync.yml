@@ -42,13 +42,20 @@ jobs:
           git add youtube-videos.js
           git diff --cached --quiet || (git commit -m 'Update public YouTube videos' && git push)
 
+      - name: Build static blog
+        run: |
+          pip install -r requirements-blog.txt
+          python scripts/build_blog.py
+          python scripts/check_site.py
+          python scripts/test_blog_updates.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Publish site
         id: deploy

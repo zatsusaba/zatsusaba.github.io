@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title" xml:lang="ja">
+  <title id="title">雑学大百科・科学</title>
+  <rect width="800" height="450" fill="#223e50"/>
+  <path d="M0 0h13v450H0z" fill="#a2d6e1"/>
+  <g fill="none" stroke="#a2d6e1" opacity=".24">
+    <circle cx="758" cy="242" r="186"/><circle cx="758" cy="242" r="156"/>
+    <circle cx="758" cy="242" r="126"/><circle cx="758" cy="242" r="96"/>
+    <path d="M497 450 800 54M546 450 800 117M595 450 800 180"/>
+  </g>
+  <path d="M62 107h46" fill="none" stroke="#a2d6e1" stroke-width="5"/>
+  <text x="62" y="156" fill="#a2d6e1" font-family="sans-serif" font-size="26" font-weight="700" letter-spacing="4">雑学大百科</text>
+  <text x="59" y="286" fill="#fff9ee" font-family="serif" font-size="90" font-weight="700">科学</text>
+</svg>

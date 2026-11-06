@@ -35,19 +35,21 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python sync_youtube.py
 
-      - name: Save video data
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add youtube-videos.js
-          git diff --cached --quiet || (git commit -m 'Update public YouTube videos' && git push)
-
       - name: Build static blog
         run: |
           pip install -r requirements-blog.txt
           python scripts/build_blog.py
           python scripts/check_site.py
           python scripts/test_blog_updates.py
+          python scripts/test_platform.py
+          python scripts/test_youtube_sync.py
+
+      - name: Save video data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add youtube-videos.js
+          git diff --cached --quiet || (git commit -m 'Update public YouTube videos' && git push)
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

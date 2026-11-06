@@ -5,8 +5,7 @@ for (const v of (window.YOUTUBE_VIDEOS || [])) {
  const old=curated.get(v.id);
  curated.set(v.id, old ? {...v,...old,description:old.description?.trim()?old.description:(v.description||''),genres:(v.genres||[]).length?v.genres:old.genres} : v);
 }
-const confirmedVideoFormats=new Set(['長尺動画','ショート漫画','MV','その他']);
-data.videos=[...curated.values()].filter(v=>confirmedVideoFormats.has(v.format));
+data.videos=[...curated.values()];
 const get = key => Array.isArray(data[key]) ? [...data[key]].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))) : [];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const asset = u => /^(?:assets|panels-v2)\/[a-zA-Z0-9_./-]+$/.test(u || '') && !String(u).includes('..') ? esc(u) : '';
@@ -33,14 +32,6 @@ function diaryBody(text){const re=/https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be
 function diaryDetail(id){const d=diaries().find(x=>x.id===id);if(!d)return '<div class="empty">日記が見つかりません。 <a href="diary.html">一覧へ戻る</a></div>';let image=diaryImage(d.image);let links=[];if(d.gameId&&get('games').some(g=>g.id===d.gameId))links.push(`<a href="games.html?id=${encodeURIComponent(d.gameId)}">関連ゲーム →</a>`);return `<article class="diary-detail"><a href="diary.html">← 日記一覧へ戻る</a><p class="eyebrow">ZATSUSABA DIARY</p><h2>${esc(d.title)}</h2><p class="detail-meta">${esc(d.date||'投稿日未確認')}</p>${image?`<img class="diary-detail-image" src="${image}" alt="${esc(d.title)}の投稿画像">`:''}<div class="diary-body">${diaryBody(d.body)}</div><div class="detail-actions">${links.join('')}${extLink(d.postUrl,'YouTubeの投稿でコメントする')}</div><a href="diary.html">← 日記一覧へ戻る</a></article>`}
 let page=document.body.dataset.page, el=document.querySelector('#content'), id=new URLSearchParams(location.search).get('id');
 if(page==='index'){
- const items=[...curated.values()].filter(v=>/^[A-Za-z0-9_-]{11}$/.test(v.id)).sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,8),homeVideos=document.querySelector('#home-videos');
- if(items.length){
-  homeVideos.innerHTML=`<div class="home-video-slider"><div class="home-slider-controls"><button type="button" class="home-slider-prev" aria-label="前の動画へ">←</button><button type="button" class="home-slider-next" aria-label="次の動画へ">→</button></div><div class="home-video-track" tabindex="0" aria-label="最新動画。左右にスクロールできます">${items.map(v=>card('videos',v)).join('')}</div></div>`;
-  const track=homeVideos.querySelector('.home-video-track'),prev=homeVideos.querySelector('.home-slider-prev'),next=homeVideos.querySelector('.home-slider-next');
-  const state=()=>{prev.disabled=track.scrollLeft<=3;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-3};
-  const move=dir=>{const first=track.querySelector('.video-card');const distance=(first?first.getBoundingClientRect().width:track.clientWidth)+20;track.scrollBy({left:dir*distance,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
-  prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));track.addEventListener('scroll',state,{passive:true});window.addEventListener('resize',state,{passive:true});requestAnimationFrame(state);
- }else homeVideos.innerHTML=fallback('videos');
  const teaser=data.teaser, target=teaser&&get('videos').find(v=>v.id===teaser.videoId&&/^[A-Za-z0-9_-]{11}$/.test(v.id));
  if(target)document.querySelector('#home-teaser').innerHTML=`<a class="home-teaser" href="video.html?id=${encodeURIComponent(target.id)}"><img src="https://i.ytimg.com/vi/${target.id}/mqdefault.jpg" alt="" loading="lazy"><span class="teaser-play" aria-hidden="true">▶</span><span><small>WATCH THE TEASER</small><strong>${esc(teaser.title||target.title)}</strong></span></a>`;
 }

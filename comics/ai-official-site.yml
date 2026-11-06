@@ -1,9 +1,11 @@
+status: approved
+approval: 作者が公式サイト2.0で公開承認した既存作品
 title: AIで公式サイト
 date: 2026-10-29
 characters: [太郎, キュウちゃん]
 themes: [制作裏話]
 panels:
-  - {src: /panels-v2/panel1.png, alt: '1コマ目：キュウちゃん「公式サイト作ったぞー！」'}
-  - {src: /panels-v2/panel2.png, alt: '2コマ目：太郎「すげぇ！手間かかってんな」'}
-  - {src: /panels-v2/panel3.png, alt: '3コマ目：キュウちゃん「AIで五秒だ」'}
-  - {src: /panels-v2/panel4.png, alt: '4コマ目：太郎「まじ半端ねぇ」'}
+  - {src: /panels-v2/panel1.png, alt: '1コマ目：キュウちゃん「公式サイト作ったぞー！」', text: '公式サイト作ったぞー！'}
+  - {src: /panels-v2/panel2.png, alt: '2コマ目：太郎「すげぇ！手間かかってんな」', text: 'すげぇ！手間かかってんな'}
+  - {src: /panels-v2/panel3.png, alt: '3コマ目：キュウちゃん「AIで五秒だ」', text: 'AIで五秒だ'}
+  - {src: /panels-v2/panel4.png, alt: '4コマ目：太郎「まじ半端ねぇ」', text: 'まじ半端ねぇ'}

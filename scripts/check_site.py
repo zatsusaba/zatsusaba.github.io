@@ -37,15 +37,18 @@ def main():
             if target.is_dir(): target=target/"index.html"
             assert target.is_file(), f"Broken link: {p}: {u}"
     home=(OUT/"index.html").read_text(encoding="utf-8")
-    assert home.index('id="blog-title"') < home.index('id="home-videos"')
+    assert home.index('id="blog-title"') < home.index('class="blog-home daily-home"')
+    if 'class="blog-home comic-home"' in home:
+        assert home.index('class="blog-home daily-home"') < home.index('class="blog-home comic-home"')
     # Removing only our insertions must recover the original page body exactly.
     for name in ("index.html","story.html","characters.html","videos.html","video.html"):
         original=(ROOT/name).read_text(encoding="utf-8").split("<body",1)[1]
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
         assert FOOTER in built
         built=built.replace(FOOTER,'')
-        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/comics/">4コマ</a>',"")
+        built=built.replace('<a href="/blog/">雑学大百科</a><a href="/today/">今日の雑学</a><a href="/comics/">4コマ</a>',"")
         if name=="index.html":
+            original=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',"",original,flags=re.S)
             original=re.sub(r'<section class="home-comic-strip".*?</section>',"",original,flags=re.S)
         built=re.sub(r'<!--media:start-->.*?<!--media:end-->',"",built,flags=re.S)
         assert original==built, f"Legacy content changed: {name}"

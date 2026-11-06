@@ -3,13 +3,15 @@ title: パイナップルは木にならない？「草」に実る果物の正�
 description: 木の上に実ると思いがちなパイナップル。実は多年草です。公開済み漫画動画を入り口に、林野庁の資料から株と花の仕組みを読み解きます。
 date: 2026-11-06
 updated: 2026-11-06
+status: published
 category: 食べ物
 tags: [パイナップル, 植物, 果物]
 image: https://i.ytimg.com/vi/q5FluB5f-b8/hqdefault.jpg
 image_alt: 漫画動画「パイナップルの木は」のサムネイル
 youtube: q5FluB5f-b8
 sources:
-  - title: 林野庁 西表森林生態系保全センター「パイナップル」
+  - checked: 2026-11-06
+    title: 林野庁 西表森林生態系保全センター「パイナップル」
     url: https://www.rinya.maff.go.jp/kyusyu/iriomote_fc/iriomote_syokubutusi/attach/pdf/syokubutusi_1-176.pdf
 ---
 スーパーで見るパイナップル。あの大きな実が、ヤシの木のような高い木からぶら下がっているところを想像していませんか？

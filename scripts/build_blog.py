@@ -1,6 +1,6 @@
 """Build static blog in an isolated Pages artifact."""
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from html import escape as e
 import json, re, shutil
 import markdown, yaml
@@ -8,10 +8,13 @@ import markdown, yaml
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
+# Current Japanese civil time (UTC+09:00), independent of the runner timezone.
+JST=timezone(timedelta(hours=9), "Asia/Tokyo")
 CATS=dict(zip(["食べ物","人体","動物","自然","宇宙","歴史","心理","お金","身近なモノ"],["food","body","animals","nature","space","history","psychology","money","everyday"]))
 def check(ok,msg):
     if not ok: raise ValueError(msg)
 def load():
+    today=datetime.now(JST).date().isoformat()
     result=[]
     for p in sorted((ROOT/"articles").glob("*.md")):
         check(re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*",p.stem),f"Invalid slug: {p}")
@@ -24,7 +27,7 @@ def load():
             check(a.get(key),f"{p}: missing {key}")
         check(a["category"] in CATS,f"{p}: unknown category")
         for key in ("date","updated"): a[key]=date.fromisoformat(str(a[key])).isoformat()
-        check(a["date"]<=a["updated"]<=date.today().isoformat(),f"{p}: invalid dates")
+        check(a["date"]<=a["updated"]<=today,f"{p}: invalid dates")
         check(not a.get("youtube") or re.fullmatch(r"[\w-]{11}",a["youtube"]),f"{p}: invalid video ID")
         for s in a["sources"]: check(s.get("title") and s.get("url","").startswith("https://"),f"{p}: invalid source")
         check(a["image"].startswith(("/assets/","https://i.ytimg.com/")),f"{p}: invalid image")

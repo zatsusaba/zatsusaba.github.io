@@ -62,7 +62,10 @@ if(page==='video'){
   el.innerHTML=`<article class="watch-detail"><a href="videos.html">← 動画一覧へ戻る</a><h2>${esc(video.title)}</h2>${location.protocol==='file:'?`<div class="file-warning"><strong>HTTPプレビューで開いてください</strong><p>この画面はファイルを直接開いているため、YouTubeを埋め込むとエラー153になることがあります。フォルダ内の START_PREVIEW.bat から起動するか、下のリンクでYouTubeをご覧ください。</p></div>`:`<div class="player ${shortVideo?'player-short':''}"><iframe src="https://www.youtube.com/embed/${video.id}" title="${esc(video.title)}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`}<p class="player-help">再生できない場合は <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" rel="noopener noreferrer">YouTubeで直接見る ↗</a></p><h3>作品紹介</h3><p>${esc(video.description||'作品紹介は準備中です。')}</p><p><a href="videos.html">← 動画一覧へ戻る</a></p></article><section class="recommendations"><h2>おすすめ動画</h2>${recommendations.length?`<div class="cards video-grid">${recommendations.map(x=>card('videos',x)).join('')}</div>`:'<p>関連動画は準備中です。</p>'}</section>`;
   const canonical = new URL(document.querySelector('link[rel="canonical"]')?.href || 'https://zatsusaba.github.io/video.html');
   canonical.searchParams.set('id', id);
-  document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical.href);
+  const canonicalLink=document.createElement('link');
+  canonicalLink.rel='canonical';
+  canonicalLink.href=canonical.href;
+  document.head.append(canonicalLink);
   document.querySelector('meta[property="og:url"]')?.setAttribute('content',canonical.href);
   document.querySelector('meta[property="og:title"]')?.setAttribute('content',video.title);
   document.querySelector('meta[property="og:image"]')?.setAttribute('content','https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');

@@ -75,6 +75,9 @@ def main():
         for href in re.findall(r'<a\s+[^>]*?href="([^"]+)"',html):
             target=urlsplit(urljoin(BASE+url,href))
             if target.netloc=="zatsusaba.github.io": pending.append(target.path)
+    policy="/editorial-policy/"
+    assert policy in visited and BASE+policy in dates
+    assert Document((OUT/"editorial-policy/index.html").read_text(encoding="utf-8")).canon==[BASE+policy]
     for a in load():
         url=a["url"]
         html=(OUT/url.strip("/")/"index.html").read_text(encoding="utf-8")

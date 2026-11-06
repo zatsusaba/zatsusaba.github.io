@@ -156,6 +156,7 @@ def build():
         p.write_text(html,encoding="utf-8")
     write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/blog/">雑学Blogへ →</a><p><a href="/">HOMEへ戻る</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
     for url,title,content,desc in [
+        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑学大百科の事実確認とAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
         ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:

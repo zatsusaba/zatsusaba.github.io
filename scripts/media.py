@@ -129,7 +129,12 @@ def comic_sheet(comic):
         if panel["text"] and panel["text"] not in alt:
             alt += " "+panel["text"]
         cells.append(f'<a href="{src}" title="{number}コマ目を拡大"><img src="{src}" alt="{escape(alt,quote=True)}" loading="lazy"></a>')
-    return '<div class="comic-sheet" role="group" aria-label="上から順に読む4コマ">'+''.join(cells)+'</div>'
+    viewer = ('<dialog id="comic-viewer" aria-label="拡大した漫画"><div class="viewer-tools">'
+              '<output aria-live="polite"></output><button type="button" data-close autofocus>閉じる ×</button></div>'
+              '<img alt=""><button type="button" data-prev aria-label="前のコマ">‹</button>'
+              '<button type="button" data-next aria-label="次のコマ">›</button></dialog>'
+              '<script type="module" src="/comic-viewer.js"></script>')
+    return '<div class="comic-sheet" role="group" aria-label="上から順に読む4コマ">'+''.join(cells)+'</div>'+viewer
 
 
 def render_comics(comics, articles, page, write, urls, known_videos):

@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "JLWEj7NyfOI",
+    "title": "自分の声ヤバすぎ #漫画 #雑学 #骨伝導",
+    "publishedAt": "2026-11-06T22:00:17Z",
+    "date": "2026-11-07",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "録音した自分の声を聞くと、なんだか別人みたい。\n話しているときは、空気を伝わる音に加えて、骨などを伝わる振動も聞いています。普通の録音再生ではその成分がなく、マイクやスピーカーによっても音は変わります。\n\n参考：Frontiers for Young Minds（空気伝導と骨伝導）\nhttps://kids.frontiersin.org/articles/10.3389/frym.2025.1480846\n\n#漫画 #雑学 #骨伝導"
+  },
+  {
     "id": "OJx_hVZdGIs",
     "title": "タツノオトシゴの不思議 #漫画 #雑学 #タツノオトシゴ",
     "publishedAt": "2026-11-06T13:00:21Z",

@@ -8,22 +8,22 @@ characters:
 themes:
 - 動物
 panels:
-- src: /comic-media/vampire-bat-sharing/01.png
+- src: /comic-media/vampire-bat-sharing/01-color-20261107.png
   alt: 1コマ目：夜の太郎の部屋。プリンを食べようとする太郎に、後ろからキュウちゃんが半分を要求する。
   text: 'キュウちゃん「タロウ。それを半分よこせ」
 
     太郎「やだよ。一時間並んだんだから」'
-- src: /comic-media/vampire-bat-sharing/02.png
+- src: /comic-media/vampire-bat-sharing/02-color-20261107.png
   alt: 2コマ目：腕を組んでふんぞり返るキュウちゃん。丸い図には仲間と食べ物を分け合うコウモリ。太郎はプリンを抱える。
   text: 'キュウちゃん「吸血コウモリは、仲間に血を吐いて分けるのじゃ」
 
     キュウちゃん「見習え」'
-- src: /comic-media/vampire-bat-sharing/03.png
+- src: /comic-media/vampire-bat-sharing/03-color-20261107.png
   alt: 3コマ目：プリンを抱えた太郎が反論する。キュウちゃんは腕を組んだまま閉口し、汗を一筋流して目をそらす。
   text: '太郎「それ、前にくれた相手によく分けるんでしょ」
 
     太郎「僕、何かもらったっけ？」'
-- src: /comic-media/vampire-bat-sharing/04.png
+- src: /comic-media/vampire-bat-sharing/04-color-20261107.png
   alt: 4コマ目：白靴下のキュウちゃんがお腹をさする。床には空のポテチ袋。太郎はプリンを頭上に掲げてのけぞる。
   text: 'キュウちゃん「……さっきのポテチなら、今から出せるぞ」
 

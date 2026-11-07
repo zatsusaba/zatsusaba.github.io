@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "JKeyl8bUQKk",
+    "title": "カメの甲羅、脱げない!? #漫画 #雑学 #カメ",
+    "publishedAt": "2026-11-07T03:52:41Z",
+    "date": "2026-11-07",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "カメの甲羅は、背骨や肋骨とつながった骨格の一部。服のように脱ぐことはできません。\n\n参考：San Diego Zoo Wildlife Alliance\nhttps://animals.sandiegozoo.org/animals/turtle-and-tortoise\n\n#漫画 #雑学 #カメ"
+  },
+  {
     "id": "JLWEj7NyfOI",
     "title": "自分の声ヤバすぎ #漫画 #雑学 #骨伝導",
     "publishedAt": "2026-11-06T22:00:17Z",

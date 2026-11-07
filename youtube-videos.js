@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "ERnfm1UlsOU",
+    "title": "燃える氷 #漫画 #雑学 #燃える氷",
+    "publishedAt": "2026-11-07T14:00:03Z",
+    "date": "2026-11-07",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "燃える氷と呼ばれる「メタンハイドレート」。低温・高圧下で水分子のかごにメタンを取り込んだ物質で、分解して出てくるメタンが燃えます。普通の氷が燃えるわけではありません。\n\n参考：産業技術総合研究所「燃える氷 メタンハイドレート」\nhttps://www.aist.go.jp/science_town/reading/15/\n\n#漫画 #雑学 #燃える氷"
+  },
+  {
     "id": "POVx4jnVTks",
     "title": "キウイでドロドロ！？ #漫画 #雑学 #キウイ",
     "publishedAt": "2026-11-07T12:00:39Z",

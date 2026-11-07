@@ -39,7 +39,11 @@ class YouTubeSyncTest(unittest.TestCase):
                 rows = [short] if params["playlistId"] == "shorts" else returned
                 return {"items": [{"contentDetails": {"videoId": v["id"]}} for v in rows]}
             if endpoint == "playlists":
-                return {"items": [{"id": "shorts", "snippet": {"title": "ショート漫画【1話完結】"}}]}
+                return {"items": [
+                    {"id":"shorts","snippet":{"title":"ショート漫画【1話完結】"},"status":{"privacyStatus":"public"}},
+                    {"id":"work","snippet":{"title":"食べ物の雑学【作業用】"},"status":{"privacyStatus":"public"}},
+                    {"id":"secret","snippet":{"title":"非公開リスト"},"status":{"privacyStatus":"private"}},
+                ]}
             if endpoint == "videos":
                 ids = params["id"].split(",")
                 self.assertEqual(len(ids), len(set(ids)))
@@ -59,6 +63,7 @@ class YouTubeSyncTest(unittest.TestCase):
                 records = json.loads(snapshot.decode().split("=", 1)[1].strip().rstrip(";"))
                 self.assertEqual([r["id"] for r in records], [v["id"] for v in [public, short, known]])
                 self.assertEqual([r["format"] for r in records], ["未確認","ショート漫画","長尺動画"])
+                self.assertEqual(records[0]["genres"], ["食べ物の雑学【作業用】"])
                 self.assertNotIn("formatEvidence", records[0])
                 self.assertTrue(records[1]["formatEvidence"])
                 self.assertEqual(records[0]["date"], "2027-01-01")

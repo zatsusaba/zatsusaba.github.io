@@ -121,6 +121,22 @@ def comic_card(c):
             f'<h3>{escape(c["title"])}</h3><p>{escape("・".join(c["characters"]))}</p></div></a></article>')
 
 
+def comic_sheet(comic):
+    cells=[]
+    for number,panel in enumerate(comic["panels"],1):
+        src=escape(panel["src"],quote=True)
+        alt=panel["alt"]
+        if panel["text"] and panel["text"] not in alt:
+            alt += " "+panel["text"]
+        cells.append(f'<a href="{src}" title="{number}コマ目を拡大"><img src="{src}" alt="{escape(alt,quote=True)}" loading="lazy"></a>')
+    viewer = ('<dialog id="comic-viewer" aria-label="拡大した漫画"><div class="viewer-tools">'
+              '<output aria-live="polite"></output><button type="button" data-close autofocus>閉じる ×</button></div>'
+              '<img alt=""><button type="button" data-prev aria-label="前のコマ">‹</button>'
+              '<button type="button" data-next aria-label="次のコマ">›</button></dialog>'
+              '<script type="module" src="/comic-viewer.js"></script>')
+    return '<div class="comic-sheet" role="group" aria-label="上から順に読む4コマ">'+''.join(cells)+'</div>'+viewer
+
+
 def render_comics(comics, articles, page, write, urls, known_videos):
     by_slug = {a["slug"]: a for a in articles}
     reverse = defaultdict(list)
@@ -128,7 +144,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
     for a in articles:
         if a.get("youtube") in known_videos:
             video_map[a["youtube"]].append([a["url"],a["title"]])
-    groups = {"/comics/": ("4コマ漫画", comics)}
+    groups = {"/comics/": ("Comic", comics)}
     facets = []
     for key,kind,label in (("characters","character","登場キャラ"),("themes","theme","テーマ")):
         values = sorted({v for c in comics for v in c[key]})
@@ -136,7 +152,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
             facets.append('<div class="comic-tags"><strong>'+label+'</strong> ')
         for v in values:
             url = group_url(kind,v)
-            groups[url] = (v+"の4コマ", [c for c in comics if v in c[key]])
+            groups[url] = (v+"の漫画", [c for c in comics if v in c[key]])
             facets.append(link(url,v))
         if values:
             facets.append('</div>')
@@ -149,8 +165,6 @@ def render_comics(comics, articles, page, write, urls, known_videos):
             write(path,page(heading,title+"を読む。登場キャラとテーマから作品を探せます。",path,body))
             urls.append(path)
     for i,c in enumerate(comics):
-        panels = ''.join(f'<img src="{escape(p["src"])}" loading="lazy" alt="{escape(p["alt"])}">' for p in c["panels"])
-        transcript = "<details><summary>セリフ・表示文字</summary><ol>"+ "".join("<li>"+escape(p["text"] or "（無言）")+"</li>" for p in c["panels"])+"</ol></details>"
         refs = []
         for slug in c["articles"]:
             if slug in by_slug:  # Draft/deleted articles have no public URL.
@@ -167,13 +181,13 @@ def render_comics(comics, articles, page, write, urls, known_videos):
         if i:
             neighbors.append(link(comics[i-1]["url"],"次作："+comics[i-1]["title"]+" →"))
         tags = [link(group_url(kind,v),v) for key,kind in (("characters","character"),("themes","theme")) for v in c[key]]
-        body = ('<article class="blog-article">'+link("/comics/","← 4コマ漫画一覧")+
+        body = ('<article class="blog-article comic-detail">'+comic_sheet(c)+'<div class="comic-info">'+link("/comics/","← Comic一覧")+
                 f'<p class="eyebrow">COMICS · {c["date"]}</p><h1>{escape(c["title"])}</h1>'
-                +'<div class="comic-tags">'+''.join(tags)+'</div><div class="comic-reader">'+panels+'</div>'
-                + transcript + ("<p>"+escape("・".join(c["tags"]))+"</p>" if c["tags"] else "")
+                +'<div class="comic-tags">'+''.join(tags)+'</div>'
+                + ("<p>"+escape("・".join(c["tags"]))+"</p>" if c["tags"] else "")
                 + ('<h2>関連する記事・動画</h2><ul>'+''.join('<li>'+r+'</li>' for r in refs)+'</ul>' if refs else '')
                 + ('<nav class="pager" aria-label="前後の作品">'+''.join(neighbors)+'</nav>' if neighbors else '')
-                +link("/comics/","4コマ漫画一覧へ")+'</article>')
+                +link("/comics/","Comic一覧へ")+'</div></article>')
         write(c["url"],page(c["title"],"・".join(c["characters"])+"が登場する4コマ漫画「"+c["title"]+"」。",c["url"],body,c["panels"][0]["src"]))
         urls.append(c["url"])
     write("/video-links.json",compact(video_map))
@@ -183,7 +197,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
 def home_sections(items, comics, card, categories, today_home):
     featured = next((a for a in items if a.get("featured")), items[0] if items else None)
     recent = [a for a in items if a is not featured][:3]
-    html = '<section class="blog-home media-home"><div class="blog-home-head"><div><p class="eyebrow">ENCYCLOPEDIA</p><h2 id="blog-title">雑学大百科<span>雑学Blog</span></h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
+    html = '<section class="blog-home media-home"><div class="blog-home-head"><div><h2 id="blog-title">雑学Blog</h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
     if featured:
         html += '<h3>特集記事</h3><div class="media-feature">'+card(featured)+'</div>'
     if recent:
@@ -191,14 +205,7 @@ def home_sections(items, comics, card, categories, today_home):
     elif featured:
         html = html.replace('<h3>特集記事</h3>', '<h3>特集・新着記事</h3>')
     html += '<div class="media-categories"><h3>カテゴリーから探す</h3>'+categories()+'</div></section>'
-    html += today_home
-    if comics:
-        c = comics[0]
-        html += ('<section class="blog-home comic-home"><div class="blog-home-head"><div><p class="eyebrow">COMICS</p>'
-                 '<h2>新着4コマ漫画</h2></div><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'
-                 f'<h3>{link(c["url"],c["title"])}</h3><p class="comic-swipe-hint">横にスライドして読む →</p>'
-                 '<div class="home-comic-panels" tabindex="0" aria-label="左から順に読む4コマ漫画">'+
-                 ''.join(f'<div class="comic-panel"><img src="{escape(p["src"])}" alt="{escape(p["alt"])}" loading="lazy"></div>' for p in c["panels"])+
-                 '</div>'+link(c["url"],"縦読みで開く →")+'</section>')
-    return html
-
+    shelf = ('<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
+             '<h2>Comic</h2><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'
+             '<div class="blog-grid">'+''.join(comic_card(c) for c in comics[:6])+'</div></section>')
+    return (shelf if comics else "") + html + today_home

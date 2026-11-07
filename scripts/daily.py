@@ -68,29 +68,17 @@ def render(videos, articles, root, page, write, urls):
             body = '<section class="blog-shell daily-archive">'+link("/today/","← 今日の雑学")+'<h1>'+heading+'</h1>'+cards((day, row) for row in chunk)+pager+'</section>'
             write(url,page(heading,"雑学サバイバルの公開動画。",url,body)); urls.append(url)
 
-    # Lead with the newest release, while also surfacing the latest verified short
-    # and long video. A video qualifying in two ways must still appear only once.
-    ordered=[(day,row) for day in days for row in groups[day]]
-    selected={}
-    if ordered:
-        first_day,first=ordered[0]
-        selected[first[1]]=(first_day,first)
-        for labels in ({"Shorts","ショート漫画"},{"長尺動画"}):
-            for day,row in ordered:
-                if row[3] in labels:
-                    selected[row[1]]=(day,row)
-                    break
-    for day,row in ordered+[("",r) for r in groups.get("",[])]:
-        if len(selected)>=4: break
-        selected.setdefault(row[1],(day,row))
-    grid=cards(sorted(selected.values(),reverse=True)) if selected else "<p>公開動画はまだありません。</p>"
+    today=datetime.now(JST).date().isoformat()
+    rows=groups.get(today,[])
+    empty='<p>本日の公開動画はまだありません。</p>'
+    grid=(f'<div data-daily-date="{today}">'+cards((today,row) for row in rows)+'</div>'
+          +'<p data-daily-empty hidden>本日の公開動画はまだありません。</p>' if rows else empty)
+    grid += '<script defer src="/daily-date.js"></script>'
     dates = "".join(link("/today/"+d+"/",d) for d in days)
     if "" in groups:
         dates += link("/today/undated/","公開日時を確認中の動画")
     archive = '<section class="blog-shell daily-archive"><h1>今日の雑学</h1>'
-    if ordered:
-        archive += "<h2>最新の公開動画</h2>"
     archive += grid+'<h2>過去の更新</h2><div class="daily-dates">'+dates+'</div></section>'
     write("/today/",page("今日の雑学","公開済み動画を日本時間の公開日から探せます。","/today/",archive))
     urls.append("/today/")
-    return '<section class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の雑学</h2></div><a class="blog-cta" href="/today/">日付から探す →</a></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'
+    return '<section class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の雑学</h2></div></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'

@@ -51,7 +51,7 @@ def load():
         result.append(a)
     return sorted(result,key=lambda a:(a["date"],a["slug"]),reverse=True)
 def nav(url):
-    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/blog/","雑学大百科"),("/today/","今日の雑学"),("/comics/","4コマ"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/videos.html","VIDEOS")])
+    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/today/","今日の雑学"),("/videos.html","VIDEOS")])
 def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
     image=image if image.startswith("https://") else BASE+image
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -67,8 +67,8 @@ def card(a):
 def categories():
     return '<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/blog/">すべて</a>'+''.join(f'<a href="/blog/category/{slug}/">{name}</a>' for name,slug in CATS.items())+'</nav>'
 def listing(items,title,url,total,pager,category):
-    body=f'<section class="blog-shell"><p class="eyebrow">ZATSUSABA ENCYCLOPEDIA</p><h1>{title}<span>日常の「なぜ？」を、もっと深く。</span></h1><p>世界の科学、暮らし、文化の「なぜ？」を、出典とともに読み解きます。</p>{categories()}<div class="blog-tools"><label for="blog-search">記事をキーワードで探す</label><input id="blog-search" type="search" placeholder="例：パイナップル、植物" data-category="{e(category)}"><label><input type="checkbox" id="body-search"> 本文も検索</label><p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div><div id="archive-list"><div class="blog-grid">'+''.join(map(card,items))+'</div>'+pager+'</div><div id="matches" class="search-results"></div><p id="blog-empty"'+(' hidden' if items else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p></section><script src="/blog-search.js" defer></script>'
-    return page(title,"身近な疑問を出典から読み解く、雑学サバイバルの雑学大百科。",url,body)
+    body=f'<section class="blog-shell"><h1>{title}</h1><p>食べ物や動物、身近な「なんで？」をAIが調べて、画像付きでお届けします。</p>{categories()}<div class="blog-tools"><label for="blog-search">記事をキーワードで探す</label><input id="blog-search" type="search" placeholder="例：パイナップル、植物" data-category="{e(category)}"><label><input type="checkbox" id="body-search"> 本文も検索</label><p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div><div id="archive-list"><div class="blog-grid">'+''.join(map(card,items))+'</div>'+pager+'</div><div id="matches" class="search-results"></div><p id="blog-empty"'+(' hidden' if items else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p></section><script src="/blog-search.js" defer></script>'
+    return page(title,"身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。",url,body)
 def build():
     items=load()
     OUT.mkdir(exist_ok=True)
@@ -84,7 +84,7 @@ def build():
         shutil.copytree(ROOT/folder,OUT/folder,dirs_exist_ok=True)
     urls=["/","/story.html","/characters.html","/videos.html"]
     media.search_files(items,write)
-    archives=[("/blog/","雑学大百科","",items)]
+    archives=[("/blog/","雑学Blog","",items)]
     for name,slug in CATS.items():
         archives.append((f"/blog/category/{slug}/",name+"の雑学",name,[a for a in items if a["category"]==name]))
     for base,title,category,entries in archives:
@@ -136,7 +136,7 @@ def build():
         write(a["url"],page(a["title"],a["description"],a["url"],body,a["image"],True)); urls.append(a["url"])
     for p in OUT.glob("*.html"):
         html=p.read_text(encoding="utf-8")
-        html=re.sub(r'(<a href="index.html"[^>]*>HOME</a>)',lambda m:m[0]+'<a href="/blog/">雑学大百科</a><a href="/today/">今日の雑学</a><a href="/comics/">4コマ</a>',html)
+        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/today/">今日の雑学</a>',html)
         html=html.replace("</footer>",site_info.FOOTER+"</footer>")
         if p.name=="index.html":
             token_path=ROOT/"config"/"google-verification"
@@ -156,7 +156,7 @@ def build():
         p.write_text(html,encoding="utf-8")
     write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/blog/">雑学Blogへ →</a><p><a href="/">HOMEへ戻る</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
     for url,title,content,desc in [
-        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑学大百科の事実確認とAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
+        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑学Blogの事実確認とAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
         ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:

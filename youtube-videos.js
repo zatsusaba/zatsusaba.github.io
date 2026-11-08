@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "UrkKAeBlFpM",
+    "title": "青い太陽 #雑学 #面白い #火星",
+    "publishedAt": "2026-11-08T14:00:07Z",
+    "date": "2026-11-08",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "赤い惑星・火星なのに、夕日は青い！？\nNASAの火星探査機が撮影した夕焼けでは、太陽の周辺が青っぽく見えます。\n火星の大気に漂う細かなちりによる光の散乱が関係しています。\n空全体が青いわけではなく、観測条件によって見え方も変わります。\n\n参考：NASA「Sunset at Mars’ Gale Crater (Curiosity)」\nhttps://science.nasa.gov/resource/sunset-at-mars-gale-crater-curiosity/\n\n#雑学 #面白い #火星"
+  },
+  {
     "id": "gM35maABR0I",
     "title": "ペンギンの膝どこ #漫画 #雑学 #ペンギン",
     "publishedAt": "2026-11-08T12:13:32Z",

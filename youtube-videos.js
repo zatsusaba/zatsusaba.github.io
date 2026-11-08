@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "llP7tbFyEMc",
+    "title": "復活の落書き #漫画 #雑学 #フリクション",
+    "publishedAt": "2026-11-08T07:00:13Z",
+    "date": "2026-11-08",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "消したはずの文字が、冷やすと復活！？\n\nフリクションのインキは熱で色が見えなくなり、約－20℃まで冷やすと色が戻ります。普通の冷蔵室や、すべての「消せるペン」に当てはまるわけではありません。\n\n出典：パイロットコーポレーション「とっても便利な消せるボールペン。でも...、色が消えるのはなぜ？」\nhttps://www.pilot.co.jp/media/knowledge/002.html\n\n#漫画 #雑学 #フリクション"
+  },
+  {
     "id": "1mR6RQrrl8Q",
     "title": "歩く石 #漫画 #雑学 #デスバレー",
     "publishedAt": "2026-11-07T22:00:12Z",

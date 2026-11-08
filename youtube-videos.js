@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "1mR6RQrrl8Q",
+    "title": "歩く石 #漫画 #雑学 #デスバレー",
+    "publishedAt": "2026-11-07T22:00:12Z",
+    "date": "2026-11-08",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "アメリカ・デスバレーの「レーストラック・プラヤ」では、石が長い跡を残して移動します。浅くたまった水に薄い氷ができ、その氷が風に押されて動くと、石も一緒に押されることがあります。水・冷え込み・風などの条件がそろったときに起こる珍しい現象です。\n\n参考：米国国立公園局（NPS）「Death Valley’s Moving Rocks」\nhttps://www.nps.gov/articles/deva-moving-rocks.htm\n\n#漫画 #雑学 #デスバレー"
+  },
+  {
     "id": "ERnfm1UlsOU",
     "title": "燃える氷 #漫画 #雑学 #燃える氷",
     "publishedAt": "2026-11-07T14:00:03Z",

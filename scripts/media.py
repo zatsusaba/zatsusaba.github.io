@@ -207,15 +207,13 @@ def render_comics(comics, articles, page, write, urls, known_videos):
 
 
 def home_sections(items, comics, card, categories, today_home):
-    featured = next((a for a in items if a.get("featured")), items[0] if items else None)
-    recent = [a for a in items if a is not featured][:3]
+    latest = items[0] if items else None
+    previous = items[1:4]
     html = '<section class="blog-home media-home"><div class="blog-home-head"><div><h2 id="blog-title">雑学Blog</h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
-    if featured:
-        html += '<h3>特集記事</h3><div class="media-feature">'+card(featured)+'</div>'
-    if recent:
-        html += '<h3>新着記事</h3><div class="blog-grid">'+''.join(map(card,recent))+'</div>'
-    elif featured:
-        html = html.replace('<h3>特集記事</h3>', '<h3>特集・新着記事</h3>')
+    if latest:
+        html += '<h3>新着記事</h3><div class="media-feature">'+card(latest)+'</div>'
+    if previous:
+        html += '<h3>以前の記事</h3><div class="blog-grid">'+''.join(map(card,previous))+'</div>'
     html += '<div class="media-categories"><h3>カテゴリーから探す</h3>'+categories()+'</div></section>'
     shelf = ('<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
              '<h2>Comic</h2><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'

@@ -76,6 +76,28 @@ assert f'<meta property="og:image" content="{cover_url}">' in duplicate_html
 assert f'"image": "{cover_url}"' in duplicate_html
 assert f'<img src="{cover_url}"' in b.card(loaded)
 assert f'<img src="{cover_url}"' in (b.OUT/"blog/index.html").read_text(encoding="utf-8")
+# A dedicated thumbnail stays in cards/share metadata, never ahead of the prose.
+thumbnail_url="https://i.ytimg.com/vi/dedicated/hqdefault.jpg"
+dedicated_sample=duplicate_sample.replace(f'image: {cover_url}',f'image: {thumbnail_url}\nshow_cover: false')
+article_path.write_text(dedicated_sample,encoding="utf-8")
+b.build()
+dedicated_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
+dedicated=next(a for a in b.load() if a["slug"]=="pineapple")
+assert dedicated["html"]==loaded["html"]
+assert 'class="blog-cover"' not in dedicated_html
+assert f'src="{thumbnail_url}"' not in dedicated_html
+assert f'<meta property="og:image" content="{thumbnail_url}">' in dedicated_html
+assert f'"image": "{thumbnail_url}"' in dedicated_html
+assert f'<img src="{thumbnail_url}"' in b.card(dedicated)
+assert f'<img src="{thumbnail_url}"' in (b.OUT/"blog/index.html").read_text(encoding="utf-8")
+article_path.write_text(dedicated_sample.replace('show_cover: false','show_cover: "false"'),encoding="utf-8")
+try:
+    b.load()
+except ValueError as error:
+    assert 'show_cover must be boolean' in str(error)
+else:
+    raise AssertionError('Non-boolean show_cover accepted')
+print("PASS: dedicated thumbnail differs from body images, is never repeated above prose, and validates its cover flag")
 article_path.write_text(sample,encoding="utf-8")
 b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")

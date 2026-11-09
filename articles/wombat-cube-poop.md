@@ -11,8 +11,8 @@ tags:
 youtube: UsdNxnHLHlc
 youtube_title: 四角いうんち
 youtube_format: short
-image: /assets/articles/wombat-cube-poop/wombat-grazing-illustration.png
-image_alt: 草地で草を食べるコモンウォンバットを描いた参考イラスト。幅広い鼻とずんぐりした体が見える。
+image: /assets/covers/wombat-cover.png
+image_alt: 動物・四角いうんちの謎。正面を向くウォンバットと丸みのある立方体のモチーフを描いた専用サムネイル（AI生成のイメージ）。
 sources:
 - title: Yangほか 2021 腸壁の不均一な硬さと角の形成
   url: https://doi.org/10.1039/D0SM01230K
@@ -32,6 +32,7 @@ sources:
 - title: 本文PDF
   url: https://hu.gatech.edu/wp-content/uploads/2023/11/Hu23-pellet.pdf
   checked: '2026-11-09'
+show_cover: false
 ---
 
 **ウォンバットのうんちが四角くなる主な理由は、腸の壁の伸びにくさが場所によって違い、収縮を繰り返すうちに角が作られるからです。角は、体の外へ出る前に腸の中でできています。**

@@ -11,8 +11,8 @@ tags:
 youtube: UrkKAeBlFpM
 youtube_title: 青い太陽
 youtube_format: short
-image: /assets/articles/mars-blue-sunset/curiosity-sunset-2015.jpg
-image_alt: キュリオシティが撮影した火星の夕日。暗い尾根の上の太陽を、青みのある光が取り囲んでいる。
+image: /assets/covers/mars-cover.png
+image_alt: 宇宙・火星の夕日は青い？ 火星と青い光をモチーフにした専用サムネイル（AI生成のイメージ。探査機の実写ではありません）。
 sources:
 - title: NASAによる撮影条件と画像の説明
   url: https://science.nasa.gov/resource/sunset-at-mars-gale-crater-curiosity/
@@ -32,6 +32,7 @@ sources:
 - title: NASA 火星の日の出と日没画像の説明
   url: https://science.nasa.gov/solar-system/planets/mars/what-does-a-sunrise-sunset-look-like-on-mars/
   checked: '2026-11-09'
+show_cover: false
 ---
 
 **火星では夕方、太陽の周りが青っぽく見えることがあります。大気中の細かなちりが光を散乱させ、青い光が太陽に近い方向で目立つためです。空全体が青くなるわけでも、毎回同じ青さになるわけでもありません。**

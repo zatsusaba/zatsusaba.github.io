@@ -11,8 +11,8 @@ tags:
 youtube: dCZCZs_M2lw
 youtube_title: 船の観覧車
 youtube_format: short
-image: /assets/articles/falkirk-wheel/falkirk-overview.jpg
-image_alt: 全景。下の水面から高架水路まで、船の通り道ごとつなぐ装置です。
+image: /assets/covers/falkirk-cover.png
+image_alt: 科学・船を運ぶ観覧車。水平な水槽に浮かぶ船と昇降機の腕を描いた専用サムネイル（AI生成のイメージ）。
 sources:
 - title: Scottish Canals The Falkirk Wheel
   url: https://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel
@@ -26,6 +26,7 @@ sources:
 - title: ASME Symbol of the Millennium The Falkirk Wheel
   url: https://www.asme.org/topics-resources/content/symbol-of-the-millennium-the-falkirk-wheel
   checked: '2026-11-09'
+show_cover: false
 ---
 
 **船を水槽ごと回して、低い運河と高い運河の間を運ぶ装置です。スコットランドの「ファルカーク・ホイール」は、観覧車のような姿をした船舶昇降機。船をひっくり返すのではなく、水槽を水平に保ったまま持ち上げます。**

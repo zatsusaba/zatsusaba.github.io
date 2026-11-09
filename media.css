@@ -350,3 +350,16 @@ footer .site-info-links a { display: inline-flex; align-items: center; min-heigh
 #comic-viewer [data-prev] { left:4px; }
 #comic-viewer [data-next] { right:4px; }
 body:has(#comic-viewer[open]) { overflow:hidden; }
+
+/* Compact section transitions without reducing reading or touch space. */
+.home-page > .creator-section { padding-bottom: 12px; }
+.home-page > .fantasia-section { padding-top: 12px; }
+.home-page .fantasia-section .eyebrow { margin-top: 0; }
+.blog-shell, .comic-archive { padding-block: clamp(24px, 3vw, 42px); }
+.blog-card .blog-card-copy { padding-bottom: 12px; }
+.blog-card .blog-card-copy > :last-child { margin-bottom: 0; }
+.blog-tools { margin-block: 24px; }
+.media-categories { margin-top: 24px; padding-top: 18px; }
+body[data-page="characters"] main > .section,
+body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px); }
+.story-next { padding-block: clamp(28px, 3vw, 42px); }

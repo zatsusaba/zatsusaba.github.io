@@ -43,19 +43,43 @@ if(page==='games'||page==='comics'){
  else if(page==='comics' && character){const items=get('comics').filter(x=>Array.isArray(x.characters)&&x.characters.includes(character));const person=get('characters').find(x=>x.id===character);el.innerHTML=`<p>${esc(person?.name||'')}の出演4コマ</p>${items.length?`<div class="cards comic-grid">${items.map(x=>card('comics',x)).join('')}</div>`:'<div class="empty">出演4コマはまだ登録されていません。</div>'}<p><a href="comics.html">すべての4コマを見る →</a></p>`} else el.innerHTML=listing(page);
 }
 if(page==='videos'){
- const videos=get('videos');
- const genres=[...new Set(videos.flatMap(v=>v.genres||[]))].sort((a,b)=>a.localeCompare(b,'ja'));
- const requested=new URLSearchParams(location.search).get('genre');
+ const topicOrder=['人間','お金','科学','自然','世界','食べ物','遊び','話題'];
+ // Match public playlist names, never infer topics from video titles.
+ const playlistTopic=label=>{
+  const name=String(label).replace(/【[^】]*】/g,'').trim();
+  const aliases={'人間の限界':'人間','食事の秘密':'食べ物','ゲームの秘密':'遊び','遊びで雑学':'遊び','マインクラフト｜雑学サバイバル':'遊び'};
+  if(aliases[name])return aliases[name];
+  return topicOrder.find(topic=>[topic,topic+'の雑学',topic+'の秘密'].includes(name))||'';
+ };
+ const videos=get('videos').map(v=>({...v,topics:[...new Set((v.genres||[]).map(playlistTopic).filter(Boolean))]}));
+ const synced=new Map((window.YOUTUBE_VIDEOS||[]).map(v=>[v.id,v]));
+ const videoKind=v=>{
+  const source=synced.get(v.id)||{};
+  if((source.genres||[]).some(g=>/【Shorts】/i.test(g)||g==='ショート漫画【1話完結】'))return 'short';
+  if(!source.formatEvidence)return '';
+  if(['ショート漫画','通常Shorts','Shorts','Short MV','切り抜き'].includes(source.format))return 'short';
+  if(['長尺動画','長尺漫画','フルMV','長尺'].includes(source.format))return 'video';
+  return '';
+ };
+ let kind='';
+ const genres=topicOrder.filter(topic=>videos.some(v=>v.topics.includes(topic)));
+ const rawRequested=new URLSearchParams(location.search).get('genre');
+ const requested=playlistTopic(rawRequested||'');
  let active=genres.includes(requested)?requested:'';
  let shown=24;
- el.innerHTML='<div class="video-filters" role="group" aria-label="再生リストで絞り込み"></div><p class="video-count" role="status"></p><div class="cards video-grid"></div><button type="button" class="video-more">もっと見る</button>';
+ el.innerHTML='<div class="video-kinds" role="group" aria-label="動画形式"></div><div class="video-filters" role="group" aria-label="テーマで絞り込み"></div><p class="video-count" role="status"></p><div class="cards video-grid"></div><button type="button" class="video-more">もっと見る</button>';
  const filters=el.querySelector('.video-filters'), grid=el.querySelector('.video-grid'), more=el.querySelector('.video-more');
  function renderVideos(){
-  const selected=videos.filter(v=>!active||(v.genres||[]).includes(active));
+  const selected=videos.filter(v=>(!active||v.topics.includes(active))&&(!kind||videoKind(v)===kind));
   grid.innerHTML=selected.slice(0,shown).map(v=>card('videos',v)).join('');
   el.querySelector('.video-count').textContent=`${active||'すべて'} · ${selected.length}件（新着順）`;
   more.hidden=shown>=selected.length;
+  el.querySelectorAll('.video-kinds button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.kind===kind)));
   filters.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.genre===active)));
+ }
+ for(const [value,label] of [['','すべて'],['video','動画'],['short','ショート']]){
+  const button=document.createElement('button');button.type='button';button.dataset.kind=value;button.textContent=label;
+  button.addEventListener('click',()=>{kind=value;shown=24;renderVideos();});el.querySelector('.video-kinds').append(button);
  }
  for(const genre of ['',...genres]){
   const button=document.createElement('button');button.type='button';button.dataset.genre=genre;button.textContent=genre||'すべて';

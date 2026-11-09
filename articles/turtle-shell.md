@@ -11,6 +11,7 @@ topic: カメの甲羅の構造
 tags: [カメ, 甲羅, 骨格]
 youtube: JKeyl8bUQKk
 youtube_title: "カメの甲羅、脱げない!?"
+youtube_format: short
 conditions: 種類によって甲羅の表面や骨の構成に違いがあります。掲載画像はAI生成の参考イラストで、実物写真や精密な解剖図ではありません。
 sources:
   - title: San Diego Zoo Wildlife Alliance「Turtle and Tortoise」ABOUT

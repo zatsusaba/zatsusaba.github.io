@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "srVY3dUR8K0",
+    "title": "焼き芋の謎 #漫画 #雑学 #焼き芋",
+    "publishedAt": "2026-11-08T22:00:12Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "焼き芋は、砂糖を入れていないのになぜ甘い？\nその秘密は、さつまいもの中にある酵素！\n加熱で糊化したでんぷんが酵素の働きで麦芽糖に変わり、甘みが生まれます。\n甘さは品種や加熱温度・時間によっても変わります。\n\n参考：日本いも類研究会「Ｑ 焼きいもが甘いのはなぜですか？」\nhttps://jrt.gr.jp/q_a/spqa_yakiimo/\n\n#雑学 #面白い #焼き芋"
+  },
+  {
     "id": "UrkKAeBlFpM",
     "title": "青い太陽 #雑学 #面白い #火星",
     "publishedAt": "2026-11-08T14:00:07Z",

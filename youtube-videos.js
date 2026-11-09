@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "dCZCZs_M2lw",
+    "title": "船の観覧車 #雑学 #面白い #船",
+    "publishedAt": "2026-11-09T06:00:21Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "スコットランドにある「ファルカーク・ホイール」は、高さの異なる運河をつなぐ回転式の船舶昇降機です。\n船を載せた水槽は回転中も水平を保ち、船を水ごと上や下へ運びます。キュウちゃんは観覧車と勘違い！\n\n出典：Scottish Canals「The Falkirk Wheel」\nhttps://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel\n補足：SteelConstruction.info「The Falkirk Wheel」\nhttps://www.steelconstruction.info/images/c/c4/2002_-_The_Falkirk_Wheel.pdf\n\n#雑学 #面白い #船"
+  },
+  {
     "id": "EfkvwxdgSuc",
     "title": "苦いチョコレート #雑学 #面白い #チョコレート",
     "publishedAt": "2026-11-09T03:41:31Z",

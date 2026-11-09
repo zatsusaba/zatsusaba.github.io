@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "UsdNxnHLHlc",
+    "title": "四角いうんち #雑学 #面白い #うんち",
+    "publishedAt": "2026-11-09T09:00:31Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "ウォンバットの四角いうんち。出口で四角くなるのではなく、腸の中で角ができます。\nコモンウォンバットを対象とした研究では、腸壁の硬さの違いや腸の動き、乾燥が形づくりに関係すると考えられています。すべてが完全な立方体というわけではありません。\n\n出典：University of Tasmania「Scientists get to the bottom of wombat cubed poo mystery」\nhttps://www.utas.edu.au/about/news-and-stories/articles/2021/scientists-get-to-the-bottom-of-wombat-cubed-poo-mystery2\n\n#雑学 #面白い #ウォンバット"
+  },
+  {
     "id": "dCZCZs_M2lw",
     "title": "船の観覧車 #雑学 #面白い #船",
     "publishedAt": "2026-11-09T06:00:21Z",

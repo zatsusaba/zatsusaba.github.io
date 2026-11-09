@@ -5,6 +5,8 @@ description: カメの甲羅は取り外せる持ち物ではなく、体の骨�
 date: 2026-11-09
 updated: 2026-11-09
 category: 動物
+image: /assets/covers/turtle-shell.png
+image_alt: 動物・亀の甲羅。右側に題材の参考イラスト。
 topic: カメの甲羅の構造
 tags: [カメ, 甲羅, 骨格]
 youtube: JKeyl8bUQKk

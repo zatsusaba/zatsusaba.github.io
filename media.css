@@ -363,3 +363,12 @@ body:has(#comic-viewer[open]) { overflow:hidden; }
 body[data-page="characters"] main > .section,
 body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px); }
 .story-next { padding-block: clamp(28px, 3vw, 42px); }
+
+/* Keep destination headings close to their content. */
+.home-page .media-home .blog-home-head h2,
+.home-page .daily-home .blog-home-head h2 { margin-bottom: 8px; }
+.home-page .media-home > h3 { margin-top: 16px; padding-top: 12px; }
+.home-page .daily-home .daily-grid { margin-top: 10px; }
+.comic-archive > h1 { margin-bottom: 14px; }
+.comic-archive > .blog-tools { margin-block: 14px 20px; }
+.comic-archive:not(.comic-home) { padding-bottom: 24px; }

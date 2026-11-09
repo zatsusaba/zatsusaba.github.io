@@ -123,7 +123,8 @@ def build():
         video=""
         if a.get("youtube"):
             video_title=a.get("youtube_title") or known_videos[a["youtube"]]
-            video=f'<section><h2>漫画はこちら</h2><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
+            video_class="blog-video blog-video-short" if a.get("youtube_format")=="short" else "blog-video"
+            video=f'<section><h2>動画はこちら</h2><iframe class="{video_class}" src="https://www.youtube-nocookie.com/embed/{a["youtube"]}" title="{e(video_title,quote=True)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
         related_comics=""
         if comic_links[a["slug"]]:
             related_comics='<h2>関連する4コマ漫画</h2><ul>'+''.join('<li>'+l+'</li>' for l in comic_links[a["slug"]])+'</ul>'

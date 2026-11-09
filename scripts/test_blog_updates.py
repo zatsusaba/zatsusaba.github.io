@@ -20,6 +20,7 @@ image: https://i.ytimg.com/vi/q5FluB5f-b8/hqdefault.jpg
 image_alt: 検証用画像
 youtube: q5FluB5f-b8
 youtube_title: パイナップルの木は
+youtube_format: short
 sources:
   - checked: 2020-01-01
     title: 検証用資料
@@ -37,12 +38,15 @@ second=root/"articles/second.md"
 second.write_text(sample.replace("title: パイナップル","title: 追加検証パイナップル",1),encoding="utf-8")
 b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
-assert '<iframe' not in article_html
+assert article_html.count('<iframe')==1
+assert 'class="blog-video blog-video-short"' in article_html
+assert 'src="https://www.youtube-nocookie.com/embed/q5FluB5f-b8"' in article_html
 assert '確認日' not in article_html
 assert '漫画動画で楽しむ' not in article_html
-assert '<h2>漫画はこちら</h2>' in article_html
+assert '<h2>動画はこちら</h2>' in article_html
+assert '<h2>漫画はこちら</h2>' not in article_html
 assert '<a href="https://www.youtube.com/watch?v=q5FluB5f-b8">パイナップルの木は</a>' in article_html
-assert article_html.index('<h2>出典・参考資料</h2>') < article_html.index('<h2>漫画はこちら</h2>')
+assert article_html.index('<h2>出典・参考資料</h2>') < article_html.index('<h2>動画はこちら</h2>')
 assert '/blog/second/' in (b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
 assert '/blog/second/' in (b.OUT/"blog/category/food/index.html").read_text(encoding="utf-8")
 second.write_text(second.read_text(encoding="utf-8").replace("## パイナップルの正体","## 更新確認の正体"),encoding="utf-8")

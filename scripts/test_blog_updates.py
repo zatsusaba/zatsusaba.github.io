@@ -38,6 +38,49 @@ second=root/"articles/second.md"
 second.write_text(sample.replace("title: パイナップル","title: 追加検証パイナップル",1),encoding="utf-8")
 b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
+assert 'class="blog-cover"' in article_html  # Articles without a duplicate keep their cover.
+# Inspect rendered image tags, not image URLs mentioned in text, links, or code.
+cover={"url":"/blog/subject/", "image":"/assets/example.png", "image_alt":"Cover"}
+for html in (
+    '<p><img src="/assets/example.png" alt="Body"></p>',
+    '<p><img src="https://zatsusaba.github.io/assets/example.png" alt="Body"></p>',
+    '<p><img src="../../assets/example.png" alt="Body" /></p>',
+):
+    assert b.article_cover(dict(cover,html=html))==""
+for html in (
+    '<p>No image</p>',
+    '<p><a href="/assets/example.png">Image link only</a></p>',
+    '<pre><code>&lt;img src="/assets/example.png"&gt;</code></pre>',
+    '<p><img src="/assets/another.png" alt="/assets/example.png"></p>',
+    '<p><img src="/assets/example.png?different=1"></p>',
+):
+    assert 'class="blog-cover"' in b.article_cover(dict(cover,html=html))
+assert b.article_cover(dict(cover,image="/assets/example.png?a=1&b=2",
+                           html='<img src="/assets/example.png?a=1&amp;b=2">'))==""
+# A repeated build removes only the automatic cover, preserving the full prose,
+# captions, source links, cards, and share metadata. Reference-style images work too.
+cover_url="https://i.ytimg.com/vi/q5FluB5f-b8/hqdefault.jpg"
+duplicate_sample=sample+f'\n![本文画像][cover]\n\n画像の説明と[出典](https://example.org/image)。\n\n![別の画像](https://i.ytimg.com/vi/second/hqdefault.jpg)\n\n[cover]: {cover_url}\n'
+article_path=root/"articles/pineapple.md"
+article_path.write_text(duplicate_sample,encoding="utf-8")
+b.build()
+duplicate_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
+loaded=next(a for a in b.load() if a["slug"]=="pineapple")
+assert 'class="blog-cover"' not in duplicate_html
+assert '<div class="blog-prose">'+loaded["html"] in duplicate_html
+assert loaded["html"].count(f'src="{cover_url}"')==1
+assert '別の画像' in duplicate_html and '画像の説明' in duplicate_html
+assert '<a href="https://example.org/image">出典</a>' in duplicate_html
+assert '<a href="https://example.org/source">検証用資料 ↗</a>' in duplicate_html
+assert f'<meta property="og:image" content="{cover_url}">' in duplicate_html
+assert f'"image": "{cover_url}"' in duplicate_html
+assert f'<img src="{cover_url}"' in b.card(loaded)
+assert f'<img src="{cover_url}"' in (b.OUT/"blog/index.html").read_text(encoding="utf-8")
+article_path.write_text(sample,encoding="utf-8")
+b.build()
+article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
+assert 'class="blog-cover"' in article_html
+print("PASS: duplicate cover omitted; nonduplicate cover, prose, captions, sources, cards and share images preserved")
 assert article_html.count('<iframe')==1
 assert 'class="blog-video blog-video-short"' in article_html
 assert 'src="https://www.youtube-nocookie.com/embed/q5FluB5f-b8"' in article_html

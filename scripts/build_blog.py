@@ -2,6 +2,8 @@
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 from html import escape as e
+from html.parser import HTMLParser
+from urllib.parse import urljoin
 import json, re, shutil
 import markdown
 import daily, editorial
@@ -64,6 +66,22 @@ def write(url,text):
     p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text,encoding="utf-8")
 def card(a):
     return f'<article class="blog-card"><a href="{a["url"]}"><img src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy"><div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{a["date"]}">{a["date"]}</time></div></a></article>'
+class ImageSources(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.sources=set()
+    def handle_starttag(self,tag,attrs):
+        if tag=="img":
+            src=dict(attrs).get("src")
+            if src: self.sources.add(src)
+def article_cover(a):
+    # Keep the card/share image, but do not repeat an image already in the prose.
+    images=ImageSources()
+    images.feed(a["html"])
+    article_url=BASE+a["url"]
+    image_url=urljoin(article_url,a["image"])
+    if any(urljoin(article_url,src)==image_url for src in images.sources): return ""
+    return f'<img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450">'
 def categories():
     return '<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/blog/">すべて</a>'+''.join(f'<a href="/blog/category/{slug}/">{name}</a>' for name,slug in CATS.items())+'</nav>'
 def listing(items,title,url,total,pager,category):
@@ -131,7 +149,7 @@ def build():
         refs='<section><h2>出典・参考資料</h2><ul>'+''.join(f'<li><a href="{e(s["url"],quote=True)}">{e(s["title"])} ↗</a></li>' for s in a["sources"])+'</ul></section>'
         if a.get("conditions"):
             refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
-        body=f'<article class="blog-article"><p class="blog-breadcrumb"><a href="/">HOME</a> / <a href="/blog/">雑学Blog</a> / <a href="/blog/category/{CATS[a["category"]]}/">{a["category"]}</a></p><span class="blog-label">{a["category"]}</span><h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p><p class="blog-date">公開 {a["date"]} · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time></p><img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450"><div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div><section><h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div><p><a class="blog-cta" href="/blog/">雑学Blogの記事一覧へ →</a></p></section></article>'
+        body=f'<article class="blog-article"><p class="blog-breadcrumb"><a href="/">HOME</a> / <a href="/blog/">雑学Blog</a> / <a href="/blog/category/{CATS[a["category"]]}/">{a["category"]}</a></p><span class="blog-label">{a["category"]}</span><h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p><p class="blog-date">公開 {a["date"]} · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time></p>{article_cover(a)}<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div><section><h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div><p><a class="blog-cta" href="/blog/">雑学Blogの記事一覧へ →</a></p></section></article>'
         if not related:
             body=body.replace('<h2>あわせて読みたい</h2><div class="blog-grid"></div>',"")
         schema={"@context":"https://schema.org","@type":"BlogPosting","headline":a["title"],"description":a["description"],"datePublished":a["date"],"dateModified":a["updated"],"image":a["image"] if a["image"].startswith("https://") else BASE+a["image"],"mainEntityOfPage":BASE+a["url"],"author":{"@type":"Organization","name":"雑学サバイバル"}}

@@ -120,15 +120,17 @@ def build():
     suggestions=media.recommendations(items)
     for a in items:
         related=suggestions[a["slug"]]
-        video=(f'<section><h2>漫画動画で楽しむ</h2><iframe class="blog-video" src="https://www.youtube-nocookie.com/embed/{a["youtube"]}" title="関連する漫画動画" loading="lazy" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">YouTubeで見る ↗</a></p></section>' if a.get("youtube") else "")
-        if a.get("youtube") in known_videos:
-            video += '<p>'+media.link("/video.html?id="+a["youtube"],"この動画の作品紹介へ →")+'</p>'
+        video=""
+        if a.get("youtube"):
+            video_title=a.get("youtube_title") or known_videos[a["youtube"]]
+            video=f'<section><h2>漫画はこちら</h2><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
+        related_comics=""
         if comic_links[a["slug"]]:
-            video += '<h2>関連する4コマ漫画</h2><ul>'+''.join('<li>'+l+'</li>' for l in comic_links[a["slug"]])+'</ul>'
-        refs='<section><h2>出典・参考資料</h2><ul>'+''.join(f'<li><a href="{e(s["url"],quote=True)}">{e(s["title"])} ↗</a>（確認日 {s["checked"]}）</li>' for s in a["sources"])+'</ul></section>'
+            related_comics='<h2>関連する4コマ漫画</h2><ul>'+''.join('<li>'+l+'</li>' for l in comic_links[a["slug"]])+'</ul>'
+        refs='<section><h2>出典・参考資料</h2><ul>'+''.join(f'<li><a href="{e(s["url"],quote=True)}">{e(s["title"])} ↗</a></li>' for s in a["sources"])+'</ul></section>'
         if a.get("conditions"):
             refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
-        body=f'<article class="blog-article"><p class="blog-breadcrumb"><a href="/">HOME</a> / <a href="/blog/">雑学Blog</a> / <a href="/blog/category/{CATS[a["category"]]}/">{a["category"]}</a></p><span class="blog-label">{a["category"]}</span><h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p><p class="blog-date">公開 {a["date"]} · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time></p><img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450"><div class="blog-prose">{a["html"]}{video}{refs}</div><section><h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div><p><a class="blog-cta" href="/blog/">雑学Blogの記事一覧へ →</a></p></section></article>'
+        body=f'<article class="blog-article"><p class="blog-breadcrumb"><a href="/">HOME</a> / <a href="/blog/">雑学Blog</a> / <a href="/blog/category/{CATS[a["category"]]}/">{a["category"]}</a></p><span class="blog-label">{a["category"]}</span><h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p><p class="blog-date">公開 {a["date"]} · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time></p><img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450"><div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div><section><h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div><p><a class="blog-cta" href="/blog/">雑学Blogの記事一覧へ →</a></p></section></article>'
         if not related:
             body=body.replace('<h2>あわせて読みたい</h2><div class="blog-grid"></div>',"")
         schema={"@context":"https://schema.org","@type":"BlogPosting","headline":a["title"],"description":a["description"],"datePublished":a["date"],"dateModified":a["updated"],"image":a["image"] if a["image"].startswith("https://") else BASE+a["image"],"mainEntityOfPage":BASE+a["url"],"author":{"@type":"Organization","name":"雑学サバイバル"}}

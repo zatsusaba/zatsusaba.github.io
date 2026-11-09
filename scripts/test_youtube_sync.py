@@ -61,6 +61,7 @@ class YouTubeSyncTest(unittest.TestCase):
             if endpoint == "playlists":
                 return {"items": [{"id": "shorts", "status": {"privacyStatus":"public"}, "snippet": {"title": "ショート漫画【1話完結】"}}, {"id":"new", "status":{"privacyStatus":"public"}, "snippet":{"title":"新しい公開ジャンル"}}, {"id":"private", "status":{"privacyStatus":"private"}, "snippet":{"title":"非公開"}}]}
             if endpoint == "videos":
+                self.assertIn("contentDetails", params["part"].split(","))
                 ids = params["id"].split(",")
                 self.assertEqual(len(ids), len(set(ids)))
                 return {"items": returned}

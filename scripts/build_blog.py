@@ -51,7 +51,7 @@ def load():
         result.append(a)
     return sorted(result,key=lambda a:(a["date"],a["slug"]),reverse=True)
 def nav(url):
-    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/today/","今日の雑学"),("/videos.html","VIDEOS")])
+    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/#today","今日の雑学"),("/videos.html","VIDEOS")])
 def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
     image=image if image.startswith("https://") else BASE+image
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -139,7 +139,7 @@ def build():
         write(a["url"],page(a["title"],a["description"],a["url"],body,a["image"],True)); urls.append(a["url"])
     for p in OUT.glob("*.html"):
         html=p.read_text(encoding="utf-8")
-        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/today/">今日の雑学</a>',html)
+        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',html)
         html=html.replace("</footer>",site_info.FOOTER+"</footer>")
         if p.name=="index.html":
             token_path=ROOT/"config"/"google-verification"

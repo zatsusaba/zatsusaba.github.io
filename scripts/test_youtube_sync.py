@@ -11,6 +11,14 @@ import sync_youtube as sync
 
 
 class YouTubeSyncTest(unittest.TestCase):
+    def test_display_title(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from daily import display_title
+        self.assertEqual(display_title("指の不思議 #雑学 #指"), "指の不思議")
+        self.assertEqual(display_title("船の観覧車＃雑学"), "船の観覧車")
+        self.assertEqual(display_title("C# の話"), "C# の話")
+        self.assertEqual(display_title("普通のタイトル"), "普通のタイトル")
+
     def test_japan_calendar_day(self):
         self.assertEqual(sync.publication_time("2026-12-31T14:59:59Z")[1], "2026-12-31")
         self.assertEqual(sync.publication_time("2026-12-31T15:00:00Z")[1], "2027-01-01")
@@ -36,10 +44,11 @@ class YouTubeSyncTest(unittest.TestCase):
             if endpoint == "channels":
                 return {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "uploads"}}}]}
             if endpoint == "playlistItems":
+                self.assertNotEqual(params["playlistId"], "private")
                 rows = [short] if params["playlistId"] == "shorts" else returned
                 return {"items": [{"contentDetails": {"videoId": v["id"]}} for v in rows]}
             if endpoint == "playlists":
-                return {"items": [{"id": "shorts", "snippet": {"title": "ショート漫画【1話完結】"}}]}
+                return {"items": [{"id": "shorts", "status": {"privacyStatus":"public"}, "snippet": {"title": "ショート漫画【1話完結】"}}, {"id":"new", "status":{"privacyStatus":"public"}, "snippet":{"title":"新しい公開ジャンル"}}, {"id":"private", "status":{"privacyStatus":"private"}, "snippet":{"title":"非公開"}}]}
             if endpoint == "videos":
                 ids = params["id"].split(",")
                 self.assertEqual(len(ids), len(set(ids)))
@@ -59,6 +68,7 @@ class YouTubeSyncTest(unittest.TestCase):
                 records = json.loads(snapshot.decode().split("=", 1)[1].strip().rstrip(";"))
                 self.assertEqual([r["id"] for r in records], [v["id"] for v in [public, short, known]])
                 self.assertEqual([r["format"] for r in records], ["未確認","ショート漫画","長尺動画"])
+                self.assertEqual(records[0]["genres"], ["新しい公開ジャンル"])
                 self.assertNotIn("formatEvidence", records[0])
                 self.assertTrue(records[1]["formatEvidence"])
                 self.assertEqual(records[0]["date"], "2027-01-01")

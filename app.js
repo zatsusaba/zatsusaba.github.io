@@ -5,7 +5,9 @@ for (const v of (window.YOUTUBE_VIDEOS || [])) {
  const old=curated.get(v.id);
  curated.set(v.id, old ? {...v,...old,description:old.description?.trim()?old.description:(v.description||''),genres:(v.genres||[]).length?v.genres:old.genres} : v);
 }
-data.videos=[...curated.values()];
+// Keep the sync catalog intact; only shorten titles in the site view.
+const videoDisplayTitle = title => String(title || '').split(/[#＃](?=[\p{L}\p{N}_])/u)[0].trim() || title;
+data.videos=[...curated.values()].map(v=>({...v,title:videoDisplayTitle(v.title)}));
 const get = key => Array.isArray(data[key]) ? [...data[key]].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))) : [];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const asset = u => /^(?:assets|panels-v2)\/[a-zA-Z0-9_./-]+$/.test(u || '') && !String(u).includes('..') ? esc(u) : '';
@@ -41,7 +43,26 @@ if(page==='games'||page==='comics'){
  else if(page==='comics' && character){const items=get('comics').filter(x=>Array.isArray(x.characters)&&x.characters.includes(character));const person=get('characters').find(x=>x.id===character);el.innerHTML=`<p>${esc(person?.name||'')}の出演4コマ</p>${items.length?`<div class="cards comic-grid">${items.map(x=>card('comics',x)).join('')}</div>`:'<div class="empty">出演4コマはまだ登録されていません。</div>'}<p><a href="comics.html">すべての4コマを見る →</a></p>`} else el.innerHTML=listing(page);
 }
 if(page==='videos'){
- el.innerHTML=listing('videos');
+ const videos=get('videos');
+ const genres=[...new Set(videos.flatMap(v=>v.genres||[]))].sort((a,b)=>a.localeCompare(b,'ja'));
+ const requested=new URLSearchParams(location.search).get('genre');
+ let active=genres.includes(requested)?requested:'';
+ let shown=24;
+ el.innerHTML='<div class="video-filters" role="group" aria-label="再生リストで絞り込み"></div><p class="video-count" role="status"></p><div class="cards video-grid"></div><button type="button" class="video-more">もっと見る</button>';
+ const filters=el.querySelector('.video-filters'), grid=el.querySelector('.video-grid'), more=el.querySelector('.video-more');
+ function renderVideos(){
+  const selected=videos.filter(v=>!active||(v.genres||[]).includes(active));
+  grid.innerHTML=selected.slice(0,shown).map(v=>card('videos',v)).join('');
+  el.querySelector('.video-count').textContent=`${active||'すべて'} · ${selected.length}件（新着順）`;
+  more.hidden=shown>=selected.length;
+  filters.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.genre===active)));
+ }
+ for(const genre of ['',...genres]){
+  const button=document.createElement('button');button.type='button';button.dataset.genre=genre;button.textContent=genre||'すべて';
+  button.addEventListener('click',()=>{active=genre;shown=24;const url=new URL(location.href);genre?url.searchParams.set('genre',genre):url.searchParams.delete('genre');history.replaceState(null,'',url);renderVideos();});filters.append(button);
+ }
+ more.addEventListener('click',()=>{shown+=24;renderVideos();});
+ renderVideos();
 }
 if(page==='video'){
  const video=(/^[A-Za-z0-9_-]{11}$/.test(id) ? curated.get(id) : null);

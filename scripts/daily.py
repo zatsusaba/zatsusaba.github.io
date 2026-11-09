@@ -10,6 +10,10 @@ from media import link, pages
 JST = timezone(timedelta(hours=9))
 
 
+def display_title(title):
+    return re.split(r"[#＃](?=\w)", title, maxsplit=1)[0].strip() or title
+
+
 def calendar(videos, root):
     migration = root / "config/youtube-published.json"
     verified = json.loads(migration.read_text(encoding="utf-8-sig")) if migration.exists() else {}
@@ -55,9 +59,10 @@ def render(videos, articles, root, page, write, urls):
         result = []
         for day, (_, vid, title, kind) in dated_entries:
             href = "/video.html?id="+vid
-            label = "種別未確認" if kind == "未確認" else kind
+            label = "" if kind == "未確認" else kind
+            meta = escape(day or "公開日時を確認中") + (" · " + escape(label) if label else "")
             extra = "".join(link(a["url"], "詳しく読む："+a["title"]) for a in deep[vid])
-            result.append(f'<article class="daily-card"><a href="{href}"><img loading="lazy" width="320" height="180" src="https://i.ytimg.com/vi/{vid}/mqdefault.jpg" alt=""><small>{escape(day or "公開日時を確認中")} · {escape(label)}</small><h3>{escape(title)}</h3></a>{extra}</article>')
+            result.append(f'<article class="daily-card"><a href="{href}"><img loading="lazy" width="320" height="180" src="https://i.ytimg.com/vi/{vid}/mqdefault.jpg" alt=""><small>{meta}</small><h3>{escape(display_title(title))}</h3></a>{extra}</article>')
         return '<div class="daily-grid">'+"".join(result)+'</div>'
 
     for day, entries in groups.items():
@@ -81,4 +86,4 @@ def render(videos, articles, root, page, write, urls):
     archive += grid+'<h2>過去の更新</h2><div class="daily-dates">'+dates+'</div></section>'
     write("/today/",page("今日の雑学","公開済み動画を日本時間の公開日から探せます。","/today/",archive))
     urls.append("/today/")
-    return '<section class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の雑学</h2></div></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'
+    return '<section id="today" class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の雑学</h2></div></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'

@@ -376,3 +376,9 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
 /* Generated pages retain only the useful policy and contact footer. */
 .blog-page footer { padding-block: 16px; }
 .blog-page footer .site-info-links { border-top: 0; padding-top: 0; }
+
+#today { scroll-margin-top: 84px; }
+.video-filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+.video-filters button,.video-more { font:inherit; font-size:14px; min-height:44px; padding:10px 16px; border:1px solid #777; border-radius:6px; background:#fffdf8; color:#1c1c21; cursor:pointer; }
+.video-filters button[aria-pressed="true"] { background:#b71a32; color:#fff; border-color:#b71a32; }
+.video-more { display:block; margin:24px auto 0; }

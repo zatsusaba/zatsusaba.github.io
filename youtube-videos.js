@@ -1,5 +1,25 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "ajgLqGRd080",
+    "title": "紫キャベツにお酢をかけると #雑学 #面白い #紫キャベツ",
+    "publishedAt": "2026-11-09T12:00:22Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "紫キャベツの色素「アントシアニン」は、周囲の酸性・アルカリ性によって色が変化します。\n食酢で酸性になると、赤っぽく見えることがあります。色合いはキャベツの状態やお酢の量・濃さでも変わります。\n\n出典：日本化学会「キッズサイエンス：不思議な色水を作ろう！」\nhttps://kdc.csj.jp/learning/item_365.html\n\n#雑学 #面白い #紫キャベツ"
+  },
+  {
+    "id": "VauFYydFKBQ",
+    "title": "指の不思議 #雑学 #面白い #指",
+    "publishedAt": "2026-11-09T10:00:28Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "指を曲げる筋肉の一部は、手の中ではなく前腕にあります。筋肉の力は「腱（けん）」を通じて指の骨に伝わります。\nもちろん、手の中にも指の動きに関わる筋肉があります。お菓子を取るのはキュウちゃんの意思です。\n\n出典：日本整形外科学会／日本手外科学会「指の屈筋腱損傷」\nhttps://www.joa.or.jp/public/sick/condition/flexor.html\n\n#雑学 #面白い #人体"
+  },
+  {
     "id": "UsdNxnHLHlc",
     "title": "四角いうんち #雑学 #面白い #うんち",
     "publishedAt": "2026-11-09T09:00:31Z",

@@ -1,0 +1,30 @@
+status: approved
+approval: 2026-11-09 作者本人が第3作「あくびがうつる仲」の完成画像4枚と原稿によるサイト掲載を依頼。
+title: あくびがうつる仲
+date: '2026-11-09'
+characters:
+  - 太郎
+  - キュウちゃん
+themes:
+  - 人体
+  - 心理
+panels:
+  - src: /comic-media/contagious-yawn/01.png
+    alt: 夜の部屋で、太郎とキュウちゃんが並んで同時に大あくび。太郎「ふわぁ〜あ」、キュウちゃん「ふぁぁ〜」。
+    text: ''
+  - src: /comic-media/contagious-yawn/02.png
+    alt: 太郎がスマホを見せてニヤニヤしながら「あくびは、仲いい相手ほどうつりやすいらしいよ」「僕のあくび、うつったね」。キュウちゃんは口を閉じて固まっている。
+    text: ''
+  - src: /comic-media/contagious-yawn/03.png
+    alt: キュウちゃんが太郎を指さして「うつったのは、お前の方じゃ」。太郎は余裕の笑顔で「どっちでも、仲いいってことじゃん」。
+    text: ''
+  - src: /comic-media/contagious-yawn/04.png
+    alt: 太郎がまたあくびをする横で、キュウちゃんが両手で口を押さえ、涙目で震えながら「んむむむむ……！！」。太郎「友達、そこまで嫌！？」
+    text: ''
+trivia: >-
+  あくびは人から人へうつることがあります。日常の場面を観察した研究では、見知らぬ人より知り合い、友達、家族のほうがうつりやすい傾向がありました。ただし、なぜそうなるのかはまだ分かっていません。見知らぬ人どうしでもうつるので、うつった＝仲良しの証拠にはなりません。
+sources:
+  - citation: 'Norscia I. & Palagi E. (2011) "Yawn Contagion and Empathy in Homo sapiens" PLoS ONE 6(12): e28472'
+    url: https://doi.org/10.1371/journal.pone.0028472
+  - citation: 'Massen J.J.M. & Gallup A.C. (2017) "Why contagious yawning does not (yet) equate to empathy" Neuroscience and Biobehavioral Reviews 80: 573–585'
+    url: https://doi.org/10.1016/j.neubiorev.2017.07.006

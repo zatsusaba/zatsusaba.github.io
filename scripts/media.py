@@ -105,6 +105,14 @@ def load_comics(root, today):
             values = data.setdefault(key, [])
             require(isinstance(values, list) and all(isinstance(v,str) and v for v in values), key)
         require(all(re.fullmatch(r"[A-Za-z0-9_-]{11}", v) for v in data["videos"]), "videos")
+        if "trivia" in data:
+            require(isinstance(data["trivia"], str) and data["trivia"].strip(), "trivia")
+        if "sources" in data:
+            require(isinstance(data["sources"], list) and all(
+                isinstance(source, dict)
+                and isinstance(source.get("citation"), str) and source["citation"].strip()
+                and isinstance(source.get("url"), str) and source["url"].startswith("https://doi.org/")
+                for source in data["sources"]), "sources")
         data.update(url=f"/comics/{path.stem}/", date=published.isoformat())
         entries.append(data)
     return sorted(entries, key=lambda c:(c["date"], c["url"]), reverse=True)
@@ -181,10 +189,14 @@ def render_comics(comics, articles, page, write, urls, known_videos):
         if i:
             neighbors.append(link(comics[i-1]["url"],"次作："+comics[i-1]["title"]+" →"))
         tags = [link(group_url(kind,v),v) for key,kind in (("characters","character"),("themes","theme")) for v in c[key]]
+        trivia = ('<section class="comic-trivia"><h2>雑学</h2><p>'+escape(c["trivia"])+"</p>"
+                  + ('<h2>出典</h2><ul>'+''.join('<li>'+link(s["url"],s["citation"])+"</li>" for s in c.get("sources",[]))+"</ul>" if c.get("sources") else '')
+                  + '</section>') if c.get("trivia") else ''
         body = ('<article class="blog-article comic-detail">'+comic_sheet(c)+'<div class="comic-info">'+link("/comics/","← Comic一覧")+
                 f'<p class="eyebrow">COMICS · {c["date"]}</p><h1>{escape(c["title"])}</h1>'
                 +'<div class="comic-tags">'+''.join(tags)+'</div>'
                 + ("<p>"+escape("・".join(c["tags"]))+"</p>" if c["tags"] else "")
+                + trivia
                 + ('<h2>関連する記事・動画</h2><ul>'+''.join('<li>'+r+'</li>' for r in refs)+'</ul>' if refs else '')
                 + ('<nav class="pager" aria-label="前後の作品">'+''.join(neighbors)+'</nav>' if neighbors else '')
                 +link("/comics/","Comic一覧へ")+'</div></article>')

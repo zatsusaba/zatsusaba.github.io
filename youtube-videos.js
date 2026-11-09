@@ -1,5 +1,15 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "EfkvwxdgSuc",
+    "title": "苦いチョコレート #雑学 #面白い #チョコレート",
+    "publishedAt": "2026-11-09T03:41:31Z",
+    "date": "2026-11-09",
+    "format": "未確認",
+    "genres": [],
+    "characters": [],
+    "description": "舌の先だけが甘味を感じる、という昔の「舌地図」は正しくありません。\n甘味や苦味を感じる細胞は舌の広い範囲にあります。ただし、場所ごとの感じやすさが完全に同じという意味ではありません。\n\n出典：米国国立聴覚・伝達障害研究所（NIDCD）「Taste Disorders」\nhttps://www.nidcd.nih.gov/health/taste-disorders\n\n#雑学 #面白い #チョコレート"
+  },
+  {
     "id": "srVY3dUR8K0",
     "title": "焼き芋の謎 #漫画 #雑学 #焼き芋",
     "publishedAt": "2026-11-08T22:00:12Z",

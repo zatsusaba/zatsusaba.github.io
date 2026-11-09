@@ -46,7 +46,7 @@ def main():
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
         assert FOOTER in built
         built=built.replace(FOOTER,'')
-        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/today/">今日の雑学</a>',"")
+        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',"")
         if name=="index.html":
             original=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',"",original,flags=re.S)
             original=re.sub(r'<section class="home-comic-strip".*?</section>',"",original,flags=re.S)

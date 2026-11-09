@@ -16,72 +16,78 @@ window.YOUTUBE_VIDEOS = [
     "title": "紫キャベツにお酢をかけると #雑学 #面白い #紫キャベツ",
     "publishedAt": "2026-11-09T12:00:22Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "紫キャベツの色素「アントシアニン」は、周囲の酸性・アルカリ性によって色が変化します。\n食酢で酸性になると、赤っぽく見えることがあります。色合いはキャベツの状態やお酢の量・濃さでも変わります。\n\n出典：日本化学会「キッズサイエンス：不思議な色水を作ろう！」\nhttps://kdc.csj.jp/learning/item_365.html\n\n#雑学 #面白い #紫キャベツ"
+    "description": "紫キャベツの色素「アントシアニン」は、周囲の酸性・アルカリ性によって色が変化します。\n食酢で酸性になると、赤っぽく見えることがあります。色合いはキャベツの状態やお酢の量・濃さでも変わります。\n\n出典：日本化学会「キッズサイエンス：不思議な色水を作ろう！」\nhttps://kdc.csj.jp/learning/item_365.html\n\n#雑学 #面白い #紫キャベツ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VauFYydFKBQ",
     "title": "指の不思議 #雑学 #面白い #指",
     "publishedAt": "2026-11-09T10:00:28Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "指を曲げる筋肉の一部は、手の中ではなく前腕にあります。筋肉の力は「腱（けん）」を通じて指の骨に伝わります。\nもちろん、手の中にも指の動きに関わる筋肉があります。お菓子を取るのはキュウちゃんの意思です。\n\n出典：日本整形外科学会／日本手外科学会「指の屈筋腱損傷」\nhttps://www.joa.or.jp/public/sick/condition/flexor.html\n\n#雑学 #面白い #人体"
+    "description": "指を曲げる筋肉の一部は、手の中ではなく前腕にあります。筋肉の力は「腱（けん）」を通じて指の骨に伝わります。\nもちろん、手の中にも指の動きに関わる筋肉があります。お菓子を取るのはキュウちゃんの意思です。\n\n出典：日本整形外科学会／日本手外科学会「指の屈筋腱損傷」\nhttps://www.joa.or.jp/public/sick/condition/flexor.html\n\n#雑学 #面白い #人体",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "UsdNxnHLHlc",
     "title": "四角いうんち #雑学 #面白い #うんち",
     "publishedAt": "2026-11-09T09:00:31Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ウォンバットの四角いうんち。出口で四角くなるのではなく、腸の中で角ができます。\nコモンウォンバットを対象とした研究では、腸壁の硬さの違いや腸の動き、乾燥が形づくりに関係すると考えられています。すべてが完全な立方体というわけではありません。\n\n出典：University of Tasmania「Scientists get to the bottom of wombat cubed poo mystery」\nhttps://www.utas.edu.au/about/news-and-stories/articles/2021/scientists-get-to-the-bottom-of-wombat-cubed-poo-mystery2\n\n#雑学 #面白い #ウォンバット"
+    "description": "ウォンバットの四角いうんち。出口で四角くなるのではなく、腸の中で角ができます。\nコモンウォンバットを対象とした研究では、腸壁の硬さの違いや腸の動き、乾燥が形づくりに関係すると考えられています。すべてが完全な立方体というわけではありません。\n\n出典：University of Tasmania「Scientists get to the bottom of wombat cubed poo mystery」\nhttps://www.utas.edu.au/about/news-and-stories/articles/2021/scientists-get-to-the-bottom-of-wombat-cubed-poo-mystery2\n\n#雑学 #面白い #ウォンバット",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "dCZCZs_M2lw",
     "title": "船の観覧車 #雑学 #面白い #船",
     "publishedAt": "2026-11-09T06:00:21Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "スコットランドにある「ファルカーク・ホイール」は、高さの異なる運河をつなぐ回転式の船舶昇降機です。\n船を載せた水槽は回転中も水平を保ち、船を水ごと上や下へ運びます。キュウちゃんは観覧車と勘違い！\n\n出典：Scottish Canals「The Falkirk Wheel」\nhttps://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel\n補足：SteelConstruction.info「The Falkirk Wheel」\nhttps://www.steelconstruction.info/images/c/c4/2002_-_The_Falkirk_Wheel.pdf\n\n#雑学 #面白い #船"
+    "description": "スコットランドにある「ファルカーク・ホイール」は、高さの異なる運河をつなぐ回転式の船舶昇降機です。\n船を載せた水槽は回転中も水平を保ち、船を水ごと上や下へ運びます。キュウちゃんは観覧車と勘違い！\n\n出典：Scottish Canals「The Falkirk Wheel」\nhttps://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel\n補足：SteelConstruction.info「The Falkirk Wheel」\nhttps://www.steelconstruction.info/images/c/c4/2002_-_The_Falkirk_Wheel.pdf\n\n#雑学 #面白い #船",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "EfkvwxdgSuc",
     "title": "苦いチョコレート #雑学 #面白い #チョコレート",
     "publishedAt": "2026-11-09T03:41:31Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "舌の先だけが甘味を感じる、という昔の「舌地図」は正しくありません。\n甘味や苦味を感じる細胞は舌の広い範囲にあります。ただし、場所ごとの感じやすさが完全に同じという意味ではありません。\n\n出典：米国国立聴覚・伝達障害研究所（NIDCD）「Taste Disorders」\nhttps://www.nidcd.nih.gov/health/taste-disorders\n\n#雑学 #面白い #チョコレート"
+    "description": "舌の先だけが甘味を感じる、という昔の「舌地図」は正しくありません。\n甘味や苦味を感じる細胞は舌の広い範囲にあります。ただし、場所ごとの感じやすさが完全に同じという意味ではありません。\n\n出典：米国国立聴覚・伝達障害研究所（NIDCD）「Taste Disorders」\nhttps://www.nidcd.nih.gov/health/taste-disorders\n\n#雑学 #面白い #チョコレート",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "srVY3dUR8K0",
     "title": "焼き芋の謎 #漫画 #雑学 #焼き芋",
     "publishedAt": "2026-11-08T22:00:12Z",
     "date": "2026-11-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "焼き芋は、砂糖を入れていないのになぜ甘い？\nその秘密は、さつまいもの中にある酵素！\n加熱で糊化したでんぷんが酵素の働きで麦芽糖に変わり、甘みが生まれます。\n甘さは品種や加熱温度・時間によっても変わります。\n\n参考：日本いも類研究会「Ｑ 焼きいもが甘いのはなぜですか？」\nhttps://jrt.gr.jp/q_a/spqa_yakiimo/\n\n#雑学 #面白い #焼き芋"
+    "description": "焼き芋は、砂糖を入れていないのになぜ甘い？\nその秘密は、さつまいもの中にある酵素！\n加熱で糊化したでんぷんが酵素の働きで麦芽糖に変わり、甘みが生まれます。\n甘さは品種や加熱温度・時間によっても変わります。\n\n参考：日本いも類研究会「Ｑ 焼きいもが甘いのはなぜですか？」\nhttps://jrt.gr.jp/q_a/spqa_yakiimo/\n\n#雑学 #面白い #焼き芋",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "UrkKAeBlFpM",
@@ -98,12 +104,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ペンギンの膝どこ #漫画 #雑学 #ペンギン",
     "publishedAt": "2026-11-08T12:13:32Z",
     "date": "2026-11-08",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ペンギンの短い脚。膝はどこにあるの？\n実は、ちゃんと膝があります！\n曲がった膝や脚の上部は体に隠れていて、外からは見えにくい構造。\nさらに歩くときは、かかとを地面につけていません。\n水中での生活に適したコンパクトな脚にも秘密があります。\n\n参考：Penguins International「Do Penguins Have Knees?…and other frequently asked questions」\nhttps://www.penguinsinternational.org/do-penguins-have-knees-and-other-frequently-asked-questions/\n\n#漫画 #雑学 #ペンギン"
+    "description": "ペンギンの短い脚。膝はどこにあるの？\n実は、ちゃんと膝があります！\n曲がった膝や脚の上部は体に隠れていて、外からは見えにくい構造。\nさらに歩くときは、かかとを地面につけていません。\n水中での生活に適したコンパクトな脚にも秘密があります。\n\n参考：Penguins International「Do Penguins Have Knees?…and other frequently asked questions」\nhttps://www.penguinsinternational.org/do-penguins-have-knees-and-other-frequently-asked-questions/\n\n#漫画 #雑学 #ペンギン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "8dYrwoTqQjs",
@@ -134,48 +141,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "復活の落書き #漫画 #雑学 #フリクション",
     "publishedAt": "2026-11-08T07:00:13Z",
     "date": "2026-11-08",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "消したはずの文字が、冷やすと復活！？\n\nフリクションのインキは熱で色が見えなくなり、約－20℃まで冷やすと色が戻ります。普通の冷蔵室や、すべての「消せるペン」に当てはまるわけではありません。\n\n出典：パイロットコーポレーション「とっても便利な消せるボールペン。でも...、色が消えるのはなぜ？」\nhttps://www.pilot.co.jp/media/knowledge/002.html\n\n#漫画 #雑学 #フリクション"
+    "description": "消したはずの文字が、冷やすと復活！？\n\nフリクションのインキは熱で色が見えなくなり、約－20℃まで冷やすと色が戻ります。普通の冷蔵室や、すべての「消せるペン」に当てはまるわけではありません。\n\n出典：パイロットコーポレーション「とっても便利な消せるボールペン。でも...、色が消えるのはなぜ？」\nhttps://www.pilot.co.jp/media/knowledge/002.html\n\n#漫画 #雑学 #フリクション",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1mR6RQrrl8Q",
     "title": "歩く石 #漫画 #雑学 #デスバレー",
     "publishedAt": "2026-11-07T22:00:12Z",
     "date": "2026-11-08",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "アメリカ・デスバレーの「レーストラック・プラヤ」では、石が長い跡を残して移動します。浅くたまった水に薄い氷ができ、その氷が風に押されて動くと、石も一緒に押されることがあります。水・冷え込み・風などの条件がそろったときに起こる珍しい現象です。\n\n参考：米国国立公園局（NPS）「Death Valley’s Moving Rocks」\nhttps://www.nps.gov/articles/deva-moving-rocks.htm\n\n#漫画 #雑学 #デスバレー"
+    "description": "アメリカ・デスバレーの「レーストラック・プラヤ」では、石が長い跡を残して移動します。浅くたまった水に薄い氷ができ、その氷が風に押されて動くと、石も一緒に押されることがあります。水・冷え込み・風などの条件がそろったときに起こる珍しい現象です。\n\n参考：米国国立公園局（NPS）「Death Valley’s Moving Rocks」\nhttps://www.nps.gov/articles/deva-moving-rocks.htm\n\n#漫画 #雑学 #デスバレー",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "ERnfm1UlsOU",
     "title": "燃える氷 #漫画 #雑学 #燃える氷",
     "publishedAt": "2026-11-07T14:00:03Z",
     "date": "2026-11-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "燃える氷と呼ばれる「メタンハイドレート」。低温・高圧下で水分子のかごにメタンを取り込んだ物質で、分解して出てくるメタンが燃えます。普通の氷が燃えるわけではありません。\n\n参考：産業技術総合研究所「燃える氷 メタンハイドレート」\nhttps://www.aist.go.jp/science_town/reading/15/\n\n#漫画 #雑学 #燃える氷"
+    "description": "燃える氷と呼ばれる「メタンハイドレート」。低温・高圧下で水分子のかごにメタンを取り込んだ物質で、分解して出てくるメタンが燃えます。普通の氷が燃えるわけではありません。\n\n参考：産業技術総合研究所「燃える氷 メタンハイドレート」\nhttps://www.aist.go.jp/science_town/reading/15/\n\n#漫画 #雑学 #燃える氷",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "POVx4jnVTks",
     "title": "キウイでドロドロ！？ #漫画 #雑学 #キウイ",
     "publishedAt": "2026-11-07T12:00:39Z",
     "date": "2026-11-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "生のキウイに含まれるたんぱく質分解酵素は、ゼラチンの固まり方を妨げます。キウイを十分に加熱するか、加熱済みの缶詰の果実を使う方法があります。※ゼラチンを使ったゼリーの話で、寒天は別です。\n\n参考：森永製菓「森永クックゼラチン」\nhttps://www.morinaga.co.jp/gelatin/\n\n#漫画 #雑学 #キウイ"
+    "description": "生のキウイに含まれるたんぱく質分解酵素は、ゼラチンの固まり方を妨げます。キウイを十分に加熱するか、加熱済みの缶詰の果実を使う方法があります。※ゼラチンを使ったゼリーの話で、寒天は別です。\n\n参考：森永製菓「森永クックゼラチン」\nhttps://www.morinaga.co.jp/gelatin/\n\n#漫画 #雑学 #キウイ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "habmI89gfaA",
@@ -192,48 +203,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "血管の不思議 #漫画 #雑学 #血管",
     "publishedAt": "2026-11-07T07:34:04Z",
     "date": "2026-11-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "血管が青く見えても、中の血液は赤い色。皮膚や組織を通る光の吸収・散乱などが、血管の見え方に影響しています。\n\n参考：West Texas A&M University「Why are veins blue?」\nhttps://www.wtamu.edu/~cbaird/sq/2012/12/18/why-are-veins-blue/\n\n#漫画 #雑学 #血管"
+    "description": "血管が青く見えても、中の血液は赤い色。皮膚や組織を通る光の吸収・散乱などが、血管の見え方に影響しています。\n\n参考：West Texas A&M University「Why are veins blue?」\nhttps://www.wtamu.edu/~cbaird/sq/2012/12/18/why-are-veins-blue/\n\n#漫画 #雑学 #血管",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JKeyl8bUQKk",
     "title": "カメの甲羅、脱げない!? #漫画 #雑学 #カメ",
     "publishedAt": "2026-11-07T03:52:41Z",
     "date": "2026-11-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "カメの甲羅は、背骨や肋骨とつながった骨格の一部。服のように脱ぐことはできません。\n\n参考：San Diego Zoo Wildlife Alliance\nhttps://animals.sandiegozoo.org/animals/turtle-and-tortoise\n\n#漫画 #雑学 #カメ"
+    "description": "カメの甲羅は、背骨や肋骨とつながった骨格の一部。服のように脱ぐことはできません。\n\n参考：San Diego Zoo Wildlife Alliance\nhttps://animals.sandiegozoo.org/animals/turtle-and-tortoise\n\n#漫画 #雑学 #カメ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JLWEj7NyfOI",
     "title": "自分の声ヤバすぎ #漫画 #雑学 #骨伝導",
     "publishedAt": "2026-11-06T22:00:17Z",
     "date": "2026-11-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "録音した自分の声を聞くと、なんだか別人みたい。\n話しているときは、空気を伝わる音に加えて、骨などを伝わる振動も聞いています。普通の録音再生ではその成分がなく、マイクやスピーカーによっても音は変わります。\n\n参考：Frontiers for Young Minds（空気伝導と骨伝導）\nhttps://kids.frontiersin.org/articles/10.3389/frym.2025.1480846\n\n#漫画 #雑学 #骨伝導"
+    "description": "録音した自分の声を聞くと、なんだか別人みたい。\n話しているときは、空気を伝わる音に加えて、骨などを伝わる振動も聞いています。普通の録音再生ではその成分がなく、マイクやスピーカーによっても音は変わります。\n\n参考：Frontiers for Young Minds（空気伝導と骨伝導）\nhttps://kids.frontiersin.org/articles/10.3389/frym.2025.1480846\n\n#漫画 #雑学 #骨伝導",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "OJx_hVZdGIs",
     "title": "タツノオトシゴの不思議 #漫画 #雑学 #タツノオトシゴ",
     "publishedAt": "2026-11-06T13:00:21Z",
     "date": "2026-11-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "赤ちゃんを産むのは、なんとオスのタツノオトシゴ。\nメスが作った卵をオスの育児嚢に渡し、そこで受精・発生してから稚魚が生まれます。\n\n参考：NOAA（タツノオトシゴの繁殖）\nhttps://oceanservice.noaa.gov/facts/seahorse.html\n\n#漫画 #雑学 #タツノオトシゴ"
+    "description": "赤ちゃんを産むのは、なんとオスのタツノオトシゴ。\nメスが作った卵をオスの育児嚢に渡し、そこで受精・発生してから稚魚が生まれます。\n\n参考：NOAA（タツノオトシゴの繁殖）\nhttps://oceanservice.noaa.gov/facts/seahorse.html\n\n#漫画 #雑学 #タツノオトシゴ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "cbkPwUDroPs",
@@ -250,24 +265,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "カシューナッツの謎 #漫画 #雑学 #カシューナッツ",
     "publishedAt": "2026-11-06T08:00:31Z",
     "date": "2026-11-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "木に実るカシューナッツは、いつものむき身とは全然違う姿。\n食べる部分は、赤いカシューアップルの下に付く硬い果実の中の種です。赤い部分は果柄がふくらんだもの。\n\n参考：PROSEA（Anacardium occidentale L.）\nhttps://prosea.prota4u.org/view.aspx?id=1468\n\n#漫画 #雑学 #カシューナッツ"
+    "description": "木に実るカシューナッツは、いつものむき身とは全然違う姿。\n食べる部分は、赤いカシューアップルの下に付く硬い果実の中の種です。赤い部分は果柄がふくらんだもの。\n\n参考：PROSEA（Anacardium occidentale L.）\nhttps://prosea.prota4u.org/view.aspx?id=1468\n\n#漫画 #雑学 #カシューナッツ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "4JOYg0HovOo",
     "title": "お札の謎 #漫画 #雑学 #お札",
     "publishedAt": "2026-11-06T06:00:09Z",
     "date": "2026-11-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "役目を終えたお札は、どうなる？\n日本銀行に戻り、傷みなどで再び使えないお札は細かく裁断されます。その一部はトイレットペーパーなどの紙製品にリサイクルされます。\n\n参考：日本銀行（お札の寿命と回収後の行き先）\nhttps://www.boj.or.jp/about/education/oshiete/money/c10.htm\n\n#漫画 #雑学 #お札"
+    "description": "役目を終えたお札は、どうなる？\n日本銀行に戻り、傷みなどで再び使えないお札は細かく裁断されます。その一部はトイレットペーパーなどの紙製品にリサイクルされます。\n\n参考：日本銀行（お札の寿命と回収後の行き先）\nhttps://www.boj.or.jp/about/education/oshiete/money/c10.htm\n\n#漫画 #雑学 #お札",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "0FajDHylIPo",
@@ -373,24 +390,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "カバの不思議 #漫画 #雑学 #カバ",
     "publishedAt": "2026-11-04T10:00:40Z",
     "date": "2026-11-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "カバの体が血まみれに見える理由。\n\n実は血ではなく、皮膚から出る赤い分泌液！\n赤とオレンジの色素には、紫外線を吸収する性質や、一部の細菌の増殖を抑える働きがあります。\n\n野生のカバは危険なので、近づかないようにしましょう。\n\n出典：Nature（2004）\nhttps://www.nature.com/articles/429363a\n\n#漫画 #雑学 #カバ"
+    "description": "カバの体が血まみれに見える理由。\n\n実は血ではなく、皮膚から出る赤い分泌液！\n赤とオレンジの色素には、紫外線を吸収する性質や、一部の細菌の増殖を抑える働きがあります。\n\n野生のカバは危険なので、近づかないようにしましょう。\n\n出典：Nature（2004）\nhttps://www.nature.com/articles/429363a\n\n#漫画 #雑学 #カバ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "LtTcyDFD7lo",
     "title": "ししゃもは別の魚？ #漫画 #雑学 #シシャモ",
     "publishedAt": "2026-11-04T08:00:01Z",
     "date": "2026-11-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "普段食べている「ししゃも」の多くは、カラフトシシャモ（カペリン）。\n\n北海道の太平洋沿岸にしか生息しないシシャモとは、別の種類の魚です。\n\n出典：北海道庁\nhttps://www.pref.hokkaido.lg.jp/sr/gid/fis010.html\n\n#漫画 #雑学 #シシャモ"
+    "description": "普段食べている「ししゃも」の多くは、カラフトシシャモ（カペリン）。\n\n北海道の太平洋沿岸にしか生息しないシシャモとは、別の種類の魚です。\n\n出典：北海道庁\nhttps://www.pref.hokkaido.lg.jp/sr/gid/fis010.html\n\n#漫画 #雑学 #シシャモ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "chFZRuFo4FQ",
@@ -409,24 +428,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "メロンの謎 #漫画 #雑学 #メロン",
     "publishedAt": "2026-11-04T03:08:51Z",
     "date": "2026-11-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "メロンの網目は、実は成長途中にできたひび割れの跡！\n\n皮にできたひびをふさぐように組織が発達し、かさぶたのような網目になります。\n\n出典：農林水産省\nhttps://www.maff.go.jp/j/heya/kodomo_sodan/0107/05.html\n\n#漫画 #雑学 #メロン"
+    "description": "メロンの網目は、実は成長途中にできたひび割れの跡！\n\n皮にできたひびをふさぐように組織が発達し、かさぶたのような網目になります。\n\n出典：農林水産省\nhttps://www.maff.go.jp/j/heya/kodomo_sodan/0107/05.html\n\n#漫画 #雑学 #メロン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "LHP8tH3u5Ng",
     "title": "鼻が息できないワケ #漫画 #雑学 #鼻",
     "publishedAt": "2026-11-03T22:00:06Z",
     "date": "2026-11-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "片方の鼻だけ息が通りにくいこと、ありませんか？\n\n実は、鼻の中の粘膜が左右交互に膨らんだり縮んだりする「鼻サイクル」という仕組みがあります。\n\n健康な成人の約7〜8割に見られるとする報告も。ただし、片方の鼻が完全に呼吸を止めるわけではありません。\n\nナギは鼻を見習って休憩するようですが……いつも休んでる！？\n\n#漫画 #雑学 #鼻"
+    "description": "片方の鼻だけ息が通りにくいこと、ありませんか？\n\n実は、鼻の中の粘膜が左右交互に膨らんだり縮んだりする「鼻サイクル」という仕組みがあります。\n\n健康な成人の約7〜8割に見られるとする報告も。ただし、片方の鼻が完全に呼吸を止めるわけではありません。\n\nナギは鼻を見習って休憩するようですが……いつも休んでる！？\n\n#漫画 #雑学 #鼻",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "QlFGnRwtXSU",
@@ -445,48 +466,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "身長の謎 #漫画 #雑学 #身長",
     "publishedAt": "2026-11-03T10:00:27Z",
     "date": "2026-11-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "朝と夜で身長が違うって知ってた？\n\n実は、背骨にある「椎間板」が日中の負荷で圧縮され、寝ている間に水分を取り戻すことで、身長も回復します。\n\n成人1人を長期間測定した研究では、朝と夜の身長差が平均約1.4cmだったという結果も。\n\nでも、身長が戻っても顔面までは変わらない！？\n\n#漫画 #雑学 #身長"
+    "description": "朝と夜で身長が違うって知ってた？\n\n実は、背骨にある「椎間板」が日中の負荷で圧縮され、寝ている間に水分を取り戻すことで、身長も回復します。\n\n成人1人を長期間測定した研究では、朝と夜の身長差が平均約1.4cmだったという結果も。\n\nでも、身長が戻っても顔面までは変わらない！？\n\n#漫画 #雑学 #身長",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "XVR6TkOmp5A",
     "title": "シロクマは真っ黒！？ #漫画 #雑学 #シロクマ",
     "publishedAt": "2026-11-03T08:00:23Z",
     "date": "2026-11-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "真っ白なシロクマ、実は皮膚が黒いって知ってた？\n\nシロクマの毛は透明に近く、光の散乱によって白く見えます。\n\n黒い皮膚の役割については、太陽の熱を吸収するため、紫外線から守るためなどの説がありますが、詳しい理由はまだ解明されていません。\n\nそしてキュウちゃんまで黒ギャルに！？\n\n#漫画 #雑学 #シロクマ"
+    "description": "真っ白なシロクマ、実は皮膚が黒いって知ってた？\n\nシロクマの毛は透明に近く、光の散乱によって白く見えます。\n\n黒い皮膚の役割については、太陽の熱を吸収するため、紫外線から守るためなどの説がありますが、詳しい理由はまだ解明されていません。\n\nそしてキュウちゃんまで黒ギャルに！？\n\n#漫画 #雑学 #シロクマ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "_R9D4sxklfA",
     "title": "魚の年齢、どうやって分かる？ #漫画 #雑学 #魚",
     "publishedAt": "2026-11-03T06:00:03Z",
     "date": "2026-11-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "魚の年齢はどうやって調べる？\n\n実は魚の頭の中にある「耳石」の成長層が手がかりになります。魚の種類によっては、年ごとの輪を数えて年齢を推定できるんです。\n\nでも、魚仙人に聞いてみたら……？\n\n#漫画 #雑学 #魚"
+    "description": "魚の年齢はどうやって調べる？\n\n実は魚の頭の中にある「耳石」の成長層が手がかりになります。魚の種類によっては、年ごとの輪を数えて年齢を推定できるんです。\n\nでも、魚仙人に聞いてみたら……？\n\n#漫画 #雑学 #魚",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "wWWHCD2iQME",
     "title": "ポップコーンの謎 #漫画 #雑学 #ポップコーン",
     "publishedAt": "2026-11-03T03:20:47Z",
     "date": "2026-11-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "普通のトウモロコシをフライパンで熱したら、ポップコーンになる？\n\n実は、ポップコーンになるのは「爆裂種」という特別なトウモロコシ。硬い皮の内部に水蒸気の圧力がたまり、一気にはじける仕組みです。\n\nでも、キュウちゃんは焼ければ満足みたいです。\n\n#漫画 #雑学 #ポップコーン"
+    "description": "普通のトウモロコシをフライパンで熱したら、ポップコーンになる？\n\n実は、ポップコーンになるのは「爆裂種」という特別なトウモロコシ。硬い皮の内部に水蒸気の圧力がたまり、一気にはじける仕組みです。\n\nでも、キュウちゃんは焼ければ満足みたいです。\n\n#漫画 #雑学 #ポップコーン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VeBG7JL45TY",
@@ -517,24 +542,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "ペットボトルに熱湯いれたら #漫画 #雑学 #ペットボトル",
     "publishedAt": "2026-11-02T10:00:34Z",
     "date": "2026-11-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ペットボトルに熱湯を入れると、どうなる？\n\n耐熱性のないペットボトルは熱で縮んだり変形したりします。中身がこぼれてやけどする危険も！\n\n※危険なので、飲料用の空きペットボトルを湯たんぽ代わりに使用しないでください。\n\n参考：サントリーお客様センター\n\n#漫画 #雑学 #ペットボトル"
+    "description": "ペットボトルに熱湯を入れると、どうなる？\n\n耐熱性のないペットボトルは熱で縮んだり変形したりします。中身がこぼれてやけどする危険も！\n\n※危険なので、飲料用の空きペットボトルを湯たんぽ代わりに使用しないでください。\n\n参考：サントリーお客様センター\n\n#漫画 #雑学 #ペットボトル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "aztaFu0K_mY",
     "title": "砂漠の目玉 #漫画 #雑学 #サハラ砂漠",
     "publishedAt": "2026-11-02T08:00:34Z",
     "date": "2026-11-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "宇宙から見ると、サハラ砂漠に巨大な目玉が!?\n\n正体は直径約40kmの「リシャット構造」。\n\n隕石の衝突跡と思われたこともありましたが、盛り上がった岩の層が長い時間をかけて侵食され、巨大な輪っかになった地形です。\n\n参考：NASA Earth Observatory「Eyeing the Richat Structure」\n\n#漫画 #雑学 #サハラ砂漠"
+    "description": "宇宙から見ると、サハラ砂漠に巨大な目玉が!?\n\n正体は直径約40kmの「リシャット構造」。\n\n隕石の衝突跡と思われたこともありましたが、盛り上がった岩の層が長い時間をかけて侵食され、巨大な輪っかになった地形です。\n\n参考：NASA Earth Observatory「Eyeing the Richat Structure」\n\n#漫画 #雑学 #サハラ砂漠",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "lx6icGaRxF8",
@@ -553,24 +580,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "生卵とゆで卵の見分け方 #漫画 #雑学 #卵",
     "publishedAt": "2026-11-02T03:00:29Z",
     "date": "2026-11-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "生卵とゆで卵が混ざった！割らずに見分けるには？\n\n卵を回して一瞬止め、すぐ離してみよう。生卵は中身が回り続けているため再び動き、固ゆで卵は止まったままになります。\n\n参考：Exploratorium「Take an Egg for a Spin」\n\n#漫画 #雑学 #卵"
+    "description": "生卵とゆで卵が混ざった！割らずに見分けるには？\n\n卵を回して一瞬止め、すぐ離してみよう。生卵は中身が回り続けているため再び動き、固ゆで卵は止まったままになります。\n\n参考：Exploratorium「Take an Egg for a Spin」\n\n#漫画 #雑学 #卵",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "H44FYx_F5ls",
     "title": "踊るレーズン #漫画 #雑学 #レーズン",
     "publishedAt": "2026-11-01T23:00:23Z",
     "date": "2026-11-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "炭酸水にレーズンを入れると、勝手に踊り始める!?\n\n炭酸の泡がレーズンにくっついて浮き、泡が離れると沈む。この繰り返しで、ダンスしているように見えるんです。\n\n参考：Iowa PBS「Learn About Density With Dancing Raisins」\n\n#漫画 #雑学 #レーズン"
+    "description": "炭酸水にレーズンを入れると、勝手に踊り始める!?\n\n炭酸の泡がレーズンにくっついて浮き、泡が離れると沈む。この繰り返しで、ダンスしているように見えるんです。\n\n参考：Iowa PBS「Learn About Density With Dancing Raisins」\n\n#漫画 #雑学 #レーズン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "ShLGSDZ25KE",
@@ -589,24 +618,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "砂漠の魚 #漫画 #雑学 #デビルズホール",
     "publishedAt": "2026-11-01T10:00:01Z",
     "date": "2026-11-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "アメリカの砂漠にある小さな水の穴。そこには、野生では世界でここにしかいない魚がいる！\n\n名前は「デビルズホール・パプフィッシュ」。\n\n温かくて酸素も少ない過酷な水中で暮らす、絶滅危惧種の魚です。\n\n参考：米国国立公園局（NPS）「Devils Hole」\n\n#漫画 #雑学 #デビルズホール"
+    "description": "アメリカの砂漠にある小さな水の穴。そこには、野生では世界でここにしかいない魚がいる！\n\n名前は「デビルズホール・パプフィッシュ」。\n\n温かくて酸素も少ない過酷な水中で暮らす、絶滅危惧種の魚です。\n\n参考：米国国立公園局（NPS）「Devils Hole」\n\n#漫画 #雑学 #デビルズホール",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "zJntWnz20ww",
     "title": "ラムネのビー玉は #漫画 #雑学 #ラムネ",
     "publishedAt": "2026-11-01T08:00:23Z",
     "date": "2026-11-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ラムネのビー玉は、実は昔のフタだった！\n\n昔はコルク栓が使われていましたが、高価で炭酸も抜けやすかったため、ビー玉で密封する瓶が考案されました。\n\n参考：トンボ飲料「ラムネの歴史とトンボラムネ」\n\n#漫画 #雑学 #ラムネ"
+    "description": "ラムネのビー玉は、実は昔のフタだった！\n\n昔はコルク栓が使われていましたが、高価で炭酸も抜けやすかったため、ビー玉で密封する瓶が考案されました。\n\n参考：トンボ飲料「ラムネの歴史とトンボラムネ」\n\n#漫画 #雑学 #ラムネ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "MkN35sJyIJw",
@@ -625,24 +656,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "マイクラの謎 #マイクラ #雑学 #マインクラフト",
     "publishedAt": "2026-11-01T03:00:20Z",
     "date": "2026-11-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "遊びで雑学【Shorts】"
     ],
     "characters": [],
-    "description": "マイクラって、最初はブロックを壊せなかった！？\n\n2009年、Notchが開発した初期の「Cave Game」は、草と石の世界を歩き回るシンプルな技術テストでした。\n\nブロックを壊すことも置くこともできなかった初期のマイクラ。\n\nそんな歴史を太郎が解説している間に、キュウちゃんは玄関にとんでもない罠を……。\n\n#マイクラ #マインクラフト #雑学"
+    "description": "マイクラって、最初はブロックを壊せなかった！？\n\n2009年、Notchが開発した初期の「Cave Game」は、草と石の世界を歩き回るシンプルな技術テストでした。\n\nブロックを壊すことも置くこともできなかった初期のマイクラ。\n\nそんな歴史を太郎が解説している間に、キュウちゃんは玄関にとんでもない罠を……。\n\n#マイクラ #マインクラフト #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "XlZLPZ3zacs",
     "title": "コーラに牛乳を入れたら #雑学 #コーラ #牛乳",
     "publishedAt": "2026-11-01T00:00:28Z",
     "date": "2026-11-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "コーラに牛乳を入れると、まさかの変化が！？\n\nコーラの酸によって牛乳のたんぱく質が固まり、色の成分などを巻き込んで沈むことで、上の液体の色が薄くなることがあります。\n\n※実験した飲み物は飲まないでください。特に常温での長時間放置は危険です。\n\n#雑学 #コーラ #牛乳"
+    "description": "コーラに牛乳を入れると、まさかの変化が！？\n\nコーラの酸によって牛乳のたんぱく質が固まり、色の成分などを巻き込んで沈むことで、上の液体の色が薄くなることがあります。\n\n※実験した飲み物は飲まないでください。特に常温での長時間放置は危険です。\n\n#雑学 #コーラ #牛乳",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "tFJT3fKq6_U",
@@ -674,24 +707,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "みかん風船割り #漫画 #雑学 #みかん",
     "publishedAt": "2026-10-31T03:00:04Z",
     "date": "2026-10-31",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "みかんの皮をギュッと絞ると、風船が突然パンッ！？\n\n皮に含まれる「リモネン」には、天然ゴムを弱らせる作用があります。風船の素材や状態によっては割れないこともあります。\n\n#漫画 #雑学 #みかん"
+    "description": "みかんの皮をギュッと絞ると、風船が突然パンッ！？\n\n皮に含まれる「リモネン」には、天然ゴムを弱らせる作用があります。風船の素材や状態によっては割れないこともあります。\n\n#漫画 #雑学 #みかん",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Lksv7MeDX6M",
     "title": "100万円を拾ったら #漫画 #雑学 #落とし物",
     "publishedAt": "2026-10-30T13:00:30Z",
     "date": "2026-10-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "日本の遺失物法では、拾った落とし物を正しく届け、持ち主に返った場合、拾得者は報労金を請求できる権利があります。\n\n【重要な条件】\n・路上で拾った場合、報労金は価値の5〜20％\n・駅や店舗など施設内で拾った場合、拾得者の取り分は2.5〜10％\n・100万円の場合、路上なら5万〜20万円が範囲\n・金額や支払い方法は当事者同士で話し合う\n・路上では7日以内に警察などへ、施設内では24時間以内に管理者へ届けないと権利を失う\n・権利を放棄していた場合は請求できない\n・持ち主への返還後1か月を過ぎると請求できない\n\n報労金は法律上の支払い義務ですが、20万円が必ず支払われるわけではなく、請求しただけで自動入金されるわけでもありません。\n\nまた、報労金を請求する場合、拾得者の氏名や住所が落とし主に伝えられます。\n\n落とし物は速やかに届けましょう。\n\n【出典】\n警察庁「遺失届情報サイト」\nhttps://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/index.html\n\ne-Gov法令検索「遺失物法」第28条・第29条・第34条\nhttps:/"
+    "description": "日本の遺失物法では、拾った落とし物を正しく届け、持ち主に返った場合、拾得者は報労金を請求できる権利があります。\n\n【重要な条件】\n・路上で拾った場合、報労金は価値の5〜20％\n・駅や店舗など施設内で拾った場合、拾得者の取り分は2.5〜10％\n・100万円の場合、路上なら5万〜20万円が範囲\n・金額や支払い方法は当事者同士で話し合う\n・路上では7日以内に警察などへ、施設内では24時間以内に管理者へ届けないと権利を失う\n・権利を放棄していた場合は請求できない\n・持ち主への返還後1か月を過ぎると請求できない\n\n報労金は法律上の支払い義務ですが、20万円が必ず支払われるわけではなく、請求しただけで自動入金されるわけでもありません。\n\nまた、報労金を請求する場合、拾得者の氏名や住所が落とし主に伝えられます。\n\n落とし物は速やかに届けましょう。\n\n【出典】\n警察庁「遺失届情報サイト」\nhttps://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/index.html\n\ne-Gov法令検索「遺失物法」第28条・第29条・第34条\nhttps:/",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "GXxLMo1fb8s",
@@ -710,36 +745,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "三秒ルールは本当？ #漫画 #雑学 #3秒ルール",
     "publishedAt": "2026-10-30T08:00:22Z",
     "date": "2026-10-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "三秒ルールは本当なのか？\n\n研究では、床の細菌が1秒未満で食べ物に移る場合もあると報告されています。\n\n細菌の移りやすさは、接触時間だけでなく、食べ物の水分や床の材質などによって変わります。\n\n※3秒以内なら安全という根拠はありません。ただし、落とした食べ物が必ず食中毒を起こすという意味でもありません。\n\n出典：Rutgers University（2016）\nhttps://www.rutgers.edu/news/rutgers-researchers-debunk-five-second-rule-eating-food-floor-isnt-safe\n\n#漫画 #雑学 #3秒ルール"
+    "description": "三秒ルールは本当なのか？\n\n研究では、床の細菌が1秒未満で食べ物に移る場合もあると報告されています。\n\n細菌の移りやすさは、接触時間だけでなく、食べ物の水分や床の材質などによって変わります。\n\n※3秒以内なら安全という根拠はありません。ただし、落とした食べ物が必ず食中毒を起こすという意味でもありません。\n\n出典：Rutgers University（2016）\nhttps://www.rutgers.edu/news/rutgers-researchers-debunk-five-second-rule-eating-food-floor-isnt-safe\n\n#漫画 #雑学 #3秒ルール",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "90D3TeDKR_Y",
     "title": "レシートを温めたら #漫画 #雑学 #レシート",
     "publishedAt": "2026-10-30T03:15:28Z",
     "date": "2026-10-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "レシートをドライヤーで乾かしたら、まさかの真っ黒！？\n\n多くのレシートに使われる感熱紙は、熱で薬品が反応して発色します。インクを使わずに印字できる仕組みです。\n\n※すべてのレシートが同じように変色するわけではありません。大切なレシートを加熱しないでください。\n\n出典：三菱製紙「感熱紙」\nhttps://www.mpm.co.jp/ip/thermal-tech.html\n\n#漫画 #雑学 #レシート"
+    "description": "レシートをドライヤーで乾かしたら、まさかの真っ黒！？\n\n多くのレシートに使われる感熱紙は、熱で薬品が反応して発色します。インクを使わずに印字できる仕組みです。\n\n※すべてのレシートが同じように変色するわけではありません。大切なレシートを加熱しないでください。\n\n出典：三菱製紙「感熱紙」\nhttps://www.mpm.co.jp/ip/thermal-tech.html\n\n#漫画 #雑学 #レシート",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "lt5nkJKK1bA",
     "title": "硬貨を壊すと #漫画 #雑学 #お金",
     "publishedAt": "2026-10-29T12:00:18Z",
     "date": "2026-10-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "実は日本では、硬貨を故意に傷つけたり、鋳つぶしたりする行為は法律で禁止されています。\n\n貨幣損傷等取締法に違反すると、1年以下の拘禁刑または20万円以下の罰金が科される可能性があります。\n\n※必ず20万円の罰金になるわけではありません。硬貨の加工は漫画上の演出です。\n\n出典：e-Gov法令検索「貨幣損傷等取締法」\nhttps://laws.e-gov.go.jp/law/322AC0000000148\n\n#漫画 #雑学 #お金"
+    "description": "実は日本では、硬貨を故意に傷つけたり、鋳つぶしたりする行為は法律で禁止されています。\n\n貨幣損傷等取締法に違反すると、1年以下の拘禁刑または20万円以下の罰金が科される可能性があります。\n\n※必ず20万円の罰金になるわけではありません。硬貨の加工は漫画上の演出です。\n\n出典：e-Gov法令検索「貨幣損傷等取締法」\nhttps://laws.e-gov.go.jp/law/322AC0000000148\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VVo0TbX0uHE",
@@ -770,37 +808,40 @@ window.YOUTUBE_VIDEOS = [
     "title": "LINEの新機能 #漫画 #雑学 #LINE",
     "publishedAt": "2026-10-29T08:01:41Z",
     "date": "2026-10-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "話題の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "LINE通話の録音、相手にバレる？\n\n2026年10月27日、LINEに新機能「通話レコーディング」が登場！録音を開始すると双方に音声案内が流れ、相手の画面にも録音中であることが表示されます。\n\n※LINEラボで順次提供中。1対1の通話が対象です。\n\n出典：LINEヤフー公式\nhttps://www.lycorp.co.jp/ja/news/release/020888/\n\n#漫画 #雑学 #LINE"
+    "description": "LINE通話の録音、相手にバレる？\n\n2026年10月27日、LINEに新機能「通話レコーディング」が登場！録音を開始すると双方に音声案内が流れ、相手の画面にも録音中であることが表示されます。\n\n※LINEラボで順次提供中。1対1の通話が対象です。\n\n出典：LINEヤフー公式\nhttps://www.lycorp.co.jp/ja/news/release/020888/\n\n#漫画 #雑学 #LINE",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Eztv5hRtTws",
     "title": "幻の魚 #漫画 #雑学 #伝説",
     "publishedAt": "2026-10-29T06:00:34Z",
     "date": "2026-10-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "幻の魚イトウの解説。\n\n🔻本編マンガはこちら\nhttps://youtu.be/Qf-ddJJrVH4\n\n#漫画 #雑学 #伝説"
+    "description": "幻の魚イトウの解説。\n\n🔻本編マンガはこちら\nhttps://youtu.be/Qf-ddJJrVH4\n\n#漫画 #雑学 #伝説",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Un1qIM76mJU",
     "title": "炭酸が爆発⁉ #漫画 #雑学 #炭酸飲料",
     "publishedAt": "2026-10-28T23:00:22Z",
     "date": "2026-10-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "炭酸飲料をキンキンに冷やそうとした結果…⁉\n\n炭酸飲料は凍ると中身が膨張し、缶や容器が破裂することも！冷凍保存には注意しよう。\n\n#漫画 #雑学 #炭酸飲料"
+    "description": "炭酸飲料をキンキンに冷やそうとした結果…⁉\n\n炭酸飲料は凍ると中身が膨張し、缶や容器が破裂することも！冷凍保存には注意しよう。\n\n#漫画 #雑学 #炭酸飲料",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Qf-ddJJrVH4",
@@ -821,24 +862,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "油は魔法で #漫画 #雑学 #食用油",
     "publishedAt": "2026-10-28T11:00:23Z",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "炒め物の油は、食材に薄く行き渡る程度が一つの目安。例えば2人分の野菜炒めなら大さじ1杯程度。ただし食材や調理器具によって適量は変わります。\n\n使用済み油は排水口へ流さず、冷ましてから適切に処分しましょう。紙に吸わせる際は自然発火防止にも注意し、自治体のルールを確認してください。\n\n出典：J-オイルミルズ\nhttps://shop.j-oil.com/f/mailarchive_240507\n\n出典：日清オイリオ\nhttps://www.nisshin-oillio.com/kitchen/study-oil/throw.html\n\n#漫画 #雑学 #食用油"
+    "description": "炒め物の油は、食材に薄く行き渡る程度が一つの目安。例えば2人分の野菜炒めなら大さじ1杯程度。ただし食材や調理器具によって適量は変わります。\n\n使用済み油は排水口へ流さず、冷ましてから適切に処分しましょう。紙に吸わせる際は自然発火防止にも注意し、自治体のルールを確認してください。\n\n出典：J-オイルミルズ\nhttps://shop.j-oil.com/f/mailarchive_240507\n\n出典：日清オイリオ\nhttps://www.nisshin-oillio.com/kitchen/study-oil/throw.html\n\n#漫画 #雑学 #食用油",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "zXlvsOBuNUM",
     "title": "マグマの謎 #マイクラ #マインクラフト #マグマ",
     "publishedAt": "2026-10-28T09:00:24Z",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "マグマと溶岩、何が違うの？\n\n地下にある溶けた岩石は「マグマ」、地表に出ると「溶岩」と呼ばれる！\n\nマインクラフトから学ぶ、意外と知らない火山の科学！\n\n#漫画 #雑学 #マグマ"
+    "description": "マグマと溶岩、何が違うの？\n\n地下にある溶けた岩石は「マグマ」、地表に出ると「溶岩」と呼ばれる！\n\nマインクラフトから学ぶ、意外と知らない火山の科学！\n\n#漫画 #雑学 #マグマ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "kuWWML8NBJ4",
@@ -859,50 +902,54 @@ window.YOUTUBE_VIDEOS = [
     "title": "シャンプーの謎 #漫画 #雑学 #シャンプー",
     "publishedAt": "2026-10-28T03:00:24Z",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "シャンプーは髪の毛だけでなく、頭皮の皮脂や汚れを落とすことも大切です。\n\n髪と頭皮をよく濡らし、指の腹で優しく洗いましょう。耳の後ろや襟足は、すすぎ残しにも注意！\n\n出典：花王「髪と頭皮にやさしい洗髪方法」\nhttps://www.kao.com/jp/haircare/scalp-care/8-1/\n\n#漫画 #雑学 #シャンプー"
+    "description": "シャンプーは髪の毛だけでなく、頭皮の皮脂や汚れを落とすことも大切です。\n\n髪と頭皮をよく濡らし、指の腹で優しく洗いましょう。耳の後ろや襟足は、すすぎ残しにも注意！\n\n出典：花王「髪と頭皮にやさしい洗髪方法」\nhttps://www.kao.com/jp/haircare/scalp-care/8-1/\n\n#漫画 #雑学 #シャンプー",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "egucjsnRL6M",
     "title": "料理の色で味変？ #漫画 #雑学 #料理",
     "publishedAt": "2026-10-27T22:00:29Z",
     "date": "2026-10-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "同じ料理なのに、色が違うだけで味の感じ方が変わる！？\n\n人間は食べ物の色から、どんな味がするかを無意識に予想しています。\n\n悪魔の館に登場した、青く照らされたローストビーフ。その味は……？\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #雑学 #料理"
+    "description": "同じ料理なのに、色が違うだけで味の感じ方が変わる！？\n\n人間は食べ物の色から、どんな味がするかを無意識に予想しています。\n\n悪魔の館に登場した、青く照らされたローストビーフ。その味は……？\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #雑学 #料理",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "PmPBVXTFDWc",
     "title": "洗濯洗剤を2倍入れたら！？ #漫画 #雑学 #洗濯",
     "publishedAt": "2026-10-27T14:45:20Z",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "洗濯洗剤は多く入れれば汚れがよく落ちる、というわけではありません。入れすぎると洗剤が残りやすくなり、機種によっては汚れ落ちに悪影響が出る場合もあります。\n\n洗濯物の量に合わせて、洗剤の表示と洗濯機の案内に従いましょう。\n\n出典：パナソニック\nhttps://jpn.faq.panasonic.com/app/answers/detail/a_id/95\n\n#漫画 #雑学 #洗濯"
+    "description": "洗濯洗剤は多く入れれば汚れがよく落ちる、というわけではありません。入れすぎると洗剤が残りやすくなり、機種によっては汚れ落ちに悪影響が出る場合もあります。\n\n洗濯物の量に合わせて、洗剤の表示と洗濯機の案内に従いましょう。\n\n出典：パナソニック\nhttps://jpn.faq.panasonic.com/app/answers/detail/a_id/95\n\n#漫画 #雑学 #洗濯",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "N1sP2f7MNQE",
     "title": "悪魔メイドとご主人さま  #漫画 #雑学 #悪魔",
     "publishedAt": "2026-10-27T13:13:57Z",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "舌が感じる基本の味は5種類！\n甘味・塩味・酸味・苦味・うま味。\n\nでも、いちごを「いちごの味」だと感じるには、舌だけじゃ足りない！？\n\n毒舌な悪魔メイド・マチとご主人さまが繰り広げる、ちょっと危険な味覚の雑学。\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #切り抜き #悪魔"
+    "description": "舌が感じる基本の味は5種類！\n甘味・塩味・酸味・苦味・うま味。\n\nでも、いちごを「いちごの味」だと感じるには、舌だけじゃ足りない！？\n\n毒舌な悪魔メイド・マチとご主人さまが繰り広げる、ちょっと危険な味覚の雑学。\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #切り抜き #悪魔",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "uvozWjqY3AY",
@@ -923,12 +970,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "乾燥した唇の謎 #漫画 #雑学 #唇",
     "publishedAt": "2026-10-27T08:00:22Z",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "乾いた唇、舐めると潤う？\n本編「ハロウィンのかぼちゃを人見知りにかぶせると！？」〔本編URL：公開後に作者が貼る〕\n出典：American Academy of Dermatology「7 dermatologists' tips for healing dry, chapped lips」 https://aad.org/skin-care-basics/heal-dry-chapped-lips\n#漫画 #雑学 #唇"
+    "description": "乾いた唇、舐めると潤う？\n本編「ハロウィンのかぼちゃを人見知りにかぶせると！？」〔本編URL：公開後に作者が貼る〕\n出典：American Academy of Dermatology「7 dermatologists' tips for healing dry, chapped lips」 https://aad.org/skin-care-basics/heal-dry-chapped-lips\n#漫画 #雑学 #唇",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "nYUigclAtBU",
@@ -961,12 +1009,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "手洗いの謎 #漫画 #雑学 #手洗い",
     "publishedAt": "2026-10-26T23:00:15Z",
     "date": "2026-10-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "固形石けんと液体ハンドソープは、形状や成分に違いがあります。どちらも手洗いに使用でき、商品によって配合成分も異なります。\n\n手洗いでは指の間、指先、親指も忘れずに洗い、流水でしっかりすすぐことが大切です。\n\n出典：牛乳石鹸\nhttps://www.cow-soap.co.jp/event/whats-sekken/\n\n出典：厚生労働省\nhttps://www.mhlw.go.jp/content/hthw1.pdf\n\n#漫画 #雑学 #手洗い"
+    "description": "固形石けんと液体ハンドソープは、形状や成分に違いがあります。どちらも手洗いに使用でき、商品によって配合成分も異なります。\n\n手洗いでは指の間、指先、親指も忘れずに洗い、流水でしっかりすすぐことが大切です。\n\n出典：牛乳石鹸\nhttps://www.cow-soap.co.jp/event/whats-sekken/\n\n出典：厚生労働省\nhttps://www.mhlw.go.jp/content/hthw1.pdf\n\n#漫画 #雑学 #手洗い",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "ozlCL01vD48",
@@ -983,12 +1032,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ごま油の使い方 #漫画 #雑学 #ごま油",
     "publishedAt": "2026-10-26T12:29:12Z",
     "date": "2026-10-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ごま油は炒め物だけじゃない！ナムルやスープ、料理の仕上げにも使えます。香ばしい焙煎ごま油と、香りの弱い太白ごま油では使い方も変わります。\n\n出典：かどや製油\nhttps://www.kadoya.com/enjoy/page02.html\n\n#漫画 #雑学 #ごま油"
+    "description": "ごま油は炒め物だけじゃない！ナムルやスープ、料理の仕上げにも使えます。香ばしい焙煎ごま油と、香りの弱い太白ごま油では使い方も変わります。\n\n出典：かどや製油\nhttps://www.kadoya.com/enjoy/page02.html\n\n#漫画 #雑学 #ごま油",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "PGduBYtC0mA",
@@ -1005,25 +1055,27 @@ window.YOUTUBE_VIDEOS = [
     "title": "マヨネーズを知らない吸血鬼  #漫画 #雑学 #マヨネーズ",
     "publishedAt": "2026-10-26T06:00:06Z",
     "date": "2026-10-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "マヨネーズを知らない吸血鬼にマヨネーズを与えたら、どうなるのか……。\n\n🔻本編こちら\nhttps://youtu.be/3D9SQ6NqWRg\n\n#マヨネーズ #漫画 #雑学"
+    "description": "マヨネーズを知らない吸血鬼にマヨネーズを与えたら、どうなるのか……。\n\n🔻本編こちら\nhttps://youtu.be/3D9SQ6NqWRg\n\n#マヨネーズ #漫画 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "tVpAUN6du3Q",
     "title": "アリの謎 #漫画 #雑学 #アリ",
     "publishedAt": "2026-10-26T03:05:01Z",
     "date": "2026-10-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "アリは仲間の残したフェロモンを道しるべにすることがあります。種類によっては脂っぽい食べ物にも集まります。\n\n出典：University of Minnesota Extension\nhttps://extension.umn.edu/garden-and-home/home-maintenance/household-insects/ants\n\n#漫画 #雑学 #アリ"
+    "description": "アリは仲間の残したフェロモンを道しるべにすることがあります。種類によっては脂っぽい食べ物にも集まります。\n\n出典：University of Minnesota Extension\nhttps://extension.umn.edu/garden-and-home/home-maintenance/household-insects/ants\n\n#漫画 #雑学 #アリ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1HWwHjM2n9E",
@@ -1042,37 +1094,40 @@ window.YOUTUBE_VIDEOS = [
     "title": "メルカリの罠 #漫画 #雑学 #メルカリ",
     "publishedAt": "2026-10-25T22:00:24Z",
     "date": "2026-10-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "メルカリで500円の商品が売れた！でも手元に残るのは240円！？\n\n販売手数料10％（50円）とネコポス送料210円を引くと、残りは240円。※送料出品者負担・梱包材費などを除く場合。\n\n納得できないネフェルは、まさかの1万円に値上げ！？\n\n【出典】\nメルカリ公式「メルカリの手数料」\nhttps://help.jp.mercari.com/guide/articles/65/\n\nメルカリ公式「ネコポス」\nhttps://help.jp.mercari.com/guide/articles/01G14Y9S96BAJHBKRRSVWZKDRC/\n\n#漫画 #雑学 #メルカリ"
+    "description": "メルカリで500円の商品が売れた！でも手元に残るのは240円！？\n\n販売手数料10％（50円）とネコポス送料210円を引くと、残りは240円。※送料出品者負担・梱包材費などを除く場合。\n\n納得できないネフェルは、まさかの1万円に値上げ！？\n\n【出典】\nメルカリ公式「メルカリの手数料」\nhttps://help.jp.mercari.com/guide/articles/65/\n\nメルカリ公式「ネコポス」\nhttps://help.jp.mercari.com/guide/articles/01G14Y9S96BAJHBKRRSVWZKDRC/\n\n#漫画 #雑学 #メルカリ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "KnU65YmF4uY",
     "title": "筋肉痛の謎 #漫画 #雑学 #筋肉痛",
     "publishedAt": "2026-10-25T14:25:06Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "腕立て伏せ50回！余裕だと思ったら翌日とんでもないことに！？\n\n慣れない運動による筋肉痛は、翌日以降に現れ、2〜3日後にピークを迎えることもあります。\n\nところがキュウちゃんの筋トレ合格基準は、まさかの指一本逆立ち！？\n\n【参考】\nNSCAジャパン「筋肉痛を軽減させるためには？」\nhttps://park.nsca-japan.or.jp/category-13/post-3693/\n\n#漫画 #雑学 #筋肉痛"
+    "description": "腕立て伏せ50回！余裕だと思ったら翌日とんでもないことに！？\n\n慣れない運動による筋肉痛は、翌日以降に現れ、2〜3日後にピークを迎えることもあります。\n\nところがキュウちゃんの筋トレ合格基準は、まさかの指一本逆立ち！？\n\n【参考】\nNSCAジャパン「筋肉痛を軽減させるためには？」\nhttps://park.nsca-japan.or.jp/category-13/post-3693/\n\n#漫画 #雑学 #筋肉痛",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "npWEe3ZP2OU",
     "title": "筋トレの謎 #漫画 #雑学 #筋トレ",
     "publishedAt": "2026-10-25T13:00:37Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "筋トレって毎日やらないと意味がない？\n\nスクワットに励む吸血鬼キュウちゃんが、筋トレの頻度と健康との関係を解説！\n\n厚生労働省のガイドでは、成人・高齢者に筋トレを週2〜3日行うことを推奨。自分の体重を使ったスクワットも筋トレに含まれます。\n\n※死亡・心血管疾患などのリスク低下は観察研究で報告された関連であり、因果関係が証明されたものではありません。\n\n【出典】\n厚生労働省「健康づくりのための身体活動・運動ガイド2023」\nhttps://kennet.mhlw.go.jp/information/information/exercise/s-00-005.html\n\nBritish Journal of Sports Medicine（2022）\nhttps://bjsm.bmj.com/content/56/13/755\n\n#漫画 #切り抜き #筋トレ"
+    "description": "筋トレって毎日やらないと意味がない？\n\nスクワットに励む吸血鬼キュウちゃんが、筋トレの頻度と健康との関係を解説！\n\n厚生労働省のガイドでは、成人・高齢者に筋トレを週2〜3日行うことを推奨。自分の体重を使ったスクワットも筋トレに含まれます。\n\n※死亡・心血管疾患などのリスク低下は観察研究で報告された関連であり、因果関係が証明されたものではありません。\n\n【出典】\n厚生労働省「健康づくりのための身体活動・運動ガイド2023」\nhttps://kennet.mhlw.go.jp/information/information/exercise/s-00-005.html\n\nBritish Journal of Sports Medicine（2022）\nhttps://bjsm.bmj.com/content/56/13/755\n\n#漫画 #切り抜き #筋トレ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "p_HwXZrvQJs",
@@ -1093,12 +1148,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "1円玉で100万円！？ #漫画 #雑学 #お金",
     "publishedAt": "2026-10-25T09:00:01Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "1円玉は1枚1グラム。\n10万枚で100kg、100万枚で1トンになります。\n\n100万円を全部1円玉で貯めたら、とんでもない重量に！\n\n出典：造幣局\nhttps://www.mint.go.jp/150th/essay/essay_data03\n\n#漫画 #雑学 #お金"
+    "description": "1円玉は1枚1グラム。\n10万枚で100kg、100万枚で1トンになります。\n\n100万円を全部1円玉で貯めたら、とんでもない重量に！\n\n出典：造幣局\nhttps://www.mint.go.jp/150th/essay/essay_data03\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "3D9SQ6NqWRg",
@@ -1119,37 +1175,40 @@ window.YOUTUBE_VIDEOS = [
     "title": "洞窟の星空の謎 #漫画 #切り抜き #ツチボタル",
     "publishedAt": "2026-10-25T06:00:31Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "切り抜き｜雑学サバイバル",
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "洞窟の天井に広がる、満天の星空。\n\nその正体は「ツチボタル」という虫の幼虫！\n光で虫を引き寄せ、ネバネバした糸で捕まえて食べるんです。\n\n▼本編『メイドイン雑学アビス』\nhttps://youtu.be/6qrt785FRqE\n\n#漫画 #切り抜き #ツチボタル"
+    "description": "洞窟の天井に広がる、満天の星空。\n\nその正体は「ツチボタル」という虫の幼虫！\n光で虫を引き寄せ、ネバネバした糸で捕まえて食べるんです。\n\n▼本編『メイドイン雑学アビス』\nhttps://youtu.be/6qrt785FRqE\n\n#漫画 #切り抜き #ツチボタル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "OpDjCXUaA2I",
     "title": "宝くじで1億円あたったら #漫画 #雑学 #宝くじ",
     "publishedAt": "2026-10-25T03:29:50Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "日本の宝くじの当せん金には所得税がかかりません。ただし、当せん金を家族などへ贈与すると、受け取る人に贈与税がかかる場合があります。\n\n暦年課税では、贈与を受けた人ごとに年間110万円の基礎控除があります。\n※人生ゲームはフィクション上の演出です。\n\n出典：宝くじ公式サイト\nhttps://www.takarakuji-official.jp/contact/faq/wfaq/wfaq02/detail-0004.html\n\n出典：国税庁\nhttps://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4402.htm\n\n#漫画 #雑学 #宝くじ"
+    "description": "日本の宝くじの当せん金には所得税がかかりません。ただし、当せん金を家族などへ贈与すると、受け取る人に贈与税がかかる場合があります。\n\n暦年課税では、贈与を受けた人ごとに年間110万円の基礎控除があります。\n※人生ゲームはフィクション上の演出です。\n\n出典：宝くじ公式サイト\nhttps://www.takarakuji-official.jp/contact/faq/wfaq/wfaq02/detail-0004.html\n\n出典：国税庁\nhttps://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4402.htm\n\n#漫画 #雑学 #宝くじ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "_IR672li8l4",
     "title": "作業用BGMの謎 #漫画 #雑学 #作業用bgm",
     "publishedAt": "2026-10-24T23:00:14Z",
     "date": "2026-10-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "音楽を聴くだけで集中力アップ！？🎧\n\n太郎、ついに究極の集中モード「ゾーン」に突入！\n……と思ったら、勉強が全然進んでない！？😂\n\n実は、BGMを聴けば必ず集中力が上がるわけではありません。\n\n特に歌詞つきの音楽は、読解や暗記などの言語を使う作業を邪魔することがあります。\n\n音楽の効果は、曲の種類や作業内容、人によっても変わるんです。\n\nでも太郎、勉強そっちのけで音楽鑑賞中！？\nリンコのツッコミ炸裂！\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #集中力 #勉強法 #作業用BGM #shorts"
+    "description": "音楽を聴くだけで集中力アップ！？🎧\n\n太郎、ついに究極の集中モード「ゾーン」に突入！\n……と思ったら、勉強が全然進んでない！？😂\n\n実は、BGMを聴けば必ず集中力が上がるわけではありません。\n\n特に歌詞つきの音楽は、読解や暗記などの言語を使う作業を邪魔することがあります。\n\n音楽の効果は、曲の種類や作業内容、人によっても変わるんです。\n\nでも太郎、勉強そっちのけで音楽鑑賞中！？\nリンコのツッコミ炸裂！\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #集中力 #勉強法 #作業用BGM #shorts",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "6qrt785FRqE",
@@ -1169,60 +1228,65 @@ window.YOUTUBE_VIDEOS = [
     "title": "チョコレートの謎 #漫画 #雑学 #チョコレート",
     "publishedAt": "2026-10-24T12:22:41Z",
     "date": "2026-10-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "板チョコが白くまだらになってる！？🍫\n\n実はこれ、カビではなく「ブルーム現象」かも！\n\n温度変化によってチョコの油脂が表面に出ると、白っぽくなることがあります。\n\nファットブルームなら食べても害はありませんが、風味や口どけは落ちてしまうことも。\n\nでもキュウちゃんには風味なんて関係ない！？😂\n\n漫画ついでに、雑学がわかっちゃう。\n雑学サバイバル【漫画】\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #チョコレート"
+    "description": "板チョコが白くまだらになってる！？🍫\n\n実はこれ、カビではなく「ブルーム現象」かも！\n\n温度変化によってチョコの油脂が表面に出ると、白っぽくなることがあります。\n\nファットブルームなら食べても害はありませんが、風味や口どけは落ちてしまうことも。\n\nでもキュウちゃんには風味なんて関係ない！？😂\n\n漫画ついでに、雑学がわかっちゃう。\n雑学サバイバル【漫画】\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #チョコレート",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "DKKH44GdCI0",
     "title": "醤油の謎 #漫画 #雑学 #醤油",
     "publishedAt": "2026-10-24T08:50:33Z",
     "date": "2026-10-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "しょうゆは入れるタイミングが大事！？\n\n仕上げ近くに加えると、しょうゆの香りを活かしやすい！🍲\nただし、料理によって最適なタイミングは変わります。\n\nキュウちゃん、今度は追いしょうゆで大暴走！？\n太郎のツッコミが止まらない😂\n\n漫画を楽しみながら雑学が学べる！\n雑学サバイバル【漫画】\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #しょうゆ"
+    "description": "しょうゆは入れるタイミングが大事！？\n\n仕上げ近くに加えると、しょうゆの香りを活かしやすい！🍲\nただし、料理によって最適なタイミングは変わります。\n\nキュウちゃん、今度は追いしょうゆで大暴走！？\n太郎のツッコミが止まらない😂\n\n漫画を楽しみながら雑学が学べる！\n雑学サバイバル【漫画】\n\n👍 高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #しょうゆ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "u7Ee7ugWSUs",
     "title": "バナナの謎 #漫画 #雑学 #バナナ",
     "publishedAt": "2026-10-24T03:15:26Z",
     "date": "2026-10-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "バナナの皮に出る黒いブツブツ。\nあれは「シュガースポット」と呼ばれていて、熟して甘くなった目印です。\n見た目はびっくりするけど、腐っているとは限りません。"
+    "description": "バナナの皮に出る黒いブツブツ。\nあれは「シュガースポット」と呼ばれていて、熟して甘くなった目印です。\n見た目はびっくりするけど、腐っているとは限りません。",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "sVjbilUaHgg",
     "title": "Face IDが通らない #漫画 #雑学 #iPhone",
     "publishedAt": "2026-10-23T22:00:28Z",
     "date": "2026-10-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "iPhoneのFace IDは、顔の奥行きまで認識しています。\n\nだから平らな顔写真を見せても、基本的にはロック解除できません。\n\nでも筋肉なら！？\n\n#漫画 #雑学 #iPhone"
+    "description": "iPhoneのFace IDは、顔の奥行きまで認識しています。\n\nだから平らな顔写真を見せても、基本的にはロック解除できません。\n\nでも筋肉なら！？\n\n#漫画 #雑学 #iPhone",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Y-osBTZl32w",
     "title": "自撮りは宇宙人  #漫画 #雑学 #自撮り",
     "publishedAt": "2026-10-23T14:57:14Z",
     "date": "2026-10-23",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "自撮りで顔が変わって見えるのは、カメラの角度と距離が原因かも！\n\n下から撮るとアゴが強調されやすく、近すぎると鼻が大きく写ることも。\n\n少し上から、少し距離を取って撮るのがコツ！\nただし加工のしすぎにはご注意を👽\n\n#漫画 #雑学 #自撮り"
+    "description": "自撮りで顔が変わって見えるのは、カメラの角度と距離が原因かも！\n\n下から撮るとアゴが強調されやすく、近すぎると鼻が大きく写ることも。\n\n少し上から、少し距離を取って撮るのがコツ！\nただし加工のしすぎにはご注意を👽\n\n#漫画 #雑学 #自撮り",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JOA9HrJZScs",
@@ -1242,36 +1306,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "カチカチのアイス甘くない!? #漫画 #雑学 #アイス",
     "publishedAt": "2026-10-23T08:00:14Z",
     "date": "2026-10-23",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "冷たすぎるアイスは、甘さを感じにくくなることがあります。少し溶けると味の印象が変わることも。\n\nでもネフェルは今すぐ食べたいようです……。\n\n#漫画 #雑学 #アイス"
+    "description": "冷たすぎるアイスは、甘さを感じにくくなることがあります。少し溶けると味の印象が変わることも。\n\nでもネフェルは今すぐ食べたいようです……。\n\n#漫画 #雑学 #アイス",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Fz-3KtyAp3Q",
     "title": "塩のにおい #漫画 #雑学 #塩",
     "publishedAt": "2026-10-23T03:00:12Z",
     "date": "2026-10-23",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "塩には強いにおいが移りやすい性質があります。\n洗剤などにおいの強いものの近くを避け、密閉容器で保存するのがおすすめです。"
+    "description": "塩には強いにおいが移りやすい性質があります。\n洗剤などにおいの強いものの近くを避け、密閉容器で保存するのがおすすめです。",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "mJ9yEfIpv1c",
     "title": "卵のヒミツ  #漫画 #雑学 #卵",
     "publishedAt": "2026-10-22T22:25:54Z",
     "date": "2026-10-23",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ゆで卵の殻がきれいにむけないのは、卵の鮮度や作り方も関係します。\nゆでた後すぐ冷水に浸すことも、殻をむきやすくするコツの一つです。\n\n出典：\nキユーピー「トロトロ？固ゆで？ゆで卵をつくってみよう！」\nhttps://www.kewpie.com/academy/cook-eat/boiledegg-challenge/"
+    "description": "ゆで卵の殻がきれいにむけないのは、卵の鮮度や作り方も関係します。\nゆでた後すぐ冷水に浸すことも、殻をむきやすくするコツの一つです。\n\n出典：\nキユーピー「トロトロ？固ゆで？ゆで卵をつくってみよう！」\nhttps://www.kewpie.com/academy/cook-eat/boiledegg-challenge/",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "z5Ia782xPMs",
@@ -1288,24 +1355,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "危険なPHP公開 #漫画 #雑学 #PHP",
     "publishedAt": "2026-10-22T12:00:13Z",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "PHPの重大な弱点を直す修正版が公開！\n\nところが、チェーンガード社（Chainguard）が予定より6時間以上早く修正済みソフトを公開。\n\n早く直すのは良いことのはずなのに、なぜ問題に？\n\n修正前後の違いが、攻撃者に弱点を探すヒントを与える可能性があります。\n\n【出典】\nPHP Foundation（2026年10月21日）\nhttps://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/\n\n#漫画 #雑学 #PHP"
+    "description": "PHPの重大な弱点を直す修正版が公開！\n\nところが、チェーンガード社（Chainguard）が予定より6時間以上早く修正済みソフトを公開。\n\n早く直すのは良いことのはずなのに、なぜ問題に？\n\n修正前後の違いが、攻撃者に弱点を探すヒントを与える可能性があります。\n\n【出典】\nPHP Foundation（2026年10月21日）\nhttps://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/\n\n#漫画 #雑学 #PHP",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "GOt1pmcWoew",
     "title": "話題のPHPとは #漫画 #雑学 #PHP",
     "publishedAt": "2026-10-22T11:00:35Z",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "PHPに重大な脆弱性が発見され、修正版が公開されました。\n\n悪用されると、サーバーを勝手に操作され、情報が盗まれる恐れもあります。\n\n【利用者ができること】\n・利用中のサイトの公式発表を確認\n・クレジットカードの利用明細を確認\n・身に覚えのない請求はカード会社へ連絡\n\nサイトの停止が必ずしも情報流出を意味するわけではありません。\n\nサイト管理者はPHPの修正版への更新を確認してください。\n\n【出典】\nPHP公式\nhttps://www.php.net/\n\n#漫画 #雑学 #PHP"
+    "description": "PHPに重大な脆弱性が発見され、修正版が公開されました。\n\n悪用されると、サーバーを勝手に操作され、情報が盗まれる恐れもあります。\n\n【利用者ができること】\n・利用中のサイトの公式発表を確認\n・クレジットカードの利用明細を確認\n・身に覚えのない請求はカード会社へ連絡\n\nサイトの停止が必ずしも情報流出を意味するわけではありません。\n\nサイト管理者はPHPの修正版への更新を確認してください。\n\n【出典】\nPHP公式\nhttps://www.php.net/\n\n#漫画 #雑学 #PHP",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "t_NS2tcnZlI",
@@ -1324,12 +1393,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "カチカチ砂糖 #漫画 #雑学 砂糖",
     "publishedAt": "2026-10-22T08:09:27Z",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "上白糖は湿気だけでなく、乾燥によっても固まります。\n乾燥で固まった場合は、霧吹きで少し水分を補い、密閉して数時間置くとほぐれやすくなります。\n普段は湿度変化を避け、密閉容器で保存しましょう。\n\n出典：\n農林水産省「砂糖の種類と製造方法」\nhttps://www.maff.go.jp/j/pr/aff/2111/spe1_01.html\n\n#漫画 #雑学 #砂糖"
+    "description": "上白糖は湿気だけでなく、乾燥によっても固まります。\n乾燥で固まった場合は、霧吹きで少し水分を補い、密閉して数時間置くとほぐれやすくなります。\n普段は湿度変化を避け、密閉容器で保存しましょう。\n\n出典：\n農林水産省「砂糖の種類と製造方法」\nhttps://www.maff.go.jp/j/pr/aff/2111/spe1_01.html\n\n#漫画 #雑学 #砂糖",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JMoK5rqJDVs",
@@ -1358,24 +1428,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "マヨネーズの謎 #漫画 #雑学 #マヨネーズ",
     "publishedAt": "2026-10-22T03:00:05Z",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "マヨネーズは0℃以下で油が分離することがあり、一度分離すると元に戻りません。\n開封後は冷気が直接当たらないドアポケットなどで保存しましょう。\n\n出典：\nキユーピー「マヨネーズなどに関するQ&A」\nhttps://www.kewpie.co.jp/customer/faq/mayo/\n\nカゴメ「トマトケチャップの水分について」\nhttps://www.kagome.co.jp/customer/qa_ketchup/_11538/\n\n#漫画 #雑学 #マヨネーズ"
+    "description": "マヨネーズは0℃以下で油が分離することがあり、一度分離すると元に戻りません。\n開封後は冷気が直接当たらないドアポケットなどで保存しましょう。\n\n出典：\nキユーピー「マヨネーズなどに関するQ&A」\nhttps://www.kewpie.co.jp/customer/faq/mayo/\n\nカゴメ「トマトケチャップの水分について」\nhttps://www.kagome.co.jp/customer/qa_ketchup/_11538/\n\n#漫画 #雑学 #マヨネーズ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "i6broVNvS4o",
     "title": "シャボン玉の謎 #漫画 #雑学 #シャボン玉",
     "publishedAt": "2026-10-21T23:00:24Z",
     "date": "2026-10-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "シャボン玉の膜の表と裏で反射した光が重なる「薄膜干渉」によって、色が見えます。膜の厚さや見る角度によって、見える色も変わります。\n\n#漫画 #雑学 #シャボン玉"
+    "description": "シャボン玉の膜の表と裏で反射した光が重なる「薄膜干渉」によって、色が見えます。膜の厚さや見る角度によって、見える色も変わります。\n\n#漫画 #雑学 #シャボン玉",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "QH_u7iTs9Y4",
@@ -1405,12 +1477,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ケチャップの謎 #漫画 #雑学 #ケチャップ",
     "publishedAt": "2026-10-21T09:14:49Z",
     "date": "2026-10-21",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "オムライスにハートを描こうとしたキュウちゃん。\nところが、ケチャップから謎の水が！？\n\n実はこれ、ケチャップの液体部分が分離したもの。\n\n分離自体は品質に問題なく、容器を揉んで混ぜれば元の状態に戻せます。\n開封後はキャップを上にして冷蔵保存するのがおすすめ！\n\n無事にハートを描けたキュウちゃんだったけど、今度はケチャップをかけすぎて……！？\n\n#漫画 #雑学 #ケチャップ"
+    "description": "オムライスにハートを描こうとしたキュウちゃん。\nところが、ケチャップから謎の水が！？\n\n実はこれ、ケチャップの液体部分が分離したもの。\n\n分離自体は品質に問題なく、容器を揉んで混ぜれば元の状態に戻せます。\n開封後はキャップを上にして冷蔵保存するのがおすすめ！\n\n無事にハートを描けたキュウちゃんだったけど、今度はケチャップをかけすぎて……！？\n\n#漫画 #雑学 #ケチャップ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "r6nutVMvBm4",
@@ -1429,12 +1502,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "AIの不思議 #漫画 #雑学 #生成AI",
     "publishedAt": "2026-10-20T23:12:31Z",
     "date": "2026-10-21",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "生成AIで作られた動画には、身体の形や動きに不自然な部分が現れることがあります。\n\nただし、見た目だけでAIと断定するのは危険。\n投稿元や情報源も確認することが大切です。\n\nそして、リンリンはまさかの6本腕ダンスに挑戦！？\n\n▶ ソーラン節自由形の長尺本編は関連動画から！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #生成AI"
+    "description": "生成AIで作られた動画には、身体の形や動きに不自然な部分が現れることがあります。\n\nただし、見た目だけでAIと断定するのは危険。\n投稿元や情報源も確認することが大切です。\n\nそして、リンリンはまさかの6本腕ダンスに挑戦！？\n\n▶ ソーラン節自由形の長尺本編は関連動画から！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #生成AI",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "7nGB6fqr--c",
@@ -1451,12 +1525,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "踊りで好きに！？ #漫画 #雑学 #恋愛",
     "publishedAt": "2026-10-20T14:55:01Z",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ソーラン節自由形でわかる恋愛雑学。\n実は、同じリズムで身体を動かすと、相手への親近感が高まることが実験で報告されています。\n\nただし、必ず恋愛感情が生まれるという意味ではありません。\n\n▶ ソーラン節自由形のマンガ本編は関連動画から！\n\n#漫画 #雑学 #恋愛"
+    "description": "ソーラン節自由形でわかる恋愛雑学。\n実は、同じリズムで身体を動かすと、相手への親近感が高まることが実験で報告されています。\n\nただし、必ず恋愛感情が生まれるという意味ではありません。\n\n▶ ソーラン節自由形のマンガ本編は関連動画から！\n\n#漫画 #雑学 #恋愛",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "9VujPlxWZbE",
@@ -1476,36 +1551,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "カレーは実は #漫画 #雑学 #カレー",
     "publishedAt": "2026-10-20T08:48:52Z",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "チヅルさんの絶品カレーを食べた太郎！🍛\n\nお肉をこんがり焼くと香ばしさとコクがアップ！\nルウは火を止めてから入れると、ダマになりにくい！\n\nでも、残ったカレーを常温で放置するのは危険！？\n\nウェルシュ菌による食中毒を防ぐため、残ったカレーは浅い容器に小分けして素早く冷まし、冷蔵・冷凍保存しましょう。食べるときは十分に温め直してね！\n\n※長時間常温放置したカレーは、再加熱しても安全とは限りません。\n\nそして、チヅルさんの恐ろしい本性が……♡\n\n👍 高評価・チャンネル登録お願いします！\n\n#漫画 #雑学 #カレー"
+    "description": "チヅルさんの絶品カレーを食べた太郎！🍛\n\nお肉をこんがり焼くと香ばしさとコクがアップ！\nルウは火を止めてから入れると、ダマになりにくい！\n\nでも、残ったカレーを常温で放置するのは危険！？\n\nウェルシュ菌による食中毒を防ぐため、残ったカレーは浅い容器に小分けして素早く冷まし、冷蔵・冷凍保存しましょう。食べるときは十分に温め直してね！\n\n※長時間常温放置したカレーは、再加熱しても安全とは限りません。\n\nそして、チヅルさんの恐ろしい本性が……♡\n\n👍 高評価・チャンネル登録お願いします！\n\n#漫画 #雑学 #カレー",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "oxwaRcQvyQ0",
     "title": "鼻毛のナゾ #漫画 #雑学 #鼻毛",
     "publishedAt": "2026-10-20T03:06:04Z",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "リンコに指摘され、鼻毛を抜こうとする太郎。でも、ちょっと待って！\n\n鼻毛の意外な役割と、お手入れのポイントを漫画で紹介。\n身だしなみを整えた太郎に、リンコの一言が……。\n\n漫画ついでに、雑学がわかっちゃう。\n高評価・チャンネル登録お願いします！"
+    "description": "リンコに指摘され、鼻毛を抜こうとする太郎。でも、ちょっと待って！\n\n鼻毛の意外な役割と、お手入れのポイントを漫画で紹介。\n身だしなみを整えた太郎に、リンコの一言が……。\n\n漫画ついでに、雑学がわかっちゃう。\n高評価・チャンネル登録お願いします！",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Sfei5qNT7Qk",
     "title": "爪を切ると… #漫画 #雑学 #爪切り",
     "publishedAt": "2026-10-19T22:00:37Z",
     "date": "2026-10-20",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "💅 正しい爪の切り方\n・手の爪は指先に沿って丸く整え、白い部分を少し残す\n・足の爪はまっすぐに切り、角を少しだけ整える\n・深爪には注意！\n\n爪の切り方を覚えて、健康な爪を守ろう！\n※吸血鬼の再生能力はフィクションです。\n\n#漫画 #雑学 #爪切り"
+    "description": "💅 正しい爪の切り方\n・手の爪は指先に沿って丸く整え、白い部分を少し残す\n・足の爪はまっすぐに切り、角を少しだけ整える\n・深爪には注意！\n\n爪の切り方を覚えて、健康な爪を守ろう！\n※吸血鬼の再生能力はフィクションです。\n\n#漫画 #雑学 #爪切り",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "baMv_XFdDro",
@@ -1524,36 +1602,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "幻影のスマホ #漫画 #雑学 #ドパガキ",
     "publishedAt": "2026-10-19T12:05:12Z",
     "date": "2026-10-19",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "通知が来た！ ……と思ったら、何も来てない！？\n\nスマホが震えた気がする不思議な現象「ファントム・バイブレーション」。\n\nドパガキのミンが、ついにドドパガキへ進化！？\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #ドパガキ"
+    "description": "通知が来た！ ……と思ったら、何も来てない！？\n\nスマホが震えた気がする不思議な現象「ファントム・バイブレーション」。\n\nドパガキのミンが、ついにドドパガキへ進化！？\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #ドパガキ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "jM5RpAAA_Ro",
     "title": "時間の罠… #漫画 #雑学",
     "publishedAt": "2026-10-19T10:00:24Z",
     "date": "2026-10-19",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "限定ガチャに誘惑される太郎。\n絶対回さないと決めたのに……！？\n\n「今逃したら損！」という不安に関係するFOMO。\n時間制限が衝動買いを後押しすることもあります。\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #限定ガチャ"
+    "description": "限定ガチャに誘惑される太郎。\n絶対回さないと決めたのに……！？\n\n「今逃したら損！」という不安に関係するFOMO。\n時間制限が衝動買いを後押しすることもあります。\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #限定ガチャ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "PxBDcY2v40o",
     "title": "ドパガキのセロ活 #漫画 #雑学 #セロ活",
     "publishedAt": "2026-10-19T08:12:11Z",
     "date": "2026-10-19",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "いま話題の「セロ活」って知ってる？\n\nセロトニンを意識して、散歩や自然とのふれあいなどで心を整える活動のこと。\n\nスマホ疲れのミンもセロ活に挑戦！\nでも、落ち着いたあとの行動が……！？\n\n自然の中を歩くことには、気分の改善や不安の軽減につながる効果も報告されています。\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #セロ活"
+    "description": "いま話題の「セロ活」って知ってる？\n\nセロトニンを意識して、散歩や自然とのふれあいなどで心を整える活動のこと。\n\nスマホ疲れのミンもセロ活に挑戦！\nでも、落ち着いたあとの行動が……！？\n\n自然の中を歩くことには、気分の改善や不安の軽減につながる効果も報告されています。\n\nドパガキランド本編も関連動画からチェック！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #セロ活",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Zg5dEbQbCaI",
@@ -1570,24 +1651,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "火傷した時は #漫画 #雑学 #火傷",
     "publishedAt": "2026-10-19T03:57:47Z",
     "date": "2026-10-19",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "🔥 やけどの応急処置\n・できるだけ早く流水で冷やす（20分が目安）\n・氷を直接当てない\n・水ぶくれは潰さない\n\n※吸血鬼の再生能力はフィクションです。\n実際のやけどは適切な応急処置を行い、重いやけどは医療機関へ。\n\n#漫画 #雑学 #やけど"
+    "description": "🔥 やけどの応急処置\n・できるだけ早く流水で冷やす（20分が目安）\n・氷を直接当てない\n・水ぶくれは潰さない\n\n※吸血鬼の再生能力はフィクションです。\n実際のやけどは適切な応急処置を行い、重いやけどは医療機関へ。\n\n#漫画 #雑学 #やけど",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "3yJBZkwqRwc",
     "title": "巨大綿あめが一瞬で!? 🍭 #漫画 #雑学 #綿あめ",
     "publishedAt": "2026-10-18T23:00:27Z",
     "date": "2026-10-19",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "キュウちゃんよりデカい巨大綿あめ！🍭\n\n食べると、ふわふわがみるみる小さくなる！？\n\n実は綿あめの正体は、細い糸状になった砂糖。\n糸の間には大量の空気があり、口に入れると唾液で砂糖が溶けてしぼむんです！\n\nでも、カロリーは消えないぞ……！\n\n#漫画 #雑学 #綿あめ"
+    "description": "キュウちゃんよりデカい巨大綿あめ！🍭\n\n食べると、ふわふわがみるみる小さくなる！？\n\n実は綿あめの正体は、細い糸状になった砂糖。\n糸の間には大量の空気があり、口に入れると唾液で砂糖が溶けてしぼむんです！\n\nでも、カロリーは消えないぞ……！\n\n#漫画 #雑学 #綿あめ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "tybjIV5jw2w",
@@ -1604,12 +1687,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "オバケ屋敷で手をつないだら…😱 #漫画 #雑学 #恋愛",
     "publishedAt": "2026-10-18T14:45:39Z",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "怖すぎるお化け屋敷！\n\n実は、親しい人と手をつなぐと、脳の恐怖への反応が弱まることがあると研究で報告されています！\n\n安心した太郎を待っていたのは、まさかの別の恐怖……！？\n\n#漫画 #雑学 #恋愛"
+    "description": "怖すぎるお化け屋敷！\n\n実は、親しい人と手をつなぐと、脳の恐怖への反応が弱まることがあると研究で報告されています！\n\n安心した太郎を待っていたのは、まさかの別の恐怖……！？\n\n#漫画 #雑学 #恋愛",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "J27b7eo-Haw",
@@ -1626,12 +1710,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "かき氷で頭がキーン！ #漫画 #雑学 #かき氷",
     "publishedAt": "2026-10-18T11:00:23Z",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "かき氷を食べた瞬間、太郎の頭に激痛が！？\n\n頭がキーンとなる現象の正体は「冷刺激頭痛」。\n実は脳が凍っているわけじゃないんです！\n\n#漫画 #雑学 #かき氷"
+    "description": "かき氷を食べた瞬間、太郎の頭に激痛が！？\n\n頭がキーンとなる現象の正体は「冷刺激頭痛」。\n実は脳が凍っているわけじゃないんです！\n\n#漫画 #雑学 #かき氷",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "rM0qWqRqAlc",
@@ -1648,12 +1733,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ジェットコースターのナゾ #漫画 #雑学",
     "publishedAt": "2026-10-18T09:35:43Z",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ジェットコースターで急降下すると、お腹がフワッと浮くのはなぜ？🎢\n\nドパガキランドで太郎は絶叫、ミンは大興奮！\nその不思議な浮遊感「エアタイム」の正体を漫画で解説！\n\n#漫画 #雑学 #ジェットコースター"
+    "description": "ジェットコースターで急降下すると、お腹がフワッと浮くのはなぜ？🎢\n\nドパガキランドで太郎は絶叫、ミンは大興奮！\nその不思議な浮遊感「エアタイム」の正体を漫画で解説！\n\n#漫画 #雑学 #ジェットコースター",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "0m_3HR2Jjd4",
@@ -1672,12 +1758,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ドパガキの謎 #漫画 #雑学 #ドパガキ",
     "publishedAt": "2026-10-18T03:00:15Z",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "「あと1本だけ……」のはずが、気づけば30分！？\n\nショート動画がやめられないアイドル、弩波（どぱ）ミン登場😈\n\n実は、たまに面白い動画が出てくる「予測できない報酬への期待」が、スクロールを続けてしまう理由の一つ。\n\nあなたもドパガキになってない？😂\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#漫画 #雑学 #ドーパミン"
+    "description": "「あと1本だけ……」のはずが、気づけば30分！？\n\nショート動画がやめられないアイドル、弩波（どぱ）ミン登場😈\n\n実は、たまに面白い動画が出てくる「予測できない報酬への期待」が、スクロールを続けてしまう理由の一つ。\n\nあなたもドパガキになってない？😂\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#漫画 #雑学 #ドーパミン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "331gz4Yweh8",
@@ -1697,60 +1784,65 @@ window.YOUTUBE_VIDEOS = [
     "title": "重すぎるプレゼント #漫画 #雑学",
     "publishedAt": "2026-10-17T16:10:15Z",
     "date": "2026-10-18",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "友達になった記念に、シオリが太郎へプレゼント！\n\nその中身は……まさかの純金製バトルアックス!? 🪓✨\n\n「ドラゴンとか倒せますよ！」\n\nいや、ドラゴンに会う機会ねぇよ！\n\n実はプレゼントは、高ければ喜ばれるとは限りません。\n贈る側は豪華さを重視しがちですが、受け取る側は使いやすさを重視することもあります。\n\n大切なのは、相手のことを考えて選ぶこと！\n\n#漫画 #雑学 #プレゼント"
+    "description": "友達になった記念に、シオリが太郎へプレゼント！\n\nその中身は……まさかの純金製バトルアックス!? 🪓✨\n\n「ドラゴンとか倒せますよ！」\n\nいや、ドラゴンに会う機会ねぇよ！\n\n実はプレゼントは、高ければ喜ばれるとは限りません。\n贈る側は豪華さを重視しがちですが、受け取る側は使いやすさを重視することもあります。\n\n大切なのは、相手のことを考えて選ぶこと！\n\n#漫画 #雑学 #プレゼント",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "L65O8o6LOm8",
     "title": "LINEの「。」が怖すぎる!? #漫画 #雑学 #line",
     "publishedAt": "2026-10-17T12:49:42Z",
     "date": "2026-10-17",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "LINEなどの短いメッセージでは、句点を冷たく感じる人もいます。いわゆる「マルハラ」として話題になった現象です。\n\nでも、感じ方は人それぞれ。文字だけで相手の気持ちを決めつけず、気になったら直接確認してみましょう！\n\n💕 シオリと太郎が友達になった物語は関連動画から！\n【漫画】悪用禁止！人に好かれる雑学20選【恋愛心理学】\n\n#漫画 #雑学 #LINE"
+    "description": "LINEなどの短いメッセージでは、句点を冷たく感じる人もいます。いわゆる「マルハラ」として話題になった現象です。\n\nでも、感じ方は人それぞれ。文字だけで相手の気持ちを決めつけず、気になったら直接確認してみましょう！\n\n💕 シオリと太郎が友達になった物語は関連動画から！\n【漫画】悪用禁止！人に好かれる雑学20選【恋愛心理学】\n\n#漫画 #雑学 #LINE",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "SuzWPlJrK1k",
     "title": "AIに恋愛相談……両想い!? #漫画 #恋愛 #ai",
     "publishedAt": "2026-10-17T09:12:29Z",
     "date": "2026-10-17",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "友達になったばかりのシオリが、ChatGPTで恋愛相談！\n\nAIが出した「両想い確率99％」を信じて、太郎に猛アタック!?\n\nでも、AIが出す数字には根拠がないことも……。\n\n生成AIの回答は必ずしも正しいとは限りません。大切な情報は自分でも確認しましょう！\n\n※AIの恋愛診断は物語上のフィクションです。\n\n💕 シオリと太郎が友達になった物語はこちら！\n関連動画：【漫画】悪用禁止！人に好かれる雑学20選【恋愛心理学】\nhttps://youtu.be/kGQ4GaH7VsE\n\n#漫画 #恋愛 #ai"
+    "description": "友達になったばかりのシオリが、ChatGPTで恋愛相談！\n\nAIが出した「両想い確率99％」を信じて、太郎に猛アタック!?\n\nでも、AIが出す数字には根拠がないことも……。\n\n生成AIの回答は必ずしも正しいとは限りません。大切な情報は自分でも確認しましょう！\n\n※AIの恋愛診断は物語上のフィクションです。\n\n💕 シオリと太郎が友達になった物語はこちら！\n関連動画：【漫画】悪用禁止！人に好かれる雑学20選【恋愛心理学】\nhttps://youtu.be/kGQ4GaH7VsE\n\n#漫画 #恋愛 #ai",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "grjVwO-eaVg",
     "title": "耳かきの謎 #漫画 #雑学 #耳掃除",
     "publishedAt": "2026-10-17T03:00:17Z",
     "date": "2026-10-17",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "太郎に耳掃除をしてもらうキュウちゃん。\nところが耳垢がベタベタで大騒ぎ！\n\n実は耳垢には「乾性」と「湿性」の2種類があり、主に遺伝によって決まります。\n\n湿った耳垢も正常な体質の一つ！\n\nさらに、耳垢には耳を守る働きがあり、綿棒で奥まで掃除すると、かえって耳垢を押し込んでしまうことも。\n\n普段は耳の外側や入口を優しく拭く程度で十分です。\n\n耳垢が気になるときは耳鼻科で相談できます。初診・保険3割負担なら千数百円程度が一つの目安ですが、検査や処置によって費用は変わります。\n\n※水っぽい耳だれが続く、痛み、悪臭、聞こえにくさなどがある場合は耳鼻科を受診しましょう。\n\n漫画ついでに、雑学がわかっちゃう。\n\n#漫画 #雑学 #耳かき"
+    "description": "太郎に耳掃除をしてもらうキュウちゃん。\nところが耳垢がベタベタで大騒ぎ！\n\n実は耳垢には「乾性」と「湿性」の2種類があり、主に遺伝によって決まります。\n\n湿った耳垢も正常な体質の一つ！\n\nさらに、耳垢には耳を守る働きがあり、綿棒で奥まで掃除すると、かえって耳垢を押し込んでしまうことも。\n\n普段は耳の外側や入口を優しく拭く程度で十分です。\n\n耳垢が気になるときは耳鼻科で相談できます。初診・保険3割負担なら千数百円程度が一つの目安ですが、検査や処置によって費用は変わります。\n\n※水っぽい耳だれが続く、痛み、悪臭、聞こえにくさなどがある場合は耳鼻科を受診しましょう。\n\n漫画ついでに、雑学がわかっちゃう。\n\n#漫画 #雑学 #耳かき",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VzqtkX_BsoY",
     "title": "ボンボンドロップシール高すぎ！？ #漫画 #雑学 #ボンボンドロップシール",
     "publishedAt": "2026-10-16T22:00:31Z",
     "date": "2026-10-17",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "人気商品を買うときは、高額な出品だけでなく、模倣品や偽通販サイトにも要注意！\n\n購入前に公式価格と販売元を確認しよう！\n\n※動画内の6000円という出品価格はフィクション\n\n漫画ついでに、雑学がわかっちゃう。\n\n#漫画 #雑学 #お金"
+    "description": "人気商品を買うときは、高額な出品だけでなく、模倣品や偽通販サイトにも要注意！\n\n購入前に公式価格と販売元を確認しよう！\n\n※動画内の6000円という出品価格はフィクション\n\n漫画ついでに、雑学がわかっちゃう。\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "uvKiBMzJb4g",
@@ -1769,36 +1861,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "クレーンゲームでお金が… #漫画 #雑学",
     "publishedAt": "2026-10-16T14:55:07Z",
     "date": "2026-10-16",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "「あと1回だけ！」を繰り返した結果、なんと100万円が消えていた！？\n\n#漫画 #雑学 #クレーンゲーム"
+    "description": "「あと1回だけ！」を繰り返した結果、なんと100万円が消えていた！？\n\n#漫画 #雑学 #クレーンゲーム",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "hDbxB95aOUs",
     "title": "無敵の吸血鬼の弱点 #漫画 #雑学",
     "publishedAt": "2026-10-16T13:44:37Z",
     "date": "2026-10-16",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "どんな攻撃も効かない！？ 最強の吸血鬼・キュウちゃん！\n\n太郎があらゆる倒し方を考えるも、全部通用しない……。\n\nところが、そんな無敵の吸血鬼にも意外な弱点が！？\n\n人間も空腹になると集中力や判断力が低下する。\n\n#漫画 #雑学 #吸血鬼"
+    "description": "どんな攻撃も効かない！？ 最強の吸血鬼・キュウちゃん！\n\n太郎があらゆる倒し方を考えるも、全部通用しない……。\n\nところが、そんな無敵の吸血鬼にも意外な弱点が！？\n\n人間も空腹になると集中力や判断力が低下する。\n\n#漫画 #雑学 #吸血鬼",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "hZm1XX4p8CQ",
     "title": "恐怖はダンスで #漫画 #雑学",
     "publishedAt": "2026-10-16T08:43:46Z",
     "date": "2026-10-16",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "怖すぎて体が動かなくなった経験はある？\n\nそれは「フリーズ反応」かもしれない！\n\nゾンビを目の前にした太郎の運命は……？\n\n#漫画 #野獣先輩 #inmuking"
+    "description": "怖すぎて体が動かなくなった経験はある？\n\nそれは「フリーズ反応」かもしれない！\n\nゾンビを目の前にした太郎の運命は……？\n\n#漫画 #野獣先輩 #inmuking",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "CQ5iIzAewqw",
@@ -1815,24 +1910,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "本物のゾンビ！？ #漫画 #雑学",
     "publishedAt": "2026-10-16T03:00:14Z",
     "date": "2026-10-16",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "自然界には、寄生菌によって行動が変わる「ゾンビアリ」が実在する！\n\n太郎が見つけた奇妙なアリ。その恐ろしい秘密とは……？\n\nそして太郎まで「葉っぱに噛みつきたい！」と言い出して……！？\n\n#漫画 #雑学 #ゾンビアリ"
+    "description": "自然界には、寄生菌によって行動が変わる「ゾンビアリ」が実在する！\n\n太郎が見つけた奇妙なアリ。その恐ろしい秘密とは……？\n\nそして太郎まで「葉っぱに噛みつきたい！」と言い出して……！？\n\n#漫画 #雑学 #ゾンビアリ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "DH18HaHs8tk",
     "title": "壁にゾンビ！？ #漫画 #雑学 #ゾンビ",
     "publishedAt": "2026-10-15T23:03:06Z",
     "date": "2026-10-16",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "壁のシミがゾンビの顔に見えた！？\n\n実は、人間の脳には曖昧な模様から顔などを見いだす「パレイドリア」という現象がある。\n\n安心した太郎だったが、隣には本物のナギゾンビが……！？\n\n#漫画 #雑学 #ゾンビ"
+    "description": "壁のシミがゾンビの顔に見えた！？\n\n実は、人間の脳には曖昧な模様から顔などを見いだす「パレイドリア」という現象がある。\n\n安心した太郎だったが、隣には本物のナギゾンビが……！？\n\n#漫画 #雑学 #ゾンビ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "tI1KRDf4k1E",
@@ -1861,12 +1958,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ゾンビに体毛で威嚇した結果⁉🧟 #漫画 #雑学",
     "publishedAt": "2026-10-15T11:03:16Z",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ゾンビに遭遇した太郎の腕に、突然鳥肌が!?\n\n実は鳥肌には、意外な仕組みがある！\n\n人は恐怖を感じると交感神経が働き、毛の根元にある「立毛筋」が収縮するんだ。\n\n毛深い動物では、毛を逆立てて体を大きく見せ、相手を威嚇する働きも！\n\nこれを知った太郎、まさかの体毛でゾンビを威嚇!?\n\n太郎「見ろ！ 僕の体毛を!!」\n\n果たしてゾンビに通用するのか……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ゾンビ"
+    "description": "ゾンビに遭遇した太郎の腕に、突然鳥肌が!?\n\n実は鳥肌には、意外な仕組みがある！\n\n人は恐怖を感じると交感神経が働き、毛の根元にある「立毛筋」が収縮するんだ。\n\n毛深い動物では、毛を逆立てて体を大きく見せ、相手を威嚇する働きも！\n\nこれを知った太郎、まさかの体毛でゾンビを威嚇!?\n\n太郎「見ろ！ 僕の体毛を!!」\n\n果たしてゾンビに通用するのか……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ゾンビ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "W9LzQDBnmCY",
@@ -1898,12 +1996,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "ハロウィンの元祖は… #漫画 #雑学",
     "publishedAt": "2026-10-15T08:06:38Z",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ハロウィンといえばカボチャ！\n\nでも実は、昔はカブでランタンを作っていた!?\n\nアイルランドではカブをくり抜いてランタンを作る風習があり、アメリカに渡ってカボチャが定番になったんだ。\n\nリンコが元祖ハロウィンを再現した結果、太郎が絶叫!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ハロウィン"
+    "description": "ハロウィンといえばカボチャ！\n\nでも実は、昔はカブでランタンを作っていた!?\n\nアイルランドではカブをくり抜いてランタンを作る風習があり、アメリカに渡ってカボチャが定番になったんだ。\n\nリンコが元祖ハロウィンを再現した結果、太郎が絶叫!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ハロウィン",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "zCU2Z7sAQuI",
@@ -1920,24 +2019,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "ポテチの秘密は #漫画 #雑学",
     "publishedAt": "2026-10-15T03:05:26Z",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ポテチの袋を開けたら、中身より空気の方が多い!?\n\nふくらみには大切な理由が！\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ポテチ"
+    "description": "ポテチの袋を開けたら、中身より空気の方が多い!?\n\nふくらみには大切な理由が！\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ポテチ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "MTp_ozYGyjc",
     "title": "ザクショコラが… #漫画",
     "publishedAt": "2026-10-14T23:32:02Z",
     "date": "2026-10-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ミスドの「ポン・デ・ザクショコラ」に太郎とリンコが挑戦！🍩\n\nもちもち生地にザクザクのチョコクランチ！\n2つの食感が楽しめるチョコドーナツ！\n\nリンコ「ひと口ちょうだい」\n太郎「いいよ」\n\n次の瞬間、ドーナツが異次元に消滅⁉\n\n食いしん坊リンコと太郎のドタバタ漫画！\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学"
+    "description": "ミスドの「ポン・デ・ザクショコラ」に太郎とリンコが挑戦！🍩\n\nもちもち生地にザクザクのチョコクランチ！\n2つの食感が楽しめるチョコドーナツ！\n\nリンコ「ひと口ちょうだい」\n太郎「いいよ」\n\n次の瞬間、ドーナツが異次元に消滅⁉\n\n食いしん坊リンコと太郎のドタバタ漫画！\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "L30STKne5pE",
@@ -1954,36 +2055,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "麻辣湯のナゾ #漫画 #雑学",
     "publishedAt": "2026-10-14T13:07:25Z",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "いま話題の麻辣湯（マーラータン）にお嬢様エルゼが挑戦！\n\n優雅にひと口食べた瞬間、口から炎が大噴射!?🔥\n\n実は「麻」は花椒のしびれ、「辣」は唐辛子の辛さ！ 別々の刺激が襲いかかる二重攻撃！\n\n牛乳で復活したエルゼだったが、懲りずにもうひと口……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学"
+    "description": "いま話題の麻辣湯（マーラータン）にお嬢様エルゼが挑戦！\n\n優雅にひと口食べた瞬間、口から炎が大噴射!?🔥\n\n実は「麻」は花椒のしびれ、「辣」は唐辛子の辛さ！ 別々の刺激が襲いかかる二重攻撃！\n\n牛乳で復活したエルゼだったが、懲りずにもうひと口……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1blwJ-lVno4",
     "title": "Setlogは黒歴史お嬢様 #漫画 #雑学",
     "publishedAt": "2026-10-14T11:23:43Z",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "JKの間で話題の「setlog（セットログ）」！\n\nたった2秒の動画で、1日の思い出がVlogに！\n人気の秘密は、映えを気にせず、ありのままの日常を友達と共有できること。\n\nでも、お嬢様エルゼの華麗なる日常は黒歴史だらけ……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学"
+    "description": "JKの間で話題の「setlog（セットログ）」！\n\nたった2秒の動画で、1日の思い出がVlogに！\n人気の秘密は、映えを気にせず、ありのままの日常を友達と共有できること。\n\nでも、お嬢様エルゼの華麗なる日常は黒歴史だらけ……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JUdI8ckwfxI",
     "title": "メントスコーラとスク水お嬢様 #漫画 #雑学",
     "publishedAt": "2026-10-14T08:17:16Z",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "メントスをコーラに入れると、なぜ大噴射するのか？\n\n実は、メントス表面の細かな凹凸をきっかけに、コーラに溶けた二酸化炭素が一気に泡になるんです！\n\nそしてエルゼ自慢のドリルツインテールがまさかの姿に!?\n\n※実際に試す場合は屋外で安全に配慮し、容器を密閉したり顔を近づけたりしないでください。\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#メントスコーラ #漫画 #雑学"
+    "description": "メントスをコーラに入れると、なぜ大噴射するのか？\n\n実は、メントス表面の細かな凹凸をきっかけに、コーラに溶けた二酸化炭素が一気に泡になるんです！\n\nそしてエルゼ自慢のドリルツインテールがまさかの姿に!?\n\n※実際に試す場合は屋外で安全に配慮し、容器を密閉したり顔を近づけたりしないでください。\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#メントスコーラ #漫画 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "t-Ik1dmQI0I",
@@ -2000,12 +2104,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "眠いの何で #漫画 #雑学 #眠い",
     "publishedAt": "2026-10-14T03:03:12Z",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "昼食後、突然の眠気に襲われる悪役令嬢エルゼ！\n\nでも、ご飯を食べたあとって、どうして眠くなるの？\n\n実は、食事の量や内容、午後に眠くなりやすい体内時計のリズムなどが関係しています。\n\n食べすぎを避ける、食後に少し歩くなど、身近な眠気対策も紹介！\n\nそして太郎の一言に、エルゼがまさかの反応!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #眠い"
+    "description": "昼食後、突然の眠気に襲われる悪役令嬢エルゼ！\n\nでも、ご飯を食べたあとって、どうして眠くなるの？\n\n実は、食事の量や内容、午後に眠くなりやすい体内時計のリズムなどが関係しています。\n\n食べすぎを避ける、食後に少し歩くなど、身近な眠気対策も紹介！\n\nそして太郎の一言に、エルゼがまさかの反応!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #眠い",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Nkg7S9Rphuw",
@@ -2022,36 +2127,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "顔のむくみは…？ #漫画 #雑学",
     "publishedAt": "2026-10-13T22:07:00Z",
     "date": "2026-10-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "朝起きたら顔がパンパン!?\n悪役令嬢エルゼの美貌に大事件！\n\n実は、朝の顔のむくみには睡眠中の水分のたまり方や、前日の塩分の摂りすぎなどが関係しています。\n\n冷たいタオルや寝る姿勢など、身近なむくみ対策も紹介！\n\n果たしてエルゼの美貌は取り戻せるのか!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n雑学サバイバル【漫画】\n生き延びる方法は、雑学とユーモアだけ！\n\n#漫画 #雑学 #顔のむくみ"
+    "description": "朝起きたら顔がパンパン!?\n悪役令嬢エルゼの美貌に大事件！\n\n実は、朝の顔のむくみには睡眠中の水分のたまり方や、前日の塩分の摂りすぎなどが関係しています。\n\n冷たいタオルや寝る姿勢など、身近なむくみ対策も紹介！\n\n果たしてエルゼの美貌は取り戻せるのか!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n雑学サバイバル【漫画】\n生き延びる方法は、雑学とユーモアだけ！\n\n#漫画 #雑学 #顔のむくみ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Z4yaJha0ouI",
     "title": "静電気の正体は #漫画 #雑学",
     "publishedAt": "2026-10-13T14:54:09Z",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "悪役令嬢エルゼが太郎に手を差し出した瞬間、まさかの電撃!?\n\nその正体は、身近な科学現象「静電気」！\n\nどうして触れただけでバチッとなるの？\n乾燥した日に静電気が起きやすい理由も紹介！\n\nエルゼの恋心まで放電してしまうのか!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #静電気"
+    "description": "悪役令嬢エルゼが太郎に手を差し出した瞬間、まさかの電撃!?\n\nその正体は、身近な科学現象「静電気」！\n\nどうして触れただけでバチッとなるの？\n乾燥した日に静電気が起きやすい理由も紹介！\n\nエルゼの恋心まで放電してしまうのか!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #静電気",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "J93OoG2G0OM",
     "title": "玉ねぎのナゾ #漫画 #雑学",
     "publishedAt": "2026-10-13T13:50:44Z",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "気高き悪役令嬢エルゼが、まさかの玉ねぎに敗北!?\n\n玉ねぎを切ると涙が出るのはなぜ？\n実は、切った瞬間に起こる化学反応が関係しているんです！\n\n涙を減らすための包丁の使い方も紹介！\n\nエルゼと太郎の異世界ラブコメで、身近な科学雑学を楽しく学ぼう！\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #玉ねぎ"
+    "description": "気高き悪役令嬢エルゼが、まさかの玉ねぎに敗北!?\n\n玉ねぎを切ると涙が出るのはなぜ？\n実は、切った瞬間に起こる化学反応が関係しているんです！\n\n涙を減らすための包丁の使い方も紹介！\n\nエルゼと太郎の異世界ラブコメで、身近な科学雑学を楽しく学ぼう！\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #玉ねぎ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "xuFlcS7XgWg",
@@ -2071,36 +2179,39 @@ window.YOUTUBE_VIDEOS = [
     "title": "握り飯は素手だと #漫画 #雑学",
     "publishedAt": "2026-10-13T09:05:49Z",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "出陣前、殿がくれた握り飯！\n\nでも、素手で握ったおにぎりには食中毒のリスクが……!?\n\n手についた黄色ブドウ球菌が食中毒の原因になることも。現代ならラップを使って握り、早めに食べるのが安心！\n\nところで殿、戦国時代にラップって……。\n\n#漫画 #雑学 #おにぎり"
+    "description": "出陣前、殿がくれた握り飯！\n\nでも、素手で握ったおにぎりには食中毒のリスクが……!?\n\n手についた黄色ブドウ球菌が食中毒の原因になることも。現代ならラップを使って握り、早めに食べるのが安心！\n\nところで殿、戦国時代にラップって……。\n\n#漫画 #雑学 #おにぎり",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VhDmlXE7d0M",
     "title": "鼻血が出たら? #漫画 #雑学 #鼻血",
     "publishedAt": "2026-10-13T03:11:27Z",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "戦国時代、姫に見とれて鼻血を出した太郎！\n\n実は、鼻血が出たときに上を向くのはNG！\n血が喉に流れ、飲み込むと吐き気を起こすことがあります。\n\n正しくは、少し前かがみになって小鼻をしっかり押さえること。\n\nでも、姫の顔が近すぎて太郎は……!?\n\n#漫画 #雑学 #鼻血"
+    "description": "戦国時代、姫に見とれて鼻血を出した太郎！\n\n実は、鼻血が出たときに上を向くのはNG！\n血が喉に流れ、飲み込むと吐き気を起こすことがあります。\n\n正しくは、少し前かがみになって小鼻をしっかり押さえること。\n\nでも、姫の顔が近すぎて太郎は……!?\n\n#漫画 #雑学 #鼻血",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "IDbmhJQNdfE",
     "title": "歯磨きは木の棒で #漫画 #雑学",
     "publishedAt": "2026-10-12T22:14:51Z",
     "date": "2026-10-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "姫が太郎の歯を磨いてくれると思ったら……まさかの木の棒!?\n\n戦国時代には、歯の清掃に楊枝などが使われていました。\n\nちなみに現代の歯ブラシは、約1か月で交換するのが目安！ 毛先が広がると汚れを落とす力も低下します。\n\nあなたの歯ブラシ、最後に交換したのはいつ？\n\n#漫画 #雑学 #歯ブラシ"
+    "description": "姫が太郎の歯を磨いてくれると思ったら……まさかの木の棒!?\n\n戦国時代には、歯の清掃に楊枝などが使われていました。\n\nちなみに現代の歯ブラシは、約1か月で交換するのが目安！ 毛先が広がると汚れを落とす力も低下します。\n\nあなたの歯ブラシ、最後に交換したのはいつ？\n\n#漫画 #雑学 #歯ブラシ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "y3e0izWHaOw",
@@ -2117,12 +2228,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "姫のラブレター #漫画 #雑学 #恋文",
     "publishedAt": "2026-10-12T14:03:31Z",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "姫からこよみに届いた、香りつきの恋文！\n\n平安時代の貴族は、恋文にお香の香りを移して気持ちを伝えることがありました。\n\nところが、姫からのお願いは予想外の方向へ……！？\n\nくノ一こよみと姫の、可愛い戦国ラブコメ！\n\n#漫画 #雑学 #恋文"
+    "description": "姫からこよみに届いた、香りつきの恋文！\n\n平安時代の貴族は、恋文にお香の香りを移して気持ちを伝えることがありました。\n\nところが、姫からのお願いは予想外の方向へ……！？\n\nくノ一こよみと姫の、可愛い戦国ラブコメ！\n\n#漫画 #雑学 #恋文",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "tpDdUfpq-5M",
@@ -2139,12 +2251,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "火遁の術のナゾ #漫画 #雑学 #忍法",
     "publishedAt": "2026-10-12T12:06:53Z",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "敵兵に囲まれた太郎とこよみ！\n\nこよみが放った必殺の「火遁の術」！\n反撃開始かと思いきや……まさかの全力逃走！？\n\n実は「遁」は「逃れる」という意味。\n火や煙で敵の注意をそらして逃げる、忍術の意外な雑学を漫画で紹介！\n\n#漫画 #雑学 #忍法"
+    "description": "敵兵に囲まれた太郎とこよみ！\n\nこよみが放った必殺の「火遁の術」！\n反撃開始かと思いきや……まさかの全力逃走！？\n\n実は「遁」は「逃れる」という意味。\n火や煙で敵の注意をそらして逃げる、忍術の意外な雑学を漫画で紹介！\n\n#漫画 #雑学 #忍法",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "A7I6aMjMbfI",
@@ -2171,48 +2284,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "兵糧丸のナゾ #漫画 #雑学 #忍者",
     "publishedAt": "2026-10-12T08:07:04Z",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "忍者の携帯食「兵糧丸」。昔のレシピを再現すると、砂糖菓子のように甘いものも！ 太郎が恐る恐る食べてみた結果……。\n\n#漫画 #雑学 #忍者"
+    "description": "忍者の携帯食「兵糧丸」。昔のレシピを再現すると、砂糖菓子のように甘いものも！ 太郎が恐る恐る食べてみた結果……。\n\n#漫画 #雑学 #忍者",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "80vxp4NHzO4",
     "title": "忍者のクナイは #漫画 #雑学 #クナイ",
     "publishedAt": "2026-10-12T03:07:10Z",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "忍者の武器「クナイ」は、穴掘りやこじ開けにも使える万能道具!? こよみが披露した意外な特技に太郎も驚愕！\n\n#漫画 #雑学 #クナイ"
+    "description": "忍者の武器「クナイ」は、穴掘りやこじ開けにも使える万能道具!? こよみが披露した意外な特技に太郎も驚愕！\n\n#漫画 #雑学 #クナイ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1Axw5_Vh6VM",
     "title": "くノ一とは #漫画 #雑学 #くノ一",
     "publishedAt": "2026-10-11T21:11:57Z",
     "date": "2026-10-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "敵城に「普通に入った」というくノ一・こよみ。昔の忍術書に記された「くノ一の術」の意外な意味とは？\n\n#漫画 #雑学 #くノ一"
+    "description": "敵城に「普通に入った」というくノ一・こよみ。昔の忍術書に記された「くノ一の術」の意外な意味とは？\n\n#漫画 #雑学 #くノ一",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "33439sWdh3M",
     "title": "猫の秘密 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-11T14:25:22Z",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "殿が自慢の団子を猫に見せるも、完全無視！実は猫には甘味を感じにくい理由があった。ところが殿の団子愛は想像を絶するものだった…！？\n\n#漫画 #雑学 #ai漫画"
+    "description": "殿が自慢の団子を猫に見せるも、完全無視！実は猫には甘味を感じにくい理由があった。ところが殿の団子愛は想像を絶するものだった…！？\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "uxXgM0SUFJI",
@@ -2232,48 +2349,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "雨の秘密… #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-11T11:03:10Z",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "雨上がりの匂いには科学的な秘密がある！？雨粒が地面に落ちるときに起こる不思議な現象と、太郎に想いを寄せる姫のすれ違いラブコメ！\n\n#漫画 #雑学 #ai漫画"
+    "description": "雨上がりの匂いには科学的な秘密がある！？雨粒が地面に落ちるときに起こる不思議な現象と、太郎に想いを寄せる姫のすれ違いラブコメ！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "j0ZF7pBhgHs",
     "title": "紅葉の秘密 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-11T07:57:46Z",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "秋の紅葉は、緑色が抜けるだけじゃない！？モミジが赤くなる仕組みを教えてくれた姫。しかし、太郎まで真っ赤に染めようとしてきて…！？\n\n#漫画 #雑学 #ai漫画"
+    "description": "秋の紅葉は、緑色が抜けるだけじゃない！？モミジが赤くなる仕組みを教えてくれた姫。しかし、太郎まで真っ赤に染めようとしてきて…！？\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JR9mLSef0Dg",
     "title": "カラスの秘密 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-11T02:33:21Z",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "昨日追い払ったカラスが、今日も殿を見ている！？実はカラスには人間の顔を長期間覚え、仲間にも危険を伝える驚きの能力が！戦国時代のお殿様がまさかの大ピンチ！\n\n#漫画 #雑学 #ai漫画"
+    "description": "昨日追い払ったカラスが、今日も殿を見ている！？実はカラスには人間の顔を長期間覚え、仲間にも危険を伝える驚きの能力が！戦国時代のお殿様がまさかの大ピンチ！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "OVnFWxq5LkY",
     "title": "ちょうちょの秘密 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-11T00:14:57Z",
     "date": "2026-10-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "戦国時代のお姫様の手に蝶が止まった！蝶は足で味を感じるという意外な雑学から、姫のあざとい誘惑が始まる！？太郎のツッコミにも注目！\n\n#漫画 #雑学 #ai漫画"
+    "description": "戦国時代のお姫様の手に蝶が止まった！蝶は足で味を感じるという意外な雑学から、姫のあざとい誘惑が始まる！？太郎のツッコミにも注目！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "CNBARAYaXP4",
@@ -2293,60 +2414,65 @@ window.YOUTUBE_VIDEOS = [
     "title": "秘密の暗号は #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-10T11:03:35Z",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "くノ一が紫外線ライトを当てると、白紙に秘密の暗号が出現！？その正体は蛍光インク！紫外線を吸収して目に見える光を放つ仕組みと、衝撃の機密情報を漫画で紹介！\n\n#漫画 #雑学 #ai漫画"
+    "description": "くノ一が紫外線ライトを当てると、白紙に秘密の暗号が出現！？その正体は蛍光インク！紫外線を吸収して目に見える光を放つ仕組みと、衝撃の機密情報を漫画で紹介！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "XEwjEL2YC_c",
     "title": "煙のナゾ #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-10T08:03:21Z",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "忍法・煙隠れ！煙幕で姿が見えなくなる理由とは？煙の粒子による光の散乱と、ライトをつけると逆に見えにくくなる不思議を、くノ一と太郎のドタバタ漫画で紹介！\n\n#漫画 #雑学 #ai漫画"
+    "description": "忍法・煙隠れ！煙幕で姿が見えなくなる理由とは？煙の粒子による光の散乱と、ライトをつけると逆に見えにくくなる不思議を、くノ一と太郎のドタバタ漫画で紹介！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "3R9dCqHn6Z8",
     "title": "女に好かれる女とは #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-10T03:03:31Z",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "女性が憧れる「かっこいい女性」の特徴とは？\n\nなぜか女の子にモテる王子様女子・ケイ。でも本人にはまったく自覚がなくて……！？\n\n#漫画 #雑学 #ai漫画"
+    "description": "女性が憧れる「かっこいい女性」の特徴とは？\n\nなぜか女の子にモテる王子様女子・ケイ。でも本人にはまったく自覚がなくて……！？\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Kd92VoZkXko",
     "title": "暗闇の不思議 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-10T00:09:11Z",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "暗闇で敵が消えた！？ 実は、暗い場所では視線を少しずらすと見えやすくなることがある。忍者屋敷で学ぶ「そらし目」と桿体細胞の不思議！\n\n#漫画 #雑学 #ai漫画"
+    "description": "暗闇で敵が消えた！？ 実は、暗い場所では視線を少しずらすと見えやすくなることがある。忍者屋敷で学ぶ「そらし目」と桿体細胞の不思議！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "guPe3OVf2uY",
     "title": "雑巾の干し方は… #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-09T21:33:02Z",
     "date": "2026-10-10",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "掃除後の濡れた雑巾、丸めたまま干していませんか？\n\n生乾き臭の原因と正しい雑巾の干し方を、クールなくのいち・こよみが解説！太郎の運命は……？\n\n#漫画 #雑学 #ai漫画"
+    "description": "掃除後の濡れた雑巾、丸めたまま干していませんか？\n\n生乾き臭の原因と正しい雑巾の干し方を、クールなくのいち・こよみが解説！太郎の運命は……？\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "xDJ2xlOg_T0",
@@ -2366,24 +2492,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "天才だと思ったら… #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-09T08:20:53Z",
     "date": "2026-10-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "自分のギター演奏に酔いしれる太郎。しかし録音を聴いてみると…！？ ダニング＝クルーガー効果にも関連する、実力と自己評価のズレを描いた心理学雑学コメディ！\n\n#漫画 #雑学 #ai漫画"
+    "description": "自分のギター演奏に酔いしれる太郎。しかし録音を聴いてみると…！？ ダニング＝クルーガー効果にも関連する、実力と自己評価のズレを描いた心理学雑学コメディ！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "JdTtOdRALkU",
     "title": "メロディーの謎… #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-08T22:03:24Z",
     "date": "2026-10-09",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "一度聴いた曲が頭から離れない！？ 勝手にメロディーが繰り返される心理現象「イヤーワーム」の正体とは？ アニキを襲う恐怖の無限リピート！\n\n#漫画 #雑学 #ai漫画"
+    "description": "一度聴いた曲が頭から離れない！？ 勝手にメロディーが繰り返される心理現象「イヤーワーム」の正体とは？ アニキを襲う恐怖の無限リピート！\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "YXuL9Sgqg7Y",
@@ -2413,24 +2541,26 @@ window.YOUTUBE_VIDEOS = [
     "title": "Suicaの真実 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-08T03:03:23Z",
     "date": "2026-10-08",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "使わなくなったSuica、捨てる前にちょっと待って。カード型Suicaには返却すると戻ってくるデポジット500円があります。\n\n漫画ついでに雑学。\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画"
+    "description": "使わなくなったSuica、捨てる前にちょっと待って。カード型Suicaには返却すると戻ってくるデポジット500円があります。\n\n漫画ついでに雑学。\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "8l0-vc-hRcg",
     "title": "小銭の秘密 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-07T22:03:37Z",
     "date": "2026-10-08",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "1円玉は何枚でも使えると思ってない？実は同じ種類の硬貨には、法律上の通用限度があります。\n\n漫画ついでに雑学。\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画"
+    "description": "1円玉は何枚でも使えると思ってない？実は同じ種類の硬貨には、法律上の通用限度があります。\n\n漫画ついでに雑学。\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "CTa7k_pJPG4",
@@ -2450,60 +2580,65 @@ window.YOUTUBE_VIDEOS = [
     "title": "肉の解凍の真実 #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-07T12:03:16Z",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。肉を安全に解凍するなら、冷蔵庫・流水・電子レンジを状況に合わせて使い分けよう。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。肉を安全に解凍するなら、冷蔵庫・流水・電子レンジを状況に合わせて使い分けよう。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "kW_oekdV3WQ",
     "title": "煮物は冷めると #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-07T09:03:38Z",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学。\n\n煮物は「冷めるから味が染みる」と思われがちですが、実は味は温かい間から中へ広がっています。保存するときは常温放置を避け、速やかに冷まして冷蔵するのが大切です。\n\n#漫画 #雑学 #ai漫画"
+    "description": "漫画で雑学。\n\n煮物は「冷めるから味が染みる」と思われがちですが、実は味は温かい間から中へ広がっています。保存するときは常温放置を避け、速やかに冷まして冷蔵するのが大切です。\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "3vBih7WQDJU",
     "title": "大根のフシギ #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-07T06:03:39Z",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n大根は部位によって辛さが変わり、先端側ほど辛くなりやすいとされています。\n\n#漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。\n\n大根は部位によって辛さが変わり、先端側ほど辛くなりやすいとされています。\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "xpGKqDFxnes",
     "title": "味噌汁は煮込みすぎると #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-07T03:03:10Z",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "味噌汁は煮込みすぎると、どうなるのか？\n料亭のおやっさんが美味しい味噌汁の作り方を教えます。\n\n#漫画 #雑学 #ai漫画"
+    "description": "味噌汁は煮込みすぎると、どうなるのか？\n料亭のおやっさんが美味しい味噌汁の作り方を教えます。\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "7NyebzXQpd4",
     "title": "エベレストを海に沈めたら #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-06T17:00:20Z",
     "date": "2026-10-07",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "世界一高い山エベレストを、世界最深クラスのマリアナ海溝・チャレンジャー海淵に沈めたらどうなる？漫画ついでに海の深さがわかる雑学ショートです。 #漫画 #雑学 #ai漫画"
+    "description": "世界一高い山エベレストを、世界最深クラスのマリアナ海溝・チャレンジャー海淵に沈めたらどうなる？漫画ついでに海の深さがわかる雑学ショートです。 #漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "MwjmWD3lSLE",
@@ -2523,60 +2658,65 @@ window.YOUTUBE_VIDEOS = [
     "title": "世界最大の滝！？ #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-06T08:17:15Z",
     "date": "2026-10-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\nデンマーク海峡の海底には、冷たく重い海水が巨大な段差を流れ落ちる「海中の滝」があります。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。\nデンマーク海峡の海底には、冷たく重い海水が巨大な段差を流れ落ちる「海中の滝」があります。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "9MIxA-FIkew",
     "title": "海賊のフシギ #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-06T05:03:26Z",
     "date": "2026-10-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n海賊の黄金時代、一部の海賊船では船長を選挙で決めたり、重要事項や戦利品、負傷した仲間への補償までルール化した例がありました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。\n海賊の黄金時代、一部の海賊船では船長を選挙で決めたり、重要事項や戦利品、負傷した仲間への補償までルール化した例がありました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "UXG811X_XlU",
     "title": "ここで遭難したら #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-05T22:47:28Z",
     "date": "2026-10-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\nポイント・ネモは地球上で最も陸地から遠い海上地点。最寄りの陸まで約2688kmあります。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。\n\nポイント・ネモは地球上で最も陸地から遠い海上地点。最寄りの陸まで約2688kmあります。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "LjqPqRkfOc4",
     "title": "魔の海のナゾ #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-05T18:03:33Z",
     "date": "2026-10-06",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n船の墓場と恐れられたサルガッソ海。大量の海藻と風の弱さが、“魔の海”と恐れられた背景にあります。\n高評価・チャンネル登録お願いします♪ #漫画 #雑学 #ai漫画"
+    "description": "漫画ついでに雑学。\n船の墓場と恐れられたサルガッソ海。大量の海藻と風の弱さが、“魔の海”と恐れられた背景にあります。\n高評価・チャンネル登録お願いします♪ #漫画 #雑学 #ai漫画",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "NHWSmdSvxaA",
     "title": "雨水は飲んだら #漫画 #ai漫画 #雑学",
     "publishedAt": "2026-10-05T14:57:25Z",
     "date": "2026-10-05",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n無人島で集めた雨水も、空気中の汚れや葉・容器由来の菌などが混ざることがあります。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル"
+    "description": "漫画ついでに雑学。\n\n無人島で集めた雨水も、空気中の汚れや葉・容器由来の菌などが混ざることがあります。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "5CxSKjOshzU",
@@ -2596,48 +2736,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "【漫画】寒いときの酒はヤバい #雑学",
     "publishedAt": "2026-10-05T08:30:25Z",
     "date": "2026-10-05",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n寒い時にお酒を飲むと温まるように感じますが、実は体の熱が逃げやすくなることがあります。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #酒"
+    "description": "漫画ついでに雑学。\n\n寒い時にお酒を飲むと温まるように感じますが、実は体の熱が逃げやすくなることがあります。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #酒",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "CaUFNQZMP0g",
     "title": "【漫画】その木の実、食べて大丈夫？",
     "publishedAt": "2026-10-05T03:28:06Z",
     "date": "2026-10-05",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n動物が食べている木の実でも、人間に安全とは限らない理由をサクッと紹介。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル"
+    "description": "漫画ついでに雑学。\n\n動物が食べている木の実でも、人間に安全とは限らない理由をサクッと紹介。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "iVyDfxLn3Ug",
     "title": "【漫画】雷のとき、木の下にいくと #漫画 #雑学",
     "publishedAt": "2026-10-04T22:00:05Z",
     "date": "2026-10-05",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "【説明欄】\n雷雨で木の下に逃げるのは危険。落雷時の正しい避難方法を漫画でサクッと紹介します。\n\n#漫画 #雑学 #雷"
+    "description": "【説明欄】\n雷雨で木の下に逃げるのは危険。落雷時の正しい避難方法を漫画でサクッと紹介します。\n\n#漫画 #雑学 #雷",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "lpP-wza64pM",
     "title": "【漫画】ノイキャンは凄い #漫画 #雑学 #科学",
     "publishedAt": "2026-10-04T13:15:29Z",
     "date": "2026-10-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\nノイズキャンセリングは、周囲の音に逆向きの音を重ねて騒音を打ち消す仕組みです。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画ついでに雑学。\n\nノイズキャンセリングは、周囲の音に逆向きの音を重ねて騒音を打ち消す仕組みです。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "4uftQH5Nuxc",
@@ -2657,48 +2801,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "【漫画】最強の格闘技は…… #漫画 #雑学 #格闘技",
     "publishedAt": "2026-10-04T08:00:28Z",
     "date": "2026-10-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "ボクシング、柔術、レスリング……異種格闘技の歴史をたどると、最強に近い答えはMMAでした。\n\n#漫画 #雑学 #格闘技"
+    "description": "ボクシング、柔術、レスリング……異種格闘技の歴史をたどると、最強に近い答えはMMAでした。\n\n#漫画 #雑学 #格闘技",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Wlce8XCqMTY",
     "title": "【漫画】スライム娘に食べら #漫画 #雑学 #科学",
     "publishedAt": "2026-10-04T03:00:30Z",
     "date": "2026-10-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回はスライムがぷるぷる伸びる理由と、ポリマーが水を抱え込む仕組みについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画ついでに雑学。\n\n今回はスライムがぷるぷる伸びる理由と、ポリマーが水を抱え込む仕組みについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "4Fsk3HuO8QY",
     "title": "【漫画】歯磨きすすぐと #漫画 #雑学 #科学",
     "publishedAt": "2026-10-03T22:00:07Z",
     "date": "2026-10-04",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回は歯磨き後のすすぎ方について、フッ素入り歯磨き粉を使ったあとの正しいケアを解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n #漫画 #雑学 #健康"
+    "description": "漫画ついでに雑学。\n\n今回は歯磨き後のすすぎ方について、フッ素入り歯磨き粉を使ったあとの正しいケアを解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n #漫画 #雑学 #健康",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "CHiLdL4BZ-s",
     "title": "【漫画】ホストをやる理由 #漫画 #雑学 #心理学",
     "publishedAt": "2026-10-03T14:00:39Z",
     "date": "2026-10-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回はホストをやる理由から、「シャーデンフロイデ」と「日常的サディズム」に関する心理学を解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪ \n\n#漫画 #雑学 #心理学"
+    "description": "漫画ついでに雑学。\n\n今回はホストをやる理由から、「シャーデンフロイデ」と「日常的サディズム」に関する心理学を解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪ \n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "h_WzcHxWA98",
@@ -2718,48 +2866,52 @@ window.YOUTUBE_VIDEOS = [
     "title": "【漫画】充電トラップ #漫画 #雑学 #科学",
     "publishedAt": "2026-10-03T08:00:08Z",
     "date": "2026-10-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回はスマホの充電で、「100％のまま放置するとバッテリーはどうなる？」について解説しました。\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画ついでに雑学。今回はスマホの充電で、「100％のまま放置するとバッテリーはどうなる？」について解説しました。\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "T3BYJVqXbxQ",
     "title": "【漫画】コーヒーが爆発した #漫画 #雑学 #科学",
     "publishedAt": "2026-10-03T03:00:02Z",
     "date": "2026-10-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "説明欄\n漫画ついでに雑学。今回は電子レンジで飲み物を加熱したときに起こる「突沸」の仕組みと、コーヒーが突然噴き出す理由を解説しました。高評価・コメント・チャンネル登録お願いします♪"
+    "description": "説明欄\n漫画ついでに雑学。今回は電子レンジで飲み物を加熱したときに起こる「突沸」の仕組みと、コーヒーが突然噴き出す理由を解説しました。高評価・コメント・チャンネル登録お願いします♪",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "nilTQHs34Q8",
     "title": "【漫画】目薬を間違うと！？ #漫画 #雑学 #科学",
     "publishedAt": "2026-10-02T22:00:06Z",
     "date": "2026-10-03",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は目薬の正しい使い方と、点眼した薬が涙点から鼻へ流れる仕組みについて解説しました。\n高評価・コメント・チャンネル登録お願いします♪"
+    "description": "漫画ついでに雑学。今回は目薬の正しい使い方と、点眼した薬が涙点から鼻へ流れる仕組みについて解説しました。\n高評価・コメント・チャンネル登録お願いします♪",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "zIYZWNe0GH8",
     "title": "【漫画】後回しをなくす方法 #漫画 #雑学 #心理学",
     "publishedAt": "2026-10-02T13:00:31Z",
     "date": "2026-10-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は「後回し」を減らす方法として、心理学の実行意図について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画ついでに雑学。今回は「後回し」を減らす方法として、心理学の実行意図について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "3uOGpRYVOZ0",
@@ -2779,516 +2931,559 @@ window.YOUTUBE_VIDEOS = [
     "title": "【漫画】課金トラップ #漫画 #雑学 #お金",
     "publishedAt": "2026-10-02T08:00:24Z",
     "date": "2026-10-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回は「アプリを削除してもサブスクは解約されない？」という、サブスク解約とアプリ削除の違い、課金に関することについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金"
+    "description": "漫画ついでに雑学。\n\n今回は「アプリを削除してもサブスクは解約されない？」という、サブスク解約とアプリ削除の違い、課金に関することについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Pqp4cFV-k_g",
     "title": "【漫画】黒いバナナは腐ってる？ #漫画 #雑学 #バナナ",
     "publishedAt": "2026-10-01T22:00:39Z",
     "date": "2026-10-02",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回はバナナで、「冷蔵庫に入れたバナナが黒くなる理由」と腐っているかの見分け方について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #バナナ"
+    "description": "漫画ついでに雑学。今回はバナナで、「冷蔵庫に入れたバナナが黒くなる理由」と腐っているかの見分け方について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #バナナ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "eMmnG9ZGEno",
     "title": "【漫画】卵を茹ですぎると #漫画 #雑学 #料理",
     "publishedAt": "2026-10-01T14:00:16Z",
     "date": "2026-10-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回はゆで卵の黄身が緑になる原因と、ゆですぎで起こる「硫化鉄」について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ゆで卵"
+    "description": "漫画ついでに雑学。\n\n今回はゆで卵の黄身が緑になる原因と、ゆですぎで起こる「硫化鉄」について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ゆで卵",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "9I5bVoWenRk",
     "title": "【漫画】スピーカーぶっ壊す #漫画 #雑学 #音楽",
     "publishedAt": "2026-10-01T11:00:16Z",
     "date": "2026-10-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回は音楽で、「スピーカーを壊して歪んだ音を作った理由」について解説しました。高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #音楽"
+    "description": "漫画ついでに雑学。\n\n今回は音楽で、「スピーカーを壊して歪んだ音を作った理由」について解説しました。高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #音楽",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "kCnPJROaxHk",
     "title": "【漫画】家の中に国境がある人 #漫画 #雑学",
     "publishedAt": "2026-10-01T08:00:37Z",
     "date": "2026-10-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回はオランダとベルギーにまたがる町バールレで、家の中まで国境が通る不思議な街について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #世界"
+    "description": "漫画ついでに雑学。今回はオランダとベルギーにまたがる町バールレで、家の中まで国境が通る不思議な街について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #世界",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "HPDXVKSDvGI",
     "title": "【漫画】大容量の罠 #漫画 #雑学 #お金",
     "publishedAt": "2026-10-01T03:00:36Z",
     "date": "2026-10-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は大容量パックで、商品の内容量と「同じ量あたりの値段」を比べる見方について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金"
+    "description": "漫画ついでに雑学。今回は大容量パックで、商品の内容量と「同じ量あたりの値段」を比べる見方について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "aBhy9oWdrpc",
     "title": "【漫画】ナシの謎 #漫画 #雑学 #食べ物",
     "publishedAt": "2026-09-30T22:00:02Z",
     "date": "2026-10-01",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回はナシのシャリシャリした食感の正体と、石細胞やリグニンが関係する仕組みを解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #食べ物"
+    "description": "漫画ついでに雑学。今回はナシのシャリシャリした食感の正体と、石細胞やリグニンが関係する仕組みを解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #食べ物",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "dISsz1Je9xM",
     "title": "【漫画】割引なんで？ #漫画 #雑学 #お金",
     "publishedAt": "2026-09-30T14:00:34Z",
     "date": "2026-09-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は「90％OFF」をきっかけに、二重価格表示や不当表示について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金"
+    "description": "漫画ついでに雑学。今回は「90％OFF」をきっかけに、二重価格表示や不当表示について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "rZxlxYNEoGY",
     "title": "【漫画】謎のキノコ #漫画 #雑学 #キノコ",
     "publishedAt": "2026-09-30T10:03:06Z",
     "date": "2026-09-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n今回は毒キノコで、「毒キノコの見分け方」や野生のキノコを見た目だけで判断する危険性について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #キノコ"
+    "description": "漫画ついでに雑学。\n今回は毒キノコで、「毒キノコの見分け方」や野生のキノコを見た目だけで判断する危険性について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #キノコ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "OfaHbiqHnGg",
     "title": "【漫画】ショートスリーパーの謎？ #漫画 #雑学 #科学",
     "publishedAt": "2026-09-30T08:00:16Z",
     "date": "2026-09-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は「30分睡眠」をきっかけに、ショートスリーパーや睡眠時間について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ショートスリーパー"
+    "description": "漫画ついでに雑学。今回は「30分睡眠」をきっかけに、ショートスリーパーや睡眠時間について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ショートスリーパー",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "238lbndBDwY",
     "title": "【漫画】サンマのナゾ？ #漫画 #雑学 #サンマ",
     "publishedAt": "2026-09-30T03:00:05Z",
     "date": "2026-09-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回はサンマで、「サンマの内臓が食べられる理由」と腹の中からウロコが出てくる理由について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サンマ"
+    "description": "漫画ついでに雑学。今回はサンマで、「サンマの内臓が食べられる理由」と腹の中からウロコが出てくる理由について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サンマ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "_e3sNR_l3MY",
     "title": "【漫画】魚の臭いは酢水 #漫画 #雑学 #釣り",
     "publishedAt": "2026-09-29T22:00:10Z",
     "date": "2026-09-30",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は魚を触ったあとの手の臭いで、酢水を使った魚臭さ対策について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #釣り"
+    "description": "漫画ついでに雑学。今回は魚を触ったあとの手の臭いで、酢水を使った魚臭さ対策について解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #釣り",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "KPzym3SdL58",
     "title": "【漫画】支払いはカタナで #漫画 #雑学",
     "publishedAt": "2026-09-29T14:00:28Z",
     "date": "2026-09-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学。今回は古代中国で実際に使われた「刀銭」と「布銭」、昔のお金・貨幣の歴史について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #古代中国"
+    "description": "漫画で雑学。今回は古代中国で実際に使われた「刀銭」と「布銭」、昔のお金・貨幣の歴史について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #古代中国",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "yMNj5rVm6bE",
     "title": "【漫画】ノーベル賞のナゾ #漫画 #雑学",
     "publishedAt": "2026-09-29T11:00:26Z",
     "date": "2026-09-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。\n今回はノーベル賞で、「ノーベル賞の賞金の仕組み」やアルフレッド・ノーベルについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ノーベル賞"
+    "description": "漫画ついでに雑学。\n今回はノーベル賞で、「ノーベル賞の賞金の仕組み」やアルフレッド・ノーベルについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ノーベル賞",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1tFKaz4mUC8",
     "title": "【漫画】宇宙人っている？ #漫画 #雑学 #宇宙",
     "publishedAt": "2026-09-29T08:00:30Z",
     "date": "2026-09-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画ついでに雑学。今回は宇宙で、「宇宙人はいるのか」と観測可能な宇宙の広さについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙"
+    "description": "漫画ついでに雑学。今回は宇宙で、「宇宙人はいるのか」と観測可能な宇宙の広さについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Oaaubry3LjE",
     "title": "【漫画】突然の百合！？#漫画 #雑学 #心理学",
     "publishedAt": "2026-09-29T03:00:06Z",
     "date": "2026-09-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n今回は好きな百合カップリングと、心理学で「評価条件づけ」と好きなものと一緒に出てきた相手を好意的に見やすい心理について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。\n今回は好きな百合カップリングと、心理学で「評価条件づけ」と好きなものと一緒に出てきた相手を好意的に見やすい心理について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "DW2ouyAcjiw",
     "title": "【漫画】熊が出たら#漫画 #雑学 #クマ",
     "publishedAt": "2026-09-28T22:04:51Z",
     "date": "2026-09-29",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回はクマに遭遇したとき、なぜ走って逃げるのが危険なのかと基本的な対処法を解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #クマ"
+    "description": "漫画で雑学紹介。今回はクマに遭遇したとき、なぜ走って逃げるのが危険なのかと基本的な対処法を解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #クマ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VHFnOYWGars",
     "title": "【漫画】ステーキの謎 #漫画 #雑学 #ステーキ",
     "publishedAt": "2026-09-28T14:00:31Z",
     "date": "2026-09-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回はステーキから出る赤い汁の正体と、ミオグロビンが赤く見える仕組みについて解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ステーキ"
+    "description": "漫画で雑学紹介。今回はステーキから出る赤い汁の正体と、ミオグロビンが赤く見える仕組みについて解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ステーキ",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "6Zd8xiCnKiM",
     "title": "【漫画】読めない本 #漫画 #雑学 #不思議",
     "publishedAt": "2026-09-28T12:00:31Z",
     "date": "2026-09-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n\n今回は世界のナゾで、「ヴォイニッチ手稿はなぜ解読できないのか」という未解読文書の謎について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ヴォイニッチ手稿"
+    "description": "漫画で雑学紹介。\n\n今回は世界のナゾで、「ヴォイニッチ手稿はなぜ解読できないのか」という未解読文書の謎について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #ヴォイニッチ手稿",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "VZsr7PbiwOU",
     "title": "【漫画】海王星のナゾ #漫画 #雑学 #宇宙",
     "publishedAt": "2026-09-28T10:00:06Z",
     "date": "2026-09-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は海王星で、時速2000kmを超えることもある「太陽系最速クラスの風」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙"
+    "description": "漫画で雑学紹介。今回は海王星で、時速2000kmを超えることもある「太陽系最速クラスの風」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "zsXB8wQIB1k",
     "title": "【漫画】解放感 #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-28T08:35:38Z",
     "date": "2026-09-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回はナチュリズムやボディイメージ・自己肯定感との関係について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回はナチュリズムやボディイメージ・自己肯定感との関係について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "qYGqSlu2JrM",
     "title": "【漫画】ガンダムは作れる？ #漫画 #雑学 #科学",
     "publishedAt": "2026-09-27T22:00:22Z",
     "date": "2026-09-28",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n\n今回は科学で、「ガンダムのような巨大ロボットは本当に作れるのか？」をテーマに、二足歩行ロボットの難しさについて解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。\n\n今回は科学で、「ガンダムのような巨大ロボットは本当に作れるのか？」をテーマに、二足歩行ロボットの難しさについて解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "vuCEBPWDvmE",
     "title": "【漫画】みんな同じ #漫画 #雑学 #不思議",
     "publishedAt": "2026-09-27T13:27:58Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n\n今回はアメリカ・アラスカ州ウィッティアの「ベギッチ・タワーズ」で、住民の多くが同じ巨大集合住宅で暮らす町について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\nPhoto: Quintin Soloviev / Wikimedia Commons / CC BY 4.0\n※画像は動画用にトリミング・加工しています。\n\n#漫画 #雑学 #不思議"
+    "description": "漫画で雑学紹介。\n\n今回はアメリカ・アラスカ州ウィッティアの「ベギッチ・タワーズ」で、住民の多くが同じ巨大集合住宅で暮らす町について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\nPhoto: Quintin Soloviev / Wikimedia Commons / CC BY 4.0\n※画像は動画用にトリミング・加工しています。\n\n#漫画 #雑学 #不思議",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "LVlEcfdMhK8",
     "title": "【漫画】燃えるダイヤモンド #漫画 #雑学 #科学",
     "publishedAt": "2026-09-27T11:00:38Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n\n今回は科学のナゾで、\n「ダイヤモンドは燃えるのか」という\n身近な科学について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。\n\n今回は科学のナゾで、\n「ダイヤモンドは燃えるのか」という\n身近な科学について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "pShbOP3wlhA",
     "title": "【漫画】火起こし #漫画 #雑学 #アウトドア",
     "publishedAt": "2026-09-27T08:15:11Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は火起こしで、「ハンドドリル」とアウトドアでの着火方法について解説しました。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #サバイバル"
+    "description": "漫画で雑学紹介。今回は火起こしで、「ハンドドリル」とアウトドアでの着火方法について解説しました。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #サバイバル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "nJZJH_TDd08",
     "title": "【漫画】もやしの根っこ #雑学 #漫画 #料理",
     "publishedAt": "2026-09-27T03:00:21Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回はもやしで、「もやしの根っこは取る意味があるのか？」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #料理"
+    "description": "漫画で雑学紹介。今回はもやしで、「もやしの根っこは取る意味があるのか？」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n#漫画 #雑学 #料理",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "xWreuQIXh8U",
     "title": "【漫画】通り道 #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-26T22:00:40Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は心理学で、「知らない道を歩くと気分がいい理由」と散歩・気分転換について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回は心理学で、「知らない道を歩くと気分がいい理由」と散歩・気分転換について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "KlWqPDckO7k",
     "title": "【漫画】ロマン武器 #漫画 #雑学 #ガンブレード",
     "publishedAt": "2026-09-26T15:34:16Z",
     "date": "2026-09-27",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は世界のナゾで、「ガンブレードは実在した？」をテーマに、実在した剣とピストルの合体武器について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #世界"
+    "description": "漫画で雑学紹介。今回は世界のナゾで、「ガンブレードは実在した？」をテーマに、実在した剣とピストルの合体武器について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #世界",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "1i6Gy59EZuI",
     "title": "【漫画】平均の罠 #漫画 #雑学 #お金",
     "publishedAt": "2026-09-26T11:00:17Z",
     "date": "2026-09-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回はお金で、「平均年収の実態は違う？」をテーマに、平均値が極端な数字に引っ張られる仕組みを解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金"
+    "description": "漫画で雑学紹介。今回はお金で、「平均年収の実態は違う？」をテーマに、平均値が極端な数字に引っ張られる仕組みを解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "dD2DktnYlVE",
     "title": "【漫画】雨が降ると痛い？ #漫画 #雑学 #科学",
     "publishedAt": "2026-09-26T08:00:15Z",
     "date": "2026-09-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は科学で、「雨が降ると頭が痛くなる理由」と天気・気圧による片頭痛について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。今回は科学で、「雨が降ると頭が痛くなる理由」と天気・気圧による片頭痛について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "ecBxOVI0fMY",
     "title": "【漫画】金縛りの正体 #漫画 #雑学 #科学",
     "publishedAt": "2026-09-26T03:15:06Z",
     "date": "2026-09-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は科学で、「金縛りの正体」について解説しました。\n\n金縛りは、意識が戻っていてもREM睡眠中の筋肉が動きにくい状態が一時的に残ることで起こります。\n人影や気配を感じる幻覚を伴うことも。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。今回は科学で、「金縛りの正体」について解説しました。\n\n金縛りは、意識が戻っていてもREM睡眠中の筋肉が動きにくい状態が一時的に残ることで起こります。\n人影や気配を感じる幻覚を伴うことも。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "NMHeFizXr48",
     "title": "【漫画】頭から離れない #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-25T22:15:28Z",
     "date": "2026-09-26",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は心理学で、「やることが頭から離れない理由」と予定・タスク管理について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回は心理学で、「やることが頭から離れない理由」と予定・タスク管理について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "RLquYzxdWgc",
     "title": "【漫画】青い風船？ #漫画 #雑学 #生き物",
     "publishedAt": "2026-09-25T10:30:24Z",
     "date": "2026-09-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は生物で、「カツオノエボシ」について解説しました。\n\n浜辺に打ち上げられた後でも、触手に刺されることがあるので注意。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #生物"
+    "description": "漫画で雑学紹介。今回は生物で、「カツオノエボシ」について解説しました。\n\n浜辺に打ち上げられた後でも、触手に刺されることがあるので注意。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #生物",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "df3Ud-OAqIg",
     "title": "【漫画】ご飯を混ぜると #漫画 #雑学 #料理",
     "publishedAt": "2026-09-25T08:30:21Z",
     "date": "2026-09-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "食べ物の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は料理で、「炊けたご飯はなぜすぐほぐしたほうが美味しいのか」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #料理"
+    "description": "漫画で雑学紹介。今回は料理で、「炊けたご飯はなぜすぐほぐしたほうが美味しいのか」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #料理",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "c5CnuCnh72M",
     "title": "【漫画】膨らんだバッテリー  #漫画 #雑学 #科学",
     "publishedAt": "2026-09-25T02:35:20Z",
     "date": "2026-09-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は科学で、「モバイルバッテリーが膨らむ理由」について解説しました。\n\n膨張したバッテリーは、押したり使い続けたりせず安全に扱いましょう。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。今回は科学で、「モバイルバッテリーが膨らむ理由」について解説しました。\n\n膨張したバッテリーは、押したり使い続けたりせず安全に扱いましょう。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "dH9EfEEZYfc",
     "title": "【漫画】犬のしっぽ #漫画 #雑学 #動物",
     "publishedAt": "2026-09-24T22:00:31Z",
     "date": "2026-09-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は犬の行動で、「好きな相手を見たときの尻尾の振り方」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #動物"
+    "description": "漫画で雑学紹介。今回は犬の行動で、「好きな相手を見たときの尻尾の振り方」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #動物",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "qS294GWYyFM",
     "title": "【漫画】占いの結果は #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-24T15:00:36Z",
     "date": "2026-09-25",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は心理学で、「なぜ曖昧な性格診断でも当たっていると感じるのか？」フォアラー効果について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回は心理学で、「なぜ曖昧な性格診断でも当たっていると感じるのか？」フォアラー効果について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "NvlGdBZvNJ0",
     "title": "【漫画】水星のナゾ #漫画 #雑学 #宇宙",
     "publishedAt": "2026-09-24T11:00:35Z",
     "date": "2026-09-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は宇宙の不思議で、「太陽に一番近い水星にも氷が存在する」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙"
+    "description": "漫画で雑学紹介。今回は宇宙の不思議で、「太陽に一番近い水星にも氷が存在する」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "0d0qIfontFw",
     "title": "【漫画】普通こう #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-24T08:00:22Z",
     "date": "2026-09-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は心理学で、「偽の合意効果」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回は心理学で、「偽の合意効果」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "HszsC011Wrw",
     "title": "【漫画】目が赤い？ #漫画 #雑学 #科学",
     "publishedAt": "2026-09-24T03:00:32Z",
     "date": "2026-09-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は科学・人体の雑学で、「写真で目が赤く写る赤目現象」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。今回は科学・人体の雑学で、「写真で目が赤く写る赤目現象」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "xoOTwUZZkLo",
     "title": "【漫画】これ毒かも！？  #漫画 #雑学 #サバイバル",
     "publishedAt": "2026-09-24T00:31:43Z",
     "date": "2026-09-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "自然の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は毒ヘビに噛まれた時の対処で、「蛇毒を口で吸い出してはいけない理由」について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル"
+    "description": "漫画で雑学紹介。今回は毒ヘビに噛まれた時の対処で、「蛇毒を口で吸い出してはいけない理由」について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #サバイバル",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "8uP-kKhOXDU",
     "title": "【漫画】人間は光る #漫画 #雑学 #科学",
     "publishedAt": "2026-09-23T16:08:02Z",
     "date": "2026-09-24",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "科学の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は人間の体で、「人間は肉眼では見えないほど弱い光を出している」という科学の雑学を紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学"
+    "description": "漫画で雑学紹介。今回は人間の体で、「人間は肉眼では見えないほど弱い光を出している」という科学の雑学を紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Mf9fZxgfrQk",
     "title": "【漫画】ミイラの呪い #漫画 #雑学 #不思議",
     "publishedAt": "2026-09-23T12:20:50Z",
     "date": "2026-09-23",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "世界の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。\n今回はミイラの呪いで、「ファラオの呪いは本当にあったのか？」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #不思議"
+    "description": "漫画で雑学紹介。\n今回はミイラの呪いで、「ファラオの呪いは本当にあったのか？」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #不思議",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "BN3JX8VOjxg",
@@ -3308,12 +3503,13 @@ window.YOUTUBE_VIDEOS = [
     "title": "空腹の代償 #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-22T03:12:53Z",
     "date": "2026-09-22",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で心理学。\n\n空腹になると、人はどうなるのか？\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で心理学。\n\n空腹になると、人はどうなるのか？\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "9MVMJkhy1Gk",
@@ -3346,108 +3542,117 @@ window.YOUTUBE_VIDEOS = [
     "title": "【漫画】実は、好かれてるかも #雑学 #心理学 #恋愛 #漫画",
     "publishedAt": "2026-09-15T13:00:24Z",
     "date": "2026-09-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "漫画で雑学紹介。今回は心理学・恋愛心理学で、「好意ギャップ」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学"
+    "description": "漫画で雑学紹介。今回は心理学・恋愛心理学で、「好意ギャップ」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "IBpK41CDUxY",
     "title": "【漫画】お金を払うと本当に痛い？ #雑学 #お金 #心理学 #漫画",
     "publishedAt": "2026-09-15T03:22:54Z",
     "date": "2026-09-15",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "お金を払うと「痛い」と感じる？\n今回は、お金を使うときに脳で起こる反応や「支払いの痛み」について、漫画でわかりやすく紹介。\n\n買い物、心理学、お金の使い方、人間の脳に関する雑学が好きな方におすすめです。\n\nチャンネル登録お願いします！\n\n#漫画 #雑学 #お金"
+    "description": "お金を払うと「痛い」と感じる？\n今回は、お金を使うときに脳で起こる反応や「支払いの痛み」について、漫画でわかりやすく紹介。\n\n買い物、心理学、お金の使い方、人間の脳に関する雑学が好きな方におすすめです。\n\nチャンネル登録お願いします！\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "z69vZk2NGuI",
     "title": "【漫画】愛される人が会話でやること #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-14T11:03:23Z",
     "date": "2026-09-14",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "心理学・会話術の雑学を漫画で紹介。\n今回は「フォローアップ質問」。\n相手の答えに続けて質問する人ほど、好かれやすい傾向が研究で示されています。\n\nチャンネル登録お願いします！\n\n#漫画 #雑学 #心理学"
+    "description": "心理学・会話術の雑学を漫画で紹介。\n今回は「フォローアップ質問」。\n相手の答えに続けて質問する人ほど、好かれやすい傾向が研究で示されています。\n\nチャンネル登録お願いします！\n\n#漫画 #雑学 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "jEXDawqqvmc",
     "title": "【漫画】脈アリは笑いでわかる！？ #雑学 #恋愛",
     "publishedAt": "2026-09-13T13:23:18Z",
     "date": "2026-09-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "今日の雑学は、恋愛心理学。\nユーモアや笑いは恋愛にどう影響するのか、研究をもとにわかりやすく紹介。\n好きな人との距離を縮めたい人、モテる会話や恋愛テクニックを知りたい人におすすめ。\n\n#漫画 #恋愛心理学 #雑学"
+    "description": "今日の雑学は、恋愛心理学。\nユーモアや笑いは恋愛にどう影響するのか、研究をもとにわかりやすく紹介。\n好きな人との距離を縮めたい人、モテる会話や恋愛テクニックを知りたい人におすすめ。\n\n#漫画 #恋愛心理学 #雑学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "0bkiWuSIg38",
     "title": "【漫画】お金を貯める簡単な方法 #雑学 #お金",
     "publishedAt": "2026-09-13T08:17:06Z",
     "date": "2026-09-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "お金の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "お金を貯める方法「先取り貯蓄」を漫画で紹介。\n貯金、節約、家計管理、お金の管理に役立つシンプルな方法です。\n\n#漫画 #雑学 #お金"
+    "description": "お金を貯める方法「先取り貯蓄」を漫画で紹介。\n貯金、節約、家計管理、お金の管理に役立つシンプルな方法です。\n\n#漫画 #雑学 #お金",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "gLoSw4XutxY",
     "title": "【漫画】好きな人と仲良くなるには #雑学 #恋愛",
     "publishedAt": "2026-09-13T01:07:39Z",
     "date": "2026-09-13",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "好きな人と仲良くしたい？\n恋愛心理学を使ってみよう！\n\n#漫画 #雑学 #恋愛心理学"
+    "description": "好きな人と仲良くしたい？\n恋愛心理学を使ってみよう！\n\n#漫画 #雑学 #恋愛心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "j9mDL7_QVGI",
     "title": "【漫画】好きな人に好かれる方法 #雑学 #恋愛",
     "publishedAt": "2026-09-12T10:52:18Z",
     "date": "2026-09-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "好かれすぎにはご注意！\n\n#漫画  #雑学 #恋愛心理学"
+    "description": "好かれすぎにはご注意！\n\n#漫画  #雑学 #恋愛心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "YxpnzToXAM4",
     "title": "【漫画】人に好かれるには！？ #雑学 #恋愛",
     "publishedAt": "2026-09-12T01:03:10Z",
     "date": "2026-09-12",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "「好き」と言われると、相手のことが気になってしまう？\n\n人は、自分に好意を向けてくれた相手に、好意を返しやすい傾向があります。\n\nこれを心理学では「好意の返報性」といいます。\n\nただし、必ず好きになるわけではないので注意。\n\n漫画で楽しむ心理学・雑学\n『雑学サバイバル』\n\n#漫画 #雑学 #恋愛心理学"
+    "description": "「好き」と言われると、相手のことが気になってしまう？\n\n人は、自分に好意を向けてくれた相手に、好意を返しやすい傾向があります。\n\nこれを心理学では「好意の返報性」といいます。\n\nただし、必ず好きになるわけではないので注意。\n\n漫画で楽しむ心理学・雑学\n『雑学サバイバル』\n\n#漫画 #雑学 #恋愛心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "amKpNmLlaiY",
     "title": "【漫画】好感度が上がると！？ #漫画 #雑学 #心理学",
     "publishedAt": "2026-09-11T13:04:55Z",
     "date": "2026-09-11",
-    "format": "未確認",
+    "format": "Shorts",
     "genres": [
       "人間の雑学【Shorts】"
     ],
     "characters": [],
-    "description": "見知らぬ少女が声をかけてきた。\n頭の上にはなぜか数字が見えるが……？\n\n漫画・アニメ形式のオリジナルストーリーで、心理や雑学を楽しく描く\n『雑学サバイバル』\n\nチャンネル登録よろしくお願いします🌟\n\n#漫画 #雑談 #心理学"
+    "description": "見知らぬ少女が声をかけてきた。\n頭の上にはなぜか数字が見えるが……？\n\n漫画・アニメ形式のオリジナルストーリーで、心理や雑学を楽しく描く\n『雑学サバイバル』\n\nチャンネル登録よろしくお願いします🌟\n\n#漫画 #雑談 #心理学",
+    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "dkggPNNsogg",

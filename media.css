@@ -382,3 +382,9 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
 .video-filters button,.video-more { font:inherit; font-size:14px; min-height:44px; padding:10px 16px; border:1px solid #777; border-radius:6px; background:#fffdf8; color:#1c1c21; cursor:pointer; }
 .video-filters button[aria-pressed="true"] { background:#b71a32; color:#fff; border-color:#b71a32; }
 .video-more { display:block; margin:24px auto 0; }
+
+.home-page .media-home > .media-categories { margin-block: 12px 20px; padding-top: 12px; }
+
+.video-kinds { display:flex; gap:8px; margin-bottom:16px; }
+.video-kinds button { font:inherit; font-weight:bold; padding:10px 22px; min-height:44px; background:#fffdf8; color:#1c1c21; border:1px solid #777; border-radius:6px; cursor:pointer; }
+.video-kinds button[aria-pressed="true"] { background:#1c1c21; color:#fff; }

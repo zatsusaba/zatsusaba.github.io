@@ -96,8 +96,7 @@ def build():
     videos=json.loads(catalog.read_text(encoding="utf-8").split("=",1)[1].strip().rstrip(";")) if catalog.exists() else []
     known_videos={v["id"]:v["title"] for v in videos}
     urls.extend("/video.html?id="+vid for vid in known_videos if re.fullmatch(r"[A-Za-z0-9_-]{11}",vid))
-    # Keep date archives available without adding the daily feed to HOME.
-    daily.render(videos,items,ROOT,page,write,urls)
+    today_home=daily.render(videos,items,ROOT,page,write,urls)
     comics=media.load_comics(ROOT,datetime.now(JST).date())
     article_ids={p.stem for p in (ROOT/"articles").glob("*.md")}
     for a in items:
@@ -148,7 +147,7 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            section=media.home_sections(items,comics,card,categories)
+            section=media.home_sections(items,comics,card,categories,today_home)
             html=re.sub(r'<section class="home-comic-strip".*?</section>',"",html,flags=re.S)
             html=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',
                         lambda _: '<!--media:start-->'+section+'<!--media:end-->',html,count=1,flags=re.S)

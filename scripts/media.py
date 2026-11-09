@@ -206,7 +206,7 @@ def render_comics(comics, articles, page, write, urls, known_videos):
     return reverse
 
 
-def home_sections(items, comics, card, categories):
+def home_sections(items, comics, card, categories, today_home):
     latest = items[0] if items else None
     previous = items[1:4]
     html = '<section class="blog-home media-home"><div class="blog-home-head"><div><h2 id="blog-title">雑学Blog</h2></div><a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
@@ -218,4 +218,4 @@ def home_sections(items, comics, card, categories):
     shelf = ('<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
              '<h2>Comic</h2><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'
              '<div class="blog-grid">'+''.join(comic_card(c) for c in comics[:6])+'</div></section>')
-    return (shelf if comics else "") + html
+    return (shelf if comics else "") + html + today_home

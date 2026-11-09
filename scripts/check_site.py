@@ -3,7 +3,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from xml.etree import ElementTree as ET
-from build_blog import ROOT, OUT, BASE, load, build
+from build_blog import ROOT, OUT, BASE, load, build, article_cover
 from site_info import FOOTER
 import json, re
 from html import escape
@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 
 class Document(HTMLParser):
     def __init__(self,text):
-        super().__init__(); self.links=[]; self.canon=[]; self.h1=0
+        super().__init__(); self.links=[]; self.canon=[]; self.h1=0; self.images=[]
         self.feed(text)
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
@@ -20,11 +20,14 @@ class Document(HTMLParser):
             if u: self.links.append(u)
         if tag=="link" and a.get("rel")=="canonical": self.canon.append(a["href"])
         if tag=="h1": self.h1+=1
+        if tag=="img": self.images.append((a.get("src"),a.get("alt")))
 
 def main():
     build()
+    rendered_images=set()
     for p in OUT.rglob("*.html"):
         text=p.read_text(encoding="utf-8"); doc=Document(text)
+        rendered_images.update(doc.images)
         assert len(doc.canon)==(0 if p==OUT/"video.html" else 1), f"canonical: {p}"
         assert FOOTER in text, f"Missing operator/privacy links: {p}"
         head=text.split("</head>",1)[0].lower()
@@ -86,7 +89,12 @@ def main():
         schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html).group(1))
         assert f'<title>{escape(a["title"])} | 雑学サバイバル</title>' in html
         assert f'<meta name="description" content="{escape(a["description"])}">' in html
-        assert f'alt="{escape(a["image_alt"])}"' in html
+        assert (a["image"],a["image_alt"]) in rendered_images
+        cover=article_cover(a)
+        assert cover in html if cover else 'class="blog-cover"' not in html
+        share_image=a["image"] if a["image"].startswith("https://") else BASE+a["image"]
+        assert f'<meta property="og:image" content="{escape(share_image)}">' in html
+        assert schema["image"]==share_image
         assert schema["@type"]=="BlogPosting" and schema["headline"]==a["title"]
         assert schema["datePublished"]==a["date"] and schema["dateModified"]==a["updated"]
         assert schema["mainEntityOfPage"]==BASE+url and a["image_alt"].strip()

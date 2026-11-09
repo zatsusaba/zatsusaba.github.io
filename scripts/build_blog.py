@@ -44,6 +44,7 @@ def load():
             a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
             a["image_alt"]=a["category"]+"の雑学"
         check(isinstance(a.get("image_alt"),str) and a["image_alt"].strip(),f"{p}: missing image_alt")
+        check(type(a.get("show_cover",True)) is bool,f"{p}: show_cover must be boolean")
         check(a["image"].startswith(("/assets/","https://i.ytimg.com/")),f"{p}: invalid image")
         if a["image"].startswith("/"): check(".." not in a["image"].split("/") and "\\" not in a["image"] and (ROOT/a["image"].lstrip("/")).is_file(),f"{p}: missing image")
         check(not re.search(r"<\s*/?\s*[a-zA-Z!]|^# ",body,re.M),f"{p}: raw HTML/h1 unsupported")
@@ -75,6 +76,7 @@ class ImageSources(HTMLParser):
             src=dict(attrs).get("src")
             if src: self.sources.add(src)
 def article_cover(a):
+    if not a.get("show_cover",True): return ""
     # Keep the card/share image, but do not repeat an image already in the prose.
     images=ImageSources()
     images.feed(a["html"])

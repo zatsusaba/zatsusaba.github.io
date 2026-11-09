@@ -11,8 +11,8 @@ tags:
 youtube: srVY3dUR8K0
 youtube_title: 焼き芋の謎
 youtube_format: short
-image: /assets/articles/sweet-potato-sweetness/roasted-sweet-potato-illustration.png
-image_alt: 皿の上の焼き芋を割った参考イラスト。紫紅色の皮の内側に黄色い身が見え、湯気が立っている。
+image: /assets/covers/sweet-potato-cover.png
+image_alt: 食べ物・焼き芋の甘さの秘密。炭火で温まるさつまいもを描いた専用サムネイル（AI生成のイメージ）。
 sources:
 - title: 日本いも類研究会 焼きいもが甘いのはなぜですか
   url: https://www.jrt.gr.jp/q_a/spqa_yakiimo/
@@ -32,6 +32,7 @@ sources:
 - title: 津久井学ほか（2022）キュアリング，定温貯蔵および焼成が焼きいも用サツマイモの甘味成分に及ぼす影響
   url: https://www.jstage.jst.go.jp/article/jafps/48/5/48_221/_article/-char/ja
   checked: '2026-11-09'
+show_cover: false
 ---
 
 **焼き芋が砂糖なしでも甘い大きな理由は、加熱中に、いもの中のでんぷんから「麦芽糖」という甘い糖が作られることです。この変化を助けるのが、さつまいも自身に含まれる酵素「β-アミラーゼ」です。**

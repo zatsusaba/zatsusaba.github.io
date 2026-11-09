@@ -108,7 +108,7 @@ def main():
     ids = list(ids)
     for start in range(0, len(ids), 50):
         result = call(
-            "videos", part="snippet,status",
+            "videos", part="snippet,status,contentDetails",
             id=",".join(ids[start:start + 50]), maxResults=50
         )
         for v in result.get("items", []):

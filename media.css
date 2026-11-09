@@ -372,3 +372,7 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
 .comic-archive > h1 { margin-bottom: 14px; }
 .comic-archive > .blog-tools { margin-block: 14px 20px; }
 .comic-archive:not(.comic-home) { padding-bottom: 24px; }
+
+/* Generated pages retain only the useful policy and contact footer. */
+.blog-page footer { padding-block: 16px; }
+.blog-page footer .site-info-links { border-top: 0; padding-top: 0; }

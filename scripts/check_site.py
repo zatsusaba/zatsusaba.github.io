@@ -37,7 +37,12 @@ def main():
             if target.is_dir(): target=target/"index.html"
             assert target.is_file(), f"Broken link: {p}: {u}"
     home=(OUT/"index.html").read_text(encoding="utf-8")
-    assert home.index('id="blog-title"') < home.index('class="blog-home daily-home"')
+    assert 'id="blog-title"' in home
+    assert 'class="blog-home daily-home"' not in home
+    assert '種別未確認' not in home
+    assert 'data-daily-date' not in home and '/daily-date.js' not in home
+    # Removing the HOME feed must not remove the date archive or its navigation.
+    assert 'href="/today/"' in home and (OUT/"today/index.html").is_file()
     if 'class="blog-home comic-home comic-archive"' in home:
         assert home.index('class="blog-home comic-home comic-archive"') < home.index('id="blog-title"')
     # Removing only our insertions must recover the original page body exactly.

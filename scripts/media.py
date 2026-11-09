@@ -213,7 +213,7 @@ def home_sections(items, comics, card, categories, today_home):
     if latest:
         html += '<h3>新着記事</h3><div class="media-feature">'+card(latest)+'</div>'
     if previous:
-        html += '<h3>以前の記事</h3><div class="blog-grid">'+''.join(map(card,previous))+'</div>'
+        html += '<h3>記事一覧</h3><div class="blog-grid">'+''.join(map(card,previous))+'</div>'
     html += '<div class="media-categories"><h3>カテゴリーから探す</h3>'+categories()+'</div></section>'
     shelf = ('<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
              '<h2>Comic</h2><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'

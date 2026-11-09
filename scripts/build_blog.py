@@ -67,7 +67,7 @@ def card(a):
 def categories():
     return '<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/blog/">すべて</a>'+''.join(f'<a href="/blog/category/{slug}/">{name}</a>' for name,slug in CATS.items())+'</nav>'
 def listing(items,title,url,total,pager,category):
-    body=f'<section class="blog-shell"><h1>{title}</h1><p>食べ物や動物、身近な「なんで？」をAIが調べて、画像付きでお届けします。</p>{categories()}<div class="blog-tools"><label for="blog-search">記事をキーワードで探す</label><input id="blog-search" type="search" placeholder="例：パイナップル、植物" data-category="{e(category)}"><label><input type="checkbox" id="body-search"> 本文も検索</label><p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div><div id="archive-list"><div class="blog-grid">'+''.join(map(card,items))+'</div>'+pager+'</div><div id="matches" class="search-results"></div><p id="blog-empty"'+(' hidden' if items else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p></section><script src="/blog-search.js" defer></script>'
+    body=f'<section class="blog-shell"><h1>{title}</h1><p>世界の雑学を、あなたにお届け。</p>{categories()}<div class="blog-tools"><label for="blog-search">記事をキーワードで探す</label><input id="blog-search" type="search" placeholder="例：パイナップル、植物" data-category="{e(category)}"><label><input type="checkbox" id="body-search"> 本文も検索</label><p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div><div id="archive-list"><div class="blog-grid">'+''.join(map(card,items))+'</div>'+pager+'</div><div id="matches" class="search-results"></div><p id="blog-empty"'+(' hidden' if items else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p></section><script src="/blog-search.js" defer></script>'
     return page(title,"身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。",url,body)
 def build():
     items=load()

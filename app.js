@@ -55,6 +55,7 @@ if(page==='videos'){
  const synced=new Map((window.YOUTUBE_VIDEOS||[]).map(v=>[v.id,v]));
  const videoKind=v=>{
   const source=synced.get(v.id)||{};
+  if(source.durationSeconds>180)return 'video';
   if((source.genres||[]).some(g=>/【Shorts】/i.test(g)||g==='ショート漫画【1話完結】'))return 'short';
   if(!source.formatEvidence)return '';
   if(['ショート漫画','通常Shorts','Shorts','Short MV','切り抜き'].includes(source.format))return 'short';

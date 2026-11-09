@@ -32,6 +32,13 @@ def publication_time(value):
             instant.astimezone(JST).date().isoformat())
 
 
+def duration_seconds(value):
+    match = re.fullmatch(r"P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?", value or "")
+    if not match:
+        return None
+    return sum(float(n or 0)*factor for n,factor in zip(match.groups(), [86400,3600,60,1]))
+
+
 def public_video(item, genres, formats):
     if item.get("status", {}).get("privacyStatus") != "public":
         return None
@@ -47,12 +54,20 @@ def public_video(item, genres, formats):
         published, day = publication_time(snippet["publishedAt"])
     except (KeyError, TypeError, ValueError) as error:
         raise ValueError(f"Invalid publishedAt for {vid}") from error
+    duration = duration_seconds(item.get("contentDetails", {}).get("duration"))
     classification = formats.get(vid)
+    # Shorts are at most three minutes; short duration alone does not prove Shorts.
+    if classification is None and duration is not None and duration > 180:
+        classification = {"format": "長尺動画", "evidence": "YouTube公開再生時間：180秒超"}
+    if classification is None and any(re.search(r"【Shorts】", g, re.I) for g in genres):
+        classification = {"format": "Shorts", "evidence": "公式Shorts再生リスト"}
     if classification is None and "ショート漫画【1話完結】" in genres:
         classification = {"format": "ショート漫画", "evidence": "公式プレイリスト：ショート漫画【1話完結】"}
     record = dict(id=vid, title=snippet["title"], publishedAt=published, date=day,
                   format=classification["format"] if classification else "未確認",
                   genres=genres, characters=[], description=snippet.get("description", "")[:500])
+    if duration is not None:
+        record["durationSeconds"] = duration
     if classification:
         record["formatEvidence"] = classification["evidence"]
     return record

@@ -11,6 +11,17 @@ import sync_youtube as sync
 
 
 class YouTubeSyncTest(unittest.TestCase):
+    def test_duration_classification(self):
+        item={"id":"a1234567890","status":{"privacyStatus":"public"},
+              "snippet":{"title":"test","channelId":sync.CHANNEL,"publishedAt":"2026-01-01T00:00:00Z"}}
+        for duration, expected in [("PT3M1S","長尺動画"),("PT20M","長尺動画"),("PT3M","未確認"),("PT59S","未確認")]:
+            item["contentDetails"]={"duration":duration}
+            result=sync.public_video(item,[],{})
+            self.assertEqual(result["format"],expected)
+        self.assertEqual(sync.public_video(item,["科学の雑学【Shorts】"],{})["format"],"Shorts")
+        self.assertEqual(sync.duration_seconds("P1DT1H1M1S"),90061)
+        self.assertIsNone(sync.duration_seconds("invalid"))
+
     def test_display_title(self):
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         from daily import display_title

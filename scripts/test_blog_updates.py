@@ -8,8 +8,25 @@ job.mkdir(parents=True,exist_ok=True)
 root=Path(tempfile.mkdtemp(prefix="fixture-",dir=job))
 for name in ("articles","assets","panels-v2"): (root/name).mkdir()
 (root/"index.html").write_text((original_root/"index.html").read_text(encoding="utf-8"),encoding="utf-8")
-sample=(original_root/"articles/pineapple.md").read_text(encoding="utf-8")
-sample=sample.replace("checked: 2026-11-06","checked: 2020-01-01")
+# Keep fixtures independent of revisions to a real published article.
+sample="""---
+title: パイナップルの検証記事
+description: 隔離環境で記事の追加と更新を確認します。
+date: 2026-11-06
+updated: 2026-11-06
+status: published
+category: 食べ物
+image: https://i.ytimg.com/vi/q5FluB5f-b8/hqdefault.jpg
+image_alt: 検証用画像
+sources:
+  - checked: 2020-01-01
+    title: 検証用資料
+    url: https://example.org/source
+---
+## パイナップルの正体
+
+検証用の本文です。
+"""
 (root/"youtube-videos.js").write_bytes((original_root/"youtube-videos.js").read_bytes())
 b.ROOT=root
 b.OUT=root/"_site"

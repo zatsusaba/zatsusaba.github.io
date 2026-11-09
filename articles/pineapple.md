@@ -5,6 +5,8 @@ date: 2026-11-06
 updated: 2026-11-09
 status: published
 category: 食べ物
+image: /assets/covers/pineapple.png
+image_alt: 食べ物・パイナップル。右側に題材の参考イラスト。
 tags: [パイナップル, 植物, 果物]
 topic: パイナップルは木ではなく多年草
 conditions: 栽培期間は林野庁の資料に示された目安であり、品種や栽培条件を問わず同じ期間になるわけではありません。掲載画像はAI生成の参考イラストです。

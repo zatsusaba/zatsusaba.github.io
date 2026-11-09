@@ -52,7 +52,8 @@ assert 'href="/comics/second/"' in read("comics/first/index.html")
 assert 'href="/comics/second/"' in read("index.html")
 assert 'href="/blog/entry-0000/"' in read("comics/first/index.html")
 assert 'href="/comics/first/"' in read("blog/entry-0000/index.html")
-assert '/video.html?id=q5FluB5f-b8' in read("blog/entry-0000/index.html")
+assert 'https://www.youtube.com/watch?v=q5FluB5f-b8' in read("blog/entry-0000/index.html")
+assert '<h2>漫画はこちら</h2>' in read("blog/entry-0000/index.html")
 assert len(json.loads(read("video-links.json"))["q5FluB5f-b8"])==3
 print(f"3001 articles built in {time.perf_counter()-started:.2f}s; archive HTML {len(read('blog/index.html').encode())} bytes; metadata index {len(read('search/index.json').encode())} bytes")
 # Delete only the synthetic sources that this test created.

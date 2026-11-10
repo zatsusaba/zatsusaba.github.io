@@ -407,3 +407,22 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
  .daily-home .daily-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
  .daily-home .daily-card h3 { font-size:15px; line-height:1.5; }
 }
+
+/* Mobile video directory: compact rows and one-line topic controls. */
+@media(max-width:700px) {
+ body[data-page="videos"] main > .section { padding:24px 5.5% 32px; }
+ body[data-page="videos"] .section-head { margin-bottom:18px; padding-bottom:14px; }
+ body[data-page="videos"] .page-title { font-size:36px; margin-block:8px; }
+ body[data-page="videos"] .video-kinds { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; margin-bottom:12px; }
+ body[data-page="videos"] .video-kinds button { padding:10px 8px; }
+ body[data-page="videos"] .video-filters { flex-wrap:nowrap; overflow-x:auto; gap:6px; padding-bottom:8px; margin-bottom:8px; }
+ body[data-page="videos"] .video-filters button { flex-shrink:0; }
+ body[data-page="videos"] .video-count { margin:10px 0 16px; font-size:13px; }
+ body[data-page="videos"] .cards.video-grid { grid-template-columns:minmax(0,1fr); gap:0; }
+ body[data-page="videos"] .video-card { display:grid; grid-template-columns:42% minmax(0,1fr); align-items:start; gap:12px; max-width:none; padding:14px 0; background:transparent; border:0; border-bottom:1px solid #d0ccc4; }
+ body[data-page="videos"] .video-card .video-thumb { margin:0; border-radius:4px; }
+ body[data-page="videos"] .video-card h2 { font-size:15px; line-height:1.5; margin:0; }
+ body[data-page="videos"] .video-card h2 a { min-height:44px; }
+ body[data-page="videos"] .video-card > a:last-child { display:none; }
+ body[data-page="videos"] .video-more { width:100%; }
+}

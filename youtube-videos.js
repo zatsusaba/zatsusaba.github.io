@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "CWtNTPVzA_o",
+    "title": "空腹イライラどうする？ #雑学 #面白い #空腹",
+    "publishedAt": "2026-11-10T11:04:00Z",
+    "date": "2026-11-10",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "空腹のときはイライラしますよね。\n\n🔻本編こちら\nhttps://youtu.be/YEuM8FWlvi8\n\n#雑学 #面白い #空腹",
+    "durationSeconds": 18.0
+  },
+  {
     "id": "YEuM8FWlvi8",
     "title": "面白い雑学「人は何日食べないと死ぬ？」382日間の断食記録と体の限界",
     "publishedAt": "2026-11-10T10:10:52Z",

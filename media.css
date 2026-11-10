@@ -388,3 +388,22 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
 .video-kinds { display:flex; gap:8px; margin-bottom:16px; }
 .video-kinds button { font:inherit; font-weight:bold; padding:10px 22px; min-height:44px; background:#fffdf8; color:#1c1c21; border:1px solid #777; border-radius:6px; cursor:pointer; }
 .video-kinds button[aria-pressed="true"] { background:#1c1c21; color:#fff; }
+
+/* Compact mobile browsing: shelf for comics, thumbnail rows for articles. */
+@media (max-width:700px) {
+ .home-page .comic-home > .blog-grid { display:flex; overflow-x:auto; gap:14px; scroll-snap-type:x proximity; padding-bottom:10px; }
+ .home-page .comic-home > .blog-grid > .blog-card { flex:0 0 64%; scroll-snap-align:start; }
+ .home-page .comic-home .blog-card h3 { font-size:17px; margin-block:8px; }
+ .home-page .comic-home .blog-card p { margin-block:6px; }
+ .media-home .blog-card > a, .blog-shell:not(.comic-archive) #archive-list .blog-card > a { display:grid; grid-template-columns:104px minmax(0,1fr); gap:12px; align-items:start; }
+ .media-home .blog-card img, .blog-shell:not(.comic-archive) #archive-list .blog-card img { width:104px; height:auto; aspect-ratio:4/3; object-fit:contain; }
+ .media-home .blog-card .blog-card-copy, .blog-shell:not(.comic-archive) #archive-list .blog-card-copy { padding:0 0 12px; }
+ .media-home .blog-card h3, .blog-shell:not(.comic-archive) #archive-list .blog-card h3 { font-size:16px; line-height:1.5; margin:6px 0; }
+ .media-home .blog-card p, .blog-shell:not(.comic-archive) #archive-list .blog-card p { display:none; }
+ .media-home .blog-categories { flex-wrap:nowrap; overflow-x:auto; padding-bottom:8px; }
+ .media-home .blog-categories a { flex-shrink:0; }
+ .comic-archive:not(.comic-home) > .blog-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+ .comic-archive:not(.comic-home) .blog-card h3 { font-size:16px; }
+ .daily-home .daily-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+ .daily-home .daily-card h3 { font-size:15px; line-height:1.5; }
+}

@@ -1,4 +1,5 @@
 """Build static blog in an isolated Pages artifact."""
+import subprocess
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 from html import escape as e
@@ -53,7 +54,28 @@ def load():
         check(body.strip(),f"{p}: empty article")
         a.update(slug=p.stem,url=f"/blog/{p.stem}/",body=body,html=markdown.markdown(body,extensions=["extra","sane_lists"]))
         result.append(a)
-    return sorted(result,key=lambda a:(a["date"],a["slug"]),reverse=True)
+    # Date remains primary; same-day articles follow their first repository addition.
+    added = {}
+    try:
+        history = subprocess.run(["git", "log", "--reverse", "--format=COMMIT:%cI", "--name-only", "--diff-filter=A", "--", "articles"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", check=True).stdout
+        stamp = ""
+        for line in history.splitlines():
+            if line.startswith("COMMIT:"): stamp = line[7:]
+            elif line.startswith("articles/") and line.endswith(".md"):
+                added.setdefault(Path(line).stem, stamp)
+    except (OSError, subprocess.CalledProcessError):
+        pass
+    for a in result:
+        stamp = a.get("published_at")
+        if stamp:
+            instant = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+            check(instant.tzinfo is not None, f"{a['slug']}: published_at needs timezone")
+            check(instant.astimezone(JST).date().isoformat() == a["date"], f"{a['slug']}: published_at disagrees with date")
+            check(instant <= datetime.now(JST), f"{a['slug']}: future published_at")
+            a["_order"] = instant.timestamp()
+        else:
+            a["_order"] = datetime.fromisoformat(added[a["slug"]]).timestamp() if a["slug"] in added else 0
+    return sorted(result,key=lambda a:(a["date"],a["_order"],a["slug"]),reverse=True)
 def nav(url):
     return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/#today","今日の雑学"),("/videos.html","VIDEOS")])
 def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):

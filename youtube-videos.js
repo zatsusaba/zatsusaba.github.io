@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "peqgDIX93PI",
+    "title": "起き続けたら人はどうなる？ #雑学 #面白い #睡眠",
+    "publishedAt": "2026-11-09T22:00:34Z",
+    "date": "2026-11-10",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "面白い雑学、睡眠偏。\n\n寝ないと人はどうなってしまうのか？\n\n🔻本編こちら\nショートスリーパーなどの謎を知ろう！\nhttps://youtu.be/dBDjZtddx1c\n\n#雑学 #面白い #睡眠",
+    "durationSeconds": 44.0
+  },
+  {
     "id": "dBDjZtddx1c",
     "title": "人は何日寝ないと死ぬ？マイクロスリープの謎とギネスが認めない睡眠の記録【面白い雑学】",
     "publishedAt": "2026-11-09T13:59:47Z",

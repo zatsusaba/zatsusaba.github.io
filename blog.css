@@ -3,3 +3,6 @@
 @media(max-width:700px){.blog-home,.blog-shell{padding:48px 6%}.blog-home-head{display:block}.blog-home-head .blog-cta{margin:8px 0}.blog-grid,.blog-article .blog-grid{grid-template-columns:1fr}.blog-article{padding:24px 6% 60px}.blog-prose{font-size:16px}.blog-card-copy{padding:20px}.blog-categories{padding-top:0;white-space:normal}.mobile-nav{gap:0}.mobile-nav>a{flex:1;min-width:0;font-size:9px;letter-spacing:0}}
 
 .blog-video-short{display:block;width:min(100%,360px);aspect-ratio:9/16;height:auto;margin:0 auto}
+
+/* Preserve full reference artwork when a dedicated thumbnail requests it. */
+.blog-card img.thumbnail-contain{object-fit:contain;background:#f5f3ed}

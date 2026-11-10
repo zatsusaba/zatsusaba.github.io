@@ -45,6 +45,7 @@ def load():
             a["image_alt"]=a["category"]+"の雑学"
         check(isinstance(a.get("image_alt"),str) and a["image_alt"].strip(),f"{p}: missing image_alt")
         check(type(a.get("show_cover",True)) is bool,f"{p}: show_cover must be boolean")
+        check(a.get("thumbnail_fit","cover") in {"cover","contain"},f"{p}: thumbnail_fit must be cover or contain")
         check(a["image"].startswith(("/assets/","https://i.ytimg.com/")),f"{p}: invalid image")
         if a["image"].startswith("/"): check(".." not in a["image"].split("/") and "\\" not in a["image"] and (ROOT/a["image"].lstrip("/")).is_file(),f"{p}: missing image")
         check(not re.search(r"<\s*/?\s*[a-zA-Z!]|^# ",body,re.M),f"{p}: raw HTML/h1 unsupported")
@@ -66,7 +67,8 @@ def write(url,text):
     if url.endswith("/"): p=p/"index.html"
     p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text,encoding="utf-8")
 def card(a):
-    return f'<article class="blog-card"><a href="{a["url"]}"><img src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy"><div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{a["date"]}">{a["date"]}</time></div></a></article>'
+    fit_class=' class="thumbnail-contain"' if a.get("thumbnail_fit")=="contain" else ""
+    return f'<article class="blog-card"><a href="{a["url"]}"><img{fit_class} src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy"><div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{a["date"]}">{a["date"]}</time></div></a></article>'
 class ImageSources(HTMLParser):
     def __init__(self):
         super().__init__()

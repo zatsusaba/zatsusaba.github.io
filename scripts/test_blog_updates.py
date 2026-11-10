@@ -168,3 +168,9 @@ for instant, expected_today in (
                 raise AssertionError((instant, published, updated))
 print("PASS: JST midnight/09:00/year boundaries, same-day publications/updates, invalid dates")
 b.ROOT,b.OUT=original_root,original_out
+
+# Dedicated thumbnails may preserve the complete artwork rather than crop it.
+card_fixture=dict(cover,title="Test",category="食べ物",description="Test",date="2026-11-10")
+assert 'class="thumbnail-contain"' in b.card(dict(card_fixture,thumbnail_fit="contain"))
+assert 'class="thumbnail-contain"' not in b.card(card_fixture)
+print("PASS: thumbnail contain mode is opt-in and leaves default cards unchanged")

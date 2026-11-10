@@ -36,6 +36,13 @@ b.OUT=root/"_site"
 (root/"articles/pineapple.md").write_text(sample,encoding="utf-8")
 second=root/"articles/second.md"
 second.write_text(sample.replace("title: パイナップル","title: 追加検証パイナップル",1),encoding="utf-8")
+from unittest.mock import patch
+from types import SimpleNamespace
+with patch.object(b.subprocess, "run", return_value=SimpleNamespace(stdout="COMMIT:2026-11-06T08:00:00+09:00\narticles/second.md\nCOMMIT:2026-11-06T09:00:00+09:00\narticles/pineapple.md\n")):
+    assert b.load()[0]["slug"] == "pineapple"
+second.write_text(sample.replace("date: 2026-11-06", 'published_at: "2026-11-06T10:00:00+09:00"\ndate: 2026-11-06', 1),encoding="utf-8")
+assert b.load()[0]["slug"] == "second"
+second.write_text(sample,encoding="utf-8")
 b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
 assert 'class="blog-cover"' in article_html  # Articles without a duplicate keep their cover.

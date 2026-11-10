@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "YEuM8FWlvi8",
+    "title": "面白い雑学「人は何日食べないと死ぬ？」382日間の断食記録と体の限界",
+    "publishedAt": "2026-11-10T10:10:52Z",
+    "date": "2026-11-10",
+    "format": "長尺動画",
+    "genres": [
+      "人間の限界"
+    ],
+    "characters": [],
+    "description": "面白い雑学、人間の限界編。\n\n人は、何日食べなければ死んでしまうのか？\n\n最初の1日で何が起こる？\n脳は食べ物がなくても働き続けられる？\n空腹になるとイライラするのはなぜ？\n\n今回は、食べないことで人間の体に起こる変化を、吸血鬼のキュウちゃんが解説！\n\nさらに、医師の管理下で382日間断食した男性の記録、73歳で21日間の断食を行ったガンディー、地下に閉じ込められたチリの鉱山作業員たちの実話も紹介。\n\n人間はどこまで生き延びられるのか？\nそして、長い断食のあとに食事を再開すると、なぜ危険なのか？\n\n人体の不思議と限界を、一緒に見ていきましょう！\n\n【参考資料】\n■ Stewart & Fleming (1973)\n382日間の医療管理下での断食記録\nhttps://pubmed.ncbi.nlm.nih.gov/4803438/\n\n■ Swami et al. (2022) PLOS ONE\n空腹と怒り・イライラに関する研究\nhttps://doi.org/10.1371/journal.pone.0269629\n\n■ Rajghat Samadhi Committee\nガンディーの生",
+    "durationSeconds": 745.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
     "id": "peqgDIX93PI",
     "title": "起き続けたら人はどうなる？ #雑学 #面白い #睡眠",
     "publishedAt": "2026-11-09T22:00:34Z",

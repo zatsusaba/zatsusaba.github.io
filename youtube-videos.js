@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "WbKaKYhB4N0",
+    "title": "1円札でビックリ #雑学 #面白い #一円札",
+    "publishedAt": "2026-11-10T12:00:32Z",
+    "date": "2026-11-10",
+    "format": "Shorts",
+    "genres": [
+      "お金の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "二宮尊徳が描かれた「A壱円券」は、現在も有効な日本銀行券。額面は1枚1円です。\n\n※収集品としての取引価格は額面と別です。すべての古いお金が有効とは限らず、店頭や機械でそのまま使えるとも限りません。\n\n出典：\n財務省「昔のお金は使えますか」\nhttps://www.mof.go.jp/faq/currency/07ad.htm\n日本銀行「これまでに発行されたお札のうち、現在使えるお札はどれですか？」\nhttps://www.boj.or.jp/about/education/oshiete/money/c07.htm\n日本銀行「一円券」\nhttps://www.boj.or.jp/note_tfjgs/note/valid/past_issue/pbn_1.htm\n\n#雑学 #面白い #一円札",
+    "durationSeconds": 12.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "CWtNTPVzA_o",
     "title": "空腹イライラどうする？ #雑学 #面白い #空腹",
     "publishedAt": "2026-11-10T11:04:00Z",

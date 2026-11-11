@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "hxB6TBfFmuw",
+    "title": "交代する島 #雑学 #面白い #フェザント島",
+    "publishedAt": "2026-11-11T08:00:03Z",
+    "date": "2026-11-11",
+    "format": "Shorts",
+    "genres": [
+      "世界の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "フランスとスペインの国境を流れるビダソア川にある「フェザント島」。両国が共同領有し、管理担当を半年ごとに交代しています。\n\n※島そのものが移動したり、共同領有が半年ごとに解消されたりするわけではありません。\n\n出典：\nフランス欧州・外務省「Île des Faisans, sur la Bidassoa」\nhttps://www.diplomatie.gouv.fr/files/files/le-ministere/lieux-emblematiques/13_notice_hendaye-faisans_complete_v2.pdf\n\n#雑学 #面白い #フェザント島",
+    "durationSeconds": 12.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "N_HLaTnbukU",
     "title": "セロテープは実は #雑学 #面白い #セロテープ",
     "publishedAt": "2026-11-11T06:00:12Z",

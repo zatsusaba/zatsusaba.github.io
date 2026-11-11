@@ -33,6 +33,7 @@ for i in range(3001):
             "sources":[{"checked":"2020-01-01","title":"資料","url":"https://example.org/"}]}
     if i==0:
         data["youtube"]="q5FluB5f-b8"
+        data["youtube_related"]=["N1sP2f7MNQE","Pqp4cFV-k_g"]
     content="---\n"+yaml.safe_dump(data,allow_unicode=True)+"---\n## 本文\n\n"+("観察記録。" * 120)+f"本文専用{i:04}"
     (root/"articles"/f"entry-{i:04}.md").write_text(content,encoding="utf-8")
 
@@ -55,6 +56,11 @@ assert 'href="/comics/first/"' in read("blog/entry-0000/index.html")
 assert 'https://www.youtube.com/watch?v=q5FluB5f-b8' in read("blog/entry-0000/index.html")
 assert '<h2>動画はこちら</h2>' in read("blog/entry-0000/index.html")
 assert len(json.loads(read("video-links.json"))["q5FluB5f-b8"])==3
+for vid in ("N1sP2f7MNQE","Pqp4cFV-k_g"):
+    assert json.loads(read("video-links.json"))[vid]==[["/blog/entry-0000/","検索試験 0000"]]
+assert all(len(row)==6 for row in index)  # Existing search schema and shards stay unchanged.
+assert len(json.loads(read("search/body-0.json")))==32
+assert len(json.loads(read("search/body-93.json")))==25
 print(f"3001 articles built in {time.perf_counter()-started:.2f}s; archive HTML {len(read('blog/index.html').encode())} bytes; metadata index {len(read('search/index.json').encode())} bytes")
 # Delete only the synthetic sources that this test created.
 (root/"articles/entry-0000.md").unlink()
@@ -66,5 +72,7 @@ assert not (out/"blog/entry-0000/index.html").exists()
 assert not (out/"comics/second/index.html").exists()
 assert "/blog/entry-0000/" not in read("comics/first/index.html")+read("sitemap.xml")+read("search/index.json")
 assert "/comics/second/" not in read("index.html")+read("video-links.json")
+assert "N1sP2f7MNQE" not in json.loads(read("video-links.json"))
+assert "Pqp4cFV-k_g" not in json.loads(read("video-links.json"))
 print("PASS: pagination, taxonomy, additions/deletions and explicit reciprocal links")
 print("Isolated 3000-article preview:",out)

@@ -67,12 +67,71 @@ assert (b.OUT/"comic-media/episode/panel4.png").is_file()
 assert "詳しく読む" in read("today/2021-01-01/index.html")
 assert "/today/2020-12-31/" not in read("sitemap.xml")
 assert "/blog/subject/" in read("sitemap.xml") and "/today/2021-01-01/" in read("sitemap.xml")
+# Related videos preserve the primary embed and link every daily-card surface.
+from datetime import datetime
+related_ids=["related0001","related0002"]
+today=datetime.now(daily.JST).date().isoformat()
+extra_videos=[dict(video,id=related_ids[0],title='正式 <追加> & 動画',
+                   publishedAt=today+"T00:00:00+09:00",date=today),
+              {"id":related_ids[1],"title":"日付未確認の追加動画"}]
+(root/"youtube-videos.js").write_text("window.YOUTUBE_VIDEOS = "+json.dumps([video]+extra_videos)+";",encoding="utf-8")
+primary_html=read("blog/subject/index.html")
+src["youtube_related"]=related_ids
+article(src)
+b.build()
+html=read("blog/subject/index.html")
+assert html.count('<iframe')==1
+primary_section=primary_html.split('<section><h2>動画はこちら</h2>',1)[1].split('</section>',1)[0]
+assert '<section><h2>動画はこちら</h2>'+primary_section+'</section>' in html
+assert '正式 &lt;追加&gt; &amp; 動画</a>' in html
+for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","index.html"):
+    assert '詳しく読む：独立記事の検証' in read(target),target
+for vid_id in [vid]+related_ids:
+    assert html.count('href="https://www.youtube.com/watch?v='+vid_id+'"')==1
+    assert json.loads(read("video-links.json"))[vid_id].count(["/blog/subject/",src["title"]])==1
+# Disabling comics must leave all article links, but no comic links or pages.
+(root/"config").mkdir(exist_ok=True)
+(root/"config/comics-enabled.json").write_text("false")
+b.build()
+assert not (b.OUT/"comics/episode/index.html").exists()
+assert '/comics/' not in read("video-links.json")
+for vid_id in [vid]+related_ids:
+    assert json.loads(read("video-links.json"))[vid_id]==[["/blog/subject/",src["title"]]]
+for invalid, error in (("related0001","must be a list"),(None,"must be a list"),
+                       ([123],"invalid video ID"),([None],"invalid video ID"),
+                       (["あ"*11],"invalid video ID"),(["bad"],"invalid video ID"),
+                       ([vid],"duplicate video ID"),(related_ids*2,"duplicate video ID")):
+    article(dict(src,youtube_related=invalid))
+    fails(b.load,error)
+for invalid_primary in (True,123,[vid],"あ"*11):
+    article(dict(src,youtube=invalid_primary,youtube_related=[]))
+    fails(b.load,"invalid video ID")
+article(dict(src,youtube_related=["missing0000"]))
+fails(b.build,"unknown public video ID")
+without_primary=dict(src);without_primary.pop("youtube")
+article(without_primary)
+fails(b.load,"youtube_related requires youtube")
+article(dict(without_primary,youtube_related=[]))
+assert not b.media.article_video_ids(b.load()[0])
+article(src)
+print("PASS: related ID validation, single unchanged embed, escaped official titles, all daily surfaces, comic pause")
 comic["status"]="pending";save_comic()
 src["status"]="draft";article(src)
 b.build()
 for name in ("comics/episode/index.html","comic-media/episode/panel1.png","blog/subject/index.html"):
     assert not (b.OUT/name).exists()
 assert json.loads(read("search/index.json"))==[] and "詳しく読む" not in read("today/2021-01-01/index.html")
+assert json.loads(read("video-links.json"))=={}
+for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","index.html"):
+    assert "詳しく読む" not in read(target)
+# Publishing again, then deleting, must remove all related reverse links too.
+src["status"]="published";article(src);b.build()
+(root/"articles/subject.md").unlink()
+b.build()
+assert json.loads(read("video-links.json"))=={}
+assert not (b.OUT/"blog/subject/index.html").exists()
+(root/"config/comics-enabled.json").write_text("true")
+src.pop("youtube_related")
 src["status"]="published";article(src)
 items=b.load()
 duplicates, stale=editorial.audit(items+[dict(items[0],slug="another")],b.date(2022,1,1))

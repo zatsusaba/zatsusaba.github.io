@@ -110,6 +110,10 @@ b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
 assert 'class="blog-cover"' in article_html
 print("PASS: duplicate cover omitted; nonduplicate cover, prose, captions, sources, cards and share images preserved")
+assert b.media.article_video_ids({})==[]
+assert b.media.article_video_ids({"youtube":"q5FluB5f-b8"})==["q5FluB5f-b8"]
+assert b.media.article_video_ids({"youtube":"q5FluB5f-b8","youtube_related":[]})==["q5FluB5f-b8"]
+assert '<h2>関連動画</h2>' not in article_html
 assert article_html.count('<iframe')==1
 assert 'class="blog-video blog-video-short"' in article_html
 assert 'src="https://www.youtube-nocookie.com/embed/q5FluB5f-b8"' in article_html

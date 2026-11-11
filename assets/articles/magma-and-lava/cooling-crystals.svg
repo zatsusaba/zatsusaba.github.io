@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+<rect width="1000" height="760" rx="24" fill="#f7f3e9"/>
+<g font-family="Noto Sans CJK JP,sans-serif" fill="#253943">
+<text x="55" y="80" font-size="52" font-weight="700">冷え方は、結晶の育ち方に残る</text>
+<rect x="40" y="120" width="440" height="480" rx="24" fill="#e5ecec"/><rect x="520" y="120" width="440" height="480" rx="24" fill="#f4e4d7"/>
+<text x="70" y="188" font-size="44" font-weight="700">地下でゆっくり</text><text x="550" y="188" font-size="44" font-weight="700">地表付近で急に</text>
+<g stroke="#f7f3e9" stroke-width="5"><path d="M80 235 L210 240 L250 340 L160 405 L80 355Z" fill="#7c9d9e"/><path d="M210 240 L350 230 L425 310 L340 390 L250 340Z" fill="#aab6ac"/><path d="M80 355 L160 405 L245 470 L80 470Z" fill="#b6a494"/><path d="M160 405 L250 340 L340 390 L350 470 L245 470Z" fill="#d4c9b4"/><path d="M340 390 L425 310 L440 470 L350 470Z" fill="#879294"/>
+<rect x="560" y="230" width="340" height="240" rx="12" fill="#69787b"/><path d="M610 265 l25 12 -15 30 -25 -12Z M730 390 l25 8 -12 23 -20 -8Z M820 285 l20 12 -10 20 -23 -10Z" fill="#d4c9b4"/>
+</g>
+<text x="70" y="535" font-size="40">大きな結晶が</text><text x="70" y="580" font-size="40">育ちやすい</text>
+<text x="550" y="535" font-size="40">細かな結晶や</text><text x="550" y="580" font-size="40">ガラス質になりやすい</text>
+<text x="55" y="665" font-size="40">例外：地下で育った大きな結晶を</text><text x="55" y="720" font-size="40">含む火山岩もあります（粒の模式図）</text>
+</g></svg>

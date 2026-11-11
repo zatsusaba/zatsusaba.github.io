@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+<rect width="1000" height="760" rx="24" fill="#f7f3e9"/>
+<g font-family="Noto Sans CJK JP,sans-serif" fill="#253943">
+<text x="55" y="80" font-size="52" font-weight="700">呼び名の境目は、地表への噴出</text>
+<path d="M35 335 L200 335 L420 205 L510 205 L730 335 L965 335 L965 655 L35 655Z" fill="#b5a38e"/>
+<path d="M465 575 C420 440 490 380 465 210" fill="none" stroke="#e96e35" stroke-width="35"/>
+<ellipse cx="465" cy="570" rx="125" ry="58" fill="#e96e35"/>
+<path d="M465 210 Q500 205 540 240 L700 333 L865 333" fill="none" stroke="#df562a" stroke-width="22" stroke-linecap="round"/>
+<path d="M690 240 L600 267" stroke="#253943" stroke-width="4"/>
+<text x="730" y="153" font-size="52" font-weight="700">溶岩</text><text x="690" y="210" font-size="40">地表に出たもの</text>
+<path d="M270 510 L410 545" stroke="#253943" stroke-width="4"/>
+<text x="70" y="430" font-size="52" font-weight="700">マグマ</text><text x="70" y="485" font-size="40">地下にあるもの</text>
+<text x="675" y="405" font-size="40">周囲の岩石</text>
+<text x="55" y="715" font-size="40">模式図：深さ・形・割合は実際と異なります</text>
+</g></svg>

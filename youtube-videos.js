@@ -1613,7 +1613,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "t_NS2tcnZlI",
-    "title": "世界が警戒する「PHPの脆弱性」何がヤバい？私たちへの影響と対処法",
+    "title": "【雑学漫画】世界が警戒する「PHPの脆弱性」何がヤバい？私たちへの影響と対処法",
     "publishedAt": "2026-10-22T09:50:29Z",
     "date": "2026-10-22",
     "format": "長尺動画",
@@ -1690,17 +1690,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "QH_u7iTs9Y4",
-    "title": "【オリジナル曲】声が聞こえる / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-21T22:00:32Z",
-    "date": "2026-10-22",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "雑学サバイバルのオリジナル曲『声が聞こえる』のフルMVです。\n\n🔻マンガ本編はこちら\nhttps://youtu.be/78rL0ukyDw0\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 132.0
-  },
-  {
     "id": "78rL0ukyDw0",
     "title": "【雑学漫画】ちょっとボケてるモンスター「ボケモン」",
     "publishedAt": "2026-10-21T14:35:46Z",
@@ -1754,17 +1743,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "生成AIで作られた動画には、身体の形や動きに不自然な部分が現れることがあります。\n\nただし、見た目だけでAIと断定するのは危険。\n投稿元や情報源も確認することが大切です。\n\nそして、リンリンはまさかの6本腕ダンスに挑戦！？\n\n▶ ソーラン節自由形の長尺本編は関連動画から！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #生成AI",
     "durationSeconds": 13.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "7nGB6fqr--c",
-    "title": "【オリジナル曲】ソーラン節自由形ダダダンス / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-20T22:43:18Z",
-    "date": "2026-10-21",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ソーラン節自由形で踊りだせ！\n\n雑学サバイバルの漫画「ソーラン節自由形」編から、音楽と映像を楽しめるMVをお届けします。\n\n気に入ったら高評価・チャンネル登録・コメントよろしくお願いします！\n\n#ソーラン節自由形 #オリジナル曲 #musicvideo",
-    "durationSeconds": 104.0
   },
   {
     "id": "ITVBv79Jsgs",
@@ -1931,17 +1909,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "tybjIV5jw2w",
-    "title": "【オリジナル曲】確率変動★ST / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-18T22:00:28Z",
-    "date": "2026-10-19",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "確率変動★ST🌈🎰\n\n『雑学サバイバル』が贈る、興奮とスリル全開のオリジナル楽曲！\n\n🎵 気に入ったら高評価・チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 107.0
-  },
-  {
     "id": "xczxX1tOh7U",
     "title": "オバケ屋敷で手をつないだら…😱 #漫画 #雑学 #恋愛",
     "publishedAt": "2026-10-18T14:45:39Z",
@@ -1979,17 +1946,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "かき氷を食べた瞬間、太郎の頭に激痛が！？\n\n頭がキーンとなる現象の正体は「冷刺激頭痛」。\n実は脳が凍っているわけじゃないんです！\n\n#漫画 #雑学 #かき氷",
     "durationSeconds": 22.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "rM0qWqRqAlc",
-    "title": "【オリジナル曲】ドパドパ★ドーパミン / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-18T10:18:37Z",
-    "date": "2026-10-18",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ドパドパ★ドーパミン！！💖🧠\n\n一度聴いたら、頭から離れない！？\nドパガキランドから飛び出した、ハイテンションなオリジナルソング！\n\n可愛さ全開！テンション限界突破！\nミンと一緒に、ドパドパな世界へ飛び込もう！💕\n\n🎵 曲名：ドパドパ★ドーパミン\n🎬 Music Video：雑学サバイバル\n\n気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #ドパガキ",
-    "durationSeconds": 158.0
   },
   {
     "id": "9NSdlrlWgR8",
@@ -2211,17 +2167,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "tI1KRDf4k1E",
-    "title": "【オリジナル曲】終わらない夜 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-15T22:00:07Z",
-    "date": "2026-10-16",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🌙 終わらない夜――君が僕を照らすヒカリ。\n\nゾンビに支配された終末世界。\n誰もいなくなった街で、生き残った太郎とリンコ。\n\n世界が壊れても、明日が見えなくても。\n君が隣にいるなら、きっと歩いていける。\n\n切なさと希望が交差する、Kawaii Future BassのオリジナルMusic Video。\n\n✨ 本編漫画「ゾンビ編」も雑学サバイバルで！\n🎧 気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 174.0
-  },
-  {
     "id": "-vf_bJPz7PM",
     "title": "お嬢様のドリルツインテール事故👸💥【雑学サバイバル / 切り抜き】",
     "publishedAt": "2026-10-15T14:54:07Z",
@@ -2329,17 +2274,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "L30STKne5pE",
-    "title": "【オリジナル曲】地獄を鳴らせ / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-14T22:00:11Z",
-    "date": "2026-10-15",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🔥 地獄を鳴らせ！！ 🔥\n\n轟くギター、叩きつけるビート、魂を震わせるシャウト！\n\n静寂をぶち壊せ。\n常識を焼き尽くせ。\n地獄の底まで、この音を響かせろ！\n\nYouTube「雑学サバイバル」が贈る、オリジナル・デスメタルMusic Video！\n\n⚡ 気に入ったら高評価＆チャンネル登録！\n🔥 好きなシーンやフレーズもコメントで教えてください！\n\n🎸 雑学サバイバル\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 143.0
-  },
-  {
     "id": "90SNLZ-WReY",
     "title": "麻辣湯のナゾ #漫画 #雑学",
     "publishedAt": "2026-10-14T13:07:25Z",
@@ -2405,18 +2339,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "昼食後、突然の眠気に襲われる悪役令嬢エルゼ！\n\nでも、ご飯を食べたあとって、どうして眠くなるの？\n\n実は、食事の量や内容、午後に眠くなりやすい体内時計のリズムなどが関係しています。\n\n食べすぎを避ける、食後に少し歩くなど、身近な眠気対策も紹介！\n\nそして太郎の一言に、エルゼがまさかの反応!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #眠い",
     "durationSeconds": 19.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "Nkg7S9Rphuw",
-    "title": "【オリジナル曲】反逆の薔薇 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-13T23:08:13Z",
-    "date": "2026-10-14",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "「運命なんて、私が変えてみせる。」\n\n決められた結末も、押しつけられた運命も、すべて叩き壊せ。\n\n悪役令嬢エルゼが、自分の意志で未来と恋を選び取る。\n\nYouTube漫画『雑学サバイバル』悪役令嬢編から生まれたオリジナル楽曲『反逆の薔薇』。\n\nこれは、運命に抗う一人の少女の物語。\n\n🌹 あなたは運命を受け入れますか？ それとも抗いますか？\n\n気に入っていただけたら、高評価・チャンネル登録をよろしくお願いします！\n\n🎬 本編の『悪役令嬢編』もぜひご覧ください！\n\n📺 雑学サバイバル【漫画】\n🔗 @zatsusaba\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 334.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "8-jR0Z_tm_w",
@@ -2542,18 +2464,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "tpDdUfpq-5M",
-    "title": "【オリジナル曲】修羅の空 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-12T13:00:22Z",
-    "date": "2026-10-12",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "燃え上がる戦場。舞い散る桜。\n修羅の空の下、姫は運命に立ち向かう──。\n\n🔥 オリジナル楽曲『修羅の空』🔥\n\n戦国の激しい合戦、燃え盛る炎、そして姫の揺るがぬ覚悟。\n\nYouTube『雑学サバイバル』がお届けする、迫力の戦国アニメMusic Video！\n\n⚔️ 戦国 × 合戦 × 和風アニメMV\n\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちが繰り広げる冒険と、笑えて学べる雑学をお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#オリジナル曲 #musicvideo #雑サバ",
-    "durationSeconds": 351.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
     "id": "S9W5ymTgLT4",
     "title": "火遁の術のナゾ #漫画 #雑学 #忍法",
     "publishedAt": "2026-10-12T12:06:53Z",
@@ -2566,18 +2476,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "敵兵に囲まれた太郎とこよみ！\n\nこよみが放った必殺の「火遁の術」！\n反撃開始かと思いきや……まさかの全力逃走！？\n\n実は「遁」は「逃れる」という意味。\n火や煙で敵の注意をそらして逃げる、忍術の意外な雑学を漫画で紹介！\n\n#漫画 #雑学 #忍法",
     "durationSeconds": 18.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "A7I6aMjMbfI",
-    "title": "【オリジナル曲】恋は忍べない / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-12T10:33:52Z",
-    "date": "2026-10-12",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "忍びの技で姿は隠せても、恋心だけは隠せない。🥷💕\n\nオリジナルアニメMV『恋は忍べない』\n\n戦国の世界を舞台に、忍者少女・夜刀こよみの恋心を歌とアニメで描いた、ちょっぴり甘くてコミカルな恋愛ソング！\n\n🌸 忍者×恋愛×戦国ラブコメ！\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちの冒険や笑える雑学もお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・ストーリー・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#musicvideo #オリジナル曲 #雑サバ",
-    "durationSeconds": 250.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "GwuLgMH2PKw",
@@ -3933,7 +3831,7 @@ window.YOUTUBE_VIDEOS = [
   },
   {
     "id": "kGQ4GaH7VsE",
-    "title": "【漫画】目覚めたら美少女に監禁されてた｜悪用禁止！人に好かれる雑学",
+    "title": "【雑学漫画】目覚めたら美少女に監禁されてた｜悪用禁止！人に好かれる雑学",
     "publishedAt": "2026-09-19T03:23:41Z",
     "date": "2026-09-19",
     "format": "長尺動画",

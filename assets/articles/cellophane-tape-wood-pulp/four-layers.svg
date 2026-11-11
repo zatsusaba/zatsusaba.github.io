@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">セロテープの4層構造</title>
+  <desc id="desc">上からはくり剤、セロハン、下塗り剤、粘着剤。各層の厚さと色は説明用で、実物を示すものではありません。</desc>
+  <rect width="1000" height="700" rx="24" fill="#f7f4eb"/>
+  <g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif" text-anchor="middle" fill="#203b42">
+    <text x="500" y="82" font-size="48" font-weight="700">薄いテープの、4つの役割</text>
+    <text x="500" y="134" font-size="30">上は背中側、下は貼りつく側</text>
+    <rect x="90" y="178" width="820" height="86" rx="12" fill="#c1d9d5"/>
+    <text x="500" y="236" font-size="42" font-weight="700">1　はくり剤</text>
+    <rect x="90" y="278" width="820" height="86" rx="12" fill="#e8dbb2"/>
+    <text x="500" y="336" font-size="42" font-weight="700">2　セロハン</text>
+    <rect x="90" y="378" width="820" height="86" rx="12" fill="#d9d8e9"/>
+    <text x="500" y="436" font-size="42" font-weight="700">3　下塗り剤</text>
+    <rect x="90" y="478" width="820" height="86" rx="12" fill="#e5bb9f"/>
+    <text x="500" y="536" font-size="42" font-weight="700">4　粘着剤</text>
+    <text x="500" y="622" font-size="30">構造の模式図。色・厚さの比率は実物と異なります。</text>
+    <text x="500" y="668" font-size="27">出典：ニチバン「セロテープの特長」</text>
+  </g>
+</svg>

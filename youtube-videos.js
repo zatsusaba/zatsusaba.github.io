@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "EUA8c_qvOYs",
+    "title": "タコの心臓は… #雑学 #面白い #タコ",
+    "publishedAt": "2026-11-10T22:00:26Z",
+    "date": "2026-11-11",
+    "format": "Shorts",
+    "genres": [
+      "自然の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "タコの心臓は3つ。2つは左右のえらへ血液を送り、残る1つは酸素を取り込んだ血液を全身へ送ります。予備の心臓ではなく、役割が分かれています。\n\n出典：\nNOAA「Love is in the air, and sea: 5 facts about the affections of marine creatures」\nhttps://www.noaa.gov/stories/love-is-in-air-and-sea-5-facts-about-affections-of-marine-creatures\n\n#雑学 #面白い #タコ",
+    "durationSeconds": 11.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "WbKaKYhB4N0",
     "title": "1円札でビックリ #雑学 #面白い #一円札",
     "publishedAt": "2026-11-10T12:00:32Z",

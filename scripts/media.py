@@ -12,6 +12,23 @@ from editorial import metadata, state
 PAGE_SIZE = 24
 
 
+def article_video_ids(article):
+    """Return primary then related IDs; reject ambiguous or malformed metadata."""
+    primary = article.get("youtube")
+    related = article.get("youtube_related", [])
+    label = article.get("slug", "article")
+    if not isinstance(related, list):
+        raise ValueError(f"{label}: youtube_related must be a list of video IDs")
+    if related and not primary:
+        raise ValueError(f"{label}: youtube_related requires youtube")
+    ids = ([] if primary is None or primary == "" else [primary]) + related
+    if any(not isinstance(vid, str) or not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid) for vid in ids):
+        raise ValueError(f"{label}: invalid video ID")
+    if len(ids) != len(set(ids)):
+        raise ValueError(f"{label}: duplicate video ID")
+    return ids
+
+
 def compact(data):
     return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
@@ -150,8 +167,9 @@ def render_comics(comics, articles, page, write, urls, known_videos, enabled=Tru
     reverse = defaultdict(list)
     video_map = defaultdict(list)
     for a in articles:
-        if a.get("youtube") in known_videos:
-            video_map[a["youtube"]].append([a["url"],a["title"]])
+        for vid in article_video_ids(a):
+            if vid in known_videos:
+                video_map[vid].append([a["url"],a["title"]])
     if not enabled:
         write("/video-links.json",compact(video_map))
         return reverse

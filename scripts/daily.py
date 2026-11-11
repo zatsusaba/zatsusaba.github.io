@@ -5,7 +5,7 @@ from html import escape
 import json
 import re
 
-from media import link, pages
+from media import article_video_ids, link, pages
 
 JST = timezone(timedelta(hours=9))
 
@@ -52,8 +52,8 @@ def render(videos, articles, root, page, write, urls):
     days = sorted((day for day in groups if day), reverse=True)
     deep = defaultdict(list)
     for article in articles:
-        if article.get("youtube"):
-            deep[article["youtube"]].append(article)
+        for vid in article_video_ids(article):
+            deep[vid].append(article)
 
     def cards(dated_entries):
         result = []

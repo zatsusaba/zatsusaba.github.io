@@ -39,7 +39,10 @@ def load():
         check(a["category"] in CATS,f"{p}: unknown category")
         for key in ("date","updated"): a[key]=date.fromisoformat(str(a[key])).isoformat()
         check(a["date"]<=a["updated"]<=today,f"{p}: invalid dates")
-        check(not a.get("youtube") or re.fullmatch(r"[\w-]{11}",a["youtube"]),f"{p}: invalid video ID")
+        try:
+            media.article_video_ids(a)
+        except ValueError as exc:
+            raise ValueError(f"{p}: {exc}") from exc
         editorial.sources(a,date.fromisoformat(today),p)
         if not a.get("image"):
             a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
@@ -156,8 +159,8 @@ def build():
     comics=media.load_comics(ROOT,datetime.now(JST).date()) if comics_enabled() else []
     article_ids={p.stem for p in (ROOT/"articles").glob("*.md")}
     for a in items:
-        if a.get("youtube"):
-            check(a["youtube"] in known_videos,f'articles/{a["slug"]}.md: unknown public video ID {a["youtube"]}')
+        for vid in media.article_video_ids(a):
+            check(vid in known_videos,f'articles/{a["slug"]}.md: unknown public video ID {vid}')
     for c in comics:
         for slug in c["articles"]:
             check(slug in article_ids,f'{c["url"]}: unknown article {slug}')
@@ -181,6 +184,10 @@ def build():
             video_title=a.get("youtube_title") or known_videos[a["youtube"]]
             video_class="blog-video blog-video-short" if a.get("youtube_format")=="short" else "blog-video"
             video=f'<section><h2>動画はこちら</h2><iframe class="{video_class}" src="https://www.youtube-nocookie.com/embed/{a["youtube"]}" title="{e(video_title,quote=True)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
+            additional = media.article_video_ids(a)[1:]
+            if additional:
+                links = ''.join('<li>'+media.link("https://www.youtube.com/watch?v="+vid,known_videos[vid])+'</li>' for vid in additional)
+                video += '<section><h2>関連動画</h2><ul>'+links+'</ul></section>'
         related_comics=""
         if comic_links[a["slug"]]:
             related_comics='<h2>関連する4コマ漫画</h2><ul>'+''.join('<li>'+l+'</li>' for l in comic_links[a["slug"]])+'</ul>'

@@ -43,7 +43,7 @@ if(page==='games'||page==='comics'){
  else if(page==='comics' && character){const items=get('comics').filter(x=>Array.isArray(x.characters)&&x.characters.includes(character));const person=get('characters').find(x=>x.id===character);el.innerHTML=`<p>${esc(person?.name||'')}の出演4コマ</p>${items.length?`<div class="cards comic-grid">${items.map(x=>card('comics',x)).join('')}</div>`:'<div class="empty">出演4コマはまだ登録されていません。</div>'}<p><a href="comics.html">すべての4コマを見る →</a></p>`} else el.innerHTML=listing(page);
 }
 if(page==='videos'){
- const topicOrder=['人間','お金','科学','自然','世界','食べ物','遊び','話題'];
+ const topicOrder=['雑学マンガ','人間','お金','科学','自然','世界','食べ物','遊び','話題'];
  // Match public playlist names, never infer topics from video titles.
  const playlistTopic=label=>{
   const name=String(label).replace(/【[^】]*】/g,'').trim();

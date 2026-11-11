@@ -426,3 +426,8 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
  body[data-page="videos"] .video-card > a:last-child { display:none; }
  body[data-page="videos"] .video-more { width:100%; }
 }
+
+/* Six destinations when Comic publication is paused. */
+@media(max-width:700px) {
+ .mobile-nav:not(:has(a[href="/comics/"])) { grid-template-columns:.8fr .8fr 1.3fr 1.1fr 1.1fr .9fr; }
+}

@@ -1,8 +1,8 @@
 ---
 title: 生卵とゆで卵は回すとわかる？ 一瞬止めた後に起きる違い
 description: 生卵と固ゆで卵は、回して一瞬止めた後の動きに違いがあります。殻を止めても液体が動き続ける仕組みを、模式図で紹介します。
-date: '2026-11-10'
-updated: '2026-11-10'
+date: '2026-11-11'
+updated: '2026-11-11'
 status: published
 category: 食べ物
 topic: 生卵と固ゆで卵の回転による見分け方
@@ -20,7 +20,7 @@ youtube_format: short
 sources:
 - title: 'Exploratorium「Science of Eggs: Take an Egg for a Spin」'
   url: https://annex.exploratorium.edu/cooking/eggs/activity-spin.html
-  checked: '2026-11-10'
+  checked: '2026-11-11'
 ---
 **生卵と固ゆで卵は、回して一瞬止め、すぐ手を離した後の動きで見分ける手がかりが得られます。**生卵は中の液体が動き続けるため、殻が再び回り始めます。中まで固まった固ゆで卵は、止まったままです。
 

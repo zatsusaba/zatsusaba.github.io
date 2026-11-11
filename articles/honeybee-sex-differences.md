@@ -15,7 +15,7 @@ youtube: PrWwDrV15ls
 youtube_title: '刺せないミツバチ #雑学 #面白い #ミツバチ'
 youtube_format: short
 sources:
-  - title: 'Purdue University「The Complex Life of the Honey Bee」成虫の階級・Drones・Colony Defense'
+  - title: 'Purdue University「The Complex Life of the Honey Bee」Drones・One Colony Becomes Two（雄の目と女王の針）'
     url: https://ag.purdue.edu/department/extension/ppp/resources/ppp-publications/mobile/ppp-116-pol-91.html
     checked: '2026-11-11'
   - title: 'Arizona State University, Ask A Biologist「Bee Identification」Is It a Boy or Girl Bee?'

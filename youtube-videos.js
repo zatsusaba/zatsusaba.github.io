@@ -1,5 +1,33 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "N_HLaTnbukU",
+    "title": "セロテープは実は #雑学 #面白い #セロテープ",
+    "publishedAt": "2026-11-11T06:00:12Z",
+    "date": "2026-11-11",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "ニチバンの「セロテープ」の透明なフィルムは、木材パルプを原料とするセロハン。粘着剤は天然ゴムや天然樹脂が主原料です。\n\n※透明テープ全般の話ではありません。石油由来のプラスチックフィルムを使うテープもあります。\n\n出典：\nニチバン「環境への配慮」\nhttps://www.nichiban-cellotape.com/environment/\n\n#雑学 #面白い #セロテープ",
+    "durationSeconds": 14.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
+    "id": "PrWwDrV15ls",
+    "title": "刺せないミツバチ #雑学 #面白い #ミツバチ",
+    "publishedAt": "2026-11-11T03:00:11Z",
+    "date": "2026-11-11",
+    "format": "Shorts",
+    "genres": [
+      "自然の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "ミツバチのオスには毒針がないため、刺すことができません。一方、働きバチはメスで、針を持っています。\n\n※動画は写真を見て驚く場面です。野外のハチに近づいたり、触って確かめたりしないでください。\n\n出典：\nUC Agriculture and Natural Resources／UC Davis「All Hail the Drones!」\nhttps://ucanr.edu/blog/bug-squad/article/all-hail-drones\n\n#雑学 #面白い #ミツバチ",
+    "durationSeconds": 9.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "EUA8c_qvOYs",
     "title": "タコの心臓は… #雑学 #面白い #タコ",
     "publishedAt": "2026-11-10T22:00:26Z",

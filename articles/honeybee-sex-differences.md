@@ -2,8 +2,8 @@
 status: published
 title: ミツバチのオスとメス、どこで見分ける？ 針より目に注目
 description: ミツバチのオスは針を持ちません。写真で見分ける手がかりは大きな複眼。働き蜂・女王蜂との違いと、雌にだけ針がある理由を紹介します。
-date: '2026-11-12'
-updated: '2026-11-12'
+date: '2026-11-11'
+updated: '2026-11-11'
 category: 動物
 topic: セイヨウミツバチの雌雄の見分け方と針の由来
 tags: [ミツバチ, 昆虫, 複眼, 働き蜂]
@@ -17,19 +17,19 @@ youtube_format: short
 sources:
   - title: 'Purdue University「The Complex Life of the Honey Bee」成虫の階級・Drones・Colony Defense'
     url: https://ag.purdue.edu/department/extension/ppp/resources/ppp-publications/mobile/ppp-116-pol-91.html
-    checked: '2026-11-12'
+    checked: '2026-11-11'
   - title: 'Arizona State University, Ask A Biologist「Bee Identification」Is It a Boy or Girl Bee?'
     url: https://askabiologist.asu.edu/honey-bee-identification
-    checked: '2026-11-12'
+    checked: '2026-11-11'
   - title: 'University of Florida, IFAS「The Social Structure of a Honey Bee Hive」Honey Bee Caste System'
     url: https://gardeningsolutions.ifas.ufl.edu/design/gardening-with-wildlife/beehive-social-structure/
-    checked: '2026-11-12'
+    checked: '2026-11-11'
   - title: 'Purdue University, Public Health and Medical Entomology「Stinging Insects」Stinging Behavior'
     url: https://extension.entm.purdue.edu/publichealth/insects/stinging.html
-    checked: '2026-11-12'
+    checked: '2026-11-11'
   - title: 'Utah State University Extension「Creating Sustainable School and Home Gardens: Misconceptions About Bees」第3節'
     url: https://extension.usu.edu/utah4h/research/creating-sustainable-school-and-home-gardens-misconceptions-about-bees
-    checked: '2026-11-12'
+    checked: '2026-11-11'
 ---
 
 **ミツバチのオスには毒針がなく、刺すことができません。**でも、写真でオスとメスを見比べるなら、お尻の針を探すよりも「目」に注目すると違いがわかりやすくなります。

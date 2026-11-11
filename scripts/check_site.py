@@ -39,6 +39,10 @@ def main():
             target=OUT/unquote(bits.path).lstrip("/") if bits.path.startswith("/") else p.parent/unquote(bits.path)
             if target.is_dir(): target=target/"index.html"
             assert target.is_file(), f"Broken link: {p}: {u}"
+    if (ROOT/"config/comics-enabled.json").exists() and (ROOT/"config/comics-enabled.json").read_text().strip() == "false":
+        assert not list((OUT/"comics").rglob("*.html")), "Comic pages published while paused"
+        assert not list((OUT/"comic-media").rglob("*.png")), "Comic panels published while paused"
+        assert "/comics/" not in (OUT/"sitemap.xml").read_text(encoding="utf-8")
     home=(OUT/"index.html").read_text(encoding="utf-8")
     assert home.index('id="blog-title"') < home.index('class="blog-home daily-home"')
     if 'class="blog-home comic-home comic-archive"' in home:
@@ -50,6 +54,7 @@ def main():
         assert FOOTER in built
         built=built.replace(FOOTER,'')
         built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',"")
+        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>', "")
         if name=="index.html":
             original=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',"",original,flags=re.S)
             original=re.sub(r'<section class="home-comic-strip".*?</section>',"",original,flags=re.S)

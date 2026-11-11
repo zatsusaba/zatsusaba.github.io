@@ -145,13 +145,16 @@ def comic_sheet(comic):
     return '<div class="comic-sheet" role="group" aria-label="上から順に読む4コマ">'+''.join(cells)+'</div>'+viewer
 
 
-def render_comics(comics, articles, page, write, urls, known_videos):
+def render_comics(comics, articles, page, write, urls, known_videos, enabled=True):
     by_slug = {a["slug"]: a for a in articles}
     reverse = defaultdict(list)
     video_map = defaultdict(list)
     for a in articles:
         if a.get("youtube") in known_videos:
             video_map[a["youtube"]].append([a["url"],a["title"]])
+    if not enabled:
+        write("/video-links.json",compact(video_map))
+        return reverse
     groups = {"/comics/": ("Comic", comics)}
     facets = []
     for key,kind,label in (("characters","character","登場キャラ"),("themes","theme","テーマ")):

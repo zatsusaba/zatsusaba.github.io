@@ -76,8 +76,14 @@ def load():
         else:
             a["_order"] = datetime.fromisoformat(added[a["slug"]]).timestamp() if a["slug"] in added else 0
     return sorted(result,key=lambda a:(a["date"],a["_order"],a["slug"]),reverse=True)
+def comics_enabled():
+    path = ROOT / "config/comics-enabled.json"
+    value = json.loads(path.read_text(encoding="utf-8")) if path.exists() else True
+    check(type(value) is bool, "comics-enabled.json must be boolean")
+    return value
+
 def nav(url):
-    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/#today","今日の雑学"),("/videos.html","VIDEOS")])
+    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/#today","今日の雑学"),("/videos.html","VIDEOS")] if u != "/comics/" or comics_enabled())
 def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
     image=image if image.startswith("https://") else BASE+image
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -125,6 +131,12 @@ def build():
     for p in ROOT.iterdir():
         if p.is_file() and p.suffix in (".html",".css",".js",".txt") and p.name!="requirements-blog.txt": shutil.copy2(p,OUT/p.name)
     for folder in ("assets","panels-v2"):
+        if folder == "panels-v2" and not comics_enabled():
+            for source in (ROOT/folder).rglob("*"):
+                target = OUT / source.relative_to(ROOT)
+                if source.is_file() and target.is_file():
+                    target.unlink()  # Generated copy only; original artwork stays in ROOT.
+            continue
         shutil.copytree(ROOT/folder,OUT/folder,dirs_exist_ok=True)
     urls=["/","/story.html","/characters.html","/videos.html"]
     media.search_files(items,write)
@@ -141,7 +153,7 @@ def build():
     known_videos={v["id"]:v["title"] for v in videos}
     urls.extend("/video.html?id="+vid for vid in known_videos if re.fullmatch(r"[A-Za-z0-9_-]{11}",vid))
     today_home=daily.render(videos,items,ROOT,page,write,urls)
-    comics=media.load_comics(ROOT,datetime.now(JST).date())
+    comics=media.load_comics(ROOT,datetime.now(JST).date()) if comics_enabled() else []
     article_ids={p.stem for p in (ROOT/"articles").glob("*.md")}
     for a in items:
         if a.get("youtube"):
@@ -160,7 +172,7 @@ def build():
                 target.parent.mkdir(parents=True,exist_ok=True)
                 shutil.copy2(ROOT/rel,target)
                 copied_panels.append(rel)
-    comic_links=media.render_comics(comics,items,page,write,urls,known_videos)
+    comic_links=media.render_comics(comics,items,page,write,urls,known_videos,enabled=comics_enabled())
     suggestions=media.recommendations(items)
     for a in items:
         related=suggestions[a["slug"]]
@@ -184,6 +196,8 @@ def build():
     for p in OUT.glob("*.html"):
         html=p.read_text(encoding="utf-8")
         html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',html)
+        if not comics_enabled():
+            html=html.replace('<a href="/comics/">Comic</a>', "")
         html=html.replace("</footer>",site_info.FOOTER+"</footer>")
         if p.name=="index.html":
             token_path=ROOT/"config"/"google-verification"
@@ -207,6 +221,8 @@ def build():
         ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:
+        if not comics_enabled():
+            content=content.replace(' ／ <a href="/comics/">公式4コマ漫画</a>', "")
         write(url,page(title,desc,url,f'<article class="blog-article"><h1>{title}</h1><div class="blog-prose">{content}</div></article>'))
         urls.append(url)
     check(len(urls)==len(set(urls)), "Duplicate public URL")

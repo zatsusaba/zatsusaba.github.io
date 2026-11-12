@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "JJbQT29xUlA",
+    "title": "ワサビの謎 #雑学 #面白い #わさび",
+    "publishedAt": "2026-11-11T22:00:25Z",
+    "date": "2026-11-12",
+    "format": "Shorts",
+    "genres": [
+      "食べ物の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "ワサビは、細かくすりおろすと細胞が壊れ、酵素の働きでツーンとする辛味成分が生まれます。噛んでも細胞が壊れれば辛味は発生しますが、すりおろす方が強い辛味を引き出しやすいんです。\n\n参考：日本わさび協会「わさびの特性・効能」\nhttps://www.wasabi.or.jp/public/knowledge/character\n\n#雑学 #面白い #わさび",
+    "durationSeconds": 12.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "RHklb8gDIhQ",
     "title": "面白い雑学。人間は水を飲まないと何日で死ぬ？",
     "publishedAt": "2026-11-11T14:14:01Z",

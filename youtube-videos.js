@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "7ai7Q09_Yik",
+    "title": "収益化まじヤバイ #youtube #収益化 #youtuber",
+    "publishedAt": "2026-11-12T08:00:32Z",
+    "date": "2026-11-12",
+    "format": "Shorts",
+    "genres": [
+      "話題の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "2027年2月1日から、YouTubeの収益化条件が大幅に変更！\n\n新規申請者が広告・Premiumの収益分配を受けるには、登録者1,000人に加えて、次のいずれかが必要になります。\n\n・過去365日間の有効な公開動画の総再生時間：8,000時間\n・過去90日間の有効なショート動画視聴回数：2,000万回\n\nショートで登録者が増えても、ショートフィードの視聴時間は通常動画の再生時間条件にカウントされません。\n\n※すでにYouTubeパートナープログラムに参加しているチャンネルは、今回の新規参加基準変更による影響を受けません。\n※ファンファンディング・ショッピングなどの早期参加基準は変更されません。\n\n出典：YouTube公式ヘルプ\nhttps://support.google.com/youtube/answer/12843009?hl=ja\nhttps://support.google.com/youtube/answer/72851?hl=ja\n\n#youtuber #youtube #収益化",
+    "durationSeconds": 25.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "VKjvMHB3kcY",
     "title": "過酷すぎる修行 #雑学 #面白い #千日回峰行",
     "publishedAt": "2026-11-12T06:00:00Z",

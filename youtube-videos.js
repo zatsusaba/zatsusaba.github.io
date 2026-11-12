@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "VKjvMHB3kcY",
+    "title": "過酷すぎる修行 #雑学 #面白い #千日回峰行",
+    "publishedAt": "2026-11-12T06:00:00Z",
+    "date": "2026-11-12",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "比叡山の千日回峰行。\n水を飲まないのはしんどいですね。\n\n🔻マンガ本編こちら\n\n「面白い雑学。人間は水を飲まないと何日で死ぬ？」\nhttps://youtu.be/RHklb8gDIhQ\n\n#雑学 #面白い #千日回峰行",
+    "durationSeconds": 30.0
+  },
+  {
     "id": "_AcYxTopgRw",
     "title": "コンブの不思議 #雑学 #面白い #昆布",
     "publishedAt": "2026-11-12T03:00:37Z",

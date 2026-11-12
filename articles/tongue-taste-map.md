@@ -2,7 +2,7 @@
 title: 舌の先は甘味、奥は苦味？ 味を感じる場所を分けた舌地図の誤解
 description: 「甘味は舌の先だけ、苦味は舌の奥だけ」という説明は正しくありません。
 date: '2026-11-10'
-updated: '2026-11-11'
+updated: '2026-11-13'
 status: published
 category: 人体
 topic: 舌の先は甘味、奥は苦味？ 味を感じる場所を分けた舌地図の誤解
@@ -10,9 +10,9 @@ tags: []
 image: /assets/blog/tongue-taste-map/thumbnail.webp
 image_alt: 割ったダークチョコレートと角砂糖を描いたAI生成イラスト
 show_cover: false
-conditions: 基本の五味と風味の違いを説明します。味ごとの専用区域はありませんが、場所ごとの感度が同一という意味ではありません。画像は独自の模式図またはAI生成の参考画です。
+conditions: 基本の五味と風味の違いを説明します。味ごとの専用区域はありませんが、場所ごとの感度が同一という意味ではありません。画像は独自の模式図またはAI生成の参考画です。温度の例は成人の糖水溶液実験で、アイスそのものの実食試験ではありません。
 youtube: EfkvwxdgSuc
-youtube_related: [N1sP2f7MNQE]
+youtube_related: [N1sP2f7MNQE, y1JdfZBU-O4]
 youtube_title: '苦いチョコレート #雑学 #面白い #チョコレート'
 youtube_format: short
 sources:
@@ -22,6 +22,9 @@ sources:
 - title: Spence (2022) The tongue map and the spatial modulation of taste perception（総説、本文確認）
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8956797/
   checked: '2026-11-10'
+- title: Green & Nachtigal (2015) Temperature Affects Human Sweet Taste via At Least Two Mechanisms（実験1の方法・結果、考察）
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4542652/
+  checked: '2026-11-12'
 ---
 **「甘味は舌の先だけ、苦味は舌の奥だけ」という説明は正しくありません。異なる味に反応する細胞は、舌の広い範囲に分布しています。** 苦いチョコレートを舌の先に置けば苦味を避けられる、という仕組みではないのです。
 
@@ -46,6 +49,8 @@ sources:
 ## チョコレートのおいしさは、舌だけでは決まらない
 
 食べ物の風味には、基本的な味に加えて、香り、温度、食感なども関わります。NIDCDも、これらの感覚が組み合わさって風味が生まれると説明しています。
+
+刺激場所を舌先に限定した[糖水溶液の実験](https://pmc.ncbi.nlm.nih.gov/articles/PMC4542652/)では、低温でショ糖の甘味評価が下がった一方、同じ条件の果糖では有意な低下が見られない場合もありました。アイスそのものを食べた実験ではなく、温度や糖の種類などの条件で結果が変わるため、食品の印象を温度だけで説明することはできません。
 
 ![チョコレートを口元に運び、香りも楽しむ人を描いたAI生成の参考画](/assets/blog/tongue-taste-map/body-02.webp)
 

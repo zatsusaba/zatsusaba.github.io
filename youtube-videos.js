@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "_AcYxTopgRw",
+    "title": "コンブの不思議 #雑学 #面白い #昆布",
+    "publishedAt": "2026-11-12T03:00:37Z",
+    "date": "2026-11-12",
+    "format": "Shorts",
+    "genres": [
+      "食べ物の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "海で育つ生きた昆布は、細胞の膜の働きでグルタミン酸などのうま味成分を外へ出しにくくしています。乾燥・加工した昆布からだしを取るときとは、細胞の状態が違うのです。\n\n参考：日本昆布協会「よくある質問（昆布Q＆A）」\nhttps://kombu.or.jp/qanda\n\n#雑学 #面白い #昆布",
+    "durationSeconds": 13.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "JJbQT29xUlA",
     "title": "ワサビの謎 #雑学 #面白い #わさび",
     "publishedAt": "2026-11-11T22:00:25Z",

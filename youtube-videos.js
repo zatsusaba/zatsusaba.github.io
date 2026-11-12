@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "7Es9yqVocnE",
+    "title": "ゾッとするほど面白い雑学「宇宙に生身で出たら何秒もつ？」",
+    "publishedAt": "2026-11-12T13:12:51Z",
+    "date": "2026-11-12",
+    "format": "長尺動画",
+    "genres": [
+      "人間の限界"
+    ],
+    "characters": [],
+    "description": "宇宙服なしで宇宙に出たら、人間は何秒もつのか？\n\n今回は、吸血鬼のキュウちゃんと一緒に、宇宙で人体に何が起こるのかを解き明かします！\n\n・宇宙では体が破裂しない理由\n・唾液は沸騰するのに、血液は沸騰しない？\n・意識を失うまでに何秒あるのか\n・NASAの真空室で実際に起きた事故\n・ソユーズ11号で起きた悲劇\n・宇宙服が人間の命を守る仕組み\n\nそして最後は、宇宙から見た地球の美しさについて。\n\nあなたは宇宙が好きですか？\nぜひコメントで教えてください！\n\n【参考資料】\nNASA｜Human Space Flight Incidents and Crew Survival Lessons Learned\nhttps://ntrs.nasa.gov/api/citations/20140008287/downloads/20140008287.pdf\n\nNASA｜50 Years Ago: Remembering the Crew of Soyuz 11\nhttps://www.nasa.gov/history/50-years-ago-remembering-the-crew-of-soyu",
+    "durationSeconds": 804.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
     "id": "7ai7Q09_Yik",
     "title": "収益化まじヤバイ #youtube #収益化 #youtuber",
     "publishedAt": "2026-11-12T08:00:32Z",

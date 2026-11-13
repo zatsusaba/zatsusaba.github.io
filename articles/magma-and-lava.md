@@ -10,23 +10,30 @@ tags: [マグマ, 溶岩, 火山, 岩石]
 image: /assets/articles/magma-and-lava/lava-cover.jpg
 image_alt: 火山の岩場を流れる溶岩を遠くから描いた専用サムネイル（AI生成の参考画）
 show_cover: false
-conditions: 現実の地球における基本的な地学用語を説明します。噴出物すべてを溶岩とは呼びません。結晶の大きさには噴出前の冷却履歴なども関わり、火山岩にも大きな結晶を含むものがあります。サムネイルはAI生成の参考画、本文図は独自の模式図で、実際の火山の内部・縮尺・岩石標本を再現したものではありません。ゲームの仕様説明、噴火予測や現地の安全判断を目的としません。
+conditions: 現実の地球における基本的な地学用語を説明します。噴出物すべてを溶岩とは呼びません。結晶の大きさには噴出前の冷却履歴なども関わり、火山岩にも大きな結晶を含むものがあります。サムネイルと岩肌のイラストはAI生成の参考画、断面図と結晶の図は独自の模式図で、実際の火山の内部・縮尺・岩石標本を再現したものではありません。ゲームの仕様説明、噴火予測や現地の安全判断を目的としません。
 youtube: zXlvsOBuNUM
 youtube_title: 'マグマの謎 #マイクラ #マインクラフト #マグマ'
 youtube_format: short
 sources:
-  - title: 'USGS「What is the difference between magma and lava?」冒頭の定義（JST確認）'
+  - title: 'USGS「What is the difference between magma and lava?」冒頭の定義'
     url: https://www.usgs.gov/faqs/what-difference-between-magma-and-lava
-    checked: '2026-11-11'
-  - title: 'USGS「About Volcanoes」How do volcanoes erupt?：結晶・溶存ガス、噴出の形（JST確認）'
+    checked: '2026-11-13'
+  - title: 'USGS「About Volcanoes」How do volcanoes erupt?：結晶・溶存ガス、噴出の形'
     url: https://www.usgs.gov/programs/VHP/about-volcanoes
-    checked: '2026-11-11'
-  - title: '米国国立公園局「Igneous Rocks」Introduction／Intrusive・Extrusive Rocks／Extrusive Rock Classification／Parts of Rocks（JST確認）'
+    checked: '2026-11-13'
+  - title: '米国国立公園局「Igneous Rocks」Introduction／Intrusive・Extrusive Rocks／Extrusive Rock Classification／Parts of Rocks'
     url: https://www.nps.gov/subjects/geology/igneous.htm
-    checked: '2026-11-11'
+    checked: '2026-11-13'
+  - title: '米国国立公園局「Lava Flow Forms」Introduction／Ropy Pāhoehoe：玄武岩質溶岩の表面の形'
+    url: https://www.nps.gov/articles/000/lava-flow-forms.htm
+    checked: '2026-11-13'
 ---
 
 **地下にある溶けた岩石を「マグマ」、それが地表へ噴出したものを「溶岩」と呼びます。** 呼び分けの基本は、温度の高さや赤さではなく、地下にあるか、地表へ出たかです。[米国地質調査所（USGS）の用語解説](https://www.usgs.gov/faqs/what-difference-between-magma-and-lava)
+
+![冷えて固まったパホイホイ溶岩の縄状の岩肌を描いたAI生成の参考イラスト](/assets/articles/magma-and-lava/cooled-pahoehoe.webp)
+
+冷えて固まったパホイホイ溶岩をイメージしたAI参考画です。[玄武岩質溶岩に見られる表面の形の一例](https://www.nps.gov/articles/000/lava-flow-forms.htm)で、すべての溶岩がこの姿になるわけではありません。
 
 ![地下のマグマと地表へ出た溶岩を描き分けた断面模式図](/assets/articles/magma-and-lava/underground-surface.svg)
 

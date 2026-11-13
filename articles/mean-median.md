@@ -3,7 +3,7 @@ status: published
 title: "平均が『真ん中の人』とは限らないのはなぜ？"
 description: "平均値と中央値の違いを、架空の5人と4人の例で確かめる。"
 date: 2026-11-12
-updated: 2026-11-13
+updated: '2026-11-14'
 category: お金
 topic: "平均値と中央値の違い"
 tags: [統計, 平均値, 中央値]
@@ -11,8 +11,8 @@ conditions: "数値は説明用の架空例で、実際の年収や景気を表�
 youtube: 1i6Gy59EZuI
 youtube_title: "【漫画】平均の罠 #漫画 #雑学 #お金"
 youtube_format: short
-image: /assets/blog/mean-median/cover-v2.webp
-image_alt: "5人の前に置かれたコマのうち、一人分だけが多い場面を描いた参考イラスト。"
+image: /assets/blog/mean-median/cover-counter-dishes.webp
+image_alt: 木製のコマを入れた五つの皿のうち、一皿だけ量が多い様子を描いた参考イラスト（AI生成）
 show_cover: false
 sources:
   - title: "総務省統計局 なるほど統計学園『中心的な傾向を捉える』"

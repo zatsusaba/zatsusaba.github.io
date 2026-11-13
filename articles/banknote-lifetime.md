@@ -11,7 +11,7 @@ tags:
 - 日本銀行
 - リサイクル
 image: /assets/blog/banknote-lifetime/thumbnail.png
-image_alt: 余白のある横長画面の中央に、使い込んだ財布と架空の紙幣を描いた参考イラスト。
+image_alt: 余白のある横長画面の中央に、使い込んだ財布と架空の紙幣を描いた参考イラスト（AI生成）。
 show_cover: false
 conditions: 画像は架空の紙幣を描いたAI生成の参考イラストです。実際の銀行券や日本銀行の作業を再現していません。寿命の年数は平均で、有効期限ではありません。
 youtube: 4JOYg0HovOo

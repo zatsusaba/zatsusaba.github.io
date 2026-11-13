@@ -3,7 +3,7 @@ status: published
 title: "ヴォイニッチ手稿は未解読？ 絵で分かること、まだ分からないこと"
 description: "不思議な植物や星の図があるヴォイニッチ手稿。所蔵館の資料をもとに、確かな手がかりと未解読の部分を分けて見ていきます。"
 date: 2026-11-12
-updated: 2026-11-12
+updated: '2026-11-14'
 category: 歴史
 topic: ヴォイニッチ手稿の未解読文字と挿絵
 tags: [ヴォイニッチ手稿, 写本, 未解読, 歴史]
@@ -15,11 +15,14 @@ sources:
   - title: "Beinecke Library, Beinecke MS 408 catalog record, physical description・sections"
     url: https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm
     checked: 2026-11-12
+  - title: "表紙画像：イェール大学バイネッケ図書館、ヴォイニッチ手稿の小口"
+    url: https://commons.wikimedia.org/wiki/File:Voynich_manuscript_(head).jpg
+    checked: 2026-11-14
 youtube: 6Zd8xiCnKiM
 youtube_title: '【漫画】読めない本 #漫画 #雑学 #不思議'
 youtube_format: short
-image: /assets/blog/voynich-manuscript/thumbnail.jpg
-image_alt: "暗い青の背景に本と疑問符を描いた独自の概念図。実際の手稿の外観や文字を再現したものではない。"
+image: /assets/blog/voynich-manuscript/manuscript-binding-cover.webp
+image_alt: "ヴォイニッチ手稿を閉じた状態で、綴じられたページの縁を撮影した所蔵館の画像。"
 show_cover: false
 ---
 
@@ -37,7 +40,7 @@ show_cover: false
 
 画像：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Voynich_manuscript_cosmological_example_86v_crop.jpg)、Public domain。配信元で切り抜かれた部分図です。
 
-二つの画像の所蔵元：Beinecke Rare Book and Manuscript Library, Yale University。掲載時は縮小・JPEG再圧縮のみで、文字や絵の描き足しはしていません。
+手稿の所蔵元：Beinecke Rare Book and Manuscript Library, Yale University。本文の二つの画像は縮小・JPEG再圧縮のみ。表紙は[閉じた手稿の小口を写した同館の画像](https://commons.wikimedia.org/wiki/File:Voynich_manuscript_(head).jpg)（Wikimedia CommonsではPublic domainと表示）を縮小してWebPに変換したものです。文字や絵の描き足しはありません。
 
 円形図が連なるページもあります。所蔵館は天文・占星術、入浴、薬草などに関わるように見える挿絵を紹介していますが、**絵の見た目は、確定した訳文の代わりにはなりません。**
 

@@ -2,15 +2,15 @@
 title: 砂漠の小さな水場に固有の魚？ デビルズホールのパプフィッシュ
 description: 米国ネバダ州のデビルズホールには、そこだけを自然の生息地とする「デビルズホール・パプフィッシュ」がいます。
 date: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-13'
 status: published
 category: 動物
 topic: 砂漠の小さな水場に固有の魚？ デビルズホールのパプフィッシュ
 tags: []
-image: /assets/blog/devils-hole-pupfish/thumbnail.webp
-image_alt: 青みの小魚と岩場（AI生成の参考イラスト）
-show_cover: false
-conditions: 画像は独自の模式図またはAI生成の参考画です。
+image: /assets/blog/devils-hole-pupfish/cover-usfws-v2.webp
+image_alt: デビルズホール・パプフィッシュの実物写真（Sam Stukel／USFWS）
+show_cover: true
+conditions: 表紙はUSFWSが本種として公開したパブリックドメインの写真。本文のイラストは生息環境を理解する参考画で、現地の地形を再現したものではありません。
 youtube: UoJskQo8h4M
 youtube_title: '砂漠の魚 #漫画 #雑学 #デビルズホール'
 youtube_format: short
@@ -31,6 +31,8 @@ sources:
 ---
 **米国ネバダ州のデビルズホールには、そこだけを自然の生息地とする「デビルズホール・パプフィッシュ」がいます。** 砂漠の砂の中を泳ぐのではなく、水で満たされた洞窟で暮らす小さな魚です。
 
+写真：Sam Stukel／USFWS。表紙は[米国魚類野生生物局の本種の写真](https://www.fws.gov/media/devils-hole-pupfish)（Public Domain）を縮小・再圧縮したものです。
+
 ![乾いた岩場の狭く深い裂け目の奥に水が見える参考イラスト](/assets/blog/devils-hole-pupfish/body-01.webp)
 
 AI生成の参考イラスト。実際のデビルズホールの地形を正確に再現したものではありません。
@@ -43,9 +45,9 @@ AI生成の参考イラスト。実際のデビルズホールの地形を正確
 
 水場は深く続いていますが、食事や繁殖を支えるのは、水面近くの浅い岩棚です。[米国魚類野生生物局](https://www.fws.gov/species/devils-hole-pupfish-cyprinodon-diabolis)は、面積約20平方メートルの棚で、藻類や小さな無脊椎動物などを食べると説明しています。
 
-![岩の裂け目内の水面近くの浅い岩棚と小魚](/assets/blog/devils-hole-pupfish/body-02.webp)
+![透明な水の下に浅い岩棚が広がり、奥へ水が深くなる参考イラスト](/assets/blog/devils-hole-pupfish/body-shelf-v2.webp)
 
-AI生成の参考・概念イラスト。浅い棚の概念画。実地形、個体数、魚の種形態の正確な記録ではない。
+AI生成の参考イラスト。水面近くの岩棚をイメージするための絵で、デビルズホールの実地形や水深、藻類の量を再現したものではありません。
 
 深い水がたくさんあれば、それだけで暮らせるわけではありません。浅い場所の餌や産卵環境が失われることも、魚にとって大きな問題になります。
 

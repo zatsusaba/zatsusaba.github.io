@@ -2,33 +2,36 @@
 title: 洞窟の星空は何の光？ ツチボタルの幼虫の光と捕獲糸
 description: ニュージーランドの洞窟で星空のように見える光は、ツチボタルの幼虫が出す青緑色の光です。
 date: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-13'
 status: published
 category: 動物
 topic: 洞窟の星空は何の光？ ツチボタルの幼虫の光と捕獲糸
 tags: []
 image: /assets/blog/glowworm-cave-lights/thumbnail.webp
-image_alt: 暗い洞窟の岩肌に付いた幼虫4匹の尾端が青緑に光り、細い捕獲糸は暗く垂れる参考イラスト（AI生成の参考イラスト）
+image_alt: 暗い洞窟の岩肌に付いた幼虫4匹の尾端が青緑に光り、細い捕獲糸は暗く垂れるAI生成イラスト
 show_cover: false
-conditions: 画像はAI生成の参考・模式イラストです。動画の文字起こしには糸も光るように読める表現がありますが、光源は幼虫の尾端で、粘着糸自体は発光しません。動画を見る際も、光源と捕獲糸を区別してください。映像・音声の全編照合は行っていません。
+conditions: 画像はAI生成の参考イラストです。光るのは幼虫の尾端にある発光器で、捕獲糸は光を出しません。
 youtube: J8LTedGdIMs
 youtube_title: '洞窟の星空の謎 #漫画 #切り抜き #ツチボタル'
 youtube_format: short
 sources:
 - title: Te Ara Encyclopedia of New Zealand「New Zealand’s glow-worms」
   url: https://teara.govt.nz/en/glow-worms/page-1
-  checked: '2026-11-10'
+  checked: '2026-11-13'
 - title: Te Ara Encyclopedia of New Zealand「Life cycle, food and predators」
   url: https://teara.govt.nz/en/glow-worms/page-2
-  checked: '2026-11-10'
+  checked: '2026-11-13'
+- title: PLOS ONE「Characterization of the Fishing Lines in Titiwai」
+  url: https://doi.org/10.1371/journal.pone.0162687
+  checked: '2026-11-13'
 ---
 **ニュージーランドの洞窟で星空のように見える光は、ツチボタルの幼虫が出す青緑色の光です。** 光は飾りではなく、餌になる小さな虫を引き寄せる働きがあります。
 
-**光源は幼虫の尾端で、垂れ下がる粘着糸自体は発光しません。** 幼虫の光で虫を引き寄せ、糸で捕らえる仕組みです。
+**光るのは幼虫の尾端で、垂れ下がる糸は光を出しません。**
 
 ![水面から見た暗い洞窟の天井に青緑の発光点と細い糸を描く](/assets/blog/glowworm-cave-lights/body-01.webp)
 
-AI生成の概念イラスト。光源は幼虫尾端で、粘着糸そのものは発光しません。実際の洞窟の観測画像や幼虫の精密図ではありません。
+洞窟を水面近くから見上げた場面。青緑の点が幼虫の光です（AI生成イラスト）。
 
 ## 名前に「ホタル」とあっても、別の仲間
 
@@ -42,12 +45,12 @@ AI生成の概念イラスト。光源は幼虫尾端で、粘着糸そのもの
 
 ![洞窟天井の幼虫尾端の小さな光と暗い垂れ糸](/assets/blog/glowworm-cave-lights/body-02.webp)
 
-AI生成の参考・概念イラスト。幼虫の体形と糸の配置は概略。光源は尾端の発光器で、粘着糸は発光しない。
+幼虫と糸の位置関係を示す参考イラスト（AI生成）。
 
-[Te Araの捕食の解説](https://teara.govt.nz/en/glow-worms/page-2)によると、幼虫は獲物がかかると糸を口で引き上げ、捕らえた虫を食べます。光で近づけ、糸で捕らえるという組み合わせです。
+[Te Araの捕食の解説](https://teara.govt.nz/en/glow-worms/page-2)によると、幼虫は獲物がかかると糸を口で引き上げて食べます。小さな虫が糸にかかっても、その場まで取りに行くのではなく、天井から糸ごと手繰り寄せるわけです。
 
 ## 洞窟では、長い糸を垂らせる
 
-糸の長さは、幼虫の大きさや住む場所によって変わります。風があると糸が絡まりやすいため、森では短く、空気の動きが少ない洞窟では長い糸を垂らせます。
+糸の長さは、幼虫の大きさや住む場所によって変わります。[捕獲糸を調べた研究](https://doi.org/10.1371/journal.pone.0162687)によると、風の当たる森などでは短く、空気の動きが少なく湿った洞窟などでは長くなる傾向があります。風で糸が絡まりやすいかどうかが、暮らし方にも関わっているのです。
 
-天井の光の下には粘る糸があり、獲物がかかると幼虫はその糸を口で引き上げます。
+星空のような光より、目立たない糸のほうが住む場所の違いをよく伝えてくれるのが面白いところです。洞窟の写真を見るときは、光の点だけでなく、その下に垂れているものにも目を向けたくなります。

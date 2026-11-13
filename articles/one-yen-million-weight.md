@@ -3,30 +3,30 @@ status: published
 title: "100万円を1円玉だけにすると何トン？ 硬貨の枚数と重さ"
 description: "1円玉100万枚は公称値で約1トン。同じ100万円を10円玉・100円玉にした場合と比べ、重さを計算します。"
 date: 2026-11-12
-updated: 2026-11-12
+updated: 2026-11-13
 category: お金
 topic: 硬貨の額面と枚数から求める総質量
 tags: [1円玉, 硬貨, 重さ]
 image: /assets/blog/one-yen-million/thumbnail.jpg
 image_alt: "額面や枚数を表さない抽象的な円盤の山を描いたAI生成イラスト。実物の硬貨や100万枚の再現ではありません。"
 show_cover: false
-conditions: "計算は現在発行されている通常貨幣の公称質量に基づき、各額面だけで100万円を作る仮定です。実物を集めて量った値ではありません。サムネはAI生成の模式イラスト、本文図は公称値から制作した模式図です。"
+conditions: "計算は現在発行されている通常貨幣の公称質量に基づき、各額面だけで100万円を作る仮定です。実物を集めて量った値ではありません。画像はAI生成の参考イラストと、公称値から制作した比較図です。"
 youtube: 67y-3qDitUI
 youtube_title: "1円玉で100万円！？ #漫画 #雑学 #お金"
 youtube_format: short
 sources:
   - title: "財務省『通常貨幣一覧』"
     url: https://www.mof.go.jp/policy/currency/coin/general_coin/list.htm
-    checked: 2026-11-12
+    checked: 2026-11-13
   - title: "財務省『第155次製造貨幣大試験について（参考資料）』"
     url: https://www.mof.go.jp/policy/currency/coin/test/20261009a.html
-    checked: 2026-11-12
+    checked: 2026-11-13
 ---
 **100万円を全部1円玉にすると、100万枚。1枚1.00gという公称値で計算すれば、合計は1,000,000g、つまり1,000kg＝1トンです。** たった1円分を手に取ったときの軽さと、100万枚を数字で積み上げたときの重さとの落差が面白いところです。
 
-![1円玉を公称値1gとして、10万枚は100kg、100万枚は1,000kgと示す模式図。実際の硬貨の山や容積は表していません。](/assets/blog/one-yen-million/body-01.png)
+![小銭入れから出した硬貨を卓上に並べる場面の参考イラスト](/assets/blog/one-yen-million/body-counting-v2.webp)
 
-1円玉の公称質量から計算した模式図。容器の重さや実物のばらつきは含みません。
+AI生成の参考イラスト。少量の小銭を扱う生活場面で、実物の1円玉の図柄や、100万円分の枚数・容積を再現したものではありません。
 
 ## 100kgから1トンへ、枚数を追ってみる
 

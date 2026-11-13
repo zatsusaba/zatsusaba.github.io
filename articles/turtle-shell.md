@@ -3,10 +3,11 @@ status: published
 title: カメは甲羅を脱げる？背骨や肋骨とつながる体のしくみ
 description: カメの甲羅は取り外せる持ち物ではなく、体の骨格の一部です。表面の甲板と中の骨、柔らかい甲羅を持つ仲間の違いを紹介します。
 date: 2026-11-09
-updated: 2026-11-09
+updated: '2026-11-14'
 category: 動物
-image: /assets/covers/turtle-shell.png
-image_alt: 動物・亀の甲羅。右側に題材の参考イラスト。
+image: /assets/blog/turtle-swimming-cover.webp
+image_alt: 池の中を泳ぎ、背中とお腹の甲羅が見えるカメの参考イラスト（AI生成）
+show_cover: false
 topic: カメの甲羅の構造
 tags: [カメ, 甲羅, 骨格]
 youtube: JKeyl8bUQKk
@@ -39,7 +40,7 @@ sources:
 
 よく見かける硬い甲羅には、骨の外側を覆う「甲板」があります。甲板の主な材料はケラチンで、人の爪や髪にも使われているたんぱく質です。
 
-ここで区別したいのは、**表面の甲板と、その下にある骨**。見えている模様だけが甲羅のすべてではありません。博物館の標本写真でも、表面の甲板と下の骨を見比べられます。
+ここで区別したいのは、**表面の甲板と、その下にある骨**。見えている模様だけが甲羅のすべてではありません。[アメリカ自然史博物館の標本写真](https://www.amnh.org/research/science-conservation/projects/case-studies/collections-core-turtle-shells)でも、表面の甲板と下の骨を見比べられます。
 
 私が面白いと思うのは、見えている表面と、体を支える骨が別の層だという点です。「甲羅は骨」で話を終えるより、爪にも使われる材料がその外側を覆っている、と考えるほうが姿を想像しやすくなります。
 

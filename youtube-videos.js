@@ -1,5 +1,32 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "pKL1sxwLuk4",
+    "title": "ガガーリンの言葉 #雑学 #面白い#宇宙",
+    "publishedAt": "2026-11-13T06:00:26Z",
+    "date": "2026-11-13",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "宇宙から地球を見たガガーリンの言葉。\n\n🔻続きは本編で！\nhttps://youtu.be/7Es9yqVocnE\n\n#雑学 #面白い #宇宙",
+    "durationSeconds": 17.0
+  },
+  {
+    "id": "nUc7DoHTY7M",
+    "title": "浮かぶ石 #雑学 #面白い #軽石",
+    "publishedAt": "2026-11-13T03:00:21Z",
+    "date": "2026-11-13",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "水に入れた石が浮くことがあります。軽石には火山のガスの泡が残した小さな空隙が多く、気体も含めた全体の密度が水より小さければ浮きます。ただし、すべての軽石が浮くわけではなく、水を含んで沈む場合もあります。\n\n参考：米国国立公園局 NPS「Pyroclasts and Pyroclastic Rocks」\nhttps://www.nps.gov/subjects/volcanoes/pyroclasts.htm\n\n#雑学 #面白い #軽石",
+    "durationSeconds": 13.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "fqqZmlGux4A",
     "title": "キリギリスの謎 #雑学 #面白い #キリギリス",
     "publishedAt": "2026-11-12T22:00:30Z",

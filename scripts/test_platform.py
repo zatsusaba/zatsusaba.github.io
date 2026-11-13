@@ -67,7 +67,7 @@ assert (b.OUT/"comic-media/episode/panel4.png").is_file()
 assert "詳しく読む" in read("today/2021-01-01/index.html")
 assert "/today/2020-12-31/" not in read("sitemap.xml")
 assert "/blog/subject/" in read("sitemap.xml") and "/today/2021-01-01/" in read("sitemap.xml")
-# Related videos preserve the primary embed and link every daily-card surface.
+# Related videos precede the final primary link; every daily-card surface stays linked.
 from datetime import datetime
 related_ids=["related0001","related0002"]
 today=datetime.now(daily.JST).date().isoformat()
@@ -80,9 +80,12 @@ src["youtube_related"]=related_ids
 article(src)
 b.build()
 html=read("blog/subject/index.html")
-assert html.count('<iframe')==1
+assert '<iframe' not in html
+assert 'youtube-nocookie.com/embed/' not in html
+assert html.index('<h2>関連動画</h2>') < html.index('<h2>動画はこちら</h2>')
 primary_section=primary_html.split('<section><h2>動画はこちら</h2>',1)[1].split('</section>',1)[0]
-assert '<section><h2>動画はこちら</h2>'+primary_section+'</section>' in html
+assert primary_section=='<p><a href="https://www.youtube.com/watch?v='+vid+'">テスト動画</a></p>'
+assert '<section><h2>動画はこちら</h2>'+primary_section+'</section></div>' in html
 assert '正式 &lt;追加&gt; &amp; 動画</a>' in html
 for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","index.html"):
     assert '詳しく読む：独立記事の検証' in read(target),target

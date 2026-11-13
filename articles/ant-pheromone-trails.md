@@ -24,6 +24,9 @@ sources:
   - title: 'Czaczkes et al. (2013)「Ant foraging on complex trails: route learning and the role of trail pheromones in Lasius niger」pp.188–197、Introduction・Materials and methods・Results・Discussion'
     url: https://www.socialinsect-research.com/resources/Publications/Czaczkesetal.2013.pdf
     checked: '2026-11-13'
+  - title: 'Czaczkes et al. (2016)「The Effect of Trail Pheromone and Path Confinement on Learning of Complex Routes in the Ant Lasius niger」Methods・Results・Discussion'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4784821/
+    checked: '2026-11-13'
 ---
 
 **アリが行列をつくる理由のひとつは、仲間が地面などに残したフェロモンを道しるべにするからです。** 餌を見つけた働きアリの通り道が、ほかの働きアリにも使われるようになります。ただし、すべての種類が同じ方法で移動するわけではありません。[サセックス大学の解説](https://www.sussex.ac.uk/lasi/research/organisation)
@@ -42,9 +45,11 @@ sources:
 
 においの道が便利でも、それだけが頼りとは限りません。Lasius nigerという種類の働きアリでは、**自分が通った経路の記憶と、仲間が残したフェロモンの両方**が使われます。
 
-分かれ道が二つある実験では、「左、左」と同じ方向へ曲がるより、「左、右」と曲がる経路のほうが間違いが増えました。ところが、フェロモンがあると難しい経路でも間違いが減ります。さらに、道しるべを使って練習したアリは、後で道しるべを取り除かれても、最初から使えなかったアリより正しく進めました。**道しるべは、その場の案内だけでなく、道を覚える助けにもなった**のです。[Czaczkesらの研究](https://www.socialinsect-research.com/resources/Publications/Czaczkesetal.2013.pdf)
+2013年の実験では、二つの分かれ道を「左、左」と曲がるより、「左、右」と曲がる経路で間違いが増えました。フェロモンがあると間違いは減り、取り除いた後にも、練習中に道しるべを使えたアリのほうが正しく進む結果が報告されました。[2013年の研究](https://www.socialinsect-research.com/resources/Publications/Czaczkesetal.2013.pdf)
 
-この結果は、限られた種類と実験条件で確かめられたものです。「どのアリも、においがあれば迷わない」とは言えません。それでも、行列の一匹一匹が、ただ機械的に同じ信号へ反応しているだけではないと分かります。[研究の実験条件と考察](https://www.socialinsect-research.com/resources/Publications/Czaczkesetal.2013.pdf)
+ただし、話はそこで終わりません。同じ筆頭著者らによる2016年の追試では、以前と同じ開放型の迷路条件でも、**フェロモンを取り除いた後に残る優位性は再現されませんでした。** 道しるべがある間は正確さが増しましたが、「道を覚える力も高める」とまでは確かめられなかったのです。[2016年の研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC4784821/)
+
+結果が食い違った理由は明らかになっていません。「その場で道案内になること」と「後に残る記憶をよくすること」は、分けて考える必要があります。これは限られた種類と迷路での研究で、すべてのアリに当てはまる結論でもありません。においの道が役立つといっても、どの働きまで確かめられたのかで、見えてくる話が変わるのですね。
 
 ## 行列の行き先は、甘いものとは限らない
 

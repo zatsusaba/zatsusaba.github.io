@@ -5,7 +5,7 @@ category: 人体
 topic: 指を動かす筋肉はどこにある？ 前腕から腱で力を伝える仕組み
 tags:
 - 人体
-conditions: 画像は模式図またはAI生成の参考イラストです。実物写真・実験記録ではありません。本文に記した成立条件と例外を併せてご確認ください。
+conditions: 画像はAI生成の参考イラストです。実物写真・実験記録ではありません。本文に記した成立条件と例外を併せてご確認ください。
 youtube: VauFYydFKBQ
 youtube_title: '指の不思議 #雑学 #面白い #指'
 youtube_format: short
@@ -18,7 +18,7 @@ sources:
   url: https://openstax.org/books/anatomy-and-physiology/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs
   checked: '2026-11-10'
 date: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-14'
 status: published
 image: /assets/blog/finger-muscles-tendons/thumbnail.webp
 image_alt: キーボードに軽く置かれた手と前腕を描いたAI生成イラスト
@@ -34,9 +34,9 @@ show_cover: false
 
 イメージとしては、離れた場所で生まれた力を、長いひもで伝えるような仕組みです。腱そのものが筋肉の代わりに縮む、という意味ではありません。
 
-![前腕の筋肉から腱を介して指の骨へ力が伝わる流れと、手の中の筋肉も関わることを示した独自の模式図](/assets/blog/finger-muscles-tendons/body-01.webp)
+![前腕を伸ばし、指を曲げてマグカップの取っ手をつかむ場面](/assets/blog/finger-muscles-tendons/mug-grip.webp)
 
-力の伝わり方を整理した模式図。実際の筋肉・腱の形や位置、数を再現した解剖図ではありません。
+マグカップに手を伸ばす場面の参考イラスト（AI生成）。筋肉や腱の位置を示す解剖図ではありません。
 
 ## 手の中にも、指を動かす筋肉がある
 
@@ -52,4 +52,4 @@ show_cover: false
 
 指を曲げるときは、筋肉、腱、骨、関節などが連動します。目に見える動きが指先にあっても、力を生む場所まで同じとは限らないのです。
 
-図をたどるときは、「力を生む筋肉」「力を伝える腱」「動く指の骨」を分けてみると整理できます。指先の動きだけでは見えない役割分担が、前腕から手へ続いています。
+面白いのは、マグカップの取っ手に指をかけるだけでも、動く指と力を生む場所が離れていることです。指先の器用さを、腕から続く働きとして見ると、いつもの動きも少し違って見えます。

@@ -3,7 +3,7 @@ status: published
 title: 蝶は足で味を感じる？ 食べ物と卵を産む葉を見分けるしくみ
 description: 蝶の足には、触れたものの成分を感じ取る感覚器があります。食べ物だけでなく、幼虫が食べる葉を選ぶ場面でも活躍。ナミアゲハの研究から、口吻の味覚や雌雄の違いまで紹介します。
 date: '2026-11-11'
-updated: '2026-11-11'
+updated: '2026-11-13'
 category: 動物
 topic: 蝶の足の接触化学感覚と産卵植物の選択
 tags: [蝶, 味覚, 昆虫, ナミアゲハ]
@@ -15,16 +15,19 @@ youtube: OVnFWxq5LkY
 youtube_title: 'ちょうちょの秘密 #漫画 #ai漫画 #雑学'
 youtube_format: short
 sources:
-  - title: 'Carleton University, Department of Biology「Do butterflies really taste through their feet?」Yack・Cappuccino・Bruggink・Dawson各氏の解説（JST確認）'
+  - title: 'Carleton University, Department of Biology「Do butterflies really taste through their feet?」Yack・Cappuccino・Bruggink・Dawson各氏の解説'
     url: https://carleton.ca/biology/description/do-butterflies-really-taste-through-their-feet/
     checked: '2026-11-11'
-  - title: 'Ryuda et al. (2013)「Gustatory Sensing Mechanism Coding for Multiple Oviposition Stimulants in the Swallowtail Butterfly, Papilio Xuthus」Abstract・Introduction・Resultsの感覚器分類およびFigure 1（JST確認）'
+  - title: 'Ryuda et al. (2013)「Gustatory Sensing Mechanism Coding for Multiple Oviposition Stimulants in the Swallowtail Butterfly, Papilio Xuthus」Abstract・Introduction・Resultsの感覚器分類およびFigure 1'
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6704861/
     checked: '2026-11-11'
-  - title: 'American Museum of Natural History「Butterfly Anatomy」Amazing Senses（JST確認）'
+  - title: '九州大学研究成果データベース：Ryuda et al. (2013) 原著抄録'
+    url: https://kyushu-u.elsevierpure.com/en/publications/gustatory-sensing-mechanism-coding-for-multiple-oviposition-stimu/
+    checked: '2026-11-13'
+  - title: 'American Museum of Natural History「Butterfly Anatomy」Amazing Senses'
     url: https://www.amnh.org/exhibitions/butterflies/anatomy
     checked: '2026-11-11'
-  - title: 'Florida Museum of Natural History「Butterfly Rainforest Moment, How do they taste?」Transcript（JST確認）'
+  - title: 'Florida Museum of Natural History「Butterfly Rainforest Moment, How do they taste?」Transcript'
     url: https://www.floridamuseum.ufl.edu/exhibits/blog/butterfly-moment-how-do-they-taste/
     checked: '2026-11-11'
 ---
@@ -43,21 +46,21 @@ sources:
 
 足の味覚を説明する模式図。感覚器の形・数・大きさを再現したものではありません。
 
-ナミアゲハの研究では、前脚の先の「ふ節」にある、毛のような小さな感覚器が調べられています。研究者はそこへ成分を含む液を触れさせ、神経の電気的な反応を測定しました。「味見していそう」という見た目だけでなく、成分への反応を実際に確かめているのです。[原著論文のResults・Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC6704861/)
+ナミアゲハの研究では、前脚の先の「ふ節」にある、毛のような小さな感覚器が調べられています。研究者は、産卵を促す成分に感覚器の神経細胞が示す電気的な反応を調べました。「味見していそう」という見た目だけでなく、成分への反応を実際に確かめているのです。[原著論文の抄録（九州大学）](https://kyushu-u.elsevierpure.com/en/publications/gustatory-sensing-mechanism-coding-for-multiple-oviposition-stimu/)
 
 ## 自分のごはんと、子どものごはん
 
 蝶の足の味覚は、食べ物探しにも関わります。カールトン大学の解説では、果物を好む熱帯の蝶が、発酵した果物に溶けた糖を足の感覚器で検出する例を紹介しています。一方、雌が葉を足でたたくように調べるときは、自分がその葉を食べるのではなく、幼虫の食べ物になる植物を探している場合があります。[大学の解説](https://carleton.ca/biology/description/do-butterflies-really-taste-through-their-feet/)
 
-![成虫の液体の食事と幼虫の葉の食事を上下に分け、産卵場所を雌が選ぶ関係を示す独自の説明図](/assets/blog/butterfly-taste-feet/body-02.svg)
+![花にとまり、細長い口吻を花の中央へ伸ばすアゲハの仲間の参考イラスト](/assets/blog/butterfly-taste-feet/body-feeding-v2.webp)
 
-成虫の食事と幼虫の食事を分けて考えるための説明図。食べるものは蝶の種類によって異なります。
+AI生成の参考イラスト。成虫が花で食事する場面を描いています。特定種の標本図や研究の再現ではなく、食べるものは蝶の種類によって異なります。
 
-たとえばナミアゲハは、ミカン科の限られた植物を利用します。雌は前脚で葉に触れ、複数の成分の組み合わせを手がかりにします。単に「甘い葉ならよい」という判定ではありません。2013年の研究では、葉の成分に応答する神経細胞と、成分を組み合わせたときの産卵行動との関係が調べられました。[原著論文のAbstract・Introduction](https://pmc.ncbi.nlm.nih.gov/articles/PMC6704861/)
+たとえばナミアゲハは、ミカン科の限られた植物を利用します。雌は前脚で葉に触れ、複数の成分の組み合わせを手がかりにします。単に「甘い葉ならよい」という判定ではありません。2013年の研究では、葉の成分に応答する神経細胞と、成分を組み合わせたときの産卵行動との関係が調べられました。[原著論文の抄録（九州大学）](https://kyushu-u.elsevierpure.com/en/publications/gustatory-sensing-mechanism-coding-for-multiple-oviposition-stimu/)
 
 ## オスとメスで、まったく同じ？
 
-同じナミアゲハでも差があります。この研究では、産卵を促す成分によく反応する型の感覚器が、前脚では雌に多く見られました。一方、糖などに反応する別の型は雄にも雌にもあります。**「雌だけが足で味を感じる」わけではない**のです。この結果を、すべての蝶の感覚器の数や配置にそのまま当てはめることはできません。[原著論文のAbstract・Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC6704861/)
+同じナミアゲハでも差があります。この研究では、産卵を促す成分によく反応する型の感覚器が、前脚では雌に多く見られました。一方、糖などに反応する別の型は雄にも雌にもあります。**「雌だけが足で味を感じる」わけではない**のです。この結果を、すべての蝶の感覚器の数や配置にそのまま当てはめることはできません。[原著論文の抄録（九州大学）](https://kyushu-u.elsevierpure.com/en/publications/gustatory-sensing-mechanism-coding-for-multiple-oviposition-stimu/)
 
 ## 蜜を吸う口にも、味覚はある
 

@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "u7DBFpFgeZE",
+    "title": "冬は人恋しい？ #雑学 #恋愛 #心理学",
+    "publishedAt": "2026-11-13T22:00:13Z",
+    "date": "2026-11-14",
+    "format": "Shorts",
+    "genres": [
+      "人間の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "寒くなると、なぜか人恋しくなる。\n実は、人のそばにいることと体温調節には、意外な関係があると考えられています。\n\n人間の「寒さ」と「人とのつながり」を結びつける、社会的体温調節という心理学の考え方を紹介！\n\n※寒さが必ず人恋しさを強めるわけではなく、仕組みにはまだ研究途上の部分があります。\n\n【参考文献】\nA theory of social thermoregulation in human primates\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4404741/\n\nWarm It Up with Love: The Effect of Physical Coldness on Liking of Romance Movies\nhttps://doi.org/10.1086/662613\n\n#雑学 #面白い #心理学",
+    "durationSeconds": 18.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "gi0XItnFlIY",
     "title": "めっちゃ面白い雑学。人間は何度の暑さまで耐えられる？",
     "publishedAt": "2026-11-13T10:53:59Z",

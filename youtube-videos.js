@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "fqqZmlGux4A",
+    "title": "キリギリスの謎 #雑学 #面白い #キリギリス",
+    "publishedAt": "2026-11-12T22:00:30Z",
+    "date": "2026-11-13",
+    "format": "Shorts",
+    "genres": [
+      "自然の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "キリギリスの「耳」にあたる鼓膜器官は、頭ではなく前脚のすね付近にあります。音を感じる場所が人間と全然違うんです。\n\n参考：森林総合研究所「ノコギリカメムシの“耳”と思われていたのは“共生器官”だった」（キリギリスの前脚の鼓膜器官の解説）\nhttps://www.ffpri.go.jp/press/2025/20251017/index.html\n\n#雑学 #面白い #キリギリス",
+    "durationSeconds": 9.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "7Es9yqVocnE",
     "title": "ゾッとするほど面白い雑学「宇宙に生身で出たら何秒もつ？」",
     "publishedAt": "2026-11-12T13:12:51Z",

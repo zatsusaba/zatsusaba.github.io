@@ -2,7 +2,7 @@
 title: 魚の年齢はどう調べる？ 耳石に残る成長の記録
 description: 魚の年齢は、頭の中にある「耳石」の成長層を調べて推定できます。
 date: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-13'
 status: published
 category: 動物
 topic: fish age otoliths
@@ -10,26 +10,26 @@ tags:
 - 魚
 - 耳石
 - 年齢
-image: /assets/blog/fish-age-otoliths/thumbnail.webp
-image_alt: 魚と数字のない時計を並べた横長イラスト（AI生成の参考イラスト）
+image: /assets/blog/fish-age-otoliths/cover-v2.webp
+image_alt: 海を泳ぐ銀色の硬骨魚のAI参考イラスト。特定の個体や年齢を示すものではない
 show_cover: false
-conditions: 画像はAI生成の参考画です。サムネイルの時計は年齢という概念を示し、耳石そのものではありません。
+conditions: 魚のイラストはAI生成の参考画で、魚の大きさから年齢を示すものではありません。耳石写真はNOAA Fisheriesが公開する実物写真で、イラストとは区別しています。
 youtube: _R9D4sxklfA
 youtube_title: '魚の年齢、どうやって分かる？ #漫画 #雑学 #魚'
 youtube_format: short
 sources:
 - title: NOAA Fisheries, Age and Growth
   url: https://www.fisheries.noaa.gov/national/science-data/age-and-growth
-  checked: '2026-11-10'
+  checked: '2026-11-13'
 - title: NOAA Fisheries, Otolith Growth Validation And Corroboration
   url: https://www.fisheries.noaa.gov/alaska/science-data/otolith-growth-validation-and-corroboration
-  checked: '2026-11-10'
+  checked: '2026-11-13'
 ---
 **魚の年齢は、頭の中にある「耳石」の成長層を調べて推定できます。** 木の年輪に似ていますが、見える線を無条件に「1本で1年」と数えるわけではありません。
 
-![魚類研究を連想させる顕微鏡と白紙の観察ノートのイラスト](/assets/blog/fish-age-otoliths/body-01.webp)
+![浅い海を泳ぐ小魚のAI参考イラスト。特定の魚種・個体の年齢を示すものではない](/assets/blog/fish-age-otoliths/body-habitat-v2.webp)
 
-AI生成の参考イラスト。研究室の概念画であり、耳石・成長層・年齢推定結果を示すものではありません。
+魚は外から眺めただけでは、何年生きてきたのか分かりません。イラスト中の大小は年齢比較を表していません。
 
 ## 耳石に残る層を読む
 
@@ -41,8 +41,10 @@ AI生成の参考イラスト。研究室の概念画であり、耳石・成長
 
 層の形成は水温などの環境にも影響されます。また、耳石のないサメやエイにはこの方法をそのまま使えません。NOAAは魚種ごとに適切な構造と読み方を選び、既知の年齢の魚や標識して再捕獲した魚などで推定法を[検証する方法](https://www.fisheries.noaa.gov/alaska/science-data/otolith-growth-validation-and-corroboration)も紹介しています。
 
-![魚類研究室で無地の試料容器を見比べる場面のイラスト](/assets/blog/fish-age-otoliths/body-02.webp)
+![NOAA Fisheriesによる2歳のPacific Sand Lanceの耳石写真。不透明層と半透明層が英語で示され、黒点は年輪の位置を示す](/assets/blog/fish-age-otoliths/noaa-otolith.jpg)
 
-AI生成の参考イラスト。研究場面の概念画。実在の試料・耳石・年齢推定結果を描いたものではありません。
+こちらは参考イラストではなく、[NOAA Fisheriesが公開している実物の耳石写真](https://www.fisheries.noaa.gov/national/science-data/age-and-growth)です。2歳のPacific Sand Lanceの例で、opaque zoneは不透明層、translucent zoneは半透明層。黒点は年輪の位置を示します。写真：NOAA Fisheries。
 
 耳石の断面では、不透明な層と半透明な層の重なりを中心から縁へたどります。年齢を読み取るには、こうした成長層と年数の関係を魚種ごとに確かめる必要があります。
+
+魚の年齢を調べる鍵が、体の大きさではなく、頭の中の小さな構造に残っているのは意外です。ただ線を数えるだけでなく、「その線が何年分なのか」まで確かめる。そこまで含めて読むからこそ、成長の記録として使えるのだと思います。

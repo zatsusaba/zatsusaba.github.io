@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "4-2wXhijGnE",
+    "title": "アルミホイルの謎 #雑学 #面白い #アルミホイル",
+    "publishedAt": "2026-11-13T08:27:55Z",
+    "date": "2026-11-13",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "アルミホイルのピカピカ面とつや消し面。\n実は普通のアルミホイルなら、どちらの面を使ってもOK！\n\n製造時にアルミ箔を2枚重ねて延ばすため、ローラーに接した面がピカピカになります。見た目が違っても材質や機能に違いはありません。\n\n※シリコーン加工などの特殊なアルミホイルは、製品に記載された使用面を確認してください。\n\n出典：東洋アルミエコープロダクツ「アルミホイルQ&A①～アルミホイルに裏表はあるの？」\nhttps://www.toyoalumi-ekco.jp/column/5286/\n\n#雑学 #面白い #アルミホイル",
+    "durationSeconds": 14.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "pKL1sxwLuk4",
     "title": "ガガーリンの言葉 #雑学 #面白い#宇宙",
     "publishedAt": "2026-11-13T06:00:26Z",

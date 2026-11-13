@@ -3,11 +3,11 @@ status: published
 title: "家の中にも国境？ バールレの入り組んだ境界"
 description: "オランダとベルギーの町バールレには、建物を横切る国境があります。飛び地と建物の位置関係を模式図で説明します。"
 date: 2026-11-12
-updated: '2026-11-13'
+updated: '2026-11-14'
 category: 世界
 topic: バールレの飛び地と建物を横切る国境
 tags: [バールレ, 国境, 飛び地, オランダ, ベルギー]
-conditions: "バールレの飛び地と建物を横切る境界という地理だけを説明。法の適用、国籍、税、住所、入国条件は扱わない。図は位置・形・縮尺を再現しない概念図。"
+conditions: "バールレの飛び地と建物を横切る境界という地理だけを説明。法の適用、国籍、税、住民登録や入国条件は扱わない。図は位置・形・縮尺を再現しない概念図。"
 image: /assets/blog/baarle-border-house/cover-v2.webp
 image_alt: "オランダ・ベルギーの建築をイメージした町並みのAI生成イラスト。実在の通りや国境位置を再現したものではない"
 show_cover: false
@@ -21,6 +21,9 @@ sources:
   - title: "Visit Baarle, About Baarle"
     url: https://en.visitbaarle.com/informatie/overbaarle
     checked: 2026-11-12
+  - title: "Visit Baarle, Enclave H7"
+    url: https://en.visitbaarle.com/locaties/enclave-h7-5f85a80764f477263a4b19a9
+    checked: 2026-11-14
 ---
 **はい。オランダとベルギーにまたがる町バールレには、国境が建物を横切る場所があります。** 町全体が一本の国境で二つに分かれているのではありません。小さな領域が互いの側に入り込む「飛び地」の境界が、道や庭だけでなく家にも重なっているのです。[バールレ観光案内](https://en.visitbaarle.com/informatie/overbaarle)
 
@@ -35,6 +38,8 @@ sources:
 ## 境界が家に重なると
 
 バールレの観光案内は、境界が道路、家、庭を横切ると説明しています。市街地では、特別な舗装石や道路面のアルミ板で境界を見えるようにしているそうです。[観光案内](https://en.visitbaarle.com/informatie/overbaarle)
+
+実例は、ベルギーの飛び地H7にあります。[現地の観光案内](https://en.visitbaarle.com/locaties/enclave-h7-5f85a80764f477263a4b19a9)によると、国境が玄関ドアの真ん中を通る一軒があり、同じ家にオランダ側の「19」とベルギー側の「2」、二つの番地が付いています。
 
 ![れんが造りの家の玄関と小さな庭を描いたAI生成イラスト](/assets/blog/baarle-border-house/body-doorway-v2.webp)
 

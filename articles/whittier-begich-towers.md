@@ -3,7 +3,7 @@ status: published
 title: "「一棟の町」は本当？ ウィッティアのベギッチ・タワーズ"
 description: "軍の集合住宅から町の住まいへ。公的資料で、その歩みと「全員が一棟」というイメージを確かめます。"
 date: 2026-11-12
-updated: 2026-11-12
+updated: '2026-11-14'
 category: 世界
 topic: "ウィッティアとベギッチ・タワーズ"
 tags: [アラスカ, 建築, 暮らし]
@@ -11,8 +11,8 @@ conditions: "建物の用途や町の施設配置は資料の時点による。�
 youtube: vuCEBPWDvmE
 youtube_title: "【漫画】みんな同じ #漫画 #雑学 #不思議"
 youtube_format: short
-image: /assets/blog/whittier-begich-towers/cover.png
-image_alt: "自作説明図。山と海に挟まれた町の中で、集合住宅が目立つ様子を描く。実景や正確な地図ではない。"
+image: /assets/blog/whittier-begich-towers/aerial-cover.webp
+image_alt: "山と海に挟まれたウィッティアの町と港を空から撮影した写真。2026年5月16日撮影。"
 show_cover: false
 sources:
   - title: "City of Whittier, 2020 Comprehensive Plan, Housing / Education / Existing Land Use"
@@ -24,6 +24,9 @@ sources:
   - title: "Alaska Office of History and Archaeology, Mid-Twentieth Century Architecture in Alaska (2018), Hodge Building"
     url: "https://dnr.alaska.gov/parks/oha/publications/MID20thCArchitectureinAK3.12.2018.pdf"
     checked: 2026-11-12
+  - title: "表紙写真：Quintin Soloviev「Whittier, Alaska aerial view 2026.jpg」CC BY 4.0"
+    url: https://commons.wikimedia.org/wiki/File:Whittier,_Alaska_aerial_view_2026.jpg
+    checked: 2026-11-14
 ---
 
 **市の2020年計画が描くのは、一棟に全員が住む町ではなく、大きな集合住宅に住まいと仕事の一部が集まる町です。** アラスカ州ウィッティアのベギッチ・タワーズ。その歩みをたどると、印象的な「一棟の町」というイメージにも、少し奥行きが出てきます。
@@ -42,8 +45,10 @@ sources:
 
 一方、同じ市の計画は別の住宅としてウィッティア・マナーやアンカー・アネックスも挙げています。学校はタワーズの**南にある別の建物**です。商業施設もタワーズ内だけでなく、市街地や港近くの区域に分布します。
 
-![市の2020年計画に記された住まい・学校・商業の分かれ方を、日本語のカードで整理した自作図。地図や現在の施設案内ではない。](/assets/blog/whittier-begich-towers/town.png)
+![雪の残る山を背景に、船が並ぶアラスカの港を描いた参考イラスト](/assets/blog/whittier-begich-towers/harbor-scene.webp)
 
-この節とカード図は、2020年計画に記された町の姿を整理したものです。現在の各施設の営業状況や、2026年の入居状況を示す案内ではありません。
+アラスカの港をイメージした参考イラスト（AI生成）。実際のウィッティアの施設や配置を再現したものではありません。
+
+表紙写真：[Quintin Soloviev / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Whittier,_Alaska_aerial_view_2026.jpg)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。2026年5月16日撮影。全体を縮小してWebPに変換し、記事一覧では表示枠に合わせて一部が切り取られます。施設の用途や入居状況は写真だけでは分かりません。
 
 「一つの建物に町がある」という言葉は印象的。でも、**歴史ある大きな集合住宅が、周囲の建物や地区と一緒に町をつくってきた**と捉えると、少し違う景色が見えてきます。

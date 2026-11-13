@@ -3,13 +3,13 @@ status: published
 title: "ゾンビアリは、なぜ葉をかむの？"
 description: "寄生菌に感染した一部のアリが葉をかんで死ぬ現象を、タイの森での観察から読み解きます。"
 date: 2026-11-12
-updated: 2026-11-12
+updated: '2026-11-14'
 category: 動物
 topic: "寄生菌に感染したアリの葉へのかみつきと固定"
 tags: [アリ, 菌類, 生態]
-conditions: "主にタイ南部の森林で観察されたCamponotus leonardiの働きアリとOphiocordyceps unilateralis sensu latoの関係。ほかのアリや寄生菌全般には広げない。イラストは独自の概念図で、実写・種同定図・実測データではない。"
-image: /assets/blog/zombie-ant/cover.png
-image_alt: "葉の下側を見上げるアリを描いた独自の概念イラスト。実写や種同定図ではない"
+conditions: "主にタイ南部の森林で観察されたCamponotus leonardiの働きアリとOphiocordyceps unilateralis sensu latoの関係。ほかのアリや寄生菌全般には広げない。イラストはAI生成の参考画で、実写・種同定図・実測データではない。"
+image: /assets/blog/zombie-ant/understory-cover.webp
+image_alt: "熱帯の森の地面近くで、葉の上を歩くアリを描いた参考イラスト（AI生成）"
 show_cover: false
 youtube: r5dcXBUyg4o
 youtube_title: "本物のゾンビ！？ #漫画 #雑学"
@@ -35,9 +35,9 @@ sources:
 
 研究者が追跡した21匹は、行列ではなく、低い植物の上を単独で不規則に歩いていました。感染はあとから確かめられています。やがて葉の裏側の葉脈をかみ、そのまま固定されて死にます。**どのアリも必ず同じ行動をする、という意味ではありません。**
 
-![タイの研究で観察された、低い植物を歩くアリと葉裏の葉脈をかむアリを簡略化した自作概念図](/assets/blog/zombie-ant/behavior.png)
+![葉の裏側で、葉脈に口元を当てるアリの参考イラスト](/assets/blog/zombie-ant/leaf-underside.webp)
 
-行動を整理した自作図です。実写、種の見分け方、実際の道筋や所要時間を表すものではありません。
+葉裏の葉脈をかむ位置を描いた参考イラスト（AI生成）。観察個体やあごの正確な形の再現ではありません。
 
 ## かみついたままなのは、なぜ？
 

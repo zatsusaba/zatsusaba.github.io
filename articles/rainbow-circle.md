@@ -1,8 +1,8 @@
 ---
 title: 虹は本当は丸い？ 地上では弧に見える理由
-description: 虹は、条件がそろえば円形に見えます。
+description: 虹は、空から見下ろすと円形に見えることがあります。地上で弧だけが見えやすい理由を、太陽と水滴の位置から解説します。
 date: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-14'
 status: published
 category: 自然
 topic: 虹は本当は丸い？ 地上では弧に見える理由
@@ -10,7 +10,7 @@ tags: []
 image: /assets/blog/rainbow-circle/thumbnail.webp
 image_alt: 雨上がりの山並みにかかる虹の弧（AI生成の参考イラスト）
 show_cover: false
-conditions: 画像は独自の模式図またはAI生成の参考画です。
+conditions: 本文1枚目は空から撮影された映像の一コマ、2枚目はAI生成の参考イラストです。
 youtube: PGduBYtC0mA
 youtube_title: '虹の不思議 #漫画 #雑学 #虹'
 youtube_format: short
@@ -21,12 +21,15 @@ sources:
 - title: '英国気象庁Met Office『Rainbows: optical wonders』'
   url: https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows
   checked: '2026-11-10'
+- title: Wikimedia Commons「Circular rainbow.jpg」Steve Kaufman、CC BY-SA 3.0
+  url: https://commons.wikimedia.org/wiki/File:Circular_rainbow.jpg
+  checked: '2026-11-14'
 ---
 **虹は、条件がそろえば円形に見えます。** 普段、地上から見える虹が弧なのは、虹の下側が地面や景色に隠れやすいからです。空に七色の半円が「置かれている」のではなく、太陽、水滴、見る人の位置がそろったときに見える光の現象です。
 
-![高台から見た円形の虹のイメージ画](/assets/blog/rainbow-circle/body-01.webp)
+![空から見下ろした畑の上に、円形の虹の上側と下側の弧が見える実際の映像の一コマ](/assets/blog/rainbow-circle/skydiving-rainbow.webp)
 
-AI生成の参考イラスト。高台から見た円形の虹のイメージ画。虹の出現条件の概念画。太陽と観察者の位置を正確に表す図ではない。 太陽を背にし、反対側の水滴を見る条件が必要です。
+スカイダイビング中の映像の一コマ。左右は画面の外に出ていますが、畑を背景にした下側の弧も見えます。[Steve Kaufman / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Circular_rainbow.jpg)、[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)。元画像の全体を縮小してWebPに変換。切り抜き・描き足しなし。
 
 ## 水滴の中で光の進み方が変わる
 

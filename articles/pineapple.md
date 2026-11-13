@@ -2,7 +2,7 @@
 title: パイナップルは木にならない？「草」に実る果物の正体
 description: パイナップルは高い木ではなく、草の株の中心に実る果物です。林野庁の資料から、育つ姿と花や実ができるまでの目安を紹介します。
 date: 2026-11-06
-updated: 2026-11-09
+updated: '2026-11-14'
 status: published
 category: 食べ物
 image: /assets/covers/pineapple.png
@@ -17,6 +17,10 @@ sources:
   - checked: 2026-11-09
     title: 林野庁 西表森林生態系保全センター「パイナップル」
     url: https://www.rinya.maff.go.jp/kyusyu/iriomote_fc/iriomote_syokubutusi/attach/pdf/syokubutusi_1-176.pdf
+  - checked: 2026-11-14
+    title: キュー王立植物園「Ananas comosus」花と果実の解説
+    url: https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A12322-2/general-information
+show_cover: false
 ---
 **パイナップルは木ではなく、草の仲間である多年草です。実が育つ場所は高い枝ではなく、地面に広がる株の中心です。**
 
@@ -34,7 +38,11 @@ sources:
 
 林野庁の資料によると、硬い剣状の葉が集まった株の中心から花穂が現れ、伸びた花軸の先に花の集まりがつきます。同資料に掲載された写真でも、葉の間から立ち上がる実の姿を確認できます。
 
-つまり、探す場所は高い木の枝ではなく、地面に広がる株の中心です。店頭では切り離された実しか見ないので、育っている姿を知ると印象が変わります。
+![株の中心の花穂に小さな紫色の花が咲くパイナップル](/assets/blog/pineapple/flower-stage.webp)
+
+花が咲く時期の参考イラスト（AI生成）。特定の品種を再現したものではありません。
+
+[キュー王立植物園の解説](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A12322-2/general-information)によると、花は一つではなく、軸に沿っていくつもつきます。花ごとにできる小さな果実が成長しながらくっつき、売り場で見かける一つのパイナップルになります。皮の表面をよく見ると、小さな模様が集まっています。育つ前の花の姿を知ると、あの模様も違って見えます。
 
 ## 実がなるまでの時間にも注目
 

@@ -3,30 +3,29 @@ status: published
 title: "自撮りで顔が違って見えるのはなぜ？ 距離と遠近感のしくみ"
 description: "近くから撮ると手前の部分が大きく写る理由を、遠近感とカメラの位置から説明します。"
 date: 2026-11-12
-updated: 2026-11-12
+updated: 2026-11-13
 category: 科学
 topic: 自撮りの撮影距離と遠近感
 tags: [科学, 写真, 光]
 conditions: "一般的な写真の透視投影を説明します。機種やレンズの歪曲、画像補正でも見え方は変わります。図は同じ大きさの図形を使った定性的な模式図で、顔の実測・再現図ではありません。"
-image: /assets/blog/selfie-perspective/cover.png
-image_alt: "卓上のカメラと積み木を描いた自作イラスト。人物や実際の撮影記録ではない"
+image: /assets/blog/selfie-perspective/cover-v2.webp
+image_alt: "窓辺で自撮りする女性のAI生成の参考イラスト。実際の撮影結果や顔の変化を示す比較資料ではない"
 show_cover: false
 youtube: Y-osBTZl32w
 youtube_title: "自撮りは宇宙人  #漫画 #雑学 #自撮り"
 youtube_format: short
 sources:
-  - title: "Nikon『レンズ - 遠近感（パースペクティブ）』"
-    url: https://nij.nikon.com/learn/phototech/manual/19/02.html
-    checked: 2026-11-12
   - title: "Cambridge in Colour, Understanding Camera Lenses: Influence of Lens Focal Length"
     url: https://cdn.cambridgeincolour.com/tutorials/camera-lenses.htm
-    checked: 2026-11-12
+    checked: 2026-11-13
   - title: "Cambridge in Colour, Using Lens Corrections to Improve Image Quality: Distortion"
     url: https://www.cambridgeincolour.com/tutorials/lens-corrections.htm
-    checked: 2026-11-12
+    checked: 2026-11-13
 ---
 
 **自撮りで手前の部分が大きく見える理由の一つは、カメラが顔に近いことです。** 近くから撮ると、手前にある部分と奥にある部分の距離の差が、写真の中では大きさの差として目立ちます。顔そのものが変わったわけではありません。
+
+![机に置かれたスマートフォンと身近な物を描いたAI生成の参考イラスト。遠近感を測定した実験写真ではない](/assets/blog/selfie-perspective/body-stilllife-v2.webp)
 
 ## 「近いものほど大きい」が顔にも起こる
 
@@ -38,12 +37,10 @@ sources:
 
 ## レンズだけが原因ではない
 
-「広角レンズは顔を変える」と言われることがあります。しかし、[写真技術の解説](https://cdn.cambridgeincolour.com/tutorials/camera-lenses.htm)が区別するように、遠近感を直接決めるのは被写体に対する**カメラの位置**です。広角では同じ大きさに写そうとしてカメラを近づけがちなので、レンズと距離の効果が一緒に変わり、混同しやすいのです。[ニコンの遠近感の解説](https://nij.nikon.com/learn/phototech/manual/19/02.html)も、人物を同じ大きさに写すためにカメラとの距離を変えた比較で、背景の写り方が変わると説明しています。
+「広角レンズは顔を変える」と言われることがあります。しかし、[写真技術の解説](https://cdn.cambridgeincolour.com/tutorials/camera-lenses.htm)が区別するように、遠近感を直接決めるのは被写体に対する**カメラの位置**です。広角では同じ大きさに写そうとしてカメラを近づけがちなので、レンズと距離の効果が一緒に変わり、混同しやすいのです。
 
-![カメラ位置を固定した画角変更と、カメラ位置を移動した遠近感の変化を区別した自作模式図](/assets/blog/selfie-perspective/position.png)
-
-二つの操作を区別するための関係図です。物体の寸法や正確な撮影配置、撮影結果の比較を示すものではありません。
+![公園で少し離れた相手を撮影するAI生成の参考イラスト。自撮りとの実測比較や、特定の写り方の保証ではない](/assets/blog/selfie-perspective/body-portrait-v2.webp)
 
 カメラの位置を固定してズームしても、撮った画像の中央を切り取っても、手前と奥の位置関係は変わりません。一方、カメラを前後へ動かせば、その距離関係が変わります。また、画面の端で直線が曲がるような**レンズ固有の歪曲**は、ここでいう遠近感とは別の現象です。角度を変えれば、どの部分が手前になるかも変わります。
 
-自撮りの写り方が気になったら、レンズ名だけを見るより、まずカメラを置く位置と向きを比べると理由が分かりやすくなります。写真を作るのはレンズだけでなく、カメラをどこに置くかでもあるのです。
+自撮りの写り方が気になったら、レンズ名だけを見るより、まずカメラを置く位置と向きを比べると理由が分かりやすくなります。ここが面白いところで、写真は顔だけでなく「どこから見たか」も写しています。一枚の自撮りを、その人の顔の唯一の正解のように受け取らなくてよいのですね。

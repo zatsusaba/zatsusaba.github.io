@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "cngcUSMtqL0",
+    "title": "洗濯の謎 #雑学 #面白い #洗濯",
+    "publishedAt": "2026-11-14T03:00:31Z",
+    "date": "2026-11-14",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "洗濯したのに「くっさぁ！」。\n洗濯後の衣類を濡れたまま放置すると、残った菌が皮脂などの汚れを栄養に増え、嫌なニオイにつながります。\n洗い終わったら早めに取り出し、しっかり乾かすのが対策です。\n\n参考：花王 My Kao「お洗濯ニオイ対策〈部屋干し編〉」\nhttps://my.kao-kirei.com/kurashi-labo/laundry-cleaning/laundry/006/?utm_source=chatgpt.com\n\n#雑学 #面白い #洗濯",
+    "durationSeconds": 13.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "u7DBFpFgeZE",
     "title": "冬は人恋しい？ #雑学 #恋愛 #心理学",
     "publishedAt": "2026-11-13T22:00:13Z",

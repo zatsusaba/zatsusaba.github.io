@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "LnM3EVreiPY",
+    "title": "汗の謎 #雑学 #面白い #汗",
+    "publishedAt": "2026-11-14T06:00:16Z",
+    "date": "2026-11-14",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "汗がしょっぱい理由です。\n\n🔻本編マンガこちら\n\n「人間は何度の暑さまで耐えられる？」\nhttps://youtu.be/gi0XItnFlIY\n\n#雑学 #面白い #汗",
+    "durationSeconds": 50.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "cngcUSMtqL0",
     "title": "洗濯の謎 #雑学 #面白い #洗濯",
     "publishedAt": "2026-11-14T03:00:31Z",

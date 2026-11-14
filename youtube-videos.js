@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "YiB2eRdDi8w",
+    "title": "冬のエアコンの温度 #雑学 #面白い #エアコン",
+    "publishedAt": "2026-11-14T08:00:11Z",
+    "date": "2026-11-14",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "冬のエアコンは、何度にすればいい？\n実は、節電の目安は「設定温度20℃」ではなく「室温20℃」。\n\n寒いときは我慢せず、体調や部屋の状況に合わせて無理なく調整しましょう。\n\n【参考】\n環境省「ウォームビズとは」\nhttps://ondankataisaku.env.go.jp/decokatsu/warmbiz/about/\n\n#雑学 #面白い #エアコン",
+    "durationSeconds": 12.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "LnM3EVreiPY",
     "title": "汗の謎 #雑学 #面白い #汗",
     "publishedAt": "2026-11-14T06:00:16Z",

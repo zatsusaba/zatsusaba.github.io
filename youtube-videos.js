@@ -1,5 +1,33 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "Quh7WZD8zo4",
+    "title": "毛を剃ると濃くなる？ #雑学 #面白い #ムダ毛",
+    "publishedAt": "2026-11-15T06:00:26Z",
+    "date": "2026-11-15",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "毛を剃ったら、前より濃くなった気がする…！？\n実は、毛を剃っても毛そのものが太くなったり、成長速度が速くなったりするわけではありません。\n細い毛先が切られ、切り口が先端になることで、伸び始めは太く・硬く感じられることがあるんです。\n※年齢やホルモンなどによる毛の変化は別です。\n\n参考：Mayo Clinic「Shaving hair: Does shaved hair grow back thicker?」\nhttps://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/hair-removal/faq-20058427\n\n#雑学 #面白い #ムダ毛",
+    "durationSeconds": 17.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
+    "id": "FzSW1-SJr8g",
+    "title": "出会いはゲーム #雑学 #面白い #恋愛",
+    "publishedAt": "2026-11-15T03:16:45Z",
+    "date": "2026-11-15",
+    "format": "Shorts",
+    "genres": [
+      "話題の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "オンラインゲームで出会い、交際や結婚につながる人もいるんです。\nでもキュウちゃんが求めるのは、屈強な戦士……。\nまさか恋人じゃなくて非常食！？\n\n参考資料：コロプラ×Skyfall「データで見る、ゲームから生まれる新しいつながり──友情、恋愛、そして結婚まで」（2025年8月26日）\nhttps://pinmark.colopl.co.jp/entries/55249774\n\n#雑学 #面白い #恋愛",
+    "durationSeconds": 12.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "DOu_5F1bwfA",
     "title": "GTAのタイトルは #gta #gta6 #雑学",
     "publishedAt": "2026-11-14T12:00:07Z",

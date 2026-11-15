@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "PnO91avFCaA",
+    "title": "海底のポスト #雑学 #面白い #ポスト",
+    "publishedAt": "2026-11-15T08:00:04Z",
+    "date": "2026-11-15",
+    "format": "Shorts",
+    "genres": [
+      "世界の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "海の底に、本物の郵便ポストがある！？\n和歌山県すさみ町の「海中ポスト」では、耐水性の専用はがきを投函できます。\nダイバーが回収したはがきは、陸上の郵便ルートを通して届けられるんです。\n体験ダイビングなら資格がなくても投函可能。参加条件や海況は現地でご確認ください。\n\nキュウちゃんが手紙を送りたい相手とは…？\n\n参考：PR WAKAYAMA「すさみ町にある世界一深い『海中郵便ポスト』とは？」\nhttps://pr-wakayama.jp/press/mailbox/\n\n#雑学 #面白い #ポスト",
+    "durationSeconds": 18.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "Quh7WZD8zo4",
     "title": "毛を剃ると濃くなる？ #雑学 #面白い #ムダ毛",
     "publishedAt": "2026-11-15T06:00:26Z",

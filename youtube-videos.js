@@ -1,5 +1,32 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "s554xOnnayE",
+    "title": "オカリナの謎 #ゼルダの伝説 #時のオカリナ #雑学",
+    "publishedAt": "2026-11-15T12:00:16Z",
+    "date": "2026-11-15",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "ゼルダの伝説、時のオカリナがリメイクされましたね。\n皆さんはもうやりましたか？\n\n本編こちら🔻\nhttps://youtu.be/0e2SQELlvNo\n\n#ゼルダの伝説 #時のオカリナ #雑学",
+    "durationSeconds": 40.0
+  },
+  {
+    "id": "0e2SQELlvNo",
+    "title": "ゼルダの伝説 時のオカリナに出てくるものは存在するのか？【ゲームの雑学】",
+    "publishedAt": "2026-11-15T10:30:13Z",
+    "date": "2026-11-15",
+    "format": "長尺動画",
+    "genres": [
+      "ゲームの雑学"
+    ],
+    "characters": [],
+    "description": "「はたして、ゼルダの伝説に出てくるものは、現実にもあるのでしょうか？」\n岩に刺さった本物の剣から、爆発する木、クジラに飲み込まれた人まで。リンクの格好をしたキュウちゃんと一緒に確かめていこう！\n\nこの動画で分かること\n・イタリアに今もある「岩に刺さった剣」\n・コナン・ドイルもだまされた妖精写真と、旅人を迷わせる「妖精の明かり」\n・デクの樹サマのように長生きの木は？ 木は話すのか\n・本物のオカリナは、いつ、どこで生まれたのか\n・コッコを持って空を飛べるのか\n・ゴロン族のように転がる生き物\n・バクダン花のように爆発する植物\n・ジャブジャブ様のように、クジラに飲み込まれた人\n・7年眠って目覚めたら、すぐ剣は振れるのか\n・ヘビィブーツと、昔の潜水服の重さ\n・ミラーシールドで光を集めたら、船は燃えるのか\n\n【チャプター】\n\n主な参考資料\n・Medievalists.net「The Sword in the Stone」https://www.medievalists.net/2025/06/sword-stone-legendary-blades-middle-ages/\n・Atlas Obsc",
+    "durationSeconds": 637.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
     "id": "PnO91avFCaA",
     "title": "海底のポスト #雑学 #面白い #ポスト",
     "publishedAt": "2026-11-15T08:00:04Z",

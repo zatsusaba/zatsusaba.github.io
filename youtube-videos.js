@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "iSGsyd9lMLY",
+    "title": "風邪はネギ？ #雑学 #面白い #風邪",
+    "publishedAt": "2026-11-16T08:42:39Z",
+    "date": "2026-11-16",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "体調を崩した太郎に、キュウちゃんが長ネギを持ってきた！\n昔から言われる「ネギを首に巻く」民間療法。実際に風邪が治るのでしょうか？\n\nネギを首に巻くだけで風邪が治るという確かな臨床的根拠はありません。お尻にネギを挿すことにも治療効果は確認されておらず、けがや感染につながる危険があります。絶対に真似しないでください。\n\n参考資料：\nCDC｜Manage Common Cold（2026年3月11日）\nhttps://www.cdc.gov/common-cold/treatment/index.html\nMerck Manual｜Rectal Foreign Bodies（2025年4月）\nhttps://www.merckmanuals.com/professional/gastrointestinal-disorders/bezoars-and-foreign-bodies/rectal-foreign-bodies\n週刊女性PRIME｜風邪対策の新常識（医師の解説）\nhttps://www.jprime.jp/articles/print/25908\n\n#雑学 #面白い #風邪",
+    "durationSeconds": 16.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "s554xOnnayE",
     "title": "オカリナの謎 #ゼルダの伝説 #時のオカリナ #雑学",
     "publishedAt": "2026-11-15T12:00:16Z",

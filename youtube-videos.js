@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "QJZ4OYAkXLs",
+    "title": "ゴジラの謎 #ゴジラ #雑学 #面白い",
+    "publishedAt": "2026-11-17T10:00:08Z",
+    "date": "2026-11-17",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "皆さんはゴジラの映画、見ましたか？\n\n🔻マンガ本編こちら\n\n「もしもゴジラがいたら、どうなるのか」\nhttps://youtu.be/gbeonGDEWCk\n\n※本編やサムネの画像に使っているのは、架空のイメージ怪物です\n\n#ゴジラ #雑学 #面白い",
+    "durationSeconds": 25.0
+  },
+  {
     "id": "gbeonGDEWCk",
     "title": "もしもゴジラが本当に現れたらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-16T11:05:29Z",

@@ -1,7 +1,7 @@
 window.YOUTUBE_VIDEOS = [
   {
     "id": "Or8tY9Mtsr8",
-    "title": "もしも忍者になったらどうする？【面白い雑学】",
+    "title": "もしも忍者になったらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-18T13:34:01Z",
     "date": "2026-11-18",
     "format": "長尺動画",

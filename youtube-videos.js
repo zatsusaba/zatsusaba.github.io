@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "QyQqgHpbpWg",
+    "title": "タイタニックの値段 #雑学 #面白い #タイタニック",
+    "publishedAt": "2026-11-17T22:39:57Z",
+    "date": "2026-11-18",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "映画で沈没したあの豪華客船「タイタニック」の値段。\n\n皆さんは映画を見ましたか？\n\n#雑学 #面白い #タイタニック",
+    "durationSeconds": 55.0
+  },
+  {
     "id": "CoGOOYvZcpQ",
     "title": "もしもタイタニックに乗ったらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-17T14:04:27Z",

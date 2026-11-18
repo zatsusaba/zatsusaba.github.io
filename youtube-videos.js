@@ -1,5 +1,33 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "Or8tY9Mtsr8",
+    "title": "もしも忍者になったらどうする？【面白い雑学】",
+    "publishedAt": "2026-11-18T13:34:01Z",
+    "date": "2026-11-18",
+    "format": "長尺動画",
+    "genres": [
+      "もしもシリーズ"
+    ],
+    "characters": [],
+    "description": "「はたして、忍者は本当はどんな仕事をしていたのでしょうか？」\n黒装束と手裏剣のイメージから、江戸城を守った忍者まで。\nくノ一のこよみと一緒に、忍者の秘密を見ていこう！\n\n00:00 オープニング\n00:18 忍者になったら、何を着る？\n01:29 手裏剣で敵を倒すのか\n02:29 戦での仕事\n03:27 忍術の勉強方法\n04:41 忍者の装備\n05:39 お城の堀をどう渡る？\n06:50 江戸時代の忍者、何してた？\n08:05 一人前の証\n08:54 まとめ\n\n※忍術書の読み方や道具の使い方には、研究者のあいだでも説が分かれるものがあります。\n\n#忍者 #雑学 #面白い",
+    "durationSeconds": 562.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
+    "id": "b_WZHT0hswI",
+    "title": "ウーパールーパーの謎 #雑学 #面白い #ウーパールーパー",
+    "publishedAt": "2026-11-18T12:02:05Z",
+    "date": "2026-11-18",
+    "format": "Shorts",
+    "genres": [
+      "自然の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "ウーパールーパーの顔にある、耳みたいなふさふさ。実は耳ではなく、体の外に出たエラなんです！\n\nウーパールーパーは大人になっても幼生の特徴を残し、水中でエラを使って呼吸します。肺も持っています。\n\n参考：San Diego Zoo Wildlife Alliance｜Axolotl\nhttps://animals.sandiegozoo.org/animals/axolotl\n\n#雑学 #面白い #ウーパールーパー",
+    "durationSeconds": 13.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "QyQqgHpbpWg",
     "title": "タイタニックの値段 #雑学 #面白い #タイタニック",
     "publishedAt": "2026-11-17T22:39:57Z",

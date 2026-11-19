@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "oJJAiM-t3L4",
+    "title": "眠る馬 #雑学 #面白い #馬",
+    "publishedAt": "2026-11-19T10:09:05Z",
+    "date": "2026-11-19",
+    "format": "Shorts",
+    "genres": [
+      "自然の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "馬は立ったまま眠ることができるって本当？\n\n実は馬は、立ったまま休んだり眠ったりできます。ただし、体の筋肉が大きく緩むレム睡眠は、通常、横になってとります。\n\nキュウちゃんが立ち寝する馬を見て思い出したのは、まさかの通勤電車……。\n\n参考：University of Helsinki｜Equine Sleep Research\nhttps://www.helsinki.fi/en/researchgroups/equine-research/research-topics/sleep-research\n\n#雑学 #面白い #馬",
+    "durationSeconds": 11.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "Or8tY9Mtsr8",
     "title": "もしも忍者になったらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-18T13:34:01Z",

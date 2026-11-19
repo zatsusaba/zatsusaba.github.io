@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "kptm5nlNgP0",
+    "title": "ホグワーツの手紙 #ハリーポッター #雑学 #面白い",
+    "publishedAt": "2026-11-19T22:00:29Z",
+    "date": "2026-11-20",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "ハリーポッターの雑学を見ていきましょう。\n\n🔻本編マンガこちら\nhttps://youtu.be/3fN9NsFAYAQ\n\n#ハリーポッター #ハリポタ #雑学",
+    "durationSeconds": 39.0
+  },
+  {
     "id": "3fN9NsFAYAQ",
     "title": "ハリー・ポッターの魔法は、どこまで本物？ 映画と原作の雑学10選",
     "publishedAt": "2026-11-19T16:07:52Z",

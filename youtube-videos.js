@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "Wz7rWzOQICg",
+    "title": "指を交差すると… #雑学 #面白い #錯覚",
+    "publishedAt": "2026-11-20T08:00:17Z",
+    "date": "2026-11-20",
+    "format": "Shorts",
+    "genres": [
+      "科学の雑学【Shorts】"
+    ],
+    "characters": [],
+    "description": "人差し指と中指を交差させて、一つの鼻に触れると……鼻が二つあるように感じる!?\n\nこれは「アリストテレスの錯覚」と呼ばれる触覚の錯覚の一つ。普段と違う指の位置関係によって、一つの物を二つに感じることがあります。\n\n感じ方には個人差があります。ぜひ試してみてね！\n\n参考：NTTコミュニケーション科学基礎研究所｜錯覚フォーラム\nhttps://illusion-forum.ilab.ntt.co.jp/haptics-aristotle/index.html\n\n#雑学 #面白い #錯覚",
+    "durationSeconds": 16.0,
+    "formatEvidence": "公式Shorts再生リスト"
+  },
+  {
     "id": "4UjQKlZsBOo",
     "title": "忍術の勉強方法 #忍者 #忍術 #雑学",
     "publishedAt": "2026-11-20T06:00:11Z",

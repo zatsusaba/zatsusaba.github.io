@@ -1,5 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "kMQbbxEib7c",
+    "title": "ウルトラマンの謎 #ウルトラマン #雑学 #面白い",
+    "publishedAt": "2026-11-20T23:00:29Z",
+    "date": "2026-11-21",
+    "format": "未確認",
+    "genres": [
+      "切り抜き｜雑学サバイバル"
+    ],
+    "characters": [],
+    "description": "皆さんは初代ウルトラマンの成り立ちを、知っていますか？\n\n🔻本編マンガこちら\n\n「もしもウルトラマンが本当にいたらどうなる？」\nhttps://youtu.be/a6G2Rmo860U\n\n#ウルトラマン #雑学 #面白い",
+    "durationSeconds": 51.0
+  },
+  {
     "id": "a6G2Rmo860U",
     "title": "もしもウルトラマンが本当に現れたらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-20T17:16:22Z",

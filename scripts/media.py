@@ -277,7 +277,7 @@ def news_front(news_items, category_slugs=None):
         '<h1 id="news-title"><span>本体価格の、</span><span>その先まで。</span></h1>'
         '<p class="news-desk-description">設置・回収まで、買い替えはいくら？</p>'
         '<a class="news-archive-cta" href="/tools/appliance-total/">'
-        '洗濯機の総額を比べる <span aria-hidden="true">→</span></a></div>'
+        '洗濯機の総額比較 <span aria-hidden="true">→</span></a></div>'
         '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/news/newsroom-kyu.webp" '
         'alt="新聞を手にしたキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
     )

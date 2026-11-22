@@ -11,9 +11,6 @@ image: /assets/blog/food-color-expectation/thumbnail.webp
 image_alt: "青い照明の下のローストビーフを不思議そうに見る人を描いたAI生成イラスト"
 show_cover: false
 conditions: "食べ物の色と風味の予想・知覚の関係を扱います。特定の色の効果が誰にでも同じ方向に現れるとは限りません。本文画像はAI生成の概念画で、実験記録ではありません。"
-youtube: egucjsnRL6M
-youtube_title: "料理の色で味変？ #漫画 #雑学 #料理"
-youtube_format: short
 sources:
 - title: "Jeesan & Seo (2020), Color-Induced Aroma Illusion（原著論文、方法・結果・考察を確認）"
   url: https://www.mdpi.com/2304-8158/9/12/1845

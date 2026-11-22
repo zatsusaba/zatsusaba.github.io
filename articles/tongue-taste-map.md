@@ -12,7 +12,6 @@ image_alt: 割ったダークチョコレートと角砂糖を描いたAI生成�
 show_cover: false
 conditions: 基本の五味と風味の違いを説明します。味ごとの専用区域はありませんが、場所ごとの感度が同一という意味ではありません。画像はAI生成の参考画です。
 youtube: EfkvwxdgSuc
-youtube_related: [N1sP2f7MNQE]
 youtube_title: '苦いチョコレート #雑学 #面白い #チョコレート'
 youtube_format: short
 sources:

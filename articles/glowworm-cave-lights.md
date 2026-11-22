@@ -11,9 +11,6 @@ image: /assets/blog/glowworm-cave-lights/thumbnail.webp
 image_alt: 暗い洞窟の岩肌に付いた幼虫4匹の尾端が青緑に光り、細い捕獲糸は暗く垂れるAI生成イラスト
 show_cover: false
 conditions: 画像はAI生成の参考イラストです。光るのは幼虫の尾端にある発光器で、捕獲糸は光を出しません。
-youtube: J8LTedGdIMs
-youtube_title: '洞窟の星空の謎 #漫画 #切り抜き #ツチボタル'
-youtube_format: short
 sources:
 - title: Te Ara Encyclopedia of New Zealand「New Zealand’s glow-worms」
   url: https://teara.govt.nz/en/glow-worms/page-1

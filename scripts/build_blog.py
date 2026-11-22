@@ -16,14 +16,14 @@ import appliance_total
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_NAME = "雑学サバイバル"
-NEWS_ICON = "/assets/logo-cut.png"
-NEWS_SHARE_IMAGE = "/assets/news/newsroom-kyu.webp"
+NEWS_NAME = "世界トレンド前線"
+NEWS_ICON = "/assets/news/frontline-mark.png"
+NEWS_SHARE_IMAGE = "/assets/news/frontline-share.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
 CATS=dict(zip(["食べ物","人体","動物","自然","宇宙","歴史","心理","お金","身近なモノ"],["food","body","animals","nature","space","history","psychology","money","everyday"]))
 CATS.update({"科学":"science","文化":"culture","世界":"world"})
-SECTION_NAMES = {"blog": "雑学Blog", "news": "ニュース一覧"}
+SECTION_NAMES = {"blog": "雑学Blog", "news": "トレンド記事一覧"}
 SEARCH_PATHS = {"blog": ("/search/index.json", "/search/body-"),
                 "news": ("/news/search.json", "/news/search-body-")}
 def check(ok,msg):
@@ -67,7 +67,7 @@ def load():
             if section == "news":
                 # The legacy category covers carry the printed 雑学Blog masthead.
                 # Use the newspaper's masthead artwork for sharing and leave the story text-led.
-                a.update(image=NEWS_SHARE_IMAGE, image_alt=f"{NEWS_NAME}のキュウちゃん", category_cover=True)
+                a.update(image=NEWS_SHARE_IMAGE, image_alt=NEWS_NAME, category_cover=True)
             else:
                 a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
                 a["image_alt"]=a["category"]+"の雑学"
@@ -200,10 +200,10 @@ def categories(section="blog", names=CATS):
 def listing(items, title, url, total, pager, category, section, names):
     index_url, body_prefix = SEARCH_PATHS[section]
     news = section == "news"
-    desc = ("いま話題の出来事にまつわる「なぜ？」を、発表元の資料と雑学で読み解きます。" if news
+    desc = ("海外でいま話題になっているニュースを、現地の発表や報道をもとに日本語で伝えます。" if news
             else "身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。")
     if news and category:
-        desc = f"{category}のニュースと、そこから生まれる疑問に答える雑学記事を新着順で読めます。"
+        desc = f"{category}のニュースを新着順で読めます。"
     intro = desc if news else "世界の雑学を、あなたにお届け。"
     label = "ニュースをキーワードで探す" if news else "記事をキーワードで探す"
     placeholder = "キーワードを入力" if news else "例：パイナップル、植物"
@@ -320,13 +320,14 @@ def build():
             refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
         stamp = a.get("published_at", a["date"])
         edition = f' <span class="news-edition">{a["edition"]}</span>' if news and a.get("edition") else ""
-        author = {"@type":"Organization","name":NEWS_NAME if news else "雑学サバイバル"}
-        byline = f"{NEWS_NAME}　" if news else ""
+        author_name = NEWS_NAME if news and not a.get("archive_only") else "雑学サバイバル"
+        author = {"@type":"Organization","name":author_name}
+        byline = f"{author_name}　" if news else ""
         home = media.link("/", "ホーム") if news else media.link("/zatsusaba/", "雑サバ")
         breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
                                  media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
         related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
-        cta = "ニュース一覧へ" if news else "雑学Blogの記事一覧へ"
+        cta = "トレンド記事一覧へ" if news else "雑学Blogの記事一覧へ"
         body = (f'<article class="blog-article"><p class="blog-breadcrumb">{breadcrumb}</p>'
                 f'<span class="blog-label">{a["category"]}</span>{edition}<h1>{e(a["title"])}</h1>'
                 f'<p class="blog-deck">{e(a["description"])}</p><p class="blog-date">{byline}公開 '
@@ -361,7 +362,7 @@ def build():
             share_image = NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
-                           "alternateName":"雑サバ","url":BASE+"/"}
+                           "url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
             front = media.news_front(news_items, CATS)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))

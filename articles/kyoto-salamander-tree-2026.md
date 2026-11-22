@@ -1,6 +1,7 @@
 ---
 status: published
 section: news
+archive_only: true
 title: "オオサンショウウオ99個でツリーに。京都水族館はなぜ「9」にこだわる？"
 description: "京都水族館の冬恒例のツリーが11月21日に登場。ぬいぐるみの数には、オオサンショウウオの姿と繁殖の季節が関係しています。"
 date: '2026-11-23'

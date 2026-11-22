@@ -275,12 +275,22 @@ def news_front(news_items, category_slugs=None):
     items = [article for article in news_items if not article.get("archive_only")]
     desk = (
         '<div class="news-desk news-section-head"><div class="news-desk-copy">'
-        '<h1 id="news-title"><span>いまの話題を、</span><span>雑学で深掘り。</span></h1>'
-        '<p class="news-desk-description">科学・暮らし・カルチャーの「なぜ？」を、発表や研究から読み解きます。</p>'
-        '<a class="news-archive-cta" href="#headlines">'
-        '新着記事へ <span aria-hidden="true">↓</span></a></div>'
-        '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/news/newsroom-kyu.webp" '
-        'alt="新聞を手にしたキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
+        '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>'
+        '<p class="news-desk-description">海外で検索が急上昇した話題を、現地の発表や報道をもとに日本語で読み解く。</p>'
+        '<div class="news-desk-actions"><a class="news-archive-cta" href="#headlines">新着記事を読む</a>'
+        '<a class="news-trends-cta" href="#trends">各国の急上昇を見る</a></div></div>'
+        '<div class="news-desk-signal" aria-hidden="true"></div></div>'
+    )
+    regions = (("US", "米国"), ("GB", "英国"), ("KR", "韓国"), ("JP", "日本"))
+    region_links = "".join(
+        f'<a href="https://trends.google.com/trending?geo={code}&amp;hl=ja" '
+        f'aria-label="{name}の急上昇をGoogle トレンドで見る">{name}</a>'
+        for code, name in regions
+    )
+    trends = (
+        '<nav class="news-trend-regions" id="trends" aria-label="各国の急上昇検索">'
+        '<span class="news-trend-source">Google トレンドで見る</span>'
+        f'<div>{region_links}</div></nav>'
     )
     published_categories = {article["category"] for article in items}
     category_links = "".join(
@@ -308,8 +318,8 @@ def news_front(news_items, category_slugs=None):
     ) if recent else ""
     return (
         '<section class="news-front" id="news" aria-labelledby="news-title">'
-        f'{desk}{tools}<div class="news-reading-header" id="headlines"><h2>新着記事</h2>'
-        '<a href="/news/">記事一覧 <span aria-hidden="true">→</span></a></div>'
+        f'{desk}{trends}{tools}<div class="news-reading-header" id="headlines"><h2>新着記事</h2>'
+        '<a href="/news/">記事一覧</a></div>'
         f'<div class="news-layout">{lead}{latest}</div></section>'
     )
 

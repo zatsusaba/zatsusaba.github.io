@@ -1,7 +1,7 @@
 ---
 status: published
 section: news
-featured: true
+archive_only: true
 title: "深海のウニの喉に、二枚貝が住んでいた。食べられた貝と何が違う？"
 description: "京都大学などが11月19日に発表。水深約4,000〜5,000メートルで見つかった二枚貝のすみかは、ウニの口のすぐ奥でした。"
 date: '2026-11-23'

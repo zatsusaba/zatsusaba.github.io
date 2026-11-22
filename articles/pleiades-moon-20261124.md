@@ -1,6 +1,7 @@
 ---
 status: published
 section: news
+archive_only: true
 title: "11月24日、月が「すばる」の星を隠す。東京では何時に見える？"
 description: "東京で目印になるのは、すばるを形づくる星の一つ「マイア」。18時47分ごろに月の縁で姿を消し、約1時間後に再び現れる予報です。"
 date: '2026-11-23'

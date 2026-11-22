@@ -2,7 +2,7 @@
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from xml.etree import ElementTree as ET
-from build_blog import ROOT, OUT, BASE, CATS, load, build, article_cover
+from build_blog import ROOT, OUT, BASE, CATS, NEWS_NAME, load, build, article_cover
 from media import PAGE_SIZE
 from site_info import FOOTER
 import json, re
@@ -65,14 +65,13 @@ def check_homes(home, classic, streams):
     assert news_page.canon == [BASE + "/"]
     assert classic_page.canon == [BASE + "/zatsusaba/"]
     assert not (OUT / "zatsusaba.html").exists()
-    assert "<title>雑学サバイバル" in home
-    assert '<meta property="og:site_name" content="雑学サバイバル">' in home
+    assert "<title>世界トレンド前線｜いま海外で話題のニュース</title>" in home
+    assert '<meta property="og:site_name" content="世界トレンド前線">' in home
     assert home.count('<meta name="robots" content="max-image-preview:large">') == 1
     schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S)]
     websites = [s for s in schemas if s.get("@type") == "WebSite"]
     assert len(websites) == 1
-    assert websites[0]["name"] == "雑学サバイバル" and websites[0]["url"] == BASE + "/"
-    assert websites[0]["alternateName"] == "雑サバ"
+    assert websites[0]["name"] == "世界トレンド前線" and websites[0]["url"] == BASE + "/"
 
     article_urls = {a["url"] for group in streams.values() for a in group}
     news_links = RegionLinks(home, "#news").links
@@ -83,7 +82,8 @@ def check_homes(home, classic, streams):
     front_articles = sorted(eligible, key=lambda a: (a["date"], bool(a.get("featured"))), reverse=True)[:4]
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
     assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
-    assert any(src == "/assets/news/newsroom-kyu.webp" and "キュウちゃん" in alt for src, alt in news_page.images)
+    assert '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>' in home
+    assert {f"https://trends.google.com/trending?geo={geo}&hl=ja" for geo in ("US", "GB", "KR", "JP")} <= set(RegionLinks(home, "#trends").links)
     channel = RegionLinks(home, ".channel-strip")
     assert channel.links == ["/zatsusaba/"] and news_page.links.count("/zatsusaba/") == 1
     assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]
@@ -205,10 +205,12 @@ def main():
         assert url in visited and dates[BASE+url]==a["updated"]
         assert Document(html).canon==[BASE+url] and "noindex" not in html.split("</head>")[0]
         schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html).group(1))
-        brand = "雑学サバイバル"
-        if a["section"] == "news":
-            assert schema["author"]["name"] == brand and schema["publisher"]["name"] == "雑学サバイバル"
-            assert re.search(r'<p class="blog-date">[^<]*雑学サバイバル', html)
+        news = a["section"] == "news"
+        brand = NEWS_NAME if news else "雑学サバイバル"
+        if news:
+            author = "雑学サバイバル" if a.get("archive_only") else brand
+            assert schema["author"]["name"] == author and schema["publisher"]["name"] == "雑学サバイバル"
+            assert f'<p class="blog-date">{author}' in html
             assert html.count('<meta name="robots" content="max-image-preview:large">') == 1
             assert f'<meta property="og:site_name" content="{brand}">' in html
         assert f'<title>{escape(a["title"])} | {brand}</title>' in html

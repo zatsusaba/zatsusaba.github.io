@@ -16,7 +16,7 @@ root = Path(tempfile.mkdtemp(dir=jobs))
 blog.ROOT, blog.OUT = root, root / "_site"
 for name in ("articles", "comics", "assets", "panels-v2"):
     (root / name).mkdir()
-for name in ("index.html", "blog-search.js", "blog.css", "media.css", "style.css"):
+for name in ("index.html", "zatsusaba.html", "blog-search.js", "blog.css", "media.css", "style.css"):
     shutil.copyfile(source / name, root / name)
 # Keep the performance/link fixture independent of public video availability.
 videos = [
@@ -60,7 +60,7 @@ assert "本文専用" not in read("blog/index.html") and "本文専用" not in r
 assert len(read("blog/index.html").encode()) < 40000
 assert 'href="/comics/first/"' in read("comics/second/index.html")
 assert 'href="/comics/second/"' in read("comics/first/index.html")
-assert 'href="/comics/second/"' in read("index.html")
+assert 'href="/comics/second/"' in read("zatsusaba/index.html")
 assert 'href="/blog/entry-0000/"' in read("comics/first/index.html")
 assert 'href="/comics/first/"' in read("blog/entry-0000/index.html")
 assert 'https://www.youtube.com/watch?v=mediaMain01' in read("blog/entry-0000/index.html")
@@ -81,7 +81,7 @@ blog.build()
 assert not (out/"blog/entry-0000/index.html").exists()
 assert not (out/"comics/second/index.html").exists()
 assert "/blog/entry-0000/" not in read("comics/first/index.html")+read("sitemap.xml")+read("search/index.json")
-assert "/comics/second/" not in read("index.html")+read("video-links.json")
+assert "/comics/second/" not in read("zatsusaba/index.html")+read("video-links.json")
 assert "mediaRel001" not in json.loads(read("video-links.json"))
 assert "mediaRel002" not in json.loads(read("video-links.json"))
 print("PASS: pagination, taxonomy, additions/deletions and explicit reciprocal links")

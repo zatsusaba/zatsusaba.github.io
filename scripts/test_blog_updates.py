@@ -10,7 +10,8 @@ job=original_root/"cleanup-temp"/"blog-verification"
 job.mkdir(parents=True,exist_ok=True)
 root=Path(tempfile.mkdtemp(prefix="fixture-",dir=job))
 for name in ("articles","assets","panels-v2"): (root/name).mkdir()
-(root/"index.html").write_text((original_root/"index.html").read_text(encoding="utf-8"),encoding="utf-8")
+for template in ("index.html","zatsusaba.html"):
+    (root/template).write_bytes((original_root/template).read_bytes())
 # Keep fixtures independent of revisions to a real published article.
 sample="""---
 title: パイナップルの検証記事
@@ -48,7 +49,7 @@ assert b.load()[0]["slug"] == "second"
 # Legacy articles without a section stay in the lower blog. A newer blog entry
 # must never fill an empty news front page.
 first_article=root/"articles/pineapple.md"
-home_path=b.OUT/"index.html"
+classic_path=b.OUT/"zatsusaba/index.html"
 def read(path):
     return (b.OUT / path).read_text(encoding="utf-8")
 
@@ -58,7 +59,7 @@ def cards(path):
 b.build()
 home=read("index.html")
 assert "/blog/second/" not in RegionLinks(home, "#news").links
-assert cards("index.html") == ["/blog/second/", "/blog/pineapple/"]
+assert cards("zatsusaba/index.html") == ["/blog/second/", "/blog/pineapple/"]
 assert json.loads(read("news/search.json")) == []
 
 # Same date, subject, category and video on both sides exercise feed ordering,
@@ -72,7 +73,7 @@ bulletin=root/"articles/bulletin.md"
 evening=root/"articles/evening.md"
 bulletin.write_text(article_sample("news","09","朝の発表","ニュース朝刊の固有本文"),encoding="utf-8")
 evening.write_text(article_sample("news","18","夜の発表","ニュース夜刊の固有本文")
-                   .replace("section: news", "section: news\nedition: 夜刊"),encoding="utf-8")
+                   .replace("section: news", "section: news\nedition: 夜刊\nthumbnail_label: |-\n  いつ？\n  どこで？"),encoding="utf-8")
 first_article.write_text(article_sample("blog","20","夜の雑学","雑学ブログのみの固有本文"),encoding="utf-8")
 b.build()
 home=read("index.html")
@@ -80,8 +81,10 @@ upper=RegionLinks(home, "#news").links
 news_urls=["/news/evening/", "/news/bulletin/"]
 blog_urls=["/blog/pineapple/", "/blog/second/"]
 assert [url for url in upper if url in news_urls + blog_urls] == news_urls
-assert "夜刊" in home[:home.index('id="zatsusaba"')]
-assert cards("index.html") == blog_urls
+assert "夜刊" in home
+for surface in (home, read("news/index.html"), read("news/category/food/index.html")):
+    assert "<span>いつ？</span><span>どこで？</span>" in surface, "Preserve both lines of the news thumbnail label"
+assert cards("zatsusaba/index.html") == blog_urls
 for stream, urls, index, shard, key in (
     ("news", news_urls, "news/search.json", "news/search-body-0.json", "ニュース夜刊の固有本文"),
     ("blog", blog_urls, "search/index.json", "search/body-0.json", "雑学ブログのみの固有本文"),
@@ -219,7 +222,7 @@ second.write_text(second.read_text(encoding="utf-8").replace("---\n","---\ndraft
 b.build()
 assert not (b.OUT/"blog/second/index.html").exists()
 assert '/blog/second/' not in (b.OUT/"blog/index.html").read_text(encoding="utf-8")
-assert '/blog/second/' not in home_path.read_text(encoding="utf-8")
+assert '/blog/second/' not in classic_path.read_text(encoding="utf-8")
 second.write_text(sample.replace("category: 食べ物","category: 不明"),encoding="utf-8")
 try:
     b.load()

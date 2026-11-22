@@ -235,7 +235,10 @@ def news_thumbnail(article, *, lead=False):
         image_class += " thumbnail-contain"
     loading = 'fetchpriority="high"' if lead else 'loading="lazy"'
     label = article.get("thumbnail_label")
-    caption = f'<span class="news-thumbnail-label" aria-hidden="true">{escape(label)}</span>' if label else ""
+    caption = ""
+    if label:
+        lines = "".join(f'<span>{escape(line.strip())}</span>' for line in label.splitlines())
+        caption = f'<span class="news-thumbnail-label" aria-hidden="true">{lines}</span>'
     return (
         '<span class="news-story-visual">'
         f'<img class="{image_class}" src="{escape(article["image"])}" alt="{escape(article["image_alt"])}" '
@@ -281,7 +284,7 @@ def news_front(news_items, category_slugs=None):
         f'{issue_date}<h1 id="news-title"><span>いま話題の、</span><span>なぜがわかる。</span></h1>'
         '<a class="news-archive-cta" href="/news/">ニュース一覧へ <span aria-hidden="true">→</span></a></div>'
         '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/news/newsroom-kyu.webp" '
-        'alt="雑サバ新聞の編集部にいるキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
+        'alt="ナゼトピの編集部にいるキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
     )
     published_categories = {article["category"] for article in news_items}
     category_links = "".join(

@@ -15,6 +15,8 @@ import media
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
+NEWS_NAME = "ナゼトピ"
+NEWS_ICON = "/assets/news/nazetopi-mark.svg"
 NEWS_SHARE_IMAGE = "/assets/news/newsroom-kyu.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
@@ -47,9 +49,11 @@ def load():
             check(a["edition"] in ("朝刊", "夜刊", "号外"), f"{p}: unknown edition")
         if "thumbnail_label" in a:
             label = a["thumbnail_label"]
-            check(section == "news" and isinstance(label, str) and bool(label.strip())
-                  and len(label) <= 20 and bool(a.get("image")),
-                  f"{p}: thumbnail_label requires a news image and 1 to 20 characters")
+            lines = label.strip().splitlines() if isinstance(label, str) else []
+            check(section == "news" and 1 <= len(lines) <= 2 and all(line.strip() for line in lines)
+                  and sum(len(line.strip()) for line in lines) <= 20 and bool(a.get("image")),
+                  f"{p}: thumbnail_label requires a news image and 1 to 20 characters on up to two lines")
+            a["thumbnail_label"] = "\n".join(line.strip() for line in lines)
         for key in ("date","updated"): a[key]=date.fromisoformat(str(a[key])).isoformat()
         check(a["date"]<=a["updated"]<=today,f"{p}: invalid dates")
         try:
@@ -61,7 +65,7 @@ def load():
             if section == "news":
                 # The legacy category covers carry the printed 雑学Blog masthead.
                 # Use the newspaper's masthead artwork for sharing and leave the story text-led.
-                a.update(image=NEWS_SHARE_IMAGE, image_alt="雑サバ新聞のキュウちゃん", category_cover=True)
+                a.update(image=NEWS_SHARE_IMAGE, image_alt=f"{NEWS_NAME}のキュウちゃん", category_cover=True)
             else:
                 a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
                 a["image_alt"]=a["category"]+"の雑学"
@@ -105,7 +109,9 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/", "一面"), ("/news/", "ニュース一覧"), ("/#zatsusaba", "雑サバ・雑学Blog")]
+    sections = [("/", "一面"), ("/news/", "ニュース一覧")]
+    if url != "/":
+        sections.append(("/news/#blog-search", "記事検索"))
     anchors = []
     for href, label in sections:
         current = ""
@@ -114,12 +120,12 @@ def news_masthead(url):
         elif href != "/" and url.startswith(href):
             current = ' aria-current="location"'
         anchors.append(f'<a href="{href}"{current}>{label}</a>')
-    return ('<header class="news-masthead"><a class="brand" href="/">'
-            '<img src="/assets/logo-cut.png" alt="" width="44" height="44"><span>雑サバ新聞</span></a>'
+    return (f'<header class="news-masthead"><a class="brand" href="/" aria-label="{NEWS_NAME} トップページ">'
+            f'<img src="{NEWS_ICON}" alt="" width="44" height="44"><span>{NEWS_NAME}</span></a>'
             '<nav class="news-nav" aria-label="メインナビゲーション">' + ''.join(anchors) + '</nav></header>')
 
 def classic_navigation(url):
-    sections = [("/", "ニュース"), ("/story.html", "STORY"), ("/characters.html", "CHARACTERS")]
+    sections = [("/zatsusaba/", "HOME"), ("/story.html", "STORY"), ("/characters.html", "CHARACTERS")]
     if comics_enabled():
         sections.append(("/comics/", "Comic"))
     sections.extend([("/blog/", "雑学Blog"), ("/today/", "今日の動画"), ("/videos.html", "VIDEOS")])
@@ -134,13 +140,13 @@ def classic_navigation(url):
     return ''.join(links)
 
 def page(title,desc,url,body,image=None,article=False):
-    if image is None:
-        image = NEWS_SHARE_IMAGE if url.startswith("/news/") else "/assets/hero-duo-v2.png"
-    image=image if image.startswith("https://") else BASE+image
     classic = url.startswith(("/blog/", "/comics/", "/today/"))
+    if image is None:
+        image = "/assets/hero-duo-v2.png" if classic else NEWS_SHARE_IMAGE
+    image=image if image.startswith("https://") else BASE+image
     if classic:
         nav = classic_navigation(url)
-        header = ('<header><a class="brand" href="/#zatsusaba"><img src="/assets/logo-cut.png" alt="雑学サバイバル">'
+        header = ('<header><a class="brand" href="/zatsusaba/"><img src="/assets/logo-cut.png" alt="雑学サバイバル">'
                   '<span>ZATSUGAKU<br>SURVIVAL</span></a><nav aria-label="メインナビゲーション">'+nav+'</nav></header>')
         mobile = '<nav class="mobile-nav" aria-label="モバイルナビゲーション">'+nav+'</nav>'
     else:
@@ -148,12 +154,13 @@ def page(title,desc,url,body,image=None,article=False):
         mobile = ""
     theme = "classic-inner" if classic else "news-inner"
     view = "article-view" if article else "archive-view"
-    brand = "雑サバ新聞" if url.startswith("/news/") else "雑学サバイバル"
+    brand = "雑学サバイバル" if classic else NEWS_NAME
+    icon = "/assets/logo-cut.png" if classic else NEWS_ICON
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:site_name" content="{brand}">
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
+<link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
@@ -237,7 +244,8 @@ def build():
             check(target.is_relative_to(OUT.resolve()) and (target.suffix in (".html",".xml",".json") or target.is_relative_to((OUT/"comic-media").resolve())),"Invalid build manifest")
             if target.is_file(): target.unlink()
     for p in ROOT.iterdir():
-        if p.is_file() and p.suffix in (".html",".css",".js",".txt") and p.name!="requirements-blog.txt": shutil.copy2(p,OUT/p.name)
+        if p.is_file() and p.suffix in (".html",".css",".js",".txt") and p.name not in ("requirements-blog.txt", "zatsusaba.html"):
+            shutil.copy2(p,OUT/p.name)
     for folder in ("assets","panels-v2"):
         if folder == "panels-v2" and not comics_enabled():
             for source in (ROOT/folder).rglob("*"):
@@ -246,7 +254,7 @@ def build():
                     target.unlink()  # Generated copy only; original artwork stays in ROOT.
             continue
         shutil.copytree(ROOT/folder,OUT/folder,dirs_exist_ok=True)
-    urls=["/","/story.html","/characters.html","/videos.html"]
+    urls=["/","/zatsusaba/","/story.html","/characters.html","/videos.html"]
     build_archives(blog_items, "blog", urls)
     build_archives(news_items, "news", urls)
     catalog=ROOT/"youtube-videos.js"
@@ -307,9 +315,9 @@ def build():
             refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
         stamp = a.get("published_at", a["date"])
         edition = f' <span class="news-edition">{a["edition"]}</span>' if news and a.get("edition") else ""
-        author = {"@type":"Organization","name":"雑サバ新聞" if news else "雑学サバイバル"}
-        byline = '雑サバ新聞　' if news else ""
-        home = media.link("/", "一面") if news else media.link("/#zatsusaba", "雑サバ")
+        author = {"@type":"Organization","name":NEWS_NAME if news else "雑学サバイバル"}
+        byline = f"{NEWS_NAME}　" if news else ""
+        home = media.link("/", "一面") if news else media.link("/zatsusaba/", "雑サバ")
         breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
                                  media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
         related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
@@ -326,15 +334,20 @@ def build():
                 "articleSection":a["category"],"isPartOf":{"@type":"CollectionPage","url":BASE+archive_url},
                 "image":urljoin(BASE,a["image"]),"mainEntityOfPage":BASE+a["url"],
                 "author":author}
+        if news:
+            schema["publisher"] = {"@type":"Organization","name":"雑学サバイバル","url":BASE+"/about/"}
         body+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace("<","\\u003c")+'</script>'
         write(a["url"],page(a["title"],a["description"],a["url"],body,a["image"],True)); urls.append(a["url"])
-    for p in OUT.glob("*.html"):
+    classic = media.home_sections(blog_items, comics, card, categories, today_home)
+    classic_template = (ROOT/"zatsusaba.html").read_text(encoding="utf-8")
+    write("/zatsusaba/", classic_template.replace("<!--classic:content-->", "<!--classic:start-->"+classic+"<!--classic:end-->"))
+    for p in [*OUT.glob("*.html"), OUT/"zatsusaba/index.html"]:
         html=p.read_text(encoding="utf-8")
-        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',html)
+        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/zatsusaba/#today">今日の動画</a>',html)
         if not comics_enabled():
             html=html.replace('<a href="/comics/">Comic</a>', "")
         html=html.replace("</footer>",site_info.FOOTER+"</footer>")
-        if p.name=="index.html":
+        if p == OUT/"index.html":
             token_path=ROOT/"config"/"google-verification"
             if token_path.is_file():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
@@ -342,21 +355,22 @@ def build():
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
             share_image = NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
+            site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
+                           "alternateName":"NAZETOPI","url":BASE+"/"}
+            html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
             front = media.news_front(news_items, CATS)
-            classic = media.home_sections(blog_items, comics, card, categories, today_home)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))
             html=html.replace("<!--news:content-->", "<!--news:start-->"+front+"<!--news:end-->")
-            html=html.replace("<!--classic:content-->", "<!--classic:start-->"+classic+"<!--classic:end-->")
 
-        u="/" if p.name=="index.html" else "/"+p.name
+        u = "/" + p.relative_to(OUT).as_posix().removesuffix("index.html")
         if p.name!="video.html" and 'rel="canonical"' not in html: html=html.replace("</head>",f'<link rel="canonical" href="{BASE}{u}"></head>')
         if '/blog.css' not in html: html=html.replace("</head>",'<link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head>')
         if 'property="og:url"' not in html:
             html=html.replace("</head>",f'<meta property="og:url" content="{BASE}{u}"><meta property="og:image" content="{BASE}/assets/hero-duo-v2.png"></head>')
         p.write_text(html,encoding="utf-8")
-    write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/blog/">雑学Blogへ →</a><p><a href="/">HOMEへ戻る</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
+    write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",f'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/">{NEWS_NAME}のトップへ →</a><p><a href="/zatsusaba/">雑学サバイバル公式サイトへ</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
     for url,title,content,desc in [
-        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑サバ新聞と雑学Blogの事実確認やAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
+        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,f"{NEWS_NAME}と雑学Blogの事実確認やAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
         ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:

@@ -16,7 +16,8 @@ root=Path(tempfile.mkdtemp(dir=jobs))
 b.ROOT,b.OUT=root,root/"_site"
 for folder in ("articles","comics","panels-v2","assets/covers","comic-media/episode"):
     (root/folder).mkdir(parents=True)
-shutil.copy(source/"index.html",root)
+for template in ("index.html","zatsusaba.html"):
+    shutil.copy(source/template,root)
 shutil.copy(source/"assets/covers/science.svg",root/"assets/covers")
 src={"title":"独立記事の検証","status":"published","date":"2020-01-01","updated":"2020-01-02",
      "category":"科学","description":"隔離環境のテスト","topic":"確認対象",
@@ -45,7 +46,7 @@ def fails(fn,expected):
 save_comic()
 b.build()
 assert not (b.OUT/"comics/episode/index.html").exists() and not (b.OUT/"comic-media/episode/panel1.png").exists()
-assert "/comics/episode/" not in read("index.html")+read("sitemap.xml")
+assert "/comics/episode/" not in read("zatsusaba/index.html")+read("sitemap.xml")
 assert "blog-video" not in read("blog/subject/index.html") and "science.svg" in read("blog/subject/index.html")
 assert "詳しく読む" not in read("today/2021-01-01/index.html")
 comic["status"]="approved"
@@ -56,8 +57,8 @@ save_comic()
 src["youtube"]=vid
 article(src)
 b.build()
-assert "/comics/episode/" in read("index.html")+read("comics/index.html")
-assert "テスト動画" not in read("index.html") and "テスト動画" not in read("today/index.html")
+assert "/comics/episode/" in read("zatsusaba/index.html") and "/comics/episode/" in read("comics/index.html")
+assert "テスト動画" not in read("zatsusaba/index.html") and "テスト動画" not in read("today/index.html")
 assert "テスト動画" in read("today/2021-01-01/index.html")
 for location in ("comics/episode/index.html",):
     html=read(location)
@@ -87,7 +88,7 @@ primary_section=primary_html.split('<section><h2>動画はこちら</h2>',1)[1].
 assert primary_section=='<p><a href="https://www.youtube.com/watch?v='+vid+'">テスト動画</a></p>'
 assert '<section><h2>動画はこちら</h2>'+primary_section+'</section></div>' in html
 assert '正式 &lt;追加&gt; &amp; 動画</a>' in html
-for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","index.html"):
+for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","zatsusaba/index.html"):
     assert '詳しく読む：独立記事の検証' in read(target),target
 for vid_id in [vid]+related_ids:
     assert html.count('href="https://www.youtube.com/watch?v='+vid_id+'"')==1
@@ -125,7 +126,7 @@ for name in ("comics/episode/index.html","comic-media/episode/panel1.png","blog/
     assert not (b.OUT/name).exists()
 assert json.loads(read("search/index.json"))==[] and "詳しく読む" not in read("today/2021-01-01/index.html")
 assert json.loads(read("video-links.json"))=={}
-for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","index.html"):
+for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","zatsusaba/index.html"):
     assert "詳しく読む" not in read(target)
 # Publishing again, then deleting, must remove all related reverse links too.
 src["status"]="published";article(src);b.build()

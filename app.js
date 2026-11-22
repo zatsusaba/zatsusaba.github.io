@@ -35,7 +35,7 @@ function diaryDetail(id){const d=diaries().find(x=>x.id===id);if(!d)return '<div
 let page=document.body.dataset.page, el=document.querySelector('#content'), id=new URLSearchParams(location.search).get('id');
 if(page==='index'){
  const teaser=data.teaser, target=teaser&&get('videos').find(v=>v.id===teaser.videoId&&/^[A-Za-z0-9_-]{11}$/.test(v.id));
- if(target)document.querySelector('#home-teaser').innerHTML=`<a class="home-teaser" href="video.html?id=${encodeURIComponent(target.id)}"><img src="https://i.ytimg.com/vi/${target.id}/mqdefault.jpg" alt="" loading="lazy"><span class="teaser-play" aria-hidden="true">▶</span><span><small>WATCH THE TEASER</small><strong>${esc(teaser.title||target.title)}</strong></span></a>`;
+ if(target)document.querySelector('#home-teaser').innerHTML=`<a class="home-teaser" href="/video.html?id=${encodeURIComponent(target.id)}"><img src="https://i.ytimg.com/vi/${target.id}/mqdefault.jpg" alt="" loading="lazy"><span class="teaser-play" aria-hidden="true">▶</span><span><small>WATCH THE TEASER</small><strong>${esc(teaser.title||target.title)}</strong></span></a>`;
 }
 if(page==='games'||page==='comics'){
  const character=new URLSearchParams(location.search).get('character');

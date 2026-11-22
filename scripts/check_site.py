@@ -58,28 +58,42 @@ class RegionLinks(HTMLParser):
             self.depth -= 1
 
 
-def check_home(home, streams):
-    assert Document(home).h1 == 1
-    assert home.index('id="news"') < home.index('id="zatsusaba"') < home.index('id="today"')
+def check_homes(home, classic, streams):
+    news_page = Document(home)
+    classic_page = Document(classic)
+    assert news_page.h1 == classic_page.h1 == 1
+    assert news_page.canon == [BASE + "/"]
+    assert classic_page.canon == [BASE + "/zatsusaba/"]
+    assert not (OUT / "zatsusaba.html").exists()
+    assert "<title>ナゼトピ" in home
+    assert '<meta property="og:site_name" content="ナゼトピ">' in home
+    schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S)]
+    websites = [s for s in schemas if s.get("@type") == "WebSite"]
+    assert len(websites) == 1
+    assert websites[0]["name"] == "ナゼトピ" and websites[0]["url"] == BASE + "/"
+    assert websites[0]["alternateName"] == "NAZETOPI"
+
     article_urls = {a["url"] for group in streams.values() for a in group}
-    upper = RegionLinks(home, "#news").links
-    assert "/news/" in upper
-    assert [url for url in upper if url in article_urls] == [a["url"] for a in streams["news"][:4]]
-    lower = RegionLinks(home, "#zatsusaba").links
-    assert "/blog/" in lower and not set(lower).intersection(a["url"] for a in streams["news"])
-    lower_cards = [url for url in RegionLinks(home, ".media-home").links if url in article_urls]
-    assert lower_cards == [a["url"] for a in streams["blog"][:4]]
-    assert "/#zatsusaba" in RegionLinks(home, ".news-masthead").links
-    assert "/#zatsusaba" in RegionLinks(home, ".classic-masthead").links
-    assert any(src == "/assets/news/newsroom-kyu.webp" and "キュウちゃん" in alt
-               for src, alt in Document(home).images)
-    nav = RegionLinks(home, ".classic-nav")
-    destinations = {label: urljoin(BASE + "/", href) for label, href in zip(nav.labels, nav.links)}
-    for label, path in (("HOME", "/#zatsusaba"), ("STORY", "/story.html"), ("CHARACTERS", "/characters.html"),
-                        ("雑学Blog", "/blog/"), ("VIDEOS", "/videos.html")):
+    news_links = RegionLinks(home, "#news").links
+    assert "/news/" in news_links
+    assert [url for url in news_links if url in article_urls] == [a["url"] for a in streams["news"][:4]]
+    assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
+    assert any(src == "/assets/news/newsroom-kyu.webp" and "キュウちゃん" in alt for src, alt in news_page.images)
+    channel = RegionLinks(home, ".channel-strip")
+    assert channel.links == ["/zatsusaba/"] and news_page.links.count("/zatsusaba/") == 1
+    assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]
+    assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
+
+    assert not set(classic_page.links).intersection(a["url"] for a in streams["news"])
+    featured_blog = [url for url in RegionLinks(classic, ".media-home").links if url in article_urls]
+    assert featured_blog == [a["url"] for a in streams["blog"][:4]]
+    nav = RegionLinks(classic, ".classic-nav")
+    destinations = {label: urljoin(BASE + "/zatsusaba/", href) for label, href in zip(nav.labels, nav.links)}
+    for label, path in (("HOME", "/zatsusaba/"), ("STORY", "/story.html"), ("CHARACTERS", "/characters.html"),
+                        ("雑学Blog", "/blog/"), ("今日の動画", "/zatsusaba/#today"), ("VIDEOS", "/videos.html")):
         assert destinations.get(label) == BASE + path, f"Classic navigation: {label} → {path}"
-    for marker in ('id="hero-title"', 'id="home-teaser"', 'id="about"', 'fantasia-section'):
-        assert marker in home[home.index('id="zatsusaba"'):], f"Missing classic homepage element: {marker}"
+    for marker in ('id="hero-title"', 'id="home-teaser"', 'id="today"', 'id="about"', 'fantasia-section'):
+        assert marker in classic and marker not in home, f"Classic section belongs on /zatsusaba/: {marker}"
 
 
 def check_archives(streams):
@@ -125,7 +139,8 @@ def main():
     home=(OUT/"index.html").read_text(encoding="utf-8")
     articles = load()
     streams = {section: [a for a in articles if a["section"] == section] for section in ("news", "blog")}
-    check_home(home, streams)
+    classic = (OUT / "zatsusaba/index.html").read_text(encoding="utf-8")
+    check_homes(home, classic, streams)
     check_archives(streams)
     # Removing only generated content must recover each original page body exactly.
     for name in ("story.html","characters.html","videos.html","video.html"):
@@ -133,8 +148,8 @@ def main():
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
         assert FOOTER in built
         built=built.replace(FOOTER,'')
-        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',"")
-        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>', "")
+        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/zatsusaba/#today">今日の動画</a>',"")
+        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/zatsusaba/#today">今日の動画</a>', "")
         assert original==built, f"Unexpected template change: {name}"
     for a in articles:
         text=(OUT/a["url"].lstrip("/")/"index.html").read_text(encoding="utf-8")
@@ -164,6 +179,7 @@ def main():
             target=urlsplit(urljoin(BASE+url,href))
             if target.netloc=="zatsusaba.github.io": pending.append(target.path)
     policy="/editorial-policy/"
+    assert "/zatsusaba/" in visited and BASE + "/zatsusaba/" in dates
     assert policy in visited and BASE+policy in dates
     assert Document((OUT/"editorial-policy/index.html").read_text(encoding="utf-8")).canon==[BASE+policy]
     for a in articles:
@@ -172,7 +188,11 @@ def main():
         assert url in visited and dates[BASE+url]==a["updated"]
         assert Document(html).canon==[BASE+url] and "noindex" not in html.split("</head>")[0]
         schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html).group(1))
-        brand = "雑サバ新聞" if a["section"] == "news" else "雑学サバイバル"
+        brand = "ナゼトピ" if a["section"] == "news" else "雑学サバイバル"
+        if a["section"] == "news":
+            assert schema["author"]["name"] == brand and schema["publisher"]["name"] == "雑学サバイバル"
+            assert re.search(r'<p class="blog-date">[^<]*ナゼトピ', html)
+            assert f'<meta property="og:site_name" content="{brand}">' in html
         assert f'<title>{escape(a["title"])} | {brand}</title>' in html
         assert f'<meta name="description" content="{escape(a["description"])}">' in html
         if not (a["section"] == "news" and a.get("category_cover")):

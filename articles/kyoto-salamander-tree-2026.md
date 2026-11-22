@@ -10,7 +10,7 @@ topic: "京都水族館のオオサンショウウオツリー2026"
 tags: [京都, 水族館, オオサンショウウオ]
 image: /assets/news/kyoto-salamander-cover.webp
 image_alt: "オオサンショウウオのぬいぐるみが積み上がったツリーのイメージイラスト"
-thumbnail_label: "99個!?"
+thumbnail_label: "ぬいぐるみ\n99個!?"
 sources:
   - title: "京都水族館「オオサンショウウオツリー2026」展示案内（11月16日発表）"
     url: https://www.kyoto-aquarium.com/news/k_20261116/

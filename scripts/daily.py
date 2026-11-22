@@ -67,10 +67,10 @@ def render(videos, articles, root, page, write, urls):
 
     for day, entries in groups.items():
         base = "/today/"+(day or "undated")+"/"
-        title = day+" の雑学" if day else "公開日時を確認中の動画"
+        title = day+" の動画" if day else "公開日時を確認中の動画"
         for url, chunk, pager, number in pages(entries, base):
             heading = title if number==1 else f"{title}（{number}ページ）"
-            body = '<section class="blog-shell daily-archive">'+link("/today/","← 今日の雑学")+'<h1>'+heading+'</h1>'+cards((day, row) for row in chunk)+pager+'</section>'
+            body = '<section class="blog-shell daily-archive">'+link("/today/","← 今日の動画")+'<h1>'+heading+'</h1>'+cards((day, row) for row in chunk)+pager+'</section>'
             write(url,page(heading,"雑学サバイバルの公開動画。",url,body)); urls.append(url)
 
     today=datetime.now(JST).date().isoformat()
@@ -82,8 +82,8 @@ def render(videos, articles, root, page, write, urls):
     dates = "".join(link("/today/"+d+"/",d) for d in days)
     if "" in groups:
         dates += link("/today/undated/","公開日時を確認中の動画")
-    archive = '<section class="blog-shell daily-archive"><h1>今日の雑学</h1>'
+    archive = '<section class="blog-shell daily-archive"><h1>今日の動画</h1>'
     archive += grid+'<h2>過去の更新</h2><div class="daily-dates">'+dates+'</div></section>'
-    write("/today/",page("今日の雑学","公開済み動画を日本時間の公開日から探せます。","/today/",archive))
+    write("/today/",page("今日の動画","公開済み動画を日本時間の公開日から探せます。","/today/",archive))
     urls.append("/today/")
-    return '<section id="today" class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の雑学</h2></div></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'
+    return '<section id="today" class="blog-home daily-home"><div class="blog-home-head"><div><p class="eyebrow">YOUTUBE</p><h2>今日の動画</h2></div></div>'+grid+'<p>'+link('/videos.html','動画一覧へ →')+'</p></section>'

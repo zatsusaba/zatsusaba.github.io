@@ -42,6 +42,18 @@ with patch.object(b.subprocess, "run", return_value=SimpleNamespace(stdout="COMM
     assert b.load()[0]["slug"] == "pineapple"
 second.write_text(sample.replace("date: 2026-11-06", 'published_at: "2026-11-06T10:00:00+09:00"\ndate: 2026-11-06', 1),encoding="utf-8")
 assert b.load()[0]["slug"] == "second"
+# The rendered front page follows publication order even within a single day.
+b.build()
+home_path=b.OUT/"index.html"
+home=home_path.read_text(encoding="utf-8")
+assert home.index('href="/blog/second/"') < home.index('href="/blog/pineapple/"') < home.index('class="news-categories"')
+first_article=root/"articles/pineapple.md"
+first_article.write_text(sample.replace("date: 2026-11-06", 'edition: 夜刊\npublished_at: "2026-11-06T11:00:00+09:00"\ndate: 2026-11-06',1),encoding="utf-8")
+b.build()
+home=home_path.read_text(encoding="utf-8")
+assert home.index('href="/blog/pineapple/"') < home.index('href="/blog/second/"') < home.index('class="news-categories"')
+assert '夜刊' in home.split('</h1>',1)[0]
+first_article.write_text(sample,encoding="utf-8")
 second.write_text(sample,encoding="utf-8")
 b.build()
 article_html=(b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
@@ -133,6 +145,7 @@ second.write_text(second.read_text(encoding="utf-8").replace("---\n","---\ndraft
 b.build()
 assert not (b.OUT/"blog/second/index.html").exists()
 assert '/blog/second/' not in (b.OUT/"blog/index.html").read_text(encoding="utf-8")
+assert '/blog/second/' not in home_path.read_text(encoding="utf-8")
 second.write_text(sample.replace("category: 食べ物","category: 不明"),encoding="utf-8")
 try:
     b.load()

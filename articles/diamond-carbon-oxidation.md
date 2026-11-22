@@ -7,7 +7,7 @@ updated: 2026-11-13
 category: 科学
 topic: ダイヤモンドは燃えるのか
 tags: [科学, ダイヤモンド, 炭素]
-conditions: "ダイヤモンドの酸化には十分な熱や周囲の酸素などの条件が関わります。画像は生成した参考イラストで、実験記録や鑑別資料ではありません。"
+conditions: "ダイヤモンドの酸化には十分な熱や周囲の酸素などの条件が関わります。挿絵は実験記録や鑑別資料ではありません。"
 sources:
   - title: "GIA『Diamond Care and Cleaning Guide』"
     url: https://www.gia.edu/diamond-care-cleaning

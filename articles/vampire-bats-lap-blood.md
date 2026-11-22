@@ -8,9 +8,8 @@ category: 動物
 topic: チスイコウモリは血を吸わない？ 舌でなめる食事の仕組み
 tags: []
 image: /assets/blog/vampire-bats-lap-blood/thumbnail.webp
-image_alt: 血滴に舌を近づけるコウモリ（AI生成の参考イラスト）
+image_alt: 血滴に舌を近づけるコウモリ
 show_cover: false
-conditions: 画像は独自の模式図またはAI生成の参考画です。
 youtube: z_pKv2AIBX4
 youtube_title: '吸わないコウモリ #漫画 #雑学 #コウモリ'
 youtube_format: short
@@ -29,8 +28,6 @@ sources:
 
 ![脚の表面の血をなめるチスイコウモリのイメージ画](/assets/blog/vampire-bats-lap-blood/body-01.webp)
 
-チスイコウモリの食事を描いた参考イラスト（AI生成）。
-
 ## 歯で小さな傷をつけ、舌でなめる
 
 [米国地質調査所の解説](https://www.usgs.gov/faqs/do-vampire-bats-really-exist)によると、鋭い前歯で相手の皮膚に小さな傷をつけ、そこから流れる血を舌でなめます。血を栄養として利用していることは本当ですが、「吸う」という言葉から想像しやすい動作とは少し違います。
@@ -48,8 +45,6 @@ sources:
 同団体によると、血を食べるコウモリとして知られているのは3種です。ナミチスイコウモリは、洞窟や木のうろなどをねぐらにして、群れで暮らします。
 
 ![洞窟の岩に逆さにつかまり、羽をたたんで休むコウモリ](/assets/blog/vampire-bats-lap-blood/bat-roost.webp)
-
-洞窟のねぐらを描いた参考イラスト（AI生成）。
 
 映画の吸血鬼と比べて意外だったのは、牙の形よりも、少しずつ血をなめ取るところです。歯だけでなく舌や唾液にも役割があると知ると、ひとくくりに「吸血」と呼ぶだけでは見えない違いが分かります。
 

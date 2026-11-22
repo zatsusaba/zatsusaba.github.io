@@ -12,7 +12,7 @@ youtube: UrkKAeBlFpM
 youtube_title: 青い太陽
 youtube_format: short
 image: /assets/covers/mars-cover.png
-image_alt: 宇宙・火星の夕日は青い？ 火星と青い光をモチーフにした専用サムネイル（AI生成のイメージ。探査機の実写ではありません）。
+image_alt: 宇宙・火星の夕日は青い？ 火星と青い光をモチーフにしたイラスト（想像図）。
 sources:
 - title: NASAによる撮影条件と画像の説明
   url: https://science.nasa.gov/resource/sunset-at-mars-gale-crater-curiosity/

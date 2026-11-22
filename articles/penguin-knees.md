@@ -11,9 +11,9 @@ tags:
 - 膝
 - 骨格
 image: /assets/blog/penguin-knees/thumbnail.webp
-image_alt: 雪上に立つペンギンの外観（AI生成の参考イラスト）
+image_alt: 雪上に立つペンギンの外観
 show_cover: false
-conditions: 画像はAI生成の参考画で、精密な解剖図ではありません。
+conditions: 図は外観を描いたもので、骨格の正確な位置は示していません。
 youtube: gM35maABR0I
 youtube_title: 'ペンギンの膝どこ #漫画 #雑学 #ペンギン'
 youtube_format: short
@@ -31,7 +31,7 @@ sources:
 
 ![雪上に立つペンギンの全身を横から描く](/assets/blog/penguin-knees/body-01.webp)
 
-AI生成の参考イラスト。羽毛に覆われた外観を描いたもので、骨格や膝の位置を透視した画像ではありません。
+骨格は羽毛に隠れていて、外見だけで膝の位置は分かりません。
 
 ## 見えている部分だけが「脚」ではない
 
@@ -47,7 +47,7 @@ AI生成の参考イラスト。羽毛に覆われた外観を描いたもので
 
 ![雪上を後ろから見たペンギン。脚の上部は羽毛に隠れる](/assets/blog/penguin-knees/body-02.webp)
 
-AI生成の参考イラスト。歩く外観を表したもので、膝や足首の正確な位置を示す解剖図ではありません。
+歩く姿を描いた図です。膝や足首の正確な位置は示していません。
 
 ## 見えないだけで、ちゃんとある
 

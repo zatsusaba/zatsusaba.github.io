@@ -11,9 +11,8 @@ tags:
 - ビー玉
 - 炭酸
 image: /assets/blog/ramune-marble-stopper/thumbnail.webp
-image_alt: ラムネ瓶の口元でビー玉が口ゴムに接する概念画（AI生成の参考イラスト）
+image_alt: ラムネ瓶の口元でビー玉が口ゴムに接する概念画
 show_cover: false
-conditions: 画像は模式図またはAI生成の参考画です。実物写真ではありません。
 youtube: zJntWnz20ww
 youtube_title: 'ラムネのビー玉は #漫画 #雑学 #ラムネ'
 youtube_format: short
@@ -29,7 +28,7 @@ sources:
 
 ![卓上に立つラムネ瓶と首の中のガラス玉を描く](/assets/blog/ramune-marble-stopper/body-01.webp)
 
-AI生成の参考イラスト。開栓後に玉が瓶内へ落ちたイメージであり、密栓位置の図ではありません。
+開栓後に玉が瓶内へ落ちたイメージであり、密栓位置の図ではありません。
 
 ## ガラス玉を、内側から押しつける
 
@@ -37,7 +36,7 @@ AI生成の参考イラスト。開栓後に玉が瓶内へ落ちたイメージ
 
 ![未開栓ラムネの飲み口内側で玉が口ゴムに接する概念画](/assets/blog/ramune-marble-stopper/body-02.webp)
 
-AI生成の参考・概念イラスト。密栓位置の概念画。実製品の詳細寸法や内部構造を正確に再現しない。
+密栓位置の概念画。実製品の詳細寸法や内部構造を正確に再現しない。
 
 製造元の[倉敷鉱泉の説明](https://www.kurashikikousen.com/ramune-story/)では、炭酸水を充填した瓶を逆さにして玉を飲み口へ移動させると、内部の圧力によって玉が口ゴムに押しつけられます。瓶を元の向きに戻しても、圧力が玉を押さえるので密栓が保たれます。
 

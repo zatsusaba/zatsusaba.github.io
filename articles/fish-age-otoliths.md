@@ -11,9 +11,9 @@ tags:
 - 耳石
 - 年齢
 image: /assets/blog/fish-age-otoliths/cover-v2.webp
-image_alt: 海を泳ぐ銀色の硬骨魚のAI参考イラスト。特定の個体や年齢を示すものではない
+image_alt: 海を泳ぐ銀色の硬骨魚のイラスト。特定の個体や年齢を示すものではない
 show_cover: false
-conditions: 魚のイラストはAI生成の参考画で、魚の大きさから年齢を示すものではありません。耳石写真はNOAA Fisheriesが公開する実物写真で、イラストとは区別しています。
+conditions: 魚の挿絵は、大きさから年齢を示すものではありません。耳石写真はNOAA Fisheriesが公開する実物写真で、イラストとは区別しています。
 youtube: _R9D4sxklfA
 youtube_title: '魚の年齢、どうやって分かる？ #漫画 #雑学 #魚'
 youtube_format: short
@@ -27,7 +27,7 @@ sources:
 ---
 **魚の年齢は、頭の中にある「耳石」の成長層を調べて推定できます。** 木の年輪に似ていますが、見える線を無条件に「1本で1年」と数えるわけではありません。
 
-![浅い海を泳ぐ小魚のAI参考イラスト。特定の魚種・個体の年齢を示すものではない](/assets/blog/fish-age-otoliths/body-habitat-v2.webp)
+![浅い海を泳ぐ小魚のイラスト。特定の魚種・個体の年齢を示すものではない](/assets/blog/fish-age-otoliths/body-habitat-v2.webp)
 
 魚は外から眺めただけでは、何年生きてきたのか分かりません。イラスト中の大小は年齢比較を表していません。
 

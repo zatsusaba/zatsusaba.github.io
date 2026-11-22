@@ -7,9 +7,9 @@ updated: '2026-11-14'
 category: 動物
 topic: "寄生菌に感染したアリの葉へのかみつきと固定"
 tags: [アリ, 菌類, 生態]
-conditions: "主にタイ南部の森林で観察されたCamponotus leonardiの働きアリとOphiocordyceps unilateralis sensu latoの関係。ほかのアリや寄生菌全般には広げない。イラストはAI生成の参考画で、実写・種同定図・実測データではない。"
+conditions: "主にタイ南部の森林で観察されたCamponotus leonardiの働きアリとOphiocordyceps unilateralis sensu latoの関係。ほかのアリや寄生菌全般には広げない。挿絵は種の同定や計測には使えない。"
 image: /assets/blog/zombie-ant/understory-cover.webp
-image_alt: "熱帯の森の地面近くで、葉の上を歩くアリを描いた参考イラスト（AI生成）"
+image_alt: "熱帯の森の地面近くで、葉の上を歩くアリを描いた参考イラスト"
 show_cover: false
 youtube: r5dcXBUyg4o
 youtube_title: "本物のゾンビ！？ #漫画 #雑学"
@@ -37,7 +37,7 @@ sources:
 
 ![葉の裏側で、葉脈に口元を当てるアリの参考イラスト](/assets/blog/zombie-ant/leaf-underside.webp)
 
-葉裏の葉脈をかむ位置を描いた参考イラスト（AI生成）。観察個体やあごの正確な形の再現ではありません。
+葉裏の葉脈をかむ位置を描いた参考イラスト。観察個体やあごの正確な形の再現ではありません。
 
 ## かみついたままなのは、なぜ？
 

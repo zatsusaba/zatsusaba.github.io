@@ -8,9 +8,9 @@ category: 動物
 topic: セイヨウミツバチの雌雄の見分け方と針の由来
 tags: [ミツバチ, 昆虫, 複眼, 働き蜂]
 image: /assets/articles/honeybee-sex-differences/drone-cover.jpg
-image_alt: 大きな複眼を持つ雄のミツバチと巣を描いた専用サムネイル（AI生成イラスト）
+image_alt: 大きな複眼を持つ雄のミツバチと巣を描いたイラスト
 show_cover: false
-conditions: 主にセイヨウミツバチ（Apis mellifera）の成虫の特徴を説明します。複眼や体型の目印を他種のハチへ一律に当てはめることはできません。画像はAI生成の説明用イラストで、実物の同定や安全の判定には使えません。
+conditions: 主にセイヨウミツバチ（Apis mellifera）の成虫の特徴を説明します。複眼や体型の目印を他種のハチへ一律に当てはめることはできません。図だけで実物の種類や安全性は判定できません。
 youtube: PrWwDrV15ls
 youtube_title: '刺せないミツバチ #雑学 #面白い #ミツバチ'
 youtube_format: short
@@ -36,9 +36,7 @@ sources:
 
 ここでは、養蜂で広く飼われるセイヨウミツバチ（*Apis mellifera*）を中心に紹介します。野外のハチに近づいたり、つかまえたりして確かめるための見分け方ではありません。
 
-![白いクローバーの花で花粉を集める働き蜂を描いたAI生成イラスト](/assets/articles/honeybee-sex-differences/worker-clover.jpg)
-
-花を訪れる働き蜂のイメージ。本文中の画像はいずれもAI生成の説明用イラストで、実物を撮影した写真ではありません。
+![白いクローバーの花で花粉を集める働き蜂を描いたイラスト](/assets/articles/honeybee-sex-differences/worker-clover.jpg)
 
 ## 花で働くミツバチは、メス
 
@@ -50,7 +48,7 @@ sources:
 
 顔の両側にある大きな目は、小さな目の単位が集まった「複眼」です。セイヨウミツバチの雄はこの複眼がとても大きく、**左右の複眼が頭のてっぺんで接します。**働き蜂の複眼はそれより小さく、左右の間にはっきり隙間があります。[アリゾナ州立大学の解説](https://askabiologist.asu.edu/honey-bee-identification)
 
-![左は大きな複眼が頭頂で接する雄、右は複眼の間が離れた雌の働き蜂の特徴を示すAI生成イラスト](/assets/articles/honeybee-sex-differences/compound-eyes.jpg)
+![左は大きな複眼が頭頂で接する雄、右は複眼の間が離れた雌の働き蜂の特徴を示すイラスト](/assets/articles/honeybee-sex-differences/compound-eyes.jpg)
 
 左が雄、右が雌の働き蜂。複眼の違いを説明するためのイメージで、毛や細部を含む正確な標本図ではありません。実物の比較は[大学の解説と掲載写真](https://askabiologist.asu.edu/honey-bee-identification)も参考になります。
 

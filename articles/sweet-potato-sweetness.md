@@ -12,7 +12,7 @@ youtube: srVY3dUR8K0
 youtube_title: 焼き芋の謎
 youtube_format: short
 image: /assets/covers/sweet-potato-cover.png
-image_alt: 食べ物・焼き芋の甘さの秘密。炭火で温まるさつまいもを描いた専用サムネイル（AI生成のイメージ）。
+image_alt: 食べ物・焼き芋の甘さの秘密。炭火で温まるさつまいもを描いた専用サムネイル。
 sources:
 - title: 日本いも類研究会 焼きいもが甘いのはなぜですか
   url: https://www.jrt.gr.jp/q_a/spqa_yakiimo/
@@ -41,7 +41,7 @@ show_cover: false
 
 ![皿の上の焼き芋を割った参考イラスト。紫紅色の皮の内側に黄色い身が見え、湯気が立っている。](/assets/articles/sweet-potato-sweetness/roasted-sweet-potato-illustration.png)
 
-砂糖などを添えていない焼き芋の参考イラスト（AI生成）。品種を特定した図ではありません。
+砂糖などを添えていない焼き芋の参考イラスト。品種を特定した図ではありません。
 
 ## でんぷんがほどけてから 甘さが生まれる
 
@@ -83,7 +83,7 @@ show_cover: false
 
 ![木箱に間隔を空けて置いた、加熱前のさつまいもの参考イラスト。](/assets/articles/sweet-potato-sweetness/raw-sweet-potato-illustration.png)
 
-加熱する前のさつまいもの参考イラスト（AI生成）。研究で使われた貯蔵設備・条件の再現ではありません。
+加熱する前のさつまいもの参考イラスト。研究で使われた貯蔵設備・条件の再現ではありません。
 
 もう一つ、焼き方だけでは決まらない理由があります。収穫後、どう貯蔵されていたかです。
 

@@ -8,9 +8,9 @@ category: 自然
 topic: 虹は本当は丸い？ 地上では弧に見える理由
 tags: []
 image: /assets/blog/rainbow-circle/thumbnail.webp
-image_alt: 雨上がりの山並みにかかる虹の弧（AI生成の参考イラスト）
+image_alt: 雨上がりの山並みにかかる虹の弧
 show_cover: false
-conditions: 本文1枚目は空から撮影された映像の一コマ、2枚目はAI生成の参考イラストです。
+conditions: 本文1枚目は空から撮影された映像の一コマ、2枚目はイラストです。
 youtube: PGduBYtC0mA
 youtube_title: '虹の不思議 #漫画 #雑学 #虹'
 youtube_format: short
@@ -43,7 +43,7 @@ sources:
 
 ![高台から雨の谷にかかる虹を見る人](/assets/blog/rainbow-circle/body-02.webp)
 
-太陽を背に雨の方向を見る条件を表したAI生成の概念イラスト。光路や実際の観測位置を再現した図ではありません。
+太陽を背に雨の方向を見る条件を表した図。光路や実際の観測位置を再現した図ではありません。
 
 とはいえ、高い場所に行けば必ず丸く見えるわけではありません。太陽を背にした側に水滴があり、円の下側まで見通せる必要があります。水滴の分布や太陽の位置が変われば、見える範囲も変わります。
 

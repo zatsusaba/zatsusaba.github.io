@@ -8,9 +8,9 @@ category: 動物
 topic: キリギリス類の前脚の鼓膜器官と二経路による音の受容
 tags: [キリギリス, 昆虫, 聴覚]
 image: /assets/covers/katydid-ears-on-legs.webp
-image_alt: キリギリスの仲間を描いたAI生成の参考イラスト
+image_alt: キリギリスの仲間を描いたイラスト
 show_cover: false
-conditions: 前脚の鼓膜器官と、南米のキリギリス科の一種Copiphora gorgonensisを対象にした聴覚研究を区別して紹介します。研究で測定された性質を日本のキリギリスや昆虫全体へ一律に当てはめません。画像はAI生成の参考イラストで、種の同定や耳の解剖学的構造を示す図ではありません。
+conditions: 前脚の鼓膜器官と、南米のキリギリス科の一種Copiphora gorgonensisを対象にした聴覚研究を区別して紹介します。研究で測定された性質を日本のキリギリスや昆虫全体へ一律に当てはめません。絵は種を同定したり、耳の解剖学的構造を読み取ったりするためのものではありません。
 youtube: fqqZmlGux4A
 youtube_title: 'キリギリスの謎 #雑学 #面白い #キリギリス'
 youtube_format: short
@@ -28,7 +28,7 @@ sources:
 
 **キリギリスの耳にあたる「鼓膜器官」は、頭ではなく前脚のすねにあります。** 音で薄い膜が振動するしくみは、人の鼓膜と似ています。でも、耳の位置が違うだけではありません。体の中に、音のもう一つの通り道を持つ仲間もいるのです。
 
-![草の茎にとまるキリギリスの仲間を描いたAI生成の参考イラスト](/assets/blog/katydid-ears-on-legs/grass-stem.webp)
+![草の茎にとまるキリギリスの仲間を描いたイラスト](/assets/blog/katydid-ears-on-legs/grass-stem.webp)
 
 *草むらで暮らす姿の参考イラスト。耳の位置や内部構造を正確に示す解剖図ではありません。*
 
@@ -46,7 +46,7 @@ sources:
 
 この違いは、音の来る方向を見分ける手がかりになると考えられています。ただし、この研究で測った伝わり方と、野外での方向判別の詳しい性能は別の話です。「人のように二度聞こえる」といった主観的な聞こえ方まで確かめたわけではありません。
 
-![熱帯林の葉にとまるキリギリスの仲間を描いたAI生成の参考イラスト](/assets/blog/katydid-ears-on-legs/forest-listener.webp)
+![熱帯林の葉にとまるキリギリスの仲間を描いたイラスト](/assets/blog/katydid-ears-on-legs/forest-listener.webp)
 
 *熱帯林で暮らす仲間の雰囲気を描いた参考イラスト。研究対象の種そのものを再現した画像ではありません。*
 

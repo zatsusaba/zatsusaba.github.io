@@ -8,7 +8,7 @@ category: 科学
 topic: "指の関節音に関わる空洞形成の観察と気泡収縮の数理モデル"
 tags: [指, 気泡, 音]
 image: /assets/blog/knuckle-cracking-sound/thumbnail.webp
-image_alt: "自然に軽く曲がった手の指を、机の高さから見たAI生成の参考イラスト"
+image_alt: "自然に軽く曲がった手の指を、机の高さから見たイラスト"
 show_cover: false
 conditions: "研究で扱われた指の付け根の関節音の仕組みです。体のすべての関節音に当てはまるとは限りません。"
 youtube: 0jbUOkNIInw
@@ -26,13 +26,11 @@ sources:
 
 ![自然に軽く曲げた指と付け根の関節が見える手](/assets/blog/knuckle-cracking-sound/body-01.webp)
 
-*自然な手の形を描いたAI生成の参考イラストです。*
-
 ## MRIでは、音のあとにも空洞が見えた
 
 ![患者や撮影画像のないMRI装置のイメージ](/assets/blog/knuckle-cracking-sound/body-02.webp)
 
-*AI生成の参考イラストです。研究に使われた装置や撮影方法を再現したものではありません。*
+*装置や撮影方法は、実際の研究で使用されたものとは異なります。*
 
 2015年、Kawchukらは、1人の参加者の指の付け根にある10の関節をMRIで観察しました。音がしたとき、関節の間の液体に空洞が現れ、音がしたあとも見えていました。
 

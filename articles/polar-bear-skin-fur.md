@@ -11,9 +11,9 @@ tags:
 - 皮膚
 - 毛
 image: /assets/blog/polar-bear-skin-fur/thumbnail.webp
-image_alt: 白く見える毛と黒い鼻のあるホッキョクグマ（AI生成の参考イラスト）
+image_alt: 白く見える毛と黒い鼻のあるホッキョクグマ
 show_cover: false
-conditions: 画像はAI生成の参考画で、精密な解剖図ではありません。
+conditions: 図は外観を描いたもので、毛の下の皮膚の構造は示していません。
 youtube: XVR6TkOmp5A
 youtube_title: 'シロクマは真っ黒！？ #漫画 #雑学 #シロクマ'
 youtube_format: short
@@ -29,7 +29,7 @@ sources:
 
 ![雪上を歩く成獣のホッキョクグマを全身斜めから描く](/assets/blog/polar-bear-skin-fur/body-01.webp)
 
-AI生成の参考イラスト。黒い皮膚を直接示す精密図ではなく、外観参考イラスト。黒い色の機能は示さない。
+毛に覆われた外見を描いています。皮膚の色やその働きは、この絵からは読み取れません。
 
 ## 白い姿と黒い皮膚
 
@@ -37,7 +37,7 @@ AI生成の参考イラスト。黒い皮膚を直接示す精密図ではなく
 
 ![雪で休むホッキョクグマの白く見える毛と黒い鼻・足裏](/assets/blog/polar-bear-skin-fur/body-02.webp)
 
-AI生成の参考・概念イラスト。外観のみ。鼻・肉球は毛の下の皮膚全体を直接証明しない。
+鼻や肉球の色だけでは、毛の下の皮膚全体の色は分かりません。
 
 生まれたばかりの子は例外です。[同団体の研究者による説明](https://polarbearsinternational.org/news-media/articles/why-polar-bears-have-black-skin/)では、子の皮膚は最初ピンク色で、生後数か月の間に黒くなるとされています。
 

@@ -11,9 +11,8 @@ tags:
 - 気泡緩衝材
 - 歴史
 image: /assets/blog/bubble-wrap-wallpaper/thumbnail.webp
-image_alt: 箱と気泡緩衝材の横長イラスト（AI生成の参考イラスト）
+image_alt: 箱と気泡緩衝材の横長イラスト
 show_cover: false
-conditions: 画像は模式図またはAI生成の参考画です。実物写真ではありません。
 youtube: nPqHHrtW7Do
 youtube_title: 'プチプチの正体は… #漫画 #雑学 #プチプチ'
 youtube_format: short
@@ -29,7 +28,7 @@ sources:
 
 ![壁に気泡シートの試作品風パネルがある無人の室内イラスト](/assets/blog/bubble-wrap-wallpaper/body-01.webp)
 
-AI生成の参考イラスト。壁紙構想の概念画。発明当時の人物・製品・現場の再現ではありません。
+壁紙構想の概念画。発明当時の人物・製品・現場の再現ではありません。
 
 ## 壁を飾るはずが、コンピューターを守る材料に
 
@@ -37,7 +36,7 @@ AI生成の参考イラスト。壁紙構想の概念画。発明当時の人物
 
 ![気泡緩衝材で機器を包んだ箱のイラスト](/assets/blog/bubble-wrap-wallpaper/body-02.webp)
 
-AI生成の参考イラスト。包装用途の参考イラスト。実在の機器や輸送事例の再現ではありません。
+包装用途の参考イラスト。実在の機器や輸送事例の再現ではありません。
 
 その後、空気の粒を持つ材料は保護用の包装に使われるようになります。同社は、1960年からIBMのコンピューターの輸送を守るために使われたと紹介しています。
 

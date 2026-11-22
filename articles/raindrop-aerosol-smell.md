@@ -7,9 +7,9 @@ updated: '2026-11-13'
 category: 自然
 topic: "雨上がりのにおいと雨滴エアロゾル"
 tags: [雨, 土, 自然]
-conditions: "雨滴の泡と飛沫は、表面の性質や水滴の衝突速度に左右されます。香りを運ぶ経路の説明は研究者が示した可能性で、屋外のにおいのすべてを実証したものではありません。画像は雨と土の場面を描いたAI生成イラストで、実験の再現ではありません。"
+conditions: "雨滴の泡と飛沫は、表面の性質や水滴の衝突速度に左右されます。香りを運ぶ経路の説明は研究者が示した可能性で、屋外のにおいのすべてを実証したものではありません。"
 image: /assets/blog/raindrop-aerosol-smell/cover-v2.webp
-image_alt: "雨上がりの庭先の道と濡れた草を描いたAI生成イラスト。観察写真ではない。"
+image_alt: "雨上がりの庭先の道と濡れた草を描いたイラスト。観察写真ではない。"
 show_cover: false
 youtube: 0-q2b0KRHsI
 youtube_title: '雨の秘密… #漫画 #ai漫画 #雑学'
@@ -32,7 +32,7 @@ sources:
 
 [MITの研究チームの説明](https://news.mit.edu/2015/rainfall-can-release-aerosols-0114)によると、土など細かな孔のある表面に水滴が当たると、接触した場所に小さな空気の泡が閉じ込められることがあります。泡が水滴の中を上がって表面ではじけると、細かな水滴が空気中に散った「エアロゾル」が生まれます。
 
-![雨粒が湿った土に当たる場面を描いたAI生成イラスト](/assets/blog/raindrop-aerosol-smell/body-rain-v2.webp)
+![雨粒が湿った土に当たる場面を描いたイラスト](/assets/blog/raindrop-aerosol-smell/body-rain-v2.webp)
 
 雨と土の場面のイメージです。絵に見える水しぶきは、研究で観察された微小な泡や飛沫を再現したものではありません。
 
@@ -46,7 +46,7 @@ MITの実験では、水滴の衝突速度や表面の性質によって飛沫�
 
 ## 香りの材料と、運ばれ方は別の話
 
-![雨の後の土、落ち葉、苔を描いたAI生成イラスト](/assets/blog/raindrop-aerosol-smell/body-soil-v2.webp)
+![雨の後の土、落ち葉、苔を描いたイラスト](/assets/blog/raindrop-aerosol-smell/body-soil-v2.webp)
 
 雨の後の地面を描いたイメージ。香りの成分や微生物を可視化したものではありません。
 

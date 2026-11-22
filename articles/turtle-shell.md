@@ -6,14 +6,14 @@ date: 2026-11-09
 updated: '2026-11-14'
 category: 動物
 image: /assets/blog/turtle-swimming-cover.webp
-image_alt: 池の中を泳ぎ、背中とお腹の甲羅が見えるカメの参考イラスト（AI生成）
+image_alt: 池の中を泳ぎ、背中とお腹の甲羅が見えるカメの参考イラスト
 show_cover: false
 topic: カメの甲羅の構造
 tags: [カメ, 甲羅, 骨格]
 youtube: JKeyl8bUQKk
 youtube_title: "カメの甲羅、脱げない!?"
 youtube_format: short
-conditions: 種類によって甲羅の表面や骨の構成に違いがあります。掲載画像はAI生成の参考イラストで、実物写真や精密な解剖図ではありません。
+conditions: 種類によって甲羅の表面や骨の構成に違いがあります。挿絵は甲羅の骨の細部を示す解剖図ではありません。
 sources:
   - title: San Diego Zoo Wildlife Alliance「Turtle and Tortoise」ABOUT
     url: https://animals.sandiegozoo.org/animals/turtle-and-tortoise
@@ -30,9 +30,7 @@ sources:
 
 甲羅は大きく、背中側の「背甲」とお腹側の「腹甲」に分けられます。
 
-![水辺で日光浴するカメ AI生成の参考イラスト](/assets/blog/turtle-basking.webp)
-
-参考イラスト（AI生成）。実物写真や精密な解剖図ではありません。
+![水辺で日光浴するカメのイラスト](/assets/blog/turtle-basking.webp)
 
 アメリカ自然史博物館の解説では、甲羅は体を外から守る構造であると同時に、内側の骨格の一部でもあり、背骨は背甲の裏側と一体になっています。背中に取り外し式の盾を背負う姿とは、しくみが違うのです。
 
@@ -48,9 +46,7 @@ sources:
 
 すべてのカメが、同じ硬さ・同じ表面の甲羅を持つわけではありません。
 
-![水中を泳ぐスッポンの仲間 AI生成の参考イラスト](/assets/blog/softshell-turtle.webp)
-
-参考イラスト（AI生成）。実物写真や精密な解剖図ではありません。
+![水中を泳ぐスッポンの仲間のイラスト](/assets/blog/softshell-turtle.webp)
 
 サンディエゴ動物園の解説には、オサガメやスッポンの仲間のように、丈夫な皮膚で覆われ、骨の構成にも違いがある例が紹介されています。だからといって、着替えのように脱げる甲羅になるわけではありません。
 

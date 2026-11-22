@@ -10,7 +10,7 @@ tags: [卵, 化学, 色の変化]
 image: /assets/blog/egg-yolk-green-ring/cover-v2.webp
 image_alt: "黄身の外周に緑灰色の輪があるゆで卵の断面を描いた参考イラスト"
 show_cover: false
-conditions: "卵白と卵黄を加熱したゆで卵で、黄身の表面に緑灰色の輪が現れる現象に限る説明です。緑色の食品一般や卵の状態の判定には当てはめません。画像は生成した参考イラストで、実験写真ではありません。"
+conditions: "卵白と卵黄を加熱したゆで卵で、黄身の表面に緑灰色の輪が現れる現象に限る説明です。緑色の食品一般や卵の状態の判定には当てはめません。挿絵は実験写真ではありません。"
 youtube: eMmnG9ZGEno
 youtube_title: '【漫画】卵を茹ですぎると #漫画 #雑学 #料理'
 youtube_format: short

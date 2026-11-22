@@ -8,9 +8,9 @@ category: 身近なモノ
 topic: 洗濯洗剤の使用量と洗浄力
 tags: [洗濯, 洗剤, 身近なモノ]
 image: /assets/blog/laundry-detergent-dose/thumbnail.jpg
-image_alt: 無地の洗剤容器と青いシャツ、奥の洗濯機を描いたAI生成の参考イラスト
+image_alt: 無地の洗剤容器と青いシャツ、奥の洗濯機を描いたイラスト
 show_cover: false
-conditions: 家庭用衣料用洗剤の一般的な使用量の考え方。製品・洗濯機・コースによって使用量やすすぎの指示は異なります。画像はAI生成の参考イラストで、特定の製品・機種の分量や操作方法を示すものではありません。
+conditions: 家庭用衣料用洗剤の一般的な使用量の考え方。製品・洗濯機・コースによって使用量やすすぎの指示は異なります。図の液量や操作部は、特定の製品・機種の使用量や操作方法を示していません。
 youtube: PmPBVXTFDWc
 youtube_title: '洗濯洗剤を2倍入れたら！？ #漫画 #雑学 #洗濯'
 youtube_format: short

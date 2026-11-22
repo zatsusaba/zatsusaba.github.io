@@ -8,9 +8,8 @@ category: 食べ物
 topic: 玉ねぎを切ると涙が出るのはなぜ？ 鍵は二つの酵素
 tags: []
 image: /assets/blog/onion-tears/thumbnail.webp
-image_alt: 玉ねぎの断面と涙の記号（AI生成の参考イラスト）
+image_alt: 玉ねぎの断面と涙の記号
 show_cover: false
-conditions: 画像は独自の模式図またはAI生成の参考画です。
 youtube: J93OoG2G0OM
 youtube_title: '玉ねぎのナゾ #漫画 #雑学'
 youtube_format: short
@@ -23,15 +22,13 @@ sources:
 
 ![玉ねぎを切る手元から目へ届く刺激をイメージした水彩画](/assets/blog/onion-tears/body-01.webp)
 
-AI生成の参考イラスト。玉ねぎを切る手元から目へ届く刺激をイメージした水彩画。実物や実験を記録した画像ではありません。 色付きの線は、目に見えない揮発成分の移動を表す比喩です。
+色付きの線は、玉ねぎから出た目に見えない揮発成分が目まで届く様子を表しています。
 
 ## 切ることで反応が始まる
 
 [ハウス食品グループの研究解説](https://housefoods-group.com/kenkyu/functions/research/oniontears.html)によると、玉ねぎの細胞が壊れると、もともと含まれている成分を材料にして催涙成分がつくられます。できた成分は揮発しやすく、空気中に広がります。それが目の表面に触れると刺激を感じ、涙が出ます。
 
 ![調理後の刻んだ玉ねぎと涙を拭う人](/assets/blog/onion-tears/body-02.webp)
-
-切った玉ねぎを調理した人が涙を拭う様子を描いたAI生成の参考イラスト。涙の原因物質や酵素を可視化した図ではありません。
 
 ## 鍵になる酵素は一つではない
 

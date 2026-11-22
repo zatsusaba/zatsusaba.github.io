@@ -7,12 +7,12 @@ updated: '2026-11-14'
 category: お金
 topic: "平均値と中央値の違い"
 tags: [統計, 平均値, 中央値]
-conditions: "数値は説明用の架空例で、実際の年収や景気を表しません。人物とコマの画像はAI生成の概念イラストで、コマの個数は計算例に対応しません。数値の比較図は独自制作です。"
+conditions: "数値は説明用の架空例で、実際の年収や景気を表しません。絵のコマの個数は計算例に対応しません。数値の比較図は独自制作です。"
 youtube: 1i6Gy59EZuI
 youtube_title: "【漫画】平均の罠 #漫画 #雑学 #お金"
 youtube_format: short
 image: /assets/blog/mean-median/cover-counter-dishes.webp
-image_alt: 木製のコマを入れた五つの皿のうち、一皿だけ量が多い様子を描いた参考イラスト（AI生成）
+image_alt: 木製のコマを入れた五つの皿のうち、一皿だけ量が多い様子を描いた参考イラスト
 show_cover: false
 sources:
   - title: "総務省統計局 なるほど統計学園『中心的な傾向を捉える』"

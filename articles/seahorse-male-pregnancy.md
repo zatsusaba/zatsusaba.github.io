@@ -11,9 +11,8 @@ tags:
 - 出産
 - 育児嚢
 image: /assets/blog/seahorse-male-pregnancy/thumbnail.webp
-image_alt: 海草に尾を巻き付けるタツノオトシゴを描いたAI生成イラスト
+image_alt: 海草に尾を巻き付けるタツノオトシゴを描いたイラスト
 show_cover: false
-conditions: 画像は模式図またはAI生成の参考画です。実物写真ではありません。
 youtube: OJx_hVZdGIs
 youtube_title: 'タツノオトシゴの不思議 #漫画 #雑学 #タツノオトシゴ'
 youtube_format: short
@@ -48,9 +47,9 @@ sources:
 
 また、[シドニー大学が2020年に紹介したポットベリーシーホースの研究](https://www.sydney.edu.au/news-opinion/news/2020/07/12/male-seahorses-transport-nutrients-to-embryos-research.html)では、オスから発生中の子へ栄養が渡ることも示されました。人の妊娠とまったく同じ仕組みという意味ではありませんが、父親の体が子の発育を支えていることが分かります。
 
-![成体から離れて泳ぐ数匹の小さなタツノオトシゴを描いたAI生成の参考画](/assets/blog/seahorse-male-pregnancy/body-02.webp)
+![成体から離れて泳ぐ数匹の小さなタツノオトシゴを描いた図](/assets/blog/seahorse-male-pregnancy/body-02.webp)
 
-育児嚢から出た後の稚魚が水中を泳ぐ姿を描いたAI生成の参考画。種類や実際の子の数を示すものではありません。
+育児嚢から出た後の稚魚が水中を泳ぐ姿を描いた図。種類や実際の子の数を示すものではありません。
 
 ## 種による違いもある
 

@@ -227,6 +227,22 @@ def render_comics(comics, articles, page, write, urls, known_videos, enabled=Tru
     return reverse
 
 
+def news_thumbnail(article, *, lead=False):
+    if article.get("category_cover"):
+        return ""
+    image_class = "news-lead-image" if lead else "news-thumb"
+    if article.get("thumbnail_fit") == "contain":
+        image_class += " thumbnail-contain"
+    loading = 'fetchpriority="high"' if lead else 'loading="lazy"'
+    label = article.get("thumbnail_label")
+    caption = f'<span class="news-thumbnail-label" aria-hidden="true">{escape(label)}</span>' if label else ""
+    return (
+        '<span class="news-story-visual">'
+        f'<img class="{image_class}" src="{escape(article["image"])}" alt="{escape(article["image_alt"])}" '
+        f'width="640" height="360" {loading}>{caption}</span>'
+    )
+
+
 def news_story(article, *, lead=False):
     date = article["date"]
     stamp = article.get("published_at", date)
@@ -242,26 +258,17 @@ def news_story(article, *, lead=False):
     )
     heading_tag = "h2" if lead else "h3"
     layout_class = "news-lead" if lead else "news-item"
-    image = ""
-    if not article.get("category_cover"):
-        image_class = "news-lead-image" if lead else "news-thumb"
-        if article.get("thumbnail_fit") == "contain":
-            image_class += " thumbnail-contain"
-        image_loading = 'fetchpriority="high"' if lead else 'loading="lazy"'
-        image = (
-            f'<img class="{image_class}" src="{escape(article["image"])}" alt="{escape(article["image_alt"])}" '
-            f'width="640" height="360" {image_loading}>'
-        )
+    image = news_thumbnail(article, lead=lead)
     text_only = "" if image else " data-text-only"
     return (
         f'<article class="{layout_class}"{text_only}><a class="{layout_class}-link" href="{escape(article["url"])}">'
-        f'<div class="{layout_class}-copy">{meta}<{heading_tag}>{escape(article["title"])}</{heading_tag}>'
+        f'{image}<div class="{layout_class}-copy">{meta}<{heading_tag}>{escape(article["title"])}</{heading_tag}>'
         + (f'<p class="news-deck">{escape(article["description"])}</p>' if lead else "")
-        + f'</div>{image}</a></article>'
+        + '</div></a></article>'
     )
 
 
-def news_front(news_items):
+def news_front(news_items, category_slugs=None):
     issue_date = ""
     if news_items:
         published = date.fromisoformat(news_items[0]["date"])
@@ -271,11 +278,23 @@ def news_front(news_items):
         )
     desk = (
         '<div class="news-desk news-section-head"><div class="news-desk-copy">'
-        f'{issue_date}<h1 id="news-title">最新ニュース</h1>'
-        '<p class="news-desk-intro">気になる話題を、我と一緒に読み解くのじゃ。</p>'
-        '<a href="/news/">ニュース一覧 <span aria-hidden="true">→</span></a></div>'
-        '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/kyu-frontpage.webp" '
-        'alt="キュウちゃん" width="960" height="720" fetchpriority="high"></div></div>'
+        f'{issue_date}<h1 id="news-title"><span>いま話題の、</span><span>なぜがわかる。</span></h1>'
+        '<a class="news-archive-cta" href="/news/">ニュース一覧へ <span aria-hidden="true">→</span></a></div>'
+        '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/news/newsroom-kyu.webp" '
+        'alt="雑サバ新聞の編集部にいるキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
+    )
+    published_categories = {article["category"] for article in news_items}
+    category_links = "".join(
+        f'<a href="/news/category/{escape(slug)}/">{escape(name)}</a>'
+        for name, slug in (category_slugs or {}).items() if name in published_categories
+    )
+    topics = (
+        '<nav class="news-topics" aria-label="ニュースの分野">'
+        f'<span class="news-topics-label">分野から読む</span>{category_links}</nav>'
+    ) if category_links else ""
+    tools = (
+        f'<div class="news-utility">{topics}'
+        '<a class="news-search-link" href="/news/#blog-search">記事検索</a></div>'
     )
     lead = news_story(news_items[0], lead=True) if news_items else (
         '<p class="news-empty">公開されたニュースはまだありません。</p>'
@@ -288,7 +307,7 @@ def news_front(news_items):
     ) if recent else ""
     return (
         '<section class="news-front" id="news" aria-labelledby="news-title">'
-        f'{desk}<div class="news-layout">{lead}{latest}</div></section>'
+        f'{desk}{tools}<div class="news-layout">{lead}{latest}</div></section>'
     )
 
 

@@ -15,7 +15,7 @@ import media
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_SHARE_IMAGE = "/assets/kyu-frontpage.webp"
+NEWS_SHARE_IMAGE = "/assets/news/newsroom-kyu.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
 CATS=dict(zip(["食べ物","人体","動物","自然","宇宙","歴史","心理","お金","身近なモノ"],["food","body","animals","nature","space","history","psychology","money","everyday"]))
@@ -45,6 +45,11 @@ def load():
         check(a["category"] in CATS,f"{p}: unknown category")
         if "edition" in a:
             check(a["edition"] in ("朝刊", "夜刊", "号外"), f"{p}: unknown edition")
+        if "thumbnail_label" in a:
+            label = a["thumbnail_label"]
+            check(section == "news" and isinstance(label, str) and bool(label.strip())
+                  and len(label) <= 20 and bool(a.get("image")),
+                  f"{p}: thumbnail_label requires a news image and 1 to 20 characters")
         for key in ("date","updated"): a[key]=date.fromisoformat(str(a[key])).isoformat()
         check(a["date"]<=a["updated"]<=today,f"{p}: invalid dates")
         try:
@@ -156,6 +161,8 @@ def write(url,text):
 def card(a):
     fit_class=' class="thumbnail-contain"' if a.get("thumbnail_fit")=="contain" else ""
     image = "" if a.get("category_cover") else f'<img{fit_class} src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy">'
+    if a.get("section") == "news":
+        image = media.news_thumbnail(a)
     stamp = a.get("published_at", a["date"])
     printed = stamp[:16].replace("T", " ")
     return f'<article class="blog-card"><a href="{a["url"]}">{image}<div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{stamp}">{printed}</time></div></a></article>'
@@ -333,9 +340,9 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            share_image = news_items[0]["image"] if news_items else NEWS_SHARE_IMAGE
+            share_image = NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
-            front = media.news_front(news_items)
+            front = media.news_front(news_items, CATS)
             classic = media.home_sections(blog_items, comics, card, categories, today_home)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))
             html=html.replace("<!--news:content-->", "<!--news:start-->"+front+"<!--news:end-->")

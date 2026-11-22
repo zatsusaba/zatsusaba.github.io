@@ -71,7 +71,8 @@ def check_home(home, streams):
     assert lower_cards == [a["url"] for a in streams["blog"][:4]]
     assert "/#zatsusaba" in RegionLinks(home, ".news-masthead").links
     assert "/#zatsusaba" in RegionLinks(home, ".classic-masthead").links
-    assert ("/assets/kyu-frontpage.webp", "キュウちゃん") in Document(home).images
+    assert any(src == "/assets/news/newsroom-kyu.webp" and "キュウちゃん" in alt
+               for src, alt in Document(home).images)
     nav = RegionLinks(home, ".classic-nav")
     destinations = {label: urljoin(BASE + "/", href) for label, href in zip(nav.labels, nav.links)}
     for label, path in (("HOME", "/#zatsusaba"), ("STORY", "/story.html"), ("CHARACTERS", "/characters.html"),

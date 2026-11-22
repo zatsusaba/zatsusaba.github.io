@@ -531,3 +531,10 @@ header.news-masthead {
   .news-masthead .news-nav a:active, .news-archive-cta:active, .news-topics a:active, .news-search-link:active,
   .news-inner :is(.blog-categories a, .blog-cta, .pager a, .pager button):active { transform: translateY(1px); }
 }
+
+@media (max-width: 22rem) {
+  .news-inner header.news-masthead {
+    flex-wrap: wrap;
+    gap: .1rem .35rem;
+  }
+}

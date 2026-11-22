@@ -1,16 +1,18 @@
 window.YOUTUBE_VIDEOS = [
   {
-    "id": "kMQbbxEib7c",
-    "title": "ウルトラマンの謎 #ウルトラマン #雑学 #面白い",
-    "publishedAt": "2026-11-20T23:00:29Z",
-    "date": "2026-11-21",
-    "format": "未確認",
+    "id": "7PlbixAYbf0",
+    "title": "もしも世界がドラクエになってしまったら？【面白い雑学】",
+    "publishedAt": "2026-11-21T20:30:27Z",
+    "date": "2026-11-22",
+    "format": "長尺動画",
     "genres": [
-      "切り抜き｜雑学サバイバル"
+      "もしもシリーズ",
+      "ゲームの雑学"
     ],
     "characters": [],
-    "description": "皆さんは初代ウルトラマンの成り立ちを、知っていますか？\n\n🔻本編マンガこちら\n\n「もしもウルトラマンが本当にいたらどうなる？」\nhttps://youtu.be/a6G2Rmo860U\n\n#ウルトラマン #雑学 #面白い",
-    "durationSeconds": 51.0
+    "description": "いつもの駅前が、突然ドラクエの世界になったら？\n武器屋で店番、やくそうの材料、ぱふぱふ担当大臣、平日発売の噂の真相、魔王の取引まで。\nドラゴンクエストの裏話と「現実だとこうなる」を、マンガで紹介します。\n\n12月3日（木）に『ドラゴンクエストモンスターズ４　枯れ木の国のビアンカ・フローラ』が発売予定です（Steam版は12月4日）。\n\n※この動画は個人の制作で、株式会社スクウェア・エニックスおよび公式とは関係ありません。ゲーム画面・公式イラスト・音楽は使用していません。\n\n▼チャプター\n\n00:00 オープニング\n00:53 第1章　武器と防具、本当に使える？\n03:22 第2章　薬草と回復魔法は効くのか\n06:04 第3章　モンスターに出会ったら？\n07:24 第4章　モンスターは仲間にできる？\n09:19 第5章　BGMの謎\n10:06 第6章　ドラゴンに勝てる？\n11:18 第7章　魔王の城\n12:05 最終章　魔王に勝てる？\n14:29 まとめ\n\n▼主な参考資料\n・電ファミニコゲーマー 堀井雄二インタビュー／宮岡寛インタビュー\n・任天堂「社長が訊く」（ドラゴンクエストIX／ドラ",
+    "durationSeconds": 908.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "a6G2Rmo860U",
@@ -39,32 +41,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "人差し指と中指を交差させて、一つの鼻に触れると……鼻が二つあるように感じる!?\n\nこれは「アリストテレスの錯覚」と呼ばれる触覚の錯覚の一つ。普段と違う指の位置関係によって、一つの物を二つに感じることがあります。\n\n感じ方には個人差があります。ぜひ試してみてね！\n\n参考：NTTコミュニケーション科学基礎研究所｜錯覚フォーラム\nhttps://illusion-forum.ilab.ntt.co.jp/haptics-aristotle/index.html\n\n#雑学 #面白い #錯覚",
     "durationSeconds": 16.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "4UjQKlZsBOo",
-    "title": "忍術の勉強方法 #忍者 #忍術 #雑学",
-    "publishedAt": "2026-11-20T06:00:11Z",
-    "date": "2026-11-20",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "忍者の謎を見てみよう！\n\n🔻本編マンガこちら\nhttps://youtu.be/Or8tY9Mtsr8\n\n#忍者 #忍術 #雑学",
-    "durationSeconds": 75.0
-  },
-  {
-    "id": "kptm5nlNgP0",
-    "title": "ホグワーツの手紙 #ハリーポッター #雑学 #面白い",
-    "publishedAt": "2026-11-19T22:00:29Z",
-    "date": "2026-11-20",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "ハリーポッターの雑学を見ていきましょう。\n\n🔻本編マンガこちら\nhttps://youtu.be/3fN9NsFAYAQ\n\n#ハリーポッター #ハリポタ #雑学",
-    "durationSeconds": 39.0
   },
   {
     "id": "3fN9NsFAYAQ",
@@ -101,7 +77,8 @@ window.YOUTUBE_VIDEOS = [
     "date": "2026-11-18",
     "format": "長尺動画",
     "genres": [
-      "もしもシリーズ"
+      "もしもシリーズ",
+      "世界の雑学"
     ],
     "characters": [],
     "description": "「はたして、忍者は本当はどんな仕事をしていたのでしょうか？」\n黒装束と手裏剣のイメージから、江戸城を守った忍者まで。\nくノ一のこよみと一緒に、忍者の秘密を見ていこう！\n\n00:00 オープニング\n00:18 忍者になったら、何を着る？\n01:29 手裏剣で敵を倒すのか\n02:29 戦での仕事\n03:27 忍術の勉強方法\n04:41 忍者の装備\n05:39 お城の堀をどう渡る？\n06:50 江戸時代の忍者、何してた？\n08:05 一人前の証\n08:54 まとめ\n\n※忍術書の読み方や道具の使い方には、研究者のあいだでも説が分かれるものがあります。\n\n#忍者 #雑学 #面白い",
@@ -123,44 +100,19 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "QyQqgHpbpWg",
-    "title": "タイタニックの値段 #雑学 #面白い #タイタニック",
-    "publishedAt": "2026-11-17T22:39:57Z",
-    "date": "2026-11-18",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "映画で沈没したあの豪華客船「タイタニック」の値段。\n\n皆さんは映画を見ましたか？\n\n#雑学 #面白い #タイタニック",
-    "durationSeconds": 55.0
-  },
-  {
     "id": "CoGOOYvZcpQ",
     "title": "もしもタイタニックに乗ったらどうなる？【面白い雑学】",
     "publishedAt": "2026-11-17T14:04:27Z",
     "date": "2026-11-17",
     "format": "長尺動画",
     "genres": [
+      "映画の雑学",
       "もしもシリーズ"
     ],
     "characters": [],
     "description": "タイタニックに乗ったら、あなたは生き残れますか？\n\n00:00 オープニング\n00:35 タイタニックの切符は、いくらだったのか\n01:33 一等の船旅では、何ができたのか\n02:29 乗客は、何を食べていたのか\n03:32 沈まないはずの船\n04:41 救命ボートは、何人分あったのか\n05:45 生き残れたのは、どんな人だったのか\n06:46 海に落ちたら、何分もつのか\n08:18 まとめ\n\n※生存率は、1912年の英国の調査報告書の数字です。資料によって人数が少し異なります。\n\n#もしも #もしもシリーズ #タイタニック",
     "durationSeconds": 527.0,
     "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "QJZ4OYAkXLs",
-    "title": "ゴジラの謎 #ゴジラ #雑学 #面白い",
-    "publishedAt": "2026-11-17T10:00:08Z",
-    "date": "2026-11-17",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "皆さんはゴジラの映画、見ましたか？\n\n🔻マンガ本編こちら\n\n「もしもゴジラがいたら、どうなるのか」\nhttps://youtu.be/gbeonGDEWCk\n\n※本編やサムネの画像に使っているのは、架空のイメージ怪物です\n\n#ゴジラ #雑学 #面白い",
-    "durationSeconds": 25.0
   },
   {
     "id": "gbeonGDEWCk",
@@ -189,19 +141,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "体調を崩した太郎に、キュウちゃんが長ネギを持ってきた！\n昔から言われる「ネギを首に巻く」民間療法。実際に風邪が治るのでしょうか？\n\nネギを首に巻くだけで風邪が治るという確かな臨床的根拠はありません。お尻にネギを挿すことにも治療効果は確認されておらず、けがや感染につながる危険があります。絶対に真似しないでください。\n\n参考資料：\nCDC｜Manage Common Cold（2026年3月11日）\nhttps://www.cdc.gov/common-cold/treatment/index.html\nMerck Manual｜Rectal Foreign Bodies（2025年4月）\nhttps://www.merckmanuals.com/professional/gastrointestinal-disorders/bezoars-and-foreign-bodies/rectal-foreign-bodies\n週刊女性PRIME｜風邪対策の新常識（医師の解説）\nhttps://www.jprime.jp/articles/print/25908\n\n#雑学 #面白い #風邪",
     "durationSeconds": 16.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "s554xOnnayE",
-    "title": "オカリナの謎 #ゼルダの伝説 #時のオカリナ #雑学",
-    "publishedAt": "2026-11-15T12:00:16Z",
-    "date": "2026-11-15",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "ゼルダの伝説、時のオカリナがリメイクされましたね。\n皆さんはもうやりましたか？\n\n本編こちら🔻\nhttps://youtu.be/0e2SQELlvNo\n\n#ゼルダの伝説 #時のオカリナ #雑学",
-    "durationSeconds": 40.0
   },
   {
     "id": "0e2SQELlvNo",
@@ -258,19 +197,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "オンラインゲームで出会い、交際や結婚につながる人もいるんです。\nでもキュウちゃんが求めるのは、屈強な戦士……。\nまさか恋人じゃなくて非常食！？\n\n参考資料：コロプラ×Skyfall「データで見る、ゲームから生まれる新しいつながり──友情、恋愛、そして結婚まで」（2025年8月26日）\nhttps://pinmark.colopl.co.jp/entries/55249774\n\n#雑学 #面白い #恋愛",
     "durationSeconds": 12.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "DOu_5F1bwfA",
-    "title": "GTAのタイトルは #gta #gta6 #雑学",
-    "publishedAt": "2026-11-14T12:00:07Z",
-    "date": "2026-11-14",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "GTAのタイトルの意味、あなたは知ってましたか？\n\n🔻マンガ本編こちら\n\n「GTAが現実だったら？」\nhttps://youtu.be/qyCPGCFQZ9M\n\n#gta #gta6 #雑学",
-    "durationSeconds": 37.0
   },
   {
     "id": "qyCPGCFQZ9M",
@@ -371,19 +297,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "pKL1sxwLuk4",
-    "title": "ガガーリンの言葉 #雑学 #面白い#宇宙",
-    "publishedAt": "2026-11-13T06:00:26Z",
-    "date": "2026-11-13",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "宇宙から地球を見たガガーリンの言葉。\n\n🔻続きは本編で！\nhttps://youtu.be/7Es9yqVocnE\n\n#雑学 #面白い #宇宙",
-    "durationSeconds": 17.0
-  },
-  {
     "id": "nUc7DoHTY7M",
     "title": "浮かぶ石 #雑学 #面白い #軽石",
     "publishedAt": "2026-11-13T03:00:21Z",
@@ -438,19 +351,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "2027年2月1日から、YouTubeの収益化条件が大幅に変更！\n\n新規申請者が広告・Premiumの収益分配を受けるには、登録者1,000人に加えて、次のいずれかが必要になります。\n\n・過去365日間の有効な公開動画の総再生時間：8,000時間\n・過去90日間の有効なショート動画視聴回数：2,000万回\n\nショートで登録者が増えても、ショートフィードの視聴時間は通常動画の再生時間条件にカウントされません。\n\n※すでにYouTubeパートナープログラムに参加しているチャンネルは、今回の新規参加基準変更による影響を受けません。\n※ファンファンディング・ショッピングなどの早期参加基準は変更されません。\n\n出典：YouTube公式ヘルプ\nhttps://support.google.com/youtube/answer/12843009?hl=ja\nhttps://support.google.com/youtube/answer/72851?hl=ja\n\n#youtuber #youtube #収益化",
     "durationSeconds": 25.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "VKjvMHB3kcY",
-    "title": "過酷すぎる修行 #雑学 #面白い #千日回峰行",
-    "publishedAt": "2026-11-12T06:00:00Z",
-    "date": "2026-11-12",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "比叡山の千日回峰行。\n水を飲まないのはしんどいですね。\n\n🔻マンガ本編こちら\n\n「面白い雑学。人間は水を飲まないと何日で死ぬ？」\nhttps://youtu.be/RHklb8gDIhQ\n\n#雑学 #面白い #千日回峰行",
-    "durationSeconds": 30.0
   },
   {
     "id": "_AcYxTopgRw",
@@ -565,19 +465,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "CWtNTPVzA_o",
-    "title": "空腹イライラどうする？ #雑学 #面白い #空腹",
-    "publishedAt": "2026-11-10T11:04:00Z",
-    "date": "2026-11-10",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "空腹のときはイライラしますよね。\n\n🔻本編こちら\nhttps://youtu.be/YEuM8FWlvi8\n\n#雑学 #面白い #空腹",
-    "durationSeconds": 18.0
-  },
-  {
     "id": "YEuM8FWlvi8",
     "title": "面白い雑学「人は何日食べないと死ぬ？」382日間の断食記録と体の限界",
     "publishedAt": "2026-11-10T10:10:52Z",
@@ -590,19 +477,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "面白い雑学、人間の限界編。\n\n人は、何日食べなければ死んでしまうのか？\n\n最初の1日で何が起こる？\n脳は食べ物がなくても働き続けられる？\n空腹になるとイライラするのはなぜ？\n\n今回は、食べないことで人間の体に起こる変化を、吸血鬼のキュウちゃんが解説！\n\nさらに、医師の管理下で382日間断食した男性の記録、73歳で21日間の断食を行ったガンディー、地下に閉じ込められたチリの鉱山作業員たちの実話も紹介。\n\n人間はどこまで生き延びられるのか？\nそして、長い断食のあとに食事を再開すると、なぜ危険なのか？\n\n人体の不思議と限界を、一緒に見ていきましょう！\n\n【チャプター】\n\n00:00 オープニング\n00:51 食べないと、最初の一日に何が起きるのか\n01:31 腹が鳴るのは、腹が減ったからなのか\n02:20 脳は、何を燃やして生きのびるのか\n03:47 食べないと、息のにおいが変わる\n04:21 食べない日が続くと、頭の中はどうなるのか\n05:33 食べられるようになったら、すぐ戻るのか\n06:13 腹が減ると、なぜイライラするのか\n07:08 空腹は、最高の調味料なのか\n07:54 一か月間",
     "durationSeconds": 745.0,
     "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "peqgDIX93PI",
-    "title": "起き続けたら人はどうなる？ #雑学 #面白い #睡眠",
-    "publishedAt": "2026-11-09T22:00:34Z",
-    "date": "2026-11-10",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "面白い雑学、睡眠偏。\n\n寝ないと人はどうなってしまうのか？\n\n🔻本編こちら\nショートスリーパーなどの謎を知ろう！\nhttps://youtu.be/dBDjZtddx1c\n\n#雑学 #面白い #睡眠",
-    "durationSeconds": 44.0
   },
   {
     "id": "dBDjZtddx1c",
@@ -726,19 +600,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "ペンギンの短い脚。膝はどこにあるの？\n実は、ちゃんと膝があります！\n曲がった膝や脚の上部は体に隠れていて、外からは見えにくい構造。\nさらに歩くときは、かかとを地面につけていません。\n水中での生活に適したコンパクトな脚にも秘密があります。\n\n参考：Penguins International「Do Penguins Have Knees?…and other frequently asked questions」\nhttps://www.penguinsinternational.org/do-penguins-have-knees-and-other-frequently-asked-questions/\n\n#漫画 #雑学 #ペンギン",
     "durationSeconds": 15.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "8dYrwoTqQjs",
-    "title": "吸血鬼の真実 #雑学 #漫画 #吸血鬼",
-    "publishedAt": "2026-11-08T10:11:07Z",
-    "date": "2026-11-08",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "吸血鬼のキュウちゃんが、ドラキュラの謎を教えてくれるようです。\n\n🔻本編こちら\nhttps://youtu.be/ur7UwhF5gAU\n\n#雑学 #漫画 #吸血鬼",
-    "durationSeconds": 32.0
   },
   {
     "id": "ur7UwhF5gAU",
@@ -1055,19 +916,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "chFZRuFo4FQ",
-    "title": "その本能、死にます #ai #claude #chatgpt",
-    "publishedAt": "2026-11-04T06:00:32Z",
-    "date": "2026-11-04",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "AI ClaudeとChatGPTを対決させてみました。\n\n#ai #claude #chatgpt",
-    "durationSeconds": 9.0
-  },
-  {
     "id": "mYa9vIGVYhA",
     "title": "メロンの謎 #漫画 #雑学 #メロン",
     "publishedAt": "2026-11-04T03:08:51Z",
@@ -1166,19 +1014,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "VeBG7JL45TY",
-    "title": "AIにblenderやらせてみた #ai #blender #アニメーション",
-    "publishedAt": "2026-11-02T22:00:04Z",
-    "date": "2026-11-03",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "AIにBlender使わせてアニメ作ってみたら…\n\n🔻本編こちら\nhttps://youtu.be/g8QxemgzmvU\n\n#ai #blender #アニメーション",
-    "durationSeconds": 16.0
-  },
-  {
     "id": "g8QxemgzmvU",
     "title": "AIにBlenderでアニメを作らせた結果が面白すぎたｗｗ",
     "publishedAt": "2026-11-02T13:17:09Z",
@@ -1219,19 +1054,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "宇宙から見ると、サハラ砂漠に巨大な目玉が!?\n\n正体は直径約40kmの「リシャット構造」。\n\n隕石の衝突跡と思われたこともありましたが、盛り上がった岩の層が長い時間をかけて侵食され、巨大な輪っかになった地形です。\n\n参考：NASA Earth Observatory「Eyeing the Richat Structure」\n\n#漫画 #雑学 #サハラ砂漠",
     "durationSeconds": 16.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "lx6icGaRxF8",
-    "title": "AIにアクションゲーム作らせたら面白すぎた #ai #ゲーム #ゲーム実況",
-    "publishedAt": "2026-11-02T06:00:18Z",
-    "date": "2026-11-02",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "AIにUnreal Engine5を使わせて3Dアクションゲームを作らせてみました。面白いね！\nよかったら、高評価チャンネル登録お願いします！\n\n#ai #ゲーム #ゲーム実況",
-    "durationSeconds": 28.0
   },
   {
     "id": "I5KQz7fL0yI",
@@ -1304,19 +1126,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "MkN35sJyIJw",
-    "title": "AIマイクラ大戦争 #マイクラ #マインクラフト #ai",
-    "publishedAt": "2026-11-01T06:00:18Z",
-    "date": "2026-11-01",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "AIの大軍を戦わせてみました。\n\n🔻本編こちら\nhttps://youtu.be/tFJT3fKq6_U\n\n#マイクラ #マインクラフト #ai",
-    "durationSeconds": 16.0
-  },
-  {
     "id": "fWQcmbGCVZ0",
     "title": "マイクラの謎 #マイクラ #雑学 #マインクラフト",
     "publishedAt": "2026-11-01T03:00:20Z",
@@ -1357,19 +1166,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "赤と青の2つの国に分けて戦争させてみました。\n\nまずは「5対5の実験」から、最後は「25対25の大戦争」へ！\n\n仲間と相談するやつ、畑仕事を始めるやつ、サボり始めるやつ、同じ国なのに、全然まとまらない！？\n\nそれぞれが自分で判断して動いたら、どんな結末になるのか？\n\n#マイクラ #AI #マインクラフト",
     "durationSeconds": 623.0,
     "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "RuhJjOS4jbg",
-    "title": "AIで簡単にWebサイト #ai #Webサイト #雑学",
-    "publishedAt": "2026-10-31T06:00:33Z",
-    "date": "2026-10-31",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "aiに任せればWebサイトは簡単に作れちゃう！すごいね\n\n🔻本編こちら\n\n「AIにWebサイト作らせたら秒で完成した」\nhttps://youtu.be/GXxLMo1fb8s",
-    "durationSeconds": 36.0
   },
   {
     "id": "NGcxuD4zIPI",
@@ -1456,19 +1252,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "VVo0TbX0uHE",
-    "title": "AIが作ったヤバいゲーム #切り抜き #ゲーム実況",
-    "publishedAt": "2026-10-29T11:00:26Z",
-    "date": "2026-10-29",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "AIが作ったゲームやばすぎました\n\n🔻本編\nhttps://youtu.be/4VALi1njvic\n\n#ゲーム #AI #ゲーム実況",
-    "durationSeconds": 11.0
-  },
-  {
     "id": "4VALi1njvic",
     "title": "AIにゲームを作らせたら……マジでヤバかった",
     "publishedAt": "2026-10-29T09:31:37Z",
@@ -1493,21 +1276,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "LINE通話の録音、相手にバレる？\n\n2026年10月27日、LINEに新機能「通話レコーディング」が登場！録音を開始すると双方に音声案内が流れ、相手の画面にも録音中であることが表示されます。\n\n※LINEラボで順次提供中。1対1の通話が対象です。\n\n出典：LINEヤフー公式\nhttps://www.lycorp.co.jp/ja/news/release/020888/\n\n#漫画 #雑学 #LINE",
     "durationSeconds": 18.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "Eztv5hRtTws",
-    "title": "幻の魚 #漫画 #雑学 #伝説",
-    "publishedAt": "2026-10-29T06:00:34Z",
-    "date": "2026-10-29",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "自然の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "幻の魚イトウの解説。\n\n🔻本編マンガはこちら\nhttps://youtu.be/Qf-ddJJrVH4\n\n#漫画 #雑学 #伝説",
-    "durationSeconds": 21.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -1595,21 +1363,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "egucjsnRL6M",
-    "title": "料理の色で味変？ #漫画 #雑学 #料理",
-    "publishedAt": "2026-10-27T22:00:29Z",
-    "date": "2026-10-28",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "食べ物の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "同じ料理なのに、色が違うだけで味の感じ方が変わる！？\n\n人間は食べ物の色から、どんな味がするかを無意識に予想しています。\n\n悪魔の館に登場した、青く照らされたローストビーフ。その味は……？\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #雑学 #料理",
-    "durationSeconds": 19.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "PmPBVXTFDWc",
     "title": "洗濯洗剤を2倍入れたら！？ #漫画 #雑学 #洗濯",
     "publishedAt": "2026-10-27T14:45:20Z",
@@ -1621,21 +1374,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "洗濯洗剤は多く入れれば汚れがよく落ちる、というわけではありません。入れすぎると洗剤が残りやすくなり、機種によっては汚れ落ちに悪影響が出る場合もあります。\n\n洗濯物の量に合わせて、洗剤の表示と洗濯機の案内に従いましょう。\n\n出典：パナソニック\nhttps://jpn.faq.panasonic.com/app/answers/detail/a_id/95\n\n#漫画 #雑学 #洗濯",
     "durationSeconds": 21.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "N1sP2f7MNQE",
-    "title": "悪魔メイドとご主人さま  #漫画 #雑学 #悪魔",
-    "publishedAt": "2026-10-27T13:13:57Z",
-    "date": "2026-10-27",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "食べ物の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "舌が感じる基本の味は5種類！\n甘味・塩味・酸味・苦味・うま味。\n\nでも、いちごを「いちごの味」だと感じるには、舌だけじゃ足りない！？\n\n毒舌な悪魔メイド・マチとご主人さまが繰り広げる、ちょっと危険な味覚の雑学。\n\n本編『美食の悪魔の雑学ダンジョン』からの切り抜きです。\n\n#漫画 #切り抜き #悪魔",
-    "durationSeconds": 62.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -1665,19 +1403,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "乾いた唇、舐めると潤う？\n本編「ハロウィンのかぼちゃを人見知りにかぶせると！？」〔本編URL：公開後に作者が貼る〕\n出典：American Academy of Dermatology「7 dermatologists' tips for healing dry, chapped lips」 https://aad.org/skin-care-basics/heal-dry-chapped-lips\n#漫画 #雑学 #唇",
     "durationSeconds": 19.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "nYUigclAtBU",
-    "title": "ハロウィンで豹変！？ #漫画 #恋愛 #ハロウィン",
-    "publishedAt": "2026-10-27T06:00:16Z",
-    "date": "2026-10-27",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "人見知りの少女に、ハロウィンのカボチャをかぶせたらどうなる？\n\nキュウちゃんのいたずらから始まる、ちょっと不思議なハロウィンのお話。\n\n#漫画 #雑学 #ハロウィン",
-    "durationSeconds": 13.0
   },
   {
     "id": "zMhaJDp8BwE",
@@ -1744,21 +1469,6 @@ window.YOUTUBE_VIDEOS = [
     "durationSeconds": 12.0
   },
   {
-    "id": "4s4nny8zUrk",
-    "title": "マヨネーズを知らない吸血鬼  #漫画 #雑学 #マヨネーズ",
-    "publishedAt": "2026-10-26T06:00:06Z",
-    "date": "2026-10-26",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "食べ物の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "マヨネーズを知らない吸血鬼にマヨネーズを与えたら、どうなるのか……。\n\n🔻本編こちら\nhttps://youtu.be/3D9SQ6NqWRg\n\n#マヨネーズ #漫画 #雑学",
-    "durationSeconds": 21.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "tVpAUN6du3Q",
     "title": "アリの謎 #漫画 #雑学 #アリ",
     "publishedAt": "2026-10-26T03:05:01Z",
@@ -1771,19 +1481,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "アリは仲間の残したフェロモンを道しるべにすることがあります。種類によっては脂っぽい食べ物にも集まります。\n\n出典：University of Minnesota Extension\nhttps://extension.umn.edu/garden-and-home/home-maintenance/household-insects/ants\n\n#漫画 #雑学 #アリ",
     "durationSeconds": 12.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "1HWwHjM2n9E",
-    "title": "最強の剣聖 #漫画 #コメディ #ギャグ",
-    "publishedAt": "2026-10-26T00:00:16Z",
-    "date": "2026-10-26",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "無敵の剣聖の武器は……まさかのシャウティングチキン⁉\n\n#漫画 #コメディ #ギャグ",
-    "durationSeconds": 19.0
   },
   {
     "id": "KqtQHFftDF4",
@@ -1811,21 +1508,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "腕立て伏せ50回！余裕だと思ったら翌日とんでもないことに！？\n\n慣れない運動による筋肉痛は、翌日以降に現れ、2〜3日後にピークを迎えることもあります。\n\nところがキュウちゃんの筋トレ合格基準は、まさかの指一本逆立ち！？\n\n【参考】\nNSCAジャパン「筋肉痛を軽減させるためには？」\nhttps://park.nsca-japan.or.jp/category-13/post-3693/\n\n#漫画 #雑学 #筋肉痛",
     "durationSeconds": 19.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "npWEe3ZP2OU",
-    "title": "筋トレの謎 #漫画 #雑学 #筋トレ",
-    "publishedAt": "2026-10-25T13:00:37Z",
-    "date": "2026-10-25",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "筋トレって毎日やらないと意味がない？\n\nスクワットに励む吸血鬼キュウちゃんが、筋トレの頻度と健康との関係を解説！\n\n厚生労働省のガイドでは、成人・高齢者に筋トレを週2〜3日行うことを推奨。自分の体重を使ったスクワットも筋トレに含まれます。\n\n※死亡・心血管疾患などのリスク低下は観察研究で報告された関連であり、因果関係が証明されたものではありません。\n\n【出典】\n厚生労働省「健康づくりのための身体活動・運動ガイド2023」\nhttps://kennet.mhlw.go.jp/information/information/exercise/s-00-005.html\n\nBritish Journal of Sports Medicine（2022）\nhttps://bjsm.bmj.com/content/56/13/755\n\n#漫画 #切り抜き #筋トレ",
-    "durationSeconds": 23.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -1869,21 +1551,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "マヨネーズを知らない吸血鬼キュウちゃん。太郎に教わって指先でなめた感想は「まぁ、イケなくはない」。ところが一週間後、冷蔵庫に異変が――。マヨネーズの正しい保存方法の雑学つき。\n\n▼この回の雑学\n・マヨネーズは、本来混ざらない油と酢を、卵黄の力でつないでいる\n・お酢や食塩の働きで、開ける前なら直射日光を避けた涼しい場所で保存できる\n・0℃以下になると油が分離することがあり、一度分離すると元に戻らない。開けたら冷気が直接当たらないドアポケットへ\n\n▼参考\n・Precious.jp（キユーピー担当者への取材）https://precious.jp/articles/-/9162\n・macaroni（キユーピー公式Q&Aより）https://macaro-ni.jp/143906\n・デリッシュキッチン https://delishkitchen.tv/articles/2776\n※分離したマヨネーズは使わないようにしましょう。保存方法は商品の表示も確認してください。\n\n#漫画 #雑学 #マヨネーズ",
     "durationSeconds": 107.0,
     "formatEvidence": "既存の公式サイト作品台帳 data.js"
-  },
-  {
-    "id": "J8LTedGdIMs",
-    "title": "洞窟の星空の謎 #漫画 #切り抜き #ツチボタル",
-    "publishedAt": "2026-10-25T06:00:31Z",
-    "date": "2026-10-25",
-    "format": "Shorts",
-    "genres": [
-      "切り抜き｜雑学サバイバル",
-      "自然の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "洞窟の天井に広がる、満天の星空。\n\nその正体は「ツチボタル」という虫の幼虫！\n光で虫を引き寄せ、ネバネバした糸で捕まえて食べるんです。\n\n▼本編『メイドイン雑学アビス』\nhttps://youtu.be/6qrt785FRqE\n\n#漫画 #切り抜き #ツチボタル",
-    "durationSeconds": 35.0,
-    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "OpDjCXUaA2I",
@@ -2119,19 +1786,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "JMoK5rqJDVs",
-    "title": "エアギター世界大会!? #漫画 #雑学 #エアギター",
-    "publishedAt": "2026-10-22T06:13:29Z",
-    "date": "2026-10-22",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "ギターを持っていないのに、全力で演奏！？\n実在する「エアギター世界大会」を紹介。\n\nエアギターの世界大会は、フィンランドのオウルで1996年から開催されています。\n\nマンガ本編はこちら\n🔻\nhttps://youtu.be/78rL0ukyDw0\n\n#漫画 #雑学 #エアギター",
-    "durationSeconds": 18.0
-  },
-  {
     "id": "GxzUSbQHEAQ",
     "title": "ソーラン節自由形ダダダンス 🌊🔥【Short MV】 #music #musicvideo #ソーラン節",
     "publishedAt": "2026-10-22T04:30:00Z",
@@ -2208,19 +1862,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "オムライスにハートを描こうとしたキュウちゃん。\nところが、ケチャップから謎の水が！？\n\n実はこれ、ケチャップの液体部分が分離したもの。\n\n分離自体は品質に問題なく、容器を揉んで混ぜれば元の状態に戻せます。\n開封後はキャップを上にして冷蔵保存するのがおすすめ！\n\n無事にハートを描けたキュウちゃんだったけど、今度はケチャップをかけすぎて……！？\n\n#漫画 #雑学 #ケチャップ",
     "durationSeconds": 12.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "r6nutVMvBm4",
-    "title": "高度3000mから落下すると #漫画 #雑学 #切り抜き",
-    "publishedAt": "2026-10-21T03:00:13Z",
-    "date": "2026-10-21",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "超高度から落下する太郎。\n絶体絶命のそのとき、現れたのは……江戸走りの女!?\n\n雑学サバイバル『ソーラン節自由形を踊らないと10秒で滅ぶ世界』冒頭の切り抜きです。\n続きは、このショートの関連動画から！\n\n漫画ついでに、雑学がわかっちゃう。\n高評価・チャンネル登録お願いします。\n\n#切り抜き #雑学 #漫画",
-    "durationSeconds": 28.0
   },
   {
     "id": "smYE0MUvWvU",
@@ -2316,19 +1957,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "💅 正しい爪の切り方\n・手の爪は指先に沿って丸く整え、白い部分を少し残す\n・足の爪はまっすぐに切り、角を少しだけ整える\n・深爪には注意！\n\n爪の切り方を覚えて、健康な爪を守ろう！\n※吸血鬼の再生能力はフィクションです。\n\n#漫画 #雑学 #爪切り",
     "durationSeconds": 17.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "baMv_XFdDro",
-    "title": "ケツバトラー #漫画 #切り抜き #ケツバトル",
-    "publishedAt": "2026-10-19T14:45:02Z",
-    "date": "2026-10-19",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "謎の暗黒戦士に遭遇した太郎！\n\n「あんた、ケツバトラーなのかー！」\n\n『雑学サバイバル』の漫画切り抜きです。\n\n▶ 本編は関連動画から！\n\n#漫画 #切り抜き #ケツバトル",
-    "durationSeconds": 36.0
   },
   {
     "id": "vPKFcyG6-8E",
@@ -2487,19 +2115,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "0m_3HR2Jjd4",
-    "title": "ドパガキ…？#漫画 #切り抜き #ドパガキ",
-    "publishedAt": "2026-10-18T06:00:35Z",
-    "date": "2026-10-18",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "ドパガキがあらわれた！\n\n漫画本編は関連動画よりどうぞ！\n\n#漫画 #ドパガキ #切り抜き",
-    "durationSeconds": 12.0
-  },
-  {
     "id": "ApTkL-zZG7U",
     "title": "ドパガキの謎 #漫画 #雑学 #ドパガキ",
     "publishedAt": "2026-10-18T03:00:15Z",
@@ -2598,19 +2213,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "uvKiBMzJb4g",
-    "title": "吸血鬼の本当の名前【雑学サバイバル / 切り抜き】",
-    "publishedAt": "2026-10-16T16:03:15Z",
-    "date": "2026-10-17",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "金髪でちっちゃい、なのに態度はデカい！？\n\n吸血鬼・キュウちゃんのクセが強すぎる一幕を切り抜き！\n\n▶ フル本編は関連動画から！\n\n#漫画 #雑学 #吸血鬼",
-    "durationSeconds": 43.0
-  },
-  {
     "id": "YRK7V_rY7YM",
     "title": "クレーンゲームでお金が… #漫画 #雑学",
     "publishedAt": "2026-10-16T14:55:07Z",
@@ -2703,19 +2305,6 @@ window.YOUTUBE_VIDEOS = [
     "durationSeconds": 174.0
   },
   {
-    "id": "-vf_bJPz7PM",
-    "title": "お嬢様のドリルツインテール事故👸💥【雑学サバイバル / 切り抜き】",
-    "publishedAt": "2026-10-15T14:54:07Z",
-    "date": "2026-10-15",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "高慢な悪役令嬢エルゼ。\n\n自慢のドリルツインテールがまさかの事態に!?\nしかも最後は自分で高慢だと認めちゃうお嬢様。\n\n本編「悪役令嬢を惚れさせないと処刑!?」は関連動画から！\n\n#漫画 #雑学 #悪役令嬢",
-    "durationSeconds": 14.0
-  },
-  {
     "id": "GpFD5oErl-M",
     "title": "ゾンビに体毛で威嚇した結果⁉🧟 #漫画 #雑学",
     "publishedAt": "2026-10-15T11:03:16Z",
@@ -2728,19 +2317,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "ゾンビに遭遇した太郎の腕に、突然鳥肌が!?\n\n実は鳥肌には、意外な仕組みがある！\n\n人は恐怖を感じると交感神経が働き、毛の根元にある「立毛筋」が収縮するんだ。\n\n毛深い動物では、毛を逆立てて体を大きく見せ、相手を威嚇する働きも！\n\nこれを知った太郎、まさかの体毛でゾンビを威嚇!?\n\n太郎「見ろ！ 僕の体毛を!!」\n\n果たしてゾンビに通用するのか……!?\n\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学 #ゾンビ",
     "durationSeconds": 25.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "W9LzQDBnmCY",
-    "title": "INMU KINGでゾンビが踊り出す世界【雑学サバイバル / 切り抜き】",
-    "publishedAt": "2026-10-15T10:00:35Z",
-    "date": "2026-10-15",
-    "format": "未確認",
-    "genres": [
-      "切り抜き｜雑学サバイバル"
-    ],
-    "characters": [],
-    "description": "ゾンビがINMU KINGで踊り出す世界！？\n\nしかもスカウターまで登場して、もう何の世界なのかわからないｗ\n\n『雑学サバイバル』ゾンビ編から、カオスなシーンを切り抜き！\n\n続きはこのショートの「関連動画」から本編へ！\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#漫画 #雑学 #ゾンビ",
-    "durationSeconds": 19.0
   },
   {
     "id": "j76vhryxplo",

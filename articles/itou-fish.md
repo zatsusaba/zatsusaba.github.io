@@ -8,9 +8,6 @@ category: 動物
 topic: "イトウの北海道での分布と河川環境・幻の魚という通称"
 tags: [イトウ, 北海道, 川, 湿原, 魚]
 conditions: "日本国内の自然分布と北海道で紹介された生態を扱います。研究紹介は1997年の観察に基づくもので、現時点の個体数や全河川の状態を示しません。「幻の魚」は通称です。写真は飼育個体、川と小支流の画像はAI生成イラストで、特定の生息地や現在の状況を示しません。"
-youtube: Eztv5hRtTws
-youtube_title: '幻の魚 #漫画 #雑学 #伝説'
-youtube_format: short
 image: /assets/blog/itou-fish/cover-v2.webp
 image_alt: "飼育個体の参考写真をもとにイトウの姿を描いたAI生成イラスト。実際の生息地や野生個体の写真ではない。"
 show_cover: false

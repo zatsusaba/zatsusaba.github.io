@@ -11,9 +11,6 @@ image: /assets/blog/ocarina-two-origins/thumbnail.webp
 image_alt: "窓辺に置かれた素焼きのオカリナを描いたAI生成の参考イラスト"
 show_cover: false
 conditions: "ブドリオのオカリナと、容器笛に分類される考古資料を区別しています。紹介したコロンビアの作例とイタリアの楽器が直接つながっていたという意味ではありません。"
-youtube: s554xOnnayE
-youtube_title: "オカリナの謎 #ゼルダの伝説 #時のオカリナ #雑学"
-youtube_format: short
 sources:
 - title: "ブドリオ市：オカリナとテラコッタ楽器の博物館"
   url: https://www.comune.budrio.bo.it/vivere-il-comune/luoghi/museo-dellocarina-e-degli-strumenti-in-terracotta

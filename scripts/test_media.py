@@ -16,24 +16,34 @@ root = Path(tempfile.mkdtemp(dir=jobs))
 blog.ROOT, blog.OUT = root, root / "_site"
 for name in ("articles", "comics", "assets", "panels-v2"):
     (root / name).mkdir()
-for name in ("index.html", "youtube-videos.js", "blog-search.js", "blog.css", "media.css", "style.css"):
+for name in ("index.html", "blog-search.js", "blog.css", "media.css", "style.css"):
     shutil.copyfile(source / name, root / name)
+# Keep the performance/link fixture independent of public video availability.
+videos = [
+    {"id": vid, "title": f"検証用動画 {i}", "publishedAt": "2019-12-31T15:00:00Z",
+     "date": "2020-01-01", "format": "未確認"}
+    for i, vid in enumerate(("mediaMain01", "mediaRel001", "mediaRel002"), 1)
+]
+(root / "youtube-videos.js").write_text(
+    "window.YOUTUBE_VIDEOS = " + json.dumps(videos, ensure_ascii=False) + ";\n",
+    encoding="utf-8",
+)
 for panel in range(1, 5):
     (root / "panels-v2" / f"panel{panel}.png").touch()
 comic = yaml.safe_load((source/"comics/ai-official-site.yml").read_text(encoding="utf-8"))
 comic["articles"] = ["entry-0000"]
-comic["videos"] = ["q5FluB5f-b8"]
+comic["videos"] = ["mediaMain01"]
 for slug in ("first", "second"):
     (root/"comics"/(slug+".yml")).write_text(yaml.safe_dump(comic, allow_unicode=True),encoding="utf-8")
 for i in range(3001):
     category = "自然" if i % 2 else "食べ物"
     data = {"status":"published","title":f"検索試験 {i:04}", "date":"2020-01-01", "updated":"2020-01-01",
             "description":"索引検証", "category":category, "tags":["植物"],
-            "image":"https://i.ytimg.com/vi/q5FluB5f-b8/hqdefault.jpg","image_alt":"テスト",
+            "image":"https://i.ytimg.com/vi/mediaMain01/hqdefault.jpg","image_alt":"テスト",
             "sources":[{"checked":"2020-01-01","title":"資料","url":"https://example.org/"}]}
     if i==0:
-        data["youtube"]="q5FluB5f-b8"
-        data["youtube_related"]=["N1sP2f7MNQE","Pqp4cFV-k_g"]
+        data["youtube"]="mediaMain01"
+        data["youtube_related"]=["mediaRel001","mediaRel002"]
     content="---\n"+yaml.safe_dump(data,allow_unicode=True)+"---\n## 本文\n\n"+("観察記録。" * 120)+f"本文専用{i:04}"
     (root/"articles"/f"entry-{i:04}.md").write_text(content,encoding="utf-8")
 
@@ -53,10 +63,10 @@ assert 'href="/comics/second/"' in read("comics/first/index.html")
 assert 'href="/comics/second/"' in read("index.html")
 assert 'href="/blog/entry-0000/"' in read("comics/first/index.html")
 assert 'href="/comics/first/"' in read("blog/entry-0000/index.html")
-assert 'https://www.youtube.com/watch?v=q5FluB5f-b8' in read("blog/entry-0000/index.html")
+assert 'https://www.youtube.com/watch?v=mediaMain01' in read("blog/entry-0000/index.html")
 assert '<h2>動画はこちら</h2>' in read("blog/entry-0000/index.html")
-assert len(json.loads(read("video-links.json"))["q5FluB5f-b8"])==3
-for vid in ("N1sP2f7MNQE","Pqp4cFV-k_g"):
+assert len(json.loads(read("video-links.json"))["mediaMain01"])==3
+for vid in ("mediaRel001","mediaRel002"):
     assert json.loads(read("video-links.json"))[vid]==[["/blog/entry-0000/","検索試験 0000"]]
 assert all(len(row)==6 for row in index)  # Existing search schema and shards stay unchanged.
 assert len(json.loads(read("search/body-0.json")))==32
@@ -72,7 +82,7 @@ assert not (out/"blog/entry-0000/index.html").exists()
 assert not (out/"comics/second/index.html").exists()
 assert "/blog/entry-0000/" not in read("comics/first/index.html")+read("sitemap.xml")+read("search/index.json")
 assert "/comics/second/" not in read("index.html")+read("video-links.json")
-assert "N1sP2f7MNQE" not in json.loads(read("video-links.json"))
-assert "Pqp4cFV-k_g" not in json.loads(read("video-links.json"))
+assert "mediaRel001" not in json.loads(read("video-links.json"))
+assert "mediaRel002" not in json.loads(read("video-links.json"))
 print("PASS: pagination, taxonomy, additions/deletions and explicit reciprocal links")
 print("Isolated 3000-article preview:",out)

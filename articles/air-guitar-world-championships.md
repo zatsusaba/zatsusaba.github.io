@@ -12,9 +12,6 @@ image_alt: 見えないギターを演じる架空の人物を描いたAI生成�
 show_cover: false
 thumbnail_fit: contain
 conditions: 現在主催者が公表する世界決勝規則の説明です。2027年大会の日付を掲げるページを参照しており、2026年を含む過去の各大会の細かな進行をそのまま示すものではありません。画像は架空の人物と場面を描いたAI生成イラストで、実在の選手・会場・大会進行の記録ではありません。
-youtube: JMoK5rqJDVs
-youtube_title: 'エアギター世界大会!? #漫画 #雑学 #エアギター'
-youtube_format: short
 sources:
   - title: Air Guitar World Championships「World Final Rules」
     url: https://airguitarworldchampionships.com/en/entry/air-guitar-world-championship-world-final-rules/

@@ -11,9 +11,8 @@ tags:
 - 炭酸
 - 浮力
 image: /assets/blog/dancing-raisins/thumbnail.webp
-image_alt: 炭酸水の中のレーズンと泡の横長イラスト（AI生成の参考イラスト）
+image_alt: 炭酸水の中のレーズンと泡の横長イラスト
 show_cover: false
-conditions: 画像は模式図またはAI生成の参考画です。実物写真ではありません。
 youtube: H44FYx_F5ls
 youtube_title: '踊るレーズン #漫画 #雑学 #レーズン'
 youtube_format: short
@@ -32,8 +31,6 @@ sources:
 
 ![炭酸水の中で泡とともに浮き沈みするレーズンのイラスト](/assets/blog/dancing-raisins/body-01.webp)
 
-AI生成の参考イラスト。記事の出典資料から転載した画像ではありません。
-
 ## 泡がつくと、押しのける水が増える
 
 レーズンを炭酸水に入れると、表面の細かな凹凸などに泡ができます。[CERNの教材](https://educational-resources.web.cern.ch/states-of-matter/)は、このような表面が泡の生まれる足場になることを説明しています。
@@ -48,7 +45,7 @@ AI生成の参考イラスト。記事の出典資料から転載した画像で
 
 ![泡がついたレーズンと水面近くのレーズンを並べたイラスト](/assets/blog/dancing-raisins/body-02.webp)
 
-AI生成の参考イラスト。浮沈を説明する概念画。実験記録ではなく、すべての粒が同じように動く意味ではありません。
+浮沈を説明する概念画。実験記録ではなく、すべての粒が同じように動く意味ではありません。
 
 沈んだところでまた十分な泡がつけば、もう一度浮かびます。この繰り返しが、レーズンが踊っているように見える動きです。
 

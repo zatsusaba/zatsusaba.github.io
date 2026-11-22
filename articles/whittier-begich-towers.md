@@ -47,7 +47,7 @@ sources:
 
 ![雪の残る山を背景に、船が並ぶアラスカの港を描いた参考イラスト](/assets/blog/whittier-begich-towers/harbor-scene.webp)
 
-アラスカの港をイメージした参考イラスト（AI生成）。実際のウィッティアの施設や配置を再現したものではありません。
+アラスカの港をイメージした参考イラスト。実際のウィッティアの施設や配置を再現したものではありません。
 
 表紙写真：[Quintin Soloviev / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Whittier,_Alaska_aerial_view_2026.jpg)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。2026年5月16日撮影。全体を縮小してWebPに変換し、記事一覧では表示枠に合わせて一部が切り取られます。施設の用途や入居状況は写真だけでは分かりません。
 

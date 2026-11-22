@@ -6,9 +6,8 @@ updated: '2026-11-10'
 status: published
 category: 食べ物
 image: /assets/blog/mayonnaise-cold-separation/thumbnail.webp
-image_alt: 無地のマヨネーズ容器と皿の横長イラスト（AI生成の参考イラスト）
+image_alt: 無地のマヨネーズ容器と皿の横長イラスト
 show_cover: false
-conditions: 画像はAI生成の参考画・模式図です。実物写真や観測画像ではありません。
 youtube: y2mVrDcwz_U
 youtube_title: 'マヨネーズの謎 #漫画 #雑学 #マヨネーズ'
 youtube_format: short
@@ -30,7 +29,7 @@ sources:
 
 ![卵黄と酢の入ったボウルへ油を少しずつ加えて混ぜるイラスト](/assets/blog/mayonnaise-cold-separation/body-01.webp)
 
-AI生成の参考イラスト。乳化の概念画。特定製品の正確な配合や製造工程を再現したものではありません。
+乳化の仕組みを示した図です。分量や工程は製品によって異なります。
 
 ## 油と酢が一つになって見える理由
 
@@ -44,7 +43,7 @@ AI生成の参考イラスト。乳化の概念画。特定製品の正確な配
 
 ![冷蔵庫のドアポケットに置かれた無地のマヨネーズ容器のイラスト](/assets/blog/mayonnaise-cold-separation/body-02.webp)
 
-AI生成の参考イラスト。保存場所の参考イメージ。冷気の流れや庫内温度を正確に示す図ではありません。
+保存場所の一例です。庫内の冷気の流れや温度は示していません。
 
 ここでいう分離は、なめらかに混ざっていた状態が崩れて、油が分かれてしまうことです。キユーピーは、一度分離したものは元には戻らないと案内しています。振ったり温めたりすれば元どおりになると決めつけず、状態に不安があるときは製品のメーカーの案内を確認してください。
 

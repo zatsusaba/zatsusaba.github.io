@@ -8,9 +8,9 @@ category: 身近なモノ
 topic: 暖房の室温目安と上下の温度ムラ
 tags: [エアコン, 暖房, 室温]
 image: /assets/covers/heating-room-temperature.webp
-image_alt: 冬の居間で壁のエアコンを見上げる人を描いたAI生成の参考イラスト
+image_alt: 冬の居間で壁のエアコンを見上げる人を描いたイラスト
 show_cover: false
-conditions: エアコン暖房の室温目安と空気の温度ムラを説明します。実験の約2℃は特定の部屋での空気温の差で、床の表面温や各家庭での改善幅を示すものではありません。画像は日常場面を描いたAI生成の参考イラストで、実験の記録ではありません。
+conditions: エアコン暖房の室温目安と空気の温度ムラを説明します。実験の約2℃は特定の部屋での空気温の差で、床の表面温や各家庭での改善幅を示すものではありません。暖房中の部屋の挿絵は、実験の記録とは異なります。
 youtube: YiB2eRdDi8w
 youtube_title: '冬のエアコンの温度 #雑学 #面白い #エアコン'
 youtube_format: short
@@ -27,7 +27,7 @@ sources:
 
 設定を上げるか下げるかの前に、「いま見ているのは、どこの温度だろう」と考えてみる。暖房の数字は、そのほうが役に立ちます。
 
-![冬の居間で椅子に座る人の足元を描いたAI生成の参考イラスト](/assets/blog/heating-room-temperature/feet.webp)
+![冬の居間で椅子に座る人の足元を描いたイラスト](/assets/blog/heating-room-temperature/feet.webp)
 
 ## リモコンの数字と、過ごす場所の温度は別
 
@@ -47,7 +47,7 @@ sources:
 
 面白いのは、「部屋をもっと暖める」だけでなく、「すでにある暖かい空気がどこにあるか」という見方ができること。同じ部屋の中でも、温度の偏りを見落としているかもしれません。
 
-![居間の室温計を見ている人を描いたAI生成の参考イラスト](/assets/blog/heating-room-temperature/thermometer.webp)
+![居間の室温計を見ている人を描いたイラスト](/assets/blog/heating-room-temperature/thermometer.webp)
 
 ## まず、いつもいる場所の様子を見る
 

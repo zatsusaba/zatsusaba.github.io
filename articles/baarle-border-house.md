@@ -9,7 +9,7 @@ topic: バールレの飛び地と建物を横切る国境
 tags: [バールレ, 国境, 飛び地, オランダ, ベルギー]
 conditions: "バールレの飛び地と建物を横切る境界という地理だけを説明。法の適用、国籍、税、住民登録や入国条件は扱わない。図は位置・形・縮尺を再現しない概念図。"
 image: /assets/blog/baarle-border-house/cover-v2.webp
-image_alt: "オランダ・ベルギーの建築をイメージした町並みのAI生成イラスト。実在の通りや国境位置を再現したものではない"
+image_alt: "オランダ・ベルギーの建築をイメージした町並みのイラスト。実在の通りや国境位置を再現したものではない"
 show_cover: false
 youtube: kCnPJROaxHk
 youtube_title: "【漫画】家の中に国境がある人 #漫画 #雑学"
@@ -41,7 +41,7 @@ sources:
 
 実例は、ベルギーの飛び地H7にあります。[現地の観光案内](https://en.visitbaarle.com/locaties/enclave-h7-5f85a80764f477263a4b19a9)によると、国境が玄関ドアの真ん中を通る一軒があり、同じ家にオランダ側の「19」とベルギー側の「2」、二つの番地が付いています。
 
-![れんが造りの家の玄関と小さな庭を描いたAI生成イラスト](/assets/blog/baarle-border-house/body-doorway-v2.webp)
+![れんが造りの家の玄関と小さな庭を描いたイラスト](/assets/blog/baarle-border-house/body-doorway-v2.webp)
 
 暮らしの場を想像するための架空の家です。バールレの特定の建物や、その家を通る国境線を再現していません。
 

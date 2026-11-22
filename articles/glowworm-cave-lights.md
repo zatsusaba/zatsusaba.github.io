@@ -8,9 +8,9 @@ category: 動物
 topic: 洞窟の星空は何の光？ ツチボタルの幼虫の光と捕獲糸
 tags: []
 image: /assets/blog/glowworm-cave-lights/thumbnail.webp
-image_alt: 暗い洞窟の岩肌に付いた幼虫4匹の尾端が青緑に光り、細い捕獲糸は暗く垂れるAI生成イラスト
+image_alt: 暗い洞窟の岩肌に付いた幼虫4匹の尾端が青緑に光り、細い捕獲糸は暗く垂れるイラスト
 show_cover: false
-conditions: 画像はAI生成の参考イラストです。光るのは幼虫の尾端にある発光器で、捕獲糸は光を出しません。
+conditions: 光るのは幼虫の尾端にある発光器で、捕獲糸は光を出しません。
 sources:
 - title: Te Ara Encyclopedia of New Zealand「New Zealand’s glow-worms」
   url: https://teara.govt.nz/en/glow-worms/page-1
@@ -28,7 +28,7 @@ sources:
 
 ![水面から見た暗い洞窟の天井に青緑の発光点と細い糸を描く](/assets/blog/glowworm-cave-lights/body-01.webp)
 
-洞窟を水面近くから見上げた場面。青緑の点が幼虫の光です（AI生成イラスト）。
+洞窟を水面近くから見上げた場面。青緑の点が幼虫の光です。
 
 ## 名前に「ホタル」とあっても、別の仲間
 
@@ -42,7 +42,7 @@ sources:
 
 ![洞窟天井の幼虫尾端の小さな光と暗い垂れ糸](/assets/blog/glowworm-cave-lights/body-02.webp)
 
-幼虫と糸の位置関係を示す参考イラスト（AI生成）。
+幼虫と糸の位置関係を示す参考イラスト。
 
 [Te Araの捕食の解説](https://teara.govt.nz/en/glow-worms/page-2)によると、幼虫は獲物がかかると糸を口で引き上げて食べます。小さな虫が糸にかかっても、その場まで取りに行くのではなく、天井から糸ごと手繰り寄せるわけです。
 

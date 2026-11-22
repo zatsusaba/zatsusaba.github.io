@@ -12,7 +12,7 @@ youtube: dCZCZs_M2lw
 youtube_title: 船の観覧車
 youtube_format: short
 image: /assets/covers/falkirk-cover.png
-image_alt: 科学・船を運ぶ観覧車。水平な水槽に浮かぶ船と昇降機の腕を描いた専用サムネイル（AI生成のイメージ）。
+image_alt: 科学・船を運ぶ観覧車。水平な水槽に浮かぶ船と昇降機の腕を描いたイラスト。
 sources:
 - title: Scottish Canals The Falkirk Wheel
   url: https://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal/attractions/the-falkirk-wheel

@@ -8,10 +8,10 @@ category: 文化
 topic: エアギター世界大会の審査・現行世界決勝規則・オウルでの始まり
 tags: [エアギター, 音楽, フィンランド]
 image: /assets/covers/air-guitar-world-championships.webp
-image_alt: 見えないギターを演じる架空の人物を描いたAI生成の参考イラスト。実在の選手や大会の記録ではありません
+image_alt: 見えないギターを演じる架空の人物を描いたイラスト。実在の選手や大会の記録ではありません
 show_cover: false
 thumbnail_fit: contain
-conditions: 現在主催者が公表する世界決勝規則の説明です。2027年大会の日付を掲げるページを参照しており、2026年を含む過去の各大会の細かな進行をそのまま示すものではありません。画像は架空の人物と場面を描いたAI生成イラストで、実在の選手・会場・大会進行の記録ではありません。
+conditions: 現在主催者が公表する世界決勝規則の説明です。2027年大会の日付を掲げるページを参照しており、2026年を含む過去の各大会の細かな進行をそのまま示すものではありません。画像は架空の人物と場面を描いたイラストで、実在の選手・会場・大会進行の記録ではありません。
 sources:
   - title: Air Guitar World Championships「World Final Rules」
     url: https://airguitarworldchampionships.com/en/entry/air-guitar-world-championship-world-final-rules/
@@ -28,7 +28,7 @@ sources:
 
 舞台では音楽が流れ、その曲に合わせて見えないギターを演じます。1996年にフィンランドのオウルで始まった、実在する大会です。
 
-![小さなピックを持ち、もう片方の手で見えないギターを演じる手元を描いたAI生成の参考イラスト](/assets/blog/air-guitar-world-championships/pick-gesture.webp)
+![小さなピックを持ち、もう片方の手で見えないギターを演じる手元を描いたイラスト](/assets/blog/air-guitar-world-championships/pick-gesture.webp)
 
 ## 競うのは、見えないギターをどう表現するか
 
@@ -40,7 +40,7 @@ sources:
 
 公表規則では、第1ラウンドは自分で選んだ60秒の曲。そこから上位8人が第2ラウンドへ進み、ラウンド開始直前に聴く主催者指定の曲を、同じく60秒で表現します。
 
-![曲を聴いて集中する架空の人物を描いたAI生成の参考イラスト。実際の大会の記録ではありません](/assets/blog/air-guitar-world-championships/listening.webp)
+![曲を聴いて集中する架空の人物を描いたイラスト。実際の大会の記録ではありません](/assets/blog/air-guitar-world-championships/listening.webp)
 
 *曲を聴く場面をイメージした参考イラストです。実際の大会での聴き方や機材を示すものではありません。*
 

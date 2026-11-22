@@ -12,7 +12,7 @@ youtube: HPDXVKSDvGI
 youtube_title: "【漫画】大容量の罠 #漫画 #雑学 #お金"
 youtube_format: short
 image: /assets/blog/unit-price/cover-v2.webp
-image_alt: "大小のパスタ袋と電卓を描いたAI生成イラスト。実在の商品や価格を示すものではない。"
+image_alt: "大小のパスタ袋と電卓を描いたイラスト。実在の商品や価格を示すものではない。"
 show_cover: false
 sources:
   - title: "東京都 東京くらしWEB『ご存知ですか？「単位価格表示」』"
@@ -28,7 +28,7 @@ sources:
 
 **ここからの価格と内容量は説明のために作った数字で、実際の店や動画内の商品価格ではありません。** 同じ種類の商品で、どちらも税込価格、ほかの条件も同じと仮定します。
 
-![店で大きさの違うパックを見比べる場面のAI生成イラスト](/assets/blog/unit-price/body-shopping-v2.webp)
+![店で大きさの違うパックを見比べる場面のイラスト](/assets/blog/unit-price/body-shopping-v2.webp)
 
 買い物のイメージです。絵の袋は、以下の架空例の量や価格を表していません。
 
@@ -40,7 +40,7 @@ sources:
 
 比較するときは、片方だけ「1gあたり」、もう片方は「100gあたり」にしないこと。gとkgが混ざっていれば同じ単位に直します。また、税込と税抜、割引の有無など、値段の条件もそろえないと比較がずれます。「1個あたり」で比べるなら、重さではなく個数にそろえます。
 
-![パスタを家庭の棚に保存し、使う分を器に分けたAI生成イラスト](/assets/blog/unit-price/body-pantry-v2.webp)
+![パスタを家庭の棚に保存し、使う分を器に分けたイラスト](/assets/blog/unit-price/body-pantry-v2.webp)
 
 使い切れる量や置き場所も考えるためのイメージです。保存方法や一食分の量を指定するものではありません。
 

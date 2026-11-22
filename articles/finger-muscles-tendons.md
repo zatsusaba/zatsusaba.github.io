@@ -5,7 +5,7 @@ category: 人体
 topic: 指を動かす筋肉はどこにある？ 前腕から腱で力を伝える仕組み
 tags:
 - 人体
-conditions: 画像はAI生成の参考イラストです。実物写真・実験記録ではありません。本文に記した成立条件と例外を併せてご確認ください。
+conditions: 挿絵は実験記録ではありません。
 youtube: VauFYydFKBQ
 youtube_title: '指の不思議 #雑学 #面白い #指'
 youtube_format: short
@@ -21,7 +21,7 @@ date: '2026-11-10'
 updated: '2026-11-14'
 status: published
 image: /assets/blog/finger-muscles-tendons/thumbnail.webp
-image_alt: キーボードに軽く置かれた手と前腕を描いたAI生成イラスト
+image_alt: キーボードに軽く置かれた手と前腕を描いたイラスト
 show_cover: false
 ---
 **指を曲げる筋肉の一部は、指の中ではなく、肘と手首の間にある「前腕」にあります。筋肉が生み出した力を「腱」が指の骨へ伝えることで、指が曲がります。**
@@ -36,7 +36,7 @@ show_cover: false
 
 ![前腕を伸ばし、指を曲げてマグカップの取っ手をつかむ場面](/assets/blog/finger-muscles-tendons/mug-grip.webp)
 
-マグカップに手を伸ばす場面の参考イラスト（AI生成）。筋肉や腱の位置を示す解剖図ではありません。
+マグカップに手を伸ばす場面の参考イラスト。筋肉や腱の位置を示す解剖図ではありません。
 
 ## 手の中にも、指を動かす筋肉がある
 
@@ -44,9 +44,9 @@ show_cover: false
 
 解剖学の教材[OpenStax](https://openstax.org/books/anatomy-and-physiology/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)は、前腕から手へつながる筋肉と、手の中にある筋肉を分けて説明しています。文字を書く、キーボードを打つといった動作は、こうした筋肉の組み合わせによって成り立ちます。
 
-![鉛筆で文字を書く手と、手首から前腕までを描いたAI生成の参考画](/assets/blog/finger-muscles-tendons/body-02.webp)
+![鉛筆で文字を書く手と、手首から前腕までを描いた挿絵](/assets/blog/finger-muscles-tendons/body-02.webp)
 
-文字を書く身近な動作を描いたAI生成の参考画。指先の細かな動きは、前腕と手の中にある筋肉の働きにも支えられています。
+文字を書く身近な動作を描いた挿絵。指先の細かな動きは、前腕と手の中にある筋肉の働きにも支えられています。
 
 ## 「小さな動き」は、指先だけの仕事ではない
 

@@ -8,7 +8,7 @@ category: 身近なモノ
 topic: ニチバンのセロテープの植物由来原料と4層構造
 tags: [セロテープ, セロハン, 文房具, 素材]
 image: /assets/articles/cellophane-tape-wood-pulp/tape-cover.jpg
-image_alt: 透明な粘着テープと木や葉を組み合わせた専用サムネイル（AI生成イラスト）
+image_alt: 透明な粘着テープと木や葉を組み合わせた専用サムネイル
 show_cover: false
 conditions: ニチバンのセロテープの素材・構造を説明します。透明テープ全般に同じ原料や特性を当てはめることはできません。画像は説明用イラストと模式図で、実物写真ではありません。
 youtube: N_HLaTnbukU
@@ -35,9 +35,9 @@ sources:
 
 ここでは、この製品の素材と仕組みを見ていきます。[メーカーの素材説明](https://www.nichiban-cellotape.com/environment/)
 
-![木材チップ、白いパルプ、透明なセロハンフィルムを左から順に並べたAI生成イラスト](/assets/articles/cellophane-tape-wood-pulp/pulp-to-film.jpg)
+![木材チップ、白いパルプ、透明なセロハンフィルムを左から順に並べたイラスト](/assets/articles/cellophane-tape-wood-pulp/pulp-to-film.jpg)
 
-木材チップからパルプを経て透明なフィルムになる流れのイメージ。AI生成の説明用イラストで、実際の原料や製造現場の写真ではありません。
+木材チップからパルプを経て透明なフィルムになる流れのイメージ。説明用イラストで、実際の原料や製造現場の写真ではありません。
 
 ## 木から、どうやって透明な膜になる？
 

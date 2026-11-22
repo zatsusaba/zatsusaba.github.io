@@ -9,7 +9,7 @@ topic: "生きた昆布のうま味と細胞膜"
 tags: [昆布, だし, うま味]
 conditions: "生育中の昆布と、採取・乾燥などを経ただし用昆布の比較。模式図は細胞の構造・数・透過率を再現しない。海水中の成分量をゼロとする意味ではない。"
 image: /assets/blog/kombu-membrane/thumbnail.jpg
-image_alt: "乾燥昆布と昆布だしの入った器を描いたAI生成の参考イラスト。実物写真ではありません。"
+image_alt: "乾燥昆布と昆布だしの入った器を描いたイラスト。"
 show_cover: false
 youtube: _AcYxTopgRw
 youtube_title: "コンブの不思議 #雑学 #面白い #昆布"
@@ -34,7 +34,7 @@ sources:
 
 ここで大切なのは、膜を「何も通さない壁」と考えないことです。選択透過性とは、物質の出入りが一様ではないということ。Q＆Aも、昆布が必要なものを取り入れ、不要なものを出す働きとして紹介しています。生きた昆布が、成分を何も外へ出さないという話ではありません。
 
-![岩に付着して海中に広がる昆布を描いたAI生成の参考イラスト](/assets/blog/kombu-membrane/body-underwater-v2.webp)
+![岩に付着して海中に広がる昆布を描いたイラスト](/assets/blog/kombu-membrane/body-underwater-v2.webp)
 
 海で育つ昆布の姿を伝える参考イラストです。特定の海域や種類、細胞の働きを再現したものではありません。
 

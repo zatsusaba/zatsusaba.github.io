@@ -8,9 +8,9 @@ category: 動物
 topic: 蝶の足の接触化学感覚と産卵植物の選択
 tags: [蝶, 味覚, 昆虫, ナミアゲハ]
 image: /assets/blog/butterfly-taste-feet/thumbnail.jpg
-image_alt: 柑橘の葉の上を飛ぶ蝶を描いた専用サムネイル（AI生成イラスト）
+image_alt: 柑橘の葉の上を飛ぶ蝶を描いたイラスト
 show_cover: false
-conditions: 成虫の蝶の味覚を紹介し、感覚器の分類・雌雄差はナミアゲハ（Papilio xuthus）の前脚を調べた研究に限定します。味覚は足だけにあるわけではなく、感覚器の分布や反応する物質は種類・器官で異なります。葉に触れる行動だけで産卵や食事を断定できません。画像はAI生成の参考イラストと独自の説明用模式図で、実物写真・標本図・顕微鏡写真ではありません。
+conditions: 成虫の蝶の味覚を紹介し、感覚器の分類・雌雄差はナミアゲハ（Papilio xuthus）の前脚を調べた研究に限定します。味覚は足だけにあるわけではなく、感覚器の分布や反応する物質は種類・器官で異なります。葉に触れる行動だけで産卵や食事を断定できません。挿絵と模式図は実物写真・標本図・顕微鏡写真ではありません。
 youtube: OVnFWxq5LkY
 youtube_title: 'ちょうちょの秘密 #漫画 #ai漫画 #雑学'
 youtube_format: short
@@ -34,9 +34,9 @@ sources:
 
 **蝶は、足でも味を感じます。足にある感覚器で、触れたものの化学成分を確かめているのです。** 食べ物を見つけるだけでなく、雌が卵を産む植物を選ぶ場面にも役立ちます。ただし、「足でしか味を感じない」という意味ではありません。[カールトン大学の解説](https://carleton.ca/biology/description/do-butterflies-really-taste-through-their-feet/)
 
-![柑橘の葉に脚を触れさせるアゲハの仲間を描いたAI生成イラスト](/assets/blog/butterfly-taste-feet/butterfly-leaf.jpg)
+![柑橘の葉に脚を触れさせるアゲハの仲間を描いたイラスト](/assets/blog/butterfly-taste-feet/butterfly-leaf.jpg)
 
-葉の上に止まる姿をイメージしたAI生成の参考イラスト。特定種の形や感覚器を正確に再現した標本図ではなく、実際の産卵行動を撮影した写真でもありません。
+葉の上に止まる姿をイメージしたイラスト。特定種の形や感覚器を正確に再現した標本図ではなく、実際の産卵行動を撮影した写真でもありません。
 
 ## 足に小さな舌があるわけではない
 
@@ -54,7 +54,7 @@ sources:
 
 ![花にとまり、細長い口吻を花の中央へ伸ばすアゲハの仲間の参考イラスト](/assets/blog/butterfly-taste-feet/body-feeding-v2.webp)
 
-AI生成の参考イラスト。成虫が花で食事する場面を描いています。特定種の標本図や研究の再現ではなく、食べるものは蝶の種類によって異なります。
+成虫が花で食事する場面を描いています。特定種の標本図や研究の再現ではなく、食べるものは蝶の種類によって異なります。
 
 たとえばナミアゲハは、ミカン科の限られた植物を利用します。雌は前脚で葉に触れ、複数の成分の組み合わせを手がかりにします。単に「甘い葉ならよい」という判定ではありません。2013年の研究では、葉の成分に応答する神経細胞と、成分を組み合わせたときの産卵行動との関係が調べられました。[原著論文の抄録（九州大学）](https://kyushu-u.elsevierpure.com/en/publications/gustatory-sensing-mechanism-coding-for-multiple-oviposition-stimu/)
 

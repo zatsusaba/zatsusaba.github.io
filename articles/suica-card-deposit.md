@@ -8,7 +8,7 @@ category: 身近なモノ
 topic: カード型Suicaの預り金と残額の違い、使い捨て防止
 tags: [Suica, 交通系ICカード, 預り金]
 image: /assets/blog/suica-card-deposit/thumbnail.webp
-image_alt: "玄関の小物皿に置かれた無地の緑の交通系カードを描いたAI生成の参考イラスト"
+image_alt: "玄関の小物皿に置かれた無地の緑の交通系カードを描いたイラスト"
 show_cover: false
 conditions: "JR東日本発行の標準的なカード型Suicaの返却を扱います。モバイルSuica、Welcome Suica、他社発行カード、通用期間の残る定期券付きのカードは条件が異なります。My Suica（記名式）には本人確認書類が必要です。一部の駅では取り扱いがありません。"
 youtube: t_6yNPqr4pc

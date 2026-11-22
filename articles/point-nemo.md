@@ -9,7 +9,7 @@ topic: ポイント・ネモと海の到達不能極
 tags: [世界, 海, 地理]
 conditions: "最寄りの海岸までの地理的距離を基準にした説明です。航路や人からの距離ではありません。座標や距離は海岸線データと計算方法に左右され、本文の約2700kmは丸めた目安です。図は非縮尺の自作概念図で、航海や救助の方法は扱いません。"
 image: /assets/blog/point-nemo/cover-v2.webp
-image_alt: "広い海の水平線を描いたAI生成イラスト。実際の地点の写真や地図ではない。"
+image_alt: "広い海の水平線を描いたイラスト。実際の地点の写真や地図ではない。"
 show_cover: false
 youtube: UXG811X_XlU
 youtube_title: 'ここで遭難したら #漫画 #ai漫画 #雑学'
@@ -29,7 +29,7 @@ sources:
 
 [NOAAの解説](https://oceanservice.noaa.gov/facts/nemo.html)では、最寄りの陸まで約2688kmと紹介されています。挙げられているのは、北側のデュシー島、北東側のモツ・ヌイ、南側のマーヘル島です。大陸ではなく、こうした小さな島々が最寄りの陸になるのが面白いところです。
 
-![大海原に浮かぶ小さな岩の島を描いたAI生成イラスト](/assets/blog/point-nemo/body-islet-v2.webp)
+![大海原に浮かぶ小さな岩の島を描いたイラスト](/assets/blog/point-nemo/body-islet-v2.webp)
 
 小さな島も「陸」に含まれることをイメージするための挿絵です。デュシー島など、本文に登場する実在の島の姿を再現したものではありません。
 

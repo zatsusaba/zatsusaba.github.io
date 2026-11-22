@@ -8,9 +8,9 @@ category: 科学
 topic: みかんの皮のリモネンと天然ゴム風船の破裂
 tags: [みかん, リモネン, 風船, 天然ゴム]
 image: /assets/covers/mikan-peel-rubber-balloon.webp
-image_alt: みかんと巻いた皮、離れた場所にある赤いゴム風船を描いたAI生成の参考イラスト
+image_alt: みかんと巻いた皮、離れた場所にある赤いゴム風船を描いたイラスト
 show_cover: false
-conditions: 天然ゴム製の風船とリモネンの関係を扱います。引用する高速度撮影は特定の市販製品での観察で、すべての製品や状態で同じ結果になることを示しません。画像はAI生成の参考イラストで、実験記録や素材の耐性試験ではありません。
+conditions: 天然ゴム製の風船とリモネンの関係を扱います。引用する高速度撮影は特定の市販製品での観察で、すべての製品や状態で同じ結果になることを示しません。図は、実験の記録や素材の耐性試験の結果ではありません。
 youtube: NGcxuD4zIPI
 youtube_title: 'みかん風船割り #漫画 #雑学 #みかん'
 youtube_format: short
@@ -36,7 +36,7 @@ sources:
 
 食べ物の皮と風船。普段は何の関係もなさそうな二つが、材料の性質を通してつながります。ただし、「みかんがあれば、どんな風船でも割れる」というほど単純ではありません。
 
-![皿の上で巻いたみかんの皮の外側の凹凸と白い内側を描いたAI生成の参考イラスト](/assets/blog/mikan-peel-rubber-balloon/peel-texture.webp)
+![皿の上で巻いたみかんの皮の外側の凹凸と白い内側を描いたイラスト](/assets/blog/mikan-peel-rubber-balloon/peel-texture.webp)
 
 ## 果汁ではなく、皮に含まれる油の話
 
@@ -64,7 +64,7 @@ sources:
 
 ## ゴム風船と、金属色の風船は素材が違う
 
-![丸い赤いゴム風船と星形の銀色のフィルムバルーンの質感を描き分けたAI生成の参考イラスト](/assets/blog/mikan-peel-rubber-balloon/latex-and-film.webp)
+![丸い赤いゴム風船と星形の銀色のフィルムバルーンの質感を描き分けたイラスト](/assets/blog/mikan-peel-rubber-balloon/latex-and-film.webp)
 
 日本バルーン協会は、ゴム風船の原料を、ゴムの木から得られるラテックスと説明しています。一方、フィルムバルーンには、一般にポリエチレンやナイロンなどのフィルムが使われます。
 

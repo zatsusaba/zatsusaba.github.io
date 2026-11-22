@@ -8,9 +8,9 @@ category: 身近なモノ
 topic: 洗濯物の再湿潤によるにおいの再発生
 tags: [洗濯, タオル, 生乾き臭]
 image: /assets/covers/laundry-odor-returns.webp
-image_alt: かごの縁に折りたたんだ青いタオルを描いたAI生成の参考イラスト
+image_alt: かごの縁に折りたたんだ青いタオルを描いたイラスト
 show_cover: false
-conditions: 部屋干し時に悪臭を発した衣類などを調べた研究の紹介で、すべてのにおいの原因を特定するものではありません。画像はAI生成の参考イラストで、実験結果や菌の状態を示すものではありません。
+conditions: 部屋干し時に悪臭を発した衣類などを調べた研究の紹介で、すべてのにおいの原因を特定するものではありません。図は、実験で得られた結果や菌の状態を示していません。
 youtube: cngcUSMtqL0
 youtube_title: '洗濯の謎 #雑学 #面白い #洗濯'
 youtube_format: short
@@ -33,7 +33,7 @@ sources:
 
 「ちゃんと乾かしたのに」と思うところですが、乾くことと、においのもとを取り除くことは別。この違いを知ると、洗濯の見直し方も少し変わります。
 
-![タオルで手を拭く場面を描いたAI生成の参考イラスト。](/assets/blog/laundry-odor-returns/hand-towel.webp)
+![タオルで手を拭く場面を描いたイラスト。](/assets/blog/laundry-odor-returns/hand-towel.webp)
 
 ## 湿ることで、においが戻る
 
@@ -53,7 +53,7 @@ sources:
 
 [花王の案内](https://www.kao.com/jp/qa/detail/15871/)では、汚れをきちんと落とすことと、乾燥を早めることが、におい予防のポイントに挙げられています。干すときは布同士の間隔をあけ、必要に応じて除湿や換気を使います。湿った雑巾も丸めたままにせず、広げて干す、と考えると分かりやすいですね。
 
-![タオルや布を広げ、間隔をあけて干す様子を描いたAI生成の参考イラスト。](/assets/blog/laundry-odor-returns/air-drying.webp)
+![タオルや布を広げ、間隔をあけて干す様子を描いたイラスト。](/assets/blog/laundry-odor-returns/air-drying.webp)
 
 すでににおう布については、干し直すだけで解決したと決めつけず、洗い方も見直したいところです。衣類や製品の表示に従い、洗濯物を詰め込みすぎていないか、洗剤量が合っているかを確認しましょう。多く入れればよいわけではない点は、[洗濯洗剤の量についての記事](/blog/laundry-detergent-dose/)でも紹介しています。
 

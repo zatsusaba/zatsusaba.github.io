@@ -12,7 +12,7 @@ youtube: 9MIxA-FIkew
 youtube_title: "海賊のフシギ #漫画 #ai漫画 #雑学"
 youtube_format: short
 image: /assets/blog/pirate-articles/cover-v2.webp
-image_alt: "海を進む帆船を描いたAI生成の参考イラスト。特定の海賊船や史実の航海の再現ではない。"
+image_alt: "海を進む帆船を描いたイラスト。特定の海賊船や史実の航海の再現ではない。"
 show_cover: false
 sources:
   - title: "Captain Charles Johnson, A General History of the Pyrates (1724), Of Capt. Bartho. Roberts, pp. 230–235"
@@ -27,13 +27,13 @@ sources:
 
 ## 船長も、いつも「絶対」ではなかった
 
-![帆船の甲板で船員たちが話し合う想像上の場面。AI生成の参考イラストで、ロバーツの一味や選挙の方法を再現したものではない](/assets/blog/pirate-articles/body-discussion-v2.webp)
+![帆船の甲板で船員たちが話し合う想像上の場面。ロバーツの一味や選挙の方法を再現したものではない](/assets/blog/pirate-articles/body-discussion-v2.webp)
 
 同書のロバーツについての説明には、船長の地位は多数の支持で得るとあります。一方、ロバーツは有力な仲間を集め、影響力を強めたとも書かれています。さらに、追跡や戦闘では船長に強い権限があったと説明されます。選ばれた船長であっても、いつも多数決だけで動くという話ではありません。
 
 ## 投票と取り分は、別々の取り決め
 
-![紙と羽根ペン、硬貨と木箱を置いた想像上の船内。AI生成の参考イラストで、規約原本や当時の配分額を示すものではない](/assets/blog/pirate-articles/body-records-v2.webp)
+![紙と羽根ペン、硬貨と木箱を置いた想像上の船内。規約原本や当時の配分額を示すものではない](/assets/blog/pirate-articles/body-records-v2.webp)
 
 同書がロバーツの一味について紹介する規約の「要旨」には、重要事項に各人が票を持つとあります。一方、獲得物の取り分は一律ではなく、船長などの役職には多めの配分を定めています。また、活動中に手足を失うなどした場合、共同の蓄えから補償するという項目もあります。投票の項目があることと、全員が平等だったことは同じではありません。
 

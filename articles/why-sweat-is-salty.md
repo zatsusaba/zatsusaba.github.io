@@ -8,9 +8,9 @@ category: 人体
 topic: エクリン汗腺での塩分再吸収と汗のナトリウム濃度
 tags: [汗, 汗腺, 塩分]
 image: /assets/covers/why-sweat-is-salty.webp
-image_alt: 木陰で休む人を描いたAI生成の参考イラスト
+image_alt: 木陰で休む人を描いたイラスト
 show_cover: false
-conditions: 体温調節に関わるエクリン腺の汗について説明します。研究で測られたナトリウム濃度と、全身で失う塩分の総量は別です。小規模な運動実験の結果を、個人の健康状態の判定や塩分補給量の目安には使いません。画像は日常場面を描いたAI生成の参考イラストです。
+conditions: 体温調節に関わるエクリン腺の汗について説明します。研究で測られたナトリウム濃度と、全身で失う塩分の総量は別です。小規模な運動実験の結果を、個人の健康状態の判定や塩分補給量の目安には使いません。
 youtube: LnM3EVreiPY
 youtube_title: '汗の謎 #雑学 #面白い #汗'
 youtube_format: short
@@ -30,7 +30,7 @@ sources:
 
 汗は水を出すだけのしくみではなく、塩分を回収しながら働くしくみでもある。ここを知ると、「汗の濃さはいつも同じ？」という疑問の答えも見えてきます。
 
-![腕の皮膚に小さな汗の粒が浮かぶ様子を描いたAI生成の参考イラスト](/assets/blog/why-sweat-is-salty/forearm.webp)
+![腕の皮膚に小さな汗の粒が浮かぶ様子を描いたイラスト](/assets/blog/why-sweat-is-salty/forearm.webp)
 
 ## 汗には、つくる場所と通り道がある
 
@@ -50,7 +50,7 @@ sources:
 
 つまり、「汗が増えると回収がゼロになる」ではなく、出す働きと戻す働きのバランスが変わる、ということです。これは一定の条件で前腕の汗を測った結果で、どの人のどの場面でも同じ濃さになるという意味ではありません。
 
-![木陰のベンチで額の汗をタオルで拭う人を描いたAI生成の参考イラスト](/assets/blog/why-sweat-is-salty/shaded-break.webp)
+![木陰のベンチで額の汗をタオルで拭う人を描いたイラスト](/assets/blog/why-sweat-is-salty/shaded-break.webp)
 
 ## 暑さに慣れたあとは、同じ速さでも違う
 

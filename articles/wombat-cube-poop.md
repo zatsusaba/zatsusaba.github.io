@@ -12,7 +12,7 @@ youtube: UsdNxnHLHlc
 youtube_title: 四角いうんち
 youtube_format: short
 image: /assets/covers/wombat-cover.png
-image_alt: 動物・四角いうんちの謎。正面を向くウォンバットと丸みのある立方体のモチーフを描いた専用サムネイル（AI生成のイメージ）。
+image_alt: 動物・四角いうんちの謎。正面を向くウォンバットと丸みのある立方体のモチーフを描いた専用サムネイル。
 sources:
 - title: Yangほか 2021 腸壁の不均一な硬さと角の形成
   url: https://doi.org/10.1039/D0SM01230K
@@ -41,8 +41,6 @@ show_cover: false
 
 ![草地で草を食べるコモンウォンバットを描いた参考イラスト。幅広い鼻とずんぐりした体が見える。](/assets/articles/wombat-cube-poop/wombat-grazing-illustration.png)
 
-草を食べるコモンウォンバットの参考イラスト（AI生成）。
-
 四角い物なら四角い型で作りそうなもの。それを、やわらかい腸がやっているのです。
 
 ## 腸の壁は一様なやわらかさではない
@@ -55,7 +53,7 @@ show_cover: false
 
 ![岩や土の上にある、角に丸みを帯びた四角形に近いうんちを描いた参考イラスト。形にはばらつきがある。](/assets/articles/wombat-cube-poop/wombat-pellets-illustration.png)
 
-角に丸みがあり、形にもばらつきがある便の参考イラスト（AI生成）。実測図ではありません。
+角に丸みがあり、形にもばらつきがある便の参考イラスト。実測図ではありません。
 
 タスマニア大学の研究紹介では、腸の終わりに近い部分で水分が減ることと筋肉の収縮が組み合わさり、特徴的な形ができると説明されています。水分の多い条件では四角さが弱くなる場合もあるそうです。「いつでも同じサイコロが出てくる」と考えると実物とのずれが出ます。
 

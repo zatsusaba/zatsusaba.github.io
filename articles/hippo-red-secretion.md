@@ -8,9 +8,8 @@ category: 動物
 topic: カバの赤い汗は血？ 色が変わる分泌液の正体
 tags: []
 image: /assets/blog/hippo-red-secretion/thumbnail.webp
-image_alt: 水面に顔を出す赤みを帯びた濡れたカバ（AI生成の参考イラスト）
+image_alt: 水面に顔を出す赤みを帯びた濡れたカバ
 show_cover: false
-conditions: 画像は独自の模式図またはAI生成の参考画です。
 youtube: ViBe4NSCiAE
 youtube_title: 'カバの不思議 #漫画 #雑学 #カバ'
 youtube_format: short
@@ -26,7 +25,7 @@ sources:
 
 ![浅瀬のカバ全身を斜め横から、赤みのある濡れた肌を控えめに描く](/assets/blog/hippo-red-secretion/body-01.webp)
 
-AI生成の参考イラスト。赤みは血や傷ではなく分泌液のイメージです。実測色・薬効の図ではありません。
+カバの皮膚に見える赤みは分泌液の色です。絵の色は実測値ではありません。
 
 ## 赤い色は、皮膚の上で生まれる
 
@@ -34,7 +33,7 @@ AI生成の参考イラスト。赤みは血や傷ではなく分泌液のイメ
 
 ![浅瀬のカバを後方から見た赤みのある濡れた肌](/assets/blog/hippo-red-secretion/body-02.webp)
 
-AI生成の参考・概念イラスト。分泌液による赤みの外観参考。血、傷、赤いクリーム、薬効、実測色の図ではない。
+赤みを帯びた分泌液が皮膚を覆う様子。
 
 [橋本貴美子氏らの研究抄録](https://www.jstage.jst.go.jp/article/yukigoseikyokaishi1943/64/12/64_12_1251/_article/-char/ja/)によると、分泌液は出た直後は無色で、数分で赤くなり、数時間で茶色へ変わります。研究では赤色とオレンジ色の色素が取り出されました。
 

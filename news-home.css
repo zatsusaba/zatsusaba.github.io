@@ -83,11 +83,11 @@ header.news-masthead {
 }
 .news-desk-copy { position: relative; z-index: 1; width: 66%; }
 .news-desk-description {
-  max-width: 34em;
+  max-width: 44em;
   margin: .7rem 0 0;
   color: #dceaf1;
   font: 550 clamp(1rem, 1.35vw, 1.12rem)/1.6 var(--news-sans);
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 .news-desk h1 {
   margin: 0;

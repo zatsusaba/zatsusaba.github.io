@@ -6,6 +6,9 @@ const results = document.querySelector('#matches');
 const count = document.querySelector('#blog-count');
 const empty = document.querySelector('#blog-empty');
 const initialCount = count.textContent;
+const initialEmptyHidden = empty.hidden;
+const indexUrl = query.dataset.index || '/search/index.json';
+const bodyPrefix = query.dataset.bodyPrefix || '/search/body-';
 const cache = new Map();
 const normalize = text => text.normalize('NFKC').toLocaleLowerCase('ja');
 let revision = 0;
@@ -52,20 +55,20 @@ async function search(id) {
   archive.hidden = !!words.length;
   if (!words.length) {
     count.textContent = initialCount;
-    empty.hidden = initialCount !== '0件';
+    empty.hidden = initialEmptyHidden;
     return;
   }
   empty.hidden = true;
   count.textContent = '検索中…';
   try {
-    const index = await read('/search/index.json');
+    const index = await read(indexUrl);
     const found = [];
     for (let start = 0; start < index.length; start += 32) {
       if (id !== revision) return;
       const chunk = index.slice(start, start + 32);
       const eligible = row => !query.dataset.category || row[3] === query.dataset.category;
       if (!chunk.some(eligible)) continue;
-      const bodies = fullText.checked ? await read('/search/body-' + start / 32 + '.json') : [];
+      const bodies = fullText.checked ? await read(bodyPrefix + start / 32 + '.json') : [];
       chunk.forEach((row, i) => {
         if (!eligible(row)) return;
         const text = normalize([row[1], row[2], row[3], ...row[4], bodies[i] || ''].join(' '));

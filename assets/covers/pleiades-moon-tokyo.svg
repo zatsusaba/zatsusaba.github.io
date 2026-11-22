@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">11月24日、東京でマイアが月に隠れる時間</title>
+  <desc id="desc">東京での予報。18時47分ごろに隠れ、19時45分ごろに再び現れる。右上の月は模様として描いた模式図。</desc>
+  <defs>
+    <linearGradient id="night" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#182c43"/><stop offset="1" stop-color="#091521"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0" x2="1" y1="1" y2="0">
+      <stop stop-color="#9fbab9"/><stop offset=".56" stop-color="#e7e6d5"/><stop offset="1" stop-color="#f4edd6"/>
+    </linearGradient>
+    <pattern id="engraving" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(34)">
+      <path d="M0 0V8" stroke="#2f5863" stroke-width="1.5"/>
+    </pattern>
+    <clipPath id="disc"><circle cx="804" cy="65" r="176"/></clipPath>
+  </defs>
+  <rect width="960" height="540" fill="url(#night)"/>
+  <g fill="#d7dcca" opacity=".72">
+    <circle cx="42" cy="178" r="1.5"/><circle cx="228" cy="238" r="1.5"/>
+    <circle cx="435" cy="52" r="2"/><circle cx="482" cy="199" r="2"/>
+    <circle cx="564" cy="113" r="1.5"/><circle cx="557" cy="252" r="1.5"/>
+    <circle cx="603" cy="43" r="2"/><circle cx="682" cy="256" r="1.5"/>
+    <circle cx="874" cy="255" r="2"/>
+  </g>
+  <circle cx="804" cy="65" r="176" fill="url(#surface)"/>
+  <g clip-path="url(#disc)" fill="url(#engraving)" opacity=".42">
+    <path d="M628 2C656 6 681 37 687 66S716 119 750 116s55 18 63 42 31 46 67 57c-62 46-166 41-221-28S611 56 628 2Z"/>
+    <path d="M699-28c24 16 54 48 49 77-5 27 14 38 34 36s43-10 61 6c9 8 26 15 33 12-8-14-19-23-15-39 5-19-4-35-24-41-26-8-42-21-49-47Z"/>
+    <path d="M892-8c21 12 25 32 17 47s2 28 19 29c12 1 24 11 23 23l20-19V-8Z"/>
+  </g>
+  <g font-family="'Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans CJK JP',sans-serif">
+    <path d="M75 76h43" stroke="#f5ba77" stroke-width="6"/>
+    <text x="131" y="85" font-size="25" font-weight="700" fill="#f2c28c">11月24日・東京の予報</text>
+    <text x="72" y="179" font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif CJK JP',serif" font-weight="700" font-size="70" fill="#f9f2de">すばる食</text>
+    <text x="76" y="224" font-size="27" fill="#d3e1e0">星「マイア」が月の後ろへ</text>
+    <path d="M75 292H885" stroke="#7c939c" stroke-opacity=".7"/>
+    <g fill="#f9f2de" font-family="Georgia,'Noto Serif',serif" font-weight="700" font-size="81">
+      <text x="111" y="400">18:47</text><text x="553" y="400">19:45</text>
+    </g>
+    <g fill="#d3e1e0" font-size="27">
+      <text x="115" y="457">ごろ　隠れる</text><text x="555" y="457">ごろ　再び現れる</text>
+    </g>
+    <path d="M386 375h112m-12-11 12 11-12 11" stroke="#f5ba77" stroke-width="4" fill="none"/>
+  </g>
+</svg>

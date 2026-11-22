@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>雑学サバイバル｜今日の話題と身近な疑問を読み解く</title>
-  <meta name="description" content="今日の話題や身近な疑問を、出典を確かめながら楽しめる雑学メディア。科学、文化、生活の新着記事と動画をお届けします。">
+  <title>雑サバ新聞と雑学Blog｜雑学サバイバル</title>
+  <meta name="description" content="雑サバ新聞では、キュウちゃんと一緒に最新ニュースを読み解けます。雑サバ本館には、身近な疑問を楽しむ雑学Blogや太郎とキュウちゃんの動画・物語がそろっています。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zatsusaba.github.io/">
   <!--news:share-image-->
-  <meta property="og:title" content="雑学サバイバル｜今日の話題と身近な疑問を読み解く">
-  <meta property="og:description" content="話題の出来事から、身近な科学と文化まで。雑学サバイバルの一面と新着記事を読めます。">
+  <meta property="og:site_name" content="雑学サバイバル">
+  <meta property="og:title" content="雑サバ新聞と雑学Blog｜雑学サバイバル">
+  <meta property="og:description" content="キュウちゃんと今の話題を追う雑サバ新聞と、マンガで雑学を楽しむ雑サバ本館。">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="google-adsense-account" content="ca-pub-5044830987253002">
   <link rel="icon" href="/assets/logo-cut.png">
@@ -23,27 +24,70 @@
   <!--news:masthead-->
   <main id="main" class="home-page">
     <!--news:content-->
-    <section id="about" class="news-about" aria-labelledby="about-title">
-      <img class="news-about-visual" src="/assets/hero-duo-v2.png" loading="lazy" alt="太郎とキュウちゃん">
-      <div class="news-about-copy">
-        <h2 id="about-title">雑サバとは</h2>
-        <p>マンガで雑学。物語を楽しんで、気づけばひとつ賢くなる。</p>
-        <p>作者・緋色牡丹が、YouTube「雑学サバイバル」の漫画・物語を制作。雑学とユーモアを武器に、アニメ、ゲーム、さまざまな創作に挑戦しています。</p>
-        <nav class="news-about-links" aria-label="雑学サバイバルについて">
-          <a href="/assets/opening.mp4">オープニング動画</a><a href="/story.html">物語</a><a href="/characters.html">登場人物</a><a href="/videos.html">動画一覧</a><a href="https://x.com/cb_storyteller" target="_blank" rel="noopener noreferrer">作者のX</a>
+    <div class="classic-home" id="zatsusaba">
+      <div class="classic-masthead">
+        <a class="brand" href="/#zatsusaba" aria-label="雑学サバイバル本館">
+          <img src="/assets/logo-cut.png" width="44" height="44" alt="">
+          <span>ZATSUGAKU<br>SURVIVAL</span>
+        </a>
+        <nav class="classic-nav" aria-label="雑サバ本館">
+          <a href="/#zatsusaba">HOME</a>
+          <a href="/story.html" aria-label="STORY 物語">STORY</a>
+          <a href="/characters.html" aria-label="CHARACTERS 登場人物">CHARACTERS</a>
+          <a href="/blog/">雑学Blog</a>
+          <a href="/#today">今日の動画</a>
+          <a href="/videos.html" aria-label="VIDEOS 動画一覧">VIDEOS</a>
         </nav>
-        <div id="home-teaser"></div>
       </div>
-    </section>
-    <section class="section fantasia-section" aria-labelledby="novel-title">
-      <div class="section-head"><h2 class="creator-heading" id="novel-title">原作小説</h2></div>
-      <a class="fantasia-card" href="https://kakuyomu.jp/works/822139839280623779/episodes/822139839281077454" target="_blank" rel="noopener noreferrer"><img src="/assets/fantasia.png" loading="lazy" alt="World of Fantasia の公式ビジュアル"><div class="fantasia-copy"><h3>World of Fantasia <span>ワールド・オブ・ファンタジア</span></h3><p>雑学サバイバルの世界観の原点となったファンタジー作品。物語の始まりをカクヨムで読むことができます。</p><strong>第一話「生きたかったのだろうか」を読む</strong></div></a>
-    </section>
+      <section class="home-hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-visual"><img src="/assets/hero-duo-v2.png" alt="太郎とキュウちゃん" loading="lazy"></div>
+          <div class="home-copy">
+            <h2 id="hero-title">マンガで<br><em>雑学。</em></h2>
+            <p class="home-catch">生き延びる方法は、<br>雑学とユーモアだけ！</p>
+            <p class="home-intro">物語を楽しんで、気づけばひとつ賢くなる。<br>漫画と雑学のエンターテインメント。</p>
+            <div class="home-actions">
+              <a class="home-button primary" href="/blog/">雑学Blog <span aria-hidden="true">→</span></a>
+              <a class="home-button" href="/videos.html">動画を見る <span aria-hidden="true">↗</span></a>
+            </div>
+            <div id="home-teaser"></div>
+          </div>
+        </div>
+      </section>
+      <div class="home-strip home-motto">KNOWLEDGE IS POWER</div>
+      <!--classic:content-->
+      <section class="section creator-section" id="about" aria-labelledby="creator-title">
+        <div class="section-head"><div>
+          <p class="eyebrow">CREATIVE / STORIES</p>
+          <h2 class="creator-heading" id="creator-title">CREATOR <span>｜ 作者</span></h2>
+        </div></div>
+        <div class="creator-copy">
+          <p><strong>緋色牡丹</strong><br>YouTube『雑学サバイバル』の漫画・物語を制作。雑学とユーモアを武器に、アニメ、ゲーム、さまざまな創作に挑戦しています。</p>
+          <a class="creator-x" href="https://x.com/cb_storyteller" target="_blank" rel="noopener noreferrer">Xを見る ↗</a>
+          <a class="creator-x" href="/assets/opening.mp4">オープニング動画</a>
+        </div>
+      </section>
+      <section class="section fantasia-section" aria-labelledby="novel-title">
+        <div class="section-head"><div>
+          <p class="eyebrow">THE ORIGINAL WORLD</p>
+          <h2 class="fantasia-heading" id="novel-title">NOVEL</h2>
+        </div></div>
+        <a class="fantasia-card" href="https://kakuyomu.jp/works/822139839280623779/episodes/822139839281077454" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/fantasia.png" loading="lazy" alt="World of Fantasia の公式ビジュアル">
+          <div class="fantasia-copy">
+            <small>WORLD OF FANTASIA</small>
+            <h3>World of Fantasia<br><span>ワールド・オブ・ファンタジア</span></h3>
+            <p>雑学サバイバルの世界観の原点となったファンタジー作品。物語の始まりをカクヨムで読むことができます。</p>
+            <strong>第一話「生きたかったのだろうか」を読む ↗</strong>
+          </div>
+        </a>
+      </section>
+    </div>
   </main>
   <footer>
     <a class="footer-home" href="/" aria-label="ホームへ"><img src="/assets/logo-cut.png" alt=""></a>
     <div><strong><a href="/">雑学サバイバル</a></strong><p>生き延びる方法は、雑学とユーモアだけ！</p></div>
-    <a href="https://www.youtube.com/@zatsusaba" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <a href="https://www.youtube.com/@zatsusaba" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
   </footer>
   <dialog id="zoom" aria-label="漫画画像の拡大"><button id="zoom-close" aria-label="閉じる">×</button><img alt="拡大した漫画"></dialog>
   <script defer src="/data.js"></script>

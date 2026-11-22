@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">京都水族館のツリーに使われたぬいぐるみ99個</title>
+  <desc id="desc">点1つがぬいぐるみ1個。3、5、7、9、11、13、15、17、19個と並べた9段で、合計99個を表す。実物の配置を示すものではない。</desc>
+  <defs>
+    <g id="unit"><circle r="7.6"/></g>
+    <g id="three"><use xlink:href="#unit" x="-20"/><use xlink:href="#unit"/><use xlink:href="#unit" x="20"/></g>
+    <g id="five"><use xlink:href="#unit" x="-40"/><use xlink:href="#three"/><use xlink:href="#unit" x="40"/></g>
+    <g id="seven"><use xlink:href="#unit" x="-60"/><use xlink:href="#five"/><use xlink:href="#unit" x="60"/></g>
+    <g id="nine"><use xlink:href="#unit" x="-80"/><use xlink:href="#seven"/><use xlink:href="#unit" x="80"/></g>
+    <g id="eleven"><use xlink:href="#unit" x="-100"/><use xlink:href="#nine"/><use xlink:href="#unit" x="100"/></g>
+    <g id="thirteen"><use xlink:href="#unit" x="-120"/><use xlink:href="#eleven"/><use xlink:href="#unit" x="120"/></g>
+    <g id="fifteen"><use xlink:href="#unit" x="-140"/><use xlink:href="#thirteen"/><use xlink:href="#unit" x="140"/></g>
+    <g id="seventeen"><use xlink:href="#unit" x="-160"/><use xlink:href="#fifteen"/><use xlink:href="#unit" x="160"/></g>
+    <g id="nineteen"><use xlink:href="#unit" x="-180"/><use xlink:href="#seventeen"/><use xlink:href="#unit" x="180"/></g>
+  </defs>
+  <rect width="800" height="600" fill="#f5e9c9"/>
+  <g font-family="'Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans CJK JP',sans-serif" fill="#174d45">
+    <path d="M51 105h39" stroke="#aa4b29" stroke-width="6"/>
+    <text x="104" y="115" font-size="25" font-weight="700">京都水族館</text>
+    <text x="52" y="218" font-size="29" font-weight="700">ぬいぐるみ</text>
+    <text x="40" y="379" font-family="Georgia,'Noto Serif',serif" font-weight="700" font-size="188" fill="#a14329">99</text>
+    <text x="277" y="373" font-size="39" font-weight="700" fill="#a14329">個</text>
+    <text x="52" y="440" font-size="24">9月9日の記念日にちなんで</text>
+    <path d="M51 474h698" stroke="#a8a98c"/>
+    <circle cx="62" cy="507" r="7.6"/>
+    <text x="80" y="515" font-size="22">一つの点がぬいぐるみ1個</text>
+  </g>
+  <g transform="translate(568 0)" fill="#236355">
+    <use xlink:href="#three" y="164"/><use xlink:href="#five" y="195"/>
+    <use xlink:href="#seven" y="226"/><use xlink:href="#nine" y="257"/>
+    <use xlink:href="#eleven" y="288"/><use xlink:href="#thirteen" y="319"/>
+    <use xlink:href="#fifteen" y="350"/><use xlink:href="#seventeen" y="381"/>
+    <use xlink:href="#nineteen" y="412"/>
+  </g>
+</svg>

@@ -1,9 +1,9 @@
 """Check generated links, SEO, legacy content preservation, and article rendering."""
-from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from xml.etree import ElementTree as ET
-from build_blog import ROOT, OUT, BASE, load, build, article_cover
+from build_blog import ROOT, OUT, BASE, CATS, load, build, article_cover
+from media import PAGE_SIZE
 from site_info import FOOTER
 import json, re
 from html import escape
@@ -21,6 +21,84 @@ class Document(HTMLParser):
         if tag=="link" and a.get("rel")=="canonical": self.canon.append(a["href"])
         if tag=="h1": self.h1+=1
         if tag=="img": self.images.append((a.get("src"),a.get("alt")))
+
+
+class RegionLinks(HTMLParser):
+    """Read anchor destinations inside one named ID or class, including nested markup."""
+    void = set("area base br col embed hr img input link meta param source track wbr".split())
+
+    def __init__(self, html, selector):
+        super().__init__()
+        self.selector = selector
+        self.depth = 0
+        self.links = []
+        self.labels = []
+        self.link_text = None
+        self.feed(html)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        matches = (attrs.get("id") == self.selector[1:] if self.selector.startswith("#")
+                   else self.selector[1:] in attrs.get("class", "").split())
+        if tag not in self.void and (self.depth or matches):
+            self.depth += 1
+        if self.depth and tag == "a" and "href" in attrs:
+            self.links.append(attrs["href"])
+            self.link_text = []
+
+    def handle_data(self, data):
+        if self.link_text is not None:
+            self.link_text.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.link_text is not None:
+            self.labels.append("".join(self.link_text).strip())
+            self.link_text = None
+        if tag not in self.void and self.depth:
+            self.depth -= 1
+
+
+def check_home(home, streams):
+    assert Document(home).h1 == 1
+    assert home.index('id="news"') < home.index('id="zatsusaba"') < home.index('id="today"')
+    article_urls = {a["url"] for group in streams.values() for a in group}
+    upper = RegionLinks(home, "#news").links
+    assert "/news/" in upper
+    assert [url for url in upper if url in article_urls] == [a["url"] for a in streams["news"][:4]]
+    lower = RegionLinks(home, "#zatsusaba").links
+    assert "/blog/" in lower and not set(lower).intersection(a["url"] for a in streams["news"])
+    lower_cards = [url for url in RegionLinks(home, ".media-home").links if url in article_urls]
+    assert lower_cards == [a["url"] for a in streams["blog"][:4]]
+    assert "/#zatsusaba" in RegionLinks(home, ".news-masthead").links
+    assert "/#zatsusaba" in RegionLinks(home, ".classic-masthead").links
+    assert ("/assets/kyu-frontpage.webp", "キュウちゃん") in Document(home).images
+    nav = RegionLinks(home, ".classic-nav")
+    destinations = {label: urljoin(BASE + "/", href) for label, href in zip(nav.labels, nav.links)}
+    for label, path in (("HOME", "/#zatsusaba"), ("STORY", "/story.html"), ("CHARACTERS", "/characters.html"),
+                        ("雑学Blog", "/blog/"), ("VIDEOS", "/videos.html")):
+        assert destinations.get(label) == BASE + path, f"Classic navigation: {label} → {path}"
+    for marker in ('id="hero-title"', 'id="home-teaser"', 'id="about"', 'fantasia-section'):
+        assert marker in home[home.index('id="zatsusaba"'):], f"Missing classic homepage element: {marker}"
+
+
+def check_archives(streams):
+    for section, group in streams.items():
+        search_path = "search/index.json" if section == "blog" else "news/search.json"
+        rows = json.loads((OUT / search_path).read_text(encoding="utf-8"))
+        assert [row[0] for row in rows] == [a["url"] for a in group], f"Wrong {section} search index"
+        archives = [(f"/{section}/", group)]
+        for category, slug in CATS.items():
+            items = [a for a in group if a["category"] == category]
+            if items or section == "blog":
+                archives.append((f"/{section}/category/{slug}/", items))
+        for base, items in archives:
+            for start in range(0, max(1, len(items)), PAGE_SIZE):
+                page_url = base if start == 0 else f"{base}page/{start // PAGE_SIZE + 1}/"
+                html = (OUT / page_url.strip("/") / "index.html").read_text(encoding="utf-8")
+                cards = RegionLinks(html, ".blog-card").links
+                assert cards == [a["url"] for a in items[start:start + PAGE_SIZE]], page_url
+                categories = RegionLinks(html, ".blog-categories").links
+                assert categories and all(url.startswith(f"/{section}/") for url in categories), page_url
 
 def main():
     build()
@@ -44,37 +122,26 @@ def main():
         assert not list((OUT/"comic-media").rglob("*.png")), "Comic panels published while paused"
         assert "/comics/" not in (OUT/"sitemap.xml").read_text(encoding="utf-8")
     home=(OUT/"index.html").read_text(encoding="utf-8")
-    generated=home.split('<!--media:start-->',1)[1].split('<!--media:end-->',1)[0]
-    articles=load()
-    first_page=articles[:4]
-    if first_page:
-        stories=generated.split('class="news-categories"',1)[0]
-        links=Document(stories).links
-        article_urls={a["url"] for a in articles}
-        assert [url for url in links if url in article_urls]==[a["url"] for a in first_page], "Lead and recent article links must be unique and newest first"
-        assert Document(stories).h1==1, "Latest article needs one visible h1"
-        assert escape(first_page[0]["title"]) in stories.split('</h1>',1)[0]
-    categories=generated.index('class="news-categories"')
-    videos=generated.index('id="today"')
-    assert categories < videos and '<h2>今日の動画</h2>' in generated[videos:]
-    if 'class="blog-home comic-home comic-archive"' in generated:
-        assert videos < generated.index('class="blog-home comic-home comic-archive"')
+    articles = load()
+    streams = {section: [a for a in articles if a["section"] == section] for section in ("news", "blog")}
+    check_home(home, streams)
+    check_archives(streams)
     # Removing only generated content must recover each original page body exactly.
-    for name in ("index.html","story.html","characters.html","videos.html","video.html"):
+    for name in ("story.html","characters.html","videos.html","video.html"):
         original=(ROOT/name).read_text(encoding="utf-8").split("<body",1)[1]
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
         assert FOOTER in built
         built=built.replace(FOOTER,'')
-        if name=="index.html":
-            built=re.sub(r'<header class="news-masthead">.*?</header>','<!--news:masthead-->',built,count=1,flags=re.S)
-            built=re.sub(r'<!--media:start-->.*?<!--media:end-->','<!--news:content-->',built,flags=re.S)
-        else:
-            built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',"")
-            built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>', "")
+        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',"")
+        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>', "")
         assert original==built, f"Unexpected template change: {name}"
-    for a in load():
+    for a in articles:
         text=(OUT/a["url"].lstrip("/")/"index.html").read_text(encoding="utf-8")
         assert a["html"] in text and Document(text).h1==1
+        related = RegionLinks(text, ".blog-card").links
+        assert all(url.startswith(f'/{a["section"]}/') and url != a["url"] for url in related), a["url"]
+        breadcrumb = RegionLinks(text, ".blog-breadcrumb").links
+        assert f'/{a["section"]}/category/{CATS[a["category"]]}/' in breadcrumb, a["url"]
         assert 'application/ld+json' in text and 'og:image' in text
     ns={"s":"http://www.sitemaps.org/schemas/sitemap/0.9"}
     entries=ET.parse(OUT/"sitemap.xml").findall("s:url",ns)
@@ -98,23 +165,25 @@ def main():
     policy="/editorial-policy/"
     assert policy in visited and BASE+policy in dates
     assert Document((OUT/"editorial-policy/index.html").read_text(encoding="utf-8")).canon==[BASE+policy]
-    for a in load():
+    for a in articles:
         url=a["url"]
         html=(OUT/url.strip("/")/"index.html").read_text(encoding="utf-8")
         assert url in visited and dates[BASE+url]==a["updated"]
         assert Document(html).canon==[BASE+url] and "noindex" not in html.split("</head>")[0]
         schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html).group(1))
-        assert f'<title>{escape(a["title"])} | 雑学サバイバル</title>' in html
+        brand = "雑サバ新聞" if a["section"] == "news" else "雑学サバイバル"
+        assert f'<title>{escape(a["title"])} | {brand}</title>' in html
         assert f'<meta name="description" content="{escape(a["description"])}">' in html
-        assert (a["image"],a["image_alt"]) in rendered_images
+        if not (a["section"] == "news" and a.get("category_cover")):
+            assert (a["image"], a["image_alt"]) in rendered_images
         cover=article_cover(a)
         assert cover in html if cover else 'class="blog-cover"' not in html
         share_image=a["image"] if a["image"].startswith("https://") else BASE+a["image"]
         assert f'<meta property="og:image" content="{escape(share_image)}">' in html
         assert schema["image"]==share_image
-        assert schema["@type"]=="BlogPosting" and schema["headline"]==a["title"]
-        assert schema["datePublished"]==a["date"] and schema["dateModified"]==a["updated"]
+        assert schema["@type"]=={"blog":"BlogPosting","news":"NewsArticle"}[a["section"]] and schema["headline"]==a["title"]
+        assert schema["datePublished"]==a.get("published_at",a["date"]) and schema["dateModified"]==a["updated"]
         assert schema["mainEntityOfPage"]==BASE+url and a["image_alt"].strip()
     assert 'content="noindex"' in (OUT/"404.html").read_text(encoding="utf-8")
-    print("PASS: internal links, canonical, sitemap, article HTML, and all 5 legacy page bodies")
+    print("PASS: internal links, canonical, sitemap, article HTML, separate news/blog archives, classic homepage, and 4 legacy page bodies")
 if __name__=="__main__": main()

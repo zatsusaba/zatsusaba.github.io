@@ -15,10 +15,14 @@ import media
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
+NEWS_SHARE_IMAGE = "/assets/kyu-frontpage.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
 CATS=dict(zip(["食べ物","人体","動物","自然","宇宙","歴史","心理","お金","身近なモノ"],["food","body","animals","nature","space","history","psychology","money","everyday"]))
 CATS.update({"科学":"science","文化":"culture","世界":"world"})
+SECTION_NAMES = {"blog": "雑学Blog", "news": "ニュース一覧"}
+SEARCH_PATHS = {"blog": ("/search/index.json", "/search/body-"),
+                "news": ("/news/search.json", "/news/search-body-")}
 def check(ok,msg):
     if not ok: raise ValueError(msg)
 def load():
@@ -34,6 +38,8 @@ def load():
         if not isinstance(a,dict): raise ValueError(f"{p}: missing YAML mapping")
         check(a.get("id",p.stem)==p.stem,f"{p}: id must match filename")
         if editorial.state(a,{"draft","published"},"draft",p)!="published": continue
+        section = a.setdefault("section", "blog")
+        check(section in ("blog", "news"), f"{p}: section must be blog or news")
         for key in ("title","description","date","updated","category","sources"):
             check(a.get(key),f"{p}: missing {key}")
         check(a["category"] in CATS,f"{p}: unknown category")
@@ -47,8 +53,13 @@ def load():
             raise ValueError(f"{p}: {exc}") from exc
         editorial.sources(a,date.fromisoformat(today),p)
         if not a.get("image"):
-            a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
-            a["image_alt"]=a["category"]+"の雑学"
+            if section == "news":
+                # The legacy category covers carry the printed 雑学Blog masthead.
+                # Use the newspaper's masthead artwork for sharing and leave the story text-led.
+                a.update(image=NEWS_SHARE_IMAGE, image_alt="雑サバ新聞のキュウちゃん", category_cover=True)
+            else:
+                a["image"]=f'/assets/covers/{CATS[a["category"]]}.svg'
+                a["image_alt"]=a["category"]+"の雑学"
         check(isinstance(a.get("image_alt"),str) and a["image_alt"].strip(),f"{p}: missing image_alt")
         check(type(a.get("show_cover",True)) is bool,f"{p}: show_cover must be boolean")
         check(a.get("thumbnail_fit","cover") in {"cover","contain"},f"{p}: thumbnail_fit must be cover or contain")
@@ -57,7 +68,7 @@ def load():
         check(not re.search(r"<\s*/?\s*[a-zA-Z!]|^# ",body,re.M),f"{p}: raw HTML/h1 unsupported")
         check(not re.search(r"\]\(\s*(javascript|data):",body,re.I),f"{p}: unsafe URL")
         check(body.strip(),f"{p}: empty article")
-        a.update(slug=p.stem,url=f"/blog/{p.stem}/",body=body,html=markdown.markdown(body,extensions=["extra","sane_lists"]))
+        a.update(slug=p.stem,url=f"/{section}/{p.stem}/",body=body,html=markdown.markdown(body,extensions=["extra","sane_lists"]))
         result.append(a)
     # Date remains primary; same-day articles follow their first repository addition.
     added = {}
@@ -89,10 +100,7 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/", "一面"), ("/blog/", "記事一覧"), ("/#today", "今日の動画")]
-    if comics_enabled():
-        sections.append(("/comics/", "漫画"))
-    sections.append(("/#about", "雑サバとは"))
+    sections = [("/", "一面"), ("/news/", "ニュース一覧"), ("/#zatsusaba", "雑サバ・雑学Blog")]
     anchors = []
     for href, label in sections:
         current = ""
@@ -102,23 +110,55 @@ def news_masthead(url):
             current = ' aria-current="location"'
         anchors.append(f'<a href="{href}"{current}>{label}</a>')
     return ('<header class="news-masthead"><a class="brand" href="/">'
-            '<img src="/assets/logo-cut.png" alt="" width="44" height="44"><span>雑学サバイバル</span></a>'
+            '<img src="/assets/logo-cut.png" alt="" width="44" height="44"><span>雑サバ新聞</span></a>'
             '<nav class="news-nav" aria-label="メインナビゲーション">' + ''.join(anchors) + '</nav></header>')
 
+def classic_navigation(url):
+    sections = [("/", "ニュース"), ("/story.html", "STORY"), ("/characters.html", "CHARACTERS")]
+    if comics_enabled():
+        sections.append(("/comics/", "Comic"))
+    sections.extend([("/blog/", "雑学Blog"), ("/today/", "今日の動画"), ("/videos.html", "VIDEOS")])
+    links = []
+    for href, label in sections:
+        current = ""
+        if url == href:
+            current = ' aria-current="page"'
+        elif href != "/" and url.startswith(href):
+            current = ' aria-current="location"'
+        links.append(f'<a href="{href}"{current}>{label}</a>')
+    return ''.join(links)
 
-def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
+def page(title,desc,url,body,image=None,article=False):
+    if image is None:
+        image = NEWS_SHARE_IMAGE if url.startswith("/news/") else "/assets/hero-duo-v2.png"
     image=image if image.startswith("https://") else BASE+image
+    classic = url.startswith(("/blog/", "/comics/", "/today/"))
+    if classic:
+        nav = classic_navigation(url)
+        header = ('<header><a class="brand" href="/#zatsusaba"><img src="/assets/logo-cut.png" alt="雑学サバイバル">'
+                  '<span>ZATSUGAKU<br>SURVIVAL</span></a><nav aria-label="メインナビゲーション">'+nav+'</nav></header>')
+        mobile = '<nav class="mobile-nav" aria-label="モバイルナビゲーション">'+nav+'</nav>'
+    else:
+        header = news_masthead(url)
+        mobile = ""
+    theme = "classic-inner" if classic else "news-inner"
+    view = "article-view" if article else "archive-view"
+    brand = "雑サバ新聞" if url.startswith("/news/") else "雑学サバイバル"
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)} | 雑学サバイバル</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
+<title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
+<meta property="og:site_name" content="{brand}">
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page news-inner"><a class="skip" href="#main">本文へ</a>{news_masthead(url)}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer></body></html>'''
+<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
     p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text,encoding="utf-8")
 def card(a):
     fit_class=' class="thumbnail-contain"' if a.get("thumbnail_fit")=="contain" else ""
-    return f'<article class="blog-card"><a href="{a["url"]}"><img{fit_class} src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy"><div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{a["date"]}">{a["date"]}</time></div></a></article>'
+    image = "" if a.get("category_cover") else f'<img{fit_class} src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy">'
+    stamp = a.get("published_at", a["date"])
+    printed = stamp[:16].replace("T", " ")
+    return f'<article class="blog-card"><a href="{a["url"]}">{image}<div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{stamp}">{printed}</time></div></a></article>'
 class ImageSources(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -128,7 +168,7 @@ class ImageSources(HTMLParser):
             src=dict(attrs).get("src")
             if src: self.sources.add(src)
 def article_cover(a):
-    if not a.get("show_cover",True): return ""
+    if not a.get("show_cover",True) or a.get("category_cover"): return ""
     # Keep the card/share image, but do not repeat an image already in the prose.
     images=ImageSources()
     images.feed(a["html"])
@@ -136,13 +176,52 @@ def article_cover(a):
     image_url=urljoin(article_url,a["image"])
     if any(urljoin(article_url,src)==image_url for src in images.sources): return ""
     return f'<img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450">'
-def categories():
-    return '<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/blog/">すべて</a>'+''.join(f'<a href="/blog/category/{slug}/">{name}</a>' for name,slug in CATS.items())+'</nav>'
-def listing(items,title,url,total,pager,category):
-    body=f'<section class="blog-shell"><h1>{title}</h1><p>世界の雑学を、あなたにお届け。</p>{categories()}<div class="blog-tools"><label for="blog-search">記事をキーワードで探す</label><input id="blog-search" type="search" placeholder="例：パイナップル、植物" data-category="{e(category)}"><label><input type="checkbox" id="body-search"> 本文も検索</label><p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div><div id="archive-list"><div class="blog-grid">'+''.join(map(card,items))+'</div>'+pager+'</div><div id="matches" class="search-results"></div><p id="blog-empty"'+(' hidden' if items else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p></section><script src="/blog-search.js" defer></script>'
-    return page(title,"身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。",url,body)
+def categories(section="blog", names=CATS):
+    return (f'<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/{section}/">すべて</a>'
+            + ''.join(f'<a href="/{section}/category/{CATS[name]}/">{name}</a>' for name in names)
+            + '</nav>')
+
+def listing(items, title, url, total, pager, category, section, names):
+    index_url, body_prefix = SEARCH_PATHS[section]
+    news = section == "news"
+    desc = ("科学や暮らしの新しい話題を、発表元の資料とともに紹介します。" if news
+            else "身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。")
+    intro = desc if news else "世界の雑学を、あなたにお届け。"
+    label = "ニュースをキーワードで探す" if news else "記事をキーワードで探す"
+    placeholder = "キーワードを入力" if news else "例：パイナップル、植物"
+    archive = '<div class="blog-grid">'+''.join(map(card, items))+'</div>'+pager
+    if not total and news:
+        archive = '<p>公開されたニュースはまだありません。</p>'
+    body = (f'<section class="blog-shell"><h1>{e(title)}</h1><p>{intro}</p>{categories(section, names)}'
+            f'<div class="blog-tools"><label for="blog-search">{label}</label>'
+            f'<input id="blog-search" type="search" placeholder="{placeholder}" data-category="{e(category)}" '
+            f'data-index="{index_url}" data-body-prefix="{body_prefix}">'
+            '<label><input type="checkbox" id="body-search"> 本文も検索</label>'
+            f'<p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div>'
+            f'<div id="archive-list">{archive}</div><div id="matches" class="search-results"></div>'
+            '<p id="blog-empty"'+(' hidden' if items or news else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p>'
+            '</section><script src="/blog-search.js?v=2" defer></script>')
+    return page(title, desc, url, body)
+
+def build_archives(items, section, urls):
+    media.search_files(items, write, *SEARCH_PATHS[section])
+    published_categories = {a["category"] for a in items}
+    names = [name for name in CATS if section == "blog" or name in published_categories]
+    archives = [(f"/{section}/", SECTION_NAMES[section], "", items)]
+    suffix = "のニュース" if section == "news" else "の雑学"
+    for name in names:
+        entries = [a for a in items if a["category"] == name]
+        archives.append((f"/{section}/category/{CATS[name]}/", name+suffix, name, entries))
+    for base, title, category, entries in archives:
+        for url, chunk, pager, num in media.pages(entries, base):
+            heading = title if num == 1 else f"{title}（{num}ページ）"
+            write(url, listing(chunk, heading, url, len(entries), pager, category, section, names))
+            urls.append(url)
+
 def build():
     items=load()
+    news_items = [a for a in items if a["section"] == "news"]
+    blog_items = [a for a in items if a["section"] == "blog"]
     OUT.mkdir(exist_ok=True)
     manifest=OUT/".blog-generated.json"
     if manifest.exists():
@@ -161,20 +240,13 @@ def build():
             continue
         shutil.copytree(ROOT/folder,OUT/folder,dirs_exist_ok=True)
     urls=["/","/story.html","/characters.html","/videos.html"]
-    media.search_files(items,write)
-    archives=[("/blog/","雑学Blog","",items)]
-    for name,slug in CATS.items():
-        archives.append((f"/blog/category/{slug}/",name+"の雑学",name,[a for a in items if a["category"]==name]))
-    for base,title,category,entries in archives:
-        for url,chunk,pager,num in media.pages(entries,base):
-            heading=title if num==1 else f"{title}（{num}ページ）"
-            write(url,listing(chunk,heading,url,len(entries),pager,category))
-            urls.append(url)
+    build_archives(blog_items, "blog", urls)
+    build_archives(news_items, "news", urls)
     catalog=ROOT/"youtube-videos.js"
     videos=json.loads(catalog.read_text(encoding="utf-8").split("=",1)[1].strip().rstrip(";")) if catalog.exists() else []
     known_videos={v["id"]:v["title"] for v in videos}
     urls.extend("/video.html?id="+vid for vid in known_videos if re.fullmatch(r"[A-Za-z0-9_-]{11}",vid))
-    today_home=daily.render(videos,items,ROOT,page,write,urls)
+    today_home=daily.render(videos,blog_items,ROOT,page,write,urls)
     comics=media.load_comics(ROOT,datetime.now(JST).date()) if comics_enabled() else []
     article_ids={p.stem for p in (ROOT/"articles").glob("*.md")}
     for a in items:
@@ -194,10 +266,14 @@ def build():
                 target.parent.mkdir(parents=True,exist_ok=True)
                 shutil.copy2(ROOT/rel,target)
                 copied_panels.append(rel)
-    comic_links=media.render_comics(comics,items,page,write,urls,known_videos,enabled=comics_enabled())
-    suggestions=media.recommendations(items)
+    comic_links=media.render_comics(comics,blog_items,page,write,urls,known_videos,enabled=comics_enabled())
+    suggestions=media.recommendations(blog_items) | media.recommendations(news_items)
     for a in items:
         related=suggestions[a["slug"]]
+        section = a["section"]
+        news = section == "news"
+        archive_url = f"/{section}/"
+        archive_label = SECTION_NAMES[section]
         video=""
         if a.get("youtube"):
             video_title=a.get("youtube_title") or known_videos[a["youtube"]]
@@ -212,13 +288,37 @@ def build():
         related_comics=""
         if comic_links[a["slug"]]:
             related_comics='<h2>関連する4コマ漫画</h2><ul>'+''.join('<li>'+l+'</li>' for l in comic_links[a["slug"]])+'</ul>'
-        refs='<section><h2>出典・参考資料</h2><ul>'+''.join(f'<li><a href="{e(s["url"],quote=True)}">{e(s["title"])} ↗</a></li>' for s in a["sources"])+'</ul></section>'
+        reference_items = []
+        for source in a["sources"]:
+            label = e(source["title"])
+            url = e(source["url"], quote=True)
+            checked = source["checked"]
+            checked_text = f'（確認日 <time datetime="{checked}">{checked}</time>）' if news else ""
+            reference_items.append(f'<li><a href="{url}">{label} ↗</a>{checked_text}</li>')
+        refs = '<section><h2>出典・参考資料</h2><ul>' + ''.join(reference_items) + '</ul></section>'
         if a.get("conditions"):
             refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
-        body=f'<article class="blog-article"><p class="blog-breadcrumb"><a href="/">HOME</a> / <a href="/blog/">雑学Blog</a> / <a href="/blog/category/{CATS[a["category"]]}/">{a["category"]}</a></p><span class="blog-label">{a["category"]}</span><h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p><p class="blog-date">公開 {a["date"]} · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time></p>{article_cover(a)}<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div><section><h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div><p><a class="blog-cta" href="/blog/">雑学Blogの記事一覧へ →</a></p></section></article>'
-        if not related:
-            body=body.replace('<h2>あわせて読みたい</h2><div class="blog-grid"></div>',"")
-        schema={"@context":"https://schema.org","@type":"BlogPosting","headline":a["title"],"description":a["description"],"datePublished":a["date"],"dateModified":a["updated"],"image":a["image"] if a["image"].startswith("https://") else BASE+a["image"],"mainEntityOfPage":BASE+a["url"],"author":{"@type":"Organization","name":"雑学サバイバル"}}
+        stamp = a.get("published_at", a["date"])
+        edition = f' <span class="news-edition">{a["edition"]}</span>' if news and a.get("edition") else ""
+        author = {"@type":"Organization","name":"雑サバ新聞" if news else "雑学サバイバル"}
+        byline = '雑サバ新聞　' if news else ""
+        home = media.link("/", "一面") if news else media.link("/#zatsusaba", "雑サバ")
+        breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
+                                 media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
+        related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
+        cta = "ニュース一覧へ" if news else "雑学Blogの記事一覧へ"
+        body = (f'<article class="blog-article"><p class="blog-breadcrumb">{breadcrumb}</p>'
+                f'<span class="blog-label">{a["category"]}</span>{edition}<h1>{e(a["title"])}</h1>'
+                f'<p class="blog-deck">{e(a["description"])}</p><p class="blog-date">{byline}公開 '
+                f'<time datetime="{stamp}">{stamp[:16].replace("T", " ")}</time> · 更新 '
+                f'<time datetime="{a["updated"]}">{a["updated"]}</time></p>{article_cover(a)}'
+                f'<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div>'
+                f'<section>{related_html}<p><a class="blog-cta" href="{archive_url}">{cta} →</a></p></section></article>')
+        schema={"@context":"https://schema.org","@type":"NewsArticle" if news else "BlogPosting",
+                "headline":a["title"],"description":a["description"],"datePublished":stamp,"dateModified":a["updated"],
+                "articleSection":a["category"],"isPartOf":{"@type":"CollectionPage","url":BASE+archive_url},
+                "image":urljoin(BASE,a["image"]),"mainEntityOfPage":BASE+a["url"],
+                "author":author}
         body+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace("<","\\u003c")+'</script>'
         write(a["url"],page(a["title"],a["description"],a["url"],body,a["image"],True)); urls.append(a["url"])
     for p in OUT.glob("*.html"):
@@ -233,11 +333,13 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            share_image = items[0]["image"] if items else "/assets/logo-cut.png"
+            share_image = news_items[0]["image"] if news_items else NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
-            section=media.home_sections(items,comics,categories,today_home)
+            front = media.news_front(news_items)
+            classic = media.home_sections(blog_items, comics, card, categories, today_home)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))
-            html=html.replace("<!--news:content-->", "<!--media:start-->"+section+"<!--media:end-->")
+            html=html.replace("<!--news:content-->", "<!--news:start-->"+front+"<!--news:end-->")
+            html=html.replace("<!--classic:content-->", "<!--classic:start-->"+classic+"<!--classic:end-->")
 
         u="/" if p.name=="index.html" else "/"+p.name
         if p.name!="video.html" and 'rel="canonical"' not in html: html=html.replace("</head>",f'<link rel="canonical" href="{BASE}{u}"></head>')
@@ -247,7 +349,7 @@ def build():
         p.write_text(html,encoding="utf-8")
     write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/blog/">雑学Blogへ →</a><p><a href="/">HOMEへ戻る</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
     for url,title,content,desc in [
-        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑学Blogの事実確認とAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
+        ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,"雑サバ新聞と雑学Blogの事実確認やAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
         ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:
@@ -265,6 +367,7 @@ def build():
             ET.SubElement(entry,"lastmod").text=modified[url]
     write("/sitemap.xml",ET.tostring(sitemap,encoding="unicode"))
     write("/robots.txt",f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
-    (OUT/".blog-generated.json").write_text(json.dumps(copied_panels+[str(p.relative_to(OUT)) for p in OUT.rglob("*.html")]+["sitemap.xml","video-links.json"]+[str(p.relative_to(OUT)) for p in (OUT/"search").glob("*.json")]))
+    generated = [*OUT.rglob("*.html"), *(OUT/"search").glob("*.json"), *(OUT/"news").glob("search*.json")]
+    manifest.write_text(json.dumps(copied_panels + ["sitemap.xml", "video-links.json"] + [str(p.relative_to(OUT)) for p in generated]))
     print(f"Built {len(items)} articles into {OUT}")
 if __name__=="__main__": build()

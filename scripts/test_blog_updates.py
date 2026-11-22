@@ -1,7 +1,10 @@
 """Exercise article additions and updates with isolated fixtures."""
+import json
 import tempfile
 from pathlib import Path
 import build_blog as b
+from check_site import RegionLinks
+from media import PAGE_SIZE
 original_root, original_out = b.ROOT, b.OUT
 job=original_root/"cleanup-temp"/"blog-verification"
 job.mkdir(parents=True,exist_ok=True)
@@ -42,17 +45,88 @@ with patch.object(b.subprocess, "run", return_value=SimpleNamespace(stdout="COMM
     assert b.load()[0]["slug"] == "pineapple"
 second.write_text(sample.replace("date: 2026-11-06", 'published_at: "2026-11-06T10:00:00+09:00"\ndate: 2026-11-06', 1),encoding="utf-8")
 assert b.load()[0]["slug"] == "second"
-# The rendered front page follows publication order even within a single day.
-b.build()
-home_path=b.OUT/"index.html"
-home=home_path.read_text(encoding="utf-8")
-assert home.index('href="/blog/second/"') < home.index('href="/blog/pineapple/"') < home.index('class="news-categories"')
+# Legacy articles without a section stay in the lower blog. A newer blog entry
+# must never fill an empty news front page.
 first_article=root/"articles/pineapple.md"
-first_article.write_text(sample.replace("date: 2026-11-06", 'edition: 夜刊\npublished_at: "2026-11-06T11:00:00+09:00"\ndate: 2026-11-06',1),encoding="utf-8")
+home_path=b.OUT/"index.html"
+def read(path):
+    return (b.OUT / path).read_text(encoding="utf-8")
+
+def cards(path):
+    return RegionLinks(read(path), ".blog-card").links
+
 b.build()
-home=home_path.read_text(encoding="utf-8")
-assert home.index('href="/blog/pineapple/"') < home.index('href="/blog/second/"') < home.index('class="news-categories"')
-assert '夜刊' in home.split('</h1>',1)[0]
+home=read("index.html")
+assert "/blog/second/" not in RegionLinks(home, "#news").links
+assert cards("index.html") == ["/blog/second/", "/blog/pineapple/"]
+assert json.loads(read("news/search.json")) == []
+
+# Same date, subject, category and video on both sides exercise feed ordering,
+# search body shards, and article recommendations without relying on live data.
+def article_sample(section, hour, title, body):
+    return (sample.replace("title: パイナップルの検証記事", "title: "+title, 1)
+            .replace("status: published", f'status: published\nsection: {section}\npublished_at: "2026-11-06T{hour}:00:00+09:00"')
+            .replace("検証用の本文です。", body))
+
+bulletin=root/"articles/bulletin.md"
+evening=root/"articles/evening.md"
+bulletin.write_text(article_sample("news","09","朝の発表","ニュース朝刊の固有本文"),encoding="utf-8")
+evening.write_text(article_sample("news","18","夜の発表","ニュース夜刊の固有本文")
+                   .replace("section: news", "section: news\nedition: 夜刊"),encoding="utf-8")
+first_article.write_text(article_sample("blog","20","夜の雑学","雑学ブログのみの固有本文"),encoding="utf-8")
+b.build()
+home=read("index.html")
+upper=RegionLinks(home, "#news").links
+news_urls=["/news/evening/", "/news/bulletin/"]
+blog_urls=["/blog/pineapple/", "/blog/second/"]
+assert [url for url in upper if url in news_urls + blog_urls] == news_urls
+assert "夜刊" in home[:home.index('id="zatsusaba"')]
+assert cards("index.html") == blog_urls
+for stream, urls, index, shard, key in (
+    ("news", news_urls, "news/search.json", "news/search-body-0.json", "ニュース夜刊の固有本文"),
+    ("blog", blog_urls, "search/index.json", "search/body-0.json", "雑学ブログのみの固有本文"),
+):
+    archive=read(stream+"/index.html")
+    for path in (stream+"/index.html", stream+"/category/food/index.html"):
+        assert cards(path) == urls, path
+    for index_in_stream, url in enumerate(urls):
+        assert cards(url.strip("/")+"/index.html") == [urls[1 - index_in_stream]], url
+    assert [row[0] for row in json.loads(read(index))] == urls
+    assert key in json.loads(read(shard))[0]
+    assert f'data-index="/{index}"' in archive and f'data-body-prefix="/{shard.removesuffix("0.json")}"' in archive
+linked_entries = json.loads(read("video-links.json"))["q5FluB5f-b8"]
+assert {entry[0] for entry in linked_entries} == set(blog_urls)
+# Cross both the archive-page and search-shard boundaries with news alone.
+extra_news=[]
+for number in range(32):
+    path=root/"articles"/f"bulletin-{number:02d}.md"
+    path.write_text(article_sample("news","08",f"検証ニュース {number:02d}",f"検証ニュース本文 {number:02d}"),
+                    encoding="utf-8")
+    extra_news.append(path)
+b.build()
+all_news=[a["url"] for a in b.load() if a["section"]=="news"]
+for archive in ("news", "news/category/food"):
+    assert cards(archive+"/index.html") == all_news[:PAGE_SIZE]
+    assert cards(archive+"/page/2/index.html") == all_news[PAGE_SIZE:]
+assert len(json.loads(read("news/search-body-1.json"))) == 2
+assert not (b.OUT/"blog/page/2/index.html").exists()
+for path in [bulletin, evening, *extra_news]:
+    path.unlink()
+b.build()
+assert not (b.OUT/"news/evening/index.html").exists()
+assert not list((b.OUT/"news").glob("search-body-*.json"))
+assert not (b.OUT/"news/page/2/index.html").exists()
+assert not (b.OUT/"news/category/food/index.html").exists()
+assert json.loads(read("news/search.json")) == []
+assert cards("blog/category/food/index.html") == blog_urls
+first_article.write_text(article_sample("newspaper", "20", "誤分類", "検証"), encoding="utf-8")
+try:
+    b.load()
+except ValueError as error:
+    assert "section" in str(error)
+else:
+    raise AssertionError("Unrecognized article section accepted")
+print("PASS: distinct editions, same-day priority, archives, category and related links, search indexes and removed news")
 first_article.write_text(sample,encoding="utf-8")
 second.write_text(sample,encoding="utf-8")
 b.build()

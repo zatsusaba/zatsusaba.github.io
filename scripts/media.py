@@ -75,15 +75,15 @@ def recommendations(items):
     return result
 
 
-def search_files(items, write):
+def search_files(items, write, index_url="/search/index.json", body_prefix="/search/body-"):
     index = []
     for start in range(0, len(items), 32):
         chunk = items[start:start + 32]
         shard = start // 32
-        write(f"/search/body-{shard}.json", compact([a["body"] for a in chunk]))
+        write(f"{body_prefix}{shard}.json", compact([a["body"] for a in chunk]))
         for a in chunk:
             index.append([a["url"], a["title"], a["description"], a["category"], a.get("tags", []), a["date"]])
-    write("/search/index.json", compact(index))
+    write(index_url, compact(index))
 
 
 def load_comics(root, today):
@@ -240,41 +240,74 @@ def news_story(article, *, lead=False):
         + f'<span class="news-category">{escape(article["category"])}</span>'
         + f'<time datetime="{escape(stamp)}">{printed_date}</time></div>'
     )
-    heading_tag = "h1" if lead else "h3"
+    heading_tag = "h2" if lead else "h3"
     layout_class = "news-lead" if lead else "news-item"
-    image_class = "news-lead-image" if lead else "news-thumb"
-    if article.get("thumbnail_fit") == "contain":
-        image_class += " thumbnail-contain"
-    image_loading = 'fetchpriority="high"' if lead else 'loading="lazy"'
+    image = ""
+    if not article.get("category_cover"):
+        image_class = "news-lead-image" if lead else "news-thumb"
+        if article.get("thumbnail_fit") == "contain":
+            image_class += " thumbnail-contain"
+        image_loading = 'fetchpriority="high"' if lead else 'loading="lazy"'
+        image = (
+            f'<img class="{image_class}" src="{escape(article["image"])}" alt="{escape(article["image_alt"])}" '
+            f'width="640" height="360" {image_loading}>'
+        )
+    text_only = "" if image else " data-text-only"
     return (
-        f'<article class="{layout_class}"><a class="{layout_class}-link" href="{escape(article["url"])}">'
+        f'<article class="{layout_class}"{text_only}><a class="{layout_class}-link" href="{escape(article["url"])}">'
         f'<div class="{layout_class}-copy">{meta}<{heading_tag}>{escape(article["title"])}</{heading_tag}>'
         + (f'<p class="news-deck">{escape(article["description"])}</p>' if lead else "")
-        + f'</div><img class="{image_class}" src="{escape(article["image"])}" alt="{escape(article["image_alt"])}" '
-        + f'width="640" height="360" {image_loading}></a></article>'
+        + f'</div>{image}</a></article>'
     )
 
 
-def home_sections(items, comics, categories, today_home):
-    lead = news_story(items[0], lead=True) if items else '<h1>雑学サバイバル</h1>'
-    recent = ''.join(news_story(article) for article in items[1:4])
+def news_front(news_items):
+    issue_date = ""
+    if news_items:
+        published = date.fromisoformat(news_items[0]["date"])
+        issue_date = (
+            f'<p class="news-desk-date">最新号 <time datetime="{published}">'
+            f'{published.year}年{published.month}月{published.day}日</time></p>'
+        )
+    desk = (
+        '<div class="news-desk news-section-head"><div class="news-desk-copy">'
+        f'{issue_date}<h1 id="news-title">最新ニュース</h1>'
+        '<p class="news-desk-intro">気になる話題を、我と一緒に読み解くのじゃ。</p>'
+        '<a href="/news/">ニュース一覧 <span aria-hidden="true">→</span></a></div>'
+        '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/kyu-frontpage.webp" '
+        'alt="キュウちゃん" width="960" height="720" fetchpriority="high"></div></div>'
+    )
+    lead = news_story(news_items[0], lead=True) if news_items else (
+        '<p class="news-empty">公開されたニュースはまだありません。</p>'
+    )
+    recent = ''.join(news_story(article) for article in news_items[1:4])
     latest = (
-        '<section class="news-latest" aria-labelledby="latest-title"><div class="news-section-head">'
-        '<h2 id="latest-title">新着記事</h2><a href="/blog/">記事一覧</a></div>'
+        '<section class="news-latest" aria-labelledby="latest-title">'
+        '<h2 id="latest-title">ほかの見出し</h2>'
         f'<div class="news-list">{recent}</div></section>'
     ) if recent else ""
-    front = (
-        '<section class="news-front" aria-label="一面と新着記事"><div class="news-layout">'
-        + lead + latest + '</div></section>'
+    return (
+        '<section class="news-front" id="news" aria-labelledby="news-title">'
+        f'{desk}<div class="news-layout">{lead}{latest}</div></section>'
     )
-    topics = (
-        '<section class="news-categories" aria-labelledby="categories-title"><div class="news-section-head">'
-        '<h2 id="categories-title">カテゴリーから探す</h2><a href="/blog/#blog-search">記事を検索</a>'
-        '</div>' + categories() + '</section>'
+
+
+def home_sections(blog_items, comics, card, categories, today_home):
+    shelf = (
+        '<section class="blog-home media-home" aria-labelledby="blog-title">'
+        '<div class="blog-home-head"><h2 id="blog-title">雑学Blog</h2>'
+        '<a class="blog-cta" href="/blog/">記事一覧へ →</a></div>'
+        '<div class="media-categories"><h3>カテゴリーから探す</h3>'
+        + categories() + '</div>'
     )
-    shelf = ""
-    if comics:
-        shelf = ('<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
-                 '<h2>漫画</h2><a class="blog-cta" href="/comics/">漫画一覧</a></div>'
-                 '<div class="blog-grid">' + ''.join(comic_card(c) for c in comics[:6]) + '</div></section>')
-    return front + topics + today_home + shelf
+    if blog_items:
+        shelf += '<h3>新着記事</h3><div class="media-feature">' + card(blog_items[0]) + '</div>'
+    if blog_items[1:4]:
+        shelf += '<h3>記事一覧</h3><div class="blog-grid">' + ''.join(map(card, blog_items[1:4])) + '</div>'
+    shelf += '</section>'
+    comics_shelf = (
+        '<section class="blog-home comic-home comic-archive"><div class="blog-home-head">'
+        '<h2>Comic</h2><a class="blog-cta" href="/comics/">漫画一覧へ →</a></div>'
+        '<div class="blog-grid">' + ''.join(comic_card(c) for c in comics[:6]) + '</div></section>'
+    ) if comics else ""
+    return comics_shelf + shelf + today_home

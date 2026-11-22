@@ -8,8 +8,9 @@ updated: '2026-11-23'
 category: 宇宙
 topic: "11月24日のプレアデス星団食"
 tags: [月, すばる, 天体観測]
-image: /assets/covers/pleiades-moon-tokyo.svg
-image_alt: "11月24日、東京で星のマイアが月に隠れる時間の図。18時47分ごろに隠れ、19時45分ごろに再び現れる。"
+image: /assets/news/pleiades-moon-cover.webp
+image_alt: "満月の縁に青白い星が寄り添うイメージイラスト"
+thumbnail_label: "月が星を隠す!?"
 sources:
   - title: "アストロアーツ「2026年11月24日 プレアデス星団食」"
     url: https://www.astroarts.co.jp/article/hl/a/14270_ph261124
@@ -20,6 +21,8 @@ sources:
 ---
 
 11月24日（火）の夕方、月が「すばる」の前を通り、星を一つずつ隠していきます。東京で注目したいのは、**18時47分ごろ**。星団の仲間の一つ「マイア」が月の縁で見えなくなり、**19時45分ごろ**に再び姿を見せる予報です。
+
+![11月24日の東京でマイアが隠れる18時47分と再び見える19時45分の予報](/assets/covers/pleiades-moon-tokyo.svg)
 
 ## どうして一斉に消えないの？
 

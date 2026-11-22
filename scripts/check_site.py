@@ -65,18 +65,20 @@ def check_homes(home, classic, streams):
     assert news_page.canon == [BASE + "/"]
     assert classic_page.canon == [BASE + "/zatsusaba/"]
     assert not (OUT / "zatsusaba.html").exists()
-    assert "<title>ナゼトピ" in home
-    assert '<meta property="og:site_name" content="ナゼトピ">' in home
+    assert "<title>買うまえ手帖" in home
+    assert '<meta property="og:site_name" content="買うまえ手帖">' in home
     schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S)]
     websites = [s for s in schemas if s.get("@type") == "WebSite"]
     assert len(websites) == 1
-    assert websites[0]["name"] == "ナゼトピ" and websites[0]["url"] == BASE + "/"
-    assert websites[0]["alternateName"] == "NAZETOPI"
+    assert websites[0]["name"] == "買うまえ手帖" and websites[0]["url"] == BASE + "/"
+    assert websites[0]["alternateName"] == "買う前手帖"
 
     article_urls = {a["url"] for group in streams.values() for a in group}
     news_links = RegionLinks(home, "#news").links
     assert "/news/" in news_links
-    assert [url for url in news_links if url in article_urls] == [a["url"] for a in streams["news"][:4]]
+    assert "/tools/appliance-total/" in news_links
+    front_articles = sorted(streams["news"], key=lambda a: bool(a.get("featured")), reverse=True)[:4]
+    assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
     assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
     assert any(src == "/assets/news/newsroom-kyu.webp" and "キュウちゃん" in alt for src, alt in news_page.images)
     channel = RegionLinks(home, ".channel-strip")
@@ -84,6 +86,8 @@ def check_homes(home, classic, streams):
     assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]
     assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
 
+    assert RegionLinks(classic, ".home-copy").links.count("/") == 1
+    assert "オープニング動画" not in classic
     assert not set(classic_page.links).intersection(a["url"] for a in streams["news"])
     featured_blog = [url for url in RegionLinks(classic, ".media-home").links if url in article_urls]
     assert featured_blog == [a["url"] for a in streams["blog"][:4]]
@@ -188,10 +192,10 @@ def main():
         assert url in visited and dates[BASE+url]==a["updated"]
         assert Document(html).canon==[BASE+url] and "noindex" not in html.split("</head>")[0]
         schema=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',html).group(1))
-        brand = "ナゼトピ" if a["section"] == "news" else "雑学サバイバル"
+        brand = "買うまえ手帖" if a["section"] == "news" else "雑学サバイバル"
         if a["section"] == "news":
             assert schema["author"]["name"] == brand and schema["publisher"]["name"] == "雑学サバイバル"
-            assert re.search(r'<p class="blog-date">[^<]*ナゼトピ', html)
+            assert re.search(r'<p class="blog-date">[^<]*買うまえ手帖', html)
             assert f'<meta property="og:site_name" content="{brand}">' in html
         assert f'<title>{escape(a["title"])} | {brand}</title>' in html
         assert f'<meta name="description" content="{escape(a["description"])}">' in html

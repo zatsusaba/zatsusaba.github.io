@@ -11,12 +11,13 @@ import daily, editorial
 import site_info
 from xml.etree import ElementTree as ET
 import media
+import appliance_total
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_NAME = "ナゼトピ"
-NEWS_ICON = "/assets/news/nazetopi-mark.svg"
+NEWS_NAME = "買うまえ手帖"
+NEWS_ICON = "/assets/news/kaumae-mark.svg"
 NEWS_SHARE_IMAGE = "/assets/news/newsroom-kyu.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
@@ -109,7 +110,7 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/", "一面"), ("/news/", "ニュース一覧")]
+    sections = [("/", "ホーム"), ("/tools/appliance-total/", "総額比較"), ("/news/", "読みもの")]
     if url != "/":
         sections.append(("/news/#blog-search", "記事検索"))
     anchors = []
@@ -257,6 +258,7 @@ def build():
     urls=["/","/zatsusaba/","/story.html","/characters.html","/videos.html"]
     build_archives(blog_items, "blog", urls)
     build_archives(news_items, "news", urls)
+    appliance_total.build(page, write, urls)
     catalog=ROOT/"youtube-videos.js"
     videos=json.loads(catalog.read_text(encoding="utf-8").split("=",1)[1].strip().rstrip(";")) if catalog.exists() else []
     known_videos={v["id"]:v["title"] for v in videos}
@@ -317,7 +319,7 @@ def build():
         edition = f' <span class="news-edition">{a["edition"]}</span>' if news and a.get("edition") else ""
         author = {"@type":"Organization","name":NEWS_NAME if news else "雑学サバイバル"}
         byline = f"{NEWS_NAME}　" if news else ""
-        home = media.link("/", "一面") if news else media.link("/zatsusaba/", "雑サバ")
+        home = media.link("/", "ホーム") if news else media.link("/zatsusaba/", "雑サバ")
         breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
                                  media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
         related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
@@ -356,7 +358,7 @@ def build():
             share_image = NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
-                           "alternateName":"NAZETOPI","url":BASE+"/"}
+                           "alternateName":"買う前手帖","url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
             front = media.news_front(news_items, CATS)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))

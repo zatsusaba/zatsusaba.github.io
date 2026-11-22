@@ -1,0 +1,81 @@
+.appliance-tool {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: clamp(1.8rem, 5vw, 4rem) clamp(.85rem, 4vw, 2rem) 5rem;
+  color: var(--news-ink, #202b2a);
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.appliance-tool .estimate-back, .appliance-tool .estimate-checks a {
+  color: var(--news-link, #2b5955);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.appliance-tool .estimate-back { font-weight: 650; font-size: .9rem; }
+.appliance-tool h1 {
+  margin: .65em 0 .4em;
+  font: 800 clamp(1.85rem, 5vw, 3.1rem)/1.25 var(--news-serif, serif);
+  letter-spacing: -.04em;
+}
+.appliance-tool h2 { margin: 0; font-size: clamp(1.25rem, 3vw, 1.65rem); line-height: 1.45; }
+.appliance-tool .estimate-intro p { margin: 0; font-size: 1.1rem; }
+.appliance-tool .estimate-sheet {
+  margin: 2rem 0;
+  padding: clamp(.9rem, 4vw, 2rem);
+  border: 1px solid var(--news-rule, #cad0cf);
+  border-top: .3rem solid var(--news-link, #2b5955);
+  background: #fff;
+  border-radius: .2rem;
+}
+.appliance-tool #entry-hint { margin: .5rem 0 1.2rem; }
+.appliance-tool .estimate-table { display: table; table-layout: fixed; width: 100%; border-collapse: collapse; }
+.appliance-tool .estimate-table th, .appliance-tool .estimate-table td {
+  padding: .6rem .4rem;
+  border: 0;
+  border-bottom: 1px solid var(--news-rule, #cad0cf);
+}
+.appliance-tool .estimate-table th { text-align: left; line-height: 1.45; }
+.appliance-tool .estimate-table thead th { background: var(--news-paper, #f2f4f3); }
+.appliance-tool .estimate-table th:first-child { width: 29%; }
+.appliance-tool .estimate-input {
+  display: flex;
+  align-items: baseline;
+  gap: .35em;
+  min-width: 0;
+  color: var(--news-muted, #485552);
+  font-size: .875rem;
+}
+.appliance-tool .estimate-input input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: .55rem .5rem;
+  color: var(--news-ink, #202b2a);
+  border: 1px solid #77867e;
+  border-radius: .25rem;
+  font: 600 1rem/1.5 var(--news-sans, sans-serif);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  background: white;
+}
+.appliance-tool .estimate-input input:focus-visible { outline: 2px solid var(--news-link, #2b5955); outline-offset: 2px; }
+.appliance-tool .estimate-input input[aria-invalid="true"] { border: 2px solid #9b3230; }
+.appliance-tool .estimate-note { margin: .85rem 0 1.4rem; font-size: .9rem; color: var(--news-muted, #46534f); }
+.appliance-tool .estimate-result {
+  background: var(--news-paper, #f2f4f3);
+  padding: clamp(.85rem, 3vw, 1.35rem);
+  border-radius: .25rem;
+}
+.appliance-tool .estimate-totals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; }
+.appliance-tool .estimate-totals dt { font-size: .9rem; }
+.appliance-tool .estimate-totals dd { margin: .15em 0 0; font-weight: 800; font-size: clamp(1.15rem, 3vw, 1.65rem); line-height: 1.4; }
+.appliance-tool #estimate-difference { border-top: 1px solid var(--news-rule, #cad0cf); padding-top: .7rem; margin: .85rem 0 0; font-weight: bold; }
+.appliance-tool .estimate-checks dl { margin: .5rem 0 0; }
+.appliance-tool .estimate-checks dl div { padding: 1rem 0; border-bottom: 1px solid var(--news-rule, #cad0cf); }
+.appliance-tool .estimate-checks dt { font-weight: bold; }
+.appliance-tool .estimate-checks dd { margin: .25rem 0 0; }
+@media (max-width: 460px) {
+  .appliance-tool .estimate-table th, .appliance-tool .estimate-table td { padding: .5rem .2rem; }
+  .appliance-tool .estimate-input { gap: .15rem; }
+  .appliance-tool .estimate-input input { padding-inline: .25rem; }
+}

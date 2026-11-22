@@ -252,7 +252,7 @@ def news_story(article, *, lead=False):
     printed_date = date.replace("-", ".")
     if article.get("published_at"):
         printed_date += " " + stamp[11:16]  # Normalized to JST in build_blog.load.
-    edition = article.get("edition") or ("一面" if lead else "")
+    edition = article.get("edition") or ("買い替えガイド" if lead and article.get("featured") else "一面" if lead else "")
     meta = (
         '<div class="news-meta">'
         + (f'<span class="news-edition">{escape(edition)}</span>' if edition else "")
@@ -272,19 +272,14 @@ def news_story(article, *, lead=False):
 
 
 def news_front(news_items, category_slugs=None):
-    issue_date = ""
-    if news_items:
-        published = date.fromisoformat(news_items[0]["date"])
-        issue_date = (
-            f'<p class="news-desk-date">最新号 <time datetime="{published}">'
-            f'{published.year}年{published.month}月{published.day}日</time></p>'
-        )
     desk = (
         '<div class="news-desk news-section-head"><div class="news-desk-copy">'
-        f'{issue_date}<h1 id="news-title"><span>いま話題の、</span><span>なぜがわかる。</span></h1>'
-        '<a class="news-archive-cta" href="/news/">ニュース一覧へ <span aria-hidden="true">→</span></a></div>'
+        '<h1 id="news-title"><span>本体価格の、</span><span>その先まで。</span></h1>'
+        '<p class="news-desk-description">設置・回収まで、買い替えはいくら？</p>'
+        '<a class="news-archive-cta" href="/tools/appliance-total/">'
+        '洗濯機の総額を比べる <span aria-hidden="true">→</span></a></div>'
         '<div class="news-desk-art"><img class="news-desk-kyu" src="/assets/news/newsroom-kyu.webp" '
-        'alt="ナゼトピの編集部にいるキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
+        'alt="新聞を手にしたキュウちゃん" width="1200" height="800" fetchpriority="high"></div></div>'
     )
     published_categories = {article["category"] for article in news_items}
     category_links = "".join(
@@ -299,18 +294,21 @@ def news_front(news_items, category_slugs=None):
         f'<div class="news-utility">{topics}'
         '<a class="news-search-link" href="/news/#blog-search">記事検索</a></div>'
     )
-    lead = news_story(news_items[0], lead=True) if news_items else (
+    front_items = sorted(news_items, key=lambda article: bool(article.get("featured")), reverse=True)
+    lead = news_story(front_items[0], lead=True) if front_items else (
         '<p class="news-empty">公開されたニュースはまだありません。</p>'
     )
-    recent = ''.join(news_story(article) for article in news_items[1:4])
+    recent = ''.join(news_story(article) for article in front_items[1:4])
     latest = (
         '<section class="news-latest" aria-labelledby="latest-title">'
-        '<h2 id="latest-title">ほかの見出し</h2>'
+        '<h2 id="latest-title">ニュース・読みもの</h2>'
         f'<div class="news-list">{recent}</div></section>'
     ) if recent else ""
     return (
         '<section class="news-front" id="news" aria-labelledby="news-title">'
-        f'{desk}{tools}<div class="news-layout">{lead}{latest}</div></section>'
+        f'{desk}<div class="news-reading-header"><h2>ガイドと読みもの</h2>'
+        f'<a href="/news/">記事一覧 <span aria-hidden="true">→</span></a></div>{tools}'
+        f'<div class="news-layout">{lead}{latest}</div></section>'
     )
 
 

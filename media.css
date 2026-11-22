@@ -431,3 +431,74 @@ body[data-page="videos"] main > .section { padding-bottom: clamp(32px, 4vw, 56px
 @media(max-width:700px) {
  .mobile-nav:not(:has(a[href="/comics/"])) { grid-template-columns:.8fr .8fr 1.3fr 1.1fr 1.1fr .9fr; }
 }
+
+/* Individual stories share a reading measure across the newspaper and the trivia blog. */
+.article-view .blog-article {
+  --article-type: clamp(1.125rem, .99rem + .44vw, 1.25rem);
+  --article-note-type: clamp(1rem, .95rem + .22vw, 1.08rem);
+}
+.article-view .blog-article h1 {
+  font-size: clamp(1.875rem, 1.45rem + 2vw, 3.1rem);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.article-view .blog-deck {
+  max-width: 38em;
+  font-size: var(--article-type);
+  line-height: 1.8;
+}
+.article-view :is(.blog-date, .blog-breadcrumb) {
+  font-size: clamp(.875rem, .84rem + .14vw, .96rem);
+  line-height: 1.65;
+}
+.article-view .blog-prose {
+  max-width: 36em;
+  color: var(--media-ink);
+  font-size: var(--article-type);
+  line-height: 1.9;
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+.article-view .blog-prose p { margin-block: 1.15em; }
+.article-view .blog-prose h2 {
+  margin-block: 1.8em .65em;
+  padding-inline-start: .6em;
+  border-left-color: var(--media-red);
+  font-size: clamp(1.5rem, 1.2rem + 1.25vw, 1.95rem);
+  line-height: 1.5;
+}
+.article-view .blog-prose h3 {
+  margin-block: 1.5em .5em;
+  font-size: clamp(1.25rem, 1.04rem + .8vw, 1.5rem);
+  line-height: 1.55;
+}
+.article-view .blog-prose :is(ul, ol) { padding-inline-start: 1.45em; }
+.article-view .blog-prose li + li { margin-top: .4em; }
+.article-view .blog-prose a { color: var(--media-red); text-decoration-thickness: .065em; text-underline-offset: .2em; }
+.article-view .blog-prose a:is(:hover, :focus-visible) { color: var(--media-ink); }
+.article-view .blog-prose img { display: block; margin-inline: auto; }
+.article-view .blog-prose figure { margin: 1.35em 0; }
+.article-view .blog-prose :is(figcaption, small),
+.article-view .blog-prose p:has(> img:only-child) + p > em:only-child {
+  color: var(--media-muted);
+  font-size: var(--article-note-type);
+  font-style: normal;
+  line-height: 1.75;
+}
+.article-view .blog-prose table {
+  max-width: 100%;
+  margin-block: 1.4em;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.article-view .blog-prose :is(th, td) {
+  min-width: 4.5em;
+  padding: .5em .65em;
+  border: 1px solid var(--media-rule);
+  line-height: 1.65;
+  text-align: start;
+  vertical-align: top;
+}
+.article-view .blog-prose th { background: #eae9ed; color: #24232b; }

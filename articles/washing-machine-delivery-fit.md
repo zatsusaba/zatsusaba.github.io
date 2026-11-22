@@ -1,7 +1,7 @@
 ---
 status: published
 section: news
-featured: true
+archive_only: true
 title: "洗濯機は置けるのに運び込めない？ 買う前に測る玄関・曲がり角・防水パン"
 description: "洗濯機を買う前は、設置場所と、そこまでの一番狭い通り道を採寸。ドアは実際に開け、曲がり角では曲がる前後の幅を測ります。型番が決まったら寸法図と照らし合わせましょう。"
 date: '2026-11-23'

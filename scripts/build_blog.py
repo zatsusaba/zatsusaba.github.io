@@ -16,8 +16,8 @@ import appliance_total
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_NAME = "買うまえ手帖"
-NEWS_ICON = "/assets/news/kaumae-mark.svg"
+NEWS_NAME = "雑学サバイバル"
+NEWS_ICON = "/assets/logo-cut.png"
 NEWS_SHARE_IMAGE = "/assets/news/newsroom-kyu.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
@@ -43,6 +43,7 @@ def load():
         if editorial.state(a,{"draft","published"},"draft",p)!="published": continue
         section = a.setdefault("section", "blog")
         check(section in ("blog", "news"), f"{p}: section must be blog or news")
+        check(type(a.get("archive_only", False)) is bool, f"{p}: archive_only must be boolean")
         for key in ("title","description","date","updated","category","sources"):
             check(a.get(key),f"{p}: missing {key}")
         check(a["category"] in CATS,f"{p}: unknown category")
@@ -110,9 +111,7 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/", "ホーム"), ("/tools/appliance-total/", "総額比較"), ("/news/", "読みもの")]
-    if url != "/":
-        sections.append(("/news/#blog-search", "記事検索"))
+    sections = [("/", "トップ"), ("/news/", "記事一覧"), ("/news/#categories", "分野から探す"), ("/news/#blog-search", "記事検索")]
     anchors = []
     for href, label in sections:
         current = ""
@@ -157,9 +156,10 @@ def page(title,desc,url,body,image=None,article=False):
     view = "article-view" if article else "archive-view"
     brand = "雑学サバイバル" if classic else NEWS_NAME
     icon = "/assets/logo-cut.png" if classic else NEWS_ICON
+    robots = '<meta name="robots" content="max-image-preview:large">' if article and url.startswith("/news/") else ""
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
-<meta property="og:site_name" content="{brand}">
+<meta property="og:site_name" content="{brand}">{robots}
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
 def write(url,text):
@@ -192,15 +192,18 @@ def article_cover(a):
     if any(urljoin(article_url,src)==image_url for src in images.sources): return ""
     return f'<img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450">'
 def categories(section="blog", names=CATS):
-    return (f'<nav class="blog-categories" aria-label="記事カテゴリー"><a href="/{section}/">すべて</a>'
+    category_id = ' id="categories"' if section == "news" else ""
+    return (f'<nav class="blog-categories"{category_id} aria-label="記事カテゴリー"><a href="/{section}/">すべて</a>'
             + ''.join(f'<a href="/{section}/category/{CATS[name]}/">{name}</a>' for name in names)
             + '</nav>')
 
 def listing(items, title, url, total, pager, category, section, names):
     index_url, body_prefix = SEARCH_PATHS[section]
     news = section == "news"
-    desc = ("科学や暮らしの新しい話題を、発表元の資料とともに紹介します。" if news
+    desc = ("いま話題の出来事にまつわる「なぜ？」を、発表元の資料と雑学で読み解きます。" if news
             else "身近な疑問を出典から読み解く、雑学サバイバルの雑学Blog。")
+    if news and category:
+        desc = f"{category}のニュースと、そこから生まれる疑問に答える雑学記事を新着順で読めます。"
     intro = desc if news else "世界の雑学を、あなたにお届け。"
     label = "ニュースをキーワードで探す" if news else "記事をキーワードで探す"
     placeholder = "キーワードを入力" if news else "例：パイナップル、植物"
@@ -358,7 +361,7 @@ def build():
             share_image = NEWS_SHARE_IMAGE
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
-                           "alternateName":"買う前手帖","url":BASE+"/"}
+                           "alternateName":"雑サバ","url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
             front = media.news_front(news_items, CATS)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))

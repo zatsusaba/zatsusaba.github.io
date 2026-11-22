@@ -27,7 +27,7 @@ def build(page, write, urls):
     rows = "".join(fee_row(key, label) for key, label in FEES)
     body = f'''<article class="appliance-tool">
   <div class="estimate-intro">
-    <a class="estimate-back" href="/">← 買うまえ手帖</a>
+    <a class="estimate-back" href="/">← 雑学サバイバル</a>
     <h1>{TITLE}</h1>
     <p>本体が安い店と、設置まで頼むと安い店は同じでしょうか。2店の見積もりを並べて、実際に支払う金額を比べられます。</p>
   </div>

@@ -37,6 +37,8 @@ def load():
         for key in ("title","description","date","updated","category","sources"):
             check(a.get(key),f"{p}: missing {key}")
         check(a["category"] in CATS,f"{p}: unknown category")
+        if "edition" in a:
+            check(a["edition"] in ("朝刊", "夜刊", "号外"), f"{p}: unknown edition")
         for key in ("date","updated"): a[key]=date.fromisoformat(str(a[key])).isoformat()
         check(a["date"]<=a["updated"]<=today,f"{p}: invalid dates")
         try:
@@ -75,6 +77,7 @@ def load():
             check(instant.tzinfo is not None, f"{a['slug']}: published_at needs timezone")
             check(instant.astimezone(JST).date().isoformat() == a["date"], f"{a['slug']}: published_at disagrees with date")
             check(instant <= datetime.now(JST), f"{a['slug']}: future published_at")
+            a["published_at"] = instant.astimezone(JST).isoformat()
             a["_order"] = instant.timestamp()
         else:
             a["_order"] = datetime.fromisoformat(added[a["slug"]]).timestamp() if a["slug"] in added else 0
@@ -85,14 +88,30 @@ def comics_enabled():
     check(type(value) is bool, "comics-enabled.json must be boolean")
     return value
 
-def nav(url):
-    return ''.join(f'<a href="{u}"'+(' aria-current="page"' if u in ("/blog/","/today/","/comics/") and url.startswith(u) else '')+f'>{t}</a>' for u,t in [("/","HOME"),("/story.html","STORY"),("/characters.html","CHARACTERS"),("/comics/","Comic"),("/blog/","雑学Blog"),("/#today","今日の雑学"),("/videos.html","VIDEOS")] if u != "/comics/" or comics_enabled())
+def news_masthead(url):
+    sections = [("/", "一面"), ("/blog/", "記事一覧"), ("/#today", "今日の動画")]
+    if comics_enabled():
+        sections.append(("/comics/", "漫画"))
+    sections.append(("/#about", "雑サバとは"))
+    anchors = []
+    for href, label in sections:
+        current = ""
+        if href == url:
+            current = ' aria-current="page"'
+        elif href != "/" and url.startswith(href):
+            current = ' aria-current="location"'
+        anchors.append(f'<a href="{href}"{current}>{label}</a>')
+    return ('<header class="news-masthead"><a class="brand" href="/">'
+            '<img src="/assets/logo-cut.png" alt="" width="44" height="44"><span>雑学サバイバル</span></a>'
+            '<nav class="news-nav" aria-label="メインナビゲーション">' + ''.join(anchors) + '</nav></header>')
+
+
 def page(title,desc,url,body,image="/assets/hero-duo-v2.png",article=False):
     image=image if image.startswith("https://") else BASE+image
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | 雑学サバイバル</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head><body class="blog-page"><a class="skip" href="#main">本文へ</a><header><a class="brand" href="/"><img src="/assets/logo-cut.png" alt="雑学サバイバル"><span>ZATSUGAKU<br>SURVIVAL</span></a><nav aria-label="メインナビゲーション">{nav(url)}</nav></header><main id="main">{body}</main><footer>{site_info.FOOTER}</footer><nav class="mobile-nav" aria-label="モバイルナビゲーション">{nav(url)}</nav></body></html>'''
+<link rel="icon" href="/assets/logo-cut.png"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page news-inner"><a class="skip" href="#main">本文へ</a>{news_masthead(url)}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer></body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
@@ -204,7 +223,7 @@ def build():
         write(a["url"],page(a["title"],a["description"],a["url"],body,a["image"],True)); urls.append(a["url"])
     for p in OUT.glob("*.html"):
         html=p.read_text(encoding="utf-8")
-        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',html)
+        html=re.sub(r'(<a href="characters.html"[^>]*>CHARACTERS</a>)',lambda m:m[0]+'<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',html)
         if not comics_enabled():
             html=html.replace('<a href="/comics/">Comic</a>', "")
         html=html.replace("</footer>",site_info.FOOTER+"</footer>")
@@ -214,10 +233,12 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            section=media.home_sections(items,comics,card,categories,today_home)
-            html=re.sub(r'<section class="home-comic-strip".*?</section>',"",html,flags=re.S)
-            html=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',
-                        lambda _: '<!--media:start-->'+section+'<!--media:end-->',html,count=1,flags=re.S)
+            share_image = items[0]["image"] if items else "/assets/logo-cut.png"
+            html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
+            section=media.home_sections(items,comics,categories,today_home)
+            html=html.replace("<!--news:masthead-->", news_masthead("/"))
+            html=html.replace("<!--news:content-->", "<!--media:start-->"+section+"<!--media:end-->")
+
         u="/" if p.name=="index.html" else "/"+p.name
         if p.name!="video.html" and 'rel="canonical"' not in html: html=html.replace("</head>",f'<link rel="canonical" href="{BASE}{u}"></head>')
         if '/blog.css' not in html: html=html.replace("</head>",'<link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"></head>')

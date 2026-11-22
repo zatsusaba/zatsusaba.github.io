@@ -44,22 +44,34 @@ def main():
         assert not list((OUT/"comic-media").rglob("*.png")), "Comic panels published while paused"
         assert "/comics/" not in (OUT/"sitemap.xml").read_text(encoding="utf-8")
     home=(OUT/"index.html").read_text(encoding="utf-8")
-    assert home.index('id="blog-title"') < home.index('class="blog-home daily-home"')
-    if 'class="blog-home comic-home comic-archive"' in home:
-        assert home.index('class="blog-home comic-home comic-archive"') < home.index('id="blog-title"')
-    # Removing only our insertions must recover the original page body exactly.
+    generated=home.split('<!--media:start-->',1)[1].split('<!--media:end-->',1)[0]
+    articles=load()
+    first_page=articles[:4]
+    if first_page:
+        stories=generated.split('class="news-categories"',1)[0]
+        links=Document(stories).links
+        article_urls={a["url"] for a in articles}
+        assert [url for url in links if url in article_urls]==[a["url"] for a in first_page], "Lead and recent article links must be unique and newest first"
+        assert Document(stories).h1==1, "Latest article needs one visible h1"
+        assert escape(first_page[0]["title"]) in stories.split('</h1>',1)[0]
+    categories=generated.index('class="news-categories"')
+    videos=generated.index('id="today"')
+    assert categories < videos and '<h2>今日の動画</h2>' in generated[videos:]
+    if 'class="blog-home comic-home comic-archive"' in generated:
+        assert videos < generated.index('class="blog-home comic-home comic-archive"')
+    # Removing only generated content must recover each original page body exactly.
     for name in ("index.html","story.html","characters.html","videos.html","video.html"):
         original=(ROOT/name).read_text(encoding="utf-8").split("<body",1)[1]
         built=(OUT/name).read_text(encoding="utf-8").split("<body",1)[1]
         assert FOOTER in built
         built=built.replace(FOOTER,'')
-        built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>',"")
-        built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の雑学</a>', "")
         if name=="index.html":
-            original=re.sub(r'<section class="section light home-section home-videos-section">.*?</section>',"",original,flags=re.S)
-            original=re.sub(r'<section class="home-comic-strip".*?</section>',"",original,flags=re.S)
-        built=re.sub(r'<!--media:start-->.*?<!--media:end-->',"",built,flags=re.S)
-        assert original==built, f"Legacy content changed: {name}"
+            built=re.sub(r'<header class="news-masthead">.*?</header>','<!--news:masthead-->',built,count=1,flags=re.S)
+            built=re.sub(r'<!--media:start-->.*?<!--media:end-->','<!--news:content-->',built,flags=re.S)
+        else:
+            built=built.replace('<a href="/comics/">Comic</a><a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>',"")
+            built=built.replace('<a href="/blog/">雑学Blog</a><a href="/#today">今日の動画</a>', "")
+        assert original==built, f"Unexpected template change: {name}"
     for a in load():
         text=(OUT/a["url"].lstrip("/")/"index.html").read_text(encoding="utf-8")
         assert a["html"] in text and Document(text).h1==1

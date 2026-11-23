@@ -278,14 +278,15 @@ def news_front(news_items, category_slugs=None):
         '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-at-desk.webp" '
         'width="1672" height="941" alt="丸窓と地球儀のある秘密の部屋で、キュウちゃんが新聞の切り抜きを手に、唇に指を当ててほほ笑む。" fetchpriority="high"></picture>'
         '<div class="news-desk-copy">'
-        '<h1 id="news-title">世界の<em>“今”</em>がわかる！</h1>'
+        '<h1 id="news-title">世界の<em>今</em>がわかる！</h1>'
         '<p class="news-desk-description">話題の海外ニュースをお届けします</p></div></div>'
     )
     # Category IDs belong to Trending now, whose IDs differ from Google Trends Explore.
     genres = ((4, "エンタメ"), (17, "スポーツ"), (6, "ゲーム"), (5, "グルメ"), (18, "テクノロジー"))
     trend_links = "".join(
         f'<a href="https://trends.google.com/trending?geo=JP&amp;hl=ja&amp;category={code}" '
-        f'aria-label="日本の{name}の急上昇検索をGoogle トレンドで見る">{name}</a>'
+        'target="_blank" rel="noopener noreferrer" '
+        f'aria-label="日本の{name}の急上昇検索をGoogle トレンドで見る（新しいタブで開きます）">{name}</a>'
         for code, name in genres
     )
     trends = (

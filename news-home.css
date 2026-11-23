@@ -108,7 +108,7 @@ header.news-masthead {
   font-feature-settings: "palt";
   letter-spacing: -.072em;
 }
-.news-desk h1 em { color: #315f55; font-style: normal; }
+.news-desk h1 em { color: #b52533; font-style: normal; }
 .news-utility {
   display: flex;
   align-items: center;
@@ -463,7 +463,19 @@ header.news-masthead {
 }
 
 .classic-masthead .brand { min-height: 44px; }
-.classic-home .sister-news { padding: clamp(18px, 2vw, 30px) var(--media-gutter); background: #101011; }
+.classic-home > .sister-news {
+  padding: clamp(30px, 4vw, 56px) var(--media-gutter);
+  background: #f3efe4;
+  color: #242827;
+  border-block: 1px solid #c5bcaa;
+}
+.sister-news-heading {
+  margin: 0 0 clamp(16px, 2vw, 28px);
+  padding-bottom: .45em;
+  border-bottom: 2px solid currentColor;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  line-height: 1.25;
+}
 .sister-news-card {
   display: grid;
   grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
@@ -476,8 +488,7 @@ header.news-masthead {
 .sister-news-card > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 74% center; }
 .sister-news-copy { align-self: center; padding: clamp(20px, 3.3vw, 46px); }
 .sister-news-copy p { margin: 0; max-width: 35em; font-size: 1rem; line-height: 1.8; }
-.sister-news-copy .sister-news-label { color: #b6dcca; font-weight: 700; font-size: .85rem; }
-.sister-news-copy h2 { margin: .25em 0 .45em; font-size: clamp(1.65rem, 3.2vw, 2.8rem); line-height: 1.2; }
+.sister-news-copy h3 { margin: 0 0 .45em; font-size: clamp(1.65rem, 3.2vw, 2.8rem); line-height: 1.2; }
 .sister-news-cta {
   display: inline-flex;
   align-items: center;
@@ -504,7 +515,7 @@ header.news-masthead {
 /* Retain the original section spacing inside the lower edition's wrapper. */
 .classic-home > :is(.blog-home, .creator-section, .fantasia-section) { padding-block: clamp(20px, 2.3vw, 34px); }
 .classic-home > .comic-home { padding-top: clamp(14px, 1.5vw, 22px); }
-.classic-home > .creator-section { padding-bottom: 12px; }
+.classic-home > .creator-section { padding-bottom: clamp(28px, 3.5vw, 48px); }
 .classic-home > .fantasia-section { padding-top: 12px; }
 
 @media (min-width: 701px) and (max-width: 1050px) {

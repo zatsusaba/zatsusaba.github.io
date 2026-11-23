@@ -65,13 +65,13 @@ def check_homes(home, classic, streams):
     assert news_page.canon == [BASE + "/"]
     assert classic_page.canon == [BASE + "/zatsusaba/"]
     assert not (OUT / "zatsusaba.html").exists()
-    assert "<title>トレンド前線｜いま海外で話題のニュース</title>" in home
-    assert '<meta property="og:site_name" content="トレンド前線">' in home
+    assert "<title>世界トレンド前線｜いま海外で話題のニュース</title>" in home
+    assert '<meta property="og:site_name" content="世界トレンド前線">' in home
     assert home.count('<meta name="robots" content="max-image-preview:large">') == 1
     schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S)]
     websites = [s for s in schemas if s.get("@type") == "WebSite"]
     assert len(websites) == 1
-    assert websites[0]["name"] == "トレンド前線" and websites[0]["url"] == BASE + "/"
+    assert websites[0]["name"] == "世界トレンド前線" and websites[0]["url"] == BASE + "/"
 
     article_urls = {a["url"] for group in streams.values() for a in group}
     news_links = RegionLinks(home, "#news").links
@@ -88,10 +88,7 @@ def check_homes(home, classic, streams):
     assert f'<meta property="og:image" content="{BASE}{cover_path}">' in home
     assert '<p class="news-desk-description">話題の海外ニュースをお届けします</p>' in home
     assert not RegionLinks(home, ".news-desk").links
-    trends = RegionLinks(home, "#trends")
-    assert trends.labels == ["エンタメ", "スポーツ", "ゲーム", "グルメ", "テクノロジー"]
-    assert trends.links == [f"https://trends.google.com/trending?geo=JP&hl=ja&category={code}"
-                            for code in (4, 17, 6, 5, 18)]
+    assert not any("trends.google.com" in link for link in news_page.links) and 'id="trends"' not in home
     channel = RegionLinks(home, ".channel-strip")
     assert channel.links == ["/zatsusaba/"] and news_page.links.count("/zatsusaba/") == 1
     assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]

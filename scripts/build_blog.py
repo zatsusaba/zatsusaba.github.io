@@ -16,7 +16,7 @@ import appliance_total
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_NAME = "トレンド前線"
+NEWS_NAME = "世界トレンド前線"
 NEWS_ICON = "/assets/news/frontline-mark.png"
 NEWS_SHARE_IMAGE = "/assets/news/frontline-kyu-at-desk.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.

@@ -1,5 +1,6 @@
 // Static archives work without JS. Fetch search data only after a reader types.
 const query = document.querySelector('#blog-search');
+const form = document.querySelector('#news-quick-search');
 const fullText = document.querySelector('#body-search');
 const archive = document.querySelector('#archive-list');
 const results = document.querySelector('#matches');
@@ -68,7 +69,7 @@ async function search(id) {
       const chunk = index.slice(start, start + 32);
       const eligible = row => !query.dataset.category || row[3] === query.dataset.category;
       if (!chunk.some(eligible)) continue;
-      const bodies = fullText.checked ? await read(bodyPrefix + start / 32 + '.json') : [];
+      const bodies = fullText?.checked ? await read(bodyPrefix + start / 32 + '.json') : [];
       chunk.forEach((row, i) => {
         if (!eligible(row)) return;
         const text = normalize([row[1], row[2], row[3], ...row[4], bodies[i] || ''].join(' '));
@@ -86,4 +87,12 @@ function schedule() {
   timer = setTimeout(() => search(id), 120);
 }
 query.addEventListener('input', schedule);
-fullText.addEventListener('change', schedule);
+fullText?.addEventListener('change', schedule);
+form?.addEventListener('submit', event => {
+  event.preventDefault();
+  clearTimeout(timer);
+  search(++revision);
+});
+const initialQuery = new URLSearchParams(location.search).get('q');
+if (initialQuery) query.value = initialQuery;
+if (query.value.trim()) schedule();

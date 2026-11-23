@@ -271,7 +271,7 @@ def news_story(article, *, lead=False):
     )
 
 
-def news_front(news_items, category_slugs=None):
+def news_front(news_items, index_url):
     items = [article for article in news_items if not article.get("archive_only")]
     desk = (
         '<div class="news-desk news-section-head">'
@@ -280,18 +280,16 @@ def news_front(news_items, category_slugs=None):
         '<div class="news-desk-copy">'
         '<h1 id="news-title">話題の<em>最前</em>へ</h1></div></div>'
     )
-    published_categories = {article["category"] for article in items}
-    category_links = "".join(
-        f'<a href="/news/category/{escape(slug)}/">{escape(name)}</a>'
-        for name, slug in (category_slugs or {}).items() if name in published_categories
-    )
-    topics = (
-        '<nav class="news-topics" aria-label="ニュースの分野">'
-        f'<span class="news-topics-label">分野から読む</span>{category_links}</nav>'
-    ) if category_links else ""
-    tools = (
-        f'<div class="news-utility">{topics}'
-        '<a class="news-search-link" href="/news/#blog-search">記事検索</a></div>'
+    search = (
+        '<div class="news-utility">'
+        '<form class="news-quick-search" role="search" id="news-quick-search" action="/news/">'
+        '<label for="blog-search">記事検索</label>'
+        f'<input id="blog-search" name="q" type="search" placeholder="タイトル・キーワード" data-index="{escape(index_url)}">'
+        '<button type="submit">検索</button></form>'
+        '<p id="blog-count" class="news-search-status" role="status"></p>'
+        '<div id="matches" class="search-results"></div>'
+        '<p id="blog-empty" hidden>記事が見つかりません。別のキーワードをお試しください。</p>'
+        '</div><script src="/blog-search.js?v=3" defer></script>'
     )
     # A featured story leads its publication day and yields to later issues.
     front_items = sorted(items, key=lambda article: (article["date"], bool(article.get("featured"))), reverse=True)
@@ -306,9 +304,9 @@ def news_front(news_items, category_slugs=None):
     ) if recent else ""
     return (
         '<section class="news-front" id="news" aria-labelledby="news-title">'
-        f'{desk}{tools}<div class="news-reading-header" id="headlines"><h2>新着記事</h2>'
-        '<a href="/news/">記事一覧</a></div>'
-        f'<div class="news-layout">{lead}{latest}</div></section>'
+        f'{desk}{search}<div id="archive-list">'
+        '<div class="news-reading-header" id="headlines"><h2>新着記事</h2></div>'
+        f'<div class="news-layout">{lead}{latest}</div></div></section>'
     )
 
 

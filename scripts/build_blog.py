@@ -114,7 +114,7 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/", "トップ"), ("/news/", "記事一覧"), ("/news/#categories", "分野から探す"), ("/news/#blog-search", "記事検索")]
+    sections = [("/news/", "記事一覧")]
     anchors = []
     for href, label in sections:
         current = ""
@@ -226,7 +226,7 @@ def listing(items, title, url, total, pager, category, section, names):
             f'<p>新着順 · <span id="blog-count" role="status">{total}件</span></p></div>'
             f'<div id="archive-list">{archive}</div><div id="matches" class="search-results"></div>'
             '<p id="blog-empty"'+(' hidden' if items or news else '')+'>記事が見つかりません。別のキーワードやカテゴリーをお試しください。</p>'
-            '</section><script src="/blog-search.js?v=2" defer></script>')
+            '</section><script src="/blog-search.js?v=3" defer></script>')
     return page(title, desc, url, body)
 
 def build_archives(items, section, urls):
@@ -380,7 +380,7 @@ def build():
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
                            "url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
-            front = media.news_front(news_items, CATS)
+            front = media.news_front(news_items, SEARCH_PATHS["news"][0])
             html=html.replace("<!--news:masthead-->", news_masthead("/"))
             html=html.replace("<!--news:content-->", "<!--news:start-->"+front+"<!--news:end-->")
 

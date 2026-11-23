@@ -75,6 +75,20 @@ def recommendations(items):
     return result
 
 
+def news_next_articles(items):
+    """Choose a related story or the most recent other story from the published news list."""
+    related = recommendations(items)
+    # Keep publication order within each group. Archived stories are a fallback
+    # when the site has no other current story to offer.
+    recent = sorted(items, key=lambda article: article.get("archive_only", False))
+    choices = {}
+    for article in items:
+        slug = article["slug"]
+        match = next((other for other in related[slug] if not other.get("archive_only")), None)
+        choices[slug] = match or next((other for other in recent if other["slug"] != slug), None)
+    return choices
+
+
 def search_files(items, write, index_url="/search/index.json", body_prefix="/search/body-"):
     index = []
     for start in range(0, len(items), 32):

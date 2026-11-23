@@ -160,7 +160,7 @@ def page(title,desc,url,body,image=None,article=False):
     brand = "雑学サバイバル" if classic else NEWS_NAME
     icon = "/assets/logo-cut.png" if classic else "/assets/news/frontline-favicon-red.svg"
     robots = '<meta name="robots" content="max-image-preview:large">' if article and url.startswith("/news/") else ""
-    story_style = '<link rel="stylesheet" href="/news-article.css">' if article and url.startswith("/news/") else ""
+    story_style = '<link rel="stylesheet" href="/news-article.css?v=reader-journeys">' if article and url.startswith("/news/") else ""
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:site_name" content="{brand}">{robots}
@@ -170,14 +170,15 @@ def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
     p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text,encoding="utf-8")
-def card(a):
+def card(a, *, reader_action=""):
     fit_class=' class="thumbnail-contain"' if a.get("thumbnail_fit")=="contain" else ""
     image = "" if a.get("category_cover") else f'<img{fit_class} src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="480" height="270" loading="lazy">'
     if a.get("section") == "news":
         image = media.news_thumbnail(a)
     stamp = a.get("published_at", a["date"])
     printed = stamp[:16].replace("T", " ")
-    return f'<article class="blog-card"><a href="{a["url"]}">{image}<div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{stamp}">{printed}</time></div></a></article>'
+    measurement = f' data-reader-action="{e(reader_action, quote=True)}"' if reader_action else ""
+    return f'<article class="blog-card"><a href="{a["url"]}"{measurement}>{image}<div class="blog-card-copy"><span class="blog-label">{a["category"]}</span><h3>{e(a["title"])}</h3><p>{e(a["description"])}</p><time datetime="{stamp}">{printed}</time></div></a></article>'
 class ImageSources(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -244,8 +245,33 @@ def build_archives(items, section, urls):
             write(url, listing(chunk, heading, url, len(entries), pager, category, section, names))
             urls.append(url)
 
+def reader_measurement_id():
+    path = ROOT / "config" / "google-analytics"
+    if not path.is_file():
+        return ""
+    measurement = path.read_text(encoding="utf-8-sig").strip()
+    check(re.fullmatch(r"G-[A-Z0-9]+", measurement), "Invalid Google Analytics measurement ID")
+    return measurement
+
+
+def install_reader_measurement(measurement):
+    pages = {
+        "news": [OUT / "index.html", *(OUT / "news").rglob("*.html")],
+        "zatsusaba": [OUT / "zatsusaba/index.html", OUT / "video.html",
+                      OUT / "videos.html", *(OUT / "blog").rglob("*.html")],
+    }
+    for section, paths in pages.items():
+        tag = ('<link rel="stylesheet" href="/reader-metrics.css">'
+               f'<script src="/reader-metrics.js" data-measurement="{measurement}" data-section="{section}" defer></script>')
+        for path in paths:
+            if path.is_file():
+                html = path.read_text(encoding="utf-8")
+                path.write_text(html.replace("</head>", tag + "</head>", 1), encoding="utf-8")
+
+
 def build():
     items=load()
+    measurement = reader_measurement_id()
     news_items = [a for a in items if a["section"] == "news"]
     blog_items = [a for a in items if a["section"] == "blog"]
     OUT.mkdir(exist_ok=True)
@@ -295,9 +321,9 @@ def build():
                 shutil.copy2(ROOT/rel,target)
                 copied_panels.append(rel)
     comic_links=media.render_comics(comics,blog_items,page,write,urls,known_videos,enabled=comics_enabled())
-    suggestions=media.recommendations(blog_items) | media.recommendations(news_items)
+    suggestions = media.recommendations(blog_items)
+    next_news = media.news_next_articles(news_items)
     for a in items:
-        related=suggestions[a["slug"]]
         section = a["section"]
         news = section == "news"
         archive_url = f"/{section}/"
@@ -307,7 +333,7 @@ def build():
             video_title=a.get("youtube_title") or known_videos[a["youtube"]]
             # Keep the article's final video invitation to one formal-title link.
             # Embedded players belong on video pages, not in blog prose.
-            primary_video=f'<section><h2>動画はこちら</h2><p><a href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
+            primary_video=f'<section><h2>動画はこちら</h2><p><a data-reader-action="related_video" href="https://www.youtube.com/watch?v={a["youtube"]}">{e(video_title)}</a></p></section>'
             additional = media.article_video_ids(a)[1:]
             if additional:
                 links = ''.join('<li>'+media.link("https://www.youtube.com/watch?v="+vid,known_videos[vid])+'</li>' for vid in additional)
@@ -335,8 +361,20 @@ def build():
         home = media.link("/", "ホーム") if news else media.link("/zatsusaba/", "雑サバ")
         breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
                                  media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
-        related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
-        cta = "トレンド記事一覧へ" if news else "雑学Blogの記事一覧へ"
+        if news:
+            next_article = next_news[a["slug"]]
+            next_story = (
+                '<section class="news-next" aria-labelledby="news-next-title">'
+                '<h2 id="news-next-title">次の1本</h2>'
+                f'{card(next_article, reader_action="news_next_article")}</section>'
+            ) if next_article else ""
+            article_footer = (next_story + '<div class="news-article-footer">'
+                              '<a href="/news/">トレンド記事一覧へ →</a></div>')
+        else:
+            related = suggestions[a["slug"]]
+            related_html = ('<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>') if related else ""
+            article_footer = (f'<section>{related_html}<p><a class="blog-cta" href="{archive_url}">'
+                              '雑学Blogの記事一覧へ →</a></p></section>')
         title = f'<h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p>'
         published = f'公開 <time datetime="{stamp}">{stamp[:16].replace("T", " ")}</time>'
         updated = f' · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time>'
@@ -351,7 +389,7 @@ def build():
                     f'<span class="blog-label">{a["category"]}</span>{title}'
                     f'<p class="blog-date">{published}{updated}</p>{cover}')
         body += (f'<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div>'
-                 f'<section>{related_html}<p><a class="blog-cta" href="{archive_url}">{cta} →</a></p></section></article>')
+                 f'{article_footer}</article>')
         schema={"@context":"https://schema.org","@type":"NewsArticle" if news else "BlogPosting",
                 "headline":a["title"],"description":a["description"],"datePublished":stamp,"dateModified":a["updated"],
                 "articleSection":a["category"],"isPartOf":{"@type":"CollectionPage","url":BASE+archive_url},
@@ -393,13 +431,15 @@ def build():
     write("/404.html",page("ページが見つかりません","記事一覧やホームからお探しください。","/404.html",f'<section class="blog-shell"><h1>404</h1><p>ページが見つかりません。</p><a class="blog-cta" href="/">{NEWS_NAME}のトップへ →</a><p><a href="/zatsusaba/">雑学サバイバル公式サイトへ</a></p></section>').replace("</head>",'<meta name="robots" content="noindex"></head>'))
     for url,title,content,desc in [
         ("/editorial-policy/","編集方針・情報の信頼性について",site_info.EDITORIAL_POLICY,f"{NEWS_NAME}と雑学Blogの事実確認やAI活用、出典と確認日の読み方、記事の更新・訂正の方針をご案内します。"),
-        ("/privacy/","プライバシーポリシー",site_info.PRIVACY,"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
+        ("/privacy/","プライバシーポリシー",site_info.privacy(measurement),"ページ配信、YouTube、Cookie、検索、お問い合わせ時の情報の取り扱いについて。"),
         ("/about/","運営者情報",site_info.ABOUT,"雑学サバイバルの作者・緋色牡丹と公式のお問い合わせ先。"),
     ]:
         if not comics_enabled():
             content=content.replace(' ／ <a href="/comics/">公式4コマ漫画</a>', "")
         write(url,page(title,desc,url,f'<article class="blog-article"><h1>{title}</h1><div class="blog-prose">{content}</div></article>'))
         urls.append(url)
+    if measurement:
+        install_reader_measurement(measurement)
     check(len(urls)==len(set(urls)), "Duplicate public URL")
     modified={a["url"]:a["updated"] for a in items}
     sitemap=ET.Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")

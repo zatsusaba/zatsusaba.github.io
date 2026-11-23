@@ -85,7 +85,7 @@ assert '<iframe' not in html
 assert 'youtube-nocookie.com/embed/' not in html
 assert html.index('<h2>関連動画</h2>') < html.index('<h2>動画はこちら</h2>')
 primary_section=primary_html.split('<section><h2>動画はこちら</h2>',1)[1].split('</section>',1)[0]
-assert primary_section=='<p><a href="https://www.youtube.com/watch?v='+vid+'">テスト動画</a></p>'
+assert primary_section=='<p><a data-reader-action="related_video" href="https://www.youtube.com/watch?v='+vid+'">テスト動画</a></p>'
 assert '<section><h2>動画はこちら</h2>'+primary_section+'</section></div>' in html
 assert '正式 &lt;追加&gt; &amp; 動画</a>' in html
 for target in ("today/"+today+"/index.html","today/undated/index.html","today/index.html","zatsusaba/index.html"):

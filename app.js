@@ -94,7 +94,10 @@ if(page==='video'){
  if(!video)el.innerHTML='<div class="empty">動画が見つかりません。 <a href="videos.html">動画一覧へ戻る</a></div>';
  else {
   document.title=video.title+' | 雑学サバイバル';
-  const recommendations=get('videos').filter(v=>v.id!==video.id).slice(0,3);
+  const godzillaSeries = ['gbeonGDEWCk', 'j90ti_672jQ'];
+  const otherVideos = get('videos').filter(v => v.id !== video.id);
+  const series = godzillaSeries.includes(video.id) ? otherVideos.filter(v => godzillaSeries.includes(v.id)) : [];
+  const recommendations = [...series, ...otherVideos.filter(v => !series.includes(v))].slice(0, 3);
   const shortVideo=video.format==='通常Shorts'||video.format==='切り抜き'||video.format==='Short MV';
   el.innerHTML=`<article class="watch-detail"><a href="videos.html">← 動画一覧へ戻る</a><h2>${esc(video.title)}</h2>${location.protocol==='file:'?`<div class="file-warning"><strong>HTTPプレビューで開いてください</strong><p>この画面はファイルを直接開いているため、YouTubeを埋め込むとエラー153になることがあります。フォルダ内の START_PREVIEW.bat から起動するか、下のリンクでYouTubeをご覧ください。</p></div>`:`<div class="player ${shortVideo?'player-short':''}"><iframe src="https://www.youtube.com/embed/${video.id}" title="${esc(video.title)}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`}<p class="player-help">再生できない場合は <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" rel="noopener noreferrer">YouTubeで直接見る ↗</a></p><h3>作品紹介</h3><p>${esc(video.description||'作品紹介は準備中です。')}</p><p><a href="videos.html">← 動画一覧へ戻る</a></p></article><section class="recommendations"><h2>おすすめ動画</h2>${recommendations.length?`<div class="cards video-grid">${recommendations.map(x=>card('videos',x)).join('')}</div>`:'<p>関連動画は準備中です。</p>'}</section>`;
   const canonical = new URL(document.querySelector('link[rel="canonical"]')?.href || 'https://zatsusaba.github.io/video.html');
@@ -110,17 +113,23 @@ if(page==='video'){
   for (const selector of ['meta[name="description"]','meta[property="og:description"]']) {
    document.querySelector(selector)?.setAttribute('content',summary);
   }
-  fetch('/video-links.json').then(r=>r.json()).then(index=>{
+  fetch('/video-links.json', {cache:'no-cache'}).then(r=>r.json()).then(index=>{
    if(!index[id]?.length) return;
    const box=document.createElement('section');
    const heading=document.createElement('h3');
-   heading.textContent='この動画をもっと読む';
-   box.append(heading);
-   for(const [url,title] of index[id]){
-    const row=document.createElement('p'), anchor=document.createElement('a');
-    anchor.href=url; anchor.textContent=title; row.append(anchor); box.append(row);
+   heading.textContent='この動画の関連雑学';
+   const list=document.createElement('ul');
+   for (const [url, title] of index[id]) {
+    const row=document.createElement('li'), anchor=document.createElement('a');
+    anchor.href=url;
+    anchor.textContent=title;
+    anchor.dataset.readerAction='related_article';
+    row.append(anchor);
+    list.append(row);
    }
-   el.querySelector('.watch-detail').append(box);
+   box.className='watch-related';
+   box.append(heading,list);
+   el.querySelector('.watch-detail').lastElementChild.before(box);
   }).catch(()=>{});
  }
 }

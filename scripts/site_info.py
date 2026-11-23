@@ -22,6 +22,21 @@ ABOUT = """
 <h2>お問い合わせ</h2><p>サイトに関するご連絡、記事の訂正や出典に関するご指摘は、<a href="https://x.com/cb_storyteller">緋色牡丹のX（@cb_storyteller）</a>へお願いします。該当するページのURLを添えていただけると確認がスムーズです。</p>
 """
 
+
+def privacy(measurement):
+    if not measurement:
+        return PRIVACY
+    analytics_note = """
+<h2 id="reader-measurement">Google アナリティクスによるアクセス解析</h2>
+<p>読者が記事や動画へ進みやすいように案内を改善する目的で、許可した方について、閲覧したページと対象のリンクを押した回数を Google アナリティクスで集計します。このサービスは、端末やブラウザーなどの情報と、Cookie による識別子を計測に使用します。当サイトの計測イベントに記事検索語やフォーム入力は含めず、広告パーソナライズは無効にしています。</p>
+<p>選択はブラウザーに保存されます。計測対象ページの下部にある「アクセス解析の設定」で、いつでも選択を変更できます。データの取り扱いは <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使用するサイトから収集した情報の使用方法</a>をご覧ください。</p>
+"""
+    return PRIVACY.replace(
+        "運営者が設置したアクセス解析タグ、広告計測タグ、会員登録フォームはありません。",
+        "会員登録フォームは設置していません。",
+    ).replace("<h2>YouTubeの動画と画像</h2>", analytics_note + "<h2>YouTubeの動画と画像</h2>")
+
+
 EDITORIAL_POLICY = """
 <p>雑学サバイバルの「雑学Blog」は、世界の不思議や身近な疑問を、日本語で楽しく、正確に理解できることを目指すWebメディアです。意外な答えに出会ったときこそ、「なぜそうなるのか」「どんな場合に当てはまるのか」まで伝えることを大切にしています。</p>
 <h2>ニュースの選び方</h2>

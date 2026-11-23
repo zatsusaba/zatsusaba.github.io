@@ -1,0 +1,46 @@
+.reader-metrics {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  inset-inline-end: 1rem;
+  inset-block-end: max(1rem, env(safe-area-inset-bottom));
+  width: min(23rem, calc(100% - 2rem));
+  padding: 1rem;
+  border: 1px solid #756c6d;
+  border-radius: .5rem;
+  background: #fffaf0;
+  color: #252124;
+  box-shadow: 0 4px 20px #0002;
+  font: 400 .9rem/1.5 system-ui, sans-serif;
+}
+.reader-metrics[hidden] { display: none; }
+.reader-metrics p { margin: 0 0 .65rem; }
+.reader-metrics a { color: #8f2335; text-decoration: underline; }
+.reader-metrics div { display: flex; gap: .5rem; flex-wrap: wrap; }
+.reader-metrics button {
+  min-height: 44px;
+  padding: .35rem .7rem;
+  border: 1px solid currentColor;
+  border-radius: .3rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.reader-metrics-settings {
+  min-height: 44px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  cursor: pointer;
+}
+.reader-metrics :is(a, button):focus-visible,
+.reader-metrics-settings:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
+@media (max-width: 760px) {
+  .reader-metrics { inset-block-end: calc(4.25rem + env(safe-area-inset-bottom)); }
+}

@@ -205,13 +205,13 @@ assert b.media.article_video_ids({"youtube":"q5FluB5f-b8","youtube_related":[]})
 assert '<h2>関連動画</h2>' not in article_html
 assert '<iframe' not in article_html
 assert 'youtube-nocookie.com/embed/' not in article_html
-primary_video='<section><h2>動画はこちら</h2><p><a href="https://www.youtube.com/watch?v=q5FluB5f-b8">パイナップルの木は</a></p></section>'
+primary_video='<section><h2>動画はこちら</h2><p><a data-reader-action="related_video" href="https://www.youtube.com/watch?v=q5FluB5f-b8">パイナップルの木は</a></p></section>'
 assert primary_video+'</div>' in article_html
 assert '確認日' not in article_html
 assert '漫画動画で楽しむ' not in article_html
 assert '<h2>動画はこちら</h2>' in article_html
 assert '<h2>漫画はこちら</h2>' not in article_html
-assert '<a href="https://www.youtube.com/watch?v=q5FluB5f-b8">パイナップルの木は</a>' in article_html
+assert '<a data-reader-action="related_video" href="https://www.youtube.com/watch?v=q5FluB5f-b8">パイナップルの木は</a>' in article_html
 assert article_html.index('<h2>出典・参考資料</h2>') < article_html.index('<h2>動画はこちら</h2>')
 assert '/blog/second/' in (b.OUT/"blog/pineapple/index.html").read_text(encoding="utf-8")
 assert '/blog/second/' in (b.OUT/"blog/category/food/index.html").read_text(encoding="utf-8")

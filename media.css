@@ -40,6 +40,44 @@ header nav a::after { bottom: 5px; }
   border-bottom: 3px solid var(--media-red);
   letter-spacing: .26em;
 }
+.featured-videos {
+  padding: clamp(22px, 3vw, 44px) var(--media-gutter);
+  background: #101011;
+  color: #f8f7f3;
+}
+.featured-videos-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 14px;
+  row-gap: 0;
+  border-bottom: 1px solid #5a565c;
+  margin-bottom: 16px;
+}
+.featured-videos-heading h2 { margin: 0; font-size: clamp(23px, 3vw, 38px); }
+.featured-videos-heading a { display: inline-flex; align-items: center; gap: .4em; min-height: 44px; }
+.featured-videos-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.featured-videos-list a { display: grid; height: 100%; align-content: start; background: #211f25; border: 1px solid #4e4a50; }
+.featured-videos-list img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; background: #2b292e; }
+.featured-videos-list h3 { margin: 0; padding: .75em .8em; font-size: clamp(16px, 1.6vw, 21px); line-height: 1.55; }
+.featured-videos a:is(:hover, :focus-visible) h3, .featured-videos-heading a:hover { text-decoration: underline; text-underline-offset: .25em; }
+.watch-related { margin-block: 24px; padding: 16px 20px; border-left: 3px solid var(--media-red); background: #fffdf8; color: var(--media-ink); }
+.watch-related h3, .watch-related ul { margin-block: 0; }
+.watch-related ul { padding-left: 1.4em; }
+.watch-related a { display: inline-block; padding-block: 10px; line-height: 1.5; text-decoration: underline; text-underline-offset: .22em; }
+@media (max-width: 700px) {
+  .featured-videos-list { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .featured-videos-list a { grid-template-columns: 42% minmax(0, 1fr); align-content: center; align-items: center; }
+  .featured-videos-list h3 { padding-inline: .7em; }
+}
 .media-home, .blog-home, .media-categories, .comic-home, .comic-archive, .blog-shell {
   padding: clamp(36px, 5.3vw, 76px) var(--media-gutter);
   color: var(--media-ink);

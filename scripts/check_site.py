@@ -83,6 +83,9 @@ def check_homes(home, classic, streams):
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
     assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
     assert '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>' in home
+    cover_path = "/assets/news/frontline-kyu-cover.webp"
+    assert any(src == cover_path and alt for src, alt in news_page.images)
+    assert f'<meta property="og:image" content="{BASE}{cover_path}">' in home
     assert {f"https://trends.google.com/trending?geo={geo}&hl=ja" for geo in ("US", "GB", "KR", "JP")} <= set(RegionLinks(home, "#trends").links)
     channel = RegionLinks(home, ".channel-strip")
     assert channel.links == ["/zatsusaba/"] and news_page.links.count("/zatsusaba/") == 1
@@ -208,6 +211,9 @@ def main():
         news = a["section"] == "news"
         brand = NEWS_NAME if news else "雑学サバイバル"
         if news:
+            assert not a.get("category_cover"), f"{url}: specify a topic-specific news illustration"
+            story_images = Document(article_cover(a) + a["html"]).images
+            assert any(src and alt and alt.strip() for src, alt in story_images), f"{url}: missing illustration in the article"
             author = "雑学サバイバル" if a.get("archive_only") else brand
             assert schema["author"]["name"] == author and schema["publisher"]["name"] == "雑学サバイバル"
             assert f'<p class="blog-date">{author}' in html

@@ -49,6 +49,9 @@ def load():
         check(a["category"] in CATS,f"{p}: unknown category")
         if "edition" in a:
             check(a["edition"] in ("朝刊", "夜刊", "号外"), f"{p}: unknown edition")
+        if "image_caption" in a:
+            check(isinstance(a["image_caption"], str) and a["image_caption"].strip() and a.get("image"),
+                  f"{p}: image_caption requires a nonempty caption and an explicit image")
         if "thumbnail_label" in a:
             label = a["thumbnail_label"]
             lines = label.strip().splitlines() if isinstance(label, str) else []
@@ -157,11 +160,12 @@ def page(title,desc,url,body,image=None,article=False):
     brand = "雑学サバイバル" if classic else NEWS_NAME
     icon = "/assets/logo-cut.png" if classic else NEWS_ICON
     robots = '<meta name="robots" content="max-image-preview:large">' if article and url.startswith("/news/") else ""
+    story_style = '<link rel="stylesheet" href="/news-article.css">' if article and url.startswith("/news/") else ""
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:site_name" content="{brand}">{robots}
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css"></head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
+<link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css">{story_style}</head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
@@ -190,6 +194,10 @@ def article_cover(a):
     article_url=BASE+a["url"]
     image_url=urljoin(article_url,a["image"])
     if any(urljoin(article_url,src)==image_url for src in images.sources): return ""
+    if a.get("section") == "news":
+        caption = f'<figcaption>{e(a["image_caption"])}</figcaption>' if a.get("image_caption") else ""
+        return (f'<figure class="news-article-figure"><img class="blog-cover" src="{e(a["image"], quote=True)}" '
+                f'alt="{e(a["image_alt"], quote=True)}" width="960" height="540" fetchpriority="high">{caption}</figure>')
     return f'<img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450">'
 def categories(section="blog", names=CATS):
     category_id = ' id="categories"' if section == "news" else ""
@@ -313,28 +321,37 @@ def build():
             label = e(source["title"])
             url = e(source["url"], quote=True)
             checked = source["checked"]
-            checked_text = f'（確認日 <time datetime="{checked}">{checked}</time>）' if news else ""
+            checked_text = f' <span class="source-checked">確認日 <time datetime="{checked}">{checked}</time></span>' if news else ""
             reference_items.append(f'<li><a href="{url}">{label} ↗</a>{checked_text}</li>')
-        refs = '<section><h2>出典・参考資料</h2><ul>' + ''.join(reference_items) + '</ul></section>'
+        source_class = ' class="news-article-sources"' if news else ""
+        refs = f'<section{source_class}><h2>出典・参考資料</h2><ul>' + ''.join(reference_items) + '</ul></section>'
         if a.get("conditions"):
-            refs += "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
+            conditions = "<h2>条件・例外</h2><p>"+e(a["conditions"])+"</p>"
+            refs = conditions + refs if news else refs + conditions
         stamp = a.get("published_at", a["date"])
         edition = f' <span class="news-edition">{a["edition"]}</span>' if news and a.get("edition") else ""
         author_name = NEWS_NAME if news and not a.get("archive_only") else "雑学サバイバル"
         author = {"@type":"Organization","name":author_name}
-        byline = f"{author_name}　" if news else ""
         home = media.link("/", "ホーム") if news else media.link("/zatsusaba/", "雑サバ")
         breadcrumb = " / ".join([home, media.link(archive_url, archive_label),
                                  media.link(archive_url+"category/"+CATS[a["category"]]+"/", a["category"])])
         related_html = '<h2>あわせて読みたい</h2><div class="blog-grid">'+''.join(map(card,related))+'</div>' if related else ""
         cta = "トレンド記事一覧へ" if news else "雑学Blogの記事一覧へ"
-        body = (f'<article class="blog-article"><p class="blog-breadcrumb">{breadcrumb}</p>'
-                f'<span class="blog-label">{a["category"]}</span>{edition}<h1>{e(a["title"])}</h1>'
-                f'<p class="blog-deck">{e(a["description"])}</p><p class="blog-date">{byline}公開 '
-                f'<time datetime="{stamp}">{stamp[:16].replace("T", " ")}</time> · 更新 '
-                f'<time datetime="{a["updated"]}">{a["updated"]}</time></p>{article_cover(a)}'
-                f'<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div>'
-                f'<section>{related_html}<p><a class="blog-cta" href="{archive_url}">{cta} →</a></p></section></article>')
+        title = f'<h1>{e(a["title"])}</h1><p class="blog-deck">{e(a["description"])}</p>'
+        published = f'公開 <time datetime="{stamp}">{stamp[:16].replace("T", " ")}</time>'
+        updated = f' · 更新 <time datetime="{a["updated"]}">{a["updated"]}</time>'
+        cover = article_cover(a)
+        if news:
+            visible_update = updated if a["date"] != a["updated"] else ""
+            body = (f'<article class="blog-article news-article"><p class="blog-breadcrumb">{breadcrumb}</p>'
+                    f'<div class="news-article-head"><div class="news-article-headline">{edition}{title}'
+                    f'<p class="blog-date">{author_name}　{published}{visible_update}</p></div>{cover}</div>')
+        else:
+            body = (f'<article class="blog-article"><p class="blog-breadcrumb">{breadcrumb}</p>'
+                    f'<span class="blog-label">{a["category"]}</span>{title}'
+                    f'<p class="blog-date">{published}{updated}</p>{cover}')
+        body += (f'<div class="blog-prose">{a["html"]}{related_comics}{refs}{video}</div>'
+                 f'<section>{related_html}<p><a class="blog-cta" href="{archive_url}">{cta} →</a></p></section></article>')
         schema={"@context":"https://schema.org","@type":"NewsArticle" if news else "BlogPosting",
                 "headline":a["title"],"description":a["description"],"datePublished":stamp,"dateModified":a["updated"],
                 "articleSection":a["category"],"isPartOf":{"@type":"CollectionPage","url":BASE+archive_url},
@@ -359,7 +376,7 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            share_image = NEWS_SHARE_IMAGE
+            share_image = "/assets/news/frontline-kyu-cover.webp"
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
                            "url":BASE+"/"}

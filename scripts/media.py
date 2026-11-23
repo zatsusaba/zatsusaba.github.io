@@ -278,7 +278,7 @@ def news_front(news_items, category_slugs=None):
         '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-at-desk.webp" '
         'width="1672" height="941" alt="丸窓と地球儀のある秘密の部屋で、キュウちゃんが新聞の切り抜きを手に、唇に指を当ててほほ笑む。" fetchpriority="high"></picture>'
         '<div class="news-desk-copy">'
-        '<h1 id="news-title">話題の<em>今</em>がわかる！</h1></div></div>'
+        '<h1 id="news-title">話題の<em>最前</em>へ</h1></div></div>'
     )
     published_categories = {article["category"] for article in items}
     category_links = "".join(

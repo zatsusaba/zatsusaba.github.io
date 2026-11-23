@@ -82,7 +82,7 @@ def check_homes(home, classic, streams):
     front_articles = sorted(eligible, key=lambda a: (a["date"], bool(a.get("featured"))), reverse=True)[:4]
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
     assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
-    assert '<h1 id="news-title">話題の<em>今</em>がわかる！</h1>' in home
+    assert '<h1 id="news-title">話題の<em>最前</em>へ</h1>' in home
     cover_path = "/assets/news/frontline-kyu-at-desk.webp"
     assert any(src == cover_path and alt for src, alt in news_page.images)
     assert f'<meta property="og:image" content="{BASE}{cover_path}">' in home

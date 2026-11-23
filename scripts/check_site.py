@@ -75,9 +75,9 @@ def check_homes(home, classic, streams):
 
     article_urls = {a["url"] for group in streams.values() for a in group}
     news_links = RegionLinks(home, "#news").links
-    assert "/news/" in news_links
     assert "/tools/appliance-total/" not in news_page.links
-    assert {"/news/", "/news/#categories", "/news/#blog-search"} <= set(RegionLinks(home, ".news-masthead").links)
+    assert RegionLinks(home, ".news-masthead").links == ["/", "/news/"]
+    assert 'id="news-quick-search" action="/news/"' in home and 'data-index="/news/search.json"' in home
     eligible = [a for a in streams["news"] if not a.get("archive_only")]
     front_articles = sorted(eligible, key=lambda a: (a["date"], bool(a.get("featured"))), reverse=True)[:4]
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]

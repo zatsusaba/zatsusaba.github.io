@@ -94,12 +94,15 @@ def check_homes(home, classic, streams):
     assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]
     assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
 
-    assert RegionLinks(classic, ".home-copy").links.count("/") == 1
+    assert "/" not in RegionLinks(classic, ".home-copy").links
+    assert RegionLinks(classic, ".sister-news").links == ["/"]
+    assert classic.index('id="about"') < classic.index('id="sister-news-title"') < classic.index('id="novel-title"')
     assert "オープニング動画" not in classic
     assert not set(classic_page.links).intersection(a["url"] for a in streams["news"])
     featured_blog = [url for url in RegionLinks(classic, ".media-home").links if url in article_urls]
     assert featured_blog == [a["url"] for a in streams["blog"][:4]]
     nav = RegionLinks(classic, ".classic-nav")
+    assert not any("youtube.com" in link for link in nav.links)
     destinations = {label: urljoin(BASE + "/zatsusaba/", href) for label, href in zip(nav.labels, nav.links)}
     for label, path in (("HOME", "/zatsusaba/"), ("STORY", "/story.html"), ("CHARACTERS", "/characters.html"),
                         ("雑学Blog", "/blog/"), ("今日の動画", "/zatsusaba/#today"), ("VIDEOS", "/videos.html")):

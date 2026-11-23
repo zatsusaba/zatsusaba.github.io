@@ -275,8 +275,8 @@ def news_front(news_items, category_slugs=None):
     items = [article for article in news_items if not article.get("archive_only")]
     desk = (
         '<div class="news-desk news-section-head">'
-        '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-secret-room.webp" '
-        'width="1672" height="941" alt="丸窓と地球儀のある秘密の部屋で、新聞の切り抜きを片手に唇に指を当てるキュウちゃん。ランプには眠る小さなコウモリ。" fetchpriority="high"></picture>'
+        '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-at-desk.webp" '
+        'width="1672" height="941" alt="丸窓と地球儀のある秘密の部屋で、キュウちゃんが新聞の切り抜きを手に、唇に指を当ててほほ笑む。" fetchpriority="high"></picture>'
         '<div class="news-desk-copy">'
         '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>'
         '<p class="news-desk-description">海外で検索が急上昇した話題を、現地の発表や報道をもとに日本語で読み解く。</p>'

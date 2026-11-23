@@ -376,7 +376,7 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            share_image = "/assets/news/frontline-kyu-secret-room.webp"
+            share_image = "/assets/news/frontline-kyu-at-desk.webp"
             html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
                            "url":BASE+"/"}

@@ -78,6 +78,12 @@ def check_homes(home, classic, streams):
     assert "/tools/appliance-total/" not in news_page.links
     assert RegionLinks(home, ".news-masthead").links == ["/", "/news/"]
     assert 'id="news-quick-search" action="/news/"' in home and 'data-index="/news/search.json"' in home
+    published_categories = {a["category"] for a in streams["news"]}
+    assert RegionLinks(home, ".news-genres").links == [
+        f"/news/category/{slug}/" for name, slug in CATS.items() if name in published_categories
+    ]
+    if published_categories:
+        assert home.index('class="news-genres"') < home.index('id="headlines"')
     eligible = [a for a in streams["news"] if not a.get("archive_only")]
     front_articles = sorted(eligible, key=lambda a: (a["date"], bool(a.get("featured"))), reverse=True)[:4]
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
@@ -96,6 +102,7 @@ def check_homes(home, classic, streams):
     assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
 
     assert "/" not in RegionLinks(classic, ".home-copy").links
+    assert 'data-reader-action="featured_video"' not in classic
     assert RegionLinks(classic, ".fantasia-section").links.count("/") == 1
     assert classic.index('id="about"') < classic.index('id="sister-news-title"') < classic.index('id="novel-title"')
     assert "オープニング動画" not in classic

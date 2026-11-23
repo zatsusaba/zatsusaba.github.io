@@ -285,7 +285,7 @@ def news_story(article, *, lead=False):
     )
 
 
-def news_front(news_items, index_url):
+def news_front(news_items, index_url, genres):
     items = [article for article in news_items if not article.get("archive_only")]
     desk = (
         '<div class="news-desk news-section-head">'
@@ -299,7 +299,7 @@ def news_front(news_items, index_url):
         '<form class="news-quick-search" role="search" id="news-quick-search" action="/news/">'
         '<label for="blog-search">記事検索</label>'
         f'<input id="blog-search" name="q" type="search" placeholder="タイトル・キーワード" data-index="{escape(index_url)}">'
-        '<button type="submit">検索</button></form>'
+        f'<button type="submit">検索</button></form>{genres}'
         '<p id="blog-count" class="news-search-status" role="status"></p>'
         '<div id="matches" class="search-results"></div>'
         '<p id="blog-empty" hidden>記事が見つかりません。別のキーワードをお試しください。</p>'

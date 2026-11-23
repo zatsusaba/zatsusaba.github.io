@@ -114,18 +114,13 @@ def comics_enabled():
     return value
 
 def news_masthead(url):
-    sections = [("/news/", "記事一覧")]
-    anchors = []
-    for href, label in sections:
-        current = ""
-        if href == url:
-            current = ' aria-current="page"'
-        elif href != "/" and url.startswith(href):
-            current = ' aria-current="location"'
-        anchors.append(f'<a href="{href}"{current}>{label}</a>')
+    current = ' aria-current="page"' if url == "/news/" else ""
+    if not current and url.startswith("/news/"):
+        current = ' aria-current="location"'
     return (f'<header class="news-masthead"><a class="brand" href="/" aria-label="{NEWS_NAME} トップページ">'
             f'<img src="{NEWS_ICON}" alt="" width="44" height="44"><span>{NEWS_NAME}</span></a>'
-            '<nav class="news-nav" aria-label="メインナビゲーション">' + ''.join(anchors) + '</nav></header>')
+            '<nav class="news-nav" aria-label="メインナビゲーション">'
+            f'<a href="/news/"{current}>記事一覧 <span aria-hidden="true">→</span></a></nav></header>')
 
 def classic_navigation(url):
     sections = [("/zatsusaba/", "HOME"), ("/story.html", "STORY"), ("/characters.html", "CHARACTERS")]
@@ -165,7 +160,7 @@ def page(title,desc,url,body,image=None,article=False):
 <title>{e(title)} | {brand}</title><meta name="description" content="{e(desc,quote=True)}"><link rel="canonical" href="{BASE}{url}">
 <meta property="og:site_name" content="{brand}">{robots}
 <meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(desc,quote=True)}"><meta property="og:url" content="{BASE}{url}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:image" content="{e(image,quote=True)}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css">{story_style}</head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
+<link rel="icon" href="{icon}"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/blog.css"><link rel="stylesheet" href="/media.css"><link rel="stylesheet" href="/news-home.css?v=news-navigation">{story_style}</head><body class="blog-page {theme} {view}"><a class="skip" href="#main">本文へ</a>{header}<main id="main">{body}</main><footer>{site_info.FOOTER}</footer>{mobile}</body></html>'''
 def write(url,text):
     p=OUT/url.lstrip("/")
     if url.endswith("/"): p=p/"index.html"
@@ -200,11 +195,16 @@ def article_cover(a):
         return (f'<figure class="news-article-figure"><img class="blog-cover" src="{e(a["image"], quote=True)}" '
                 f'alt="{e(a["image_alt"], quote=True)}" width="960" height="540" fetchpriority="high">{caption}</figure>')
     return f'<img class="blog-cover" src="{e(a["image"],quote=True)}" alt="{e(a["image_alt"],quote=True)}" width="800" height="450">'
-def categories(section="blog", names=CATS):
+def categories(section="blog", names=CATS, *, homepage=False):
+    links = ''.join(f'<a href="/{section}/category/{CATS[name]}/">{name}</a>' for name in names)
+    if homepage:
+        if not links:
+            return ""
+        return ('<nav class="news-genres" aria-labelledby="news-genres-title">'
+                f'<h2 id="news-genres-title">ジャンルから探す</h2>{links}</nav>')
     category_id = ' id="categories"' if section == "news" else ""
     return (f'<nav class="blog-categories"{category_id} aria-label="記事カテゴリー"><a href="/{section}/">すべて</a>'
-            + ''.join(f'<a href="/{section}/category/{CATS[name]}/">{name}</a>' for name in names)
-            + '</nav>')
+            f'{links}</nav>')
 
 def listing(items, title, url, total, pager, category, section, names):
     index_url, body_prefix = SEARCH_PATHS[section]
@@ -418,7 +418,9 @@ def build():
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
                            "url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')
-            front = media.news_front(news_items, SEARCH_PATHS["news"][0])
+            published_categories = {item["category"] for item in news_items}
+            genres = categories("news", (name for name in CATS if name in published_categories), homepage=True)
+            front = media.news_front(news_items, SEARCH_PATHS["news"][0], genres)
             html=html.replace("<!--news:masthead-->", news_masthead("/"))
             html=html.replace("<!--news:content-->", "<!--news:start-->"+front+"<!--news:end-->")
 

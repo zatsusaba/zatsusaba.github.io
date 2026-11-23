@@ -1,7 +1,7 @@
 (() => {
   const { measurement, section } = document.currentScript.dataset;
   const preferenceKey = 'reader-metrics-consent';
-  const actions = new Set(['news_next_article', 'featured_video', 'related_article', 'related_video']);
+  const actions = new Set(['news_next_article', 'related_article', 'related_video']);
   const disableKey = 'ga-disable-' + measurement;
   let enabled = false;
   let tagLoaded = false;

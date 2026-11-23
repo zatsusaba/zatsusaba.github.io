@@ -278,21 +278,21 @@ def news_front(news_items, category_slugs=None):
         '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-at-desk.webp" '
         'width="1672" height="941" alt="丸窓と地球儀のある秘密の部屋で、キュウちゃんが新聞の切り抜きを手に、唇に指を当ててほほ笑む。" fetchpriority="high"></picture>'
         '<div class="news-desk-copy">'
-        '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>'
-        '<p class="news-desk-description">海外で検索が急上昇した話題を、現地の発表や報道をもとに日本語で読み解く。</p>'
-        '<div class="news-desk-actions"><a class="news-archive-cta" href="#headlines">新着記事を読む</a>'
-        '<a class="news-trends-cta" href="#trends">各国の急上昇を見る</a></div></div></div>'
+        '<h1 id="news-title">世界の<em>“今”</em>がわかる！</h1>'
+        '<p class="news-desk-description">話題の海外ニュースをお届けします</p></div></div>'
     )
-    regions = (("US", "米国"), ("GB", "英国"), ("KR", "韓国"), ("JP", "日本"))
-    region_links = "".join(
-        f'<a href="https://trends.google.com/trending?geo={code}&amp;hl=ja" '
-        f'aria-label="{name}の急上昇をGoogle トレンドで見る">{name}</a>'
-        for code, name in regions
+    # Category IDs belong to Trending now, whose IDs differ from Google Trends Explore.
+    genres = ((4, "エンタメ"), (17, "スポーツ"), (6, "ゲーム"), (5, "グルメ"), (18, "テクノロジー"))
+    trend_links = "".join(
+        f'<a href="https://trends.google.com/trending?geo=JP&amp;hl=ja&amp;category={code}" '
+        f'aria-label="日本の{name}の急上昇検索をGoogle トレンドで見る">{name}</a>'
+        for code, name in genres
     )
     trends = (
-        '<nav class="news-trend-regions" id="trends" aria-label="各国の急上昇検索">'
-        '<span class="news-trend-source">Google トレンドで見る</span>'
-        f'<div>{region_links}</div></nav>'
+        '<nav class="news-trend-genres" id="trends" aria-labelledby="jp-trends-label">'
+        '<div class="news-trend-heading"><strong id="jp-trends-label">日本の急上昇ワード</strong>'
+        '<span>Google トレンド</span></div>'
+        f'<div class="news-trend-links">{trend_links}</div></nav>'
     )
     published_categories = {article["category"] for article in items}
     category_links = "".join(

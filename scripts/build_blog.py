@@ -16,9 +16,9 @@ import appliance_total
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"_site"
 BASE="https://zatsusaba.github.io"
-NEWS_NAME = "世界トレンド前線"
+NEWS_NAME = "トレンド前線"
 NEWS_ICON = "/assets/news/frontline-mark.png"
-NEWS_SHARE_IMAGE = "/assets/news/frontline-share.webp"
+NEWS_SHARE_IMAGE = "/assets/news/frontline-kyu-at-desk.webp"
 # Current Japanese civil time (UTC+09:00), independent of the runner timezone.
 JST=timezone(timedelta(hours=9), "Asia/Tokyo")
 CATS=dict(zip(["食べ物","人体","動物","自然","宇宙","歴史","心理","お金","身近なモノ"],["food","body","animals","nature","space","history","psychology","money","everyday"]))
@@ -376,8 +376,7 @@ def build():
                 token=token_path.read_text(encoding="utf-8-sig").strip()
                 check(re.fullmatch(r"[A-Za-z0-9_-]+",token),"Invalid public Google verification value")
                 html=html.replace("</head>",f'<meta name="google-site-verification" content="{token}"></head>')
-            share_image = "/assets/news/frontline-kyu-at-desk.webp"
-            html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, share_image))}">')
+            html=html.replace("<!--news:share-image-->", f'<meta property="og:image" content="{e(urljoin(BASE, NEWS_SHARE_IMAGE))}">')
             site_schema = {"@context":"https://schema.org","@type":"WebSite","name":NEWS_NAME,
                            "url":BASE+"/"}
             html=html.replace("</head>",'<script type="application/ld+json">'+json.dumps(site_schema,ensure_ascii=False)+'</script></head>')

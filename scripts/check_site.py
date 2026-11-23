@@ -89,9 +89,10 @@ def check_homes(home, classic, streams):
     assert 'class="news-desk-description"' not in home
     assert not RegionLinks(home, ".news-desk").links
     assert not any("trends.google.com" in link for link in news_page.links) and 'id="trends"' not in home
-    channel = RegionLinks(home, ".channel-strip")
+    channel = RegionLinks(home, "#zatsusaba")
     assert channel.links == ["/zatsusaba/"] and news_page.links.count("/zatsusaba/") == 1
-    assert "雑学サバイバル" in channel.labels[0] and "YouTube" in channel.labels[0]
+    assert '<h2 id="channel-title">雑学サバイバル</h2>' in home
+    assert "雑学サバイバルを見る" in channel.labels[0] and 'class="channel-strip"' not in home
     assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
 
     assert "/" not in RegionLinks(classic, ".home-copy").links

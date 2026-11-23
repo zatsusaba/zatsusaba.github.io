@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/blog.css">
   <link rel="stylesheet" href="/media.css">
-  <link rel="stylesheet" href="/news-home.css">
+  <link rel="stylesheet" href="/news-home.css?v=channel-feature">
   <script>
     function openClassicSection() {
       if (["#today", "#about", "#home"].includes(location.hash)) {
@@ -35,14 +35,15 @@
   <!--news:masthead-->
   <main id="main" class="home-page">
     <!--news:content-->
-    <section class="channel-strip" id="zatsusaba" aria-labelledby="channel-title">
-      <a class="channel-strip-link" href="/zatsusaba/">
-        <img class="channel-strip-logo" src="/assets/logo-cut.png" alt="" width="64" height="64" loading="lazy">
-        <div class="channel-strip-copy">
-          <p class="channel-strip-kicker">YouTubeチャンネル</p>
-          <h2 id="channel-title">雑学サバイバル</h2>
+    <section class="channel-feature" id="zatsusaba" aria-labelledby="channel-title">
+      <h2 id="channel-title">雑学サバイバル</h2>
+      <a class="channel-feature-card" href="/zatsusaba/">
+        <img src="/assets/hero-duo-card.webp" width="768" height="512" loading="lazy" alt="キュウちゃんと太郎">
+        <div class="channel-feature-copy">
+          <h3>マンガで雑学。</h3>
+          <p>キュウちゃんと太郎が、身近な疑問や映画・ゲームの「もしも」を漫画で読み解きます。動画と雑学ブログも楽しめます。</p>
+          <strong>雑学サバイバルを見る <span aria-hidden="true">→</span></strong>
         </div>
-        <span class="channel-strip-cta">公式サイトへ <span aria-hidden="true">→</span></span>
       </a>
     </section>
   </main>

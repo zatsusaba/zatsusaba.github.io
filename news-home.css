@@ -474,6 +474,16 @@ header.news-masthead {
 .classic-home > .comic-home { padding-top: clamp(14px, 1.5vw, 22px); }
 .classic-home > .creator-section { padding-bottom: clamp(28px, 3.5vw, 48px); }
 .classic-home > .fantasia-section { padding-top: 12px; }
+.classic-home > :is(.creator-section, .fantasia-section) {
+  background-color: #101011;
+  color: #f5f4ef;
+}
+.classic-home .fantasia-card {
+  background-color: #1c1b20;
+  color: #f5f4ef;
+}
+.classic-home .fantasia-copy :is(h3, strong) { color: inherit; }
+.classic-home :is(.creator-heading, .fantasia-heading) { margin-top: 0; }
 
 @media (min-width: 701px) and (max-width: 1050px) {
   .home-copy h2#hero-title { font-size: clamp(52px, 7vw, 76px); }

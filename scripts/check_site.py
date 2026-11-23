@@ -95,7 +95,7 @@ def check_homes(home, classic, streams):
     assert 'id="zatsusaba"' in home, "Existing /#zatsusaba links should reach the channel entrance"
 
     assert "/" not in RegionLinks(classic, ".home-copy").links
-    assert RegionLinks(classic, ".sister-news").links == ["/"]
+    assert RegionLinks(classic, ".fantasia-section").links.count("/") == 1
     assert classic.index('id="about"') < classic.index('id="sister-news-title"') < classic.index('id="novel-title"')
     assert "オープニング動画" not in classic
     assert not set(classic_page.links).intersection(a["url"] for a in streams["news"])

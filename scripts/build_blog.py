@@ -158,7 +158,7 @@ def page(title,desc,url,body,image=None,article=False):
     theme = "classic-inner" if classic else "news-inner"
     view = "article-view" if article else "archive-view"
     brand = "雑学サバイバル" if classic else NEWS_NAME
-    icon = "/assets/logo-cut.png" if classic else NEWS_ICON
+    icon = "/assets/logo-cut.png" if classic else "/assets/news/frontline-favicon-red.svg"
     robots = '<meta name="robots" content="max-image-preview:large">' if article and url.startswith("/news/") else ""
     story_style = '<link rel="stylesheet" href="/news-article.css">' if article and url.startswith("/news/") else ""
     return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">

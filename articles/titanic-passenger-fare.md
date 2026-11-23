@@ -10,6 +10,7 @@ tags: [タイタニック, 船旅, 歴史]
 image: /assets/blog/titanic-passenger-fare/thumbnail.webp
 image_alt: "大西洋航路の客船と切符を組み合わせたイラスト"
 show_cover: false
+youtube: CoGOOYvZcpQ
 conditions: "二等客一人の支払例で、等級全体の一律料金を示すものではありません。"
 sources:
   - title: "米国国立公文書館：ルーシー・リズデールの切符と荷物の記録"

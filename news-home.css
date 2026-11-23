@@ -82,7 +82,7 @@ header.news-masthead {
   position: absolute;
   z-index: -1;
   inset: 0 0 0 auto;
-  width: min(88%, 90rem);
+  width: min(96%, 90rem);
   pointer-events: none;
 }
 .news-cover-art img {
@@ -96,7 +96,7 @@ header.news-masthead {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(var(--news-cover-tint)) 0%, rgb(var(--news-cover-tint) / .92) 22%, rgb(var(--news-cover-tint) / .68) 35%, transparent 60%);
+  background: linear-gradient(90deg, rgb(var(--news-cover-tint)) 0%, rgb(var(--news-cover-tint) / .94) 20%, rgb(var(--news-cover-tint) / .74) 32%, transparent 52%);
 }
 .news-desk-copy {
   width: fit-content;
@@ -437,7 +437,7 @@ header.news-masthead {
   .news-masthead .news-nav a[href$="#blog-search"] { gap: .4em; padding-inline: .5em; }
   .news-masthead .news-nav a { white-space: nowrap; }
   .news-desk {
-    padding-top: clamp(8.25rem, 44vw, 17.25rem);
+    padding-top: clamp(7.7rem, 40vw, 16rem);
     padding-bottom: clamp(1.15rem, 3.7vw, 2rem);
     min-height: 0;
   }

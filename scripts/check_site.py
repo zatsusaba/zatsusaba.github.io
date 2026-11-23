@@ -83,7 +83,7 @@ def check_homes(home, classic, streams):
     assert [url for url in news_links if url in article_urls] == [a["url"] for a in front_articles]
     assert not set(news_page.links).intersection(a["url"] for a in streams["blog"])
     assert '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>' in home
-    cover_path = "/assets/news/frontline-kyu-secret-room.webp"
+    cover_path = "/assets/news/frontline-kyu-at-desk.webp"
     assert any(src == cover_path and alt for src, alt in news_page.images)
     assert f'<meta property="og:image" content="{BASE}{cover_path}">' in home
     assert {f"https://trends.google.com/trending?geo={geo}&hl=ja" for geo in ("US", "GB", "KR", "JP")} <= set(RegionLinks(home, "#trends").links)

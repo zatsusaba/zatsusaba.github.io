@@ -274,12 +274,14 @@ def news_story(article, *, lead=False):
 def news_front(news_items, category_slugs=None):
     items = [article for article in news_items if not article.get("archive_only")]
     desk = (
-        '<div class="news-desk news-section-head"><div class="news-desk-copy">'
+        '<div class="news-desk news-section-head">'
+        '<picture class="news-cover-art"><img src="/assets/news/frontline-kyu-cover.webp" '
+        'width="1672" height="941" alt="夕暮れの新聞スタンドで、コウモリがぶら下がる新聞から顔を上げて笑うキュウちゃん" fetchpriority="high"></picture>'
+        '<div class="news-desk-copy">'
         '<h1 id="news-title"><span>世界はいま、</span><span>何を検索している？</span></h1>'
         '<p class="news-desk-description">海外で検索が急上昇した話題を、現地の発表や報道をもとに日本語で読み解く。</p>'
         '<div class="news-desk-actions"><a class="news-archive-cta" href="#headlines">新着記事を読む</a>'
-        '<a class="news-trends-cta" href="#trends">各国の急上昇を見る</a></div></div>'
-        '<div class="news-desk-signal" aria-hidden="true"></div></div>'
+        '<a class="news-trends-cta" href="#trends">各国の急上昇を見る</a></div></div></div>'
     )
     regions = (("US", "米国"), ("GB", "英国"), ("KR", "韓国"), ("JP", "日本"))
     region_links = "".join(

@@ -6,6 +6,7 @@ window.YOUTUBE_VIDEOS = [
     "date": "2026-11-25",
     "format": "長尺動画",
     "genres": [
+      "特撮の雑学",
       "もしもシリーズ"
     ],
     "characters": [],
@@ -20,6 +21,7 @@ window.YOUTUBE_VIDEOS = [
     "date": "2026-11-24",
     "format": "長尺動画",
     "genres": [
+      "特撮の雑学",
       "もしもシリーズ"
     ],
     "characters": [],
@@ -34,6 +36,7 @@ window.YOUTUBE_VIDEOS = [
     "date": "2026-11-23",
     "format": "長尺動画",
     "genres": [
+      "特撮の雑学",
       "もしもシリーズ"
     ],
     "characters": [],
@@ -163,6 +166,7 @@ window.YOUTUBE_VIDEOS = [
     "date": "2026-11-16",
     "format": "長尺動画",
     "genres": [
+      "特撮の雑学",
       "もしもシリーズ"
     ],
     "characters": [],

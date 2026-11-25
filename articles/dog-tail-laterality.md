@@ -11,9 +11,6 @@ conditions: "2007年の研究で実験箱に入れた30頭の集団傾向と、2
 image: /assets/blog/dog-tail-laterality/cover-quality.webp
 image_alt: "後ろ斜めから見た犬。尾と毛並みを丁寧に描いたイラスト。"
 show_cover: false
-youtube: dH9EfEEZYfc
-youtube_title: '【漫画】犬のしっぽ #漫画 #雑学 #動物'
-youtube_format: short
 sources:
   - title: 'Quaranta, Siniscalchi & Vallortigara (2007), Asymmetric tail-wagging responses by dogs to different emotive stimuli, Current Biology 17, R199–R201'
     url: https://dericbownds.net/uploaded_images/vallortigara.pdf

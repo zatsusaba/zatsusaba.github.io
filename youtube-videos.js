@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "wAL27g9WiV8",
+    "title": "もしも仮面ライダーが現実にいたら？【面白い雑学】",
+    "publishedAt": "2026-11-25T04:00:09Z",
+    "date": "2026-11-25",
+    "format": "長尺動画",
+    "genres": [
+      "もしもシリーズ"
+    ],
+    "characters": [],
+    "description": "仮面ライダーが本当にいたら、どうなる？\n\n00:00 オープニング\n00:13 ライダーバイクは実現できるか？\n03:29 変身ベルトで変身すると\n06:14 ライダーキックはどのぐらい強いのか\n08:50 ライダージャンプをしたら？\n10:33 悪の組織の給料\n12:04 ショッカーの謎\n14:07 ライダースーツは実現できるか\n16:17 ライダーになったら聴覚はどうなる？\n18:55 変身ポーズの謎\n20:36 まとめ\n\n■ 注意\n\n・作品の設定の数字は、東映の公式図鑑などに書かれた値です（作品・資料ごとに違います）。\n・到着時間や着地の速さは、条件を決めて計算した概算です。\n・この動画は東映・石森プロ・バンダイほか公式とは関係ありません。絵はすべてオリジナルです。\n\n■ 主な出典\n東映 仮面ライダー公式図鑑 https://www.kamen-rider-official.com/zukan/\ne-Gov法令検索（道路交通法・刑法・刑事訴訟法・銃刀法・軽犯罪法） https://laws.e-gov.go.jp/\n警察庁（生活道路の速度・ロケ撮影の事例集・110番映像通報） h",
+    "durationSeconds": 1290.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
     "id": "p35_PNlzDPw",
     "title": "もしもスーパー戦隊が現実にいたら？【面白い雑学】",
     "publishedAt": "2026-11-24T00:48:58Z",
@@ -157,20 +171,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
-    "id": "iSGsyd9lMLY",
-    "title": "風邪はネギ？ #雑学 #面白い #風邪",
-    "publishedAt": "2026-11-16T08:42:39Z",
-    "date": "2026-11-16",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "体調を崩した太郎に、キュウちゃんが長ネギを持ってきた！\n昔から言われる「ネギを首に巻く」民間療法。実際に風邪が治るのでしょうか？\n\nネギを首に巻くだけで風邪が治るという確かな臨床的根拠はありません。お尻にネギを挿すことにも治療効果は確認されておらず、けがや感染につながる危険があります。絶対に真似しないでください。\n\n参考資料：\nCDC｜Manage Common Cold（2026年3月11日）\nhttps://www.cdc.gov/common-cold/treatment/index.html\nMerck Manual｜Rectal Foreign Bodies（2025年4月）\nhttps://www.merckmanuals.com/professional/gastrointestinal-disorders/bezoars-and-foreign-bodies/rectal-foreign-bodies\n週刊女性PRIME｜風邪対策の新常識（医師の解説）\nhttps://www.jprime.jp/articles/print/25908\n\n#雑学 #面白い #風邪",
-    "durationSeconds": 16.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "0e2SQELlvNo",
     "title": "ゼルダの伝説 時のオカリナに出てくるものは存在するのか？【ゲームの雑学】",
     "publishedAt": "2026-11-15T10:30:13Z",
@@ -225,20 +225,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "オンラインゲームで出会い、交際や結婚につながる人もいるんです。\nでもキュウちゃんが求めるのは、屈強な戦士……。\nまさか恋人じゃなくて非常食！？\n\n参考資料：コロプラ×Skyfall「データで見る、ゲームから生まれる新しいつながり──友情、恋愛、そして結婚まで」（2025年8月26日）\nhttps://pinmark.colopl.co.jp/entries/55249774\n\n#雑学 #面白い #恋愛",
     "durationSeconds": 12.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "qyCPGCFQZ9M",
-    "title": "GTAの主人公がやってること、現実なら懲役は何年？",
-    "publishedAt": "2026-11-14T10:18:02Z",
-    "date": "2026-11-14",
-    "format": "長尺動画",
-    "genres": [
-      "ゲームの雑学"
-    ],
-    "characters": [],
-    "description": "GTA6発売記念、グラセフの面白い雑学いってみよう！\n\n「はたして、GTAの主人公がやっていることは、現実の日本なら懲役何年になるのでしょうか？」\n車を盗む罪から、銀行強盗、そしてフロリダの終身刑まで。\n吸血鬼のキュウちゃんと一緒に、GTAの罪を数えていこう！\n\n00:00 オープニング\n00:42 「グランド・セフト・オート」とは、どういう意味か\n01:18 「懲役」は、もうないのか\n02:07 止まっている車を盗んだら、何年か\n02:36 盗んだ車を買ったら、何年か\n03:10 乗っている人から車を奪ったら、何年か\n03:53 スピード違反と信号無視は、何年か\n04:28 無免許に飲酒、何年か\n05:08 罰金を払えなかったら、どうなるのか\n05:50 パトカーから逃げると、罪になるのか\n06:33 ほかの車にぶつけたら、何年か\n07:27 人をはねたら、何年か\n08:18 銃を持っているだけで、何年か\n08:58 銀行強盗は、何年か\n09:35 罪がいくつも重なったら、足し算になるのか\n10:20 GTA主人公の合計は、何年か\n11:09 逃げ切れば、罪は消えるのか\n11:55 ",
-    "durationSeconds": 854.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "YiB2eRdDi8w",
@@ -549,20 +535,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "UsdNxnHLHlc",
-    "title": "四角いうんち #雑学 #面白い #うんち",
-    "publishedAt": "2026-11-09T09:00:31Z",
-    "date": "2026-11-09",
-    "format": "Shorts",
-    "genres": [
-      "自然の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "ウォンバットの四角いうんち。出口で四角くなるのではなく、腸の中で角ができます。\nコモンウォンバットを対象とした研究では、腸壁の硬さの違いや腸の動き、乾燥が形づくりに関係すると考えられています。すべてが完全な立方体というわけではありません。\n\n出典：University of Tasmania「Scientists get to the bottom of wombat cubed poo mystery」\nhttps://www.utas.edu.au/about/news-and-stories/articles/2021/scientists-get-to-the-bottom-of-wombat-cubed-poo-mystery2\n\n#雑学 #面白い #ウォンバット",
-    "durationSeconds": 13.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "dCZCZs_M2lw",
     "title": "船の観覧車 #雑学 #面白い #船",
     "publishedAt": "2026-11-09T06:00:21Z",
@@ -700,18 +672,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "habmI89gfaA",
-    "title": "面白い雑学300選！聞き流しでわかる人体の不思議【作業用】",
-    "publishedAt": "2026-11-07T10:06:55Z",
-    "date": "2026-11-07",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "まばたき、涙と鼻水、耳で声を聞き分ける仕組み、心臓の電気信号、脳の不思議まで、人の体の「なぜ？」を300個まとめた作業用の雑学です。目、耳、鼻と舌、皮膚、骨と筋肉、心臓、体温と個人差、脳の全12章で構成しています。\n\n作業や勉強のBGM代わりに、流しっぱなしで聞けます。\n\n【チャプター】\n\n0:00 オープニング\n0:20 見え方の話\n9:21 目のしくみと光\n18:01 耳と声\n27:06 バランスと体の位置\n36:26 鼻と舌と口\n45:20 皮膚\n54:21 髪と爪と体の表面\n1:02:10 骨と関節\n1:10:22 筋肉\n1:18:37 呼吸と心臓\n1:27:09 体温と成長\n1:35:17 脳の不思議\n\n※「諸説あり」「未解明」の話題は、そう明記しています。研究によって考え方が変わることもあります。体の不調や健康の判断は、医師にご相談ください。\n\n※読み上げには、自分の声を学習させたAIを活用しております。\n\n#雑学 #聞き流し #作業用",
-    "durationSeconds": 6255.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
     "id": "nyYV2nWD8Jo",
     "title": "血管の不思議 #漫画 #雑学 #血管",
     "publishedAt": "2026-11-07T07:34:04Z",
@@ -768,18 +728,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "cbkPwUDroPs",
-    "title": "面白い雑学300選！聞き流しでわかる、恋愛と人間関係の「なんで？」【作業用】",
-    "publishedAt": "2026-11-06T10:58:18Z",
-    "date": "2026-11-06",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "恋愛と人間関係にまつわる「なんで？」「本当？」300個を、心理学の研究をもとに、落ち着いた声で順番に答えていきます。\n作業や家事、勉強のおともに、聞き流してください。途中から聞いても大丈夫です。\n\n既読スルーの理由は、送った側の想像どおり？　好意は、自分が思うほど伝わっている？\nけんかで黙る側と追いかける側は、性別で決まる？　友達の人数で、幸せは分かる？\n出会い、第一印象、メッセージ、けんかと仲直り、別れ、友情、家族、人生の変化まで。\n\n【チャプター】\n\n0:00 オープニング\n0:00:42 出会い方と恋の始まり\n0:09:52 一印象と印象の更新\n0:19:31 意の読み違いと片思い\n0:29:06 メッセージとデジタルの距離\n0:38:23 デートと関係の進展\n0:47:59 相性と価値観\n0:57:32 選び方と期待\n1:07:07 交際が続く理由\n1:16:25 日常生活と二人の役割\n1:25:50 一緒の時間と離れる時間\n1:35:21 すれ違いとけんか\n1:44:21 謝罪と仲直り\n1:53:12 別れの決断と立ち直り\n2:02:16 友情と身近な関係\n2:11:18 人",
-    "durationSeconds": 8442.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
     "id": "JhJUAV0pbwU",
     "title": "カシューナッツの謎 #漫画 #雑学 #カシューナッツ",
     "publishedAt": "2026-11-06T08:00:31Z",
@@ -832,18 +780,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "パイナップルって、木になる果物じゃないの!?\n\n実はパイナップルは草の仲間。地面から伸びる株の真ん中に実ができます。\n\n毎日パイナップルを食べようと、キュウちゃんが育て始めたのは……まさかのヤシの木!?\n\n#漫画 #雑学 #パイナップル",
     "durationSeconds": 21.0,
     "formatEvidence": "YouTube公式Shortsページのcanonicalとog:url：https://www.youtube.com/shorts/q5FluB5f-b8"
-  },
-  {
-    "id": "1yh7gjqk0wI",
-    "title": "面白い雑学100選｜食べ物の「なんで？」【聞き流し・作業用】",
-    "publishedAt": "2026-11-05T10:00:29Z",
-    "date": "2026-11-05",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "食べ物にまつわる「なんで？」「本当？」100個を、落ち着いた声で順番に答えていきます。\n作業や家事、勉強のおともに、聞き流してください。途中から聞いても大丈夫です。\n\nマヨネーズはなぜ分離しにくい？ケチャップが急にドッと出るのはなぜ？\n白身魚のサケの身が赤いのは？ちくわの穴はどうしてできる？\n台所の調味料から、お菓子と飲み物、毎日の食材まで、答えと理由までお届けします。\n\n【チャプター】\n00:00 あいさつ\n00:22 調味料と台所\n19:03 お菓子と飲み物\n36:26 食材と料理\n\n【参考にした情報】\n各雑学は、農林水産省などの公的機関、業界団体、食品メーカーの公式情報、研究資料をもとに確認しています。商品や条件によって例外がある話は、本編で条件も含めてお伝えしています。\n\n※この動画の語りは、チャンネル主の声を学習したAI音声を活用しています。\n\n#雑学 #聞き流し #面白い",
-    "durationSeconds": 3583.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "66RjJhYGVtQ",
@@ -1461,17 +1397,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "ozlCL01vD48",
-    "title": "ホストは顔じゃない  #漫画 #コメディ #ホスト",
-    "publishedAt": "2026-10-26T17:00:25Z",
-    "date": "2026-10-27",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ホストは顔じゃないんだ！\n\n🔻漫画本編こちら\nhttps://youtu.be/h_WzcHxWA98\n\n#漫画 #コメディ #ホスト",
-    "durationSeconds": 13.0
-  },
-  {
     "id": "dtkBeKpLwT0",
     "title": "ごま油の使い方 #漫画 #雑学 #ごま油",
     "publishedAt": "2026-10-26T12:29:12Z",
@@ -1749,17 +1674,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "z5Ia782xPMs",
-    "title": "声が聞こえる 🎧💫【Short MV】 #music #musicvideo",
-    "publishedAt": "2026-10-22T14:00:03Z",
-    "date": "2026-10-22",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "「君に、君に、また会いたい。」\n\n忘れられない声と、もう一度会いたい気持ち。\n\n雑学サバイバルオリジナル曲『声が聞こえる』をShort MVでお届けします。\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 26.0
-  },
-  {
     "id": "QwwtfFthDdU",
     "title": "危険なPHP公開 #漫画 #雑学 #PHP",
     "publishedAt": "2026-10-22T12:00:13Z",
@@ -1774,32 +1688,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "GOt1pmcWoew",
-    "title": "話題のPHPとは #漫画 #雑学 #PHP",
-    "publishedAt": "2026-10-22T11:00:35Z",
-    "date": "2026-10-22",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "PHPに重大な脆弱性が発見され、修正版が公開されました。\n\n悪用されると、サーバーを勝手に操作され、情報が盗まれる恐れもあります。\n\n【利用者ができること】\n・利用中のサイトの公式発表を確認\n・クレジットカードの利用明細を確認\n・身に覚えのない請求はカード会社へ連絡\n\nサイトの停止が必ずしも情報流出を意味するわけではありません。\n\nサイト管理者はPHPの修正版への更新を確認してください。\n\n【出典】\nPHP公式\nhttps://www.php.net/\n\n#漫画 #雑学 #PHP",
-    "durationSeconds": 37.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "t_NS2tcnZlI",
-    "title": "【雑学漫画】世界が警戒する「PHPの脆弱性」何がヤバい？私たちへの影響と対処法",
-    "publishedAt": "2026-10-22T09:50:29Z",
-    "date": "2026-10-22",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "2026年10月、PHPに重大な脆弱性が見つかり、一部のWebサービスが予防的に停止。\n\nPHPって何？ 何が危険なの？ 個人情報やクレジットカード情報は大丈夫？\n\n今回は、太郎とAIマッドが、PHPの仕組み、私たちへの影響、今できる対処法を漫画でわかりやすく解説します！\n\nさらに、修正を含むソフトが予定より早く公開されて問題になった理由や、PHP誕生の意外な雑学も紹介！\n\n【参考・出典】\n\nPHP公式（脆弱性・修正版）\nhttps://www.php.net/\n\nPHP Foundation（修正版の先行公開をめぐる経緯）\nhttps://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/\n\nAWS（悪用試行の観測報告）\nhttps://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to",
-    "durationSeconds": 323.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
     "id": "6FEpl-sZLfk",
     "title": "カチカチ砂糖 #漫画 #雑学 砂糖",
     "publishedAt": "2026-10-22T08:09:27Z",
@@ -1812,17 +1700,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "上白糖は湿気だけでなく、乾燥によっても固まります。\n乾燥で固まった場合は、霧吹きで少し水分を補い、密閉して数時間置くとほぐれやすくなります。\n普段は湿度変化を避け、密閉容器で保存しましょう。\n\n出典：\n農林水産省「砂糖の種類と製造方法」\nhttps://www.maff.go.jp/j/pr/aff/2111/spe1_01.html\n\n#漫画 #雑学 #砂糖",
     "durationSeconds": 18.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "GxzUSbQHEAQ",
-    "title": "ソーラン節自由形ダダダンス 🌊🔥【Short MV】 #music #musicvideo #ソーラン節",
-    "publishedAt": "2026-10-22T04:30:00Z",
-    "date": "2026-10-22",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ソーラン節を、自由形でダダダンス！\n和の雰囲気とネオンが弾ける、オリジナル曲『ソーラン節自由形ダダダンス』のShort MVです。\n\nフルMVは関連動画から！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 31.0
   },
   {
     "id": "y2mVrDcwz_U",
@@ -1853,31 +1730,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "QH_u7iTs9Y4",
-    "title": "【オリジナル曲】声が聞こえる / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-21T22:00:32Z",
-    "date": "2026-10-22",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "雑学サバイバルのオリジナル曲『声が聞こえる』のフルMVです。\n\n🔻マンガ本編はこちら\nhttps://youtu.be/78rL0ukyDw0\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 132.0
-  },
-  {
-    "id": "78rL0ukyDw0",
-    "title": "【雑学漫画】ちょっとボケてるモンスター「ボケモン」",
-    "publishedAt": "2026-10-21T14:35:46Z",
-    "date": "2026-10-21",
-    "format": "長尺動画",
-    "genres": [
-      "雑学マンガ"
-    ],
-    "characters": [],
-    "description": "ポケモン30周年おめでとうございます。\n\n【ストーリー】\n\n扉の向こうは、なんだか見覚えのあるゲームの世界！？\n元の世界に帰るため、太郎はヒトシとボケモンマスターを目指すことに。\nでも、相棒のボケチュウも、博士も、出会う連中も様子がおかしい……！\n笑いあり、バトルあり、友情ありの冒険が始まる！\n\n高評価コメントお願いします♪\n\n※本動画は非公式のパロディ作品です。ポケットモンスター原作および公式とは一切の関係がありません\n\n#漫画 #コメディ #パロディ",
-    "durationSeconds": 616.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
     "id": "60PB52Hmf-s",
     "title": "ケチャップの謎 #漫画 #雑学 #ケチャップ",
     "publishedAt": "2026-10-21T09:14:49Z",
@@ -1890,31 +1742,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "オムライスにハートを描こうとしたキュウちゃん。\nところが、ケチャップから謎の水が！？\n\n実はこれ、ケチャップの液体部分が分離したもの。\n\n分離自体は品質に問題なく、容器を揉んで混ぜれば元の状態に戻せます。\n開封後はキャップを上にして冷蔵保存するのがおすすめ！\n\n無事にハートを描けたキュウちゃんだったけど、今度はケチャップをかけすぎて……！？\n\n#漫画 #雑学 #ケチャップ",
     "durationSeconds": 12.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "smYE0MUvWvU",
-    "title": "AIの不思議 #漫画 #雑学 #生成AI",
-    "publishedAt": "2026-10-20T23:12:31Z",
-    "date": "2026-10-21",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "生成AIで作られた動画には、身体の形や動きに不自然な部分が現れることがあります。\n\nただし、見た目だけでAIと断定するのは危険。\n投稿元や情報源も確認することが大切です。\n\nそして、リンリンはまさかの6本腕ダンスに挑戦！？\n\n▶ ソーラン節自由形の長尺本編は関連動画から！\n\n生き延びる方法は、雑学とユーモアだけ！\n雑学サバイバル【漫画】\n\n#漫画 #雑学 #生成AI",
-    "durationSeconds": 13.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "7nGB6fqr--c",
-    "title": "【オリジナル曲】ソーラン節自由形ダダダンス / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-20T22:43:18Z",
-    "date": "2026-10-21",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ソーラン節自由形で踊りだせ！\n\n雑学サバイバルの漫画「ソーラン節自由形」編から、音楽と映像を楽しめるMVをお届けします。\n\n気に入ったら高評価・チャンネル登録・コメントよろしくお願いします！\n\n#ソーラン節自由形 #オリジナル曲 #musicvideo",
-    "durationSeconds": 104.0
   },
   {
     "id": "ITVBv79Jsgs",
@@ -2029,17 +1856,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "Zg5dEbQbCaI",
-    "title": "確率変動★ST 🎰🌈【Short MV】 #music #musicvideo #確変",
-    "publishedAt": "2026-10-19T06:00:25Z",
-    "date": "2026-10-19",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🎰🌈 サービスタイム！ST ST！\n\n『確率変動★ST』のShort MV！\nパチンコの確変みたいな興奮とスリルを詰め込んだオリジナル楽曲！\n\n高評価・チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 14.0
-  },
-  {
     "id": "p7elpljEiyw",
     "title": "火傷した時は #漫画 #雑学 #火傷",
     "publishedAt": "2026-10-19T03:57:47Z",
@@ -2068,17 +1884,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "tybjIV5jw2w",
-    "title": "【オリジナル曲】確率変動★ST / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-18T22:00:28Z",
-    "date": "2026-10-19",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "確率変動★ST🌈🎰\n\n『雑学サバイバル』が贈る、興奮とスリル全開のオリジナル楽曲！\n\n🎵 気に入ったら高評価・チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 107.0
-  },
-  {
     "id": "xczxX1tOh7U",
     "title": "オバケ屋敷で手をつないだら…😱 #漫画 #雑学 #恋愛",
     "publishedAt": "2026-10-18T14:45:39Z",
@@ -2093,17 +1898,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "J27b7eo-Haw",
-    "title": "ドパドパ★ドーパミン 💖🧠【Short MV】#music #musicvideo #ドパガキ",
-    "publishedAt": "2026-10-18T13:00:30Z",
-    "date": "2026-10-18",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ドパドパ★ドーパミン！！💖🧠\n\nドパガキランドから飛び出した、テンション限界突破のオリジナルソング！\n\n一度聴いたら頭から離れない！？\nミンのドパドパな世界を楽しんでね！💕\n\n🎵 フルMVも公開中！\n▶ チャンネルからチェック！\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 15.0
-  },
-  {
     "id": "YI7XplRUUB0",
     "title": "かき氷で頭がキーン！ #漫画 #雑学 #かき氷",
     "publishedAt": "2026-10-18T11:00:23Z",
@@ -2116,17 +1910,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "かき氷を食べた瞬間、太郎の頭に激痛が！？\n\n頭がキーンとなる現象の正体は「冷刺激頭痛」。\n実は脳が凍っているわけじゃないんです！\n\n#漫画 #雑学 #かき氷",
     "durationSeconds": 22.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "rM0qWqRqAlc",
-    "title": "【オリジナル曲】ドパドパ★ドーパミン / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-18T10:18:37Z",
-    "date": "2026-10-18",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "ドパドパ★ドーパミン！！💖🧠\n\n一度聴いたら、頭から離れない！？\nドパガキランドから飛び出した、ハイテンションなオリジナルソング！\n\n可愛さ全開！テンション限界突破！\nミンと一緒に、ドパドパな世界へ飛び込もう！💕\n\n🎵 曲名：ドパドパ★ドーパミン\n🎬 Music Video：雑学サバイバル\n\n気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n#オリジナル曲 #musicvideo #ドパガキ",
-    "durationSeconds": 158.0
   },
   {
     "id": "9NSdlrlWgR8",
@@ -2255,20 +2038,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "hDbxB95aOUs",
-    "title": "無敵の吸血鬼の弱点 #漫画 #雑学",
-    "publishedAt": "2026-10-16T13:44:37Z",
-    "date": "2026-10-16",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "どんな攻撃も効かない！？ 最強の吸血鬼・キュウちゃん！\n\n太郎があらゆる倒し方を考えるも、全部通用しない……。\n\nところが、そんな無敵の吸血鬼にも意外な弱点が！？\n\n人間も空腹になると集中力や判断力が低下する。\n\n#漫画 #雑学 #吸血鬼",
-    "durationSeconds": 39.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "hZm1XX4p8CQ",
     "title": "恐怖はダンスで #漫画 #雑学",
     "publishedAt": "2026-10-16T08:43:46Z",
@@ -2281,17 +2050,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "怖すぎて体が動かなくなった経験はある？\n\nそれは「フリーズ反応」かもしれない！\n\nゾンビを目の前にした太郎の運命は……？\n\n#漫画 #野獣先輩 #inmuking",
     "durationSeconds": 28.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "CQ5iIzAewqw",
-    "title": "終わらない夜 🌙✨【Short MV】",
-    "publishedAt": "2026-10-16T06:03:03Z",
-    "date": "2026-10-16",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🌙 終わらない夜に祈るよ。\n\n世界が終わっても、君だけは離さない。\n\nゾンビに支配された世界で生き残った二人。\n絶望の夜を照らす、たったひとつの希望。\n\n✨ Kawaii Future Bass × アニメMV\n\n🎧 フルMV＆本編漫画「ゾンビ編」はチャンネルから！\n\n気に入ったら高評価＆チャンネル登録よろしく！\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 24.0
   },
   {
     "id": "r5dcXBUyg4o",
@@ -2320,17 +2078,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "壁のシミがゾンビの顔に見えた！？\n\n実は、人間の脳には曖昧な模様から顔などを見いだす「パレイドリア」という現象がある。\n\n安心した太郎だったが、隣には本物のナギゾンビが……！？\n\n#漫画 #雑学 #ゾンビ",
     "durationSeconds": 17.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "tI1KRDf4k1E",
-    "title": "【オリジナル曲】終わらない夜 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-15T22:00:07Z",
-    "date": "2026-10-16",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🌙 終わらない夜――君が僕を照らすヒカリ。\n\nゾンビに支配された終末世界。\n誰もいなくなった街で、生き残った太郎とリンコ。\n\n世界が壊れても、明日が見えなくても。\n君が隣にいるなら、きっと歩いていける。\n\n切なさと希望が交差する、Kawaii Future BassのオリジナルMusic Video。\n\n✨ 本編漫画「ゾンビ編」も雑学サバイバルで！\n🎧 気に入ったら高評価＆チャンネル登録よろしくお願いします！\n\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 174.0
   },
   {
     "id": "GpFD5oErl-M",
@@ -2375,17 +2122,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "zCU2Z7sAQuI",
-    "title": "地獄を鳴らせ 🤘🔥【Short MV】",
-    "publishedAt": "2026-10-15T06:00:07Z",
-    "date": "2026-10-15",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🔥 地獄を鳴らせ！！ 🤘\n\n轟音ギター！ 激烈シャウト！\n魂を震わせるデスメタルが炸裂！！\n\n常識をぶち壊せ。\n地獄の底まで、この音を響かせろ！\n\n🎸 雑学サバイバルのオリジナル曲！\n🔥 フルMVもチャンネルでチェック！\n\n気に入ったら高評価＆チャンネル登録よろしく！\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 20.0
-  },
-  {
     "id": "TNpvKDtWYug",
     "title": "ポテチの秘密は #漫画 #雑学",
     "publishedAt": "2026-10-15T03:05:26Z",
@@ -2412,17 +2148,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "ミスドの「ポン・デ・ザクショコラ」に太郎とリンコが挑戦！🍩\n\nもちもち生地にザクザクのチョコクランチ！\n2つの食感が楽しめるチョコドーナツ！\n\nリンコ「ひと口ちょうだい」\n太郎「いいよ」\n\n次の瞬間、ドーナツが異次元に消滅⁉\n\n食いしん坊リンコと太郎のドタバタ漫画！\n面白かったら高評価＆チャンネル登録お願いします！\n\n#漫画 #雑学",
     "durationSeconds": 20.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "L30STKne5pE",
-    "title": "【オリジナル曲】地獄を鳴らせ / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-14T22:00:11Z",
-    "date": "2026-10-15",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "🔥 地獄を鳴らせ！！ 🔥\n\n轟くギター、叩きつけるビート、魂を震わせるシャウト！\n\n静寂をぶち壊せ。\n常識を焼き尽くせ。\n地獄の底まで、この音を響かせろ！\n\nYouTube「雑学サバイバル」が贈る、オリジナル・デスメタルMusic Video！\n\n⚡ 気に入ったら高評価＆チャンネル登録！\n🔥 好きなシーンやフレーズもコメントで教えてください！\n\n🎸 雑学サバイバル\n生き延びる方法は、雑学とユーモアだけ！\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 143.0
   },
   {
     "id": "90SNLZ-WReY",
@@ -2467,17 +2192,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "t-Ik1dmQI0I",
-    "title": "反逆の薔薇 🌹🔥【Short MV】",
-    "publishedAt": "2026-10-14T06:07:23Z",
-    "date": "2026-10-14",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "「この恋は、きっと私の反逆。」\n\n決められた運命も、誰かが決めた結末も、すべて壊してみせる。\n\n悪役令嬢エルゼが歌う、誇りと孤独、そして運命に抗う恋の物語。\n\n🌹 オリジナル楽曲『反逆の薔薇』\n\n🎬 フルMVとマンガ本編も公開中！\nエルゼの物語を最後までお楽しみください！\n\n気に入ったら高評価・チャンネル登録よろしくお願いします！\n\n📺 雑学サバイバル【漫画】\n@zatsusaba\n\n#オリジナル曲 #musicvideo",
-    "durationSeconds": 25.0
-  },
-  {
     "id": "5jlS6fm9BXw",
     "title": "眠いの何で #漫画 #雑学 #眠い",
     "publishedAt": "2026-10-14T03:03:12Z",
@@ -2490,18 +2204,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "昼食後、突然の眠気に襲われる悪役令嬢エルゼ！\n\nでも、ご飯を食べたあとって、どうして眠くなるの？\n\n実は、食事の量や内容、午後に眠くなりやすい体内時計のリズムなどが関係しています。\n\n食べすぎを避ける、食後に少し歩くなど、身近な眠気対策も紹介！\n\nそして太郎の一言に、エルゼがまさかの反応!?\n\n面白かったら高評価・チャンネル登録よろしくお願いします！\n\n#漫画 #雑学 #眠い",
     "durationSeconds": 19.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "Nkg7S9Rphuw",
-    "title": "【オリジナル曲】反逆の薔薇 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-13T23:08:13Z",
-    "date": "2026-10-14",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "「運命なんて、私が変えてみせる。」\n\n決められた結末も、押しつけられた運命も、すべて叩き壊せ。\n\n悪役令嬢エルゼが、自分の意志で未来と恋を選び取る。\n\nYouTube漫画『雑学サバイバル』悪役令嬢編から生まれたオリジナル楽曲『反逆の薔薇』。\n\nこれは、運命に抗う一人の少女の物語。\n\n🌹 あなたは運命を受け入れますか？ それとも抗いますか？\n\n気に入っていただけたら、高評価・チャンネル登録をよろしくお願いします！\n\n🎬 本編の『悪役令嬢編』もぜひご覧ください！\n\n📺 雑学サバイバル【漫画】\n🔗 @zatsusaba\n\n#オリジナル曲 #musicvideo #雑学サバイバル",
-    "durationSeconds": 334.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
     "id": "8-jR0Z_tm_w",
@@ -2602,17 +2304,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "y3e0izWHaOw",
-    "title": "修羅の空🗡️🔥【Short MV】",
-    "publishedAt": "2026-10-12T15:33:16Z",
-    "date": "2026-10-13",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "修羅の空の下、姫は運命に立ち向かう──。\n\nオリジナル楽曲『修羅の空』のサビをお届け！⚔️🌸\n\n戦国の激しい合戦と、姫の揺るがぬ覚悟を描く和風アニメMV！\n\n🎵 フルMVは関連動画から！\n気に入ったら高評価・チャンネル登録もお願いします！\n\n#オリジナル曲 #musicvideo #雑サバ",
-    "durationSeconds": 24.0
-  },
-  {
     "id": "VrM4cOkmRm0",
     "title": "姫のラブレター #漫画 #雑学 #恋文",
     "publishedAt": "2026-10-12T14:03:31Z",
@@ -2625,55 +2316,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "姫からこよみに届いた、香りつきの恋文！\n\n平安時代の貴族は、恋文にお香の香りを移して気持ちを伝えることがありました。\n\nところが、姫からのお願いは予想外の方向へ……！？\n\nくノ一こよみと姫の、可愛い戦国ラブコメ！\n\n#漫画 #雑学 #恋文",
     "durationSeconds": 17.0,
     "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "tpDdUfpq-5M",
-    "title": "【オリジナル曲】修羅の空 / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-12T13:00:22Z",
-    "date": "2026-10-12",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "燃え上がる戦場。舞い散る桜。\n修羅の空の下、姫は運命に立ち向かう──。\n\n🔥 オリジナル楽曲『修羅の空』🔥\n\n戦国の激しい合戦、燃え盛る炎、そして姫の揺るがぬ覚悟。\n\nYouTube『雑学サバイバル』がお届けする、迫力の戦国アニメMusic Video！\n\n⚔️ 戦国 × 合戦 × 和風アニメMV\n\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちが繰り広げる冒険と、笑えて学べる雑学をお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#オリジナル曲 #musicvideo #雑サバ",
-    "durationSeconds": 351.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "S9W5ymTgLT4",
-    "title": "火遁の術のナゾ #漫画 #雑学 #忍法",
-    "publishedAt": "2026-10-12T12:06:53Z",
-    "date": "2026-10-12",
-    "format": "Shorts",
-    "genres": [
-      "世界の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "敵兵に囲まれた太郎とこよみ！\n\nこよみが放った必殺の「火遁の術」！\n反撃開始かと思いきや……まさかの全力逃走！？\n\n実は「遁」は「逃れる」という意味。\n火や煙で敵の注意をそらして逃げる、忍術の意外な雑学を漫画で紹介！\n\n#漫画 #雑学 #忍法",
-    "durationSeconds": 18.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "A7I6aMjMbfI",
-    "title": "【オリジナル曲】恋は忍べない / 雑学サバイバル【Music Video】",
-    "publishedAt": "2026-10-12T10:33:52Z",
-    "date": "2026-10-12",
-    "format": "長尺動画",
-    "genres": [],
-    "characters": [],
-    "description": "忍びの技で姿は隠せても、恋心だけは隠せない。🥷💕\n\nオリジナルアニメMV『恋は忍べない』\n\n戦国の世界を舞台に、忍者少女・夜刀こよみの恋心を歌とアニメで描いた、ちょっぴり甘くてコミカルな恋愛ソング！\n\n🌸 忍者×恋愛×戦国ラブコメ！\n🎵 雑学サバイバル オリジナル楽曲\n\n漫画本編では、太郎たちの冒険や笑える雑学もお届けしています！\n\n気に入っていただけたら、高評価・チャンネル登録をお願いします！\n\n【制作】\n企画・ストーリー・映像編集：雑学サバイバル\n楽曲・映像制作に生成AIを活用しています。\n\n#musicvideo #オリジナル曲 #雑サバ",
-    "durationSeconds": 250.0,
-    "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "GwuLgMH2PKw",
-    "title": "恋は忍べない🥷💕【Short MV】",
-    "publishedAt": "2026-10-12T09:23:27Z",
-    "date": "2026-10-12",
-    "format": "未確認",
-    "genres": [],
-    "characters": [],
-    "description": "忍んでも隠せない、この恋心。\n\nオリジナルアニメMV『恋は忍べない』のサビをお届け！🥷💕\n\nフルMVは関連から！\n\n#漫画 #ai漫画 #オリジナル曲",
-    "durationSeconds": 39.0
   },
   {
     "id": "_d_FfwQpO1w",
@@ -2715,20 +2357,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "敵城に「普通に入った」というくノ一・こよみ。昔の忍術書に記された「くノ一の術」の意外な意味とは？\n\n#漫画 #雑学 #くノ一",
     "durationSeconds": 23.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "33439sWdh3M",
-    "title": "猫の秘密 #漫画 #ai漫画 #雑学",
-    "publishedAt": "2026-10-11T14:25:22Z",
-    "date": "2026-10-11",
-    "format": "Shorts",
-    "genres": [
-      "自然の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "殿が自慢の団子を猫に見せるも、完全無視！実は猫には甘味を感じにくい理由があった。ところが殿の団子愛は想像を絶するものだった…！？\n\n#漫画 #雑学 #ai漫画",
-    "durationSeconds": 24.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -3163,20 +2791,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
-    "id": "yb-N1i0JCic",
-    "title": "【漫画】寒いときの酒はヤバい #雑学",
-    "publishedAt": "2026-10-05T08:30:25Z",
-    "date": "2026-10-05",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画ついでに雑学。\n\n寒い時にお酒を飲むと温まるように感じますが、実は体の熱が逃げやすくなることがあります。高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #酒",
-    "durationSeconds": 34.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "CaUFNQZMP0g",
     "title": "【漫画】その木の実、食べて大丈夫？",
     "publishedAt": "2026-10-05T03:28:06Z",
@@ -3233,34 +2847,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "YouTube公開再生時間：180秒超"
   },
   {
-    "id": "vXPhUJb8HGQ",
-    "title": "【漫画】最強の格闘技は…… #漫画 #雑学 #格闘技",
-    "publishedAt": "2026-10-04T08:00:28Z",
-    "date": "2026-10-04",
-    "format": "Shorts",
-    "genres": [
-      "世界の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "ボクシング、柔術、レスリング……異種格闘技の歴史をたどると、最強に近い答えはMMAでした。\n\n#漫画 #雑学 #格闘技",
-    "durationSeconds": 46.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "Wlce8XCqMTY",
-    "title": "【漫画】スライム娘に食べら #漫画 #雑学 #科学",
-    "publishedAt": "2026-10-04T03:00:30Z",
-    "date": "2026-10-04",
-    "format": "Shorts",
-    "genres": [
-      "科学の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回はスライムがぷるぷる伸びる理由と、ポリマーが水を抱え込む仕組みについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
-    "durationSeconds": 28.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "4Fsk3HuO8QY",
     "title": "【漫画】歯磨きすすぐと #漫画 #雑学 #科学",
     "publishedAt": "2026-10-03T22:00:07Z",
@@ -3272,20 +2858,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "漫画ついでに雑学。\n\n今回は歯磨き後のすすぎ方について、フッ素入り歯磨き粉を使ったあとの正しいケアを解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n #漫画 #雑学 #健康",
     "durationSeconds": 31.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "CHiLdL4BZ-s",
-    "title": "【漫画】ホストをやる理由 #漫画 #雑学 #心理学",
-    "publishedAt": "2026-10-03T14:00:39Z",
-    "date": "2026-10-03",
-    "format": "Shorts",
-    "genres": [
-      "人間の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回はホストをやる理由から、「シャーデンフロイデ」と「日常的サディズム」に関する心理学を解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪ \n\n#漫画 #雑学 #心理学",
-    "durationSeconds": 41.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -3371,20 +2943,6 @@ window.YOUTUBE_VIDEOS = [
     "description": "空から宇宙人の少女が降ってきた。\n人生の10年をかけ、宇宙船を修理する約束をする。\n\n今回は水星を舞台に、激しい温度差、弱い重力、極域に存在する氷、宇宙での時間のズレなど、宇宙の雑学を物語の中で紹介しています。\n\nマンガついでに、雑学がわかっちゃう。\n高評価・チャンネル登録お願いします♪\n\n※ストーリーは書き下ろし完全オリジナルです\n※イラストは手書きに加え、AI生成をベースに加筆・修正して制作しています\n\n#漫画 #雑学 #宇宙",
     "durationSeconds": 648.0,
     "formatEvidence": "YouTube公開再生時間：180秒超"
-  },
-  {
-    "id": "o3qhUiZFWxw",
-    "title": "【漫画】課金トラップ #漫画 #雑学 #お金",
-    "publishedAt": "2026-10-02T08:00:24Z",
-    "date": "2026-10-02",
-    "format": "Shorts",
-    "genres": [
-      "お金の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画ついでに雑学。\n\n今回は「アプリを削除してもサブスクは解約されない？」という、サブスク解約とアプリ削除の違い、課金に関することについて解説しました。\n\n高評価・コメント・チャンネル登録お願いします♪\n\n#漫画 #雑学 #お金",
-    "durationSeconds": 37.0,
-    "formatEvidence": "公式Shorts再生リスト"
   },
   {
     "id": "Pqp4cFV-k_g",
@@ -3639,34 +3197,6 @@ window.YOUTUBE_VIDEOS = [
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
-    "id": "VZsr7PbiwOU",
-    "title": "【漫画】海王星のナゾ #漫画 #雑学 #宇宙",
-    "publishedAt": "2026-09-28T10:00:06Z",
-    "date": "2026-09-28",
-    "format": "Shorts",
-    "genres": [
-      "世界の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画で雑学紹介。今回は海王星で、時速2000kmを超えることもある「太陽系最速クラスの風」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #宇宙",
-    "durationSeconds": 21.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "zsXB8wQIB1k",
-    "title": "【漫画】解放感 #漫画 #雑学 #心理学",
-    "publishedAt": "2026-09-28T08:35:38Z",
-    "date": "2026-09-28",
-    "format": "Shorts",
-    "genres": [
-      "人間の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画で雑学紹介。今回はナチュリズムやボディイメージ・自己肯定感との関係について紹介しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #心理学",
-    "durationSeconds": 23.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
     "id": "qYGqSlu2JrM",
     "title": "【漫画】ガンダムは作れる？ #漫画 #雑学 #科学",
     "publishedAt": "2026-09-27T22:00:22Z",
@@ -3860,20 +3390,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "漫画で雑学紹介。今回は科学で、「モバイルバッテリーが膨らむ理由」について解説しました。\n\n膨張したバッテリーは、押したり使い続けたりせず安全に扱いましょう。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #科学",
     "durationSeconds": 18.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "dH9EfEEZYfc",
-    "title": "【漫画】犬のしっぽ #漫画 #雑学 #動物",
-    "publishedAt": "2026-09-24T22:00:31Z",
-    "date": "2026-09-25",
-    "format": "Shorts",
-    "genres": [
-      "自然の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "漫画で雑学紹介。今回は犬の行動で、「好きな相手を見たときの尻尾の振り方」について解説しました。\n\n高評価・チャンネル登録お願いします♪\n\n#漫画 #雑学 #動物",
-    "durationSeconds": 20.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {
@@ -4140,20 +3656,6 @@ window.YOUTUBE_VIDEOS = [
     "characters": [],
     "description": "「好き」と言われると、相手のことが気になってしまう？\n\n人は、自分に好意を向けてくれた相手に、好意を返しやすい傾向があります。\n\nこれを心理学では「好意の返報性」といいます。\n\nただし、必ず好きになるわけではないので注意。\n\n漫画で楽しむ心理学・雑学\n『雑学サバイバル』\n\n#漫画 #雑学 #恋愛心理学",
     "durationSeconds": 28.0,
-    "formatEvidence": "公式Shorts再生リスト"
-  },
-  {
-    "id": "amKpNmLlaiY",
-    "title": "【漫画】好感度が上がると！？ #漫画 #雑学 #心理学",
-    "publishedAt": "2026-09-11T13:04:55Z",
-    "date": "2026-09-11",
-    "format": "Shorts",
-    "genres": [
-      "人間の雑学【Shorts】"
-    ],
-    "characters": [],
-    "description": "見知らぬ少女が声をかけてきた。\n頭の上にはなぜか数字が見えるが……？\n\n漫画・アニメ形式のオリジナルストーリーで、心理や雑学を楽しく描く\n『雑学サバイバル』\n\nチャンネル登録よろしくお願いします🌟\n\n#漫画 #雑談 #心理学",
-    "durationSeconds": 69.0,
     "formatEvidence": "公式Shorts再生リスト"
   },
   {

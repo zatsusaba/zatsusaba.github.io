@@ -11,9 +11,6 @@ conditions: "主にイエネコの甘味受容体遺伝子と砂糖などへの�
 image: /assets/blog/cat-sweet-receptor/cover-v2.webp
 image_alt: "窓辺で外を見るキジトラ猫のイラスト"
 show_cover: false
-youtube: 33439sWdh3M
-youtube_title: '猫の秘密 #漫画 #ai漫画 #雑学'
-youtube_format: short
 sources:
   - title: "Li et al.『Pseudogenization of a Sweet-Receptor Gene Accounts for Cats’ Indifference toward Sugar』PLOS Genetics（2005）"
     url: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0010003

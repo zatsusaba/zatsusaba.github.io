@@ -8,9 +8,6 @@ category: 動物
 topic: ウォンバットのうんちはなぜ四角い
 tags:
 - 動物
-youtube: UsdNxnHLHlc
-youtube_title: 四角いうんち
-youtube_format: short
 image: /assets/covers/wombat-cover.png
 image_alt: 動物・四角いうんちの謎。正面を向くウォンバットと丸みのある立方体のモチーフを描いた専用サムネイル。
 sources:

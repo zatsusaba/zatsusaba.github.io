@@ -8,9 +8,6 @@ category: 宇宙
 image: /assets/blog/neptune-winds/thumbnail.webp
 image_alt: 横長の藍色背景の中央に、青い大気の帯がある海王星全体を描いた参考イラスト。
 show_cover: false
-youtube: VZsr7PbiwOU
-youtube_title: '【漫画】海王星のナゾ #漫画 #雑学 #宇宙'
-youtube_format: short
 sources:
 - title: NASA, Voyager Fact Sheet, Neptune
   url: https://science.nasa.gov/mission/voyager/fact-sheet/

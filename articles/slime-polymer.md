@@ -11,9 +11,6 @@ conditions: "水を多く含むPVA（ポリビニルアルコール）とホウ�
 image: /assets/blog/slime-polymer/cover-v2.webp
 image_alt: "トレイの上の青いスライムを描いたイラスト。食べ物や実験の記録ではない"
 show_cover: false
-youtube: Wlce8XCqMTY
-youtube_title: "【漫画】スライム娘に食べら #漫画 #雑学 #科学"
-youtube_format: short
 sources:
   - title: "American Chemical Society『Slime』Concepts to Explore"
     url: https://www.acs.org/education/activities/slime.html

@@ -1,5 +1,19 @@
 window.YOUTUBE_VIDEOS = [
   {
+    "id": "iVmixxSW5DY",
+    "title": "YouTuberの裏側を覗いてみよう！AIを駆使した制作工程と作業風景を大公開【雑学サバイバルの裏側】",
+    "publishedAt": "2026-11-26T10:26:30Z",
+    "date": "2026-11-26",
+    "format": "長尺動画",
+    "genres": [
+      "遊びで雑学"
+    ],
+    "characters": [],
+    "description": "雑学サバイバルは、どうやって作られているのか？\n\n作者の一日をとおして、YouTube動画の制作や作業風景を覗いてみよう！\n\n00:00 オープニング\n00:28 なぜYouTubeをはじめたのか\n02:18 チャンネルの現状\n03:17 制作工程と作業風景\n06:56 公式サイトとこれから\n07:27 まとめ\n\n© 雑学サバイバル All Rights Reserved.\n当チャンネルのオリジナル作品の無断転載・無断商用利用を禁止します。\n\n#youtuber #裏側 #雑学サバイバル",
+    "durationSeconds": 512.0,
+    "formatEvidence": "YouTube公開再生時間：180秒超"
+  },
+  {
     "id": "wAL27g9WiV8",
     "title": "もしも仮面ライダーが現実にいたら？【面白い雑学】",
     "publishedAt": "2026-11-25T04:00:09Z",
